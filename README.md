@@ -16,11 +16,11 @@ Startup:
 Producto: Software
 
 Integrantes:
-Lopez Torres, Leonardo Gabriel - U20241A649
-Lopez Montalvo, Kevin Edu - U20241D958
-Conde Huashuayo, Sebasthian Alex - U20241E356
-Vilchez Vite, Gabriel Alejandro - U202416903
-Flores Chávez, Fabricio - U202212327
+-Lopez Torres, Leonardo Gabriel - U20241A649
+-
+-
+-
+-
 
 Abril, 2026
 
