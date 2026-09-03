@@ -6,7 +6,7 @@
 | Foto del Estudiante | Perfil |
 |---------------------|--------|
 |                     |  Leonardo Gabriel Lopez Torres<br/>Mi nombre es Lopez Torres Leonardo Gabriel, mi código es u20241a649, estoy estudiando en la universidad UPC, estoy en mi 5to ciclo de la carrera, me gusta jugar videojuegos, salir y ayudar a mis compañeros, una de mis mayores responsabilidades es la responsabilidad. Mi objetivo en este grupo es el de poder aportar siempre ayuda al grupo, además de comunicación ágil y poder conseguir más experiencias para proyectos futuros.       | 
-|                     |        | 
+|                     |  Edgard Daniel Diaz Caruzo<br/>Mi nombre es Diaz Caruzo Edgard Daniel, mi código es u202323911, estoy estudiando en la universidad UPC, estoy en mi 5to-6to ciclo de la carrera, me gusta hacer deporte en general, escuchar musica y pasear por algunos lugares turisticos, una de mis cualidades es la responsabilidad y la puntualidad. Mi objetivo es apoyar en cualquier cosa a mis compañeros.     | 
 |                     |        |
 |                     |        |
 |                     |        |
