@@ -7,17 +7,17 @@ Ciclo 2026 - 02
 
 # “Informe de trabajo Final”
 Open Source
-NRC:
+NRC: 7793
 
-Docente: Ivan Robler Fernandez
+Docente: Ivan Robles Fernandez
 
-Startup: 
+Startup: Macally
 
-Producto: Software
+Producto: NUBI
 
 Integrantes:
 -Lopez Torres, Leonardo Gabriel - U20241A649
--
+-Diaz Yurivilca, Sofia - U20241A195
 -
 -
 -
@@ -31,26 +31,26 @@ Abril, 2026
 
 **Ciclo:** 2026 - 02  
 **Curso:** Desarrollo de Aplicaciones Open Source  
-**NRC: 11913**   
-**Docente: Ivan Robler Fernandez **
+**NRC: 11913** 
+**Docente: Ivan Robles Fernandez**
 
-**Startup: Macally**   
+**Startup: Macally**
 **Producto: **
 
-| Código     | Nombre                   |
-|------------|--------------------------|
+| Código     | Nombre                         |
+|------------|--------------------------------|
 | U20241A649 | Lopez Torres, Leonardo Gabriel |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| U20241A195 | Diaz Yurivilca, Sofia          |
+|  |     |
+|            |                                |
+|            |                                |
 
 **Agosto - 2026**
 
 WEBSITE:
 
 ---
-# WEBSITE: 
+# WEBSITE:
 </div>
 
 
@@ -59,9 +59,9 @@ WEBSITE:
 
 <div align="center">
 
-| Versión  |     Fecha     |  Autor   | Descripción de modificación |
-| :------: |:-------------:|:--------:| :-------------------------: |
-| AV1      | 29/ 08 / 2026 | Leonardo | Primera versión             |
+| Versión  |     Fecha     |                          Autor                           | Descripción de modificación |
+| :------: |:-------------:|:--------------------------------------------------------:| :-------------------------: |
+| AV1      | 29/ 08 / 2026 | Leonardo Gabriel Lopez Torres </br> Sofia Diaz Yurivilca | Primera versión             |
 
 </div>
 
