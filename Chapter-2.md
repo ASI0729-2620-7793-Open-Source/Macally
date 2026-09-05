@@ -130,6 +130,63 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ### 2.3.2. User Task Matrix
 
+A partir del análisis de las entrevistas y de los User Personas definidos previamente, se identificaron las principales tareas que realizan los usuarios frente a una situación de desregulación emocional o sensorial. Estas tareas representan las actividades que los usuarios necesitan realizar independientemente de la existencia de NUBI.
+
+**Para este análisis se consideran dos segmentos principales:** el cuidador, representado por padres, madres y cuidadores primarios, y el usuario neurodivergente, representado por niños y adolescentes de entre 6 y 17 años que pueden experimentar episodios de sobrecarga emocional o sensorial.
+
+La matriz permite comparar la frecuencia y la importancia de cada tarea para determinar cuáles representan las necesidades más críticas que la solución debe atender.
+
+<table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <th rowspan="2" style="text-align: left;">Tarea</th>
+    <th colspan="2">Cuidador Primario</th>
+    <th colspan="2">Persona Neurodivergente</th>
+  </tr>
+  <tr>
+    <th>Frecuencia</th>
+    <th>Importancia</th>
+    <th>Frecuencia</th>
+    <th>Importancia</th>
+  </tr>
+  <tr><td>Identificar señales tempranas de desregulación</td><td>High</td><td>High</td><td>High</td><td>High</td></tr>
+  <tr><td>Identificar estímulos o situaciones que generan malestar</td><td>High</td><td>High</td><td>High</td><td>High</td></tr>
+  <tr><td>Aplicar estrategias de autorregulación</td><td>High</td><td>High</td><td>High</td><td>High</td></tr>
+  <tr><td>Comunicar necesidades o malestar durante una situación de desregulación</td><td>Medium</td><td>High</td><td>High</td><td>High</td></tr>
+  <tr><td>Solicitar o brindar apoyo durante una situación de crisis</td><td>Medium</td><td>High</td><td>Medium</td><td>High</td></tr>
+  <tr><td>Adaptar el entorno para reducir estímulos que generan sobrecarga</td><td>Medium</td><td>High</td><td>High</td><td>High</td></tr>
+  <tr><td>Seguir una secuencia de acciones para manejar una situación de desregulación</td><td>Medium</td><td>High</td><td>Medium</td><td>High</td></tr>
+  <tr><td>Revisar posteriormente qué desencadenó la situación y qué estrategia funcionó</td><td>Medium</td><td>High</td><td>Low</td><td>Medium</td></tr>
+</table>
+
+**Análisis del Task Matrix**
+
+A partir del User Task Matrix, se identifican las tareas que presentan mayor relevancia para ambos segmentos y aquellas que representan diferencias importantes entre el cuidador y el usuario neurodivergente.
+
+**Tareas con mayor frecuencia e importancia para ambos segmentos:**
+
+La aplicación de estrategias para recuperar la calma, la comunicación de necesidades y la reducción de estímulos representan tareas de alta frecuencia e importancia para ambos perfiles. Esto demuestra que la solución debe priorizar herramientas que puedan utilizarse de manera sencilla durante una situación de desregulación, evitando procesos complejos que aumenten la carga cognitiva del usuario.
+
+Asimismo, comunicar la necesidad de ayuda constituye una tarea crítica. Durante un episodio de desregulación, el usuario puede presentar dificultades para expresar verbalmente lo que necesita, mientras que el cuidador necesita interpretar rápidamente la situación para brindar el apoyo correspondiente.
+
+**Principales diferencias entre los segmentos:**
+
+El cuidador concentra tareas relacionadas con la observación, interpretación y toma de decisiones. Entre sus principales responsabilidades se encuentran identificar señales tempranas, determinar posibles factores desencadenantes, seleccionar estrategias de apoyo y evaluar si la situación está mejorando.
+
+Por otro lado, el usuario neurodivergente concentra sus tareas en la autorregulación y comunicación de necesidades. Durante una situación de sobrecarga, puede necesitar reducir estímulos, utilizar una estrategia que le ayude a recuperar la calma o comunicar que necesita ayuda sin depender completamente de la comunicación verbal.
+
+**Tareas críticas para NUBI:**
+
+**Las tareas con mayor importancia permiten definir las funcionalidades que deben considerarse prioritarias dentro de la solución. Entre ellas destacan:**
+
+1. Identificar señales de desregulación.
+2. Comunicar necesidades básicas y solicitar ayuda.
+3. Aplicar estrategias de autorregulación.
+4. Reducir estímulos durante situaciones de sobrecarga.
+5. Orientar al cuidador sobre cómo actuar durante la crisis.
+6. Personalizar las estrategias de apoyo según las características del usuario.
+
+Estas tareas se relacionan directamente con las funcionalidades planteadas en el Lean UX Canvas, especialmente el Modo SOS, la interfaz de autorregulación y el tablero de Comunicación Aumentativa y Alternativa (CAA).
+
 ### 2.3.3. User Journey Mapping
 
 ### 2.3.4. Empathy Mapping
