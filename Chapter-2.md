@@ -130,11 +130,9 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ### 2.3.2. User Task Matrix
 
-A partir del análisis de las entrevistas y de los User Personas definidos previamente, se identificaron las principales tareas que realizan los usuarios frente a una situación de desregulación emocional o sensorial. Estas tareas representan las actividades que los usuarios necesitan realizar independientemente de la existencia de NUBI.
+La User Task Matrix permite identificar y priorizar las principales tareas que realizan los usuarios de NUBI frente a situaciones de desregulación sensorial o emocional. Para el análisis se consideran los dos segmentos principales definidos previamente: cuidador primario y persona neurodivergente.
 
-**Para este análisis se consideran dos segmentos principales:** el cuidador, representado por padres, madres y cuidadores primarios, y el usuario neurodivergente, representado por niños y adolescentes de entre 6 y 17 años que pueden experimentar episodios de sobrecarga emocional o sensorial.
-
-La matriz permite comparar la frecuencia y la importancia de cada tarea para determinar cuáles representan las necesidades más críticas que la solución debe atender.
+La frecuencia indica qué tan recurrente es la tarea dentro de la experiencia del usuario, mientras que la importancia representa el impacto que tiene realizarla correctamente, especialmente durante situaciones de crisis o desregulación.
 
 <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
   <tr>
@@ -160,32 +158,15 @@ La matriz permite comparar la frecuencia y la importancia de cada tarea para det
 
 **Análisis del Task Matrix**
 
-A partir del User Task Matrix, se identifican las tareas que presentan mayor relevancia para ambos segmentos y aquellas que representan diferencias importantes entre el cuidador y el usuario neurodivergente.
+A partir de la matriz, se observa que las tareas con mayor frecuencia e importancia para ambos segmentos están relacionadas con la identificación temprana de la desregulación, la identificación de estímulos desencadenantes y la aplicación de estrategias de autorregulación. Estas actividades constituyen momentos críticos de la experiencia, ya que una intervención temprana puede facilitar el manejo de la situación y reducir su escalamiento.
 
-**Tareas con mayor frecuencia e importancia para ambos segmentos:**
+Para el cuidador primario, las tareas de mayor relevancia se concentran en reconocer las primeras señales, identificar posibles desencadenantes, brindar apoyo y adaptar el entorno. Aunque algunas de estas acciones no se realizan constantemente, adquieren una importancia alta cuando aparece una situación de desregulación, debido a que el cuidador debe tomar decisiones rápidamente y contar con estrategias claras para acompañar al usuario.
 
-La aplicación de estrategias para recuperar la calma, la comunicación de necesidades y la reducción de estímulos representan tareas de alta frecuencia e importancia para ambos perfiles. Esto demuestra que la solución debe priorizar herramientas que puedan utilizarse de manera sencilla durante una situación de desregulación, evitando procesos complejos que aumenten la carga cognitiva del usuario.
+En el caso de la persona neurodivergente, las tareas de mayor frecuencia están relacionadas con reconocer estímulos que generan malestar, aplicar estrategias de autorregulación y comunicar necesidades. La dificultad aumenta cuando la sobrecarga sensorial o emocional limita la capacidad de comunicación, por lo que resulta importante que estas acciones puedan realizarse de manera sencilla y con una baja carga cognitiva.
 
-Asimismo, comunicar la necesidad de ayuda constituye una tarea crítica. Durante un episodio de desregulación, el usuario puede presentar dificultades para expresar verbalmente lo que necesita, mientras que el cuidador necesita interpretar rápidamente la situación para brindar el apoyo correspondiente.
+Finalmente, ambos segmentos coinciden principalmente en la necesidad de reconocer la desregulación y actuar oportunamente. Sin embargo, existe una diferencia en el rol que cumple cada usuario: mientras el cuidador se enfoca principalmente en acompañar, adaptar el entorno y brindar apoyo, la persona neurodivergente se centra en reconocer su estado, comunicar sus necesidades y utilizar estrategias de autorregulación.
 
-**Principales diferencias entre los segmentos:**
-
-El cuidador concentra tareas relacionadas con la observación, interpretación y toma de decisiones. Entre sus principales responsabilidades se encuentran identificar señales tempranas, determinar posibles factores desencadenantes, seleccionar estrategias de apoyo y evaluar si la situación está mejorando.
-
-Por otro lado, el usuario neurodivergente concentra sus tareas en la autorregulación y comunicación de necesidades. Durante una situación de sobrecarga, puede necesitar reducir estímulos, utilizar una estrategia que le ayude a recuperar la calma o comunicar que necesita ayuda sin depender completamente de la comunicación verbal.
-
-**Tareas críticas para NUBI:**
-
-**Las tareas con mayor importancia permiten definir las funcionalidades que deben considerarse prioritarias dentro de la solución. Entre ellas destacan:**
-
-1. Identificar señales de desregulación.
-2. Comunicar necesidades básicas y solicitar ayuda.
-3. Aplicar estrategias de autorregulación.
-4. Reducir estímulos durante situaciones de sobrecarga.
-5. Orientar al cuidador sobre cómo actuar durante la crisis.
-6. Personalizar las estrategias de apoyo según las características del usuario.
-
-Estas tareas se relacionan directamente con las funcionalidades planteadas en el Lean UX Canvas, especialmente el Modo SOS, la interfaz de autorregulación y el tablero de Comunicación Aumentativa y Alternativa (CAA).
+Esta diferencia evidencia la necesidad de que NUBI considere una experiencia centrada en ambos usuarios, permitiendo que el cuidador pueda actuar como soporte sin quitar autonomía a la persona neurodivergente.
 
 ### 2.3.3. User Journey Mapping
 
