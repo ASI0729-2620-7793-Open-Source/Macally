@@ -72,6 +72,54 @@ A diferencia de aplicaciones de función única como Emergency CHAT, Nubi integr
 
 ### 2.2.1. Diseño de entrevistas
 
+Con el objetivo de recopilar información cualitativa relevante sobre las necesidades, dolores y comportamientos de nuestro público objetivo, se elaboraron dos guías de entrevistas estructuradas adaptadas para cada segmento.
+
+#### A. Preguntas Generales de Filtrado y Demografía
+
+Estas preguntas se aplican a todos los participantes antes de iniciar la sección específica según su rol.
+
+* ¿Cuál es su nombre completo?
+* ¿Qué edad tiene?
+* ¿En qué distrito o zona geográfica reside?
+
+---
+
+#### B. Guía de Entrevista — Segmento 1: Padres, Madres y Cuidadores Primarios
+
+1. ¿Cuál es tu ocupación actual?
+2. ¿Cuál es tu relación o parentesco con el niño o adolescente que acompañas?
+3. ¿Qué edad tiene el niño o adolescente a tu cargo?
+4. ¿Qué condición o características de neurodivergencia presenta (TEA, TDAH, TDA, TOC, entre otros)?
+5. Cuéntame sobre la última vez que el niño tuvo una crisis o momento de desregulación. ¿Qué sucedió?
+6. ¿Qué suele ocurrir o qué factores desencadenan una crisis antes de que comience?
+7. ¿Cómo te das cuenta o cuáles son las primeras señales de que está empezando un episodio?
+8. ¿Qué acciones ejecutas normalmente para ayudarlo a autorregularse en ese momento?
+9. ¿Qué es lo más difícil o frustrante para ti cuando intentas brindarle asistencia en pleno episodio?
+10. ¿Qué estrategias o recursos has probado previamente para afrontar estas situaciones? ¿Cuáles te funcionaron y cuáles no?
+11. Inmediatamente después de que finaliza la crisis, ¿qué suele ocurrir con el niño y cuál es tu estado emocional?
+12. ¿Qué dispositivo tecnológico utilizas habitualmente cuando necesitas buscar ayuda o soluciones rápidas?
+13. Cuando buscas información sobre cómo abordar el acompañamiento de tu hijo/a, ¿a qué fuentes recurres (foros, grupos de apoyo, redes sociales, profesionales de la salud, otros)?
+14. ¿Has utilizado alguna aplicación móvil, sitio web o herramienta digital específica para intervenir durante una crisis? ¿Cómo fue tu experiencia?
+15. Si contaras con una herramienta digital diseñada para asistirte durante una crisis, ¿qué sería lo primero que debería permitirte hacer?
+16. ¿Qué datos o instrucciones necesitarías visualizar en pantalla de forma inmediata para saber cómo actuar?
+17. ¿Qué características o respaldos debería tener la aplicación para que confíes plenamente en usarla durante un momento de alta tensión?
+18. Si pudieras resolver una sola dificultad crítica en el acompañamiento durante una crisis, ¿cuál elegirías?
+
+---
+
+#### C. Guía de Entrevista — Segmento 2: Niños y Adolescentes Neurodivergentes
+
+1. ¿En qué grado escolar estás?
+2. ¿Qué actividades te gusta hacer en tu tiempo libre?
+3. ¿Qué condición o características especiales sabes que tienes?
+4. ¿Qué cosas del entorno (ruidos, luces, personas) te molestan o te hacen sentir incómodo/a?
+5. Cuando te sientes muy molesto/a, preocupado/a o abrumado/a, ¿qué sueles hacer?
+6. ¿Qué cosas o actividades te ayudan a sentirte tranquilo/a de nuevo?
+7. Cuando te cuesta hablar o explicar cómo te sientes, ¿cómo haces para pedirle ayuda a alguien o decirle lo que necesitas?
+8. ¿Qué dispositivo usas más seguido: celular, tablet o computadora?
+9. ¿Cuáles son tus aplicaciones, juegos o videos favoritos?
+10. Si tuvieras una aplicación en el celular o tablet para ayudarte cuando te sientes mal o abrumado/a, ¿qué te gustaría que tuviera o cómo te gustaría que fuera?
+
 ### 2.2.2. Registro de entrevistas
 
 ### 2.2.3. Análisis de entrevistas
