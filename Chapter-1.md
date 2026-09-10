@@ -1,6 +1,12 @@
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
+
+
 ### 1.1.1. Descripción de la Startup
+Nubi es una solución tecnológica orientada a apoyar a niños y adolescentes neurodivergentes que presentan dificultades de comunicación y autorregulación emocional. Su propósito es brindar herramientas simples e intuitivas que permitan a padres, cuidadores y acompañantes actuar de manera más efectiva durante situaciones de crisis, facilitando el proceso de regulación y contribuyendo a mejorar su calidad de vida y desenvolvimiento en su entorno.
+
+Hemos identificado que muchos padres y cuidadores enfrentan dificultades para comprender y atender adecuadamente las necesidades de los niños durante momentos de crisis o desregulación, especialmente cuando existen barreras de comunicación. Ante esta problemática, Nubi nace con el propósito de ofrecer un apoyo accesible e inmediato que facilite la autorregulación del niño y proporcione a sus acompañantes orientaciones claras para actuar en estas situaciones, reduciendo la incertidumbre y favoreciendo un entorno más seguro y comprensivo.
+
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
