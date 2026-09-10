@@ -323,9 +323,14 @@ Los niños y adolescentes entrevistados comparten un patrón consistente frente 
 
 ### 2.3.2. User Task Matrix
 
-La User Task Matrix permite identificar y priorizar las principales tareas que realizan los usuarios de NUBI frente a situaciones de desregulación sensorial o emocional. Para el análisis se consideran los dos segmentos principales definidos previamente: cuidador primario y persona neurodivergente.
+La User Task Matrix permite identificar y priorizar las principales tareas que realizan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. Para este análisis se consideran los dos segmentos principales del proyecto: padres, familiares y cuidadores primarios, y niños y adolescentes neurodivergentes.
 
-La frecuencia indica qué tan recurrente es la tarea dentro de la experiencia del usuario, mientras que la importancia representa el impacto que tiene realizarla correctamente, especialmente durante situaciones de crisis o desregulación.
+La matriz evalúa cada tarea utilizando dos criterios: frecuencia e importancia. La frecuencia representa qué tan recurrentemente el usuario necesita realizar determinada acción, mientras que la importancia indica el impacto que tiene dicha tarea en el manejo adecuado de una situación de desregulación.
+
+*Se utilizan tres niveles de valoración:*
+- **High**: tarea recurrente o crítica para el manejo de la situación.
+- **Medium**: tarea que ocurre de manera ocasional, pero tiene relevancia dentro de la experiencia.
+- **Low**: tarea poco frecuente o secundaria dentro del contexto analizado.
 
 <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
   <tr>
@@ -339,27 +344,111 @@ La frecuencia indica qué tan recurrente es la tarea dentro de la experiencia de
     <th>Frecuencia</th>
     <th>Importancia</th>
   </tr>
-  <tr><td>Identificar señales tempranas de desregulación</td><td>High</td><td>High</td><td>High</td><td>High</td></tr>
-  <tr><td>Identificar estímulos o situaciones que generan malestar</td><td>High</td><td>High</td><td>High</td><td>High</td></tr>
-  <tr><td>Aplicar estrategias de autorregulación</td><td>High</td><td>High</td><td>High</td><td>High</td></tr>
-  <tr><td>Comunicar necesidades o malestar durante una situación de desregulación</td><td>Medium</td><td>High</td><td>High</td><td>High</td></tr>
-  <tr><td>Solicitar o brindar apoyo durante una situación de crisis</td><td>Medium</td><td>High</td><td>Medium</td><td>High</td></tr>
-  <tr><td>Adaptar el entorno para reducir estímulos que generan sobrecarga</td><td>Medium</td><td>High</td><td>High</td><td>High</td></tr>
-  <tr><td>Seguir una secuencia de acciones para manejar una situación de desregulación</td><td>Medium</td><td>High</td><td>Medium</td><td>High</td></tr>
-  <tr><td>Revisar posteriormente qué desencadenó la situación y qué estrategia funcionó</td><td>Medium</td><td>High</td><td>Low</td><td>Medium</td></tr>
+
+  <tr>
+    <td>Reconocer señales de incomodidad o inicio de una desregulación</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Identificar estímulos o situaciones que generan sobrecarga</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Buscar o trasladarse hacia un entorno con menor estimulación</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Comunicar el malestar o una necesidad durante la desregulación</td>
+    <td>Medium</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Solicitar o brindar ayuda durante una situación de desregulación</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Aplicar estrategias de calma, regulación o contención</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Consultar instrucciones o estrategias para saber cómo actuar</td>
+    <td>High</td>
+    <td>High</td>
+    <td>Low</td>
+    <td>Medium</td>
+  </tr>
+
+  <tr>
+    <td>Utilizar mecanismos alternativos de comunicación cuando hablar resulta difícil</td>
+    <td>Medium</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Contactar o avisar a una persona de confianza cuando se necesita apoyo</td>
+    <td>Medium</td>
+    <td>High</td>
+    <td>High</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Personalizar estrategias de apoyo según preferencias o sensibilidades</td>
+    <td>Medium</td>
+    <td>High</td>
+    <td>Medium</td>
+    <td>High</td>
+  </tr>
+
+  <tr>
+    <td>Revisar después del episodio qué provocó el malestar y qué estrategia funcionó</td>
+    <td>Medium</td>
+    <td>Medium</td>
+    <td>Low</td>
+    <td>Medium</td>
+  </tr>
 </table>
 
-**Análisis del Task Matrix**
+**Análisis del User Task Matrix**
 
-A partir de la matriz, se observa que las tareas con mayor frecuencia e importancia para ambos segmentos están relacionadas con la identificación temprana de la desregulación, la identificación de estímulos desencadenantes y la aplicación de estrategias de autorregulación. Estas actividades constituyen momentos críticos de la experiencia, ya que una intervención temprana puede facilitar el manejo de la situación y reducir su escalamiento.
+A partir de la matriz se identifica que las tareas de mayor prioridad para ambos segmentos se concentran en reconocer el inicio de una situación de desregulación, identificar los estímulos que generan sobrecarga, reducir dichos estímulos y ejecutar acciones que permitan recuperar la calma. Debido a que estas actividades se realizan en momentos de tensión, requieren una interacción rápida, sencilla y con una baja carga cognitiva.
 
-Para el cuidador primario, las tareas de mayor relevancia se concentran en reconocer las primeras señales, identificar posibles desencadenantes, brindar apoyo y adaptar el entorno. Aunque algunas de estas acciones no se realizan constantemente, adquieren una importancia alta cuando aparece una situación de desregulación, debido a que el cuidador debe tomar decisiones rápidamente y contar con estrategias claras para acompañar al usuario.
+En el caso de los padres, familiares y cuidadores, las tareas de mayor frecuencia e importancia están relacionadas con reconocer cambios en el comportamiento del niño o adolescente, identificar posibles detonantes, adaptar el entorno y aplicar estrategias de acompañamiento. Asimismo, resulta especialmente importante acceder rápidamente a instrucciones que indiquen cómo actuar, ya que durante una crisis el cuidador puede experimentar incertidumbre, ansiedad o dificultad para determinar qué estrategia utilizar.
 
-En el caso de la persona neurodivergente, las tareas de mayor frecuencia están relacionadas con reconocer estímulos que generan malestar, aplicar estrategias de autorregulación y comunicar necesidades. La dificultad aumenta cuando la sobrecarga sensorial o emocional limita la capacidad de comunicación, por lo que resulta importante que estas acciones puedan realizarse de manera sencilla y con una baja carga cognitiva.
+Por esta razón, funciones como el Modo SOS, las guías visuales en pasos cortos y la presentación rápida de estrategias de contención representan oportunidades importantes para NUBI. El sistema debe permitir que el cuidador acceda a estas herramientas con la menor cantidad posible de interacciones.
 
-Finalmente, ambos segmentos coinciden principalmente en la necesidad de reconocer la desregulación y actuar oportunamente. Sin embargo, existe una diferencia en el rol que cumple cada usuario: mientras el cuidador se enfoca principalmente en acompañar, adaptar el entorno y brindar apoyo, la persona neurodivergente se centra en reconocer su estado, comunicar sus necesidades y utilizar estrategias de autorregulación.
+En el caso de los niños y adolescentes neurodivergentes, las tareas más importantes se relacionan con reconocer el malestar, alejarse de estímulos que generan sobrecarga, utilizar estrategias de autorregulación y comunicar sus necesidades cuando la comunicación verbal resulta difícil. Por ello, mecanismos visuales de bajo esfuerzo, pictogramas, botones rápidos, música o sonidos relajantes y ejercicios de respiración pueden facilitar estas acciones durante una situación de desregulación.
 
-Esta diferencia evidencia la necesidad de que NUBI considere una experiencia centrada en ambos usuarios, permitiendo que el cuidador pueda actuar como soporte sin quitar autonomía a la persona neurodivergente.
+Asimismo, la posibilidad de solicitar ayuda o avisar a un contacto de confianza constituye una tarea de alta importancia, debido a que permite que el usuario comunique rápidamente que necesita acompañamiento sin tener que explicar verbalmente lo que está experimentando.
+
+La matriz también evidencia una diferencia importante entre ambos segmentos. Mientras que el cuidador necesita principalmente información y orientación para tomar decisiones y acompañar adecuadamente, la persona neurodivergente necesita herramientas simples para comunicar su estado, reducir estímulos y autorregularse.
+
+Esta diferencia refuerza la necesidad de que NUBI contemple una experiencia diferenciada para cada tipo de usuario, manteniendo una relación complementaria entre ambos: el cuidador funciona como una red de apoyo, mientras que la persona neurodivergente conserva autonomía para seleccionar y utilizar las herramientas que le permitan gestionar su estado emocional o sensorial.
 
 ### 2.3.3. User Journey Mapping
 
