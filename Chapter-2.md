@@ -328,6 +328,7 @@ La User Task Matrix permite identificar y priorizar las principales tareas que r
 La matriz evalúa cada tarea utilizando dos criterios: frecuencia e importancia. La frecuencia representa qué tan recurrentemente el usuario necesita realizar determinada acción, mientras que la importancia indica el impacto que tiene dicha tarea en el manejo adecuado de una situación de desregulación.
 
 **Se utilizan tres niveles de valoración:**
+
 - **High**: tarea recurrente o crítica para el manejo de la situación.
 - **Medium**: tarea que ocurre de manera ocasional, pero tiene relevancia dentro de la experiencia.
 - **Low**: tarea poco frecuente o secundaria dentro del contexto analizado.
@@ -436,19 +437,14 @@ La matriz evalúa cada tarea utilizando dos criterios: frecuencia e importancia.
 
 **Análisis del User Task Matrix**
 
-A partir de la matriz se identifica que las tareas de mayor prioridad para ambos segmentos se concentran en reconocer el inicio de una situación de desregulación, identificar los estímulos que generan sobrecarga, reducir dichos estímulos y ejecutar acciones que permitan recuperar la calma. Debido a que estas actividades se realizan en momentos de tensión, requieren una interacción rápida, sencilla y con una baja carga cognitiva.
+A partir de la matriz se identifica que las tareas de mayor prioridad para ambos segmentos son reconocer el inicio de una situación de desregulación, identificar los estímulos que generan sobrecarga, reducirlos y aplicar estrategias para recuperar la calma. Al realizarse en momentos de tensión, estas acciones requieren una interacción rápida, sencilla y con baja carga cognitiva.
 
-En el caso de los padres, familiares y cuidadores, las tareas de mayor frecuencia e importancia están relacionadas con reconocer cambios en el comportamiento del niño o adolescente, identificar posibles detonantes, adaptar el entorno y aplicar estrategias de acompañamiento. Asimismo, resulta especialmente importante acceder rápidamente a instrucciones que indiquen cómo actuar, ya que durante una crisis el cuidador puede experimentar incertidumbre, ansiedad o dificultad para determinar qué estrategia utilizar.
+En el caso de padres, familiares y cuidadores, las principales tareas se relacionan con reconocer cambios en el comportamiento, identificar detonantes, adaptar el entorno y aplicar estrategias de acompañamiento. Por ello, funciones como el **Modo SOS**, las guías visuales y las estrategias de contención deben ser accesibles con la menor cantidad de interacciones posible.
 
-Por esta razón, funciones como el Modo SOS, las guías visuales en pasos cortos y la presentación rápida de estrategias de contención representan oportunidades importantes para NUBI. El sistema debe permitir que el cuidador acceda a estas herramientas con la menor cantidad posible de interacciones.
+Para los niños y adolescentes neurodivergentes, las tareas más importantes son reconocer el malestar, reducir estímulos, autorregularse y comunicar sus necesidades. En este caso, pictogramas, botones rápidos, sonidos relajantes y ejercicios de respiración pueden facilitar la gestión de una situación de desregulación. También resulta importante contar con una opción para solicitar ayuda a un contacto de confianza.
 
-En el caso de los niños y adolescentes neurodivergentes, las tareas más importantes se relacionan con reconocer el malestar, alejarse de estímulos que generan sobrecarga, utilizar estrategias de autorregulación y comunicar sus necesidades cuando la comunicación verbal resulta difícil. Por ello, mecanismos visuales de bajo esfuerzo, pictogramas, botones rápidos, música o sonidos relajantes y ejercicios de respiración pueden facilitar estas acciones durante una situación de desregulación.
+Finalmente, la matriz evidencia que ambos segmentos tienen necesidades diferentes pero complementarias: el cuidador requiere orientación para acompañar y tomar decisiones, mientras que la persona neurodivergente necesita herramientas simples para comunicar su estado y autorregularse. Por ello, NUBI debe ofrecer una experiencia diferenciada que promueva tanto el apoyo como la autonomía.
 
-Asimismo, la posibilidad de solicitar ayuda o avisar a un contacto de confianza constituye una tarea de alta importancia, debido a que permite que el usuario comunique rápidamente que necesita acompañamiento sin tener que explicar verbalmente lo que está experimentando.
-
-La matriz también evidencia una diferencia importante entre ambos segmentos. Mientras que el cuidador necesita principalmente información y orientación para tomar decisiones y acompañar adecuadamente, la persona neurodivergente necesita herramientas simples para comunicar su estado, reducir estímulos y autorregularse.
-
-Esta diferencia refuerza la necesidad de que NUBI contemple una experiencia diferenciada para cada tipo de usuario, manteniendo una relación complementaria entre ambos: el cuidador funciona como una red de apoyo, mientras que la persona neurodivergente conserva autonomía para seleccionar y utilizar las herramientas que le permitan gestionar su estado emocional o sensorial.
 
 ### 2.3.3. User Journey Mapping
 
