@@ -327,7 +327,7 @@ La User Task Matrix permite identificar y priorizar las principales tareas que r
 
 La matriz evalúa cada tarea utilizando dos criterios: frecuencia e importancia. La frecuencia representa qué tan recurrentemente el usuario necesita realizar determinada acción, mientras que la importancia indica el impacto que tiene dicha tarea en el manejo adecuado de una situación de desregulación.
 
-*Se utilizan tres niveles de valoración:*
+**Se utilizan tres niveles de valoración:**
 - **High**: tarea recurrente o crítica para el manejo de la situación.
 - **Medium**: tarea que ocurre de manera ocasional, pero tiene relevancia dentro de la experiencia.
 - **Low**: tarea poco frecuente o secundaria dentro del contexto analizado.
