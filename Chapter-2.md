@@ -33,6 +33,7 @@ A continuación, se presenta la evaluación del **Competitive Analysis Landscape
 | **Análisis SWOT** | **Debilidades** | Startup en etapa inicial y requiere posicionamiento de marca en el mercado local. | Curva de aprendizaje elevada y costo accesible limitado. | No ofrece soporte directo en momentos de crisis agudas. | Se enfoca principalmente en comunicación y organización, no específicamente en la gestión de crisis. |
 | **Análisis SWOT** | **Oportunidades** | Alta demanda de herramientas de contención sensorial en Perú y LATAM y convenios B2B con colegios. | Expansión a mercados internacionales. | Integración con dispositivos vestibles (*wearables*). | Mayor demanda de herramientas digitales de apoyo para personas neurodivergentes. |
 | **Análisis SWOT** | **Amenazas** | Resistencia inicial a la adopción tecnológica en entornos escolares o familiares tradicionales. | Aparición de soluciones digitales gratuitas. | Competencia de apps de productividad convencionales. | Aparición de nuevas aplicaciones de CAA y soluciones digitales similares. |
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 Con el propósito de posicionar a **Nubi** frente a la oferta existente y capitalizar las oportunidades del mercado, se establecen las siguientes estrategias y tácticas:
@@ -463,6 +464,14 @@ El recorrido representa la experiencia del usuario neurodivergente desde la apar
 ![Journey Map Diana](images/Chapter-II/Journey-map-Diana.png)
 
 ### 2.3.4. Empathy Mapping
+
+**Segmento objetivo 1: Niños y adolescentes neurodivergentes**
+
+![empathymap1niñosadolescentesneurodivergentes.png](images/Chapter-II/empathymap1ni%C3%B1osadolescentesneurodivergentes.png)
+
+**Segmento 2: Madres, padres y cuidadores**
+
+![empathymap2padres, familiares y cuidadores.png](images/Chapter-II/empathymap2padres%2C%20familiares%20y%20cuidadores.png)
 
 ## 2.4. Big Picture Event Storming
 
