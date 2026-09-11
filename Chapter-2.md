@@ -454,13 +454,13 @@ El User Journey Mapping permite representar de manera visual la experiencia que 
 
 El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
 
-(AQUI VA ESA PARTE)
+![Journey Map Mateo](images/Chapter-II/Journey-map-Mateo.png)
 
 **Segmento 2 – Niño o adolescente neurodivergente**
 
 El recorrido representa la experiencia del usuario neurodivergente desde la aparición de un estímulo que genera malestar hasta la autorregulación, la solicitud de ayuda y la posterior recuperación.
 
-(AQUI VA ESA PARTE)
+![Journey Map Diana](images/Chapter-II/Journey-map-Diana.png)
 
 ### 2.3.4. Empathy Mapping
 
