@@ -450,13 +450,13 @@ Finalmente, la matriz evidencia que ambos segmentos tienen necesidades diferente
 
 El User Journey Mapping permite representar de manera visual la experiencia que atraviesan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. A través de este recorrido se identifican sus acciones, necesidades, emociones y principales dificultades, permitiendo reconocer oportunidades en las que NUBI puede brindar apoyo de manera rápida, sencilla y accesible.
 
-**Segmento 1 – Cuidador primario**
+**Segmento 1 – Padres, familiares y cuidadores (Mateo – Cuidador primario)**
 
 El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
 
 ![Journey Map Mateo](images/Chapter-II/Journey-map-Mateo.png)
 
-**Segmento 2 – Niño o adolescente neurodivergente**
+**Segmento 2 – Niños y adolescentes neurodivergentes (Diana – Adolescente neurodivergente)**
 
 El recorrido representa la experiencia del usuario neurodivergente desde la aparición de un estímulo que genera malestar hasta la autorregulación, la solicitud de ayuda y la posterior recuperación.
 
