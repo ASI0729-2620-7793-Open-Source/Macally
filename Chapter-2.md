@@ -448,19 +448,17 @@ Finalmente, la matriz evidencia que ambos segmentos tienen necesidades diferente
 
 ### 2.3.3. User Journey Mapping
 
-El User Journey Mapping permite representar la experiencia de los usuarios a lo largo de una situación de desregulación emocional o sensorial, identificando las acciones realizadas, emociones, necesidades y principales puntos de dolor.
-
-Debido a que NUBI está diseñado para atender tanto a la persona neurodivergente como a su cuidador, se desarrollaron dos recorridos independientes. El primero representa la experiencia del cuidador, mientras que el segundo representa la experiencia del usuario neurodivergente.
+El User Journey Mapping permite representar de manera visual la experiencia que atraviesan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. A través de este recorrido se identifican sus acciones, necesidades, emociones y principales dificultades, permitiendo reconocer oportunidades en las que NUBI puede brindar apoyo de manera rápida, sencilla y accesible.
 
 **Segmento 1 – Cuidador primario**
 
-El recorrido del cuidador comienza en una situación cotidiana y continúa hasta la recuperación posterior al episodio. El objetivo es identificar los momentos en los que existe mayor incertidumbre y en los que NUBI puede proporcionar apoyo.
+El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
 
 (AQUI VA ESA PARTE)
 
 **Segmento 2 – Niño o adolescente neurodivergente**
 
-El segundo journey representa la experiencia del usuario neurodivergente desde las primeras señales de incomodidad hasta la recuperación.
+El recorrido representa la experiencia del usuario neurodivergente desde la aparición de un estímulo que genera malestar hasta la autorregulación, la solicitud de ayuda y la posterior recuperación.
 
 (AQUI VA ESA PARTE)
 
