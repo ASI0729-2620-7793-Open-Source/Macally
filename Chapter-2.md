@@ -475,5 +475,11 @@ El recorrido representa la experiencia del usuario neurodivergente desde la apar
 
 ## 2.4. Big Picture Event Storming
 
+![event storming (3).png](../../Pictures/Screenshots/event%20storming%20%283%29.png)
+![event storming (4).png](../../Pictures/Screenshots/event%20storming%20%284%29.png)
+![event storming (5).png](../../Pictures/Screenshots/event%20storming%20%285%29.png)
+![event storming (1).png](../../Pictures/Screenshots/event%20storming%20%281%29.png)
+![event storming (2).png](../../Pictures/Screenshots/event%20storming%20%282%29.png)
+
 ## 2.5. Ubiquitous Language
 
