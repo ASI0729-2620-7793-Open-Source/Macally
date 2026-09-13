@@ -475,11 +475,88 @@ El recorrido representa la experiencia del usuario neurodivergente desde la apar
 
 ## 2.4. Big Picture Event Storming
 
-![event storming (3).png](../../Pictures/Screenshots/event%20storming%20%283%29.png)
-![event storming (4).png](../../Pictures/Screenshots/event%20storming%20%284%29.png)
-![event storming (5).png](../../Pictures/Screenshots/event%20storming%20%285%29.png)
-![event storming (1).png](../../Pictures/Screenshots/event%20storming%20%281%29.png)
-![event storming (2).png](../../Pictures/Screenshots/event%20storming%20%282%29.png)
+![event storming (3).png](images/Chapter-II/event%20storming%20(1).png)
+![event storming (4).png](images/Chapter-II/event%20storming%20(2).png)
+![event storming (5).png](images/Chapter-II/event%20storming%20(3).png)
+![event storming (1).png](images/Chapter-II/event%20storming%20(4).png)
+![event storming (2).png](images/Chapter-II/event%20storming%20(5).png)
 
 ## 2.5. Ubiquitous Language
 
+En esta sección se presenta el glosario de términos del dominio de NUBI, construido a partir de las entrevistas, el Big Picture Event Storming y las historias de usuario del Capítulo III. Solo incluye términos del negocio.
+
+### Términos generales del dominio
+
+| Término (EN) | Definición |
+| :--- | :--- |
+| **Neurodivergence** (Neurodivergencia) | Funcionamiento neurológico distinto al mayoritario, como el TEA, el TDAH/TDA o el TOC. |
+| **Neurodivergent User** (Usuario neurodivergente) | Niño o adolescente neurodivergente que usa NUBI para calmarse y comunicar lo que necesita. |
+| **Caregiver** (Cuidador) | Madre, padre o familiar que acompaña al usuario en su día a día. |
+| **Companion** (Acompañante) | Persona que está junto al usuario durante un episodio, sea cuidador, docente o familiar. |
+| **Health Professional** (Profesional de salud) | Psicólogo, psiquiatra o terapeuta que recibe los reportes de episodios del usuario. |
+| **Crisis Episode** (Episodio de crisis) | Momento en que el usuario pierde el control por una sobrecarga sensorial o emocional. |
+| **Sensory Overload** (Sobrecarga sensorial) | Exceso de estímulos del entorno que el usuario no logra procesar. |
+| **Emotional Dysregulation** (Desregulación emocional) | Pérdida temporal de la capacidad de manejar las propias emociones. |
+| **Sensory Trigger** (Detonante sensorial) | Estímulo que suele provocar una crisis, como ruidos fuertes, luces intensas, aglomeraciones o cambios de rutina. |
+| **Early Warning Sign** (Señal temprana) | Indicio de que un episodio de crisis está por comenzar. |
+| **Emotional Intensity Level** (Nivel de intensidad emocional) | Escala de cuatro niveles —Calma, Inquieto, Alterado y Crisis— con la que el usuario indica cómo se siente. |
+| **Safe Space** (Espacio seguro) | Lugar tranquilo y con pocos estímulos al que el usuario se retira para calmarse. |
+| **De-escalation** (Desescalada) | Reducción progresiva de la intensidad de una crisis hasta recuperar la calma. |
+| **Cognitive Load** (Carga cognitiva) | Esfuerzo mental que exige una acción; durante una crisis debe ser mínimo. |
+
+### Perfil y Personalización
+
+| Término (EN) | Definición |
+| :--- | :--- |
+| **Account** (Cuenta) | Acceso a NUBI de un cuidador, docente o institución. |
+| **Neurodivergent Profile** (Perfil del usuario neurodivergente) | Ficha de un niño o adolescente dentro de una cuenta; una cuenta puede tener varios perfiles a cargo. |
+| **Sensory Profile** (Perfil sensorial) | Sensibilidades y preferencias del usuario que adaptan NUBI a cada persona. |
+| **Declared Diagnosis** (Diagnóstico declarado) | Condición informada por el cuidador; NUBI no la valida ni la diagnostica. |
+| **Communicative Need** (Necesidad comunicativa) | Forma en que el usuario prefiere expresarse: pictogramas, texto o voz. |
+| **Trusted Contact** (Contacto de confianza) | Persona elegida para recibir las alertas del usuario cuando necesita ayuda. |
+| **Freemium Plan** (Plan freemium) | Plan gratuito para familias con las funciones básicas de NUBI. |
+| **Institutional Plan** (Plan institucional) | Suscripción para colegios y centros de terapia que gestionan varios perfiles. |
+| **Institution** (Institución) | Colegio o centro de terapia que administra perfiles de estudiantes y los asigna a sus docentes. |
+
+### Gestión de Crisis (Modo SOS)
+
+| Término (EN) | Definición |
+| :--- | :--- |
+| **SOS Mode** (Modo SOS) | Modo que guía al cuidador paso a paso durante una crisis. |
+| **Action Guide** (Guía de actuación) | Secuencia de pasos para contener una crisis, adaptada al perfil del usuario. |
+| **Containment Step** (Paso de contención) | Cada acción concreta de la guía de actuación. |
+| **Alternative Technique** (Técnica alternativa) | Estrategia que se sugiere cuando un paso de la guía no funciona. |
+| **Recommendation** (Recomendación) | Sugerencia de actuación basada en el perfil y en los episodios anteriores del usuario. |
+
+### Autorregulación
+
+| Término (EN) | Definición |
+| :--- | :--- |
+| **Self-Regulation** (Autorregulación) | Capacidad del usuario de recuperar la calma por sí mismo. |
+| **Calm Session** (Sesión de calma) | Periodo en que el usuario usa recursos de calma para regularse. |
+| **Calming Resource** (Recurso de calma) | Herramienta para calmarse, como la respiración guiada, un sonido relajante o el lienzo de dibujo. |
+| **Guided Breathing** (Respiración guiada) | Ejercicio que marca el ritmo de la respiración para bajar la ansiedad. |
+| **Free Drawing Canvas** (Lienzo de dibujo libre) | Espacio para dibujar o garabatear sin reglas como forma de descarga. |
+| **Calm Timer** (Temporizador de calma) | Tiempo definido para una sesión de calma. |
+| **Low-Stimulation Mode** (Modo de baja estimulación) | Estado de la aplicación que reduce al mínimo colores, sonidos y elementos en pantalla. |
+
+### Comunicación Asistida (CAA)
+
+| Término (EN) | Definición |
+| :--- | :--- |
+| **AAC — Augmentative and Alternative Communication** (Comunicación Aumentativa y Alternativa) | Formas de comunicarse sin depender del habla, como pictogramas o texto. |
+| **Communication Board** (Tablero CAA) | Tablero de pictogramas con el que el usuario expresa lo que necesita. |
+| **Pictogram** (Pictograma) | Imagen que representa una necesidad, emoción o acción. |
+| **Quick Access** (Acceso rápido) | Pictogramas más usados, visibles sin tener que buscarlos. |
+| **Voice Output** (Salida de voz) | Lectura en voz alta de la frase armada con pictogramas. |
+| **Mood Check-in** (Check-in emocional) | Registro del estado de ánimo del usuario usando el nivel de intensidad emocional. |
+
+### Red de Apoyo y Seguimiento
+
+| Término (EN) | Definición |
+| :--- | :--- |
+| **Support Network** (Red de apoyo) | Contactos de confianza, cuidadores y profesionales vinculados a un usuario. |
+| **Help Request** (Solicitud de ayuda) | Aviso que el usuario envía a su red de apoyo cuando necesita asistencia. |
+| **Episode Record** (Registro de episodio) | Anotación de un episodio con su duración, detonantes y estrategias usadas. |
+| **Effective Strategy** (Estrategia efectiva) | Estrategia que el cuidador marca como útil después de un episodio. |
+| **Episode Report** (Reporte de episodio) | Resumen de episodios que el cuidador comparte con el profesional de salud. |
