@@ -103,3 +103,92 @@ A partir de estos impactos se definieron los Deliverables que NUBI debe ofrecer 
 (AQUI VA)
 
 ## 3.3. Product Backlog
+
+A continuación se presenta el Product Backlog de Nubi. Para su elaboración y gestión se utilizó **Trello**, organizando las User Stories, Technical Stories y Landing Page Stories definidas en la sección 3.1 en una única lista priorizada llamada "Product Backlog", en la que cada tarjeta corresponde a una historia con su identificador, título y los Story Points asignados como etiqueta. El orden de las tarjetas dentro del tablero refleja la prioridad de desarrollo definida por el equipo.
+
+Para estimar el esfuerzo de cada historia se utilizó la técnica de Planning Poker con la escala de Fibonacci (1, 2, 3, 5, 8), expresada en Story Points. La interpretación de la escala es la siguiente:
+
+- **1:** Historias triviales, sin lógica de negocio relevante ni dependencias con otros módulos.
+- **2:** Historias simples, que implican una única operación CRUD o de visualización de información.
+- **3:** Historias de complejidad media, que combinan validaciones, manejo de estados o integración con otro módulo.
+- **5:** Historias complejas, que requieren lógica de personalización, notificaciones entre roles (cuidador y usuario neurodivergente) o múltiples validaciones encadenadas.
+- **8:** Historias de alta complejidad, que involucran el procesamiento de datos históricos para generar resultados dinámicos, como la generación de recomendaciones.
+
+La priorización se definió considerando el alcance del MVP planteado en el Lean UX Canvas (Capítulo I): primero el perfil básico del usuario, seguido del Modo SOS y la interfaz de autorregulación, luego el tablero de Comunicación Aumentativa y Alternativa (CAA) y, finalmente, la red de apoyo y seguimiento. Las Technical Stories del API RESTful se ubican al final del backlog, dado que brindan soporte transversal a las funcionalidades priorizadas previamente, mientras que las Landing Page Stories encabezan la lista al ser el primer punto de contacto del visitante con la propuesta de valor de Nubi.
+
+
+<table>
+  <thead>
+    <tr>
+      <th># Orden</th>
+      <th>User Story Id</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Story Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- BLOQUE 1: LANDING PAGE -->
+    <tr><td>1</td><td>LS-01</td><td>Conocer la personalización de perfiles en la landing page</td><td>Como visitante, quiero conocer cómo Nubi permite personalizar el perfil del niño o adolescente neurodivergente, para evaluar si la plataforma se ajusta a sus necesidades antes de registrarme.</td><td>2</td></tr>
+    <tr><td>2</td><td>LS-02</td><td>Conocer el Modo SOS en la landing page</td><td>Como visitante, quiero conocer cómo funciona el Modo SOS de Nubi, para entender el soporte que recibiré durante un episodio de crisis.</td><td>2</td></tr>
+    <tr><td>3</td><td>LS-03</td><td>Conocer las herramientas de autorregulación en la landing page</td><td>Como visitante, quiero conocer las herramientas de autorregulación que ofrece Nubi, para evaluar si ayudarán al usuario neurodivergente a recuperar la calma.</td><td>2</td></tr>
+    <tr><td>4</td><td>LS-04</td><td>Conocer el tablero CAA en la landing page</td><td>Como visitante, quiero conocer el tablero de Comunicación Aumentativa y Alternativa de Nubi, para entender cómo facilita la comunicación del usuario neurodivergente.</td><td>2</td></tr>
+    <tr><td>5</td><td>LS-05</td><td>Conocer la red de apoyo y seguimiento en la landing page</td><td>Como visitante, quiero conocer cómo Nubi acompaña y da seguimiento a los episodios de crisis, para valorar el respaldo que tendré como cuidador.</td><td>2</td></tr>
+    <!-- BLOQUE 2: EPIC-01 PERFIL Y PERSONALIZACIÓN -->
+    <tr><td>6</td><td>US-01</td><td>Crear perfil del usuario neurodivergente</td><td>Como cuidador, quiero crear el perfil del niño o adolescente neurodivergente a mi cargo, para comenzar a personalizar las herramientas de apoyo de Nubi según sus necesidades.</td><td>3</td></tr>
+    <tr><td>7</td><td>US-02</td><td>Editar perfil del usuario neurodivergente</td><td>Como cuidador, quiero editar el perfil del usuario a mi cargo, para mantener su información actualizada.</td><td>2</td></tr>
+    <tr><td>8</td><td>US-03</td><td>Registrar sensibilidades sensoriales</td><td>Como cuidador, quiero registrar las sensibilidades sensoriales del usuario, para que Nubi personalice los estímulos ofrecidos en autorregulación y en el Modo SOS.</td><td>2</td></tr>
+    <tr><td>9</td><td>US-04</td><td>Registrar diagnóstico y condición</td><td>Como cuidador, quiero registrar el diagnóstico y la condición del usuario, para que las recomendaciones y guías se ajusten a su perfil.</td><td>2</td></tr>
+    <tr><td>10</td><td>US-05</td><td>Subir foto de perfil del usuario</td><td>Como cuidador, quiero asociar una fotografía al perfil del usuario, para identificarlo fácilmente al alternar entre perfiles.</td><td>3</td></tr>
+    <tr><td>11</td><td>US-06</td><td>Asociar múltiples cuidadores a un perfil</td><td>Como cuidador principal, quiero invitar a otros cuidadores al perfil del usuario, para compartir el acompañamiento con la familia o red cercana.</td><td>3</td></tr>
+    <!-- BLOQUE 3: EPIC-02 GESTIÓN DE CRISIS (MODO SOS) -->
+    <tr><td>12</td><td>US-07</td><td>Activar Modo SOS</td><td>Como cuidador, quiero activar el Modo SOS al inicio de una crisis, para recibir orientación inmediata sobre cómo actuar.</td><td>2</td></tr>
+    <tr><td>13</td><td>US-08</td><td>Visualizar guía paso a paso del Modo SOS</td><td>Como cuidador, quiero visualizar los pasos de actuación de manera secuencial, para no sentirme abrumado durante la crisis.</td><td>3</td></tr>
+    <tr><td>14</td><td>US-09</td><td>Personalizar guía SOS según perfil del usuario</td><td>Como cuidador, quiero que la guía del Modo SOS se adapte a las sensibilidades registradas del usuario, para que la orientación recibida sea más efectiva.</td><td>5</td></tr>
+    <tr><td>15</td><td>US-10</td><td>Marcar paso de la guía como completado</td><td>Como cuidador, quiero marcar cada paso de la guía como completado, para llevar control de las acciones ya realizadas durante la crisis.</td><td>2</td></tr>
+    <tr><td>16</td><td>US-11</td><td>Finalizar episodio desde el Modo SOS</td><td>Como cuidador, quiero finalizar el episodio al terminar la crisis, para que quede registrado correctamente en el historial.</td><td>3</td></tr>
+    <tr><td>17</td><td>US-12</td><td>Acceder al Modo SOS desde pantalla principal</td><td>Como cuidador, quiero acceder al Modo SOS de forma inmediata desde cualquier parte de la aplicación, para reaccionar rápidamente ante una crisis.</td><td>2</td></tr>
+    <!-- BLOQUE 4: EPIC-03 AUTORREGULACIÓN -->
+    <tr><td>18</td><td>US-13</td><td>Seleccionar estímulo visual de autorregulación</td><td>Como usuario neurodivergente, quiero elegir un estímulo visual, para ayudarme a recuperar la calma durante una sobrecarga sensorial.</td><td>3</td></tr>
+    <tr><td>19</td><td>US-14</td><td>Seleccionar estímulo auditivo de autorregulación</td><td>Como usuario neurodivergente, quiero elegir un sonido relajante, para ayudarme a regular mis emociones.</td><td>3</td></tr>
+    <tr><td>20</td><td>US-15</td><td>Ajustar intensidad del estímulo</td><td>Como usuario neurodivergente, quiero ajustar la intensidad de los estímulos, para adaptarlos a lo que necesito en cada momento.</td><td>2</td></tr>
+    <tr><td>21</td><td>US-16</td><td>Guardar estímulos favoritos</td><td>Como usuario neurodivergente, quiero guardar mis estímulos favoritos, para acceder a ellos más rápido en futuras sesiones.</td><td>2</td></tr>
+    <tr><td>22</td><td>US-17</td><td>Activar modo de baja estimulación</td><td>Como usuario neurodivergente, quiero activar un modo con menos elementos visuales y sonoros, para reducir la sobrecarga sensorial cuando lo necesito.</td><td>3</td></tr>
+    <tr><td>23</td><td>US-18</td><td>Usar temporizador de calma</td><td>Como usuario neurodivergente, quiero usar un temporizador mientras me autorregulo, para tener noción del tiempo que llevo en la actividad sin generarme estrés.</td><td>3</td></tr>
+    <!-- BLOQUE 5: EPIC-04 COMUNICACIÓN ASISTIDA (CAA) -->
+    <tr><td>24</td><td>US-19</td><td>Visualizar tablero de pictogramas</td><td>Como usuario neurodivergente, quiero visualizar un tablero de pictogramas, para comunicar lo que necesito sin depender del habla.</td><td>3</td></tr>
+    <tr><td>25</td><td>US-20</td><td>Seleccionar pictograma para comunicar una necesidad</td><td>Como usuario neurodivergente, quiero seleccionar un pictograma, para comunicar una necesidad a mi cuidador.</td><td>5</td></tr>
+    <tr><td>26</td><td>US-21</td><td>Personalizar pictogramas favoritos</td><td>Como cuidador, quiero marcar los pictogramas más usados como favoritos, para que el usuario los encuentre con mayor facilidad.</td><td>2</td></tr>
+    <tr><td>27</td><td>US-22</td><td>Agregar pictograma personalizado</td><td>Como cuidador, quiero agregar un pictograma personalizado con una imagen propia, para representar objetos o situaciones específicas del usuario.</td><td>3</td></tr>
+    <tr><td>28</td><td>US-23</td><td>Organizar pictogramas por categoría</td><td>Como cuidador, quiero organizar los pictogramas en categorías, para que el usuario navegue el tablero de forma más intuitiva.</td><td>2</td></tr>
+    <tr><td>29</td><td>US-24</td><td>Reproducir audio asociado al pictograma</td><td>Como usuario neurodivergente, quiero que se reproduzca un audio al seleccionar un pictograma, para reforzar el mensaje que estoy comunicando.</td><td>2</td></tr>
+    <!-- BLOQUE 6: EPIC-05 RED DE APOYO Y SEGUIMIENTO -->
+    <tr><td>30</td><td>US-25</td><td>Enviar solicitud de ayuda al cuidador</td><td>Como usuario neurodivergente, quiero enviar una solicitud de ayuda a mi cuidador, para recibir apoyo durante una situación de crisis.</td><td>3</td></tr>
+    <tr><td>31</td><td>US-26</td><td>Recibir notificación de solicitud de ayuda</td><td>Como cuidador, quiero recibir una notificación cuando el usuario a mi cargo solicita ayuda, para responder de forma oportuna.</td><td>3</td></tr>
+    <tr><td>32</td><td>US-27</td><td>Confirmar recepción de la solicitud</td><td>Como cuidador, quiero confirmar que recibí la solicitud de ayuda, para que el usuario sepa que voy a asistirlo.</td><td>2</td></tr>
+    <tr><td>33</td><td>US-28</td><td>Cancelar solicitud de ayuda</td><td>Como usuario neurodivergente, quiero cancelar una solicitud de ayuda enviada, para evitar una notificación innecesaria si ya no la necesito.</td><td>2</td></tr>
+    <tr><td>34</td><td>US-29</td><td>Consultar historial de solicitudes de ayuda</td><td>Como cuidador, quiero consultar el historial de solicitudes de ayuda, para dar seguimiento a la frecuencia con la que el usuario requiere apoyo.</td><td>2</td></tr>
+    <tr><td>35</td><td>US-30</td><td>Visualizar resumen de episodios recientes</td><td>Como cuidador, quiero visualizar un resumen de los episodios recientes del usuario, para conocer su situación sin revisar el historial completo.</td><td>3</td></tr>
+    <tr><td>36</td><td>US-31</td><td>Visualizar estado actual del usuario</td><td>Como cuidador, quiero visualizar el estado actual del usuario a mi cargo, para tomar decisiones oportunas sobre su acompañamiento.</td><td>2</td></tr>
+    <tr><td>37</td><td>US-32</td><td>Acceder a módulos mediante accesos directos</td><td>Como cuidador, quiero acceder a los módulos principales de la aplicación desde el panel de inicio, para navegar de forma más eficiente.</td><td>1</td></tr>
+    <tr><td>38</td><td>US-33</td><td>Visualizar alertas recientes en el home</td><td>Como cuidador, quiero visualizar las alertas recientes relacionadas con el usuario, para estar al tanto de eventos que requieren mi atención.</td><td>2</td></tr>
+    <tr><td>39</td><td>US-34</td><td>Visualizar recomendaciones personalizadas en el home</td><td>Como cuidador, quiero visualizar recomendaciones personalizadas en el panel de inicio, para conocer sugerencias relevantes sin buscar en otras secciones.</td><td>2</td></tr>
+    <tr><td>40</td><td>US-35</td><td>Cambiar entre perfiles de usuarios a cargo</td><td>Como cuidador, quiero cambiar entre los perfiles de los usuarios a mi cargo, para gestionar a más de un usuario neurodivergente desde la misma cuenta.</td><td>2</td></tr>
+    <tr><td>41</td><td>US-36</td><td>Registrar episodio automáticamente al usar el Modo SOS</td><td>Como cuidador, quiero que el sistema registre automáticamente un episodio al finalizar el Modo SOS, para no tener que documentarlo manualmente.</td><td>3</td></tr>
+    <tr><td>42</td><td>US-37</td><td>Visualizar historial de episodios</td><td>Como cuidador, quiero visualizar el historial de episodios del usuario, para identificar patrones y mejorar el acompañamiento.</td><td>2</td></tr>
+    <tr><td>43</td><td>US-38</td><td>Filtrar historial de episodios por fecha</td><td>Como cuidador, quiero filtrar el historial de episodios por un rango de fechas, para consultar un periodo específico.</td><td>3</td></tr>
+    <tr><td>44</td><td>US-39</td><td>Ver detalle de un episodio registrado</td><td>Como cuidador, quiero ver el detalle de un episodio registrado, para revisar la información completa de lo ocurrido.</td><td>2</td></tr>
+    <tr><td>45</td><td>US-40</td><td>Agregar notas manuales a un episodio</td><td>Como cuidador, quiero agregar notas manuales a un episodio registrado, para complementar la información con observaciones propias.</td><td>2</td></tr>
+    <tr><td>46</td><td>US-41</td><td>Generar recomendaciones según el perfil del usuario</td><td>Como cuidador, quiero recibir recomendaciones generadas según el perfil del usuario, para brindar un acompañamiento más adecuado.</td><td>8</td></tr>
+    <tr><td>47</td><td>US-42</td><td>Visualizar guía de actuación recomendada</td><td>Como cuidador, quiero visualizar el detalle de una guía de actuación recomendada, para conocer las acciones sugeridas.</td><td>2</td></tr>
+    <tr><td>48</td><td>US-43</td><td>Calificar la utilidad de una recomendación</td><td>Como cuidador, quiero calificar la utilidad de una recomendación recibida, para ayudar a mejorar las futuras sugerencias.</td><td>2</td></tr>
+    <tr><td>49</td><td>US-44</td><td>Guardar recomendación como favorita</td><td>Como cuidador, quiero guardar una recomendación como favorita, para consultarla rápidamente en el futuro.</td><td>1</td></tr>
+    <tr><td>50</td><td>US-45</td><td>Actualizar recomendaciones tras nuevos episodios</td><td>Como cuidador, quiero que las recomendaciones se actualicen tras el registro de nuevos episodios, para que reflejen la situación más reciente del usuario.</td><td>5</td></tr>
+    <!-- BLOQUE 7: TECHNICAL STORIES (API RESTFUL) -->
+    <tr><td>51</td><td>TS-01</td><td>Exponer API RESTful de gestión de perfiles</td><td>Como Developer, quiero exponer un servicio RESTful para gestionar perfiles de usuarios neurodivergentes, para que las aplicaciones cliente puedan crear, consultar, actualizar y eliminar perfiles de forma segura.</td><td>5</td></tr>
+    <tr><td>52</td><td>TS-02</td><td>Exponer API RESTful del Modo SOS y episodios</td><td>Como Developer, quiero exponer un servicio RESTful para gestionar la activación del Modo SOS y el ciclo de vida de los episodios, para que las aplicaciones cliente puedan iniciar, actualizar y finalizar episodios de crisis.</td><td>5</td></tr>
+    <tr><td>53</td><td>TS-03</td><td>Exponer API RESTful de estímulos de autorregulación</td><td>Como Developer, quiero exponer un servicio RESTful para consultar y gestionar los estímulos de autorregulación, para que las aplicaciones cliente puedan listar, seleccionar y marcar estímulos como favoritos.</td><td>5</td></tr>
+    <tr><td>54</td><td>TS-04</td><td>Exponer API RESTful del tablero CAA</td><td>Como Developer, quiero exponer un servicio RESTful para gestionar el tablero de Comunicación Aumentativa y Alternativa, para que las aplicaciones cliente puedan listar, crear y seleccionar pictogramas.</td><td>5</td></tr>
+    <tr><td>55</td><td>TS-05</td><td>Exponer API RESTful de solicitudes de ayuda y recomendaciones</td><td>Como Developer, quiero exponer un servicio RESTful para gestionar solicitudes de ayuda y recomendaciones personalizadas, para que las aplicaciones cliente puedan enviar solicitudes, consultar su estado y obtener recomendaciones.</td><td>5</td></tr>
+  </tbody>
+</table>
