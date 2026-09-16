@@ -297,4 +297,4 @@ Personas responsables del acompañamiento cotidiano de niños y adolescentes neu
 
 - La evidencia científica también muestra la importancia de proporcionar herramientas de apoyo a los padres y cuidadores. Un ensayo clínico aleatorizado realizado con 180 niños con TEA encontró que los programas de capacitación para padres produjeron mejoras en la percepción de competencia de los cuidadores (ES = 0.34) y una reducción de la carga del cuidador (ES = 0.50), en comparación con una intervención basada únicamente en psicoeducación.
 
-- Estos resultados respaldan la necesidad de brindar a las familias herramientas que no solo apoyen al niño o adolescente, sino que también permitan a los cuidadores sentirse más preparados para actuar ante situaciones que 
+- Estos resultados respaldan la necesidad de brindar a las familias herramientas que no solo apoyen al niño o adolescente, sino que también permitan a los cuidadores sentirse más preparados para actuar ante situaciones que antes percibían con temor o incertidumbre durante los episodios de crisis.
