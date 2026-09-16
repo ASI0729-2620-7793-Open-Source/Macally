@@ -2,155 +2,500 @@
 
 ## 4.1. Style Guidelines
 
-En esta sección, el equipo de desarrollo sienta las bases para contar con un repositorio centralizado, unificado y organizado de uso común para todos los miembros del proyecto. Este repositorio incluye *assets*, tipografías, componentes UI, reglas de espaciado e iconografía con el objetivo prioritario de mantener una presentación visual consistente, intuitiva y accesible. Para **Nubi**, las decisiones del sistema de diseño responden estrictamente a la necesidad de reducir la carga cognitiva de niños y adolescentes neurodivergentes (TEA, TDAH, TOC) durante estados de sobreestimulación sensorial o crisis emocional, brindando simultáneamente a padres, cuidadores y educadores una herramienta clara, predecible y de respuesta rápida en tiempo real.
-
+En esta sección, el equipo sienta las bases para contar con un repositorio centralizado, unificado y organizado de uso común para todo el equipo, que incluye *assets*, tipografías, componentes UI, reglas de espaciado e iconografía, con el fin de mantener una presentación visual consistente, intuitiva y enfocada. Para **Nubi**, el sistema de diseño tomó como referencia directa el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*: se extrajeron sus valores reales de color (verde-azulado oscuro, crema, melocotón y los tres acentos cálidos) y su tipografía de titulares, reemplazando la propuesta cromática desaturada de una versión anterior del sistema. El tono de comunicación de Nubi se define en cuatro dimensiones: **cercano** (más que formal), **sereno** (más que eufórico), **claro** (más que técnico) y **respetuoso** (más que irreverente), de modo que tanto el niño o adolescente neurodivergente como su cuidador perciban una marca cálida y confiable, sin caer en un tono infantil ni en una estética clínica y fría.
 
 ### 4.1.1. General Style Guidelines
 
-En esta sección se detallan las decisiones visuales y conceptuales generales de la plataforma Nubi, fundamentadas en el diseño inclusivo, la previsibilidad y la reducción del estrés sensorial.
+En esta sección se explican las decisiones y referencias visuales sobre Branding, Typography, Colors y Spacing que sostienen la identidad de Nubi.
 
-#### 4.1.1.1. Tipografía
+**Paleta de Colores**
 
-<p align="center">
-  <img src="./images/Chapter-4/Tipografía.png" alt="Tipografía" width="700"><br>
-  <em>Nota: Selección tipográfica de Quicksand e Inter, escala jerárquica y directrices de legibilidad para la plataforma Nubi.</em>
-</p>
+- **Colores Primarios**
 
-La selección tipográfica de Nubi responde a la necesidad de ofrecer un entorno visual amable y highly legible, minimizando el esfuerzo de procesamiento visual tanto para los usuarios neurodivergentes como para sus cuidadores:
+<table>
+  <thead>
+    <tr>
+      <th><strong>Código HEX</strong></th>
+      <th><strong>Color</strong></th>
+      <th><strong>Descripción</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>#00373E</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#00373E;"></div></td>
+      <td><strong>Deep Teal:</strong> verde-azulado muy oscuro que funciona como color principal de marca: tipografía de encabezados, navegación activa y botones de llamada a la acción (CTA), incluyendo el acceso directo al Modo SOS. Al ser un tono oscuro, admite texto blanco con contraste alto sin necesitar variantes adicionales.</td>
+    </tr>
+    <tr>
+      <td><strong>#EFC01D</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#EFC01D;"></div></td>
+      <td><strong>Golden Yellow:</strong> tono dorado cálido usado en acentos secundarios, badges de plan destacado e íconos de autorregulación y perfil, aportando energía sin competir con el Deep Teal.</td>
+    </tr>
+    <tr>
+      <td><strong>#F7F6F4</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#F7F6F4;border:1px solid #E4E1DB;"></div></td>
+      <td><strong>Cream:</strong> blanco cálido que actúa como lienzo base de toda la aplicación, reduciendo el deslumbramiento de un blanco puro y aportando una sensación acogedora y ordenada.</td>
+    </tr>
+    <tr>
+      <td><strong>#F9E6D0</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#F9E6D0;border:1px solid #E4E1DB;"></div></td>
+      <td><strong>Peach:</strong> melocotón suave de referencia para fondos de sección alternos (hero, tarjetas destacadas), disponible en la paleta para futuras variaciones del layout.</td>
+    </tr>
+  </tbody>
+</table>
 
-* **Quicksand (Titulares):** 
-  Al ser una tipografía de trazos redondeados y formas suaves, se emplea en los encabezados (H1 a H3), nombres de herramientas y botones de acción principal (CTA). Su carácter cálido transmite serenidad y cercanía sin resultar infantil, eliminando esquinas o trazos agresivos que puedan generar tensión visual en momentos de ansiedad.
-* **Inter (Texto de Cuerpo e Interfaz):** 
-  Familia Sans-Serif diseñada para ofrecer la máxima legibilidad en interfaces digitales y pantallas de formato pequeño. Se utiliza en párrafos, etiquetas de campos, mensajes del sistema y entradas de datos. Su neutralidad y clara separación de caracteres permiten una lectura rápida en situaciones de sobreestimulación o cansancio cognitivo.
-* **Escala Tipográfica y Jerarquía Visual:** 
-  Se establece una jerarquía estricta que guía la atención del usuario de manera ordenada. Los tamaños van desde la variante *Display* (42px) para mensajes de contención emocional de alto impacto, pasando por los niveles de titulares *H1* (32px), *H2* (24px) y *H3* (18px) para la estructuración de módulos, hasta las variantes *Body Grande* (16px), *Body* (14px) y *Caption* (12px) para la lectura fluida de contenidos y metadatos.
-* **Reglas de Legibilidad y Accesibilidad:**
-  Para asegurar la lectura en cualquier condición, se exige un interlineado (*line-height*) mínimo de 1.4× en textos continuos, un ancho de renglón limitado a un máximo de 70 caracteres para evitar el extravío de la vista, y la prohibición de usar texto en mayúsculas sostenidas (*versalitas*) en las etiquetas. Asimismo, ningún estado de la interfaz se comunica exclusivamente a través de la tipografía o el color.
+- **Colores Secundarios**
 
+<table>
+  <thead>
+    <tr>
+      <th><strong>Código HEX</strong></th>
+      <th><strong>Color</strong></th>
+      <th><strong>Descripción</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>#4CCBBB</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#4CCBBB;"></div></td>
+      <td><strong>Mint Teal:</strong> tono fresco asociado a la Comunicación Asistida (CAA) y a los enlaces informativos. Transmite claridad y apertura al diálogo.</td>
+    </tr>
+    <tr>
+      <td><strong>#F39CAC</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#F39CAC;"></div></td>
+      <td><strong>Blossom Pink:</strong> acento afectivo reservado para la Red de Apoyo y Seguimiento: recomendaciones, notas del cuidador y mensajes de acompañamiento.</td>
+    </tr>
+    <tr>
+      <td><strong>#E4E1DB</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#E4E1DB;"></div></td>
+      <td><strong>Warm Grey:</strong> gris cálido destinado a bordes, divisores y tarjetas en reposo, estructurando la interfaz sin distraer al usuario.</td>
+    </tr>
+    <tr>
+      <td><strong>#8A8A8A</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#8A8A8A;"></div></td>
+      <td><strong>Taupe:</strong> gris medio usado en texto secundario, metadatos y marcas de tiempo del historial de episodios.</td>
+    </tr>
+    <tr>
+      <td><strong>#E0605B</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#E0605B;"></div></td>
+      <td><strong>Coral Red (Error / Alerta):</strong> color de alta intensidad reservado exclusivamente para mensajes de error, campos inválidos o situaciones que requieren atención inmediata durante una crisis.</td>
+    </tr>
+    <tr>
+      <td><strong>#4FAE7B</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#4FAE7B;"></div></td>
+      <td><strong>Leaf Green (Éxito):</strong> tono orgánico usado en confirmaciones de guardado, episodios cerrados correctamente y logros de autorregulación.</td>
+    </tr>
+    <tr>
+      <td><strong>#EFC01D</strong></td>
+      <td><div style="width:60px;height:40px;border-radius:6px;background:#EFC01D;"></div></td>
+      <td><strong>Golden Yellow (Aviso):</strong> el mismo dorado de acento se reutiliza como color de aviso en recordatorios no urgentes, como perfiles incompletos o sugerencias pendientes de revisar.</td>
+    </tr>
+  </tbody>
+</table>
 
-#### 4.1.1.2. Colores
+Todas las combinaciones de texto sobre fondo respetan un contraste mínimo de 4.5:1 (Nivel AA de WCAG). Al ser Deep Teal un tono muy oscuro, admite texto blanco directamente en botones y bloques sólidos sin necesitar una variante adicional; en cambio, un texto blanco sobre Golden Yellow, Mint Teal o Blossom Pink no alcanza ese mínimo, por lo que los botones y etiquetas construidos sobre estos tres acentos usan texto en **Deep Teal** en lugar de blanco.
 
-<p align="center">
-  <img src="./images/Chapter-4/Colores.png" alt="Colores" width="700"><br>
-  <em>Nota: Paleta cromática desaturada, escalas tonales y definición semántica de color en Nubi.</em>
-</p>
+---
 
-La paleta de colores de Nubi se ha configurado utilizando tonos desaturados e inspirados en elementos de la naturaleza, evitando tonalidades neón o de alta saturación que puedan desencadenar hiperactividad o saturación sensorial:
+**Fonts**
 
-* **Paleta Principal y de Superficies:**
-  * **Charcoal Brown (`#37392E`):** Tono oscuro de alto contraste para la tipografía principal y la iconografía, garantizando una lectura cómoda sobre fondos claros sin el impacto agresivo del negro puro.
-  * **Blue Slate (`#19647E`):** Tono primario que evoca calma y estabilidad; se asigna a acciones principales, enlaces y contenedores estructurados.
-  * **Teal (`#28AFB0`):** Color de acento orientado a transmitir progreso, dinamismo controlado e indicadores de ejercicios de autorregulación y respiración.
-  * **Dust Grey (`#DDCECD`):** Utilizado en bordes, divisores sutiles, tarjetas en reposo y estados inactivos.
-  * **Parchment (`#EEE5E5`):** Actúa como el lienzo o fondo base de toda la aplicación, reemplazando el blanco puro para reducir el deslumbramiento y la fatiga ocular.
-* **Escalas Tonales:** 
-  Tanto *Blue Slate* como *Teal* disponen de graduaciones de seis niveles para gestionar capas de profundidad, estados al pasar el cursor (*hover*) y selecciones de tarjetas.
-* **Colores Semánticos y Retroalimentación:** 
-  Se definen cuatro tonos específicos para la retroalimentación del sistema: verde para **Éxito** (confirmaciones de guardado o logros), amarillo cálido para **Aviso** (recordatorios no urgentes), terracota desaturado para **Error / Alerta** (situaciones que requieren atención médica, crisis o correcciones) y azul para **Información** (consejos pedagógicos para cuidadores).
-* **Garantía de Contraste WCAG:** 
-  Todas las combinaciones del sistema garantizan un contraste mínimo de 4.5:1 (Nivel AA de las pautas WCAG), asegurando que personas con baja visión o daltónicas puedan identificar cada elemento con claridad.
+Adoptamos la combinación tipográfica del template de referencia: **Bricolage Grotesque** para titulares e **Inter** para texto de cuerpo, equilibrando el carácter expresivo y contemporáneo de la marca con la legibilidad que necesitan niños, adolescentes neurodivergentes y sus cuidadores.
 
+- **Bricolage Grotesque (Titulares):** tipografía grotesca de proporciones amplias y formas geométricas que se usa en encabezados (Display a H3), nombres de herramientas y botones de acción principal. Su carácter contemporáneo y seguro refuerza la identidad de marca heredada del template Solus, sin resultar infantil ni clínico.
+- **Inter (Texto de cuerpo e interfaz):** familia Sans-Serif de alta legibilidad usada en párrafos, etiquetas de campos, mensajes del sistema y entradas de datos, garantizando lectura fluida incluso en momentos de sobreestimulación.
+- **Escala tipográfica:** Display (42px), H1 (32px), H2 (24px), H3 (18px), Body Grande (16px), Body (14px) y Caption (12px), manteniendo una jerarquía ordenada entre mensajes de contención, títulos de módulo y metadatos.
+- **Reglas de legibilidad:** interlineado mínimo de 1.4× en textos continuos, ancho de renglón máximo de 70 caracteres y prohibición de mayúsculas sostenidas en etiquetas. Ningún estado de la interfaz se comunica únicamente por color o tipografía.
 
-#### 4.1.1.3. Botones (Acciones y estados)
+---
 
-<p align="center">
-  <img src="./images/Chapter-4/Botones.png" alt="Botones" width="700"><br>
-  <em>Nota: Tipos de botones, jerarquía de acciones, estados de interacción y especificaciones de accesibilidad motriz.</em>
-</p>
+**Espaciado y márgenes**
 
-Los botones constituyen el punto central de interacción táctil y visual dentro de la aplicación, por lo que su diseño prioriza la simplicidad y la prevención de errores por pulsación accidental:
+**Ritmo 8-pt recomendado:** el sistema completo se apoya en múltiplos de **8px** (con sub-múltiplos de 4px para ajustes micro), desde **4XS** (4px) hasta **4XL** (96px), manteniendo un orden matemático y predecible en todo el layout.
 
-* **Tipos y Jerarquía de Botones:**
-  * **Primario:** Destinado a la acción principal que impulsa al usuario a avanzar (ej. `Continuar`). Su relleno sólido exige prioridad visual.
-  * **Secundario:** Diseñado para acciones alternativas o de cancelación (ej. `Cancelar`), con un contorno definido para no competir con el botón primario.
-  * **Texto / Terciario:** Para acciones opcionales de bajo impacto (ej. `Omitir`).
-  * **Con Ícono:** Combina un símbolo descriptivo con texto para reforzar la comprensión rápida en herramientas interactivas (ej. `Iniciar ejercicio`).
-* **Estados de Interacción:** 
-  Cada variante dispone de cinco estados claramente diferenciables: *Default* (reposo), *Hover* (interacción con cursor), *Pressed* (presionado), *Focus* (foco visual accesible mediante un anillo de 2.5px en tono Teal) y *Disabled* (deshabilitado con opacidad reducida).
-* **Tamaños y Adaptabilidad:** 
-  Disponibles en escalas *Grande*, *Mediano* y *Pequeño* para adaptarse tanto a pantallas de escritorio como a la interfaz móvil.
-* **Reglas de Accesibilidad y Control Motor:**
-  Para prevenir la parálisis por análisis durante estados de crisis, se permite un único botón primario por pantalla. Todos los botones emplean esquinas redondeadas al 100% (*pill shape*), eliminando bordes rectos para ofrecer una estética amigable. Además, el área táctil se amplía de un mínimo de 44 × 44px a un tamaño recomendado de **48 × 48px**, facilitando la interacción a usuarios con movilidad fina reducida o temblores causados por el estrés.
+**Márgenes generales y contenedores:** las tarjetas mantienen un *padding* interno constante de **24px** en sus cuatro lados, clave para no saturar visualmente pantallas como el tablero CAA o el historial de episodios.
 
+**Márgenes alrededor de elementos interactivos:** se mantiene un mínimo de **16px** entre botones, campos de formulario y tarjetas seleccionables adyacentes, para evitar pulsaciones accidentales durante un episodio de crisis.
 
+**Interlineado en textos:** se aplica un valor de **1.4× a 1.5×** el tamaño de fuente para garantizar una lectura cómoda de las guías del Modo SOS y las recomendaciones del cuidador.
 
-#### 4.1.1.4. Espaciado (Grid de 8pt)
+**Separación ícono–texto:** se define un espaciado fijo de **8px** entre el ícono y su etiqueta correspondiente en botones, pictogramas y ítems de menú.
 
-<p align="center">
-  <img src="./images/Chapter-4/Espaciado.png" alt="Espaciado" width="700"><br>
-  <em>Nota: Sistema de retícula basado en 8pt, escala de márgenes y reglas de composición de módulos.</em>
-</p>
+---
 
-El sistema de espaciado utiliza una retícula rígida basada en múltiplos de **8pt** (con sub-múltiplos de 4pt para ajustes micro), garantizando un diseño estructurado, simétrico y ordenado en todas las pantallas:
+**Branding y logo**
 
-* **Escala de Espaciado Estandarizada:**
-  Cubre valores desde **4XS** (4px) hasta **4XL** (96px). Esta progresión permite un control preciso del volumen de espacio en blanco, clave para evitar la saturación de elementos en pantalla.
-* **Criterios de Aplicación de Valores:**
-  Los valores de 4px a 8px separan íconos de sus etiquetas inmediatas; los rangos de 12px a 16px estructuran el relleno interno (*padding*) de botones, formularios y fichas; 24px se utiliza para distanciar elementos dentro de una misma tarjeta; de 32px a 48px se separan secciones dentro de un módulo; y los rangos mayores de 64px a 96px delimitan los márgenes globales de la pantalla.
-* **Anatomía de Tarjeta y Reglas de Composición:**
-  Las tarjetas contenedoras mantienen un *padding* interno constante de 24px en sus cuatro lados, una separación de 16px entre el ícono decorativo y el título, y un espacio de 24px entre los bloques de texto secundarios. Queda prohibido el uso de valores arbitrarios fuera del sistema de múltiplos. En dispositivos móviles, los márgenes laterales se ajustan automáticamente a 20px para maximizar la superficie útil del panel táctil.
+La identidad visual de **Nubi** se construyó para transmitir calma y acompañamiento cercano, evitando cualquier lectura clínica o corporativa fría:
 
-
-
-#### 4.1.1.5. Inputs (Formularios y controles)
-
-<p align="center">
-  <img src="./images/Chapter-4/Inputs.png" alt="Inputs" width="700"><br>
-  <em>Nota: Componentes de captura de datos, controles interactivos y diseño del selector emocional.</em>
-</p>
-
-Los componentes de entrada de datos permiten capturar el estado emocional del usuario y gestionar configuraciones de la plataforma sin generar frustración o ansiedad:
-
-* **Campos de Entrada de Texto:** 
-  Presentan cinco estados operativos que guían al usuario durante la interacción: *Default* (con texto guía), *Focus* (borde Teal y cursor visible), *Completado* (datos validados), *Error* (indicación de fallo con mensaje orientador) y *Bloqueado* (campo inhabilitado por el tutor o cuidador).
-* **Área de Texto Libre (*Textarea*):** 
-  Proporciona un contenedor amplio y sin distracciones para que el usuario escriba sus vivencias o reflexiones en el diario emocional (ej. *"Escribe aquí lo que quieras recordar..."*).
-* **Controles de Configuración:** 
-  Incluye *switches* con estados Activado/Desactivado para la gestión de notificaciones, así como casillas (*checkboxes*) y botones de opción (*radio buttons*) para seleccionar preferencias puntuales.
-* **Selector de Intensidad Emocional:** 
-  Un componente deslizante que permite al usuario registrar de forma gráfica su estado emocional a lo largo de un espectro continuo de cuatro niveles: **Calma**, **Inquieto**, **Alterado** y **Crisis**.
-* **Gestión de Errores Empática:** 
-  Los mensajes de error no se comunican únicamente mediante color rojo ni utilizan términos punitivos. Se acompañan siempre de un ícono ilustrativo y una explicación clara sobre cómo corregir la entrada de datos.
-
-
-#### 4.1.1.6. Iconografía (Set base 24px)
-
-<p align="center">
-  <img src="./images/Chapter-4/Iconografía.png" alt="Iconografía" width="700"><br>
-  <em>Nota: Retícula de diseño, principios de trazo suave y catálogo de íconos base del sistema Nubi.</em>
-</p>
-
-La iconografía de Nubi actúa como un sistema de apoyo visual que facilita la comprensión rápida de las funcionalidades, sirviendo como un canal de comunicación alternativo para usuarios con dificultades en el procesamiento del lenguaje escrito:
-
-* **Principios de Construcción:** 
-  Todos los íconos se diseñan sobre una retícula base de 24 × 24px, utilizando un grosor de trazo constante de 2px, extremos y esquinas redondeadas, y un estilo lineal (*outline*). Se evita el uso de bordes afilados o ángulos agudos para no transmitir tensión visual. El relleno sólido se reserva exclusivamente para denotar un estado activo o seleccionado.
-* **Catálogo de Íconos Principales:** 
-  Símbolos clave que identifican los módulos centrales de la aplicación: **Inicio** (panel general), **Comunicación** (tableros de asistencia CAA), **Autocuidado** (herramientas de autorregulación), **Alerta / Crisis** (botón de auxilio rápido), **Ajustes** (configuración), **Perfil** (datos del usuario), **Notificación** (avisos) y **Nubi / Calma** (símbolo identitario de relajación).
-* **Escalas de Tamaño:** 
-  Se definen tres variaciones de escala: **16px** para íconos integrados en líneas de texto (*inline*), **24px** como estándar para elementos interactivos y barras de herramientas, y **32px** para accesos de navegación principal y estados destacados.
-
+- **Símbolo de acompañamiento (Isotipo):** una forma de gota/nube estilizada con un trazo curvo que sugiere una leve sonrisa, evocando **calma, contención y cercanía**. Su silueta redondeada, sin ángulos agudos, refuerza el mismo principio de suavidad aplicado en la iconografía y los botones *pill-shape*.
+- **Identidad cromática:** la marca se apoya principalmente en **Deep Teal (#00373E)** y **Golden Yellow (#EFC01D)** sobre fondos en **Cream (#F7F6F4)**. Esta combinación, heredada del template Solus, busca transmitir calidez humana y serenidad, en contraste con la frialdad típica de una app clínica.
+- **Naming y tipografía:** el nombre **"Nubi"** evoca la imagen de una nube pequeña y cercana, fácil de pronunciar y recordar tanto para el cuidador como para el niño o adolescente. Se presenta en Bricolage Grotesque para conservar el carácter contemporáneo de la marca en cualquier punto de contacto.
 
 ### 4.1.2. Web Style Guidelines
 
-Las Web Style Guidelines definen los patrones de interacción y la respuesta visual de la plataforma Nubi cuando se accede a ella desde navegadores web en computadoras de escritorio y laptops, entorno utilizado frecuentemente por educadores, terapeutas y padres.
+Esta sección explica e ilustra las decisiones sobre los estándares visuales y de interacción de Nubi para interfaces web responsivas (Landing Page y Web Application), partiendo del sistema de diseño definido en las General Style Guidelines.
 
-<p align="center">
-  <img src="./images/Chapter-4/Estados de navegación.png" alt="Estados de navegación" width="700"><br>
-  <em>Nota: Estructura de barra de navegación web, indicadores de estado de interacción y sistema de migas de pan.</em>
-</p>
+**Estructura de la página**
 
-#### 4.1.2.1. Estados de Navegación (App web)
-* **Barra de Navegación Superior:** 
-  Organiza las secciones globales de la plataforma de forma horizontal (`Inicio`, `Herramientas`, `Comunidad`, `Recursos`, `Ajustes`), garantizando que las opciones permanezcan visibles en todo momento.
-* **Indicación de Sección Activa:** 
-  La sección en la que se encuentra el usuario se resalta mediante una combinación de color *Blue Slate*, un subrayado visual continuo y un fondo en tono *Parchment* o *Dust Grey*. Se evita depender únicamente del grosor de la tipografía (negrita) para marcar el estado activo, facilitando su identificación visual inmediata.
-* **Clave de Estados de Interacción:**
-  * **Default:** Elemento disponible y listo para la interacción.
-  * **Hover:** Aparece un fondo suave en tono *Parchment* al desplazar el cursor sobre la opción (comportamiento exclusivo de entornos web con ratón).
-  * **Activo / Actual:** Destacado en tono *Blue Slate* con subrayado indicador.
-  * **Deshabilitado:** Opacidad reducida al 40% e inhabilitación de la respuesta al cursor.
-* **Migas de Pan (*Breadcrumbs*):** 
-  Línea de navegación secundaria (ej. `Inicio` / `Herramientas` / `Respiración guiada`) ubicada en la parte superior del contenido principal. Permite al usuario comprender su ubicación exacta dentro de la estructura de la web y regresar a niveles anteriores con un solo clic, reduciendo la desorientación espacial.
+La interfaz web de Nubi se organiza en tres zonas funcionales: un encabezado fijo (Header), un área de contenido central (Body) y un pie de página informativo (Footer), garantizando orientación permanente y coherencia entre el Landing Page y la Web Application.
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Ubicación</strong></th>
+      <th><strong>Contenido</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Parte superior fija (sticky)</strong></td>
+      <td>
+        <strong>Logotipo Nubi:</strong> posicionado a la izquierda; enlace directo al inicio.<br>
+        <strong>Navegación por anclas:</strong> enlaces a Perfil, Modo SOS, Autocuidado, Comunicación, Apoyo, Planes y FAQ.<br>
+        <strong>Acciones de cuenta:</strong> botón de texto "Iniciar sesión" y botón primario "Comenzar gratis".
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Zona central de contenido</strong></td>
+      <td>
+        <strong>Landing Page:</strong> Hero, resultados esperados, bloques de valor (LS-01 a LS-05), cómo funciona, beneficios, planes, FAQ y formulario de contacto.<br>
+        <strong>Web Application:</strong> panel de inicio con estado del usuario, alertas, accesos directos y contenido propio de cada Bounded Context.<br>
+        <strong>Espaciado entre bloques:</strong> separación de 32–64px entre secciones para evitar saturación visual.
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Pie de página</strong></td>
+      <td>
+        <strong>Accesos de marca:</strong> logo, descripción breve y redes de contacto.<br>
+        <strong>Enlaces agrupados:</strong> Producto, Compañía y Legal.<br>
+        <strong>Cierre:</strong> año, titularidad y frase de marca.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+**Tipografía**
+
+En la interfaz web de escritorio, la jerarquía tipográfica de Nubi se aplica con valores responsivos mediante `clamp()`, manteniendo la legibilidad tanto en pantallas grandes como en resoluciones intermedias.
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Uso</strong></th>
+      <th><strong>Fuente</strong></th>
+      <th><strong>Tamaño / Peso</strong></th>
+      <th><strong>Responsive (clamp)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Display</strong></td>
+      <td>Bricolage Grotesque</td>
+      <td>42 px / Bold</td>
+      <td>clamp(30px, 3vw + 14px, 42px)</td>
+    </tr>
+    <tr>
+      <td><strong>Título H1</strong></td>
+      <td>Bricolage Grotesque</td>
+      <td>32 px / Bold</td>
+      <td>clamp(24px, 2.2vw + 12px, 32px)</td>
+    </tr>
+    <tr>
+      <td><strong>Título H2</strong></td>
+      <td>Bricolage Grotesque</td>
+      <td>24 px / SemiBold</td>
+      <td>clamp(20px, 1.6vw + 10px, 24px)</td>
+    </tr>
+    <tr>
+      <td><strong>Título H3 / Botón</strong></td>
+      <td>Bricolage Grotesque</td>
+      <td>18 px / SemiBold</td>
+      <td>clamp(16px, 1vw + 9px, 18px)</td>
+    </tr>
+    <tr>
+      <td><strong>Cuerpo de texto (Body Grande)</strong></td>
+      <td>Inter</td>
+      <td>16 px / Regular · lh 1.5</td>
+      <td>clamp(15px, 0.5vw + 13px, 16px)</td>
+    </tr>
+    <tr>
+      <td><strong>Texto de apoyo (Body)</strong></td>
+      <td>Inter</td>
+      <td>14 px / Regular · lh 1.5</td>
+      <td>clamp(13px, 0.4vw + 12px, 14px)</td>
+    </tr>
+    <tr>
+      <td><strong>Microcopy / Caption</strong></td>
+      <td>Inter</td>
+      <td>12 px / Medium · uppercase opcional</td>
+      <td>Fijo — no escala</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+**Colores (paleta y contraste)**
+
+La aplicación cromática en la interfaz web de Nubi sigue una distribución semántica estricta: **Deep Teal (#00373E)** concentra la energía de la acción y la tipografía principal, y **Cream (#F7F6F4)** actúa como lienzo base.
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Uso en interfaz web</strong></th>
+      <th><strong>Color / HEX</strong></th>
+      <th><strong>Descripción</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Botón CTA principal, acceso al Modo SOS, tipografía, navegación activa</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#00373E;margin-bottom:4px;"></div><code>#00373E</code></td>
+      <td><strong>Deep Teal:</strong> concentra la llamada a la acción en botones "Comenzar gratis", "Crear cuenta y activarlo" y el acceso directo al Modo SOS, además de servir como color de texto principal. Al ser oscuro, admite texto blanco directo con contraste ≥ 4.5:1.</td>
+    </tr>
+    <tr>
+      <td><strong>Fondo de tarjeta seleccionada, hover suave, chip activo</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#D9E4E3;margin-bottom:4px;border:1px solid #E4E1DB;"></div><code>#D9E4E3</code></td>
+      <td><strong>Deep Teal 200:</strong> estado de selección activa en tarjetas de estímulo y pictogramas favoritos, sin la intensidad del color principal.</td>
+    </tr>
+    <tr>
+      <td><strong>Acento secundario, badge de plan destacado</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#EFC01D;margin-bottom:4px;"></div><code>#EFC01D</code></td>
+      <td><strong>Golden Yellow:</strong> resalta el plan "Más elegido" y acentúa íconos de Perfil y Autorregulación. Texto en Deep Teal para garantizar contraste ≥ 4.5:1.</td>
+    </tr>
+    <tr>
+      <td><strong>Fondo general de la aplicación, superficies base</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#F7F6F4;margin-bottom:4px;border:1px solid #E4E1DB;"></div><code>#F7F6F4</code></td>
+      <td><strong>Cream:</strong> lienzo principal de la interfaz. Evita el deslumbramiento de un blanco puro y aporta una sensación acogedora al Landing Page y la Web Application.</td>
+    </tr>
+    <tr>
+      <td><strong>Comunicación CAA, enlaces informativos</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#4CCBBB;margin-bottom:4px;"></div><code>#4CCBBB</code></td>
+      <td><strong>Mint Teal:</strong> tablero de pictogramas, enlaces y estados "Información". Aporta frescura sin competir con el Deep Teal principal.</td>
+    </tr>
+    <tr>
+      <td><strong>Red de Apoyo, recomendaciones, mensajes afectivos</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#F39CAC;margin-bottom:4px;"></div><code>#F39CAC</code></td>
+      <td><strong>Blossom Pink:</strong> acentos en el módulo de seguimiento y recomendaciones personalizadas para el cuidador.</td>
+    </tr>
+    <tr>
+      <td><strong>Bordes, divisores, tarjetas en reposo</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#E4E1DB;margin-bottom:4px;"></div><code>#E4E1DB</code></td>
+      <td><strong>Warm Grey:</strong> delimita tarjetas, campos de formulario y secciones sin introducir ruido visual.</td>
+    </tr>
+    <tr>
+      <td><strong>Error, campos inválidos, Modo SOS en curso</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#E0605B;margin-bottom:4px;"></div><code>#E0605B</code></td>
+      <td><strong>Coral Red:</strong> exclusivo para mensajes de error, validaciones fallidas y el estado "episodio en curso" del Modo SOS.</td>
+    </tr>
+    <tr>
+      <td><strong>Éxito, episodio cerrado, mensaje enviado</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#4FAE7B;margin-bottom:4px;"></div><code>#4FAE7B</code></td>
+      <td><strong>Leaf Green:</strong> confirmaciones de guardado, episodios finalizados y envío exitoso del formulario de contacto.</td>
+    </tr>
+    <tr>
+      <td><strong>Aviso, recordatorio no urgente</strong></td>
+      <td><div style="width:60px;height:36px;border-radius:6px;background:#EFC01D;margin-bottom:4px;"></div><code>#EFC01D</code></td>
+      <td><strong>Golden Yellow:</strong> perfiles incompletos, sensibilidades no registradas o sugerencias pendientes de revisión.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+**Iconografía**
+
+La iconografía de Nubi mantiene un estilo lineal (*outline*) coherente con el carácter contemporáneo de Bricolage Grotesque, actuando como canal de comunicación alternativo para usuarios con dificultades en el procesamiento del lenguaje escrito.
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Aspecto</strong></th>
+      <th><strong>Especificación</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Estilo</strong></td>
+      <td>Trazo lineal (*outline*), extremos y esquinas redondeadas, grosor de trazo constante de 2px. Se evitan bordes afilados o ángulos agudos que transmitan tensión visual.</td>
+    </tr>
+    <tr>
+      <td><strong>Tamaños</strong></td>
+      <td>16px para íconos integrados en línea de texto (*inline*); 24px como estándar en botones y barras de herramientas; 32px en accesos de navegación principal y estados destacados.</td>
+    </tr>
+    <tr>
+      <td><strong>Color según estado</strong></td>
+      <td>#00373E en acciones primarias activas y navegación general; #8A8A8A en estados inactivos; #E0605B en alerta; #4FAE7B en confirmación; #EFC01D en aviso.</td>
+    </tr>
+    <tr>
+      <td><strong>Catálogo principal</strong></td>
+      <td>Inicio, Comunicación (tableros CAA), Autocuidado (autorregulación), Alerta / Crisis (Modo SOS), Ajustes, Perfil, Notificación y Nubi / Calma (símbolo identitario).</td>
+    </tr>
+    <tr>
+      <td><strong>Accesibilidad</strong></td>
+      <td>Todo ícono interactivo incluye `aria-label` descriptivo o texto visible acompañante. Ningún estado depende exclusivamente del ícono sin etiqueta.</td>
+    </tr>
+    <tr>
+      <td><strong>Espaciado ícono–texto</strong></td>
+      <td>Separación fija de 8px entre el ícono y su etiqueta, conforme al ritmo 8-pt del sistema general.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+**Componentes clave (web)**
+
+Los siguientes componentes conforman el vocabulario visual interactivo de la interfaz web de Nubi, usando **Deep Teal** y **Golden Yellow** como ejes cromáticos principales.
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Componente</strong></th>
+      <th><strong>Estilo base</strong></th>
+      <th><strong>Variantes / Estados</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3" style="background-color:#00373E;color:#F7F6F4;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">BOTONES</td>
+    </tr>
+    <tr>
+      <td><strong>Botón primario (CTA)</strong></td>
+      <td>Fondo #00373E · texto #FFFFFF · Bricolage Grotesque 18px Bold · <em>pill-shape</em> (radio 100%) · padding 12px 24px.</td>
+      <td><strong>Hover:</strong> fondo oscurecido a #002930. <strong>Focus:</strong> anillo 2.5px #4CCBBB. <strong>Disabled:</strong> fondo #E4E1DB · texto #8A8A8A.</td>
+    </tr>
+    <tr>
+      <td><strong>Botón secundario</strong></td>
+      <td>Borde 1.5px #00373E · fondo transparente · texto #00373E · Bricolage Grotesque 16px SemiBold · <em>pill-shape</em>.</td>
+      <td><strong>Hover:</strong> fondo #EAF0EF. <strong>Focus:</strong> anillo 2.5px #4CCBBB. <strong>Disabled:</strong> borde y texto #E4E1DB.</td>
+    </tr>
+    <tr>
+      <td><strong>Botón de texto / terciario</strong></td>
+      <td>Sin fondo ni borde · texto #00373E · Inter 14px Medium.</td>
+      <td><strong>Hover:</strong> subrayado. Reservado para acciones de bajo impacto ("Omitir", "Iniciar sesión").</td>
+    </tr>
+    <tr>
+      <td colspan="3" style="background-color:#00373E;color:#F7F6F4;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">FORMULARIOS E INPUTS</td>
+    </tr>
+    <tr>
+      <td><strong>Campo de texto (Input)</strong></td>
+      <td>Borde 1.5px #E4E1DB · fondo #F7F6F4 · Inter 16px Regular · radio 12px · padding 12px 16px.</td>
+      <td><strong>Focus:</strong> borde #4CCBBB + anillo suave. <strong>Error:</strong> borde #E0605B + ícono y mensaje orientador. <strong>Completado:</strong> borde #4FAE7B.</td>
+    </tr>
+    <tr>
+      <td><strong>Selector de Intensidad Emocional</strong></td>
+      <td>Riel #D9E4E3 · relleno de progreso #4CCBBB · control circular blanco con borde #4CCBBB.</td>
+      <td>Cuatro niveles: Calma, Inquieto, Alterado, Crisis. El nivel activo se refuerza con texto, nunca solo con color.</td>
+    </tr>
+    <tr>
+      <td colspan="3" style="background-color:#00373E;color:#F7F6F4;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">TARJETAS</td>
+    </tr>
+    <tr>
+      <td><strong>Tarjeta de estímulo / pictograma</strong></td>
+      <td>Fondo #F7F6F4 · borde 1px #E4E1DB · radio 20px · padding 24px.</td>
+      <td><strong>Hover / seleccionada:</strong> fondo #EAF0EF + borde #00373E. Badge de categoría en esquina superior (Mint Teal, Blossom Pink o Golden Yellow según el módulo).</td>
+    </tr>
+    <tr>
+      <td><strong>Tarjeta de episodio (historial)</strong></td>
+      <td>Fondo #F7F6F4 · fecha en Inter 12px #8A8A8A · estado en Bricolage Grotesque 14px Bold.</td>
+      <td><strong>Finalizado:</strong> borde izquierdo #4FAE7B. <strong>Anticipado:</strong> borde izquierdo #EFC01D. <strong>En curso:</strong> borde izquierdo #E0605B.</td>
+    </tr>
+    <tr>
+      <td colspan="3" style="background-color:#00373E;color:#F7F6F4;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">NAVEGACIÓN</td>
+    </tr>
+    <tr>
+      <td><strong>Barra de navegación superior</strong></td>
+      <td>Fondo #F7F6F4 (sticky) · ítems Inter 14px Medium #00373E · separación 24px entre ítems.</td>
+      <td><strong>Activo:</strong> texto #00373E + subrayado. <strong>Hover:</strong> fondo #EAF0EF. <strong>Deshabilitado:</strong> opacidad 40%.</td>
+    </tr>
+    <tr>
+      <td><strong>Migas de pan (Breadcrumbs)</strong></td>
+      <td>Inter 14px Regular #8A8A8A · último ítem #00373E Bold.</td>
+      <td>Máximo 4 niveles visibles. El nivel activo no es enlace. Separación 8px entre ítems.</td>
+    </tr>
+    <tr>
+      <td colspan="3" style="background-color:#00373E;color:#F7F6F4;font-weight:bold;text-align:center;padding:8px 12px;letter-spacing:0.05em;">NOTIFICACIONES Y ALERTAS</td>
+    </tr>
+    <tr>
+      <td><strong>Toast / confirmación</strong></td>
+      <td>Fondo según estado: #4FAE7B (éxito), #E0605B (error), #EFC01D (aviso) · texto #00373E · radio 12px · padding 12px 20px.</td>
+      <td><strong>Posición:</strong> esquina inferior. <strong>Duración:</strong> 3–5s con cierre manual. Ícono de 20px a la izquierda del texto.</td>
+    </tr>
+    <tr>
+      <td><strong>Banner de alerta inline (Modo SOS)</strong></td>
+      <td>Fondo #FBEAEA · borde izquierdo 4px #E0605B · texto Inter 14px #00373E · radio 8px · padding 12px 16px.</td>
+      <td>Usado para episodios en curso o pasos obligatorios sin revisar. Ícono de alerta 20px #E0605B a la izquierda.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+**Diseño responsivo**
+
+Nubi adopta un enfoque de diseño responsivo que garantiza una experiencia óptima en escritorio, tableta y móvil, priorizando que toda funcionalidad disponible en escritorio sea igualmente accesible y operable en pantallas pequeñas durante un momento de crisis.
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Dispositivo</strong></th>
+      <th><strong>Ancho</strong></th>
+      <th><strong>Columnas</strong></th>
+      <th><strong>Gutter</strong></th>
+      <th><strong>Especificaciones</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mobile</strong></td>
+      <td>≤ 768 px</td>
+      <td>4</td>
+      <td>16 px</td>
+      <td>Header compacto con menú hamburguesa. Bloques de valor en una sola columna. Acceso al Modo SOS siempre visible. Márgenes laterales de 20px.</td>
+    </tr>
+    <tr>
+      <td><strong>Tablet</strong></td>
+      <td>769–1024 px</td>
+      <td>8</td>
+      <td>20 px</td>
+      <td>Navegación superior completa. Tarjetas de estímulo y pictogramas en 2 columnas. Secciones de valor en distribución apilada.</td>
+    </tr>
+    <tr>
+      <td><strong>Desktop</strong></td>
+      <td>≥ 1025 px</td>
+      <td>12</td>
+      <td>24 px</td>
+      <td>Max-width de contenedor: 1200px, centrado. Bloques de valor en dos columnas (texto + visual). Planes y FAQ en formato de grilla.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Requisito</strong></th>
+      <th><strong>Valor recomendado / Especificación</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Objetivos táctiles mínimos</strong></td>
+      <td>48 × 48 px en todos los breakpoints, para tolerar temblores o baja precisión motriz durante el estrés.</td>
+    </tr>
+    <tr>
+      <td><strong>Separación entre controles</strong></td>
+      <td>Mínimo 16px entre botones, campos y elementos interactivos adyacentes.</td>
+    </tr>
+    <tr>
+      <td><strong>Indicador de foco visible</strong></td>
+      <td>Anillo de 2.5px en #4CCBBB para todo elemento interactivo, nunca eliminado por estética.</td>
+    </tr>
+  </tbody>
+</table>
+
+Los estándares aquí establecidos constituyen la referencia normativa para la implementación del Landing Page y la Web Application de Nubi. Cualquier componente nuevo que se incorpore al sistema deberá respetar las especificaciones de color, tipografía, espaciado e interacción definidas en esta sección.
 
 ## 4.2. Information Architecture.
 
@@ -234,7 +579,7 @@ Dado el alcance definido para los 5 Bounded Contexts, Nubi no incorpora un busca
 
 La navegación de Nubi combina accesos globales persistentes con recorridos guiados y lineales, priorizando siempre que el usuario neurodivergente o el cuidador puedan llegar a la ayuda inmediata en el menor número de pasos posible:
 
-* **Navegación global (Web Application):** una barra de navegación superior (ver sección 4.1.2.1) mantiene visibles en todo momento los módulos principales (`Inicio`, `Perfil`, `Autocuidado`, `Comunicación`, `Ajustes`), permitiendo saltar entre Bounded Contexts sin perder el contexto de la sesión activa.
+* **Navegación global (Web Application):** una barra de navegación superior (ver sección 4.1.2, Componentes clave — Navegación) mantiene visibles en todo momento los módulos principales (`Inicio`, `Perfil`, `Autocuidado`, `Comunicación`, `Ajustes`), permitiendo saltar entre Bounded Contexts sin perder el contexto de la sesión activa.
 * **Acceso directo persistente al Modo SOS:** el acceso a la guía de crisis (US-12) se mantiene visible desde cualquier pantalla de la aplicación mediante un elemento de navegación de alta prioridad visual, de forma que el cuidador nunca necesite más de una acción para llegar a él, incluso si se desactivó el acceso directo (en cuyo caso queda disponible desde el menú principal).
 
 Adicionalmente, cada Bounded Context aplica una técnica de navegación distinta según el tipo de tarea que soporta:
@@ -249,13 +594,237 @@ Adicionalmente, cada Bounded Context aplica una técnica de navegación distinta
 
 * **Cambio entre perfiles a cargo:** el cuidador con más de un perfil asociado navega entre ellos mediante un selector persistente (US-35), sin necesidad de cerrar sesión, evitando que la navegación entre usuarios interrumpa el flujo de la aplicación.
 * **Navegación en el Landing Page:** se guía al visitante mediante desplazamiento por anclas (*anchor scroll*) entre las 5 secciones de valor (LS-01 a LS-05) accesibles desde la barra de navegación superior, y mediante llamados a la acción (*call-to-action*) al cierre de cada sección que redirigen al registro o inicio de sesión en la Web Application.
-* **Migas de pan (Web):** como se describe en la sección 4.1.2.1, se utilizan en las vistas de mayor profundidad (por ejemplo, dentro del Historial de episodios) para que el cuidador comprenda su ubicación exacta y pueda regresar a niveles anteriores sin depender del botón "Atrás" del navegador.
+* **Migas de pan (Web):** como se describe en la sección 4.1.2 (Componentes clave — Navegación), se utilizan en las vistas de mayor profundidad (por ejemplo, dentro del Historial de episodios) para que el cuidador comprenda su ubicación exacta y pueda regresar a niveles anteriores sin depender del botón "Atrás" del navegador.
 
 ## 4.3 Landing Page UI Design
 
+El Landing Page de Nubi traduce las decisiones de arquitectura de información de la sección 4.2 en una experiencia de una sola página, pensada para que un visitante (cuidador, educador o terapeuta que aún no se ha registrado) entienda en segundos qué resuelve Nubi y pueda avanzar hacia el registro sin fricción. La estructura respeta el esquema de categorización "según audiencia" y la organización jerárquica definidos en la sección 4.2.1: primero se comunica la propuesta de valor y los resultados esperados, luego se desarrolla cada una de las 5 Landing Page Stories del Capítulo III (LS-01 a LS-05: Perfil y Personalización, Modo SOS, Autorregulación, Comunicación CAA y Red de Apoyo) en el mismo orden en que fueron priorizadas en el Product Backlog, y finalmente se ubican los bloques de conversión y confianza (cómo funciona, beneficios por rol, testimonios, planes, preguntas frecuentes, llamado a la acción final, la sección "Conoce al equipo" y un formulario de contacto para familias e instituciones), cerrando con el footer. La navegación superior utiliza el sistema de anclas (*anchor scroll*) descrito en la sección 4.2.5, reutilizando exactamente las mismas etiquetas definidas en el Labeling System (4.2.2) para que el visitante reconozca los mismos nombres al ingresar luego a la Web Application.
+
+El wireframe y el mock-up se construyeron directamente en HTML/CSS, tomando como referencia directa el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*: se extrajeron sus valores reales de color y tipografía a partir del código exportado en modo Dev de Figma, y se aplicaron al Design System de la sección 4.1 (tipografía Bricolage Grotesque/Inter, paleta Deep Teal/Golden Yellow/Cream con sus acentos secundarios, sistema de espaciado de 8pt, botones *pill-shape* y set de iconografía de 24px). El resultado se importó a Figma mediante un plugin de conversión HTML→Figma para su documentación y edición visual. El código fuente se encuentra en [`landing-page/`](../landing-page/index.html) del repositorio.
+
 ### 4.3.1 Landing Page Wireframe
 
+Los wireframes representan la distribución base de cada sección antes de aplicar el acabado visual final. Permiten validar la jerarquía de información, el orden de lectura y la ubicación de los llamados a la acción definidos en la Arquitectura de Información (sección 4.2): jerarquía visual en el Hero y en la franja de resultados esperados, organización secuencial (*step-by-step*) en el bloque del Modo SOS, y organización matricial en la cuadrícula de pictogramas del bloque de Comunicación CAA. Se presenta la versión para Desktop Web Browser y Mobile Web Browser de cada sección.
+
+- **Header (Navbar)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-header-navbar.png" alt="Wireframe Header Navbar" width="800">
+  </p>
+
+- **Hero section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-hero-section.png" alt="Wireframe Hero Section" width="800">
+  </p>
+
+- **Resultados (Stats) section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-resultados-section.png" alt="Wireframe Resultados Section" width="800">
+  </p>
+
+- **Problema section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-problema-section.png" alt="Wireframe Problema Section" width="800">
+  </p>
+
+- **Perfil y Personalización section (LS-01)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-perfil-section.png" alt="Wireframe Perfil y Personalización Section" width="800">
+  </p>
+
+- **Modo SOS section (LS-02)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-modo-sos-section.png" alt="Wireframe Modo SOS Section" width="800">
+  </p>
+
+- **Autorregulación section (LS-03)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-autorregulacion-section.png" alt="Wireframe Autorregulación Section" width="800">
+  </p>
+
+- **Comunicación CAA section (LS-04)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-comunicacion-caa-section.png" alt="Wireframe Comunicación CAA Section" width="800">
+  </p>
+
+- **Red de Apoyo section (LS-05)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-red-apoyo-section.png" alt="Wireframe Red de Apoyo Section" width="800">
+  </p>
+
+- **Cómo funciona section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-como-funciona-section.png" alt="Wireframe Cómo Funciona Section" width="800">
+  </p>
+
+- **Beneficios section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-beneficios-section.png" alt="Wireframe Beneficios Section" width="800">
+  </p>
+
+- **Testimonios section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-testimonios-section.png" alt="Wireframe Testimonios Section" width="800">
+  </p>
+
+- **Planes section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-planes-section.png" alt="Wireframe Planes Section" width="800">
+  </p>
+
+- **FAQ section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-faq-section.png" alt="Wireframe FAQ Section" width="800">
+  </p>
+
+- **CTA final section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-cta-final-section.png" alt="Wireframe CTA Final Section" width="800">
+  </p>
+
+- **Conoce al equipo section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-equipo-section.png" alt="Wireframe Conoce al Equipo Section" width="800">
+  </p>
+
+- **Formulario de Contacto section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-contacto-section.png" alt="Wireframe Formulario de Contacto Section" width="800">
+  </p>
+
+- **Footer section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/wireframe-footer-section.png" alt="Wireframe Footer Section" width="800">
+  </p>
+
 ### 4.3.2 Landing Page Mock-up
+
+Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura ya validada en los wireframes: tipografía Bricolage Grotesque para titulares e Inter para texto de cuerpo, la paleta cromática (Deep Teal, Golden Yellow, Mint Teal, Blossom Pink y Cream como fondo base), botones con esquinas 100% redondeadas respetando un único botón primario por pantalla, y el grid de espaciado de 8pt tanto en el padding de las tarjetas como en la separación entre secciones. Sobre esta base se aplican además los criterios de diseño inclusivo definidos para Nubi: contraste mínimo AA (4.5:1) entre texto y fondo —el color principal Deep Teal es lo bastante oscuro para admitir texto blanco directo, mientras que el texto sobre Golden Yellow, Mint Teal o Blossom Pink usa Deep Teal en lugar de blanco— y estados de error o alerta comunicados siempre con ícono y texto, nunca solo con color. Cada bloque de valor (LS-01 a LS-05) reutiliza el mismo componente de tarjeta e iconografía de 24px definidos en la sección 4.1.2 (Iconografía), de modo que el visitante reconozca visualmente el mismo lenguaje al pasar de una sección a otra. El formulario de contacto, ubicado antes del footer, reutiliza el componente de Inputs definido en 4.1.2 (Componentes clave — Formularios e Inputs): campos con estado *Focus* (borde Mint Teal) y estado *Error* que combina borde en Coral Red con un ícono y un mensaje orientador (nunca solo color), además de un estado de confirmación tras el envío que refuerza el patrón de retroalimentación empática del sistema.
+
+- **Header (Navbar)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-header-navbar.png" alt="Mockup Header Navbar" width="800">
+  </p>
+
+- **Hero section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-hero-section.png" alt="Mockup Hero Section" width="800">
+  </p>
+
+- **Resultados (Stats) section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-resultados-section.png" alt="Mockup Resultados Section" width="800">
+  </p>
+
+- **Problema section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-problema-section.png" alt="Mockup Problema Section" width="800">
+  </p>
+
+- **Perfil y Personalización section (LS-01)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-perfil-section.png" alt="Mockup Perfil y Personalización Section" width="800">
+  </p>
+
+- **Modo SOS section (LS-02)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-modo-sos-section.png" alt="Mockup Modo SOS Section" width="800">
+  </p>
+
+- **Autorregulación section (LS-03)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-autorregulacion-section.png" alt="Mockup Autorregulación Section" width="800">
+  </p>
+
+- **Comunicación CAA section (LS-04)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-comunicacion-caa-section.png" alt="Mockup Comunicación CAA Section" width="800">
+  </p>
+
+- **Red de Apoyo section (LS-05)**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-red-apoyo-section.png" alt="Mockup Red de Apoyo Section" width="800">
+  </p>
+
+- **Cómo funciona section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-como-funciona-section.png" alt="Mockup Cómo Funciona Section" width="800">
+  </p>
+
+- **Beneficios section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-beneficios-section.png" alt="Mockup Beneficios Section" width="800">
+  </p>
+
+- **Testimonios section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-testimonios-section.png" alt="Mockup Testimonios Section" width="800">
+  </p>
+
+- **Planes section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-planes-section.png" alt="Mockup Planes Section" width="800">
+  </p>
+
+- **FAQ section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-faq-section.png" alt="Mockup FAQ Section" width="800">
+  </p>
+
+- **CTA final section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-cta-final-section.png" alt="Mockup CTA Final Section" width="800">
+  </p>
+
+- **Conoce al equipo section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-equipo-section.png" alt="Mockup Conoce al Equipo Section" width="800">
+  </p>
+
+- **Formulario de Contacto section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-contacto-section.png" alt="Mockup Formulario de Contacto Section" width="800">
+  </p>
+
+- **Footer section**
+
+  <p align="center">
+    <img src="./images/Chapter-4/landing/mockup-footer-section.png" alt="Mockup Footer Section" width="800">
+  </p>
 
 ## 4.4 Web Applications UX/UI Design
 
