@@ -962,17 +962,17 @@ flowchart LR
     C2["Crear perfil del usuario"]:::cmd
     C3["Registrar diagnóstico y detonantes"]:::cmd
     C4["Vincular contacto de confianza"]:::cmd
-    AG1{{"Cuenta"}}:::agg
-    AG2{{"Perfil del usuario neurodivergente"}}:::agg
-    AG3{{"Suscripción"}}:::agg
-    E1[/"Cuenta creada"/]:::evt
-    E2[/"Perfil de usuario creado"/]:::evt
-    E3[/"Diagnóstico y detonantes registrados"/]:::evt
-    E4[/"Contacto de confianza vinculado"/]:::evt
-    E5[/"Suscripción freemium activada"/]:::evt
+    AG1["Cuenta"]:::agg
+    AG2["Perfil del usuario neurodivergente"]:::agg
+    AG3["Suscripción"]:::agg
+    E1["Cuenta creada"]:::evt
+    E2["Perfil de usuario creado"]:::evt
+    E3["Diagnóstico y detonantes registrados"]:::evt
+    E4["Contacto de confianza vinculado"]:::evt
+    E5["Suscripción freemium activada"]:::evt
     P1["Al crear la cuenta, crear la suscripción freemium"]:::pol
     P2["Avisar a Red de Apoyo y Seguimiento"]:::pol
-    Q1[("Perfiles a cargo")]:::qry
+    Q1["Perfiles a cargo"]:::qry
     X1["Google OAuth"]:::ext
 
     A1 --> C1 --> AG1 --> E1 --> P1 --> AG3 --> E5
@@ -1011,16 +1011,16 @@ flowchart LR
     C2["Marcar paso como completado"]:::cmd
     C3["Pedir técnica alternativa"]:::cmd
     C4["Finalizar episodio"]:::cmd
-    AG1{{"Sesión SOS"}}:::agg
-    AG2{{"Guía de actuación"}}:::agg
-    E1[/"Modo SOS activado"/]:::evt
-    E2[/"Paso de contención completado"/]:::evt
-    E3[/"Técnica alternativa sugerida"/]:::evt
-    E4[/"Episodio finalizado"/]:::evt
+    AG1["Sesión SOS"]:::agg
+    AG2["Guía de actuación"]:::agg
+    E1["Modo SOS activado"]:::evt
+    E2["Paso de contención completado"]:::evt
+    E3["Técnica alternativa sugerida"]:::evt
+    E4["Episodio finalizado"]:::evt
     P1["Activar el modo de baja estimulación en Autorregulación"]:::pol
     P2["Alertar a los contactos de confianza"]:::pol
     P3["Registrar el episodio en Red de Apoyo y Seguimiento"]:::pol
-    Q1[("Guía de actuación del perfil")]:::qry
+    Q1["Guía de actuación del perfil"]:::qry
 
     A1 --> C1 --> AG1 --> E1
     E1 --> P1
@@ -1056,22 +1056,22 @@ flowchart LR
     classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
 
     A1(["Usuario neurodivergente"]):::actor
-    E0[/"Modo SOS activado"/]:::evt
+    E0["Modo SOS activado"]:::evt
     P0["Activar el modo de baja estimulación"]:::pol
     C1["Seleccionar recurso de calma"]:::cmd
     C2["Iniciar respiración guiada"]:::cmd
     C3["Iniciar temporizador de calma"]:::cmd
     C4["Marcar recurso como favorito"]:::cmd
     C5["Finalizar sesión de calma"]:::cmd
-    AG1{{"Sesión de calma"}}:::agg
-    AG2{{"Recurso de calma"}}:::agg
-    E1[/"Modo de baja estimulación activado"/]:::evt
-    E2[/"Recurso de calma seleccionado"/]:::evt
-    E3[/"Ejercicio de respiración completado"/]:::evt
-    E4[/"Recurso marcado como favorito"/]:::evt
-    E5[/"Sesión de calma finalizada"/]:::evt
+    AG1["Sesión de calma"]:::agg
+    AG2["Recurso de calma"]:::agg
+    E1["Modo de baja estimulación activado"]:::evt
+    E2["Recurso de calma seleccionado"]:::evt
+    E3["Ejercicio de respiración completado"]:::evt
+    E4["Recurso marcado como favorito"]:::evt
+    E5["Sesión de calma finalizada"]:::evt
     P1["Si el temporizador termina y la sesión sigue abierta, sugerir una solicitud de ayuda"]:::pol
-    Q1[("Recursos de calma según el perfil sensorial")]:::qry
+    Q1["Recursos de calma según el perfil sensorial"]:::qry
     X1["Reproductor de audio del dispositivo"]:::ext
 
     E0 --> P0 --> AG1 --> E1
@@ -1115,17 +1115,17 @@ flowchart LR
     C2["Reportar estado de ánimo"]:::cmd
     C3["Seleccionar pictograma"]:::cmd
     C4["Confirmar comprensión"]:::cmd
-    AG1{{"Tablero CAA"}}:::agg
-    AG2{{"Pictograma"}}:::agg
-    E1[/"Tablero CAA abierto"/]:::evt
-    E2[/"Estado de ánimo reportado"/]:::evt
-    E3[/"Pictograma seleccionado"/]:::evt
-    E4[/"Necesidad expresada"/]:::evt
-    E5[/"Frase reproducida por voz"/]:::evt
-    E6[/"Comprensión confirmada por el acompañante"/]:::evt
+    AG1["Tablero CAA"]:::agg
+    AG2["Pictograma"]:::agg
+    E1["Tablero CAA abierto"]:::evt
+    E2["Estado de ánimo reportado"]:::evt
+    E3["Pictograma seleccionado"]:::evt
+    E4["Necesidad expresada"]:::evt
+    E5["Frase reproducida por voz"]:::evt
+    E6["Comprensión confirmada por el acompañante"]:::evt
     P1["Al seleccionar un pictograma, expresar la necesidad y mostrar el mensaje al acompañante"]:::pol
     P2["Si no se confirma la comprensión, enviar una solicitud de ayuda"]:::pol
-    Q1[("Acceso rápido")]:::qry
+    Q1["Acceso rápido"]:::qry
     X1["Síntesis de voz del dispositivo"]:::ext
 
     A1 --> C1 --> AG1 --> E1
@@ -1168,20 +1168,20 @@ flowchart LR
     C2["Confirmar recepción"]:::cmd
     C3["Marcar estrategia como efectiva"]:::cmd
     C4["Compartir reporte con el profesional"]:::cmd
-    AG1{{"Solicitud de ayuda"}}:::agg
-    AG2{{"Registro de episodio"}}:::agg
-    E0[/"Episodio finalizado"/]:::evt
-    E1[/"Alerta enviada al contacto de confianza"/]:::evt
-    E2[/"Alerta recibida por el contacto"/]:::evt
-    E3[/"Llegada del contacto confirmada"/]:::evt
-    E4[/"Episodio registrado"/]:::evt
-    E5[/"Resumen del episodio generado"/]:::evt
-    E6[/"Reporte compartido con el profesional"/]:::evt
+    AG1["Solicitud de ayuda"]:::agg
+    AG2["Registro de episodio"]:::agg
+    E0["Episodio finalizado"]:::evt
+    E1["Alerta enviada al contacto de confianza"]:::evt
+    E2["Alerta recibida por el contacto"]:::evt
+    E3["Llegada del contacto confirmada"]:::evt
+    E4["Episodio registrado"]:::evt
+    E5["Resumen del episodio generado"]:::evt
+    E6["Reporte compartido con el profesional"]:::evt
     P1["Si el contacto no confirma la recepción, reenviar la alerta al siguiente contacto"]:::pol
     P2["Registrar el episodio y generar su resumen"]:::pol
     P3["Actualizar las recomendaciones de Gestión de Crisis"]:::pol
-    Q1[("Home del cuidador")]:::qry
-    Q2[("Historial de episodios")]:::qry
+    Q1["Home del cuidador"]:::qry
+    Q2["Historial de episodios"]:::qry
     X1["Notificaciones push"]:::ext
     X2["SMS / WhatsApp"]:::ext
 
@@ -1299,9 +1299,9 @@ flowchart TB
     subgraph SIS["Sistema NUBI"]
         LANDING["Landing Page<br/>[HTML5, CSS3, JavaScript]<br/>Presenta el producto. Hosting estático"]:::contenedor
         WEBAPP["Web Application<br/>[Angular, Angular Material, TypeScript]<br/>i18n en_US y es_419, atributos ARIA. Hosting estático"]:::contenedor
-        LOCAL[("Almacenamiento local<br/>[IndexedDB del navegador]<br/>Guía SOS y recursos de calma sin conexión")]:::contenedor
+        LOCAL["Almacenamiento local<br/>[IndexedDB del navegador]<br/>Guía SOS y recursos de calma sin conexión"]:::contenedor
         API["RESTful API<br/>[Java, Spring Boot, Spring Data JPA]<br/>Monolito modular, un módulo por Bounded Context. JWT y OpenAPI. Docker con CI/CD"]:::contenedor
-        DB[("Base de datos<br/>[PostgreSQL]<br/>Cuentas, perfiles, episodios y suscripciones")]:::contenedor
+        DB["Base de datos<br/>[PostgreSQL]<br/>Cuentas, perfiles, episodios y suscripciones"]:::contenedor
     end
 
     GOOGLE["Google OAuth<br/>[Sistema externo]"]:::externo
@@ -1353,7 +1353,7 @@ flowchart TB
         RED["Red de Apoyo y Seguimiento<br/>[Módulo Spring Boot, JPA]<br/>Solicitudes de ayuda, alertas e historial"]:::componente
     end
 
-    DB[("Base de datos<br/>[PostgreSQL]")]:::contenedor
+    DB["Base de datos<br/>[PostgreSQL]"]:::contenedor
     GOOGLE["Google OAuth<br/>[Sistema externo]"]:::externo
     PAGOS["Pasarela de pagos<br/>[Sistema externo]"]:::externo
     PUSH["Notificaciones push<br/>[Sistema externo]"]:::externo
@@ -1415,7 +1415,7 @@ flowchart TB
         I18N["Idioma y accesibilidad<br/>[Angular i18n, ARIA]<br/>en_US, es_419 y lectura en voz alta"]:::componente
     end
 
-    LOCAL[("Almacenamiento local<br/>[IndexedDB]")]:::contenedor
+    LOCAL["Almacenamiento local<br/>[IndexedDB]"]:::contenedor
     API["RESTful API<br/>[Contenedor: Spring Boot]"]:::contenedor
     TTS["Síntesis de voz del dispositivo<br/>[Sistema externo]"]:::externo
     AUDIO["Reproductor de audio del dispositivo<br/>[Sistema externo]"]:::externo
