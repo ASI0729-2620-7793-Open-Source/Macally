@@ -830,10 +830,106 @@ Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura 
 
 ### 4.4.1 Web Applications Wireframes
 
+![wireframe (1).png](images/Chapter-4/wireframes/wireframe%20%281%29.png)
+![wireframe (2).png](images/Chapter-4/wireframes/wireframe%20%282%29.png)
+![wireframe (3).png](images/Chapter-4/wireframes/wireframe%20%283%29.png)
+![wireframe (4).png](images/Chapter-4/wireframes/wireframe%20%284%29.png)
+![wireframe (5).png](images/Chapter-4/wireframes/wireframe%20%285%29.png)
+![wireframe (6).png](images/Chapter-4/wireframes/wireframe%20%286%29.png)
+![wireframe (7).png](images/Chapter-4/wireframes/wireframe%20%287%29.png)
+![wireframe (8).png](images/Chapter-4/wireframes/wireframe%20%288%29.png)
+![wireframe (9).png](images/Chapter-4/wireframes/wireframe%20%289%29.png)
+![wireframe (10).png](images/Chapter-4/wireframes/wireframe%20%2810%29.png)
+![wireframe (11).png](images/Chapter-4/wireframes/wireframe%20%2811%29.png)
+![wireframe (12).png](images/Chapter-4/wireframes/wireframe%20%2812%29.png)
+![wireframe (13).png](images/Chapter-4/wireframes/wireframe%20%2813%29.png)
+![wireframe (14).png](images/Chapter-4/wireframes/wireframe%20%2814%29.png)
+![wireframe (15).png](images/Chapter-4/wireframes/wireframe%20%2815%29.png)
+
 ### 4.4.2 Web Applications Wireflow Diagrams
 
-#### 4.4.2. Web Applications Wireflow Diagrams
+![Wireflow.png](images/Chapter-4/Wireflow.png)
 
-**Segmento 1: Residentes en zonas de riesgo medio-alto**
 
-**Segmento 2: Comerciantes en zonas de riesgo medio-alto**
+#### 4.4.2. Web Applications Mock-ups.
+
+![mockups (1).png](images/Chapter-4/mockups/mockups%20%281%29.png)
+
+Modo SOS — pantalla de activación: botón circular "Activar SOS" en Coral Red sobre un fondo degradado cálido, selector de perfil ("¿Para quién es esta guía?") con las tarjetas de Diana Ríos y Mateo Vera, y tres tarjetas informativas que explican la guía paso a paso, la personalización según sensibilidades y el registro automático del episodio.
+
+![mockups (2).png](images/Chapter-4/mockups/mockups%20%282%29.png)
+
+Configurar tablero CAA (variante con fotografías): cuadrícula de pictogramas de Necesidades básicas (Agua, Comida, Baño, Descanso, Dolor, Ayuda) usando imágenes fotográficas reales, cada uno marcable como favorito, junto al formulario inferior para agregar un pictograma personalizado con etiqueta y categoría.
+
+![mockups (3).png](images/Chapter-4/mockups/mockups%20%283%29.png)
+
+Configurar tablero CAA (variante iconográfica): la misma cuadrícula de Necesidades básicas reinterpretada con iconografía lineal simple sobre fondo celeste sólido en lugar de fotografías, manteniendo las mismas categorías, favoritos y el formulario de carga de pictogramas personalizados.
+
+![mockups (4).png](images/Chapter-4/mockups/mockups%20%284%29.png)
+
+Crear nuevo perfil — paso 1 "Datos básicos": formulario con carga de foto, campos de nombre, apellido, edad, género y apodo preferido, seguido de la sección "Diagnóstico y condición" (condición principal y notas del profesional), dentro de un flujo de tres pasos (Datos básicos, Diagnóstico, Sensibilidades).
+
+![mockups (5).png](images/Chapter-4/mockups/mockups%20%285%29.png)
+
+Cuidadores asociados: listado del círculo de confianza de Diana Ríos (María Ríos como Principal, Javier Ríos como Cuidador, Lucía Peña como Terapeuta y Ana Ríos con invitación pendiente) junto a un panel lateral "Invitar cuidador" con campos de correo electrónico y asignación de rol.
+
+![mockups (6).png](images/Chapter-4/mockups/mockups%20%286%29.png)
+
+Galería de estímulos (Autocuidado): selector de estímulos Visual/Auditivo con aviso contextual que prioriza opciones visuales por la sensibilidad auditiva alta de Diana, mostrando tarjetas como Burbujas flotantes, Olas de color, Cielo estrellado, Lluvia suave, Sonido del mar y Piano relajante, cada una marcable como favorita.
+
+![mockups (7).png](images/Chapter-4/mockups/mockups%20%287%29.png)
+
+Modo SOS — Paso 5 de 6 "Calma y Respiración": círculo animado con el texto "Inhala... Exhala" para sincronizar la respiración del cuidador con la de Diana, acompañado de un aviso que recuerda mantener la voz baja por su sensibilidad auditiva alta y un indicador de progreso de pasos.
+
+![mockups (8).png](images/Chapter-4/mockups/mockups%20%288%29.png)
+
+Panel de inicio del cuidador (variante violeta): saludo "Hola, María" con una notificación destacada de que Diana solicitó "Tengo sed" desde el Tablero de Comunicación, acciones para confirmar la recepción o ver el tablero completo, el estado actual ("Calma"), actividad reciente y un gráfico de nivel de interacción.
+
+![mockups (9).png](images/Chapter-4/mockups/mockups%20%289%29.png)
+
+Panel de inicio del cuidador (variante azul con navegación lateral ampliada): la misma notificación de "Diana necesita: Tengo sed" con accesos a Comunicación, Salud y Red de Apoyo, un indicador circular de estado "Calma", historial de asistencia confirmada y una tarjeta de "Red de Apoyo rápida" con contacto directo al neurólogo y al padre.
+
+![mockups (10).png](images/Chapter-4/mockups/mockups%20%2810%29.png)
+
+Perfil de usuario — pestaña "Sensibilidades": ficha de Diana Ríos (15 años, TEA nivel 1) con controles deslizantes de sensibilidad Auditiva (Alta), Visual (Media) y Táctil (Baja), preferencias personales (modo de baja estimulación, priorizar visuales), datos de diagnóstico y la lista de cuidadores asociados.
+
+![mockups (11).png](images/Chapter-4/mockups/mockups%20%2811%29.png)
+
+Estímulo "Burbujas flotantes" en uso: animación de burbujas sobre fondo violeta con un círculo central "RESPIRA", control deslizante de intensidad (Suave–Intenso), interruptor de modo de baja estimulación y accesos para usar el temporizador de calma o terminar la sesión y volver a la galería.
+
+![mockups (12).png](images/Chapter-4/mockups/mockups%20%2812%29.png)
+
+Resumen del episodio (cierre del Modo SOS): mensaje de confirmación "¡Buen trabajo! El episodio ha pasado" con métricas del episodio (duración de 12 min, intensidad inicial Alta, final Baja, detonante Auditivo), selección del estado actual de Diana (Calmada) y el checklist de pasos completados (aislamiento sensorial, validación emocional, respiración guiada, uso de mordedor omitido).
+
+![mockups (13).png](images/Chapter-4/mockups/mockups%20%2813%29.png)
+
+Tablero CAA — vista del usuario neurodivergente (variante con fotografías): pantalla "Hola, Diana ¿Qué necesitas decir?" con la tarjeta "Agua / Tengo sed" seleccionada y reproduciendo audio, categorías filtrables (Necesidades básicas, Emociones, Actividades, Favoritos) y una notificación inferior confirmando el aviso enviado a María.
+
+![mockups (14).png](images/Chapter-4/mockups/mockups%20%2814%29.png)
+
+Tablero CAA — vista del usuario neurodivergente (variante iconográfica en azul): misma interacción "Tengo sed" con pictogramas representados en iconos lineales simples, botón flotante de SOS en la esquina y un toast de confirmación indicando que se avisó a María.
+
+![mockups (15).png](images/Chapter-4/mockups/mockups%20%2815%29.png)
+
+Temporizador de calma: cuenta regresiva circular (03:47 restantes de un total de 5:00) tras continuar con el estímulo "Burbujas flotantes", con opciones rápidas de duración (3, 5 o 10 min), botón de pausa y aviso de que al finalizar se preguntará cómo se siente Diana.
+
+#### 4.4.3. Web Applications User Flow Diagrams.
+
+![UserFlow.png](images/Chapter-4/UserFlow.png)
+
+#### 4.5. Web Applications Prototyping.
+
+
+
+#### 4.6. Domain-Driven Software Architecture.
+#### 4.6.1. Design-Level Event Storming.
+#### 4.6.2. Software Architecture Context Diagram.
+#### 4.6.3. Software Architecture Container Diagrams.
+#### 4.6.4. Software Architecture Components Diagrams.
+
+
+
+#### 4.7. Software Object-Oriented Design.
+#### 4.7.1. Class Diagrams.
+#### 4.8. Database Design.
+#### 4.8.1. Database Diagrams.
