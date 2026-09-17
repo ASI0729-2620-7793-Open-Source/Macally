@@ -10,8 +10,3 @@
 
 ### 5.1.4. Software Deployment Configuration
 
-## 5.2. Landing Page, Services & Applications Implementation
-
-## 5.3. Validation Interviews
-
-## 5.4. Video About-the-Product
