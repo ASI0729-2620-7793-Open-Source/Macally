@@ -205,82 +205,7 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos objetivos: 3 padres, familiares y cuidadores de personas neurodivergentes (Ingrid, Mateo y Johan), y 3 niños y adolescentes neurodivergentes (Owen, Diana y Sebastián). El propósito fue identificar patrones comunes en los detonantes de crisis, las estrategias de autorregulación y contención, y las expectativas frente a una solución digital de apoyo emocional. A partir de los resúmenes obtenidos, se extrajeron características objetivas y subjetivas de cada perfil, las cuales se presentan con respaldo estadístico expresado en porcentajes sobre el total de entrevistados por segmento.
 
-### Segmento objetivo #1: Padres, familiares y cuidadores
-
-**Hallazgos**
-
-- El 100% de los cuidadores reportó recurrir a estrategias de desescalada in situ (verbal, física o sensorial) para contener las crisis de la persona a su cargo.
-- El 100% manifestó experimentar una carga emocional propia (ansiedad, culpa, agotamiento o tensión) derivada del acompañamiento cotidiano.
-- El 67% (Mateo y Johan) cuida a una persona diagnosticada con TEA Nivel 1, mientras que el 33% (Ingrid) acompaña a una persona con TDAH.
-- El 67% (Mateo y Johan) identificó los estímulos sensoriales del entorno (ruidos intensos, luces fuertes, aglomeraciones, cambios de rutina) como los principales detonantes de crisis; el 33% restante (Ingrid) asoció las crisis a la imposición de límites o restricciones propias de la etapa adolescente.
-- El 100% rechazó o no confía en las herramientas digitales actuales: el 67% (Mateo y Johan) las calificó como poco prácticas, infantiles o complejas, y el 33% (Ingrid) señaló no utilizar ninguna herramienta digital en momentos críticos.
-- El 67% (Mateo y Johan) exigió que la solución digital opere con una interfaz de un solo toque; de ese subgrupo, el 33% (Johan) además requirió funcionamiento offline.
-- El 100% condicionó la adopción de la solución digital al respaldo explícito de profesionales de la salud (psicólogos, psiquiatras o terapeutas ocupacionales).
-- El 33% (Ingrid) priorizó, en lugar de mecanismos de emergencia inmediata, una comunidad estructurada por rangos de edad basada en testimonios reales entre madres.
-
-**Diagnóstico de la persona a cargo**
-
-| Diagnóstico | Casos | Porcentaje |
-|---|---|---|
-| TEA Nivel 1 | Mateo, Johan | 67% |
-| TDAH | Ingrid | 33% |
-
-**Principales detonantes de crisis identificados**
-
-| Detonante | Casos | Porcentaje |
-|---|---|---|
-| Estímulos sensoriales (ruidos, luces, aglomeraciones, cambios de rutina) | Mateo, Johan | 67% |
-| Imposición de límites o incertidumbre en la etapa adolescente | Ingrid | 33% |
-
-`graf_detonantesCuidadores`
-
-Los estímulos sensoriales concentran la mayoría de los detonantes reportados por los cuidadores (67%), lo que evidencia que las crisis en personas con TEA están fuertemente asociadas al entorno físico e impredecible, mientras que en el caso de TDAH el detonante se vincula más a la dinámica de crianza y autorregulación emocional.
-
-**Estrategias de contención utilizadas por el cuidador**
-
-| Estrategia | Casos | Porcentaje |
-|---|---|---|
-| Traslado o retiro a zonas de bajo estímulo / silenciosas | Mateo, Johan | 67% |
-| Comunicación en tono bajo con frases cortas / pictogramas | Mateo, Johan | 67% |
-| Validación afectiva (abrazos, afirmaciones verbales) | Ingrid | 33% |
-| Búsqueda de apoyo externo (foros, grupos, blogs) | Ingrid | 33% |
-
-`graf_estrategiasCuidadores`
-
-El retiro a espacios de bajo estímulo y la comunicación simplificada son las estrategias más recurrentes (67% cada una), lo que confirma que el manejo sensorial del entorno es un componente central en el acompañamiento de crisis en TEA. La búsqueda de validación afectiva y de redes de apoyo externas, presente en el 33% del segmento, refleja además una necesidad emocional del propio cuidador que no se limita a la contención del episodio.
-
-**Percepción sobre herramientas digitales actuales**
-
-| Percepción | Casos | Porcentaje |
-|---|---|---|
-| Rechazo por ser poco prácticas, infantiles o complejas | Mateo, Johan | 67% |
-| No utiliza ninguna herramienta digital en momentos críticos | Ingrid | 33% |
-
-`graf_percepcionAppsCuidadores`
-
-La totalidad del segmento (100%) evidenció una relación insatisfactoria o inexistente con las soluciones digitales actuales, lo que indica que no existe una herramienta consolidada en el mercado que los cuidadores perciban como confiable para el manejo de crisis, situación que reduce la resistencia al cambio ante una nueva propuesta.
-
-**Requerimientos para la propuesta digital**
-
-| Requerimiento | Casos | Porcentaje |
-|---|---|---|
-| Respaldo explícito de profesionales de salud mental | Ingrid, Mateo, Johan | 100% |
-| Interfaz de acceso en un solo toque | Mateo, Johan | 67% |
-| Guías visuales de desescalada en pasos cortos (pictogramas/temporizador) | Mateo, Johan | 67% |
-| Funcionamiento offline | Johan | 33% |
-| Comunidad de testimonios entre cuidadores (en lugar de botón de crisis) | Ingrid | 33% |
-
-`graf_requerimientosCuidadores`
-
-El respaldo profesional explícito es una condición unánime (100%) para la aceptación de la propuesta digital, lo que la posiciona como un requisito no negociable del segmento. Las guías visuales rápidas y el acceso en un solo toque, mencionados por el 67% de los cuidadores de personas con TEA, refuerzan la necesidad de una interfaz orientada a la acción inmediata durante episodios de crisis.
-
-**Conclusiones**
-
-Los cuidadores entrevistados enfrentan una carga emocional significativa y sostenida en el tiempo, agravada por la desconfianza hacia las herramientas digitales existentes. El segmento vinculado a TEA prioriza mecanismos de acción rápida frente a detonantes sensoriales, mientras que el vinculado a TDAH prioriza el acompañamiento emocional y la validación entre pares. En ambos casos, el respaldo profesional explícito se confirma como un requisito transversal e indispensable para la adopción de cualquier solución digital.
-
----
-
-### Segmento objetivo #2: Niños y Adolescentes Neurodivergentes
+### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
 **Hallazgos**
 
@@ -359,19 +284,93 @@ Tres funcionalidades alcanzan validación unánime en el segmento (100%): un mec
 Los niños y adolescentes entrevistados comparten un patrón consistente frente a la sobrecarga sensorial: aislamiento físico, evitación de la comunicación verbal y uso del celular como herramienta de autorregulación. La unanimidad en la demanda de mecanismos visuales de expresión rápida, alertas automáticas a contactos de confianza y contenido calmante (música/sonidos) confirma que estas funcionalidades deben constituir el núcleo de la solución digital, mientras que la respiración guiada y una interfaz visualmente simple representan requisitos complementarios ampliamente compartidos por el segmento.
 
 
+### Segmento objetivo #2: Padres, familiares y cuidadores
+
+**Hallazgos**
+
+- El 100% de los cuidadores reportó recurrir a estrategias de desescalada in situ (verbal, física o sensorial) para contener las crisis de la persona a su cargo.
+- El 100% manifestó experimentar una carga emocional propia (ansiedad, culpa, agotamiento o tensión) derivada del acompañamiento cotidiano.
+- El 67% (Mateo y Johan) cuida a una persona diagnosticada con TEA Nivel 1, mientras que el 33% (Ingrid) acompaña a una persona con TDAH.
+- El 67% (Mateo y Johan) identificó los estímulos sensoriales del entorno (ruidos intensos, luces fuertes, aglomeraciones, cambios de rutina) como los principales detonantes de crisis; el 33% restante (Ingrid) asoció las crisis a la imposición de límites o restricciones propias de la etapa adolescente.
+- El 100% rechazó o no confía en las herramientas digitales actuales: el 67% (Mateo y Johan) las calificó como poco prácticas, infantiles o complejas, y el 33% (Ingrid) señaló no utilizar ninguna herramienta digital en momentos críticos.
+- El 67% (Mateo y Johan) exigió que la solución digital opere con una interfaz de un solo toque; de ese subgrupo, el 33% (Johan) además requirió funcionamiento offline.
+- El 100% condicionó la adopción de la solución digital al respaldo explícito de profesionales de la salud (psicólogos, psiquiatras o terapeutas ocupacionales).
+- El 33% (Ingrid) priorizó, en lugar de mecanismos de emergencia inmediata, una comunidad estructurada por rangos de edad basada en testimonios reales entre madres.
+
+**Diagnóstico de la persona a cargo**
+
+| Diagnóstico | Casos | Porcentaje |
+|---|---|---|
+| TEA Nivel 1 | Mateo, Johan | 67% |
+| TDAH | Ingrid | 33% |
+
+**Principales detonantes de crisis identificados**
+
+| Detonante | Casos | Porcentaje |
+|---|---|---|
+| Estímulos sensoriales (ruidos, luces, aglomeraciones, cambios de rutina) | Mateo, Johan | 67% |
+| Imposición de límites o incertidumbre en la etapa adolescente | Ingrid | 33% |
+
+`graf_detonantesCuidadores`
+
+Los estímulos sensoriales concentran la mayoría de los detonantes reportados por los cuidadores (67%), lo que evidencia que las crisis en personas con TEA están fuertemente asociadas al entorno físico e impredecible, mientras que en el caso de TDAH el detonante se vincula más a la dinámica de crianza y autorregulación emocional.
+
+**Estrategias de contención utilizadas por el cuidador**
+
+| Estrategia | Casos | Porcentaje |
+|---|---|---|
+| Traslado o retiro a zonas de bajo estímulo / silenciosas | Mateo, Johan | 67% |
+| Comunicación en tono bajo con frases cortas / pictogramas | Mateo, Johan | 67% |
+| Validación afectiva (abrazos, afirmaciones verbales) | Ingrid | 33% |
+| Búsqueda de apoyo externo (foros, grupos, blogs) | Ingrid | 33% |
+
+`graf_estrategiasCuidadores`
+
+El retiro a espacios de bajo estímulo y la comunicación simplificada son las estrategias más recurrentes (67% cada una), lo que confirma que el manejo sensorial del entorno es un componente central en el acompañamiento de crisis en TEA. La búsqueda de validación afectiva y de redes de apoyo externas, presente en el 33% del segmento, refleja además una necesidad emocional del propio cuidador que no se limita a la contención del episodio.
+
+**Percepción sobre herramientas digitales actuales**
+
+| Percepción | Casos | Porcentaje |
+|---|---|---|
+| Rechazo por ser poco prácticas, infantiles o complejas | Mateo, Johan | 67% |
+| No utiliza ninguna herramienta digital en momentos críticos | Ingrid | 33% |
+
+`graf_percepcionAppsCuidadores`
+
+La totalidad del segmento (100%) evidenció una relación insatisfactoria o inexistente con las soluciones digitales actuales, lo que indica que no existe una herramienta consolidada en el mercado que los cuidadores perciban como confiable para el manejo de crisis, situación que reduce la resistencia al cambio ante una nueva propuesta.
+
+**Requerimientos para la propuesta digital**
+
+| Requerimiento | Casos | Porcentaje |
+|---|---|---|
+| Respaldo explícito de profesionales de salud mental | Ingrid, Mateo, Johan | 100% |
+| Interfaz de acceso en un solo toque | Mateo, Johan | 67% |
+| Guías visuales de desescalada en pasos cortos (pictogramas/temporizador) | Mateo, Johan | 67% |
+| Funcionamiento offline | Johan | 33% |
+| Comunidad de testimonios entre cuidadores (en lugar de botón de crisis) | Ingrid | 33% |
+
+`graf_requerimientosCuidadores`
+
+El respaldo profesional explícito es una condición unánime (100%) para la aceptación de la propuesta digital, lo que la posiciona como un requisito no negociable del segmento. Las guías visuales rápidas y el acceso en un solo toque, mencionados por el 67% de los cuidadores de personas con TEA, refuerzan la necesidad de una interfaz orientada a la acción inmediata durante episodios de crisis.
+
+**Conclusiones**
+
+Los cuidadores entrevistados enfrentan una carga emocional significativa y sostenida en el tiempo, agravada por la desconfianza hacia las herramientas digitales existentes. El segmento vinculado a TEA prioriza mecanismos de acción rápida frente a detonantes sensoriales, mientras que el vinculado a TDAH prioriza el acompañamiento emocional y la validación entre pares. En ambos casos, el respaldo profesional explícito se confirma como un requisito transversal e indispensable para la adopción de cualquier solución digital.
+
+---
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
 
-### Segmento objetivo #1: Padres, familiares y cuidadores
 
-![Padres, familiares y cuidadores.png](images/Chapter-II/Padres%2C%20familiares%20y%20cuidadores.png)
-
-### Segmento 2
+### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
 ![Niños y Adolescentes Neurodivergentes.png](images/Chapter-II/Ni%C3%B1os%20y%20Adolescentes%20Neurodivergentes.png)
 
+### Segmento objetivo #2: Padres, familiares y cuidadores
 
+![Padres, familiares y cuidadores.png](images/Chapter-II/Padres%2C%20familiares%20y%20cuidadores.png)
 
 
 ### 2.3.2. User Task Matrix
@@ -503,17 +502,17 @@ Finalmente, la matriz evidencia que ambos segmentos tienen necesidades diferente
 
 El User Journey Mapping permite representar de manera visual la experiencia que atraviesan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. A través de este recorrido se identifican sus acciones, necesidades, emociones y principales dificultades, permitiendo reconocer oportunidades en las que NUBI puede brindar apoyo de manera rápida, sencilla y accesible.
 
-**Segmento 1 – Padres, familiares y cuidadores (Mateo – Cuidador primario)**
-
-El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
-
-![Journey Map Mateo](images/Chapter-II/Journey-map-Mateo.png)
-
-**Segmento 2 – Niños y adolescentes neurodivergentes (Diana – Adolescente neurodivergente)**
+**Segmento 1 – Niños y adolescentes neurodivergentes (Diana – Adolescente neurodivergente)**
 
 El recorrido representa la experiencia del usuario neurodivergente desde la aparición de un estímulo que genera malestar hasta la autorregulación, la solicitud de ayuda y la posterior recuperación.
 
-![Journey Map Diana](images/Chapter-II/Journey-map-Diana.png)
+![Journey Map Diana](images/Chapter-II/User-Journey-Mapping-segmento1.png)
+
+**Segmento 2 – Padres, familiares y cuidadores (Mateo – Cuidador primario)**
+
+El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
+
+![Journey Map Mateo](images/Chapter-II/User-Journey-Mapping-segmento2.png)
 
 ### 2.3.4. Empathy Mapping
 
