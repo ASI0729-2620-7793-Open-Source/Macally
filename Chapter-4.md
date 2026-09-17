@@ -919,9 +919,12 @@ Temporizador de calma: cuenta regresiva circular (03:47 restantes de un total de
 
 #### 4.5. Web Applications Prototyping.
 
-
+|![prototype.png](images/Chapter-4/prototype.png)                                                                                                                                                                                                                                                                                                                                |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQDSl4T7xAKFT52jN0itd5DMAQr-yskvbFkI0PyL_iQqJqM?e=6kqdJ6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  |
 
 #### 4.6. Domain-Driven Software Architecture.
+
 #### 4.6.1. Design-Level Event Storming.
 #### 4.6.2. Software Architecture Context Diagram.
 #### 4.6.3. Software Architecture Container Diagrams.
