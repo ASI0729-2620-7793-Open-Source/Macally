@@ -365,15 +365,21 @@ Los cuidadores entrevistados enfrentan una carga emocional significativa y soste
 
 ### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
+La finalidad de la elaboración de este user persona es representa a los jóvenes y adolescentes neurodivergentes que experimentan sobrecarga sensorial y bloqueos comunicativos en entornos saturados, precisando herramientas digitales de calma y tableros de comunicación accesibles.
+
 <p align="center">
   <img src="images/Chapter-II/User-persona-Diana.png" alt="User Personas Niños y Adolescentes Neurodivergentes" width="600">
 </p>
+Nota. User Persona correspondiente a Diana (Idealist), representando el arquetipo del segmento de niños y adolescentes neurodivergentes, enfocado en sus necesidades de autorregulación emocional y comunicación alternativa.
 
 ### Segmento objetivo #2: Padres, familiares y cuidadores
+
+La finalidad de la elaboración de este user persona es representa a los cuidadores primarios que asumen el acompañamiento cotidiano de un familiar neurodivergente, buscando pautas claras y soporte estructurado para gestionar episodios de crisis con serenidad.
 
 <p align="center">
   <img src="images/Chapter-II/User-persona-Mateo.png" alt="User Personas Padres" width="600">
 </p>
+Nota. User Persona correspondiente a Mateo (Guardian), representando el arquetipo del segmento de padres y cuidadores primarios, enfocado en sus requerimientos de guías de contención rápida, comunidad y herramientas de bajo esfuerzo cognitivo.
 
 
 ### 2.3.2. User Task Matrix
@@ -512,6 +518,7 @@ El recorrido representa la experiencia del usuario neurodivergente desde la apar
 <p align="center">
   <img src="images/Chapter-II/User-Journey-Mapping-segmento1.png" alt="User Journey Mapping Diana" width="600">
 </p>
+Nota. User Journey Map (As-Is) correspondiente a Diana, detallando las deficiencias actuales en los mecanismos de autorregulación sensorial y la dificultad para comunicar sus necesidades sin depender de la expresión verbal directa.
 
 **Segmento 2 – Padres, familiares y cuidadores (Mateo – Cuidador primario)**
 
@@ -520,45 +527,77 @@ El recorrido representa la experiencia del cuidador desde la identificación de 
 <p align="center">
   <img src="images/Chapter-II/User-Journey-Mapping-segmento2.png" alt="User Journey Mapping Mateo" width="600">
 </p>
+Nota. User Journey Map (As-Is) correspondiente a Mateo, detallando las deficiencias actuales en el acceso a guías rápidas de contención y la falta de herramientas inmediatas para la gestión de crisis.
 
 
 ### 2.3.4. Empathy Mapping
 
 **Segmento objetivo 1: Niños y adolescentes neurodivergentes**
 
+Mapa de empatía que sintetiza los pensamientos, percepciones sensoriales, frustraciones y necesidades de niños y adolescentes neurodivergentes de 6 a 17 años que experimentan episodios de sobrecarga o desregulación emocional.
+
 <p align="center">
-  <img src="images/Chapter-II/empathymap1ni%C3%B1osadolescentesneurodivergentes.png" alt="Empathy Mapping Mateo" width="600">
+  <img src="images/Chapter-II/Empathy-Mapping-Diana.png" alt="Empathy Mapping Diana" width="600">
 </p>
+Nota. Empathy Map correspondiente al Segmento 1 (Niños y Adolescentes Neurodivergentes), reflejando sus barreras de comunicación, estímulos del entorno y oportunidades de valor para la autorregulación guiada.
 
 
 **Segmento 2: Madres, padres y cuidadores**
 
+Mapa de empatía que analiza los pensamientos, preocupaciones, entornos de presión social y necesidades de los padres y cuidadores primarios frente a momentos de desregulación emocional o sensorial de sus familiares neurodivergentes.
+
 <p align="center">
-  <img src="images/Chapter-II/empathymap2padres%2C%20familiares%20y%20cuidadores.png" alt="Empathy Mapping Padres" width="600">
+  <img src="images/Chapter-II/Empathy-Mapping-Mateo.jpeg" alt="Empathy Mapping Padres" width="600">
 </p>
+Nota. Empathy Map correspondiente al Segmento 2 (Padres, Familiares y Cuidadores Primarios), visibilizando sus desafíos emocionales, la búsqueda de guías de contención rápida y la necesidad de herramientas intuitivas respaldadas por profesionales.
 
 
 ## 2.4. Big Picture Event Storming
+En esta sección se desarrolla el Big Picture Event Storming, una dinámica colaborativa orientada a mapear el dominio del sistema a través de los eventos de negocio clave que ocurren a lo largo del ciclo de uso de la aplicación. Mediante la identificación secuencial de estos sucesos y su estructuración en flujos clave —tales como Perfil y Personalización, Autorregulación, Gestión de Crisis (Modo SOS), Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento—, se logra representar la interacción entre los usuarios neurodivergentes, sus cuidadores y los servicios del sistema. Este artefacto permite alinearse visualmente sobre las dependencias del dominio, definir la delimitación de contextos y detectar de forma temprana posibles dudas operativas, garantizando que la arquitectura responda a las necesidades inmediatas de contención, comunicación e intervención.
+
+### 2.4.1. Red de apollo y segumiento
+Flujo de eventos para el envío de alertas a contactos de confianza, registro de episodios y generación de reportes consultables por cuidadores y profesionales de la salud.
 
 <p align="center">
   <img src="images/Chapter-II/event%20storming%20(1).png" alt="event storming 1" width="400">
 </p>
+  Nota. Diagrama de eventos del proceso de Red de Apoyo y Seguimiento, detallando los pasos de notificación, llegada del contacto, registro del episodio y compartición de reportes.
+
+
+### 2.4.2. Comunicación Asistida (CAA)
+Secuencia de acciones que abarca desde la apertura del tablero de comunicación hasta la selección de pictogramas y la reproducción por voz del mensaje para el acompañante.
 
 <p align="center">
   <img src="images/Chapter-II/event%20storming%20(2).png" alt="event storming 2" width="400">
 </p>
+Nota. Diagrama de eventos del proceso de Comunicación Asistida (CAA), mostrando la interacción visual mediante pictogramas y la conversión de texto a voz (TTS) para el acompañante.
+
+
+### 2.4.3. Autorregulación
+Flujo funcional orientado a la disminución de sobrecarga mediante el inicio de ejercicios de respiración guiada, sonidos relajantes y uso del lienzo de dibujo libre.
 
 <p align="center">
   <img src="images/Chapter-II/event%20storming%20(3).png" alt="event storming 3" width="400">
 </p>
 
+Nota. Diagrama de eventos del flujo de Autorregulación, representando las etapas de activación de baja estimulación, guía de respiración, espacio de trazo libre y guardado de recursos de calma.
+
+### 2.4.4. Gestión de Crisis (Modo SOS)
+Ruta de contención rápida activada ante señales tempranas para guiarse paso a paso en la desescalada del episodio y el restablecimiento de la calma.
+
 <p align="center">
   <img src="images/Chapter-II/event%20storming%20(4).png" alt="event storming 4" width="400">
 </p>
+Nota. Diagrama de eventos del flujo de Gestión de Crisis (Modo SOS), ilustrando los pasos inmediatos de selección de detonante, temporizador visual y sugerencias de contención para el cuidador.
+
+
+### 2.4.5. Perfil y Personalización
+Proceso de configuración inicial del usuario donde se definen diagnósticos, detonantes sensoriales, necesidades comunicativas y contactos de confianza.
 
 <p align="center">
   <img src="images/Chapter-II/event%20storming%20(5).png" alt="event storming 5" width="400">
 </p>
+Nota. Diagrama de eventos del proceso de Perfil y Personalización, detallando la captura de datos sensoriales, preferencias comunicativas y vinculación de la red de apoyo.
 
 
 ## 2.5. Ubiquitous Language
