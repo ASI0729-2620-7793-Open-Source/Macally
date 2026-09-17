@@ -363,7 +363,6 @@ Los cuidadores entrevistados enfrentan una carga emocional significativa y soste
 
 ### 2.3.1. User Personas
 
-
 ### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
 <p align="center">
@@ -375,7 +374,6 @@ Los cuidadores entrevistados enfrentan una carga emocional significativa y soste
 <p align="center">
   <img src="images/Chapter-II/User-persona-Mateo.png" alt="User Personas Padres" width="600">
 </p>
-
 
 
 ### 2.3.2. User Task Matrix
