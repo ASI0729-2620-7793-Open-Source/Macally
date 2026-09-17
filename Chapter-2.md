@@ -366,11 +366,15 @@ Los cuidadores entrevistados enfrentan una carga emocional significativa y soste
 
 ### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
-![Niños y Adolescentes Neurodivergentes.png](images/Chapter-II/Ni%C3%B1os%20y%20Adolescentes%20Neurodivergentes.png)
+<p align="center">
+  <img src="images/Chapter-II/Ni%C3%B1os%20y%20Adolescentes%20Neurodivergentes.png" alt="User Personas Niños y Adolescentes Neurodivergentes" width="600">
+</p>
 
 ### Segmento objetivo #2: Padres, familiares y cuidadores
 
-![Padres, familiares y cuidadores.png](images/Chapter-II/Padres%2C%20familiares%20y%20cuidadores.png)
+<p align="center">
+  <img src="images/Chapter-II/Padres%2C%20familiares%20y%20cuidadores.png" alt="User Personas Padres" width="600">
+</p>
 
 
 ### 2.3.2. User Task Matrix
@@ -506,31 +510,57 @@ El User Journey Mapping permite representar de manera visual la experiencia que 
 
 El recorrido representa la experiencia del usuario neurodivergente desde la aparición de un estímulo que genera malestar hasta la autorregulación, la solicitud de ayuda y la posterior recuperación.
 
-![Journey Map Diana](images/Chapter-II/User-Journey-Mapping-segmento1.png)
+<p align="center">
+  <img src="images/Chapter-II/User-Journey-Mapping-segmento1.png" alt="User Journey Mapping Diana" width="600">
+</p>
 
 **Segmento 2 – Padres, familiares y cuidadores (Mateo – Cuidador primario)**
 
 El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
 
-![Journey Map Mateo](images/Chapter-II/User-Journey-Mapping-segmento2.png)
+<p align="center">
+  <img src="images/Chapter-II/User-Journey-Mapping-segmento2.png" alt="User Journey Mapping Mateo" width="600">
+</p>
+
 
 ### 2.3.4. Empathy Mapping
 
 **Segmento objetivo 1: Niños y adolescentes neurodivergentes**
 
-![empathymap1niñosadolescentesneurodivergentes.png](images/Chapter-II/empathymap1ni%C3%B1osadolescentesneurodivergentes.png)
+<p align="center">
+  <img src="images/Chapter-II/empathymap1ni%C3%B1osadolescentesneurodivergentes.png" alt="Empathy Mapping Mateo" width="600">
+</p>
+
 
 **Segmento 2: Madres, padres y cuidadores**
 
-![empathymap2padres, familiares y cuidadores.png](images/Chapter-II/empathymap2padres%2C%20familiares%20y%20cuidadores.png)
+<p align="center">
+  <img src="images/Chapter-II/empathymap2padres%2C%20familiares%20y%20cuidadores.png" alt="Empathy Mapping Padres" width="600">
+</p>
+
 
 ## 2.4. Big Picture Event Storming
 
-![event storming (3).png](images/Chapter-II/event%20storming%20(1).png)
-![event storming (4).png](images/Chapter-II/event%20storming%20(2).png)
-![event storming (5).png](images/Chapter-II/event%20storming%20(3).png)
-![event storming (1).png](images/Chapter-II/event%20storming%20(4).png)
-![event storming (2).png](images/Chapter-II/event%20storming%20(5).png)
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(1).png" alt="event storming 1" width="400">
+</p>
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(2).png" alt="event storming 2" width="400">
+</p>
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(3).png" alt="event storming 3" width="400">
+</p>
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(4).png" alt="event storming 4" width="400">
+</p>
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(5).png" alt="event storming 5" width="400">
+</p>
+
 
 ## 2.5. Ubiquitous Language
 
