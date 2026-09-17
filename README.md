@@ -16,8 +16,8 @@ Startup: Macally
 Producto: NUBI
 
 Integrantes:
--Lopez Torres, Leonardo Gabriel - U20241A649
--Diaz Yurivilca, Sofia - U20241A195
+- Lopez Torres, Leonardo Gabriel - U20241A649
+- Diaz Yurivilca, Sofia - U20241A195
 -
 -
 -
@@ -47,10 +47,10 @@ Abril, 2026
 
 **Agosto - 2026**
 
-WEBSITE:
 
 ---
 # WEBSITE:
+
 </div>
 
 
