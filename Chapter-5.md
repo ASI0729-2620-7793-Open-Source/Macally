@@ -127,5 +127,200 @@ El uso conjunto de Git, GitHub, GitFlow, Semantic Versioning y Conventional Comm
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
+Con el objetivo de mantener un código consistente, legible y fácil de mantener, el equipo de NUBI establece un conjunto de convenciones para los lenguajes y tecnologías utilizados durante el desarrollo del Landing Page, la Frontend Web Application y los RESTful Web Services.
+
+Todos los nombres utilizados dentro del código fuente, incluyendo variables, funciones, métodos, clases, componentes, servicios, interfaces, archivos y carpetas, se escriben en **inglés**. De esta manera se mantiene una nomenclatura uniforme entre todos los integrantes del equipo.
+
+Las convenciones adoptadas toman como referencia estándares reconocidos como Google HTML/CSS Style Guide, Angular Coding Style Guide, Google TypeScript Style Guide y Google Java Style Guide.
+
+#### HTML5 Conventions
+
+Para el desarrollo del Landing Page y de los templates de la Frontend Web Application se utilizan las siguientes convenciones:
+
+- Se utilizan elementos semánticos de HTML5 como `header`, `nav`, `main`, `section`, `article` y `footer`.
+- Las etiquetas y atributos se escriben en minúsculas.
+- Los valores de los atributos utilizan comillas dobles.
+- Se mantiene una indentación consistente de dos espacios.
+- Las imágenes incluyen un atributo `alt` descriptivo.
+- Los elementos interactivos deben incluir etiquetas descriptivas y atributos ARIA cuando corresponda.
+- Se evita utilizar elementos HTML únicamente con fines de presentación cuando existe una alternativa semántica.
+
+Ejemplos de nombres utilizados:
+
+- `sos-mode`
+- `user-profile`
+- `communication-board`
+- `self-regulation`
+- `support-network`
+
+#### CSS3 Conventions
+
+Para los estilos del Landing Page y de la Frontend Web Application se utilizan las siguientes convenciones:
+
+- Los nombres de clases CSS se escriben en inglés.
+- Se utiliza `kebab-case` para los nombres de las clases.
+- Se utilizan nombres que describan la función del componente y no únicamente su apariencia visual.
+- Se mantiene una indentación consistente.
+- Se evita duplicar estilos cuando estos pueden reutilizarse.
+- Los colores, tipografías y espaciados deben mantener consistencia con el Design System definido para NUBI.
+
+Ejemplos correctos:
+
+- `.sos-section`
+- `.profile-card`
+- `.primary-button`
+- `.communication-board`
+- `.regulation-card`
+
+Se evitan nombres poco descriptivos como `.box1`, `.red-button` o `.section2`.
+
+#### JavaScript Conventions
+
+Para el código JavaScript utilizado en el Landing Page se establecen las siguientes convenciones:
+
+- Las variables y funciones utilizan `camelCase`.
+- Las constantes utilizan `UPPER_SNAKE_CASE`.
+- Los nombres deben indicar claramente su propósito.
+- Se utiliza `const` por defecto cuando el valor no será reasignado.
+- Se utiliza `let` cuando el valor de la variable pueda cambiar.
+- Se evita el uso de `var`.
+- Las funciones deben realizar una responsabilidad claramente definida.
+
+Ejemplos:
+
+- `selectedProfile`
+- `activateSosMode()`
+- `loadUserPreferences()`
+- `DEFAULT_LANGUAGE`
+- `MAX_RETRY_ATTEMPTS`
+
+#### TypeScript and Angular Conventions
+
+La Frontend Web Application de NUBI utiliza TypeScript y Angular. Para mantener consistencia se aplican las siguientes convenciones:
+
+- Variables y funciones utilizan `camelCase`.
+- Clases, componentes, interfaces y servicios utilizan `PascalCase`.
+- Constantes globales utilizan `UPPER_SNAKE_CASE`.
+- Los nombres de archivos utilizan `kebab-case`.
+- Los componentes deben tener responsabilidades específicas y evitar concentrar lógica no relacionada.
+- La lógica reutilizable debe mantenerse en servicios cuando corresponda.
+- Los archivos de cada componente deben conservar una nomenclatura relacionada.
+
+Ejemplos de clases y servicios:
+
+- `UserProfileComponent`
+- `SosModeComponent`
+- `CommunicationBoardComponent`
+- `UserProfileService`
+- `SupportRequestService`
+
+Ejemplos de archivos:
+
+- `user-profile.component.ts`
+- `user-profile.component.html`
+- `user-profile.component.css`
+- `sos-mode.component.ts`
+- `communication-board.component.ts`
+- `support-request.service.ts`
+
+#### Java and Spring Boot Conventions
+
+Para el desarrollo de los RESTful Web Services se utiliza Java con Spring Boot. Se siguen las siguientes convenciones:
+
+- Las clases e interfaces utilizan `PascalCase`.
+- Los métodos y variables utilizan `lowerCamelCase`.
+- Las constantes utilizan `UPPER_SNAKE_CASE`.
+- Los nombres de paquetes se escriben completamente en minúsculas.
+- Los nombres deben estar escritos en inglés.
+- Las clases deben mantener responsabilidades específicas.
+- Los controladores se utilizan para gestionar las solicitudes HTTP.
+- Los servicios contienen la lógica de aplicación.
+- Los repositorios gestionan el acceso y persistencia de los datos.
+- Las entidades representan los objetos persistentes del dominio.
+
+Ejemplos de clases:
+
+- `UserProfileController`
+- `UserProfileService`
+- `UserProfileRepository`
+- `CrisisEpisodeController`
+- `SupportRequestService`
+- `RecommendationRepository`
+
+Ejemplos de métodos:
+
+- `createUserProfile()`
+- `activateSosMode()`
+- `completeSosStep()`
+- `sendSupportRequest()`
+- `generateRecommendation()`
+
+Ejemplos de paquetes:
+
+- `com.nubi.profile`
+- `com.nubi.crisis`
+- `com.nubi.regulation`
+- `com.nubi.communication`
+- `com.nubi.support`
+
+#### RESTful API Conventions
+
+Los endpoints de los RESTful Web Services siguen una estructura consistente y utilizan nombres de recursos en inglés.
+
+Los recursos se representan mediante sustantivos y se utilizan los métodos HTTP correspondientes a cada operación.
+
+Ejemplos:
+
+- `GET /api/v1/profiles`
+- `POST /api/v1/profiles`
+- `PUT /api/v1/profiles/{id}`
+- `GET /api/v1/episodes`
+- `POST /api/v1/support-requests`
+- `GET /api/v1/recommendations`
+
+Los principales códigos de estado HTTP utilizados son:
+
+- `200 OK`: operación realizada correctamente.
+- `201 Created`: recurso creado correctamente.
+- `400 Bad Request`: solicitud con información inválida.
+- `401 Unauthorized`: solicitud sin autenticación válida.
+- `404 Not Found`: recurso solicitado no encontrado.
+- `500 Internal Server Error`: error interno del servicio.
+
+#### Gherkin Conventions
+
+Para la especificación de escenarios y criterios de aceptación se utiliza la estructura Gherkin, manteniendo escenarios claros, comprobables y orientados al comportamiento esperado del sistema.
+
+La estructura utilizada considera:
+
+- `Given`: estado o condición inicial.
+- `When`: acción realizada.
+- `Then`: resultado esperado.
+
+Los escenarios deben describir comportamiento y no detalles específicos de implementación.
+
+#### Internationalization and Accessibility Conventions
+
+NUBI considera criterios de internacionalización y accesibilidad durante el desarrollo de sus productos digitales.
+
+Para internacionalización se consideran los siguientes locales:
+
+- `en_US`: English.
+- `es_419`: Latin American Spanish.
+
+El idioma predeterminado de la interfaz, mensajes y documentación técnica será inglés.
+
+En cuanto a accesibilidad, el Landing Page y la Frontend Web Application deben considerar:
+
+- Uso adecuado de HTML semántico.
+- Atributos `alt` para imágenes.
+- Atributos ARIA en elementos interactivos cuando corresponda.
+- Etiquetas descriptivas en botones y controles.
+- Navegación mediante teclado.
+- Contraste adecuado entre texto y fondo.
+- Retroalimentación visual comprensible para los diferentes estados del sistema.
+
+La aplicación de estas convenciones permite que el código fuente de NUBI mantenga una estructura uniforme entre los integrantes del equipo, facilite el mantenimiento de los productos y reduzca inconsistencias durante el desarrollo colaborativo.
+
 ### 5.1.4. Software Deployment Configuration
 
