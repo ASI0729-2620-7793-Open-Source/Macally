@@ -367,13 +367,13 @@ Los cuidadores entrevistados enfrentan una carga emocional significativa y soste
 ### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
 <p align="center">
-  <img src="images/Chapter-II/Ni%C3%B1os%20y%20Adolescentes%20Neurodivergentes.png" alt="User Personas Niños y Adolescentes Neurodivergentes" width="600">
+  <img src="images/Chapter-II/User-persona-Diana.png" alt="User Personas Niños y Adolescentes Neurodivergentes" width="600">
 </p>
 
 ### Segmento objetivo #2: Padres, familiares y cuidadores
 
 <p align="center">
-  <img src="images/Chapter-II/Padres%2C%20familiares%20y%20cuidadores.png" alt="User Personas Padres" width="600">
+  <img src="images/Chapter-II/User-persona-Mateo.png" alt="User Personas Padres" width="600">
 </p>
 
 
