@@ -377,6 +377,7 @@ Los cuidadores entrevistados enfrentan una carga emocional significativa y soste
 </p>
 
 
+
 ### 2.3.2. User Task Matrix
 
 La User Task Matrix permite identificar y priorizar las principales tareas que realizan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. Para este análisis se consideran los dos segmentos principales del proyecto: padres, familiares y cuidadores primarios, y niños y adolescentes neurodivergentes.
