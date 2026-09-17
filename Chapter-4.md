@@ -923,12 +923,530 @@ Temporizador de calma: cuenta regresiva circular (03:47 restantes de un total de
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQDSl4T7xAKFT52jN0itd5DMAQr-yskvbFkI0PyL_iQqJqM?e=6kqdJ6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  |
 
-#### 4.6. Domain-Driven Software Architecture.
+## 4.6. Domain-Driven Software Architecture
 
-#### 4.6.1. Design-Level Event Storming.
-#### 4.6.2. Software Architecture Context Diagram.
-#### 4.6.3. Software Architecture Container Diagrams.
-#### 4.6.4. Software Architecture Components Diagrams.
+En esta sección se profundiza el modelo del dominio construido en el Big Picture Event Storming hasta identificar los Bounded Contexts, Aggregates, Commands, Events y Queries de NUBI. A partir de ese modelo se representa la arquitectura de la solución aplicando C4 Model. Los diagramas de esta sección se elaboraron como Diagram-as-Code en Mermaid.
+
+### 4.6.1. Design-Level Event Storming
+
+El equipo realizó una sesión de Design-Level Event Storming de aproximadamente dos horas, partiendo de los cinco tableros del Big Picture Event Storming. Sobre cada tablero se agregaron los **Commands** que originan cada evento, los **Aggregates** que los procesan, las **Policies** que se disparan automáticamente y los **Read Models** que el usuario consulta para decidir. Además, cada hotspot del Big Picture se discutió y se convirtió en una decisión de diseño o quedó registrado como pregunta abierta.
+
+Como resultado se confirmaron **cinco Bounded Contexts**, que corresponden a las cinco áreas del Big Picture. Las funciones de cuenta, suscripción y soporte técnico, que no tenían un tablero propio, se ubicaron en Perfil y Personalización, ya que todas pertenecen a la cuenta del usuario.
+
+| Bounded Context | Responsabilidad | Épicas |
+| :--- | :--- | :--- |
+| Perfil y Personalización | Cuenta, perfil del usuario, contactos de confianza, suscripción e institución | EP01, EP02, EP03, EP11, EP12, EP13, EP14 |
+| Gestión de Crisis (Modo SOS) | Guía paso a paso para el cuidador durante una crisis | EP04, EP10 |
+| Autorregulación | Recursos de calma para el usuario neurodivergente | EP05 |
+| Comunicación Asistida (CAA) | Tablero de pictogramas y salida de voz | EP06 |
+| Red de Apoyo y Seguimiento | Alertas a contactos de confianza e historial de episodios | EP07, EP08, EP09, EP17 |
+
+En los diagramas se mantiene la convención de colores del Event Storming: **naranja** para los Domain Events, **azul** para los Commands, **amarillo** para los Aggregates, **rosado** para los Actors, **morado** para las Policies, **verde** para los Read Models y **gris** para los sistemas externos.
+
+#### Perfil y Personalización
+
+Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los usuarios neurodivergentes a su cargo: diagnóstico, detonantes, necesidad comunicativa, estrategia de calma, pictogramas y contactos de confianza. También concentra la suscripción, los planes institucionales y los reportes de soporte técnico.
+
+```mermaid
+flowchart LR
+    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
+    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
+    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
+    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
+    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
+    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
+    classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
+
+    A1(["Cuidador"]):::actor
+    C1["Registrar cuenta"]:::cmd
+    C2["Crear perfil del usuario"]:::cmd
+    C3["Registrar diagnóstico y detonantes"]:::cmd
+    C4["Vincular contacto de confianza"]:::cmd
+    AG1{{"Cuenta"}}:::agg
+    AG2{{"Perfil del usuario neurodivergente"}}:::agg
+    AG3{{"Suscripción"}}:::agg
+    E1[/"Cuenta creada"/]:::evt
+    E2[/"Perfil de usuario creado"/]:::evt
+    E3[/"Diagnóstico y detonantes registrados"/]:::evt
+    E4[/"Contacto de confianza vinculado"/]:::evt
+    E5[/"Suscripción freemium activada"/]:::evt
+    P1["Al crear la cuenta, crear la suscripción freemium"]:::pol
+    P2["Avisar a Red de Apoyo y Seguimiento"]:::pol
+    Q1[("Perfiles a cargo")]:::qry
+    X1["Google OAuth"]:::ext
+
+    A1 --> C1 --> AG1 --> E1 --> P1 --> AG3 --> E5
+    A1 --> C2 --> AG2 --> E2
+    A1 --> C3 --> AG2
+    AG2 --> E3
+    A1 --> C4 --> AG2
+    AG2 --> E4 --> P2
+    C1 -.-> X1
+    AG2 --> Q1
+```
+
+*Ilustración — Design-Level Event Storming: Perfil y Personalización*
+
+**Hotspots resueltos:**
+
+- *¿Lo configura el cuidador o el niño?* → El cuidador crea el perfil y registra el diagnóstico, los detonantes y los contactos de confianza. El usuario neurodivergente solo elige sus recursos y pictogramas favoritos.
+- *¿Qué pasa si hay dos cuidadores del mismo niño?* → Un perfil admite varios cuidadores asociados, cada uno con su propia cuenta (US18).
+- *¿Se valida el diagnóstico o se declara?* → Se declara. NUBI no valida ni emite diagnósticos, en línea con la restricción definida en la sección 1.2.
+
+#### Gestión de Crisis (Modo SOS)
+
+Conduce al cuidador durante una crisis con una guía de actuación adaptada al perfil del usuario, mostrando un paso de contención a la vez y sugiriendo una técnica alternativa cuando un paso no funciona. Al activarse avisa a Autorregulación y a Red de Apoyo y Seguimiento; al finalizar, solicita el registro del episodio.
+
+```mermaid
+flowchart LR
+    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
+    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
+    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
+    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
+    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
+    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
+
+    A1(["Cuidador"]):::actor
+    C1["Activar Modo SOS"]:::cmd
+    C2["Marcar paso como completado"]:::cmd
+    C3["Pedir técnica alternativa"]:::cmd
+    C4["Finalizar episodio"]:::cmd
+    AG1{{"Sesión SOS"}}:::agg
+    AG2{{"Guía de actuación"}}:::agg
+    E1[/"Modo SOS activado"/]:::evt
+    E2[/"Paso de contención completado"/]:::evt
+    E3[/"Técnica alternativa sugerida"/]:::evt
+    E4[/"Episodio finalizado"/]:::evt
+    P1["Activar el modo de baja estimulación en Autorregulación"]:::pol
+    P2["Alertar a los contactos de confianza"]:::pol
+    P3["Registrar el episodio en Red de Apoyo y Seguimiento"]:::pol
+    Q1[("Guía de actuación del perfil")]:::qry
+
+    A1 --> C1 --> AG1 --> E1
+    E1 --> P1
+    E1 --> P2
+    Q1 --> AG1
+    A1 --> C2 --> AG1
+    AG1 --> E2
+    A1 --> C3 --> AG2 --> E3
+    A1 --> C4 --> AG1
+    AG1 --> E4 --> P3
+```
+
+*Ilustración — Design-Level Event Storming: Gestión de Crisis (Modo SOS)*
+
+**Hotspots resueltos:**
+
+- *¿Quién declara que la crisis terminó?* → El cuidador, con el comando *Finalizar episodio* (US23).
+- *¿Y si el cuidador abandona la guía a mitad?* → La sesión SOS se conserva en el último paso completado y puede retomarse. El episodio solo se registra al finalizar.
+- *¿Funciona con el celular bloqueado?* → Una aplicación web no puede ejecutarse sobre la pantalla de bloqueo. Se resuelve con un acceso directo al Modo SOS desde la pantalla principal (US24) y con la guía disponible sin conexión (US90).
+
+#### Autorregulación
+
+Ofrece al usuario neurodivergente recursos de calma —respiración guiada, sonidos relajantes y lienzo de dibujo libre— filtrados según su perfil sensorial, y activa el modo de baja estimulación. Permite marcar recursos como favoritos y usar un temporizador de calma.
+
+```mermaid
+flowchart LR
+    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
+    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
+    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
+    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
+    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
+    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
+    classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
+
+    A1(["Usuario neurodivergente"]):::actor
+    E0[/"Modo SOS activado"/]:::evt
+    P0["Activar el modo de baja estimulación"]:::pol
+    C1["Seleccionar recurso de calma"]:::cmd
+    C2["Iniciar respiración guiada"]:::cmd
+    C3["Iniciar temporizador de calma"]:::cmd
+    C4["Marcar recurso como favorito"]:::cmd
+    C5["Finalizar sesión de calma"]:::cmd
+    AG1{{"Sesión de calma"}}:::agg
+    AG2{{"Recurso de calma"}}:::agg
+    E1[/"Modo de baja estimulación activado"/]:::evt
+    E2[/"Recurso de calma seleccionado"/]:::evt
+    E3[/"Ejercicio de respiración completado"/]:::evt
+    E4[/"Recurso marcado como favorito"/]:::evt
+    E5[/"Sesión de calma finalizada"/]:::evt
+    P1["Si el temporizador termina y la sesión sigue abierta, sugerir una solicitud de ayuda"]:::pol
+    Q1[("Recursos de calma según el perfil sensorial")]:::qry
+    X1["Reproductor de audio del dispositivo"]:::ext
+
+    E0 --> P0 --> AG1 --> E1
+    A1 --> C1 --> AG1
+    AG1 --> E2
+    Q1 --> AG2 --> C1
+    A1 --> C2 --> AG1
+    AG1 --> E3
+    A1 --> C3 --> AG1
+    AG1 --> P1
+    A1 --> C4 --> AG2 --> E4
+    A1 --> C5 --> AG1
+    AG1 --> E5
+    AG2 -.-> X1
+```
+
+*Ilustración — Design-Level Event Storming: Autorregulación*
+
+**Hotspots resueltos:**
+
+- *¿Cuánto dura una sesión antes de sugerir pedir ayuda?* → Lo define el temporizador de calma configurado por el cuidador (US30). Si el tiempo termina y la sesión sigue abierta, se sugiere enviar una solicitud de ayuda.
+- *¿Y si el usuario no tolera tocar la pantalla?* → Se priorizan recursos que no exigen interacción continua, como el audio y la respiración guiada con temporizador. Queda como pregunta abierta para validar con usuarios.
+
+#### Comunicación Asistida (CAA)
+
+Permite al usuario expresar necesidades con pictogramas, reportar su estado de ánimo y reproducir la frase en voz alta para el acompañante, quien confirma que la entendió. Los pictogramas más usados se agregan al acceso rápido.
+
+```mermaid
+flowchart LR
+    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
+    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
+    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
+    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
+    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
+    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
+    classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
+
+    A1(["Usuario neurodivergente"]):::actor
+    A2(["Acompañante"]):::actor
+    C1["Abrir tablero CAA"]:::cmd
+    C2["Reportar estado de ánimo"]:::cmd
+    C3["Seleccionar pictograma"]:::cmd
+    C4["Confirmar comprensión"]:::cmd
+    AG1{{"Tablero CAA"}}:::agg
+    AG2{{"Pictograma"}}:::agg
+    E1[/"Tablero CAA abierto"/]:::evt
+    E2[/"Estado de ánimo reportado"/]:::evt
+    E3[/"Pictograma seleccionado"/]:::evt
+    E4[/"Necesidad expresada"/]:::evt
+    E5[/"Frase reproducida por voz"/]:::evt
+    E6[/"Comprensión confirmada por el acompañante"/]:::evt
+    P1["Al seleccionar un pictograma, expresar la necesidad y mostrar el mensaje al acompañante"]:::pol
+    P2["Si no se confirma la comprensión, enviar una solicitud de ayuda"]:::pol
+    Q1[("Acceso rápido")]:::qry
+    X1["Síntesis de voz del dispositivo"]:::ext
+
+    A1 --> C1 --> AG1 --> E1
+    A1 --> C2 --> AG1
+    AG1 --> E2
+    A1 --> C3 --> AG2 --> E3 --> P1 --> E4
+    P1 --> X1 --> E5
+    A2 --> C4 --> AG1
+    AG1 --> E6
+    E4 --> P2
+    AG2 --> Q1
+```
+
+*Ilustración — Design-Level Event Storming: Comunicación Asistida (CAA)*
+
+**Hotspots resueltos:**
+
+- *¿Qué pasa si no hay nadie cerca para leer el mensaje?* → Si el acompañante no confirma la comprensión, se envía una solicitud de ayuda a Red de Apoyo y Seguimiento.
+- *¿Cuántos pictogramas caben sin saturar la pantalla?* → El acceso rápido muestra solo los más usados y el resto se organiza por categorías (US35). El número exacto se define en el prototipo.
+- *¿Y si el usuario no tolera tocar la pantalla?* → El acompañante puede operar el tablero por el usuario. Queda como pregunta abierta.
+
+#### Red de Apoyo y Seguimiento
+
+Envía las alertas a los contactos de confianza y registra la llegada del contacto. También registra cada episodio al finalizar el Modo SOS, permite marcar estrategias efectivas y genera el resumen que el cuidador puede compartir con el profesional de salud.
+
+```mermaid
+flowchart LR
+    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
+    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
+    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
+    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
+    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
+    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
+    classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
+
+    A1(["Usuario neurodivergente"]):::actor
+    A2(["Contacto de confianza"]):::actor
+    A3(["Cuidador"]):::actor
+    C1["Enviar solicitud de ayuda"]:::cmd
+    C2["Confirmar recepción"]:::cmd
+    C3["Marcar estrategia como efectiva"]:::cmd
+    C4["Compartir reporte con el profesional"]:::cmd
+    AG1{{"Solicitud de ayuda"}}:::agg
+    AG2{{"Registro de episodio"}}:::agg
+    E0[/"Episodio finalizado"/]:::evt
+    E1[/"Alerta enviada al contacto de confianza"/]:::evt
+    E2[/"Alerta recibida por el contacto"/]:::evt
+    E3[/"Llegada del contacto confirmada"/]:::evt
+    E4[/"Episodio registrado"/]:::evt
+    E5[/"Resumen del episodio generado"/]:::evt
+    E6[/"Reporte compartido con el profesional"/]:::evt
+    P1["Si el contacto no confirma la recepción, reenviar la alerta al siguiente contacto"]:::pol
+    P2["Registrar el episodio y generar su resumen"]:::pol
+    P3["Actualizar las recomendaciones de Gestión de Crisis"]:::pol
+    Q1[("Home del cuidador")]:::qry
+    Q2[("Historial de episodios")]:::qry
+    X1["Notificaciones push"]:::ext
+    X2["SMS / WhatsApp"]:::ext
+
+    A1 --> C1 --> AG1 --> E1
+    E1 --> X1
+    E1 --> X2
+    A2 --> C2 --> AG1
+    AG1 --> E2 --> E3
+    E1 --> P1
+    E0 --> P2 --> AG2 --> E4 --> E5
+    E4 --> P3
+    A3 --> C3 --> AG2
+    A3 --> C4 --> AG2
+    AG2 --> E6
+    AG2 --> Q1
+    AG2 --> Q2
+```
+
+*Ilustración — Design-Level Event Storming: Red de Apoyo y Seguimiento*
+
+**Hotspots resueltos:**
+
+- *¿Qué pasa si el contacto no responde?* → Si no confirma la recepción, la alerta se reenvía al siguiente contacto de confianza.
+- *Sin internet, ¿cómo se avisa?* → Sin datos móviles, la aplicación abre el SMS del teléfono con el mensaje de alerta ya escrito, que se envía con la señal celular.
+- *¿Se envía ubicación?* → Ninguna historia de usuario lo contempla. Queda como pregunta abierta para una siguiente versión.
+
+#### Integración entre Bounded Contexts
+
+Los contextos se comunican mediante eventos de dominio y consultas al perfil del usuario.
+
+```mermaid
+flowchart LR
+    PERFIL["Perfil y Personalización"]
+    CRISIS["Gestión de Crisis - Modo SOS"]
+    AUTO["Autorregulación"]
+    CAA["Comunicación Asistida - CAA"]
+    RED["Red de Apoyo y Seguimiento"]
+
+    PERFIL -- "Guía personalizada" --> CRISIS
+    PERFIL -- "Sensibilidades y favoritos" --> AUTO
+    PERFIL -- "Pictogramas personalizados" --> CAA
+    PERFIL -- "Contacto de confianza vinculado" --> RED
+    CRISIS -- "Modo SOS activado" --> AUTO
+    CRISIS -- "Modo SOS activado y Episodio finalizado" --> RED
+    CAA -- "Comprensión no confirmada" --> RED
+    RED -- "Episodio registrado" --> CRISIS
+```
+
+*Ilustración — Integración entre los Bounded Contexts de NUBI*
+
+- **Perfil y Personalización** entrega a los demás contextos la información del perfil: la guía personalizada, las sensibilidades y los pictogramas.
+- **Modo SOS activado** dispara el modo de baja estimulación en Autorregulación y la alerta a los contactos en Red de Apoyo y Seguimiento.
+- **Episodio finalizado** hace que Red de Apoyo y Seguimiento registre el episodio, y ese registro actualiza las recomendaciones de Gestión de Crisis.
+- **Comprensión no confirmada** en Comunicación Asistida genera una solicitud de ayuda.
+
+---
+
+### 4.6.2. Software Architecture Context Diagram
+
+El diagrama de contexto muestra a NUBI como un solo sistema, rodeado de las personas que lo usan y de los sistemas externos con los que se comunica.
+
+```mermaid
+flowchart TB
+    classDef persona fill:#08427B,stroke:#052E56,color:#FFFFFF
+    classDef sistema fill:#1168BD,stroke:#0B4884,color:#FFFFFF
+    classDef externo fill:#999999,stroke:#6B6B6B,color:#FFFFFF
+
+    NEURO["Usuario neurodivergente<br/>[Persona]"]:::persona
+    CUID["Cuidador<br/>[Persona]"]:::persona
+    DOC["Docente<br/>[Persona]"]:::persona
+    ADMIN["Administrador institucional<br/>[Persona]"]:::persona
+
+    NUBI["NUBI<br/>[Sistema de software]<br/>Autorregulación, comunicación asistida y guía en tiempo real durante una crisis"]:::sistema
+
+    CONTACTO["Contacto de confianza<br/>[Persona externa]"]:::externo
+    PROF["Profesional de salud<br/>[Persona externa]"]:::externo
+    GOOGLE["Google OAuth<br/>[Sistema externo]"]:::externo
+    PAGOS["Pasarela de pagos<br/>[Sistema externo]"]:::externo
+    PUSH["Notificaciones push<br/>[Sistema externo]"]:::externo
+    SMS["SMS / WhatsApp<br/>[Sistema externo]"]:::externo
+
+    NEURO -- "Se calma, se comunica y pide ayuda" --> NUBI
+    CUID -- "Configura el perfil y usa el Modo SOS" --> NUBI
+    DOC -- "Acompaña al usuario en el colegio" --> NUBI
+    ADMIN -- "Gestiona el plan institucional" --> NUBI
+    NUBI -- "Autentica usuarios [OAuth 2.0]" --> GOOGLE
+    NUBI -- "Procesa cobros [HTTPS]" --> PAGOS
+    NUBI -- "Envía alertas [HTTPS]" --> PUSH
+    NUBI -- "Envía alertas [HTTPS]" --> SMS
+    PUSH -- "Notifica la alerta" --> CONTACTO
+    SMS -- "Entrega la alerta" --> CONTACTO
+    CUID -- "Comparte el reporte de episodios" --> PROF
+```
+
+*Ilustración — Software Architecture Context Diagram de NUBI*
+
+El **usuario neurodivergente** usa NUBI para calmarse, comunicarse con pictogramas y pedir ayuda. El **cuidador** y el **docente** configuran el perfil y usan el Modo SOS durante una crisis, y el **administrador institucional** gestiona los perfiles de estudiantes del plan institucional. El **contacto de confianza** y el **profesional de salud** no usan la aplicación directamente: el primero recibe las alertas y el segundo recibe los reportes de episodios que comparte el cuidador.
+
+NUBI se apoya en cuatro sistemas externos: **Google OAuth** para el inicio de sesión (US04), una **pasarela de pagos** para el cobro de suscripciones (US61), un **servicio de notificaciones push** para alertas y recordatorios, y **SMS / WhatsApp** como canal de alerta. Estos dos últimos se identificaron en el Big Picture Event Storming.
+
+### 4.6.3. Software Architecture Container Diagrams
+
+El diagrama de contenedores muestra las piezas que se despliegan por separado, la tecnología de cada una y cómo se comunican.
+
+```mermaid
+flowchart TB
+    classDef persona fill:#08427B,stroke:#052E56,color:#FFFFFF
+    classDef contenedor fill:#438DD5,stroke:#2E6295,color:#FFFFFF
+    classDef externo fill:#999999,stroke:#6B6B6B,color:#FFFFFF
+
+    NEURO["Usuario neurodivergente<br/>[Persona]"]:::persona
+    CUID["Cuidador o docente<br/>[Persona]"]:::persona
+    ADMIN["Administrador institucional<br/>[Persona]"]:::persona
+
+    subgraph SIS["Sistema NUBI"]
+        LANDING["Landing Page<br/>[HTML5, CSS3, JavaScript]<br/>Presenta el producto. Hosting estático"]:::contenedor
+        WEBAPP["Web Application<br/>[Angular, Angular Material, TypeScript]<br/>i18n en_US y es_419, atributos ARIA. Hosting estático"]:::contenedor
+        LOCAL[("Almacenamiento local<br/>[IndexedDB del navegador]<br/>Guía SOS y recursos de calma sin conexión")]:::contenedor
+        API["RESTful API<br/>[Java, Spring Boot, Spring Data JPA]<br/>Monolito modular, un módulo por Bounded Context. JWT y OpenAPI. Docker con CI/CD"]:::contenedor
+        DB[("Base de datos<br/>[PostgreSQL]<br/>Cuentas, perfiles, episodios y suscripciones")]:::contenedor
+    end
+
+    GOOGLE["Google OAuth<br/>[Sistema externo]"]:::externo
+    PAGOS["Pasarela de pagos<br/>[Sistema externo]"]:::externo
+    PUSH["Notificaciones push<br/>[Sistema externo]"]:::externo
+    SMS["SMS / WhatsApp<br/>[Sistema externo]"]:::externo
+
+    NEURO -- "Visita [HTTPS]" --> LANDING
+    CUID -- "Visita [HTTPS]" --> LANDING
+    NEURO -- "Usa [HTTPS]" --> WEBAPP
+    CUID -- "Usa [HTTPS]" --> WEBAPP
+    ADMIN -- "Usa [HTTPS]" --> WEBAPP
+    LANDING -- "Redirige con los call-to-action" --> WEBAPP
+    WEBAPP -- "Lee y guarda contenido offline" --> LOCAL
+    WEBAPP -- "Consume [JSON/HTTPS]" --> API
+    API -- "Lee y escribe [JPA]" --> DB
+    API -- "Valida el inicio de sesión [OAuth 2.0]" --> GOOGLE
+    API -- "Procesa cobros [HTTPS]" --> PAGOS
+    API -- "Envía alertas [HTTPS]" --> PUSH
+    API -- "Envía alertas [HTTPS]" --> SMS
+```
+
+*Ilustración — Software Architecture Container Diagram de NUBI*
+
+NUBI se compone de cinco contenedores. La **Landing Page** (HTML5, CSS3 y JavaScript) presenta el producto y redirige a la Web Application mediante sus call-to-action. La **Web Application** (Angular y Angular Material) concentra la experiencia del usuario neurodivergente y del cuidador, con i18n en en_US y es_419 y atributos ARIA. El **almacenamiento local** del navegador guarda la guía SOS y los recursos de calma para el modo offline básico (US90), un requisito que surgió en las entrevistas. El **RESTful API** (Java, Spring Boot y Spring Data JPA) contiene la lógica de negocio, usa JWT para la autenticación y se documenta con OpenAPI. La **base de datos** es PostgreSQL, administrada con pgAdmin.
+
+El API se diseñó como un **monolito modular**: cada Bounded Context es un módulo con sus propias entidades y repositorios JPA (US98), pero todos se despliegan juntos en un solo contenedor Docker (US99). Así se mantiene la separación que exige Domain-Driven Design sin la complejidad de desplegar cinco servicios por separado. La Landing Page y la Web Application se publican en hosting estático (US100).
+
+### 4.6.4. Software Architecture Components Diagrams
+
+Se presentan los diagramas de componentes de los dos contenedores con lógica propia: el RESTful API y la Web Application. La Landing Page es un sitio estático y la base de datos es un almacén de datos, por lo que no se descomponen.
+
+#### RESTful API
+
+```mermaid
+flowchart TB
+    classDef contenedor fill:#438DD5,stroke:#2E6295,color:#FFFFFF
+    classDef componente fill:#85BBF0,stroke:#5D82A8,color:#000000
+    classDef externo fill:#999999,stroke:#6B6B6B,color:#FFFFFF
+
+    WEBAPP["Web Application<br/>[Contenedor: Angular]"]:::contenedor
+
+    subgraph APIB["RESTful API - Spring Boot"]
+        SEC["Seguridad<br/>[Spring Security, JWT]<br/>Valida el token y dirige cada petición"]:::componente
+        PERFIL["Perfil y Personalización<br/>[Módulo Spring Boot, JPA]<br/>Cuentas, perfiles, contactos, suscripciones e instituciones"]:::componente
+        CRISIS["Gestión de Crisis<br/>[Módulo Spring Boot, JPA]<br/>Sesiones SOS, guías de actuación y recomendaciones"]:::componente
+        AUTO["Autorregulación<br/>[Módulo Spring Boot, JPA]<br/>Sesiones y recursos de calma"]:::componente
+        CAA["Comunicación Asistida<br/>[Módulo Spring Boot, JPA]<br/>Tablero CAA, pictogramas y check-in emocional"]:::componente
+        RED["Red de Apoyo y Seguimiento<br/>[Módulo Spring Boot, JPA]<br/>Solicitudes de ayuda, alertas e historial"]:::componente
+    end
+
+    DB[("Base de datos<br/>[PostgreSQL]")]:::contenedor
+    GOOGLE["Google OAuth<br/>[Sistema externo]"]:::externo
+    PAGOS["Pasarela de pagos<br/>[Sistema externo]"]:::externo
+    PUSH["Notificaciones push<br/>[Sistema externo]"]:::externo
+    SMS["SMS / WhatsApp<br/>[Sistema externo]"]:::externo
+
+    WEBAPP -- "Envía peticiones [JSON/HTTPS + JWT]" --> SEC
+    SEC --> PERFIL
+    SEC --> CRISIS
+    SEC --> AUTO
+    SEC --> CAA
+    SEC --> RED
+    CRISIS -- "Obtiene la guía personalizada [ACL]" --> PERFIL
+    AUTO -- "Obtiene sensibilidades [ACL]" --> PERFIL
+    CAA -- "Obtiene pictogramas [ACL]" --> PERFIL
+    PERFIL -- "Contacto de confianza vinculado [evento]" --> RED
+    CRISIS -- "Modo SOS activado [evento]" --> AUTO
+    CRISIS -- "Modo SOS activado y Episodio finalizado [evento]" --> RED
+    CAA -- "Comprensión no confirmada [evento]" --> RED
+    RED -- "Episodio registrado [evento]" --> CRISIS
+    PERFIL -- "JPA" --> DB
+    CRISIS -- "JPA" --> DB
+    AUTO -- "JPA" --> DB
+    CAA -- "JPA" --> DB
+    RED -- "JPA" --> DB
+    PERFIL -- "Valida el inicio de sesión [OAuth 2.0]" --> GOOGLE
+    PERFIL -- "Procesa cobros [HTTPS]" --> PAGOS
+    RED -- "Envía alertas [HTTPS]" --> PUSH
+    RED -- "Envía alertas [HTTPS]" --> SMS
+```
+
+*Ilustración — Component Diagram del RESTful API*
+
+Cada componente corresponde a uno de los cinco Bounded Contexts del Design-Level Event Storming. Todas las peticiones pasan primero por **Seguridad**, que valida el token JWT. **Perfil y Personalización** es el componente que consultan los demás para obtener la guía personalizada, las sensibilidades y los pictogramas del usuario, y es el que se comunica con Google OAuth y con la pasarela de pagos.
+
+**Gestión de Crisis** publica el evento *Modo SOS activado*, que activa el modo de baja estimulación en **Autorregulación** y la alerta en **Red de Apoyo y Seguimiento**. Este último envía las alertas por notificaciones push o SMS / WhatsApp y registra cada episodio, lo que actualiza las recomendaciones de Gestión de Crisis. **Comunicación Asistida** genera una solicitud de ayuda cuando el acompañante no confirma haber entendido el mensaje.
+
+#### Web Application
+
+```mermaid
+flowchart TB
+    classDef persona fill:#08427B,stroke:#052E56,color:#FFFFFF
+    classDef contenedor fill:#438DD5,stroke:#2E6295,color:#FFFFFF
+    classDef componente fill:#85BBF0,stroke:#5D82A8,color:#000000
+    classDef externo fill:#999999,stroke:#6B6B6B,color:#FFFFFF
+
+    NEURO["Usuario neurodivergente<br/>[Persona]"]:::persona
+    CUID["Cuidador<br/>[Persona]"]:::persona
+
+    subgraph WEBB["Web Application - Angular"]
+        SHELL["Navegación<br/>[Angular Router]<br/>Barra superior y migas de pan. Separa el espacio del usuario y del cuidador"]:::componente
+        ACCESO["Acceso<br/>[Angular Guards]<br/>Registro, inicio de sesión y rutas protegidas"]:::componente
+        PERFILUI["Perfil y Personalización<br/>[Angular Material]"]:::componente
+        SOSUI["Modo SOS<br/>[Angular Material]<br/>Guía paso a paso, un paso a la vez"]:::componente
+        AUTOUI["Autorregulación<br/>[Angular Material]<br/>Respiración, sonidos, lienzo y temporizador"]:::componente
+        CAAUI["Comunicación Asistida<br/>[Angular Material]<br/>Tablero de pictogramas e intensidad emocional"]:::componente
+        REDUI["Red de Apoyo y Seguimiento<br/>[Angular Material]<br/>Home del cuidador, ayuda e historial"]:::componente
+        HTTP["Cliente HTTP<br/>[HttpClient, Interceptor]<br/>Llamadas al API con el token JWT"]:::componente
+        OFF["Modo offline<br/>[Service Worker]<br/>Guía SOS y recursos sin conexión"]:::componente
+        I18N["Idioma y accesibilidad<br/>[Angular i18n, ARIA]<br/>en_US, es_419 y lectura en voz alta"]:::componente
+    end
+
+    LOCAL[("Almacenamiento local<br/>[IndexedDB]")]:::contenedor
+    API["RESTful API<br/>[Contenedor: Spring Boot]"]:::contenedor
+    TTS["Síntesis de voz del dispositivo<br/>[Sistema externo]"]:::externo
+    AUDIO["Reproductor de audio del dispositivo<br/>[Sistema externo]"]:::externo
+
+    NEURO --> SHELL
+    CUID --> SHELL
+    SHELL -- "Verifica la sesión" --> ACCESO
+    SHELL --> PERFILUI
+    SHELL --> SOSUI
+    SHELL --> AUTOUI
+    SHELL --> CAAUI
+    SHELL --> REDUI
+    I18N -- "Traduce y agrega ARIA" --> SHELL
+    SOSUI -- "Activa el modo de baja estimulación" --> AUTOUI
+    CAAUI -- "Reproduce la frase" --> TTS
+    AUTOUI -- "Reproduce sonidos" --> AUDIO
+    SOSUI -- "Funciona sin conexión" --> OFF
+    AUTOUI -- "Funciona sin conexión" --> OFF
+    OFF -- "Lee y guarda" --> LOCAL
+    ACCESO --> HTTP
+    PERFILUI --> HTTP
+    SOSUI --> HTTP
+    AUTOUI --> HTTP
+    CAAUI --> HTTP
+    REDUI --> HTTP
+    HTTP -- "Consume [JSON/HTTPS]" --> API
+```
+
+*Ilustración — Component Diagram de la Web Application*
+
+La Web Application tiene un módulo por Bounded Context, de modo que el frontend refleja la estructura del backend. **Navegación** implementa la barra superior y las migas de pan de las Web Style Guidelines (4.1.2) y muestra el espacio del usuario neurodivergente o del cuidador según su rol. **Modo offline** mantiene la guía SOS y los recursos de calma disponibles sin conexión, y **Cliente HTTP** centraliza las llamadas al API agregando el token JWT. Los módulos de Comunicación Asistida y Autorregulación usan la síntesis de voz y el reproductor de audio del dispositivo, identificados en el Big Picture Event Storming.
 
 
 
