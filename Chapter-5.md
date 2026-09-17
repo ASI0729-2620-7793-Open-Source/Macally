@@ -40,6 +40,91 @@ En cuanto a la implementación, el Landing Page se desarrolla utilizando HTML5, 
 
 ### 5.1.2. Source Code Management
 
+Para la gestión del código fuente de NUBI se utiliza **Git** como sistema de control de versiones distribuido y **GitHub** como plataforma para alojar los repositorios del proyecto y facilitar el trabajo colaborativo entre los integrantes del equipo. Mediante estas herramientas se mantiene la trazabilidad de los cambios realizados durante el desarrollo del Landing Page, la Frontend Web Application y los RESTful Web Services.
+
+Los repositorios correspondientes a los productos de software de NUBI son los siguientes:
+
+| Producto | Repositorio |
+|---|---|
+| Landing Page | [COLOCAR URL DEL REPOSITORIO] |
+| Frontend Web Application | [COLOCAR URL DEL REPOSITORIO] |
+| RESTful Web Services | [COLOCAR URL DEL REPOSITORIO] |
+
+En el caso de los RESTful Web Services, el repositorio contendrá tanto el código fuente de los servicios como los archivos correspondientes a las pruebas unitarias y de integración.
+
+#### GitFlow Workflow
+
+El equipo adopta **GitFlow** como flujo de trabajo para organizar las diferentes etapas de desarrollo del proyecto. Esta estrategia permite separar las versiones estables de las funcionalidades que se encuentran en desarrollo y facilita la integración progresiva de los cambios realizados por los integrantes del equipo.
+
+La estructura de ramas utilizada es la siguiente:
+
+| Rama | Propósito |
+|---|---|
+| `main` | Contiene las versiones estables del producto preparadas para producción. |
+| `develop` | Rama principal de integración de las funcionalidades desarrolladas por el equipo. |
+| `feature/*` | Ramas utilizadas para desarrollar nuevas funcionalidades o cambios específicos. |
+| `release/*` | Ramas utilizadas para preparar una nueva versión antes de integrarla a `main`. |
+| `hotfix/*` | Ramas utilizadas para corregir errores críticos encontrados en una versión publicada. |
+
+Las ramas de tipo `feature` se crean a partir de `develop`. Sus nombres deben ser descriptivos, estar escritos en inglés y utilizar la convención `kebab-case`.
+
+Algunos ejemplos de ramas aplicadas a NUBI son: `feature/user-profile`, `feature/sos-mode`, `feature/self-regulation`, `feature/caa-board`, `feature/support-network` y `feature/landing-page`.
+
+Para la elaboración y actualización de la documentación del proyecto también se utilizan ramas específicas como `feature/chapter-3`, `feature/chapter-4` y `feature/chapter-5`.
+
+Una vez finalizado el trabajo realizado en una rama `feature/*`, los cambios son revisados antes de integrarse nuevamente a la rama `develop`.
+
+Para preparar una nueva versión estable del producto se utilizan ramas `release/*`. La convención utilizada es `release/v<MAJOR>.<MINOR>.<PATCH>`. Por ejemplo: `release/v1.0.0` o `release/v1.1.0`.
+
+Cuando se identifica un error crítico en una versión ya publicada se utiliza una rama `hotfix/*`. Por ejemplo: `hotfix/v1.0.1`.
+
+Una vez realizada la corrección, los cambios de la rama `hotfix/*` son integrados tanto en `main` como en `develop`, con el objetivo de mantener consistencia entre las versiones del proyecto.
+
+#### Semantic Versioning
+
+Para identificar las diferentes versiones de los productos de NUBI se utiliza **Semantic Versioning**, siguiendo la estructura `MAJOR.MINOR.PATCH`.
+
+Cada componente representa lo siguiente:
+
+- **MAJOR:** se incrementa cuando se introducen cambios que no son compatibles con versiones anteriores.
+- **MINOR:** se incrementa cuando se incorporan nuevas funcionalidades compatibles con la versión existente.
+- **PATCH:** se incrementa cuando se realizan correcciones de errores compatibles con la versión actual.
+
+Algunos ejemplos de versiones son `v1.0.0`, `v1.1.0` y `v1.1.1`.
+
+De esta manera, la numeración de versiones permite identificar con mayor facilidad el alcance de los cambios realizados en cada publicación del producto.
+
+#### Conventional Commits
+
+Para mantener un historial de modificaciones claro, consistente y fácil de comprender, el equipo utiliza la especificación **Conventional Commits** para la redacción de los mensajes de commit.
+
+La estructura utilizada es `<type>(<scope>): <description>`.
+
+Los principales tipos de commit utilizados en el proyecto son:
+
+| Tipo | Propósito |
+|---|---|
+| `feat` | Incorporación de una nueva funcionalidad. |
+| `fix` | Corrección de un error. |
+| `docs` | Cambios realizados en la documentación. |
+| `style` | Cambios relacionados con formato o presentación que no modifican la lógica del sistema. |
+| `refactor` | Reorganización del código sin modificar su comportamiento. |
+| `test` | Incorporación o modificación de pruebas. |
+| `chore` | Tareas relacionadas con configuración o mantenimiento del proyecto. |
+
+Algunos ejemplos de mensajes de commit aplicados a NUBI son:
+
+- `feat(profile): add user profile creation`
+- `feat(sos): add SOS mode activation`
+- `feat(regulation): add self-regulation stimuli`
+- `feat(caa): add pictogram board`
+- `feat(support): add support request`
+- `style(landing): improve responsive layout`
+- `fix(caa): correct pictogram selection`
+- `docs(chapter5): add source code management`
+
+El uso conjunto de Git, GitHub, GitFlow, Semantic Versioning y Conventional Commits permite mantener una organización consistente del código fuente, facilitar la colaboración entre los integrantes del equipo y conservar la trazabilidad de la evolución de los diferentes productos de software que conforman NUBI.
+
 ### 5.1.3. Source Code Style Guide & Conventions
 
 ### 5.1.4. Software Deployment Configuration
