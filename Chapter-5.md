@@ -324,3 +324,99 @@ La aplicación de estas convenciones permite que el código fuente de NUBI mante
 
 ### 5.1.4. Software Deployment Configuration
 
+La configuración de despliegue de NUBI tiene como objetivo establecer el proceso mediante el cual los diferentes productos de software desarrollados por el equipo pasan desde sus respectivos repositorios de código fuente hasta un entorno accesible para los usuarios.
+
+La solución está conformada por tres productos principales: el **Landing Page**, la **Frontend Web Application** y los **RESTful Web Services**. Cada producto mantiene un proceso de despliegue independiente debido a las diferentes tecnologías y requerimientos de ejecución que posee.
+
+| Producto | Tecnologías principales | Rama de despliegue | Plataforma |
+|---|---|---|---|
+| Landing Page | HTML5, CSS3 y JavaScript | `main` | [COLOCAR PLATAFORMA] |
+| Frontend Web Application | Angular y TypeScript | `main` | [COLOCAR PLATAFORMA] |
+| RESTful Web Services | Java, Spring Boot y Spring Data JPA | `main` | [COLOCAR PLATAFORMA] |
+
+#### Landing Page Deployment
+
+El Landing Page de NUBI está desarrollado utilizando HTML5, CSS3 y JavaScript. Debido a que se trata de un sitio web estático, su proceso de despliegue parte desde el repositorio correspondiente en GitHub.
+
+El proceso considerado es el siguiente:
+
+1. Los cambios son desarrollados y probados inicialmente en una rama `feature/*`.
+2. Una vez revisados, los cambios son integrados en la rama `develop`.
+3. Después de validar la versión correspondiente, los cambios son integrados en `main`.
+4. La plataforma de despliegue obtiene la versión disponible en la rama `main`.
+5. Los archivos HTML, CSS, JavaScript e imágenes son publicados en el servicio de hosting.
+6. Finalmente, el Landing Page queda disponible mediante una URL pública.
+
+La configuración debe garantizar que los recursos utilizados por el Landing Page se carguen correctamente y que la interfaz conserve el Responsive Web Design definido para NUBI tanto en Desktop como en Mobile Web Browser.
+
+La URL correspondiente al Landing Page desplegado será:
+
+**Landing Page URL:** [COLOCAR URL DE PRODUCCIÓN]
+
+#### Frontend Web Application Deployment
+
+La Frontend Web Application de NUBI se desarrolla mediante Angular y TypeScript. Su despliegue se realiza a partir del código almacenado en el repositorio correspondiente de GitHub.
+
+El proceso considerado es el siguiente:
+
+1. Las nuevas funcionalidades son desarrolladas mediante ramas `feature/*`.
+2. Después de su revisión, los cambios son integrados en la rama `develop`.
+3. La versión estable es integrada posteriormente en `main`.
+4. Se instalan las dependencias necesarias del proyecto.
+5. Se genera la versión de producción de la aplicación Angular.
+6. Los archivos generados son publicados en la plataforma seleccionada para el Frontend Web Application.
+7. Se verifica que la aplicación pueda comunicarse correctamente con los RESTful Web Services desplegados.
+
+La dirección de los RESTful Web Services debe mantenerse como una configuración dependiente del entorno, evitando almacenar directamente direcciones específicas de desarrollo o producción dentro de los componentes de la aplicación.
+
+La URL correspondiente a la Frontend Web Application será:
+
+**Frontend Web Application URL:** [COLOCAR URL DE PRODUCCIÓN]
+
+#### RESTful Web Services Deployment
+
+Los RESTful Web Services de NUBI se desarrollan utilizando Java, Spring Boot y Spring Data JPA. Estos servicios proporcionan los endpoints necesarios para que la Frontend Web Application pueda acceder a las funcionalidades correspondientes a los diferentes Bounded Contexts definidos para NUBI.
+
+El proceso de despliegue considerado es el siguiente:
+
+1. El código fuente de los servicios es administrado mediante Git y GitHub.
+2. Las funcionalidades son desarrolladas en ramas `feature/*` e integradas posteriormente en `develop`.
+3. Antes de integrar una versión en `main`, se verifican las pruebas correspondientes.
+4. Se genera la versión ejecutable del proyecto Spring Boot.
+5. La aplicación es publicada en la plataforma seleccionada para los Web Services.
+6. Se configuran las variables y parámetros necesarios para el entorno de producción.
+7. Se establece la conexión con el mecanismo de persistencia utilizado por la solución.
+8. Se verifica el correcto funcionamiento de los endpoints desplegados.
+9. La documentación del RESTful API se mantiene disponible mediante OpenAPI y Swagger.
+
+Los Web Services desplegados deben proporcionar soporte a los principales dominios funcionales de NUBI:
+
+- Perfil y Personalización.
+- Gestión de Crisis (Modo SOS).
+- Autorregulación.
+- Comunicación Asistida (CAA).
+- Red de Apoyo y Seguimiento.
+
+La URL base correspondiente a los RESTful Web Services será:
+
+**RESTful Web Services URL:** [COLOCAR URL DE PRODUCCIÓN]
+
+#### Deployment Environments
+
+Para mantener separados los cambios en desarrollo de las versiones utilizadas por los usuarios, NUBI considera diferentes entornos durante el ciclo de desarrollo.
+
+| Entorno | Propósito |
+|---|---|
+| Development | Entorno utilizado por los integrantes del equipo para desarrollar y probar nuevas funcionalidades. |
+| Production | Entorno que contiene las versiones estables de los productos y que se encuentra disponible para los usuarios finales. |
+
+Las configuraciones que puedan variar entre estos entornos, como la URL de los RESTful Web Services, credenciales y parámetros de conexión, deben mantenerse separadas del código fuente y gestionarse mediante la configuración correspondiente de cada entorno.
+
+#### Deployment Workflow
+
+De manera general, el flujo de despliegue utilizado por NUBI sigue la siguiente secuencia:
+
+**Desarrollo en `feature/*` → Integración en `develop` → Validación → Integración en `main` → Construcción de la versión de producción → Despliegue → Verificación del producto publicado.**
+
+Esta configuración permite mantener separados los procesos de desarrollo y producción, conservar la trazabilidad de las versiones desplegadas y asegurar que el Landing Page, la Frontend Web Application y los RESTful Web Services puedan evolucionar de manera controlada durante el ciclo de vida de NUBI.
+
