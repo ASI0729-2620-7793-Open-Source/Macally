@@ -1,52 +1,57 @@
 <div align="center">
+<img src="https://i.postimg.cc/KcDBBqHP/logo-upc-png-transparente-1.png" alt="Logo UPC">
 
 # Universidad Peruana de Ciencias Aplicadas
 
-## Ingeniería de Software
-Ciclo 2026 - 02
+<p>
+   <h3> <strong>Carrera de Ingeniería de Software</strong></h3>
+  </p>
 
-# “Informe de trabajo Final”
-Open Source
-NRC: 7793
+  <p>
+    <strong>1ASI0729</strong><br>
+    <strong>Desarrollo de Aplicaciones Open Source</strong>
+  </p>
 
-Docente: Ivan Robles Fernandez
+  <p>
+    NRC:<br>
+    <strong>7793</strong>
+  </p>
 
-Startup: Macally
+  <h3><strong>Informe del Trabajo Final</strong></h3>
 
-Producto: NUBI
+  <p>
+    Docente<br>
+    <strong>Ivan Robles Fernandez</strong>
+  </p>
 
-Integrantes:
-- Lopez Torres, Leonardo Gabriel - U20241A649
-- Diaz Yurivilca, Sofia - U20241A195
--
--
--
+  <p>
+    Startup<br>
+    <strong>Macally</strong>
+  </p>
 
-Abril, 2026
+<p>
+    Producto<br>
+    <strong>NUBI</strong>
+</p>
 
-</div>
+<p>
+    <strong>Integrantes:</strong>
+</p>
 
----
-<div align="center">
-
-**Ciclo:** 2026 - 02  
-**Curso:** Desarrollo de Aplicaciones Open Source  
-**NRC: 11913** 
-**Docente: Ivan Robles Fernandez**
-
-**Startup: Macally**
-**Producto: **
 
 | Código     | Nombre                         |
 |------------|--------------------------------|
-| U20241A649 | Lopez Torres, Leonardo Gabriel |
+| código     | Diaz Caruzo, Edgard Daniel     |
 | U20241A195 | Diaz Yurivilca, Sofia          |
-| U202318620 | Payano Puchuri, Joan Fabricio    |
-|            |                                |
-|            |                                |
+| U202318620 | Payano Puchuri, Joan Fabricio  |
+| U20241A649 | Lopez Torres, Leonardo Gabriel |
+| U20241G022 | Ruiz Villegas, Yngrid Nahir    |
 
-**Agosto - 2026**
+**Ciclo:** 2026 - 02 
 
+**Septiembre - 2026**
+
+</div>
 
 ---
 # WEBSITE:
@@ -61,7 +66,7 @@ Abril, 2026
 
 | Versión  |     Fecha     |                          Autor                           | Descripción de modificación |
 | :------: |:-------------:|:--------------------------------------------------------:| :-------------------------: |
-| AV1      | 29/ 08 / 2026 | Leonardo Gabriel Lopez Torres </br> Sofia Diaz Yurivilca </br> Joan Fabricio Payano Puchuri| Primera versión             |
+| AV1      | 20/ 09 / 2026 | Leonardo Gabriel Lopez Torres </br> Sofia Diaz Yurivilca </br> Joan Fabricio Payano Puchuri </br> Ruiz VIllegas, Yngrid Nahir| Primera versión             |
 
 </div>
 
