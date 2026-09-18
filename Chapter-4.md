@@ -598,7 +598,7 @@ Adicionalmente, cada Bounded Context aplica una técnica de navegación distinta
 
 ## 4.3 Landing Page UI Design
 
-El Landing Page de Nubi traduce las decisiones de arquitectura de información de la sección 4.2 en una experiencia de una sola página, pensada para que un visitante (cuidador, educador o terapeuta que aún no se ha registrado) entienda en segundos qué resuelve Nubi y pueda avanzar hacia el registro sin fricción. La estructura respeta el esquema de categorización "según audiencia" y la organización jerárquica definidos en la sección 4.2.1: primero se comunica la propuesta de valor y los resultados esperados, luego se desarrolla cada una de las 5 Landing Page Stories del Capítulo III (LS-01 a LS-05: Perfil y Personalización, Modo SOS, Autorregulación, Comunicación CAA y Red de Apoyo) en el mismo orden en que fueron priorizadas en el Product Backlog, y finalmente se ubican los bloques de conversión y confianza (cómo funciona, beneficios por rol, testimonios, planes, preguntas frecuentes, llamado a la acción final, la sección "Conoce al equipo" y un formulario de contacto para familias e instituciones), cerrando con el footer. La navegación superior utiliza el sistema de anclas (*anchor scroll*) descrito en la sección 4.2.5, reutilizando exactamente las mismas etiquetas definidas en el Labeling System (4.2.2) para que el visitante reconozca los mismos nombres al ingresar luego a la Web Application.
+El Landing Page de Nubi traduce las decisiones de arquitectura de información de la sección 4.2 en una experiencia de una sola página, pensada para que un visitante (cuidador, educador o terapeuta que aún no se ha registrado) entienda en segundos qué resuelve Nubi y pueda avanzar hacia el registro sin fricción. La estructura respeta el esquema de categorización "según audiencia" y la organización jerárquica definidos en la sección 4.2.1: primero se comunica la propuesta de valor (Hero), el problema (Problema) y el proceso de adopción (Cómo funciona); luego se desarrolla cada una de las 5 Landing Page Stories del Capítulo III (LS-01 a LS-05: Perfil y Personalización, Modo SOS, Autorregulación, Comunicación CAA y Red de Apoyo) en el mismo orden en que fueron priorizadas en el Product Backlog; y finalmente se ubican los bloques de conversión y confianza (Planes, Testimonios, FAQ, Beneficios por rol, la sección "Conoce al equipo", el llamado a la acción final y un formulario de contacto para familias e instituciones), cerrando con el footer. La navegación superior utiliza el sistema de anclas (*anchor scroll*) descrito en la sección 4.2.5, reutilizando exactamente las mismas etiquetas definidas en el Labeling System (4.2.2) para que el visitante reconozca los mismos nombres al ingresar luego a la Web Application.
 
 El wireframe y el mock-up se construyeron directamente en HTML/CSS, tomando como referencia directa el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*: se extrajeron sus valores reales de color y tipografía a partir del código exportado en modo Dev de Figma, y se aplicaron al Design System de la sección 4.1 (tipografía Bricolage Grotesque/Inter, paleta Deep Teal/Golden Yellow/Cream con sus acentos secundarios, sistema de espaciado de 8pt, botones *pill-shape* y set de iconografía de 24px). El resultado se importó a Figma mediante un plugin de conversión HTML→Figma para su documentación y edición visual. El código fuente se encuentra en [`landing-page/`](../landing-page/index.html) del repositorio.
 
@@ -609,109 +609,103 @@ Los wireframes representan la distribución base de cada sección antes de aplic
 - **Header (Navbar)**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-header-navbar.png" alt="Wireframe Header Navbar" width="800">
+    <img src="images/Chapter-IV/navbarWireframe.png" alt="Wireframe Header Navbar" width="800">
   </p>
 
 - **Hero section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-hero-section.png" alt="Wireframe Hero Section" width="800">
-  </p>
-
-- **Resultados (Stats) section**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-resultados-section.png" alt="Wireframe Resultados Section" width="800">
+    <img src="images/Chapter-IV/HeroSectionWireframe.png" alt="Wireframe Hero Section" width="800">
   </p>
 
 - **Problema section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-problema-section.png" alt="Wireframe Problema Section" width="800">
-  </p>
-
-- **Perfil y Personalización section (LS-01)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-perfil-section.png" alt="Wireframe Perfil y Personalización Section" width="800">
-  </p>
-
-- **Modo SOS section (LS-02)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-modo-sos-section.png" alt="Wireframe Modo SOS Section" width="800">
-  </p>
-
-- **Autorregulación section (LS-03)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-autorregulacion-section.png" alt="Wireframe Autorregulación Section" width="800">
-  </p>
-
-- **Comunicación CAA section (LS-04)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-comunicacion-caa-section.png" alt="Wireframe Comunicación CAA Section" width="800">
-  </p>
-
-- **Red de Apoyo section (LS-05)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-red-apoyo-section.png" alt="Wireframe Red de Apoyo Section" width="800">
+    <img src="images/Chapter-IV/problemaWireframe.png" alt="Wireframe Problema Section" width="800">
   </p>
 
 - **Cómo funciona section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-como-funciona-section.png" alt="Wireframe Cómo Funciona Section" width="800">
+    <img src="images/Chapter-IV/FuncionalidadWireframe.png" alt="Wireframe Cómo Funciona Section" width="800">
   </p>
 
-- **Beneficios section**
+- **Perfil y Personalización section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-beneficios-section.png" alt="Wireframe Beneficios Section" width="800">
+    <img src="images/Chapter-IV/PerfilyPersonalizacionWireframe.png" alt="Wireframe Perfil y Personalización Section" width="800">
   </p>
 
-- **Testimonios section**
+- **Modo SOS section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-testimonios-section.png" alt="Wireframe Testimonios Section" width="800">
+    <img src="images/Chapter-IV/ModoSosWireframe.png" alt="Wireframe Modo SOS Section" width="800">
+  </p>
+
+- **Autorregulación section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/AutorregulaciónWireframe.png" alt="Wireframe Autorregulación Section" width="800">
+  </p>
+
+- **Comunicación CAA section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/ComunicacionCAAWireframe.png" alt="Wireframe Comunicación CAA Section" width="800">
+  </p>
+
+- **Red de Apoyo section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/RedDeApoyoWireframe.png" alt="Wireframe Red de Apoyo Section" width="800">
   </p>
 
 - **Planes section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-planes-section.png" alt="Wireframe Planes Section" width="800">
+    <img src="images/Chapter-IV/PlanesWireframe.png" alt="Wireframe Planes Section" width="800">
+  </p>
+
+- **Testimonios section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/TestimoniosWireframe.png" alt="Wireframe Testimonios Section" width="800">
   </p>
 
 - **FAQ section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-faq-section.png" alt="Wireframe FAQ Section" width="800">
+    <img src="images/Chapter-IV/FAQWireframe.png" alt="Wireframe FAQ Section" width="800">
   </p>
 
-- **CTA final section**
+- **Beneficios section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-cta-final-section.png" alt="Wireframe CTA Final Section" width="800">
+    <img src="images/Chapter-IV/BeneficiosWireframe.png" alt="Wireframe Beneficios Section" width="800">
   </p>
 
 - **Conoce al equipo section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-equipo-section.png" alt="Wireframe Conoce al Equipo Section" width="800">
+    <img src="images/Chapter-IV/ConoceAlEquipoWireframe.png" alt="Wireframe Conoce al Equipo Section" width="800">
+  </p>
+
+- **CTA final section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/CTAWireframe.png" alt="Wireframe CTA Final Section" width="800">
   </p>
 
 - **Formulario de Contacto section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-contacto-section.png" alt="Wireframe Formulario de Contacto Section" width="800">
+    <img src="images/Chapter-IV/FormularioWireframe.png" alt="Wireframe Formulario de Contacto Section" width="800">
   </p>
 
 - **Footer section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/wireframe-footer-section.png" alt="Wireframe Footer Section" width="800">
+    <img src="images/Chapter-IV/FooterWireframe.png" alt="Wireframe Footer Section" width="800">
   </p>
 
 ### 4.3.2 Landing Page Mock-up
@@ -721,109 +715,103 @@ Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura 
 - **Header (Navbar)**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-header-navbar.png" alt="Mockup Header Navbar" width="800">
+    <img src="images/Chapter-IV/navbarMockup.png" alt="Mockup Header Navbar" width="800">
   </p>
 
 - **Hero section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-hero-section.png" alt="Mockup Hero Section" width="800">
-  </p>
-
-- **Resultados (Stats) section**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-resultados-section.png" alt="Mockup Resultados Section" width="800">
+    <img src="images/Chapter-IV/HeroSectionMockup.png" alt="Mockup Hero Section" width="800">
   </p>
 
 - **Problema section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-problema-section.png" alt="Mockup Problema Section" width="800">
-  </p>
-
-- **Perfil y Personalización section (LS-01)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-perfil-section.png" alt="Mockup Perfil y Personalización Section" width="800">
-  </p>
-
-- **Modo SOS section (LS-02)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-modo-sos-section.png" alt="Mockup Modo SOS Section" width="800">
-  </p>
-
-- **Autorregulación section (LS-03)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-autorregulacion-section.png" alt="Mockup Autorregulación Section" width="800">
-  </p>
-
-- **Comunicación CAA section (LS-04)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-comunicacion-caa-section.png" alt="Mockup Comunicación CAA Section" width="800">
-  </p>
-
-- **Red de Apoyo section (LS-05)**
-
-  <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-red-apoyo-section.png" alt="Mockup Red de Apoyo Section" width="800">
+    <img src="images/Chapter-IV/problemaMockup.png" alt="Mockup Problema Section" width="800">
   </p>
 
 - **Cómo funciona section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-como-funciona-section.png" alt="Mockup Cómo Funciona Section" width="800">
+    <img src="images/Chapter-IV/FuncionalidadMockup.png" alt="Mockup Cómo Funciona Section" width="800">
   </p>
 
-- **Beneficios section**
+- **Perfil y Personalización section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-beneficios-section.png" alt="Mockup Beneficios Section" width="800">
+    <img src="images/Chapter-IV/PerfilyPersonalizacionMockup.png" alt="Mockup Perfil y Personalización Section" width="800">
   </p>
 
-- **Testimonios section**
+- **Modo SOS section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-testimonios-section.png" alt="Mockup Testimonios Section" width="800">
+    <img src="images/Chapter-IV/ModoSosMockup.png" alt="Mockup Modo SOS Section" width="800">
+  </p>
+
+- **Autorregulación section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/AutorregulaciónMockup.png" alt="Mockup Autorregulación Section" width="800">
+  </p>
+
+- **Comunicación CAA section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/ComunicacionCAAMockup.png" alt="Mockup Comunicación CAA Section" width="800">
+  </p>
+
+- **Red de Apoyo section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/RedDeApoyoMockup.png" alt="Mockup Red de Apoyo Section" width="800">
   </p>
 
 - **Planes section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-planes-section.png" alt="Mockup Planes Section" width="800">
+    <img src="images/Chapter-IV/PlanesMockup.png" alt="Mockup Planes Section" width="800">
+  </p>
+
+- **Testimonios section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/TestimoniosMockup.png" alt="Mockup Testimonios Section" width="800">
   </p>
 
 - **FAQ section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-faq-section.png" alt="Mockup FAQ Section" width="800">
+    <img src="images/Chapter-IV/FAQMockup.png" alt="Mockup FAQ Section" width="800">
   </p>
 
-- **CTA final section**
+- **Beneficios section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-cta-final-section.png" alt="Mockup CTA Final Section" width="800">
+    <img src="images/Chapter-IV/BeneficiosMockup.png" alt="Mockup Beneficios Section" width="800">
   </p>
 
 - **Conoce al equipo section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-equipo-section.png" alt="Mockup Conoce al Equipo Section" width="800">
+    <img src="images/Chapter-IV/ConoceAlEquipoMockup.png" alt="Mockup Conoce al Equipo Section" width="800">
+  </p>
+
+- **CTA final section**
+
+  <p align="center">
+    <img src="images/Chapter-IV/CTAMockup.png" alt="Mockup CTA Final Section" width="800">
   </p>
 
 - **Formulario de Contacto section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-contacto-section.png" alt="Mockup Formulario de Contacto Section" width="800">
+    <img src="images/Chapter-IV/FormularioMockup.png" alt="Mockup Formulario de Contacto Section" width="800">
   </p>
 
 - **Footer section**
 
   <p align="center">
-    <img src="./images/Chapter-4/landing/mockup-footer-section.png" alt="Mockup Footer Section" width="800">
+    <img src="images/Chapter-IV/FooterMockup.png" alt="Mockup Footer Section" width="800">
   </p>
 
 ## 4.4 Web Applications UX/UI Design
