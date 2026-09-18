@@ -123,112 +123,89 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ### 2.2.2. Registro de entrevistas
 
-### Segmento 1 - Padres, Madres y Cuidadores Primarios
+**Needfinding Interviews Link:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQBQ89_GSVmMR79Jb6S9okRvAWlkPvsG8Yi4X79EFp6SbjY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KbxiTf 
 
-![Entrevista (1).png](images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%281%29.png)
-https://upcedupe-my.sharepoint.com/personal/u20241g022_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g022%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevistas%20Open%20Source%2FSegmento%202%20%2D%20Padres%2C%20familiares%20y%20cuidadores%2FPurple%20and%20White%20Modern%20Job%20Interview%20Preparation%20Presentation%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E3e1dfae9%2Dd02e%2D4fbd%2Db8de%2De0b5ede4cf17
-Ingrid (32 años, Comas), administradora en el rubro minero, es madre de una adolescente de 12 años diagnosticada con TDAH. Enfrenta desafíos de autorregulación y límites propios de la etapa adolescente, manifestando conductas de ansiedad (tics como presionar fuertemente un dedo) en situaciones incómodas o inciertas, así como episodios de irritabilidad cuando se le imponen restricciones. A diferencia de casos de colapso agudo, su enfoque se centra en el acompañamiento cotidiano, la búsqueda de explicaciones lógicas ante el aprendizaje autodidacta de su hija y la consolidación de un estilo de crianza equilibrado (ni dócil ni rígido). Ante tensiones, aplica estrategias de desescalada verbal a su nivel y validación afectiva mediante abrazos y afirmaciones de equipo para restablecer la calma mutua. Ingrid no utiliza herramientas digitales en momentos críticos, sino que recurre a foros, grupos de apoyo y blogs de madres y psicólogas para empatizar y compartir experiencias similares. Para una propuesta digital, desestima los botones de crisis inmediata y prioriza una comunidad estructurada por rangos de edad (ej. 12 a 15 años) basada en testimonios de vivencias reales entre madres, orientación psicoterapéutica constante y el respaldo profesional explícito de psicólogos o psiquiatras.
+### Segmento 1 -  Niños y Adolescentes Neurodivergentes
 
-![Entrevista (2).png](images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%282%29.png)
-https://upcedupe-my.sharepoint.com/personal/u20241g022_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g022%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevistas%20Open%20Source%2FSegmento%202%20%2D%20Padres%2C%20familiares%20y%20cuidadores%2FEntrevista%202%20%2D%20Segmento%202%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E37250640%2D5470%2D4eb5%2Da39b%2D8e14c98e188d
-Mateo (20 años, San Miguel), estudiante de Ingeniería de Software, es cuidador y hermano mayor de un niño de 8 años con TEA Nivel 1 y sobrecarga sensorial. Enfrenta agotamiento emocional, culpa y ansiedad debido a las miradas de terceros durante crisis desencadenadas por ruidos intensos, luces fuertes, aglomeraciones, fatiga acumulada o cambios bruscos en la rutina. Detecta el inicio de los episodios mediante señales como caminatas en círculos, evasión del contacto visual y respuestas verbales ambiguas o confusas, las cuales pueden escalar a llantos, colapsos en el suelo o autolesiones leves (golpearse la cabeza). Sus estrategias de contención incluyen el traslado a zonas de bajo estímulo, hablar en tono bajo con frases cortas, aplicar presión profunda en hombros, emplear pictogramas simples, ruido blanco con audífonos de cancelación y respiración guiada. Reporta que las aplicaciones actuales no son prácticas por requerir demasiados clics para acceder a las funciones clave. Para la solución digital, demanda la activación de un modo de emergencia con un solo toque, operativo en un smartphone Android, con interfaz ultra limpia, sin publicidad y respaldada por profesionales de la salud. Requiere que la app muestre pautas visuales de desescalada en tres pasos (íconos y frases cortas) junto con un temporizador visual, permitiéndole identificar con claridad e intuición la técnica exacta a aplicar según el detonante sin perder la calma.
+| **Entrevista #1** | |
+| :--- | :--- |
+| **Nombre** | Sebastián |
+| **Apellidos** | - |
+| **Edad** | 17 años |
+| **Distrito** | San Martín de Porres |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%202/entrevista%201.png" alt="Evidencia Entrevista 3" width="180"> |
+| **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQCYc-5hPz6wQqoSmSnNGpUOAbR00qgtPOH1hP_5Nomsly4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1x6Bev |
+| **Timing donde inicia** | 0:05 |
+| **Duración** | 7:25 |
+| **Resumen** | Sebastián es un joven de 17 años que vive en San Martín de Porres, cursa el quinto año de secundaria y fue diagnosticado con Trastorno por Deficiencia de Atención sin Hiperactividad (TDA), por lo cual asiste regularmente a terapias psicológicas y de atención sin requerir medicación. Sus dispositivos de uso frecuente son el celular y la computadora, empleando aplicaciones como TikTok, Instagram, Twitter y juegos de celular de lógica o resolución sencilla. A nivel subjetivo, manifiesta incomodidad y sobrecarga cognitiva en entornos con ruidos fuertes, alta densidad de personas, sobreestimulación visual o cambios repentinos de planes, lo cual afecta su concentración durante el estudio y le genera impulsos de evadir la situación. Ante episodios de malestar o irritabilidad en el colegio, implementa estrategias de autorregulación como retirarse momentáneamente al baño o pasear durante el recreo para calmarse en soledad. Debido a su timidez y a la dificultad de que personas no neurodivergentes comprendan sus procesos emocionales, recurre al envío de mensajes de texto cuidadosamente redactados para comunicar sus necesidades sin exponerse a la comunicación verbal directa. Para el desarrollo del arquetipo, demanda una solución digital accesible, intuitiva y libre de saturación visual en pantalla (evitando el agobio por exceso de elementos), que posea mecanismos visuales y rápidos para reportar estados de ánimo sin redactar textos extensos, ejercicios de calma, sonidos relajantes y opciones de notificación a su red de contactos de confianza. |
 
-![Entrevista (3).png](images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%283%29.png)
-https://upcedupe-my.sharepoint.com/personal/u20241g022_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g022%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevistas%20Open%20Source%2FSegmento%202%20%2D%20Padres%2C%20familiares%20y%20cuidadores%2FEntrevista%201%20%2D%20%20Segmento%202%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9c5bcf2c%2D2b74%2D439e%2D82bd%2D8749730d92a6
-Johan (22 años, Pucusana), estudiante de Ingeniería de Software, es cuidador de su hermano de 14 años con TEA Nivel 1 e hipersensibilidad auditiva. Enfrenta sobrecarga emocional y culpa por el juicio social y el cierre verbal de su hermano durante crisis gatilladas por ruidos intensos, aglomeraciones o cambios de rutina, las cuales detecta por temblores, caminatas en círculos y bloqueos del habla. Como respuesta, recurre al retiro a zonas silenciosas, audífonos de cancelación de ruido y estimulación visual en el celular. Rechaza las aplicaciones actuales por considerarlas infantiles y complejas. Para la solución digital, exige una interfaz limpia de acceso con un solo toque y funcionamiento offline, que brinde al cuidador guías de acción rápidas en pasos cortos y ofrezca al adolescente un panel visual e intuitivo para comunicar sus necesidades sin hablar, todo respaldado por profesionales en psicología y terapia ocupacional.
+| **Entrevista #2** | |
+| :--- | :--- |
+| **Nombre** | Diana |
+| **Apellidos** | — |
+| **Edad** | 15 años |
+| **Distrito** | San Miguel |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%202/entrevista%203.png" alt="Evidencia Entrevista 2" width="180"> |
+| **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQBVqCxmm_ugTIUR7yYbUV1ZASsP_Eyo1h1ojPvUCbW7l-k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nLHzqW |
+| **Timing donde inicia** | 0:05 |
+| **Duración** | 4:30 |
+| **Resumen** | Diana es una adolescente de 15 años que cursa el tercer año de secundaria, vive en el distrito de San Miguel y presenta un diagnóstico de autismo. En su vida cotidiana utiliza principalmente el celular y la computadora para realizar tareas escolares y entretenerse en plataformas como YouTube, TikTok, WhatsApp y videojuegos como Roblox, además de disfrutar del dibujo y escuchar música. En el plano subjetivo, reporta un fuerte malestar ante estímulos sensoriales del entorno, específicamente ruidos fuertes, espacios concurridos y luces de gran intensidad. Frente a situaciones de abrumamiento o molestia, recurre al aislamiento en lugares tranquilos o al uso de audífonos con música relajante, aplicando ejercicios de respiración lenta en espacios de soledad. Asimismo, ante la dificultad para verbalizar sus emociones o necesidades, emplea la comunicación no verbal escribiendo mensajes en su teléfono celular para mostrárselos a la persona a su lado o haciendo uso de gestos. En relación con el diseño del arquetipo y de la aplicación, solicita una interfaz limpia que incorpore botones accesibles para la selección rápida de estados de ánimo, guía de ejercicios de respiración, música relajante para aislar el ruido exterior, una función de aviso o alerta a un familiar en casos de ayuda y, de forma indispensable, la capacidad de operar sin conexión a internet (offline) debido a la limitación de datos móviles fuera de su hogar. |
 
-### Segmento 2 -  Niños y Adolescentes Neurodivergentes
-![entrevista 2.png](images/Chapter-II/Segmentos/Segmento%202/entrevista%202.png)
-https://upcedupe-my.sharepoint.com/personal/u20241g022_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g022%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevistas%20Open%20Source%2FSegmento%201%20%2D%20Ni%C3%B1os%20y%20Adolecentes%2Fentrevista%204%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E45bb71fb%2D5deb%2D446c%2D8bd7%2D0f260836800e
-Owen es un joven de 17 años que cursa sus estudios superiores en un instituto. Diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (TDAH), presenta dificultades en el procesamiento de información o instrucciones veloces en entornos saturados de personas, requiriendo explicaciones reiteradas para asegurar la comprensión. Utiliza el teléfono móvil de forma diaria como dispositivo principal, complementado con la computadora para consumir contenido en YouTube, dibujar, escuchar música y jugar títulos como Minecraft y Free Fire, además de comunicarse por WhatsApp, TikTok e Instagram. Desde una perspectiva subjetiva, señala que los ruidos estruendosos —como los provenientes del transporte público— y el murmullo de aglomeraciones humanas le generan irritación y abrumamiento. Sus hábitos de autorregulación consisten en buscar aislamiento en zonas silenciosas, ponerse audífonos para escuchar música o interactuar con el celular. Cuando experimenta crisis o bloqueos que le impiden expresarse verbalmente con personas de su entorno cercano, envía mensajes de texto a su madre para solicitar asistencia. En función de sus requerimientos para la propuesta de valor del proyecto, plantea una herramienta que incluya botones interactivos de emergencia, un lienzo digital o blog de notas de gran tamaño que le permita canalizar la tensión mediante garabatos o trazos libres, y una funcionalidad combinada de música favorita con imágenes relajantes para restaurar la calma.
-![entrevista 3.png](images/Chapter-II/Segmentos/Segmento%202/entrevista%203.png)
-https://upcedupe-my.sharepoint.com/personal/u20241g022_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g022%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevistas%20Open%20Source%2FSegmento%201%20%2D%20Ni%C3%B1os%20y%20Adolecentes%2FEntrevista%202%20%2D%20Segmento%201%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eff8a79f9%2Db520%2D451e%2Dbee2%2Ddbeaff455852
-Diana es una adolescente de 15 años que cursa el tercer año de secundaria, vive en el distrito de San Miguel y presenta un diagnóstico de autismo. En su vida cotidiana utiliza principalmente el celular y la computadora para realizar tareas escolares y entretenerse en plataformas como YouTube, TikTok, WhatsApp y videojuegos como Roblox, además de disfrutar del dibujo y escuchar música. En el plano subjetivo, reporta un fuerte malestar ante estímulos sensoriales del entorno, específicamente ruidos fuertes, espacios concurridos y luces de gran intensidad. Frente a situaciones de abrumamiento o molestia, recurre al aislamiento en lugares tranquilos o al uso de audífonos con música relajante, aplicando ejercicios de respiración lenta en espacios de soledad. Asimismo, ante la dificultad para verbalizar sus emociones o necesidades, emplea la comunicación no verbal escribiendo mensajes en su teléfono celular para mostrárselos a la persona a su lado o haciendo uso de gestos. En relación con el diseño del arquetipo y de la aplicación, solicita una interfaz limpia que incorpore botones accesibles para la selección rápida de estados de ánimo, guía de ejercicios de respiración, música relajante para aislar el ruido exterior, una función de aviso o alerta a un familiar en casos de ayuda y, de forma indispensable, la capacidad de operar sin conexión a internet (offline) debido a la limitación de datos móviles fuera de su hogar.
-![entrevista 1.png](images/Chapter-II/Segmentos/Segmento%202/entrevista%201.png)
-https://upcedupe-my.sharepoint.com/personal/u20241g022_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g022%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevistas%20Open%20Source%2FSegmento%201%20%2D%20Ni%C3%B1os%20y%20Adolecentes%2FEntrevista%201%20%2D%20Segmento%201%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8924377c%2D81ad%2D4fc5%2D958f%2D340bd012d79d
-Sebastián es un joven de 17 años que vive en San Martín de Porres, cursa el quinto año de secundaria y fue diagnosticado con Trastorno por Deficiencia de Atención sin Hiperactividad (TDA), por lo cual asiste regularmente a terapias psicológicas y de atención sin requerir medicación. Sus dispositivos de uso frecuente son el celular y la computadora, empleando aplicaciones como TikTok, Instagram, Twitter y juegos de celular de lógica o resolución sencilla. A nivel subjetivo, manifiesta incomodidad y sobrecarga cognitiva en entornos con ruidos fuertes, alta densidad de personas, sobreestimulación visual o cambios repentinos de planes, lo cual afecta su concentración durante el estudio y le genera impulsos de evadir la situación. Ante episodios de malestar o irritabilidad en el colegio, implementa estrategias de autorregulación como retirarse momentáneamente al baño o pasear durante el recreo para calmarse en soledad. Debido a su timidez y a la dificultad de que personas no neurodivergentes comprendan sus procesos emocionales, recurre al envío de mensajes de texto cuidadosamente redactados para comunicar sus necesidades sin exponerse a la comunicación verbal directa. Para el desarrollo del arquetipo, demanda una solución digital accesible, intuitiva y libre de saturación visual en pantalla (evitando el agobio por exceso de elementos), que posea mecanismos visuales y rápidos para reportar estados de ánimo sin redactar textos extensos, ejercicios de calma, sonidos relajantes y opciones de notificación a su red de contactos de confianza.
+| **Entrevista #3** | |
+| :--- | :--- |
+| **Nombre** | Owen |
+| **Apellidos** | — |
+| **Edad** | 17 años |
+| **Distrito** | — |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%202/entrevista%202.png" alt="Evidencia Entrevista 1" width="180"> |
+| **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQCQXZbPNs8iTJwmm9lBrl0fAY9kyHKLHb5-RJW0dUQydkY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=f5Ib91 |
+| **Timing donde inicia** | 0:05 |
+| **Duración** |4:31  |
+| **Resumen** | Owen es un joven de 17 años que cursa sus estudios superiores en un instituto. Diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (TDAH), presenta dificultades en el procesamiento de información o instrucciones veloces en entornos saturados de personas, requiriendo explicaciones reiteradas para asegurar la comprensión. Utiliza el teléfono móvil de forma diaria como dispositivo principal, complementado con la computadora para consumir contenido en YouTube, dibujar, escuchar música y jugar títulos como Minecraft y Free Fire, además de comunicarse por WhatsApp, TikTok e Instagram. Desde una perspectiva subjetiva, señala que los ruidos estruendosos —como los provenientes del transporte público— y el murmullo de aglomeraciones humanas le generan irritación y abrumamiento. Sus hábitos de autorregulación consisten en buscar aislamiento en zonas silenciosas, ponerse audífonos para escuchar música o interactuar con el celular. Cuando experimenta crisis o bloqueos que le impiden expresarse verbalmente con personas de su entorno cercano, envía mensajes de texto a su madre para solicitar asistencia. En función de sus requerimientos para la propuesta de valor del proyecto, plantea una herramienta que incluya botones interactivos de emergencia, un lienzo digital o blog de notas de gran tamaño que le permita canalizar la tensión mediante garabatos o trazos libres, y una funcionalidad combinada de música favorita con imágenes relajantes para restaurar la calma. |
 
+### Segmento 2 - Padres, Madres y Cuidadores Primarios
+
+| **Entrevista #1** | |
+| :--- | :--- |
+| **Nombre** | Johan |
+| **Apellidos** | Contreras |
+| **Edad** | 22 años |
+| **Distrito** | Pucusana |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%283%29.png" alt="Evidencia Entrevista 3" width="180"> |
+| **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQDrmGrPZHL8SIBH3UYzzr7VAS7g-5aifUF3i0HjsqzAs-k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XbQEF8 |
+| **Timing donde inicia** | 0:05 |
+| **Duración** | 9:06 |
+| **Resumen** |Johan (22 años, Pucusana), estudiante de Ingeniería de Software, es cuidador de su hermano de 14 años con TEA Nivel 1 e hipersensibilidad auditiva. Enfrenta sobrecarga emocional y culpa por el juicio social y el cierre verbal de su hermano durante crisis gatilladas por ruidos intensos, aglomeraciones o cambios de rutina, las cuales detecta por temblores, caminatas en círculos y bloqueos del habla. Como respuesta, recurre al retiro a zonas silenciosas, audífonos de cancelación de ruido y estimulación visual en el celular. Rechaza las aplicaciones actuales por considerarlas infantiles y complejas. Para la solución digital, exige una interfaz limpia de acceso con un solo toque y funcionamiento offline, que brinde al cuidador guías de acción rápidas en pasos cortos y ofrezca al adolescente un panel visual e intuitivo para comunicar sus necesidades sin hablar, todo respaldado por profesionales en psicología y terapia ocupacional. |
+
+| **Entrevista #2** | |
+| :--- | :--- |
+| **Nombre** | Mateo |
+| **Apellidos** | Poma |
+| **Edad** | 20 años |
+| **Distrito** | San Miguel |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%282%29.png" alt="Evidencia Entrevista 2" width="180"> |
+| **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQAYOsHO6MY9RLOrydw9YFG9AVGxv7yzT5twHPYYB1UInWI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IbtaV6 |
+| **Timing donde inicia** | 0:05 |
+| **Duración** | 6:29 |
+| **Resumen** | Mateo (20 años, San Miguel), estudiante de Ingeniería de Software, es cuidador y hermano mayor de un niño de 8 años con TEA Nivel 1 y sobrecarga sensorial. Enfrenta agotamiento emocional, culpa y ansiedad debido a las miradas de terceros durante crisis desencadenadas por ruidos intensos, luces fuertes, aglomeraciones, fatiga acumulada o cambios bruscos en la rutina. Detecta el inicio de los episodios mediante señales como caminatas en círculos, evasión del contacto visual y respuestas verbales ambiguas o confusas, las cuales pueden escalar a llantos, colapsos en el suelo o autolesiones leves (golpearse la cabeza). Sus estrategias de contención incluyen el traslado a zonas de bajo estímulo, hablar en tono bajo con frases cortas, aplicar presión profunda en hombros, emplear pictogramas simples, ruido blanco con audífonos de cancelación y respiración guiada. Reporta que las aplicaciones actuales no son prácticas por requerir demasiados clics para acceder a las funciones clave. Para la solución digital, demanda la activación de un modo de emergencia con un solo toque, operativo en un smartphone Android, con interfaz ultra limpia, sin publicidad y respaldada por profesionales de la salud. Requiere que la app muestre pautas visuales de desescalada en tres pasos (íconos y frases cortas) junto con un temporizador visual, permitiéndole identificar con claridad e intuición la técnica exacta a aplicar según el detonante sin perder la calma. |
+
+| **Entrevista #3** | |
+| :--- | :--- |
+| **Nombre** | Ingrid |
+| **Apellidos** | Torres |
+| **Edad** | 32 años |
+| **Distrito** | Comas |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%281%29.png" alt="Evidencia Entrevista 1" width="180"> |
+| **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQCGQZlX85-_QZ5WnC08sEpAAWFSdnXf0j7JH3y-6RQDhFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SVIM5F |
+| **Timing donde inicia** | 0:05 |
+| **Duración** | 14:10 |
+| **Resumen** | Ingrid (32 años, Comas), administradora en el rubro minero, es madre de una adolescente de 12 años diagnosticada con TDAH. Enfrenta desafíos de autorregulación y límites propios de la etapa adolescente, manifestando conductas de ansiedad (tics como presionar fuertemente un dedo) en situaciones incómodas o inciertas, así como episodios de irritabilidad cuando se le imponen restricciones. A diferencia de casos de colapso agudo, su enfoque se centra en el acompañamiento cotidiano, la búsqueda de explicaciones lógicas ante el aprendizaje autodidacta de su hija y la consolidación de un estilo de crianza equilibrado (ni dócil ni rígido). Ante tensiones, aplica estrategias de desescalada verbal a su nivel y validación afectiva mediante abrazos y afirmaciones de equipo para restablecer la calma mutua. Ingrid no utiliza herramientas digitales en momentos críticos, sino que recurre a foros, grupos de apoyo y blogs de madres y psicólogas para empatizar y compartir experiencias similares. Para una propuesta digital, desestima los botones de crisis inmediata y prioriza una comunidad estructurada por rangos de edad (ej. 12 a 15 años) basada en testimonios de vivencias reales entre madres, orientación psicoterapéutica constante y el respaldo profesional explícito de psicólogos o psiquiatras. |
 
 ## 2.2.3. Análisis de entrevistas
 
 Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos objetivos: 3 padres, familiares y cuidadores de personas neurodivergentes (Ingrid, Mateo y Johan), y 3 niños y adolescentes neurodivergentes (Owen, Diana y Sebastián). El propósito fue identificar patrones comunes en los detonantes de crisis, las estrategias de autorregulación y contención, y las expectativas frente a una solución digital de apoyo emocional. A partir de los resúmenes obtenidos, se extrajeron características objetivas y subjetivas de cada perfil, las cuales se presentan con respaldo estadístico expresado en porcentajes sobre el total de entrevistados por segmento.
 
-### Segmento objetivo #1: Padres, familiares y cuidadores
-
-**Hallazgos**
-
-- El 100% de los cuidadores reportó recurrir a estrategias de desescalada in situ (verbal, física o sensorial) para contener las crisis de la persona a su cargo.
-- El 100% manifestó experimentar una carga emocional propia (ansiedad, culpa, agotamiento o tensión) derivada del acompañamiento cotidiano.
-- El 67% (Mateo y Johan) cuida a una persona diagnosticada con TEA Nivel 1, mientras que el 33% (Ingrid) acompaña a una persona con TDAH.
-- El 67% (Mateo y Johan) identificó los estímulos sensoriales del entorno (ruidos intensos, luces fuertes, aglomeraciones, cambios de rutina) como los principales detonantes de crisis; el 33% restante (Ingrid) asoció las crisis a la imposición de límites o restricciones propias de la etapa adolescente.
-- El 100% rechazó o no confía en las herramientas digitales actuales: el 67% (Mateo y Johan) las calificó como poco prácticas, infantiles o complejas, y el 33% (Ingrid) señaló no utilizar ninguna herramienta digital en momentos críticos.
-- El 67% (Mateo y Johan) exigió que la solución digital opere con una interfaz de un solo toque; de ese subgrupo, el 33% (Johan) además requirió funcionamiento offline.
-- El 100% condicionó la adopción de la solución digital al respaldo explícito de profesionales de la salud (psicólogos, psiquiatras o terapeutas ocupacionales).
-- El 33% (Ingrid) priorizó, en lugar de mecanismos de emergencia inmediata, una comunidad estructurada por rangos de edad basada en testimonios reales entre madres.
-
-**Diagnóstico de la persona a cargo**
-
-| Diagnóstico | Casos | Porcentaje |
-|---|---|---|
-| TEA Nivel 1 | Mateo, Johan | 67% |
-| TDAH | Ingrid | 33% |
-
-**Principales detonantes de crisis identificados**
-
-| Detonante | Casos | Porcentaje |
-|---|---|---|
-| Estímulos sensoriales (ruidos, luces, aglomeraciones, cambios de rutina) | Mateo, Johan | 67% |
-| Imposición de límites o incertidumbre en la etapa adolescente | Ingrid | 33% |
-
-`graf_detonantesCuidadores`
-
-Los estímulos sensoriales concentran la mayoría de los detonantes reportados por los cuidadores (67%), lo que evidencia que las crisis en personas con TEA están fuertemente asociadas al entorno físico e impredecible, mientras que en el caso de TDAH el detonante se vincula más a la dinámica de crianza y autorregulación emocional.
-
-**Estrategias de contención utilizadas por el cuidador**
-
-| Estrategia | Casos | Porcentaje |
-|---|---|---|
-| Traslado o retiro a zonas de bajo estímulo / silenciosas | Mateo, Johan | 67% |
-| Comunicación en tono bajo con frases cortas / pictogramas | Mateo, Johan | 67% |
-| Validación afectiva (abrazos, afirmaciones verbales) | Ingrid | 33% |
-| Búsqueda de apoyo externo (foros, grupos, blogs) | Ingrid | 33% |
-
-`graf_estrategiasCuidadores`
-
-El retiro a espacios de bajo estímulo y la comunicación simplificada son las estrategias más recurrentes (67% cada una), lo que confirma que el manejo sensorial del entorno es un componente central en el acompañamiento de crisis en TEA. La búsqueda de validación afectiva y de redes de apoyo externas, presente en el 33% del segmento, refleja además una necesidad emocional del propio cuidador que no se limita a la contención del episodio.
-
-**Percepción sobre herramientas digitales actuales**
-
-| Percepción | Casos | Porcentaje |
-|---|---|---|
-| Rechazo por ser poco prácticas, infantiles o complejas | Mateo, Johan | 67% |
-| No utiliza ninguna herramienta digital en momentos críticos | Ingrid | 33% |
-
-`graf_percepcionAppsCuidadores`
-
-La totalidad del segmento (100%) evidenció una relación insatisfactoria o inexistente con las soluciones digitales actuales, lo que indica que no existe una herramienta consolidada en el mercado que los cuidadores perciban como confiable para el manejo de crisis, situación que reduce la resistencia al cambio ante una nueva propuesta.
-
-**Requerimientos para la propuesta digital**
-
-| Requerimiento | Casos | Porcentaje |
-|---|---|---|
-| Respaldo explícito de profesionales de salud mental | Ingrid, Mateo, Johan | 100% |
-| Interfaz de acceso en un solo toque | Mateo, Johan | 67% |
-| Guías visuales de desescalada en pasos cortos (pictogramas/temporizador) | Mateo, Johan | 67% |
-| Funcionamiento offline | Johan | 33% |
-| Comunidad de testimonios entre cuidadores (en lugar de botón de crisis) | Ingrid | 33% |
-
-`graf_requerimientosCuidadores`
-
-El respaldo profesional explícito es una condición unánime (100%) para la aceptación de la propuesta digital, lo que la posiciona como un requisito no negociable del segmento. Las guías visuales rápidas y el acceso en un solo toque, mencionados por el 67% de los cuidadores de personas con TEA, refuerzan la necesidad de una interfaz orientada a la acción inmediata durante episodios de crisis.
-
-**Conclusiones**
-
-Los cuidadores entrevistados enfrentan una carga emocional significativa y sostenida en el tiempo, agravada por la desconfianza hacia las herramientas digitales existentes. El segmento vinculado a TEA prioriza mecanismos de acción rápida frente a detonantes sensoriales, mientras que el vinculado a TDAH prioriza el acompañamiento emocional y la validación entre pares. En ambos casos, el respaldo profesional explícito se confirma como un requisito transversal e indispensable para la adopción de cualquier solución digital.
-
----
-
-### Segmento objetivo #2: Niños y Adolescentes Neurodivergentes
+### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
 **Hallazgos**
 
@@ -307,19 +284,102 @@ Tres funcionalidades alcanzan validación unánime en el segmento (100%): un mec
 Los niños y adolescentes entrevistados comparten un patrón consistente frente a la sobrecarga sensorial: aislamiento físico, evitación de la comunicación verbal y uso del celular como herramienta de autorregulación. La unanimidad en la demanda de mecanismos visuales de expresión rápida, alertas automáticas a contactos de confianza y contenido calmante (música/sonidos) confirma que estas funcionalidades deben constituir el núcleo de la solución digital, mientras que la respiración guiada y una interfaz visualmente simple representan requisitos complementarios ampliamente compartidos por el segmento.
 
 
+### Segmento objetivo #2: Padres, familiares y cuidadores
+
+**Hallazgos**
+
+- El 100% de los cuidadores reportó recurrir a estrategias de desescalada in situ (verbal, física o sensorial) para contener las crisis de la persona a su cargo.
+- El 100% manifestó experimentar una carga emocional propia (ansiedad, culpa, agotamiento o tensión) derivada del acompañamiento cotidiano.
+- El 67% (Mateo y Johan) cuida a una persona diagnosticada con TEA Nivel 1, mientras que el 33% (Ingrid) acompaña a una persona con TDAH.
+- El 67% (Mateo y Johan) identificó los estímulos sensoriales del entorno (ruidos intensos, luces fuertes, aglomeraciones, cambios de rutina) como los principales detonantes de crisis; el 33% restante (Ingrid) asoció las crisis a la imposición de límites o restricciones propias de la etapa adolescente.
+- El 100% rechazó o no confía en las herramientas digitales actuales: el 67% (Mateo y Johan) las calificó como poco prácticas, infantiles o complejas, y el 33% (Ingrid) señaló no utilizar ninguna herramienta digital en momentos críticos.
+- El 67% (Mateo y Johan) exigió que la solución digital opere con una interfaz de un solo toque; de ese subgrupo, el 33% (Johan) además requirió funcionamiento offline.
+- El 100% condicionó la adopción de la solución digital al respaldo explícito de profesionales de la salud (psicólogos, psiquiatras o terapeutas ocupacionales).
+- El 33% (Ingrid) priorizó, en lugar de mecanismos de emergencia inmediata, una comunidad estructurada por rangos de edad basada en testimonios reales entre madres.
+
+**Diagnóstico de la persona a cargo**
+
+| Diagnóstico | Casos | Porcentaje |
+|---|---|---|
+| TEA Nivel 1 | Mateo, Johan | 67% |
+| TDAH | Ingrid | 33% |
+
+**Principales detonantes de crisis identificados**
+
+| Detonante | Casos | Porcentaje |
+|---|---|---|
+| Estímulos sensoriales (ruidos, luces, aglomeraciones, cambios de rutina) | Mateo, Johan | 67% |
+| Imposición de límites o incertidumbre en la etapa adolescente | Ingrid | 33% |
+
+`graf_detonantesCuidadores`
+
+Los estímulos sensoriales concentran la mayoría de los detonantes reportados por los cuidadores (67%), lo que evidencia que las crisis en personas con TEA están fuertemente asociadas al entorno físico e impredecible, mientras que en el caso de TDAH el detonante se vincula más a la dinámica de crianza y autorregulación emocional.
+
+**Estrategias de contención utilizadas por el cuidador**
+
+| Estrategia | Casos | Porcentaje |
+|---|---|---|
+| Traslado o retiro a zonas de bajo estímulo / silenciosas | Mateo, Johan | 67% |
+| Comunicación en tono bajo con frases cortas / pictogramas | Mateo, Johan | 67% |
+| Validación afectiva (abrazos, afirmaciones verbales) | Ingrid | 33% |
+| Búsqueda de apoyo externo (foros, grupos, blogs) | Ingrid | 33% |
+
+`graf_estrategiasCuidadores`
+
+El retiro a espacios de bajo estímulo y la comunicación simplificada son las estrategias más recurrentes (67% cada una), lo que confirma que el manejo sensorial del entorno es un componente central en el acompañamiento de crisis en TEA. La búsqueda de validación afectiva y de redes de apoyo externas, presente en el 33% del segmento, refleja además una necesidad emocional del propio cuidador que no se limita a la contención del episodio.
+
+**Percepción sobre herramientas digitales actuales**
+
+| Percepción | Casos | Porcentaje |
+|---|---|---|
+| Rechazo por ser poco prácticas, infantiles o complejas | Mateo, Johan | 67% |
+| No utiliza ninguna herramienta digital en momentos críticos | Ingrid | 33% |
+
+`graf_percepcionAppsCuidadores`
+
+La totalidad del segmento (100%) evidenció una relación insatisfactoria o inexistente con las soluciones digitales actuales, lo que indica que no existe una herramienta consolidada en el mercado que los cuidadores perciban como confiable para el manejo de crisis, situación que reduce la resistencia al cambio ante una nueva propuesta.
+
+**Requerimientos para la propuesta digital**
+
+| Requerimiento | Casos | Porcentaje |
+|---|---|---|
+| Respaldo explícito de profesionales de salud mental | Ingrid, Mateo, Johan | 100% |
+| Interfaz de acceso en un solo toque | Mateo, Johan | 67% |
+| Guías visuales de desescalada en pasos cortos (pictogramas/temporizador) | Mateo, Johan | 67% |
+| Funcionamiento offline | Johan | 33% |
+| Comunidad de testimonios entre cuidadores (en lugar de botón de crisis) | Ingrid | 33% |
+
+`graf_requerimientosCuidadores`
+
+El respaldo profesional explícito es una condición unánime (100%) para la aceptación de la propuesta digital, lo que la posiciona como un requisito no negociable del segmento. Las guías visuales rápidas y el acceso en un solo toque, mencionados por el 67% de los cuidadores de personas con TEA, refuerzan la necesidad de una interfaz orientada a la acción inmediata durante episodios de crisis.
+
+**Conclusiones**
+
+Los cuidadores entrevistados enfrentan una carga emocional significativa y sostenida en el tiempo, agravada por la desconfianza hacia las herramientas digitales existentes. El segmento vinculado a TEA prioriza mecanismos de acción rápida frente a detonantes sensoriales, mientras que el vinculado a TDAH prioriza el acompañamiento emocional y la validación entre pares. En ambos casos, el respaldo profesional explícito se confirma como un requisito transversal e indispensable para la adopción de cualquier solución digital.
+
+---
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
 
-### Segmento objetivo #1: Padres, familiares y cuidadores
+### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
-![Padres, familiares y cuidadores.png](images/Chapter-II/Padres%2C%20familiares%20y%20cuidadores.png)
+La finalidad de la elaboración de este user persona es representa a los jóvenes y adolescentes neurodivergentes que experimentan sobrecarga sensorial y bloqueos comunicativos en entornos saturados, precisando herramientas digitales de calma y tableros de comunicación accesibles.
 
-### Segmento 2
+<p align="center">
+  <img src="images/Chapter-II/User-persona-Diana.png" alt="User Personas Niños y Adolescentes Neurodivergentes" width="600">
+</p>
+Nota. User Persona correspondiente a Diana (Idealist), representando el arquetipo del segmento de niños y adolescentes neurodivergentes, enfocado en sus necesidades de autorregulación emocional y comunicación alternativa.
 
-![Niños y Adolescentes Neurodivergentes.png](images/Chapter-II/Ni%C3%B1os%20y%20Adolescentes%20Neurodivergentes.png)
+### Segmento objetivo #2: Padres, familiares y cuidadores
 
+La finalidad de la elaboración de este user persona es representa a los cuidadores primarios que asumen el acompañamiento cotidiano de un familiar neurodivergente, buscando pautas claras y soporte estructurado para gestionar episodios de crisis con serenidad.
 
+<p align="center">
+  <img src="images/Chapter-II/User-persona-Mateo.png" alt="User Personas Padres" width="600">
+</p>
+Nota. User Persona correspondiente a Mateo (Guardian), representando el arquetipo del segmento de padres y cuidadores primarios, enfocado en sus requerimientos de guías de contención rápida, comunidad y herramientas de bajo esfuerzo cognitivo.
 
 
 ### 2.3.2. User Task Matrix
@@ -451,35 +511,94 @@ Finalmente, la matriz evidencia que ambos segmentos tienen necesidades diferente
 
 El User Journey Mapping permite representar de manera visual la experiencia que atraviesan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. A través de este recorrido se identifican sus acciones, necesidades, emociones y principales dificultades, permitiendo reconocer oportunidades en las que NUBI puede brindar apoyo de manera rápida, sencilla y accesible.
 
-**Segmento 1 – Padres, familiares y cuidadores (Mateo – Cuidador primario)**
-
-El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
-
-![Journey Map Mateo](images/Chapter-II/Journey-map-Mateo.png)
-
-**Segmento 2 – Niños y adolescentes neurodivergentes (Diana – Adolescente neurodivergente)**
+**Segmento 1 – Niños y adolescentes neurodivergentes (Diana – Adolescente neurodivergente)**
 
 El recorrido representa la experiencia del usuario neurodivergente desde la aparición de un estímulo que genera malestar hasta la autorregulación, la solicitud de ayuda y la posterior recuperación.
 
-![Journey Map Diana](images/Chapter-II/Journey-map-Diana.png)
+<p align="center">
+  <img src="images/Chapter-II/User-Journey-Mapping-segmento1.png" alt="User Journey Mapping Diana" width="600">
+</p>
+Nota. User Journey Map (As-Is) correspondiente a Diana, detallando las deficiencias actuales en los mecanismos de autorregulación sensorial y la dificultad para comunicar sus necesidades sin depender de la expresión verbal directa.
+
+**Segmento 2 – Padres, familiares y cuidadores (Mateo – Cuidador primario)**
+
+El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
+
+<p align="center">
+  <img src="images/Chapter-II/User-Journey-Mapping-segmento2.png" alt="User Journey Mapping Mateo" width="600">
+</p>
+Nota. User Journey Map (As-Is) correspondiente a Mateo, detallando las deficiencias actuales en el acceso a guías rápidas de contención y la falta de herramientas inmediatas para la gestión de crisis.
+
 
 ### 2.3.4. Empathy Mapping
 
 **Segmento objetivo 1: Niños y adolescentes neurodivergentes**
 
-![empathymap1niñosadolescentesneurodivergentes.png](images/Chapter-II/empathymap1ni%C3%B1osadolescentesneurodivergentes.png)
+Mapa de empatía que sintetiza los pensamientos, percepciones sensoriales, frustraciones y necesidades de niños y adolescentes neurodivergentes de 6 a 17 años que experimentan episodios de sobrecarga o desregulación emocional.
+
+<p align="center">
+  <img src="images/Chapter-II/Empathy-Mapping-Diana.png" alt="Empathy Mapping Diana" width="600">
+</p>
+Nota. Empathy Map correspondiente al Segmento 1 (Niños y Adolescentes Neurodivergentes), reflejando sus barreras de comunicación, estímulos del entorno y oportunidades de valor para la autorregulación guiada.
+
 
 **Segmento 2: Madres, padres y cuidadores**
 
-![empathymap2padres, familiares y cuidadores.png](images/Chapter-II/empathymap2padres%2C%20familiares%20y%20cuidadores.png)
+Mapa de empatía que analiza los pensamientos, preocupaciones, entornos de presión social y necesidades de los padres y cuidadores primarios frente a momentos de desregulación emocional o sensorial de sus familiares neurodivergentes.
+
+<p align="center">
+  <img src="images/Chapter-II/Empathy-Mapping-Mateo.jpeg" alt="Empathy Mapping Padres" width="600">
+</p>
+Nota. Empathy Map correspondiente al Segmento 2 (Padres, Familiares y Cuidadores Primarios), visibilizando sus desafíos emocionales, la búsqueda de guías de contención rápida y la necesidad de herramientas intuitivas respaldadas por profesionales.
+
 
 ## 2.4. Big Picture Event Storming
+En esta sección se desarrolla el Big Picture Event Storming, una dinámica colaborativa orientada a mapear el dominio del sistema a través de los eventos de negocio clave que ocurren a lo largo del ciclo de uso de la aplicación. Mediante la identificación secuencial de estos sucesos y su estructuración en flujos clave —tales como Perfil y Personalización, Autorregulación, Gestión de Crisis (Modo SOS), Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento—, se logra representar la interacción entre los usuarios neurodivergentes, sus cuidadores y los servicios del sistema. Este artefacto permite alinearse visualmente sobre las dependencias del dominio, definir la delimitación de contextos y detectar de forma temprana posibles dudas operativas, garantizando que la arquitectura responda a las necesidades inmediatas de contención, comunicación e intervención.
 
-![event storming (3).png](images/Chapter-II/event%20storming%20(1).png)
-![event storming (4).png](images/Chapter-II/event%20storming%20(2).png)
-![event storming (5).png](images/Chapter-II/event%20storming%20(3).png)
-![event storming (1).png](images/Chapter-II/event%20storming%20(4).png)
-![event storming (2).png](images/Chapter-II/event%20storming%20(5).png)
+### 2.4.1. Red de apollo y segumiento
+Flujo de eventos para el envío de alertas a contactos de confianza, registro de episodios y generación de reportes consultables por cuidadores y profesionales de la salud.
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(1).png" alt="event storming 1" width="400">
+</p>
+  Nota. Diagrama de eventos del proceso de Red de Apoyo y Seguimiento, detallando los pasos de notificación, llegada del contacto, registro del episodio y compartición de reportes.
+
+
+### 2.4.2. Comunicación Asistida (CAA)
+Secuencia de acciones que abarca desde la apertura del tablero de comunicación hasta la selección de pictogramas y la reproducción por voz del mensaje para el acompañante.
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(2).png" alt="event storming 2" width="400">
+</p>
+Nota. Diagrama de eventos del proceso de Comunicación Asistida (CAA), mostrando la interacción visual mediante pictogramas y la conversión de texto a voz (TTS) para el acompañante.
+
+
+### 2.4.3. Autorregulación
+Flujo funcional orientado a la disminución de sobrecarga mediante el inicio de ejercicios de respiración guiada, sonidos relajantes y uso del lienzo de dibujo libre.
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(3).png" alt="event storming 3" width="400">
+</p>
+
+Nota. Diagrama de eventos del flujo de Autorregulación, representando las etapas de activación de baja estimulación, guía de respiración, espacio de trazo libre y guardado de recursos de calma.
+
+### 2.4.4. Gestión de Crisis (Modo SOS)
+Ruta de contención rápida activada ante señales tempranas para guiarse paso a paso en la desescalada del episodio y el restablecimiento de la calma.
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(4).png" alt="event storming 4" width="400">
+</p>
+Nota. Diagrama de eventos del flujo de Gestión de Crisis (Modo SOS), ilustrando los pasos inmediatos de selección de detonante, temporizador visual y sugerencias de contención para el cuidador.
+
+
+### 2.4.5. Perfil y Personalización
+Proceso de configuración inicial del usuario donde se definen diagnósticos, detonantes sensoriales, necesidades comunicativas y contactos de confianza.
+
+<p align="center">
+  <img src="images/Chapter-II/event%20storming%20(5).png" alt="event storming 5" width="400">
+</p>
+Nota. Diagrama de eventos del proceso de Perfil y Personalización, detallando la captura de datos sensoriales, preferencias comunicativas y vinculación de la red de apoyo.
+
 
 ## 2.5. Ubiquitous Language
 
