@@ -99,8 +99,6 @@ Sabremos que tenemos éxito cuando veamos:
 - Que al menos el 70 % de los usuarios neurodivergentes participantes utiliza un recurso de autorregulación o el tablero CAA durante un episodio.
 - Que los cuidadores reportan un menor nivel de estrés tras gestionar un episodio con la aplicación, medido con una escala breve aplicada antes y después del periodo de prueba.
 
----
-
 ### 1.2.2.2. Lean UX Assumptions
 **Business Assumptions**
  
