@@ -8,8 +8,6 @@ Los criterios de aceptación se redactan en tiempo presente, en tercera persona,
 
 ### Épicas por Bounded Context
 
-### Épicas por Bounded Context
-
 | Epic ID | Bounded Context | Descripción |
 |---|---|---|
 | EPIC-01 | Perfil y Personalización | Como cuidador quiero crear y gestionar el perfil del niño o adolescente neurodivergente para personalizar las herramientas de apoyo según sus necesidades. |
@@ -92,8 +90,6 @@ Historias del sitio web estático, una por Bounded Context, redactadas desde el 
 | LS-03 | Conocer las herramientas de autorregulación en la landing page | Como visitante, quiero conocer las herramientas de autorregulación que ofrece Nubi, para evaluar si ayudarán al usuario neurodivergente a recuperar la calma. | **Scenario 1: Visualización de la sección**<br>Dado que el visitante navega a la sección de autorregulación en la landing page, cuando la página carga, entonces presenta ejemplos de los estímulos visuales y auditivos disponibles.<br><br>**Scenario 2: Reproducción de contenido de ejemplo**<br>Dado que el visitante interactúa con un estímulo de muestra en la sección, cuando el sistema procesa la interacción, entonces reproduce una vista previa del estímulo sin requerir autenticación. | EPIC-03 |
 | LS-04 | Conocer el tablero CAA en la landing page | Como visitante, quiero conocer el tablero de Comunicación Aumentativa y Alternativa de Nubi, para entender cómo facilita la comunicación del usuario neurodivergente. | **Scenario 1: Visualización de la sección**<br>Dado que el visitante navega a la sección de comunicación aumentativa en la landing page, cuando la página carga, entonces presenta ejemplos de pictogramas y su funcionamiento.<br><br>**Scenario 2: Consulta de preguntas frecuentes**<br>Dado que el visitante navega a la sección de preguntas frecuentes relacionada con el tablero CAA, cuando selecciona una pregunta, entonces el sistema despliega la respuesta correspondiente. | EPIC-04 |
 | LS-05 | Conocer la red de apoyo y seguimiento en la landing page | Como visitante, quiero conocer cómo Nubi acompaña y da seguimiento a los episodios de crisis, para valorar el respaldo que tendré como cuidador. | **Scenario 1: Visualización de la sección**<br>Dado que el visitante navega a la sección de seguimiento y recomendaciones en la landing page, cuando la página carga, entonces presenta una descripción del historial de episodios y las recomendaciones personalizadas.<br><br>**Scenario 2: Redirección a planes disponibles**<br>Dado que el visitante activa el llamado a la acción asociado a esta sección, cuando el sistema procesa la solicitud, entonces lo redirige a la sección de planes de la landing page. | EPIC-05 |
-
----
 
 ## 3.2. Impact Mapping
 
