@@ -66,7 +66,7 @@
 
 | Versión  |     Fecha     |                          Autor                           | Descripción de modificación |
 | :------: |:-------------:|:--------------------------------------------------------:| :-------------------------: |
-| AV1      | 20/ 09 / 2026 | Leonardo Gabriel Lopez Torres </br> Sofia Diaz Yurivilca </br> Joan Fabricio Payano Puchuri </br> Ruiz VIllegas, Yngrid Nahir| Primera versión             |
+| AV1      | 19/ 09 / 2026 | Leonardo Gabriel Lopez Torres </br> Sofia Diaz Yurivilca </br> Joan Fabricio Payano Puchuri </br>Yngrid Nahir  Ruiz Villegas</br>  Edgard Daniel Diaz Caruzo  | Primera versión             |
 
 </div>
 
@@ -159,7 +159,7 @@
 
 - [Conclusiones y recomendaciones](docs/conclusiones.md)
 - [Video About-the-Team](docs/video-about-the-team.md)
-- [Bibliografía](docs/bibliografia.md)
+- [Bibliografía](docs/BIBLIOGRAPHY.md)
 - [Anexos](docs/anexos.md)
 
 ---
