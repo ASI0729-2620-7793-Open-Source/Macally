@@ -141,7 +141,7 @@ La identidad visual de **Nubi** se construyó para transmitir calma y acompañam
 
 Esta sección explica e ilustra las decisiones sobre los estándares visuales y de interacción de Nubi para interfaces web responsivas (Landing Page y Web Application), partiendo del sistema de diseño definido en las General Style Guidelines.
 
-**Estructura de la página**
+**4.1.2.1. Estructura de la página**
 
 La interfaz web de Nubi se organiza en tres zonas funcionales: un encabezado fijo (Header), un área de contenido central (Body) y un pie de página informativo (Footer), garantizando orientación permanente y coherencia entre el Landing Page y la Web Application.
 
@@ -182,7 +182,7 @@ La interfaz web de Nubi se organiza en tres zonas funcionales: un encabezado fij
 
 ---
 
-**Tipografía**
+**4.1.2.2. Tipografía**
 
 En la interfaz web de escritorio, la jerarquía tipográfica de Nubi se aplica con valores responsivos mediante `clamp()`, manteniendo la legibilidad tanto en pantallas grandes como en resoluciones intermedias.
 
@@ -241,9 +241,9 @@ En la interfaz web de escritorio, la jerarquía tipográfica de Nubi se aplica c
   </tbody>
 </table>
 
----
 
-**Colores (paleta y contraste)**
+
+**4.1.2.3. Colores (paleta y contraste)**
 
 La aplicación cromática en la interfaz web de Nubi sigue una distribución semántica estricta: **Deep Teal (#00373E)** concentra la energía de la acción y la tipografía principal, y **Cream (#F7F6F4)** actúa como lienzo base.
 
@@ -309,9 +309,8 @@ La aplicación cromática en la interfaz web de Nubi sigue una distribución sem
   </tbody>
 </table>
 
----
 
-**Iconografía**
+**4.1.2.4. Iconografía**
 
 La iconografía de Nubi mantiene un estilo lineal (*outline*) coherente con el carácter contemporáneo de Bricolage Grotesque, actuando como canal de comunicación alternativo para usuarios con dificultades en el procesamiento del lenguaje escrito.
 
@@ -350,9 +349,8 @@ La iconografía de Nubi mantiene un estilo lineal (*outline*) coherente con el c
   </tbody>
 </table>
 
----
 
-**Componentes clave (web)**
+**4.1.2.5. Componentes clave (web)**
 
 Los siguientes componentes conforman el vocabulario visual interactivo de la interfaz web de Nubi, usando **Deep Teal** y **Golden Yellow** como ejes cromáticos principales.
 
@@ -438,9 +436,8 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
   </tbody>
 </table>
 
----
 
-**Diseño responsivo**
+**4.1.2.6. Diseño responsivo**
 
 Nubi adopta un enfoque de diseño responsivo que garantiza una experiencia óptima en escritorio, tableta y móvil, priorizando que toda funcionalidad disponible en escritorio sea igualmente accesible y operable en pantallas pequeñas durante un momento de crisis.
 
@@ -839,16 +836,6 @@ Esta sección presenta la propuesta visual y de interacción de la Web Applicati
 
 Los wireframes de la Web Application se elaboraron en escala de grises, sin color de marca ni imágenes definitivas, para validar la estructura, el orden de lectura y la ubicación de las acciones antes del acabado visual. Aplican los principios de la sección 4.2: una barra lateral persistente con los módulos principales y acceso permanente al Modo SOS, migas de pan en las vistas de mayor profundidad, organización jerárquica en los paneles, secuencial en la guía del Modo SOS y matricial en los tableros de pictogramas y estímulos. Como criterios de diseño inclusivo, los estados se comunican con ícono y texto (no solo con color) y las pantallas de crisis y de comunicación eliminan la barra lateral para reducir la sobrecarga sensorial. Se incluyen las anotaciones de interacción (por ejemplo «on click: navega a la pantalla…») que sirven de base para los Wireflow Diagrams de la sección 4.4.2.
 
-#### Wireframes: Landing Page 
-
-<p align="center">
-  <img src="images/Chapter-IV/WireframeLanding.png" alt="Wireframe Landing Page completo" width="800">
-</p>
-
-*Ilustración del Wireframe: Landing Page (vista completa)*
-
-Vista integral de la Landing Page, con todas las secciones en una sola imagen. El detalle de cada sección, en versión Desktop y Mobile, se presenta en la sección 4.3.1.
-
 #### Wireframes: Modo SOS: pantalla de activación
 
 <p align="center">
@@ -1007,15 +994,6 @@ Pantalla de foco único: un encabezado con el título, el estímulo con el que s
 
 Los mock-ups aplican el Design System de la sección 4.1 sobre la estructura validada en los wireframes: la paleta cromática de Nubi, la tipografía Bricolage Grotesque en toda la interfaz, el ritmo de espaciado de 8 pt, botones de esquinas redondeadas y la iconografía lineal. Los estados se comunican siempre con ícono y texto, con un contraste mínimo de 4.5:1. Para cada pantalla se muestra la versión final y, cuando existen, sus variantes.
 
-#### Mock-up: Landing Page 
-
-<p align="center">
-  <img src="images/Chapter-IV/MockupLanding.png" alt="Mock-up Landing Page completo" width="800">
-</p>
-
-*Ilustración – Mock-up: Landing Page (vista completa)*
-
-Vista integral del Landing Page con el Design System aplicado. El detalle de cada sección, en versión Desktop y Mobile, se presenta en la sección 4.3.2.
 
 #### Mock-up: Modo SOS: pantalla de activación
 
