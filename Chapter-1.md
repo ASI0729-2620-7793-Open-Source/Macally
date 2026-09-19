@@ -1,7 +1,6 @@
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
 
-
 ### 1.1.1. Descripción de la Startup
 Macally es una startup de tecnología inclusiva que desarrolla Nubi, una solución web para apoyar a niños y adolescentes neurodivergentes con dificultades de comunicación y autorregulación emocional, y a los cuidadores que los acompañan durante los episodios de crisis.
 
