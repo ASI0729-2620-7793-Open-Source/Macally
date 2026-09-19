@@ -997,9 +997,8 @@ Los mock-ups aplican el Design System de la sección 4.1 sobre la estructura val
 
 #### Mock-up: Modo SOS: pantalla de activación
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%281%29.png" alt="Mock-up Modo SOS: pantalla de activación" width="800">
-</p>
+
+![mockupsos.png](images/Chapter-IV/mockupsos.png)
 
 *Ilustración – Web Application Mock-up: Modo SOS: pantalla de activación*
 
@@ -1007,9 +1006,8 @@ Modo SOS — pantalla de activación: botón circular «Activar SOS» en Coral R
 
 #### Mock-up: Configurar tablero CAA: variante con imágenes
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%282%29.png" alt="Mock-up Configurar tablero CAA: variante con imágenes" width="800">
-</p>
+
+![caamockup.png](images/Chapter-IV/caamockup.png)
 
 *Ilustración – Web Application Mock-up: Configurar tablero CAA: variante con imágenes*
 
@@ -1017,9 +1015,7 @@ Configurar tablero CAA (variante con fotografías): cuadrícula de pictogramas d
 
 #### Mock-up: Configurar tablero CAA: variante con íconos
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%283%29.png" alt="Mock-up Configurar tablero CAA: variante con íconos" width="800">
-</p>
+![iconoscaamockup.png](images/Chapter-IV/iconoscaamockup.png)
 
 *Ilustración – Web Application Mock-up: Configurar tablero CAA: variante con íconos*
 
@@ -1027,9 +1023,7 @@ Configurar tablero CAA (variante iconográfica): la misma cuadrícula de Necesid
 
 #### Mock-up: Crear nuevo perfil: datos básicos
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%284%29.png" alt="Mock-up Crear nuevo perfil: datos básicos" width="800">
-</p>
+![perfilmockup.png](images/Chapter-IV/perfilmockup.png)
 
 *Ilustración – Web Application Mock-up: Crear nuevo perfil: datos básicos*
 
@@ -1037,9 +1031,7 @@ Crear nuevo perfil — paso 1 «Datos básicos»: formulario con carga de foto, 
 
 #### Mock-up: Cuidadores asociados e invitación
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%285%29.png" alt="Mock-up Cuidadores asociados e invitación" width="800">
-</p>
+![cuidadoresmockup.png](images/Chapter-IV/cuidadoresmockup.png)
 
 *Ilustración – Web Application Mock-up: Cuidadores asociados e invitación*
 
@@ -1047,9 +1039,7 @@ Cuidadores asociados: listado del círculo de confianza de Diana Ríos (María R
 
 #### Mock-up: Galería de estímulos de Autocuidado
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%286%29.png" alt="Mock-up Galería de estímulos de Autocuidado" width="800">
-</p>
+![galeriamockup.png](images/Chapter-IV/galeriamockup.png)
 
 *Ilustración – Web Application Mock-up: Galería de estímulos de Autocuidado*
 
@@ -1057,9 +1047,7 @@ Galería de estímulos (Autocuidado): selector de estímulos Visual/Auditivo con
 
 #### Mock-up: Modo SOS: paso 5 de 6, calma y respiración
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%287%29.png" alt="Mock-up Modo SOS: paso 5 de 6, calma y respiración" width="800">
-</p>
+![modosospasosmockup.png](images/Chapter-IV/modosospasosmockup.png)
 
 *Ilustración – Web Application Mock-up: Modo SOS: paso 5 de 6, calma y respiración*
 
@@ -1067,9 +1055,7 @@ Modo SOS — Paso 5 de 6 «Calma y Respiración»: círculo animado con el texto
 
 #### Mock-up: Panel de inicio del cuidador: variante 1
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%288%29.png" alt="Mock-up Panel de inicio del cuidador: variante 1" width="800">
-</p>
+![paneliniciomockup.png](images/Chapter-IV/paneliniciomockup.png)
 
 *Ilustración – Web Application Mock-up: Panel de inicio del cuidador: variante 1*
 
@@ -1077,9 +1063,7 @@ Panel de inicio del cuidador (variante violeta): saludo «Hola, María» con una
 
 #### Mock-up: Panel de inicio del cuidador: variante 2
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%289%29.png" alt="Mock-up Panel de inicio del cuidador: variante 2" width="800">
-</p>
+![variantepaneldeiniciomockup.png](images/Chapter-IV/variantepaneldeiniciomockup.png)
 
 *Ilustración – Web Application Mock-up: Panel de inicio del cuidador: variante 2*
 
@@ -1087,9 +1071,7 @@ Panel de inicio del cuidador (variante azul con navegación lateral ampliada): l
 
 #### Mock-up: Perfil de usuario: pestaña Sensibilidades
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%2810%29.png" alt="Mock-up Perfil de usuario: pestaña Sensibilidades" width="800">
-</p>
+![perfilpestaña.png](images/Chapter-IV/perfilpesta%C3%B1a.png)
 
 *Ilustración – Web Application Mock-up: Perfil de usuario: pestaña Sensibilidades*
 
@@ -1097,9 +1079,7 @@ Perfil de usuario — pestaña «Sensibilidades»: ficha de Diana Ríos (15 año
 
 #### Mock-up: Estímulo en uso: burbujas flotantes
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%2811%29.png" alt="Mock-up Estímulo en uso: burbujas flotantes" width="800">
-</p>
+![mockuppanelrespira.png](images/Chapter-IV/mockuppanelrespira.png)
 
 *Ilustración – Web Application Mock-up: Estímulo en uso: burbujas flotantes*
 
@@ -1107,9 +1087,7 @@ Estímulo «Burbujas flotantes» en uso: animación de burbujas sobre fondo viol
 
 #### Mock-up: Resumen del episodio
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%2812%29.png" alt="Mock-up Resumen del episodio" width="800">
-</p>
+![resumenmockup.png](images/Chapter-IV/resumenmockup.png)
 
 *Ilustración – Web Application Mock-up: Resumen del episodio*
 
@@ -1117,9 +1095,7 @@ Resumen del episodio (cierre del Modo SOS): mensaje de confirmación «¡Buen tr
 
 #### Mock-up: Tablero CAA del usuario: variante con imágenes
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%2813%29.png" alt="Mock-up Tablero CAA del usuario: variante con imágenes" width="800">
-</p>
+![caamockupvariantes.png](images/Chapter-IV/caamockupvariantes.png)
 
 *Ilustración – Web Application Mock-up: Tablero CAA del usuario: variante con imágenes*
 
@@ -1127,9 +1103,7 @@ Tablero CAA — vista del usuario neurodivergente (variante con fotografías): p
 
 #### Mock-up: Tablero CAA del usuario: variante con íconos
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%2814%29.png" alt="Mock-up Tablero CAA del usuario: variante con íconos" width="800">
-</p>
+![caaiconomockup.png](images/Chapter-IV/caaiconomockup.png)
 
 *Ilustración – Web Application Mock-up: Tablero CAA del usuario: variante con íconos*
 
@@ -1137,9 +1111,7 @@ Tablero CAA — vista del usuario neurodivergente (variante iconográfica en azu
 
 #### Mock-up: Temporizador de calma
 
-<p align="center">
-  <img src="images/Chapter-IV/mockups/mockups%20%2815%29.png" alt="Mock-up Temporizador de calma" width="800">
-</p>
+![temporizadormockup.png](images/Chapter-IV/temporizadormockup.png)
 
 *Ilustración – Web Application Mock-up: Temporizador de calma*
 
