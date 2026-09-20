@@ -2,7 +2,7 @@
 
 ## 4.1. Style Guidelines
 
-En esta sección, el equipo sienta las bases para contar con un repositorio centralizado, unificado y organizado de uso común para todo el equipo, que incluye *assets*, tipografías, componentes UI, reglas de espaciado e iconografía, con el fin de mantener una presentación visual consistente, intuitiva y enfocada. Para **Nubi**, el sistema de diseño tomó como referencia directa el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*: se extrajeron sus valores reales de color (verde-azulado oscuro, crema, melocotón y los tres acentos cálidos) y su tipografía de titulares, reemplazando la propuesta cromática desaturada de una versión anterior del sistema. El tono de comunicación de Nubi se define en cuatro dimensiones: **cercano** (más que formal), **sereno** (más que eufórico), **claro** (más que técnico) y **respetuoso** (más que irreverente), de modo que tanto el niño o adolescente neurodivergente como su cuidador perciban una marca cálida y confiable, sin caer en un tono infantil ni en una estética clínica y fría.
+En esta sección, el equipo sienta las bases para contar con un repositorio centralizado, unificado y organizado de uso común para todo el equipo, que incluye *assets*, tipografías, componentes UI, reglas de espaciado e iconografía, con el fin de mantener una presentación visual consistente, intuitiva y enfocada. Para **Nubi**, el sistema de diseño tomó como referencia directa el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*: se extrajeron sus valores reales de color (verde-azulado oscuro, crema, melocotón y los tres acentos cálidos) y su tipografía, reemplazando la propuesta cromática desaturada de una versión anterior del sistema. El tono de comunicación de Nubi se define en cuatro dimensiones: **cercano** (más que formal), **sereno** (más que eufórico), **claro** (más que técnico) y **respetuoso** (más que irreverente), de modo que tanto el niño o adolescente neurodivergente como su cuidador perciban una marca cálida y confiable, sin caer en un tono infantil ni en una estética clínica y fría.
 
 ### 4.1.1. General Style Guidelines
 
@@ -99,10 +99,10 @@ Todas las combinaciones de texto sobre fondo respetan un contraste mínimo de 4.
 
 **Fonts**
 
-Adoptamos la combinación tipográfica del template de referencia: **Bricolage Grotesque** para titulares e **Inter** para texto de cuerpo, equilibrando el carácter expresivo y contemporáneo de la marca con la legibilidad que necesitan niños, adolescentes neurodivergentes y sus cuidadores.
+Toda la interfaz de Nubi usa una única familia tipográfica: **Bricolage Grotesque**, tomada del template de referencia. Al usar una sola fuente para titulares, texto de cuerpo y etiquetas, la marca conserva un carácter expresivo y contemporáneo, y la interfaz mantiene una apariencia uniforme y ordenada para niños, adolescentes neurodivergentes y sus cuidadores.
 
-- **Bricolage Grotesque (Titulares):** tipografía grotesca de proporciones amplias y formas geométricas que se usa en encabezados (Display a H3), nombres de herramientas y botones de acción principal. Su carácter contemporáneo y seguro refuerza la identidad de marca heredada del template Solus, sin resultar infantil ni clínico.
-- **Inter (Texto de cuerpo e interfaz):** familia Sans-Serif de alta legibilidad usada en párrafos, etiquetas de campos, mensajes del sistema y entradas de datos, garantizando lectura fluida incluso en momentos de sobreestimulación.
+- **Bricolage Grotesque (única familia tipográfica):** tipografía grotesca de proporciones amplias y formas geométricas que se usa en encabezados (Display a H3), botones, párrafos, etiquetas de campos, mensajes del sistema y entradas de datos. Su carácter contemporáneo y seguro refuerza la identidad de marca heredada del template Solus, sin resultar infantil ni clínico.
+- **Jerarquía con una sola familia:** la jerarquía se construye con el tamaño y el peso (Bold y SemiBold en titulares y botones; Regular y Medium en el cuerpo, las etiquetas y los metadatos) y no con cambios de familia tipográfica.
 - **Escala tipográfica:** Display (42px), H1 (32px), H2 (24px), H3 (18px), Body Grande (16px), Body (14px) y Caption (12px), manteniendo una jerarquía ordenada entre mensajes de contención, títulos de módulo y metadatos.
 - **Reglas de legibilidad:** interlineado mínimo de 1.4× en textos continuos, ancho de renglón máximo de 70 caracteres y prohibición de mayúsculas sostenidas en etiquetas. Ningún estado de la interfaz se comunica únicamente por color o tipografía.
 
@@ -126,15 +126,22 @@ Adoptamos la combinación tipográfica del template de referencia: **Bricolage G
 
 La identidad visual de **Nubi** se construyó para transmitir calma y acompañamiento cercano, evitando cualquier lectura clínica o corporativa fría:
 
-- **Símbolo de acompañamiento (Isotipo):** una forma de gota/nube estilizada con un trazo curvo que sugiere una leve sonrisa, evocando **calma, contención y cercanía**. Su silueta redondeada, sin ángulos agudos, refuerza el mismo principio de suavidad aplicado en la iconografía y los botones *pill-shape*.
-- **Identidad cromática:** la marca se apoya principalmente en **Deep Teal (#00373E)** y **Golden Yellow (#EFC01D)** sobre fondos en **Cream (#F7F6F4)**. Esta combinación, heredada del template Solus, busca transmitir calidez humana y serenidad, en contraste con la frialdad típica de una app clínica.
-- **Naming y tipografía:** el nombre **"Nubi"** evoca la imagen de una nube pequeña y cercana, fácil de pronunciar y recordar tanto para el cuidador como para el niño o adolescente. Se presenta en Bricolage Grotesque para conservar el carácter contemporáneo de la marca en cualquier punto de contacto.
+<p align="center">
+  <img src="images/Chapter-IV/LogoNubi.png" alt="Logo de Nubi" width="300">
+</p>
+
+*Ilustración — Logo de Nubi*
+
+- **Símbolo de acompañamiento (Isotipo):** cuatro manos dispuestas en círculo, que se entrelazan y forman una esfera. Representa el **acompañamiento, la contención y el apoyo compartido** entre el usuario neurodivergente, su cuidador y su red de apoyo. Como las manos giran alrededor del centro, ninguna domina sobre las otras. La silueta circular refuerza el mismo principio de suavidad aplicado en la iconografía y los botones *pill-shape*.
+- **Logotipo:** el nombre **NUBI** va en mayúsculas y en negrita, con la tipografía **Bricolage Grotesque**, debajo del isotipo y sobre una línea ligeramente curva que sigue la forma del círculo. Es la misma familia tipográfica que se usa en toda la interfaz, lo que mantiene el carácter contemporáneo de la marca en cualquier punto de contacto.
+- **Identidad cromática:** el logo se presenta en un solo color, **Deep Teal (#00373E)**, el color principal de la marca. En la interfaz, este color se combina con **Golden Yellow (#EFC01D)** como acento sobre fondos en **Cream (#F7F6F4)**. Esta combinación, heredada del template Solus, busca transmitir calidez humana y serenidad, en contraste con la frialdad típica de una app clínica.
+- **Naming:** el nombre **"Nubi"** evoca la imagen de una nube pequeña y cercana, fácil de pronunciar y recordar tanto para el cuidador como para el niño o adolescente.
 
 ### 4.1.2. Web Style Guidelines
 
 Esta sección explica e ilustra las decisiones sobre los estándares visuales y de interacción de Nubi para interfaces web responsivas (Landing Page y Web Application), partiendo del sistema de diseño definido en las General Style Guidelines.
 
-**Estructura de la página**
+**4.1.2.1. Estructura de la página**
 
 La interfaz web de Nubi se organiza en tres zonas funcionales: un encabezado fijo (Header), un área de contenido central (Body) y un pie de página informativo (Footer), garantizando orientación permanente y coherencia entre el Landing Page y la Web Application.
 
@@ -175,7 +182,7 @@ La interfaz web de Nubi se organiza en tres zonas funcionales: un encabezado fij
 
 ---
 
-**Tipografía**
+**4.1.2.2. Tipografía**
 
 En la interfaz web de escritorio, la jerarquía tipográfica de Nubi se aplica con valores responsivos mediante `clamp()`, manteniendo la legibilidad tanto en pantallas grandes como en resoluciones intermedias.
 
@@ -215,28 +222,28 @@ En la interfaz web de escritorio, la jerarquía tipográfica de Nubi se aplica c
     </tr>
     <tr>
       <td><strong>Cuerpo de texto (Body Grande)</strong></td>
-      <td>Inter</td>
+      <td>Bricolage Grotesque</td>
       <td>16 px / Regular · lh 1.5</td>
       <td>clamp(15px, 0.5vw + 13px, 16px)</td>
     </tr>
     <tr>
       <td><strong>Texto de apoyo (Body)</strong></td>
-      <td>Inter</td>
+      <td>Bricolage Grotesque</td>
       <td>14 px / Regular · lh 1.5</td>
       <td>clamp(13px, 0.4vw + 12px, 14px)</td>
     </tr>
     <tr>
       <td><strong>Microcopy / Caption</strong></td>
-      <td>Inter</td>
+      <td>Bricolage Grotesque</td>
       <td>12 px / Medium · uppercase opcional</td>
       <td>Fijo — no escala</td>
     </tr>
   </tbody>
 </table>
 
----
 
-**Colores (paleta y contraste)**
+
+**4.1.2.3. Colores (paleta y contraste)**
 
 La aplicación cromática en la interfaz web de Nubi sigue una distribución semántica estricta: **Deep Teal (#00373E)** concentra la energía de la acción y la tipografía principal, y **Cream (#F7F6F4)** actúa como lienzo base.
 
@@ -302,9 +309,8 @@ La aplicación cromática en la interfaz web de Nubi sigue una distribución sem
   </tbody>
 </table>
 
----
 
-**Iconografía**
+**4.1.2.4. Iconografía**
 
 La iconografía de Nubi mantiene un estilo lineal (*outline*) coherente con el carácter contemporáneo de Bricolage Grotesque, actuando como canal de comunicación alternativo para usuarios con dificultades en el procesamiento del lenguaje escrito.
 
@@ -343,9 +349,8 @@ La iconografía de Nubi mantiene un estilo lineal (*outline*) coherente con el c
   </tbody>
 </table>
 
----
 
-**Componentes clave (web)**
+**4.1.2.5. Componentes clave (web)**
 
 Los siguientes componentes conforman el vocabulario visual interactivo de la interfaz web de Nubi, usando **Deep Teal** y **Golden Yellow** como ejes cromáticos principales.
 
@@ -373,7 +378,7 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Botón de texto / terciario</strong></td>
-      <td>Sin fondo ni borde · texto #00373E · Inter 14px Medium.</td>
+      <td>Sin fondo ni borde · texto #00373E · Bricolage Grotesque 14px Medium.</td>
       <td><strong>Hover:</strong> subrayado. Reservado para acciones de bajo impacto ("Omitir", "Iniciar sesión").</td>
     </tr>
     <tr>
@@ -381,7 +386,7 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Campo de texto (Input)</strong></td>
-      <td>Borde 1.5px #E4E1DB · fondo #F7F6F4 · Inter 16px Regular · radio 12px · padding 12px 16px.</td>
+      <td>Borde 1.5px #E4E1DB · fondo #F7F6F4 · Bricolage Grotesque 16px Regular · radio 12px · padding 12px 16px.</td>
       <td><strong>Focus:</strong> borde #4CCBBB + anillo suave. <strong>Error:</strong> borde #E0605B + ícono y mensaje orientador. <strong>Completado:</strong> borde #4FAE7B.</td>
     </tr>
     <tr>
@@ -399,7 +404,7 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Tarjeta de episodio (historial)</strong></td>
-      <td>Fondo #F7F6F4 · fecha en Inter 12px #8A8A8A · estado en Bricolage Grotesque 14px Bold.</td>
+      <td>Fondo #F7F6F4 · fecha en Bricolage Grotesque 12px #8A8A8A · estado en Bricolage Grotesque 14px Bold.</td>
       <td><strong>Finalizado:</strong> borde izquierdo #4FAE7B. <strong>Anticipado:</strong> borde izquierdo #EFC01D. <strong>En curso:</strong> borde izquierdo #E0605B.</td>
     </tr>
     <tr>
@@ -407,12 +412,12 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Barra de navegación superior</strong></td>
-      <td>Fondo #F7F6F4 (sticky) · ítems Inter 14px Medium #00373E · separación 24px entre ítems.</td>
+      <td>Fondo #F7F6F4 (sticky) · ítems Bricolage Grotesque 14px Medium #00373E · separación 24px entre ítems.</td>
       <td><strong>Activo:</strong> texto #00373E + subrayado. <strong>Hover:</strong> fondo #EAF0EF. <strong>Deshabilitado:</strong> opacidad 40%.</td>
     </tr>
     <tr>
       <td><strong>Migas de pan (Breadcrumbs)</strong></td>
-      <td>Inter 14px Regular #8A8A8A · último ítem #00373E Bold.</td>
+      <td>Bricolage Grotesque 14px Regular #8A8A8A · último ítem #00373E Bold.</td>
       <td>Máximo 4 niveles visibles. El nivel activo no es enlace. Separación 8px entre ítems.</td>
     </tr>
     <tr>
@@ -425,15 +430,14 @@ Los siguientes componentes conforman el vocabulario visual interactivo de la int
     </tr>
     <tr>
       <td><strong>Banner de alerta inline (Modo SOS)</strong></td>
-      <td>Fondo #FBEAEA · borde izquierdo 4px #E0605B · texto Inter 14px #00373E · radio 8px · padding 12px 16px.</td>
+      <td>Fondo #FBEAEA · borde izquierdo 4px #E0605B · texto Bricolage Grotesque 14px #00373E · radio 8px · padding 12px 16px.</td>
       <td>Usado para episodios en curso o pasos obligatorios sin revisar. Ícono de alerta 20px #E0605B a la izquierda.</td>
     </tr>
   </tbody>
 </table>
 
----
 
-**Diseño responsivo**
+**4.1.2.6. Diseño responsivo**
 
 Nubi adopta un enfoque de diseño responsivo que garantiza una experiencia óptima en escritorio, tableta y móvil, priorizando que toda funcionalidad disponible en escritorio sea igualmente accesible y operable en pantallas pequeñas durante un momento de crisis.
 
@@ -598,9 +602,19 @@ Adicionalmente, cada Bounded Context aplica una técnica de navegación distinta
 
 ## 4.3 Landing Page UI Design
 
-El Landing Page de Nubi traduce las decisiones de arquitectura de información de la sección 4.2 en una experiencia de una sola página, pensada para que un visitante (cuidador, educador o terapeuta que aún no se ha registrado) entienda en segundos qué resuelve Nubi y pueda avanzar hacia el registro sin fricción. La estructura respeta el esquema de categorización "según audiencia" y la organización jerárquica definidos en la sección 4.2.1: primero se comunica la propuesta de valor (Hero), el problema (Problema) y el proceso de adopción (Cómo funciona); luego se desarrolla cada una de las 5 Landing Page Stories del Capítulo III (LS-01 a LS-05: Perfil y Personalización, Modo SOS, Autorregulación, Comunicación CAA y Red de Apoyo) en el mismo orden en que fueron priorizadas en el Product Backlog; y finalmente se ubican los bloques de conversión y confianza (Planes, Testimonios, FAQ, Beneficios por rol, la sección "Conoce al equipo", el llamado a la acción final y un formulario de contacto para familias e instituciones), cerrando con el footer. La navegación superior utiliza el sistema de anclas (*anchor scroll*) descrito en la sección 4.2.5, reutilizando exactamente las mismas etiquetas definidas en el Labeling System (4.2.2) para que el visitante reconozca los mismos nombres al ingresar luego a la Web Application.
+El Landing Page de Nubi es una experiencia de una sola página que traduce las decisiones de arquitectura de información de la sección 4.2. Su objetivo es que un visitante (cuidador, educador o terapeuta) entienda qué resuelve Nubi y pueda registrarse sin fricción. Su estructura sigue tres bloques:
 
-El wireframe y el mock-up se construyeron directamente en HTML/CSS, tomando como referencia directa el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*: se extrajeron sus valores reales de color y tipografía a partir del código exportado en modo Dev de Figma, y se aplicaron al Design System de la sección 4.1 (tipografía Bricolage Grotesque/Inter, paleta Deep Teal/Golden Yellow/Cream con sus acentos secundarios, sistema de espaciado de 8pt, botones *pill-shape* y set de iconografía de 24px). El resultado se importó a Figma mediante un plugin de conversión HTML→Figma para su documentación y edición visual. El código fuente se encuentra en [`landing-page/`](../landing-page/index.html) del repositorio.
+- **Propuesta de valor:** Hero, Problema y Cómo funciona.
+- **Funcionalidades:** las cinco Landing Page Stories del Capítulo III (LS-01 a LS-05), en el orden del Product Backlog: Perfil y Personalización, Modo SOS, Autorregulación, Comunicación CAA y Red de Apoyo.
+- **Conversión y confianza:** Planes, Testimonios, FAQ, Beneficios por rol, Conoce al equipo, llamado a la acción final y formulario de contacto, cerrando con el footer.
+
+La navegación superior usa anclas (*anchor scroll*) y las mismas etiquetas del Labeling System (4.2.2), para que el visitante reconozca los mismos nombres al ingresar a la Web Application.
+
+El wireframe y el mock-up se construyeron directamente en HTML/CSS, tomando como referencia el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*. De ese template se extrajeron los valores de color y tipografía desde el modo Dev de Figma y se aplicaron al Design System de la sección 4.1. El resultado se importó a Figma con un plugin de conversión de HTML a Figma, para su documentación y edición visual.
+
+El diseño está disponible en el Figma "NUBI": https://www.figma.com/design/WGr7DojMDH0m122pRirLJw/NUBI?node-id=0-1&t=DMfnxyCv5S7KKeCJ-1
+
+El código fuente se encuentra en [`landing-page/`](../landing-page/index.html) del repositorio.
 
 ### 4.3.1 Landing Page Wireframe
 
@@ -710,7 +724,7 @@ Los wireframes representan la distribución base de cada sección antes de aplic
 
 ### 4.3.2 Landing Page Mock-up
 
-Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura ya validada en los wireframes: tipografía Bricolage Grotesque para titulares e Inter para texto de cuerpo, la paleta cromática (Deep Teal, Golden Yellow, Mint Teal, Blossom Pink y Cream como fondo base), botones con esquinas 100% redondeadas respetando un único botón primario por pantalla, y el grid de espaciado de 8pt tanto en el padding de las tarjetas como en la separación entre secciones. Sobre esta base se aplican además los criterios de diseño inclusivo definidos para Nubi: contraste mínimo AA (4.5:1) entre texto y fondo —el color principal Deep Teal es lo bastante oscuro para admitir texto blanco directo, mientras que el texto sobre Golden Yellow, Mint Teal o Blossom Pink usa Deep Teal en lugar de blanco— y estados de error o alerta comunicados siempre con ícono y texto, nunca solo con color. Cada bloque de valor (LS-01 a LS-05) reutiliza el mismo componente de tarjeta e iconografía de 24px definidos en la sección 4.1.2 (Iconografía), de modo que el visitante reconozca visualmente el mismo lenguaje al pasar de una sección a otra. El formulario de contacto, ubicado antes del footer, reutiliza el componente de Inputs definido en 4.1.2 (Componentes clave — Formularios e Inputs): campos con estado *Focus* (borde Mint Teal) y estado *Error* que combina borde en Coral Red con un ícono y un mensaje orientador (nunca solo color), además de un estado de confirmación tras el envío que refuerza el patrón de retroalimentación empática del sistema.
+Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura ya validada en los wireframes: tipografía Bricolage Grotesque en toda la interfaz, la paleta cromática (Deep Teal, Golden Yellow, Mint Teal, Blossom Pink y Cream como fondo base), botones con esquinas 100% redondeadas respetando un único botón primario por pantalla, y el grid de espaciado de 8pt tanto en el padding de las tarjetas como en la separación entre secciones. Sobre esta base se aplican además los criterios de diseño inclusivo definidos para Nubi: contraste mínimo AA (4.5:1) entre texto y fondo —el color principal Deep Teal es lo bastante oscuro para admitir texto blanco directo, mientras que el texto sobre Golden Yellow, Mint Teal o Blossom Pink usa Deep Teal en lugar de blanco— y estados de error o alerta comunicados siempre con ícono y texto, nunca solo con color. Cada bloque de valor (LS-01 a LS-05) reutiliza el mismo componente de tarjeta e iconografía de 24px definidos en la sección 4.1.2 (Iconografía), de modo que el visitante reconozca visualmente el mismo lenguaje al pasar de una sección a otra. El formulario de contacto, ubicado antes del footer, reutiliza el componente de Inputs definido en 4.1.2 (Componentes clave — Formularios e Inputs): campos con estado *Focus* (borde Mint Teal) y estado *Error* que combina borde en Coral Red con un ícono y un mensaje orientador (nunca solo color), además de un estado de confirmación tras el envío que refuerza el patrón de retroalimentación empática del sistema.
 
 - **Header (Navbar)**
 
@@ -816,98 +830,300 @@ Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura 
 
 ## 4.4 Web Applications UX/UI Design
 
+Esta sección presenta la propuesta visual y de interacción de la Web Application de Nubi, que responde a las necesidades identificadas en las entrevistas con los dos segmentos objetivo: cuidadores y usuarios neurodivergentes. El diseño se desarrolló en dos fases: primero los wireframes, en escala de grises y enfocados en la estructura y la jerarquía de la información; luego los mock-ups, donde se aplica el Design System definido en la sección 4.1. Las pantallas recorren los cinco Bounded Contexts: Perfil y Personalización, Gestión de Crisis (Modo SOS), Autorregulación, Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento. Cuando una pantalla tiene dos variantes visuales, se presentan ambas.
+
 ### 4.4.1 Web Applications Wireframes
 
-![wireframe (1).png](images/Chapter-4/wireframes/wireframe%20%281%29.png)
-![wireframe (2).png](images/Chapter-4/wireframes/wireframe%20%282%29.png)
-![wireframe (3).png](images/Chapter-4/wireframes/wireframe%20%283%29.png)
-![wireframe (4).png](images/Chapter-4/wireframes/wireframe%20%284%29.png)
-![wireframe (5).png](images/Chapter-4/wireframes/wireframe%20%285%29.png)
-![wireframe (6).png](images/Chapter-4/wireframes/wireframe%20%286%29.png)
-![wireframe (7).png](images/Chapter-4/wireframes/wireframe%20%287%29.png)
-![wireframe (8).png](images/Chapter-4/wireframes/wireframe%20%288%29.png)
-![wireframe (9).png](images/Chapter-4/wireframes/wireframe%20%289%29.png)
-![wireframe (10).png](images/Chapter-4/wireframes/wireframe%20%2810%29.png)
-![wireframe (11).png](images/Chapter-4/wireframes/wireframe%20%2811%29.png)
-![wireframe (12).png](images/Chapter-4/wireframes/wireframe%20%2812%29.png)
-![wireframe (13).png](images/Chapter-4/wireframes/wireframe%20%2813%29.png)
-![wireframe (14).png](images/Chapter-4/wireframes/wireframe%20%2814%29.png)
-![wireframe (15).png](images/Chapter-4/wireframes/wireframe%20%2815%29.png)
+Los wireframes de la Web Application se elaboraron en escala de grises, sin color de marca ni imágenes definitivas, para validar la estructura, el orden de lectura y la ubicación de las acciones antes del acabado visual. Aplican los principios de la sección 4.2: una barra lateral persistente con los módulos principales y acceso permanente al Modo SOS, migas de pan en las vistas de mayor profundidad, organización jerárquica en los paneles, secuencial en la guía del Modo SOS y matricial en los tableros de pictogramas y estímulos. Como criterios de diseño inclusivo, los estados se comunican con ícono y texto (no solo con color) y las pantallas de crisis y de comunicación eliminan la barra lateral para reducir la sobrecarga sensorial. Se incluyen las anotaciones de interacción (por ejemplo «on click: navega a la pantalla…») que sirven de base para los Wireflow Diagrams de la sección 4.4.2.
+
+#### Wireframes: Modo SOS: pantalla de activación
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%281%29.png" alt="Wireframe Modo SOS: pantalla de activación" width="800">
+</p>
+
+*Ilustración del Web Application Wireframe: Modo SOS: pantalla de activación*
+
+La pantalla adopta la estructura de tres zonas de la sección 4.1.2: barra lateral persistente con los módulos principales y el acceso «Modo SOS» anclado al pie, migas de pan en la parte superior y un área central de contenido. La mayor jerarquía visual la recibe el botón circular «Activar SOS», acompañado de un mensaje tranquilizador y del aviso de que, ante una emergencia médica, se debe llamar al servicio de emergencias local. Debajo se ubica el selector «¿Para quién es esta guía?», con las tarjetas de Diana Ríos y Mateo Vera y la selección activa indicada con un check, y tres tarjetas numeradas que explican la guía paso a paso, su adaptación al perfil y el registro automático del episodio. La anotación del wireframe especifica que al tocar el círculo se navega a la guía SOS llevando el perfil seleccionado y la hora de inicio del episodio.
+
+#### Wireframes: Configurar tablero CAA: variante con imágenes
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%282%29.png" alt="Wireframe Configurar tablero CAA: variante con imágenes" width="800">
+</p>
+
+*Ilustración del Web Application Wireframe: Configurar tablero CAA: variante con imágenes*
+
+Esta vista permite al cuidador organizar los pictogramas que usará Diana. Se compone de un encabezado con el botón «Agregar pictograma personalizado», filtros por categoría (Todos, Necesidades básicas, Emociones, Actividades) y una cuadrícula de tarjetas de 3 × 2 en organización matricial. Cada tarjeta reserva un espacio para la imagen, muestra la etiqueta y la frase en primera persona («Tengo sed»), incluye un asa de arrastre para reordenar y una estrella para marcar favoritos. En la parte inferior, un formulario agrupa la carga de imagen (96 × 96 px recomendado), la etiqueta, la categoría, la opción de agregar a favoritos y el botón «Guardar pictograma».
+
+#### Wireframes: Configurar tablero CAA: variante con íconos
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%283%29.png" alt="Wireframe Configurar tablero CAA: variante con íconos" width="800">
+</p>
+
+*Ilustración – Web Application Wireframe: Configurar tablero CAA: variante con íconos*
+
+Segunda alternativa de la misma pantalla, donde cada tarjeta muestra un ícono lineal con su nombre en mayúsculas y la frase completa como texto principal. Se conserva la estructura de filtros, cuadrícula y formulario de la variante anterior, pero el favorito pasa a representarse con un corazón, el formulario acepta imágenes PNG o JPG de hasta 5 MB y el favorito se activa con un interruptor que indica que el pictograma aparecerá en la pantalla principal. La barra lateral incorpora el nombre y el rol del cuidador en la parte inferior, junto al acceso «Modo SOS».
+
+#### Wireframes: Crear nuevo perfil: datos básicos
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%284%29.png" alt="Wireframe Crear nuevo perfil: datos básicos" width="800">
+</p>
+
+*Ilustración del Web Application Wireframe: Crear nuevo perfil: datos básicos*
+
+El registro de un perfil se divide en un flujo de tres pasos (Datos básicos, Diagnóstico, Sensibilidades) con un indicador de progreso en la parte superior, de modo que el cuidador complete la información de forma gradual. En este primer paso se presenta, a la izquierda, un área circular para cargar la foto (máximo 5 MB) y, a la derecha, dos tarjetas de formulario: «Datos básicos» (nombre, apellido, edad, género y apodo preferido) y «Diagnóstico y condición» (condición principal y notas del profesional). Los campos obligatorios se marcan con asterisco y el pie del formulario ofrece las acciones «Cancelar» y «Continuar».
+
+#### Wireframes: Cuidadores asociados e invitación
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%285%29.png" alt="Wireframe Cuidadores asociados e invitación" width="800">
+</p>
+
+*Ilustración del Web Application Wireframe: Cuidadores asociados e invitación*
+
+La vista gestiona el círculo de confianza de Diana Ríos. En la parte superior se resumen los cuidadores activos y las invitaciones pendientes; debajo, una tabla lista a cada cuidador con su avatar, correo, rol (Principal, Cuidador, Terapeuta) y estado. Al invitar a una persona se abre un panel lateral deslizable con los campos de correo electrónico y rol, un mensaje que explica qué podrá ver el invitado una vez que acepte y las acciones «Enviar invitación» y «Cancelar». El listado permanece visible detrás del panel para que el cuidador no pierda el contexto.
+
+#### Wireframes: Galería de estímulos de Autocuidado
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%286%29.png" alt="Wireframe Galería de estímulos de Autocuidado" width="800">
+</p>
+
+*Ilustración del Web Application Wireframe: Galería de estímulos de Autocuidado*
+
+La galería presenta los estímulos de autorregulación en una cuadrícula de 3 × 2. Un aviso contextual explica que, por la sensibilidad auditiva alta de Diana, se muestran primero las opciones visuales, y los filtros «Todos», «Visual» y «Auditivo», junto con el acceso a «Favoritos», permiten cambiar esa priorización. Cada tarjeta incluye una vista previa, el nombre del estímulo y una etiqueta de favorito; la primera se destaca como elemento seleccionado.
+
+#### Wireframes: Modo SOS: paso 5 de 6, calma y respiración
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%287%29.png" alt="Wireframe Modo SOS: paso 5 de 6, calma y respiración" width="800">
+</p>
+
+*Ilustración – Web Application Wireframe: Modo SOS: paso 5 de 6, calma y respiración*
+
+Durante la guía se elimina la barra lateral para reducir la carga cognitiva y se muestra un solo paso a la vez, siguiendo la organización secuencial definida en la sección 4.2.1. El encabezado reúne la acción «Salir», el título «Modo SOS» y un indicador «Paso 5 de 6» con barra de progreso. En el centro se ubican el título del paso, una instrucción breve, el círculo de respiración («Inhala… Exhala») y un aviso que recuerda mantener la voz baja por la sensibilidad auditiva de Diana. Un paginador de puntos y el botón «Siguiente» cierran la pantalla, y la anotación indica que al pulsarlo se navega al resumen del episodio.
+
+#### Wireframes: Panel de inicio del cuidador: variante 1
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%288%29.png" alt="Wireframe Panel de inicio del cuidador: variante 1" width="800">
+</p>
+
+*Ilustración – Web Application Wireframe: Panel de inicio del cuidador: variante 1*
+
+El panel de inicio prioriza lo que el cuidador necesita saber de inmediato, en tres niveles de lectura. En el primero, una tarjeta destacada muestra la solicitud recibida («Diana necesita: “Tengo sed”»), su origen y hora, la acción solicitada y los botones «Confirmar recepción» y «Ver tablero completo». En el segundo, la tarjeta «Estado actual de Diana» indica que no se requiere activar el Modo SOS. En el tercero, dos tarjetas acompañan el seguimiento: «Actividad reciente», con una lista cronológica, y «Análisis de bienestar», con un gráfico de barras del nivel de interacción de la última hora. La navegación se reduce a Inicio, Historial, Tablero CAA y Configuración.
+
+#### Wireframes: Panel de inicio del cuidador: variante 2
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%289%29.png" alt="Wireframe Panel de inicio del cuidador: variante 2" width="800">
+</p>
+
+*Ilustración – Web Application Wireframe: Panel de inicio del cuidador: variante 2*
+
+Alternativa con distribución en dos columnas. En la columna principal, la tarjeta de solicitud incorpora una línea contextual («Diana ha interactuado con la categoría “Necesidades básicas”») con enlace a «Ver historial», y debajo se muestra la confirmación «Asistencia en camino», con la hora en que el cuidador confirmó la recepción. En la columna lateral se ubican el indicador circular del estado actual de Diana y la tarjeta «Red de Apoyo rápida», con contacto directo al neurólogo (llamada) y al padre (mensaje). La barra lateral se amplía con Comunicación, Salud y Red de Apoyo, y el encabezado incorpora el acceso a notificaciones.
+
+#### Wireframes: Perfil de usuario: pestaña Sensibilidades
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%2810%29.png" alt="Wireframe Perfil de usuario: pestaña Sensibilidades" width="800">
+</p>
+
+*Ilustración del Web Application Wireframe: Perfil de usuario: pestaña sensibilidades*
+
+La ficha del perfil se organiza con una cabecera que reúne el avatar, el nombre, la edad, la condición, el apodo preferido y tres chips de estado (estado actual, cantidad de cuidadores y perfil activo), junto con las acciones «Guardar cambios» y «Ver historial». Debajo, cuatro pestañas (Datos generales, Sensibilidades, Diagnóstico y Cuidadores) segmentan el contenido. En la columna principal se ubican las sensibilidades sensoriales, con controles deslizantes de cuatro niveles (auditiva, visual y táctil), y las preferencias personales con interruptores (modo de baja estimulación, priorizar visuales y confirmar audio). En la columna lateral se resumen el diagnóstico y los cuidadores asociados, con la acción «Vincular nuevo cuidador».
+
+#### Wireframes: Estímulo en uso: burbujas flotantes
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%2811%29.png" alt="Wireframe Estímulo en uso: burbujas flotantes" width="800">
+</p>
+
+*Ilustración del Web Application Wireframe: Estímulo en uso: burbujas flotantes*
+
+La pantalla asigna la mayor parte del espacio al área de visualización del estímulo, con una instrucción breve debajo («Sigue el ritmo del círculo mientras observas las burbujas subir»). Un panel de controles agrupa el control deslizante de intensidad (de «Suave» a «Intenso»), el interruptor del modo de baja estimulación y el botón «Usar temporizador de calma mientras tanto». La acción «Terminar sesión y volver a la galería» se ubica al final, y las migas de pan de cuatro niveles permiten regresar a la galería.
+
+#### Wireframes: Resumen del episodio
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%2812%29.png" alt="Wireframe Resumen del episodio" width="800">
+</p>
+
+*Ilustración del Web Application Wireframe: Resumen del episodio*
+
+Pantalla de cierre del Modo SOS, centrada y sin barra lateral. Comienza con un ícono y un mensaje de confirmación, seguidos de cuatro métricas del episodio (duración, intensidad inicial, intensidad final y detonante). A continuación se solicita el estado actual de Diana mediante cuatro opciones que combinan ícono y texto (Calmada, Cansada, Sensible, Irritable), de modo que ningún estado dependa solo del color, y se lista el checklist de pasos completados, donde el paso omitido se distingue de los realizados. La acción «Finalizar y Guardar» se ubica en el encabezado y un aviso confirma que el episodio se guardó en el historial.
+
+#### Wireframes: Tablero CAA del usuario: variante con imágenes
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%2813%29.png" alt="Wireframe Tablero CAA del usuario: variante con imágenes" width="800">
+</p>
+
+*Ilustración – Web Application Wireframe: Tablero CAA del usuario: variante con imágenes*
+
+Vista destinada al usuario neurodivergente, sin barra lateral para reducir estímulos. El encabezado saluda a Diana con la pregunta «¿Qué necesitas decir?» y ofrece el acceso a «Favoritos»; debajo se ubican los filtros por categoría y una cuadrícula de tarjetas grandes, pensadas para una selección táctil precisa, con imagen, etiqueta y frase. Al seleccionar una tarjeta se muestra en la parte inferior una notificación que confirma que se avisó a María.
+
+#### Wireframes: Tablero CAA del usuario: variante con íconos
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%2814%29.png" alt="Wireframe Tablero CAA del usuario: variante con íconos" width="800">
+</p>
+
+*Ilustración – Web Application Wireframe: Tablero CAA del usuario: variante con íconos*
+
+Segunda alternativa del tablero, con pictogramas de ícono de gran tamaño y la frase como texto principal. La categoría activa se resalta en los filtros, la tarjeta seleccionada muestra el estado «Reproduciendo audio…» y una notificación oscura, con la marca de tiempo y una acción para cerrarla, confirma el aviso enviado al cuidador. En la esquina inferior derecha se mantiene un botón flotante de SOS, de modo que el usuario pueda pedir ayuda sin salir del tablero.
+
+#### Wireframes: Temporizador de calma
+
+<p align="center">
+  <img src="images/Chapter-IV/wireframes/wireframe%20%2815%29.png" alt="Wireframe Temporizador de calma" width="800">
+</p>
+
+*Ilustración – Web Application Wireframe: Temporizador de calma*
+
+Pantalla de foco único: un encabezado con el título, el estímulo con el que se continúa y la acción «Salir del temporizador», y en el centro un contador circular (03:47 restantes de 5:00). Debajo se ofrecen tres duraciones rápidas (3, 5 y 10 min) y el botón «Pausar». Un texto de apoyo anticipa que, al terminar, se preguntará cómo se siente Diana, lo que conecta esta vista con el registro del estado en el resumen del episodio.
 
 ### 4.4.2 Web Applications Wireflow Diagrams
 
-![Wireflow.png](images/Chapter-4/Wireflow.png)
+![Wireflow.png](images/Chapter-IV/Wireflow.png)
+
+### 4.4.3 Web Applications Mock-ups
+
+Los mock-ups aplican el Design System de la sección 4.1 sobre la estructura validada en los wireframes: la paleta cromática de Nubi, la tipografía Bricolage Grotesque en toda la interfaz, el ritmo de espaciado de 8 pt, botones de esquinas redondeadas y la iconografía lineal. Los estados se comunican siempre con ícono y texto, con un contraste mínimo de 4.5:1. Para cada pantalla se muestra la versión final y, cuando existen, sus variantes.
 
 
-#### 4.4.2. Web Applications Mock-ups.
+#### Mock-up: Modo SOS: pantalla de activación
 
-![mockups (1).png](images/Chapter-4/mockups/mockups%20%281%29.png)
 
-Modo SOS — pantalla de activación: botón circular "Activar SOS" en Coral Red sobre un fondo degradado cálido, selector de perfil ("¿Para quién es esta guía?") con las tarjetas de Diana Ríos y Mateo Vera, y tres tarjetas informativas que explican la guía paso a paso, la personalización según sensibilidades y el registro automático del episodio.
+![mockupsos.png](images/Chapter-IV/mockupsos.png)
 
-![mockups (2).png](images/Chapter-4/mockups/mockups%20%282%29.png)
+*Ilustración – Web Application Mock-up: Modo SOS: pantalla de activación*
+
+Modo SOS — pantalla de activación: botón circular «Activar SOS» en Coral Red sobre un fondo degradado cálido, selector de perfil («¿Para quién es esta guía?») con las tarjetas de Diana Ríos y Mateo Vera, y tres tarjetas informativas que explican la guía paso a paso, la personalización según sensibilidades y el registro automático del episodio.
+
+#### Mock-up: Configurar tablero CAA: variante con imágenes
+
+
+![caamockup.png](images/Chapter-IV/caamockup.png)
+
+*Ilustración – Web Application Mock-up: Configurar tablero CAA: variante con imágenes*
 
 Configurar tablero CAA (variante con fotografías): cuadrícula de pictogramas de Necesidades básicas (Agua, Comida, Baño, Descanso, Dolor, Ayuda) usando imágenes fotográficas reales, cada uno marcable como favorito, junto al formulario inferior para agregar un pictograma personalizado con etiqueta y categoría.
 
-![mockups (3).png](images/Chapter-4/mockups/mockups%20%283%29.png)
+#### Mock-up: Configurar tablero CAA: variante con íconos
+
+![iconoscaamockup.png](images/Chapter-IV/iconoscaamockup.png)
+
+*Ilustración – Web Application Mock-up: Configurar tablero CAA: variante con íconos*
 
 Configurar tablero CAA (variante iconográfica): la misma cuadrícula de Necesidades básicas reinterpretada con iconografía lineal simple sobre fondo celeste sólido en lugar de fotografías, manteniendo las mismas categorías, favoritos y el formulario de carga de pictogramas personalizados.
 
-![mockups (4).png](images/Chapter-4/mockups/mockups%20%284%29.png)
+#### Mock-up: Crear nuevo perfil: datos básicos
 
-Crear nuevo perfil — paso 1 "Datos básicos": formulario con carga de foto, campos de nombre, apellido, edad, género y apodo preferido, seguido de la sección "Diagnóstico y condición" (condición principal y notas del profesional), dentro de un flujo de tres pasos (Datos básicos, Diagnóstico, Sensibilidades).
+![perfilmockup.png](images/Chapter-IV/perfilmockup.png)
 
-![mockups (5).png](images/Chapter-4/mockups/mockups%20%285%29.png)
+*Ilustración – Web Application Mock-up: Crear nuevo perfil: datos básicos*
 
-Cuidadores asociados: listado del círculo de confianza de Diana Ríos (María Ríos como Principal, Javier Ríos como Cuidador, Lucía Peña como Terapeuta y Ana Ríos con invitación pendiente) junto a un panel lateral "Invitar cuidador" con campos de correo electrónico y asignación de rol.
+Crear nuevo perfil — paso 1 «Datos básicos»: formulario con carga de foto, campos de nombre, apellido, edad, género y apodo preferido, seguido de la sección «Diagnóstico y condición» (condición principal y notas del profesional), dentro de un flujo de tres pasos (Datos básicos, Diagnóstico, Sensibilidades).
 
-![mockups (6).png](images/Chapter-4/mockups/mockups%20%286%29.png)
+#### Mock-up: Cuidadores asociados e invitación
 
-Galería de estímulos (Autocuidado): selector de estímulos Visual/Auditivo con aviso contextual que prioriza opciones visuales por la sensibilidad auditiva alta de Diana, mostrando tarjetas como Burbujas flotantes, Olas de color, Cielo estrellado, Lluvia suave, Sonido del mar y Piano relajante, cada una marcable como favorita.
+![cuidadoresmockup.png](images/Chapter-IV/cuidadoresmockup.png)
 
-![mockups (7).png](images/Chapter-4/mockups/mockups%20%287%29.png)
+*Ilustración – Web Application Mock-up: Cuidadores asociados e invitación*
 
-Modo SOS — Paso 5 de 6 "Calma y Respiración": círculo animado con el texto "Inhala... Exhala" para sincronizar la respiración del cuidador con la de Diana, acompañado de un aviso que recuerda mantener la voz baja por su sensibilidad auditiva alta y un indicador de progreso de pasos.
+Cuidadores asociados: listado del círculo de confianza de Diana Ríos (María Ríos como Principal, Javier Ríos como Cuidador, Lucía Peña como Terapeuta y Ana Ríos con invitación pendiente) junto a un panel lateral «Invitar cuidador» con campos de correo electrónico y asignación de rol.
 
-![mockups (8).png](images/Chapter-4/mockups/mockups%20%288%29.png)
+#### Mock-up: Galería de estímulos de Autocuidado
 
-Panel de inicio del cuidador (variante violeta): saludo "Hola, María" con una notificación destacada de que Diana solicitó "Tengo sed" desde el Tablero de Comunicación, acciones para confirmar la recepción o ver el tablero completo, el estado actual ("Calma"), actividad reciente y un gráfico de nivel de interacción.
+![galeriamockup.png](images/Chapter-IV/galeriamockup.png)
 
-![mockups (9).png](images/Chapter-4/mockups/mockups%20%289%29.png)
+*Ilustración – Web Application Mock-up: Galería de estímulos de Autocuidado*
 
-Panel de inicio del cuidador (variante azul con navegación lateral ampliada): la misma notificación de "Diana necesita: Tengo sed" con accesos a Comunicación, Salud y Red de Apoyo, un indicador circular de estado "Calma", historial de asistencia confirmada y una tarjeta de "Red de Apoyo rápida" con contacto directo al neurólogo y al padre.
+Galería de estímulos (Autocuidado): selector de estímulos Visual/Auditivo con aviso contextual que prioriza opciones visuales por la sensibilidad auditiva alta de Diana, mostrando tarjetas como Burbujas flotantes, Olas de color, Cielo estrellado, Lluvia suave, Sonido del mar y Piano relajante, cada una marcable como favorito.
 
-![mockups (10).png](images/Chapter-4/mockups/mockups%20%2810%29.png)
+#### Mock-up: Modo SOS: paso 5 de 6, calma y respiración
 
-Perfil de usuario — pestaña "Sensibilidades": ficha de Diana Ríos (15 años, TEA nivel 1) con controles deslizantes de sensibilidad Auditiva (Alta), Visual (Media) y Táctil (Baja), preferencias personales (modo de baja estimulación, priorizar visuales), datos de diagnóstico y la lista de cuidadores asociados.
+![modosospasosmockup.png](images/Chapter-IV/modosospasosmockup.png)
 
-![mockups (11).png](images/Chapter-4/mockups/mockups%20%2811%29.png)
+*Ilustración – Web Application Mock-up: Modo SOS: paso 5 de 6, calma y respiración*
 
-Estímulo "Burbujas flotantes" en uso: animación de burbujas sobre fondo violeta con un círculo central "RESPIRA", control deslizante de intensidad (Suave–Intenso), interruptor de modo de baja estimulación y accesos para usar el temporizador de calma o terminar la sesión y volver a la galería.
+Modo SOS — Paso 5 de 6 «Calma y Respiración»: círculo animado con el texto «Inhala... Exhala» para sincronizar la respiración del cuidador con la de Diana, acompañado de un aviso que recuerda mantener la voz baja por su sensibilidad auditiva alta y un indicador de progreso de pasos.
 
-![mockups (12).png](images/Chapter-4/mockups/mockups%20%2812%29.png)
+#### Mock-up: Panel de inicio del cuidador: variante 1
 
-Resumen del episodio (cierre del Modo SOS): mensaje de confirmación "¡Buen trabajo! El episodio ha pasado" con métricas del episodio (duración de 12 min, intensidad inicial Alta, final Baja, detonante Auditivo), selección del estado actual de Diana (Calmada) y el checklist de pasos completados (aislamiento sensorial, validación emocional, respiración guiada, uso de mordedor omitido).
+![paneliniciomockup.png](images/Chapter-IV/paneliniciomockup.png)
 
-![mockups (13).png](images/Chapter-4/mockups/mockups%20%2813%29.png)
+*Ilustración – Web Application Mock-up: Panel de inicio del cuidador: variante 1*
 
-Tablero CAA — vista del usuario neurodivergente (variante con fotografías): pantalla "Hola, Diana ¿Qué necesitas decir?" con la tarjeta "Agua / Tengo sed" seleccionada y reproduciendo audio, categorías filtrables (Necesidades básicas, Emociones, Actividades, Favoritos) y una notificación inferior confirmando el aviso enviado a María.
+Panel de inicio del cuidador (variante violeta): saludo «Hola, María» con una notificación destacada de que Diana solicitó «Tengo sed» desde el Tablero de Comunicación, acciones para confirmar la recepción o ver el tablero completo, el estado actual («Calma»), actividad reciente y un gráfico de nivel de interacción.
 
-![mockups (14).png](images/Chapter-4/mockups/mockups%20%2814%29.png)
+#### Mock-up: Panel de inicio del cuidador: variante 2
 
-Tablero CAA — vista del usuario neurodivergente (variante iconográfica en azul): misma interacción "Tengo sed" con pictogramas representados en iconos lineales simples, botón flotante de SOS en la esquina y un toast de confirmación indicando que se avisó a María.
+![variantepaneldeiniciomockup.png](images/Chapter-IV/variantepaneldeiniciomockup.png)
 
-![mockups (15).png](images/Chapter-4/mockups/mockups%20%2815%29.png)
+*Ilustración – Web Application Mock-up: Panel de inicio del cuidador: variante 2*
 
-Temporizador de calma: cuenta regresiva circular (03:47 restantes de un total de 5:00) tras continuar con el estímulo "Burbujas flotantes", con opciones rápidas de duración (3, 5 o 10 min), botón de pausa y aviso de que al finalizar se preguntará cómo se siente Diana.
+Panel de inicio del cuidador (variante azul con navegación lateral ampliada): la misma notificación de «Diana necesita: Tengo sed» con accesos a Comunicación, Salud y Red de Apoyo, un indicador circular de estado «Calma», historial de asistencia confirmada y una tarjeta de «Red de Apoyo rápida» con contacto directo al neurólogo y al padre.
 
-#### 4.4.3. Web Applications User Flow Diagrams.
+#### Mock-up: Perfil de usuario: pestaña Sensibilidades
 
-![UserFlow.png](images/Chapter-4/UserFlow.png)
+![perfilpestaña.png](images/Chapter-IV/perfilpesta%C3%B1a.png)
 
-#### 4.5. Web Applications Prototyping.
+*Ilustración – Web Application Mock-up: Perfil de usuario: pestaña Sensibilidades*
 
-|![prototype.png](images/Chapter-4/prototype.png)                                                                                                                                                                                                                                                                                                                                |
+Perfil de usuario — pestaña «Sensibilidades»: ficha de Diana Ríos (15 años, TEA nivel 1) con controles deslizantes de sensibilidad Auditiva (Alta), Visual (Media) y Táctil (Baja), preferencias personales (modo de baja estimulación, priorizar visuales), datos de diagnóstico y la lista de cuidadores asociados.
+
+#### Mock-up: Estímulo en uso: burbujas flotantes
+
+![mockuppanelrespira.png](images/Chapter-IV/mockuppanelrespira.png)
+
+*Ilustración – Web Application Mock-up: Estímulo en uso: burbujas flotantes*
+
+Estímulo «Burbujas flotantes» en uso: animación de burbujas sobre fondo violeta con un círculo central «RESPIRA», control deslizante de intensidad (Suave–Intenso), interruptor de modo de baja estimulación y accesos para usar el temporizador de calma o terminar la sesión y volver a la galería.
+
+#### Mock-up: Resumen del episodio
+
+![resumenmockup.png](images/Chapter-IV/resumenmockup.png)
+
+*Ilustración – Web Application Mock-up: Resumen del episodio*
+
+Resumen del episodio (cierre del Modo SOS): mensaje de confirmación «¡Buen trabajo! El episodio ha pasado» con métricas del episodio (duración de 12 min, intensidad inicial Alta, final Baja, detonante Auditivo), selección del estado actual de Diana (Calmada) y el checklist de pasos completados (aislamiento sensorial, validación emocional, respiración guiada, uso de mordedor omitido).
+
+#### Mock-up: Tablero CAA del usuario: variante con imágenes
+
+![caamockupvariantes.png](images/Chapter-IV/caamockupvariantes.png)
+
+*Ilustración – Web Application Mock-up: Tablero CAA del usuario: variante con imágenes*
+
+Tablero CAA — vista del usuario neurodivergente (variante con fotografías): pantalla «Hola, Diana ¿Qué necesitas decir?» con la tarjeta «Agua / Tengo sed» seleccionada y reproduciendo audio, categorías filtrables (Necesidades básicas, Emociones, Actividades, Favoritos) y una notificación inferior confirmando el aviso enviado a María.
+
+#### Mock-up: Tablero CAA del usuario: variante con íconos
+
+![caaiconomockup.png](images/Chapter-IV/caaiconomockup.png)
+
+*Ilustración – Web Application Mock-up: Tablero CAA del usuario: variante con íconos*
+
+Tablero CAA — vista del usuario neurodivergente (variante iconográfica en azul): misma interacción «Tengo sed» con pictogramas representados en iconos lineales simples, botón flotante de SOS en la esquina y un toast de confirmación indicando que se avisó a María.
+
+#### Mock-up: Temporizador de calma
+
+![temporizadormockup.png](images/Chapter-IV/temporizadormockup.png)
+
+*Ilustración – Web Application Mock-up: Temporizador de calma*
+
+Temporizador de calma: cuenta regresiva circular (03:47 restantes de un total de 5:00) tras continuar con el estímulo «Burbujas flotantes», con opciones rápidas de duración (3, 5 o 10 min), botón de pausa y aviso de que al finalizar se preguntará cómo se siente Diana.
+
+### 4.4.4 Web Applications User Flow Diagrams
+
+![UserFlow.png](images/Chapter-IV/UserFlow.png)
+
+## 4.5. Web Applications Prototyping.
+
+|![prototype.png](images/Chapter-IV/prototype.png)                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQDSl4T7xAKFT52jN0itd5DMAQr-yskvbFkI0PyL_iQqJqM?e=6kqdJ6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  |
 
@@ -935,294 +1151,96 @@ En los diagramas se mantiene la convención de colores del Event Storming: **nar
 
 Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los usuarios neurodivergentes a su cargo: diagnóstico, detonantes, necesidad comunicativa, estrategia de calma, pictogramas y contactos de confianza. También concentra la suscripción, los planes institucionales y los reportes de soporte técnico.
 
-```mermaid
-flowchart LR
-    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
-    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
-    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
-    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
-    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
-    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
-    classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
+![bc1.png](images/Chapter-IV/bc1.png)
 
-    A1(["Cuidador"]):::actor
-    C1["Registrar cuenta"]:::cmd
-    C2["Crear perfil del usuario"]:::cmd
-    C3["Registrar diagnóstico y detonantes"]:::cmd
-    C4["Vincular contacto de confianza"]:::cmd
-    AG1["Cuenta"]:::agg
-    AG2["Perfil del usuario neurodivergente"]:::agg
-    AG3["Suscripción"]:::agg
-    E1["Cuenta creada"]:::evt
-    E2["Perfil de usuario creado"]:::evt
-    E3["Diagnóstico y detonantes registrados"]:::evt
-    E4["Contacto de confianza vinculado"]:::evt
-    E5["Suscripción freemium activada"]:::evt
-    P1["Al crear la cuenta, crear la suscripción freemium"]:::pol
-    P2["Avisar a Red de Apoyo y Seguimiento"]:::pol
-    Q1["Perfiles a cargo"]:::qry
-    X1["Google OAuth"]:::ext
-
-    A1 --> C1 --> AG1 --> E1 --> P1 --> AG3 --> E5
-    A1 --> C2 --> AG2 --> E2
-    A1 --> C3 --> AG2
-    AG2 --> E3
-    A1 --> C4 --> AG2
-    AG2 --> E4 --> P2
-    C1 -.-> X1
-    AG2 --> Q1
-```
-
-*Ilustración — Design-Level Event Storming: Perfil y Personalización*
+*Ilustración del Design-Level Event Storming: Perfil y Personalización*
 
 **Hotspots resueltos:**
 
-- *¿Lo configura el cuidador o el niño?* → El cuidador crea el perfil y registra el diagnóstico, los detonantes y los contactos de confianza. El usuario neurodivergente solo elige sus recursos y pictogramas favoritos.
-- *¿Qué pasa si hay dos cuidadores del mismo niño?* → Un perfil admite varios cuidadores asociados, cada uno con su propia cuenta (US18).
-- *¿Se valida el diagnóstico o se declara?* → Se declara. NUBI no valida ni emite diagnósticos, en línea con la restricción definida en la sección 1.2.
+- *¿Lo configura el cuidador o el niño?* 
+- El cuidador crea el perfil y registra el diagnóstico, los detonantes y los contactos de confianza. El usuario neurodivergente solo elige sus recursos y pictogramas favoritos.
+- *¿Qué pasa si hay dos cuidadores del mismo niño?* 
+- Un perfil admite varios cuidadores asociados, cada uno con su propia cuenta (US18).
+- *¿Se valida el diagnóstico o se declara?* 
+- Se declara. NUBI no valida ni emite diagnósticos, en línea con la restricción definida en la sección 1.2.
 
 #### Gestión de Crisis (Modo SOS)
 
 Conduce al cuidador durante una crisis con una guía de actuación adaptada al perfil del usuario, mostrando un paso de contención a la vez y sugiriendo una técnica alternativa cuando un paso no funciona. Al activarse avisa a Autorregulación y a Red de Apoyo y Seguimiento; al finalizar, solicita el registro del episodio.
 
-```mermaid
-flowchart LR
-    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
-    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
-    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
-    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
-    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
-    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
+![bc2.png](images/Chapter-IV/bc2.png)
 
-    A1(["Cuidador"]):::actor
-    C1["Activar Modo SOS"]:::cmd
-    C2["Marcar paso como completado"]:::cmd
-    C3["Pedir técnica alternativa"]:::cmd
-    C4["Finalizar episodio"]:::cmd
-    AG1["Sesión SOS"]:::agg
-    AG2["Guía de actuación"]:::agg
-    E1["Modo SOS activado"]:::evt
-    E2["Paso de contención completado"]:::evt
-    E3["Técnica alternativa sugerida"]:::evt
-    E4["Episodio finalizado"]:::evt
-    P1["Activar el modo de baja estimulación en Autorregulación"]:::pol
-    P2["Alertar a los contactos de confianza"]:::pol
-    P3["Registrar el episodio en Red de Apoyo y Seguimiento"]:::pol
-    Q1["Guía de actuación del perfil"]:::qry
-
-    A1 --> C1 --> AG1 --> E1
-    E1 --> P1
-    E1 --> P2
-    Q1 --> AG1
-    A1 --> C2 --> AG1
-    AG1 --> E2
-    A1 --> C3 --> AG2 --> E3
-    A1 --> C4 --> AG1
-    AG1 --> E4 --> P3
-```
-
-*Ilustración — Design-Level Event Storming: Gestión de Crisis (Modo SOS)*
+*Ilustración del Design-Level Event Storming: Gestión de Crisis (Modo SOS)*
 
 **Hotspots resueltos:**
 
-- *¿Quién declara que la crisis terminó?* → El cuidador, con el comando *Finalizar episodio* (US23).
-- *¿Y si el cuidador abandona la guía a mitad?* → La sesión SOS se conserva en el último paso completado y puede retomarse. El episodio solo se registra al finalizar.
-- *¿Funciona con el celular bloqueado?* → Una aplicación web no puede ejecutarse sobre la pantalla de bloqueo. Se resuelve con un acceso directo al Modo SOS desde la pantalla principal (US24) y con la guía disponible sin conexión (US90).
+- *¿Quién declara que la crisis terminó?* 
+- El cuidador, con el comando *Finalizar episodio* (US23).
+- *¿Y si el cuidador abandona la guía a mitad?* 
+- La sesión SOS se conserva en el último paso completado y puede retomarse. El episodio solo se registra al finalizar.
+- *¿Funciona con el celular bloqueado?* 
+- Una aplicación web no puede ejecutarse sobre la pantalla de bloqueo. Se resuelve con un acceso directo al Modo SOS desde la pantalla principal (US24) y con la guía disponible sin conexión (US90).
 
 #### Autorregulación
 
-Ofrece al usuario neurodivergente recursos de calma —respiración guiada, sonidos relajantes y lienzo de dibujo libre— filtrados según su perfil sensorial, y activa el modo de baja estimulación. Permite marcar recursos como favoritos y usar un temporizador de calma.
+Ofrece al usuario neurodivergente recursos de calma (respiración guiada, sonidos relajantes y lienzo de dibujo libre) filtrados según su perfil sensorial, y activa el modo de baja estimulación. Permite marcar recursos como favoritos y usar un temporizador de calma.
 
-```mermaid
-flowchart LR
-    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
-    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
-    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
-    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
-    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
-    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
-    classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
+![bc3.png](images/Chapter-IV/bc3.png)
 
-    A1(["Usuario neurodivergente"]):::actor
-    E0["Modo SOS activado"]:::evt
-    P0["Activar el modo de baja estimulación"]:::pol
-    C1["Seleccionar recurso de calma"]:::cmd
-    C2["Iniciar respiración guiada"]:::cmd
-    C3["Iniciar temporizador de calma"]:::cmd
-    C4["Marcar recurso como favorito"]:::cmd
-    C5["Finalizar sesión de calma"]:::cmd
-    AG1["Sesión de calma"]:::agg
-    AG2["Recurso de calma"]:::agg
-    E1["Modo de baja estimulación activado"]:::evt
-    E2["Recurso de calma seleccionado"]:::evt
-    E3["Ejercicio de respiración completado"]:::evt
-    E4["Recurso marcado como favorito"]:::evt
-    E5["Sesión de calma finalizada"]:::evt
-    P1["Si el temporizador termina y la sesión sigue abierta, sugerir una solicitud de ayuda"]:::pol
-    Q1["Recursos de calma según el perfil sensorial"]:::qry
-    X1["Reproductor de audio del dispositivo"]:::ext
-
-    E0 --> P0 --> AG1 --> E1
-    A1 --> C1 --> AG1
-    AG1 --> E2
-    Q1 --> AG2 --> C1
-    A1 --> C2 --> AG1
-    AG1 --> E3
-    A1 --> C3 --> AG1
-    AG1 --> P1
-    A1 --> C4 --> AG2 --> E4
-    A1 --> C5 --> AG1
-    AG1 --> E5
-    AG2 -.-> X1
-```
-
-*Ilustración — Design-Level Event Storming: Autorregulación*
+*Ilustración del Design-Level Event Storming: Autorregulación*
 
 **Hotspots resueltos:**
 
-- *¿Cuánto dura una sesión antes de sugerir pedir ayuda?* → Lo define el temporizador de calma configurado por el cuidador (US30). Si el tiempo termina y la sesión sigue abierta, se sugiere enviar una solicitud de ayuda.
-- *¿Y si el usuario no tolera tocar la pantalla?* → Se priorizan recursos que no exigen interacción continua, como el audio y la respiración guiada con temporizador. Queda como pregunta abierta para validar con usuarios.
+- *¿Cuánto dura una sesión antes de sugerir pedir ayuda?* 
+- Lo define el temporizador de calma configurado por el cuidador (US30). Si el tiempo termina y la sesión sigue abierta, se sugiere enviar una solicitud de ayuda.
+- *¿Y si el usuario no tolera tocar la pantalla?* 
+- Se priorizan recursos que no exigen interacción continua, como el audio y la respiración guiada con temporizador. Queda como pregunta abierta para validar con usuarios.
 
 #### Comunicación Asistida (CAA)
 
 Permite al usuario expresar necesidades con pictogramas, reportar su estado de ánimo y reproducir la frase en voz alta para el acompañante, quien confirma que la entendió. Los pictogramas más usados se agregan al acceso rápido.
 
-```mermaid
-flowchart LR
-    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
-    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
-    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
-    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
-    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
-    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
-    classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
+![bc4.png](images/Chapter-IV/bc4.png)
 
-    A1(["Usuario neurodivergente"]):::actor
-    A2(["Acompañante"]):::actor
-    C1["Abrir tablero CAA"]:::cmd
-    C2["Reportar estado de ánimo"]:::cmd
-    C3["Seleccionar pictograma"]:::cmd
-    C4["Confirmar comprensión"]:::cmd
-    AG1["Tablero CAA"]:::agg
-    AG2["Pictograma"]:::agg
-    E1["Tablero CAA abierto"]:::evt
-    E2["Estado de ánimo reportado"]:::evt
-    E3["Pictograma seleccionado"]:::evt
-    E4["Necesidad expresada"]:::evt
-    E5["Frase reproducida por voz"]:::evt
-    E6["Comprensión confirmada por el acompañante"]:::evt
-    P1["Al seleccionar un pictograma, expresar la necesidad y mostrar el mensaje al acompañante"]:::pol
-    P2["Si no se confirma la comprensión, enviar una solicitud de ayuda"]:::pol
-    Q1["Acceso rápido"]:::qry
-    X1["Síntesis de voz del dispositivo"]:::ext
-
-    A1 --> C1 --> AG1 --> E1
-    A1 --> C2 --> AG1
-    AG1 --> E2
-    A1 --> C3 --> AG2 --> E3 --> P1 --> E4
-    P1 --> X1 --> E5
-    A2 --> C4 --> AG1
-    AG1 --> E6
-    E4 --> P2
-    AG2 --> Q1
-```
-
-*Ilustración — Design-Level Event Storming: Comunicación Asistida (CAA)*
+*Ilustración Design-Level Event Storming: Comunicación Asistida (CAA)*
 
 **Hotspots resueltos:**
 
-- *¿Qué pasa si no hay nadie cerca para leer el mensaje?* → Si el acompañante no confirma la comprensión, se envía una solicitud de ayuda a Red de Apoyo y Seguimiento.
-- *¿Cuántos pictogramas caben sin saturar la pantalla?* → El acceso rápido muestra solo los más usados y el resto se organiza por categorías (US35). El número exacto se define en el prototipo.
-- *¿Y si el usuario no tolera tocar la pantalla?* → El acompañante puede operar el tablero por el usuario. Queda como pregunta abierta.
+- *¿Qué pasa si no hay nadie cerca para leer el mensaje?* 
+- Si el acompañante no confirma la comprensión, se envía una solicitud de ayuda a Red de Apoyo y Seguimiento.
+- *¿Cuántos pictogramas caben sin saturar la pantalla?* 
+- El acceso rápido muestra solo los más usados y el resto se organiza por categorías (US35). El número exacto se define en el prototipo.
+- *¿Y si el usuario no tolera tocar la pantalla?* 
+- El acompañante puede operar el tablero por el usuario. Queda como pregunta abierta.
 
 #### Red de Apoyo y Seguimiento
 
 Envía las alertas a los contactos de confianza y registra la llegada del contacto. También registra cada episodio al finalizar el Modo SOS, permite marcar estrategias efectivas y genera el resumen que el cuidador puede compartir con el profesional de salud.
 
-```mermaid
-flowchart LR
-    classDef actor fill:#F8BBD0,stroke:#37392E,color:#37392E
-    classDef cmd fill:#90CAF9,stroke:#37392E,color:#37392E
-    classDef agg fill:#FFF59D,stroke:#37392E,color:#37392E
-    classDef evt fill:#FFB74D,stroke:#37392E,color:#37392E
-    classDef pol fill:#CE93D8,stroke:#37392E,color:#37392E
-    classDef qry fill:#A5D6A7,stroke:#37392E,color:#37392E
-    classDef ext fill:#B0BEC5,stroke:#37392E,color:#37392E
+![bc5.png](images/Chapter-IV/bc5.png)
 
-    A1(["Usuario neurodivergente"]):::actor
-    A2(["Contacto de confianza"]):::actor
-    A3(["Cuidador"]):::actor
-    C1["Enviar solicitud de ayuda"]:::cmd
-    C2["Confirmar recepción"]:::cmd
-    C3["Marcar estrategia como efectiva"]:::cmd
-    C4["Compartir reporte con el profesional"]:::cmd
-    AG1["Solicitud de ayuda"]:::agg
-    AG2["Registro de episodio"]:::agg
-    E0["Episodio finalizado"]:::evt
-    E1["Alerta enviada al contacto de confianza"]:::evt
-    E2["Alerta recibida por el contacto"]:::evt
-    E3["Llegada del contacto confirmada"]:::evt
-    E4["Episodio registrado"]:::evt
-    E5["Resumen del episodio generado"]:::evt
-    E6["Reporte compartido con el profesional"]:::evt
-    P1["Si el contacto no confirma la recepción, reenviar la alerta al siguiente contacto"]:::pol
-    P2["Registrar el episodio y generar su resumen"]:::pol
-    P3["Actualizar las recomendaciones de Gestión de Crisis"]:::pol
-    Q1["Home del cuidador"]:::qry
-    Q2["Historial de episodios"]:::qry
-    X1["Notificaciones push"]:::ext
-    X2["SMS / WhatsApp"]:::ext
-
-    A1 --> C1 --> AG1 --> E1
-    E1 --> X1
-    E1 --> X2
-    A2 --> C2 --> AG1
-    AG1 --> E2 --> E3
-    E1 --> P1
-    E0 --> P2 --> AG2 --> E4 --> E5
-    E4 --> P3
-    A3 --> C3 --> AG2
-    A3 --> C4 --> AG2
-    AG2 --> E6
-    AG2 --> Q1
-    AG2 --> Q2
-```
-
-*Ilustración — Design-Level Event Storming: Red de Apoyo y Seguimiento*
+*Ilustración del Design-Level Event Storming: Red de Apoyo y Seguimiento*
 
 **Hotspots resueltos:**
 
-- *¿Qué pasa si el contacto no responde?* → Si no confirma la recepción, la alerta se reenvía al siguiente contacto de confianza.
-- *Sin internet, ¿cómo se avisa?* → Sin datos móviles, la aplicación abre el SMS del teléfono con el mensaje de alerta ya escrito, que se envía con la señal celular.
-- *¿Se envía ubicación?* → Ninguna historia de usuario lo contempla. Queda como pregunta abierta para una siguiente versión.
+- *¿Qué pasa si el contacto no responde?* 
+- Si no confirma la recepción, la alerta se reenvía al siguiente contacto de confianza.
+- *Sin internet, ¿cómo se avisa?* 
+- Sin datos móviles, la aplicación abre el SMS del teléfono con el mensaje de alerta ya escrito, que se envía con la señal celular.
+- *¿Se envía ubicación?* 
+- Ninguna historia de usuario lo contempla. Queda como pregunta abierta para una siguiente versión.
 
 #### Integración entre Bounded Contexts
 
 Los contextos se comunican mediante eventos de dominio y consultas al perfil del usuario.
 
-```mermaid
-flowchart LR
-    PERFIL["Perfil y Personalización"]
-    CRISIS["Gestión de Crisis - Modo SOS"]
-    AUTO["Autorregulación"]
-    CAA["Comunicación Asistida - CAA"]
-    RED["Red de Apoyo y Seguimiento"]
+![bc6.png](images/Chapter-IV/bc6.png)
 
-    PERFIL -- "Guía personalizada" --> CRISIS
-    PERFIL -- "Sensibilidades y favoritos" --> AUTO
-    PERFIL -- "Pictogramas personalizados" --> CAA
-    PERFIL -- "Contacto de confianza vinculado" --> RED
-    CRISIS -- "Modo SOS activado" --> AUTO
-    CRISIS -- "Modo SOS activado y Episodio finalizado" --> RED
-    CAA -- "Comprensión no confirmada" --> RED
-    RED -- "Episodio registrado" --> CRISIS
-```
-
-*Ilustración — Integración entre los Bounded Contexts de NUBI*
+*Ilustración de Integración entre los Bounded Contexts de NUBI*
 
 - **Perfil y Personalización** entrega a los demás contextos la información del perfil: la guía personalizada, las sensibilidades y los pictogramas.
 - **Modo SOS activado** dispara el modo de baja estimulación en Autorregulación y la alerta a los contactos en Red de Apoyo y Seguimiento.
-- **Episodio finalizado** hace que Red de Apoyo y Seguimiento registre el episodio, y ese registro actualiza las recomendaciones de Gestión de Crisis.
+- **Episodio finalizado** hace que Red de apoyo y seguimiento registre el episodio, y ese registro actualiza las recomendaciones de Gestión de Crisis.
 - **Comprensión no confirmada** en Comunicación Asistida genera una solicitud de ayuda.
 
 ---
@@ -1231,38 +1249,7 @@ flowchart LR
 
 El diagrama de contexto muestra a NUBI como un solo sistema, rodeado de las personas que lo usan y de los sistemas externos con los que se comunica.
 
-```mermaid
-flowchart TB
-    classDef persona fill:#08427B,stroke:#052E56,color:#FFFFFF
-    classDef sistema fill:#1168BD,stroke:#0B4884,color:#FFFFFF
-    classDef externo fill:#999999,stroke:#6B6B6B,color:#FFFFFF
-
-    NEURO["Usuario neurodivergente<br/>[Persona]"]:::persona
-    CUID["Cuidador<br/>[Persona]"]:::persona
-    DOC["Docente<br/>[Persona]"]:::persona
-    ADMIN["Administrador institucional<br/>[Persona]"]:::persona
-
-    NUBI["NUBI<br/>[Sistema de software]<br/>Autorregulación, comunicación asistida y guía en tiempo real durante una crisis"]:::sistema
-
-    CONTACTO["Contacto de confianza<br/>[Persona externa]"]:::externo
-    PROF["Profesional de salud<br/>[Persona externa]"]:::externo
-    GOOGLE["Google OAuth<br/>[Sistema externo]"]:::externo
-    PAGOS["Pasarela de pagos<br/>[Sistema externo]"]:::externo
-    PUSH["Notificaciones push<br/>[Sistema externo]"]:::externo
-    SMS["SMS / WhatsApp<br/>[Sistema externo]"]:::externo
-
-    NEURO -- "Se calma, se comunica y pide ayuda" --> NUBI
-    CUID -- "Configura el perfil y usa el Modo SOS" --> NUBI
-    DOC -- "Acompaña al usuario en el colegio" --> NUBI
-    ADMIN -- "Gestiona el plan institucional" --> NUBI
-    NUBI -- "Autentica usuarios [OAuth 2.0]" --> GOOGLE
-    NUBI -- "Procesa cobros [HTTPS]" --> PAGOS
-    NUBI -- "Envía alertas [HTTPS]" --> PUSH
-    NUBI -- "Envía alertas [HTTPS]" --> SMS
-    PUSH -- "Notifica la alerta" --> CONTACTO
-    SMS -- "Entrega la alerta" --> CONTACTO
-    CUID -- "Comparte el reporte de episodios" --> PROF
-```
+![diagramacontexto1.png](images/Chapter-IV/diagramacontexto1.png)
 
 *Ilustración — Software Architecture Context Diagram de NUBI*
 
@@ -1274,43 +1261,7 @@ NUBI se apoya en cuatro sistemas externos: **Google OAuth** para el inicio de se
 
 El diagrama de contenedores muestra las piezas que se despliegan por separado, la tecnología de cada una y cómo se comunican.
 
-```mermaid
-flowchart TB
-    classDef persona fill:#08427B,stroke:#052E56,color:#FFFFFF
-    classDef contenedor fill:#438DD5,stroke:#2E6295,color:#FFFFFF
-    classDef externo fill:#999999,stroke:#6B6B6B,color:#FFFFFF
-
-    NEURO["Usuario neurodivergente<br/>[Persona]"]:::persona
-    CUID["Cuidador o docente<br/>[Persona]"]:::persona
-    ADMIN["Administrador institucional<br/>[Persona]"]:::persona
-
-    subgraph SIS["Sistema NUBI"]
-        LANDING["Landing Page<br/>[HTML5, CSS3, JavaScript]<br/>Presenta el producto. Hosting estático"]:::contenedor
-        WEBAPP["Web Application<br/>[Angular, Angular Material, TypeScript]<br/>i18n en_US y es_419, atributos ARIA. Hosting estático"]:::contenedor
-        LOCAL["Almacenamiento local<br/>[IndexedDB del navegador]<br/>Guía SOS y recursos de calma sin conexión"]:::contenedor
-        API["RESTful API<br/>[Java, Spring Boot, Spring Data JPA]<br/>Monolito modular, un módulo por Bounded Context. JWT y OpenAPI. Docker con CI/CD"]:::contenedor
-        DB["Base de datos<br/>[PostgreSQL]<br/>Cuentas, perfiles, episodios y suscripciones"]:::contenedor
-    end
-
-    GOOGLE["Google OAuth<br/>[Sistema externo]"]:::externo
-    PAGOS["Pasarela de pagos<br/>[Sistema externo]"]:::externo
-    PUSH["Notificaciones push<br/>[Sistema externo]"]:::externo
-    SMS["SMS / WhatsApp<br/>[Sistema externo]"]:::externo
-
-    NEURO -- "Visita [HTTPS]" --> LANDING
-    CUID -- "Visita [HTTPS]" --> LANDING
-    NEURO -- "Usa [HTTPS]" --> WEBAPP
-    CUID -- "Usa [HTTPS]" --> WEBAPP
-    ADMIN -- "Usa [HTTPS]" --> WEBAPP
-    LANDING -- "Redirige con los call-to-action" --> WEBAPP
-    WEBAPP -- "Lee y guarda contenido offline" --> LOCAL
-    WEBAPP -- "Consume [JSON/HTTPS]" --> API
-    API -- "Lee y escribe [JPA]" --> DB
-    API -- "Valida el inicio de sesión [OAuth 2.0]" --> GOOGLE
-    API -- "Procesa cobros [HTTPS]" --> PAGOS
-    API -- "Envía alertas [HTTPS]" --> PUSH
-    API -- "Envía alertas [HTTPS]" --> SMS
-```
+![containerdiagram.png](images/Chapter-IV/containerdiagram.png)
 
 *Ilustración — Software Architecture Container Diagram de NUBI*
 
@@ -1324,53 +1275,7 @@ Se presentan los diagramas de componentes de los dos contenedores con lógica pr
 
 #### RESTful API
 
-```mermaid
-flowchart TB
-    classDef contenedor fill:#438DD5,stroke:#2E6295,color:#FFFFFF
-    classDef componente fill:#85BBF0,stroke:#5D82A8,color:#000000
-    classDef externo fill:#999999,stroke:#6B6B6B,color:#FFFFFF
-
-    WEBAPP["Web Application<br/>[Contenedor: Angular]"]:::contenedor
-
-    subgraph APIB["RESTful API - Spring Boot"]
-        SEC["Seguridad<br/>[Spring Security, JWT]<br/>Valida el token y dirige cada petición"]:::componente
-        PERFIL["Perfil y Personalización<br/>[Módulo Spring Boot, JPA]<br/>Cuentas, perfiles, contactos, suscripciones e instituciones"]:::componente
-        CRISIS["Gestión de Crisis<br/>[Módulo Spring Boot, JPA]<br/>Sesiones SOS, guías de actuación y recomendaciones"]:::componente
-        AUTO["Autorregulación<br/>[Módulo Spring Boot, JPA]<br/>Sesiones y recursos de calma"]:::componente
-        CAA["Comunicación Asistida<br/>[Módulo Spring Boot, JPA]<br/>Tablero CAA, pictogramas y check-in emocional"]:::componente
-        RED["Red de Apoyo y Seguimiento<br/>[Módulo Spring Boot, JPA]<br/>Solicitudes de ayuda, alertas e historial"]:::componente
-    end
-
-    DB["Base de datos<br/>[PostgreSQL]"]:::contenedor
-    GOOGLE["Google OAuth<br/>[Sistema externo]"]:::externo
-    PAGOS["Pasarela de pagos<br/>[Sistema externo]"]:::externo
-    PUSH["Notificaciones push<br/>[Sistema externo]"]:::externo
-    SMS["SMS / WhatsApp<br/>[Sistema externo]"]:::externo
-
-    WEBAPP -- "Envía peticiones [JSON/HTTPS + JWT]" --> SEC
-    SEC --> PERFIL
-    SEC --> CRISIS
-    SEC --> AUTO
-    SEC --> CAA
-    SEC --> RED
-    CRISIS -- "Obtiene la guía personalizada [ACL]" --> PERFIL
-    AUTO -- "Obtiene sensibilidades [ACL]" --> PERFIL
-    CAA -- "Obtiene pictogramas [ACL]" --> PERFIL
-    PERFIL -- "Contacto de confianza vinculado [evento]" --> RED
-    CRISIS -- "Modo SOS activado [evento]" --> AUTO
-    CRISIS -- "Modo SOS activado y Episodio finalizado [evento]" --> RED
-    CAA -- "Comprensión no confirmada [evento]" --> RED
-    RED -- "Episodio registrado [evento]" --> CRISIS
-    PERFIL -- "JPA" --> DB
-    CRISIS -- "JPA" --> DB
-    AUTO -- "JPA" --> DB
-    CAA -- "JPA" --> DB
-    RED -- "JPA" --> DB
-    PERFIL -- "Valida el inicio de sesión [OAuth 2.0]" --> GOOGLE
-    PERFIL -- "Procesa cobros [HTTPS]" --> PAGOS
-    RED -- "Envía alertas [HTTPS]" --> PUSH
-    RED -- "Envía alertas [HTTPS]" --> SMS
-```
+![component diagram2.png](images/Chapter-IV/component%20diagram2.png)
 
 *Ilustración — Component Diagram del RESTful API*
 
@@ -1380,65 +1285,203 @@ Cada componente corresponde a uno de los cinco Bounded Contexts del Design-Level
 
 #### Web Application
 
-```mermaid
-flowchart TB
-    classDef persona fill:#08427B,stroke:#052E56,color:#FFFFFF
-    classDef contenedor fill:#438DD5,stroke:#2E6295,color:#FFFFFF
-    classDef componente fill:#85BBF0,stroke:#5D82A8,color:#000000
-    classDef externo fill:#999999,stroke:#6B6B6B,color:#FFFFFF
-
-    NEURO["Usuario neurodivergente<br/>[Persona]"]:::persona
-    CUID["Cuidador<br/>[Persona]"]:::persona
-
-    subgraph WEBB["Web Application - Angular"]
-        SHELL["Navegación<br/>[Angular Router]<br/>Barra superior y migas de pan. Separa el espacio del usuario y del cuidador"]:::componente
-        ACCESO["Acceso<br/>[Angular Guards]<br/>Registro, inicio de sesión y rutas protegidas"]:::componente
-        PERFILUI["Perfil y Personalización<br/>[Angular Material]"]:::componente
-        SOSUI["Modo SOS<br/>[Angular Material]<br/>Guía paso a paso, un paso a la vez"]:::componente
-        AUTOUI["Autorregulación<br/>[Angular Material]<br/>Respiración, sonidos, lienzo y temporizador"]:::componente
-        CAAUI["Comunicación Asistida<br/>[Angular Material]<br/>Tablero de pictogramas e intensidad emocional"]:::componente
-        REDUI["Red de Apoyo y Seguimiento<br/>[Angular Material]<br/>Home del cuidador, ayuda e historial"]:::componente
-        HTTP["Cliente HTTP<br/>[HttpClient, Interceptor]<br/>Llamadas al API con el token JWT"]:::componente
-        OFF["Modo offline<br/>[Service Worker]<br/>Guía SOS y recursos sin conexión"]:::componente
-        I18N["Idioma y accesibilidad<br/>[Angular i18n, ARIA]<br/>en_US, es_419 y lectura en voz alta"]:::componente
-    end
-
-    LOCAL["Almacenamiento local<br/>[IndexedDB]"]:::contenedor
-    API["RESTful API<br/>[Contenedor: Spring Boot]"]:::contenedor
-    TTS["Síntesis de voz del dispositivo<br/>[Sistema externo]"]:::externo
-    AUDIO["Reproductor de audio del dispositivo<br/>[Sistema externo]"]:::externo
-
-    NEURO --> SHELL
-    CUID --> SHELL
-    SHELL -- "Verifica la sesión" --> ACCESO
-    SHELL --> PERFILUI
-    SHELL --> SOSUI
-    SHELL --> AUTOUI
-    SHELL --> CAAUI
-    SHELL --> REDUI
-    I18N -- "Traduce y agrega ARIA" --> SHELL
-    SOSUI -- "Activa el modo de baja estimulación" --> AUTOUI
-    CAAUI -- "Reproduce la frase" --> TTS
-    AUTOUI -- "Reproduce sonidos" --> AUDIO
-    SOSUI -- "Funciona sin conexión" --> OFF
-    AUTOUI -- "Funciona sin conexión" --> OFF
-    OFF -- "Lee y guarda" --> LOCAL
-    ACCESO --> HTTP
-    PERFILUI --> HTTP
-    SOSUI --> HTTP
-    AUTOUI --> HTTP
-    CAAUI --> HTTP
-    REDUI --> HTTP
-    HTTP -- "Consume [JSON/HTTPS]" --> API
-```
+![component diagram 3.png](images/Chapter-IV/component%20diagram%203.png)
 
 *Ilustración — Component Diagram de la Web Application*
 
 La Web Application tiene un módulo por Bounded Context, de modo que el frontend refleja la estructura del backend. **Navegación** implementa la barra superior y las migas de pan de las Web Style Guidelines (4.1.2) y muestra el espacio del usuario neurodivergente o del cuidador según su rol. **Modo offline** mantiene la guía SOS y los recursos de calma disponibles sin conexión, y **Cliente HTTP** centraliza las llamadas al API agregando el token JWT. Los módulos de Comunicación Asistida y Autorregulación usan la síntesis de voz y el reproductor de audio del dispositivo, identificados en el Big Picture Event Storming.
 
 
+## 4.7. Software Object-Oriented Design.
 
-#### 4.7. Software Object-Oriented Design.
-#### 4.7.1. Class Diagrams.
-#### 4.8. Database Design.
-#### 4.8.1. Database Diagrams.
+### 4.7.1. Class Diagrams.
+
+#### Perfil y Personalización: perfil del usuario y cuidadores
+
+Este diagrama cubre la gestión del perfil del usuario neurodivergente: sus datos básicos, el perfil sensorial, el diagnóstico declarado, los cuidadores asociados y los contactos de confianza.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png" alt="Class Diagram Perfil y Personalización: perfil del usuario y cuidadores" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Perfil del usuario y cuidadores*
+
+`NeurodivergentProfile` es el Aggregate Root y controla su consistencia: solo él crea el `SensoryProfile`, el `DeclaredDiagnosis`, los `ProfileCaregiver` y los `TrustedContact`. `SensoryProfile` y `DeclaredDiagnosis` son objetos de valor, por lo que se reemplazan completos cuando el cuidador los modifica. Todo perfil tiene al menos un cuidador (`1..*`), que es el cuidador principal que lo creó. La invitación de un cuidador (`ProfileCaregiver`) nace en estado `PENDING` con solo el correo del invitado y pasa a `ACTIVE` cuando este acepta y se le asigna su `accountId`. Antes de invitar, `ProfileCommandService` consulta el plan de la cuenta mediante `SubscriptionRepository` para respetar el límite de cuidadores. El diagnóstico se declara y no se valida, en línea con la restricción definida en la sección 1.2, y la condición `OTHER` exige `customDescription`. `TrustedContact.priorityOrder` define el orden en que se reenvía una alerta cuando un contacto no confirma su recepción.
+
+#### Perfil y Personalización: cuenta, suscripción e institución
+
+Este diagrama cubre el acceso a NUBI: la cuenta del cuidador, docente o administrador institucional, su suscripción y pagos, la institución y los reportes de soporte técnico.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/SubscriptionClassDiagram.png" alt="Class Diagram Perfil y Personalización: cuenta, suscripción e institución" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Cuenta, suscripción e institución*
+
+`Account` representa el acceso de un cuidador, docente o administrador institucional. Puede autenticarse con contraseña o con Google (`AuthProvider`); en el segundo caso `passwordHash` queda vacío y se guarda el identificador `googleSubject`. Al registrarse una cuenta, `AccountCommandService` publica `AccountCreatedEvent` y `SubscriptionCommandService` lo consume para activar la suscripción `FREEMIUM`, que es la política definida en el Design-Level Event Storming. `Subscription` conoce los límites del plan (`maxProfiles`, `maxCaregiversPerProfile`) y responde si se puede agregar otro perfil o cuidador. Los cobros se realizan a través del puerto `PaymentGateway`, implementado por `PaymentGatewayAdapter` contra la pasarela de pagos externa, y cada intento queda registrado como `Payment`. `Institution` agrupa las cuentas de docentes y administradores y gestiona los perfiles de sus estudiantes; `NeurodivergentProfile` se muestra sin miembros porque se detalla en el diagrama anterior.
+
+#### Gestión de Crisis: Modo SOS y guías de actuación
+
+Este diagrama cubre la sesión SOS que guía al cuidador paso a paso durante una crisis y la guía de actuación que la sustenta.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/SosModeClassDiagram.png" alt="Class Diagram Gestión de Crisis: Modo SOS y guías de actuación" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Modo SOS y guías de actuación*
+
+`SosSession` es el Aggregate Root de la sesión guiada. Se crea en estado `IN_PROGRESS` con la guía vigente; para personalizarla consulta el perfil sensorial mediante `ProfileContextFacade` (Anti-Corruption Layer), y `ActionGuide.orderedStepsFor` prioriza los pasos relacionados con la sensibilidad más alta del usuario. Cada paso completado u omitido se registra como `CompletedStep`, y un paso obligatorio (`mandatory`) exige confirmación explícita antes de omitirse. Si el cuidador finaliza antes del último paso, la sesión pasa a `FINISHED_EARLY`; en ambos casos se publica `EpisodeFinishedEvent`, que Red de Apoyo y Seguimiento consume para registrar el episodio. Al activarse, la sesión publica `SosModeActivatedEvent`, que dispara el modo de baja estimulación en Autorregulación y la alerta a los contactos de confianza. La clase `ContainmentStep` ofrece `AlternativeTechnique` cuando un paso no funciona.
+
+#### Gestión de Crisis: recomendaciones
+
+Este diagrama cubre las recomendaciones personalizadas, que se generan según el perfil del usuario y se actualizan cada vez que se registra un nuevo episodio.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/RecommendationsClassDiagram.png" alt="Class Diagram Gestión de Crisis: recomendaciones" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Recomendaciones*
+
+`Recommendation` pertenece a un `profileId` y se clasifica por tópico (sensorial, comunicacional o conductual), los mismos filtros definidos en el Searching System de la sección 4.2.4. Cuando Red de Apoyo y Seguimiento registra un episodio publica `EpisodeRegisteredEvent`, y `RecommendationService` lo consume: si el episodio aporta información relevante (`relevant`), marca como desactualizadas las recomendaciones vigentes y genera una nueva versión con `replaceWith`; en caso contrario las mantiene sin cambios. Cada cuidador califica la utilidad de una recomendación o la guarda como favorita mediante `RecommendationPreference`, y volver a calificar la misma recomendación actualiza la calificación existente en lugar de crear una nueva.
+
+#### Autorregulación
+
+Este diagrama cubre las sesiones de calma del usuario neurodivergente, los recursos de calma disponibles, los favoritos y el temporizador.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png" alt="Class Diagram Autorregulación" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Autorregulación*
+
+`CalmSession` es el Aggregate Root de una sesión de calma. Mantiene el recurso reproducido, la intensidad (que nunca supera `maxIntensity` del `CalmingResource`), el estado del modo de baja estimulación y un `CalmTimer` opcional que es un objeto de valor inmutable: cada operación devuelve un nuevo temporizador. Si el temporizador termina y la sesión sigue abierta, `shouldSuggestHelp` devuelve verdadero para que la aplicación sugiera enviar una solicitud de ayuda. `CalmingResourceService` filtra los recursos según el perfil sensorial obtenido mediante `ProfileContextFacade`: `isSuitableFor` excluye, por ejemplo, los estímulos auditivos cuando la sensibilidad auditiva del usuario es alta. La política definida en 4.6.1 se implementa en `SosModeActivatedListener`, que al recibir `SosModeActivatedEvent` abre una sesión con `startedBySos` verdadero y el modo de baja estimulación activado. Los favoritos son `FavoriteResource` asociados al `profileId`.
+
+#### Comunicación Asistida (CAA)
+
+Este diagrama cubre el tablero de pictogramas, las selecciones que el usuario realiza para comunicar una necesidad, la confirmación de comprensión del acompañante y el check-in emocional.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/CommunicationClassDiagram.png" alt="Class Diagram Comunicación Asistida (CAA)" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Comunicación Asistida (CAA)*
+
+`CommunicationBoard` agrupa los pictogramas del usuario en categorías (`PictogramCategory`): necesidades básicas, emociones, actividades y las creadas por el cuidador. `Pictogram` es un Aggregate Root propio porque tiene existencia independiente del tablero, y la regla `maxFavorites` se valida en el tablero al marcar un favorito. Cuando el usuario selecciona un pictograma, `selectPictogram` crea una `PictogramSelection` en estado `PENDING_DELIVERY` y `CommunicationBoardCommandService` publica `PictogramSelectedEvent`, que Red de Apoyo y Seguimiento usa para avisar al cuidador. Si el acompañante no confirma la comprensión, la selección pasa a `NOT_UNDERSTOOD` y se publica `UnderstandingNotConfirmedEvent`, que genera una solicitud de ayuda. El check-in emocional (`MoodCheckIn`) usa la escala de cuatro niveles del Shared Kernel. Este evento y `PictogramSelectedEvent` refinan el flujo entre contextos de la sección 4.6.1: el primero se agrega para que el aviso "Diana necesita: Tengo sed" del panel del cuidador tenga un origen de dominio explícito.
+
+#### Red de Apoyo y Seguimiento: solicitudes de ayuda
+
+Este diagrama cubre las solicitudes de ayuda y la entrega de alertas a los contactos de confianza por notificación push, SMS o WhatsApp.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/HelpRequestsClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: solicitudes de ayuda" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Solicitudes de ayuda*
+
+`HelpRequest` puede originarse de tres maneras (`HelpRequestOrigin`): manualmente por el usuario, por la activación del Modo SOS o porque el acompañante no confirmó la comprensión de un pictograma. Los dos últimos casos llegan como eventos que atienden `SosModeActivatedAlertListener` y `UnderstandingNotConfirmedListener`. Al enviarse, la solicitud obtiene los contactos de confianza mediante `ProfileContextFacade` y registra una `AlertDelivery` por contacto y canal, usando el puerto `NotificationGateway`, que implementan `PushNotificationAdapter` y `SmsWhatsAppAdapter` contra los sistemas externos identificados en el diagrama de contexto. Si el contacto no confirma la recepción, `escalate` reenvía la alerta al siguiente contacto según `priorityOrder`, y una solicitud ya confirmada no puede cancelarse. Las solicitudes pendientes de mayor antigüedad se detectan con `findPendingOlderThan`.
+
+#### Red de Apoyo y Seguimiento: episodios, reportes y panel del cuidador
+
+Este diagrama cubre el registro automático de episodios al finalizar el Modo SOS, las notas y estrategias efectivas, los reportes para el profesional de salud y el panel de inicio del cuidador.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/EpisodesClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: episodios, reportes y panel del cuidador" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Episodios, reportes y panel del cuidador*
+
+`EpisodeFinishedListener` implementa la política "registrar el episodio y generar su resumen": al recibir `EpisodeFinishedEvent` crea un `EpisodeRecord` con la fecha, la duración, la intensidad inicial y final, el detonante y los pasos completados, sin que el cuidador deba documentarlo manualmente. Un episodio que terminó antes de completar la guía queda como `FINISHED_EARLY`. Luego se publica `EpisodeRegisteredEvent`, que actualiza las recomendaciones de Gestión de Crisis. El cuidador puede agregar notas (`EpisodeNote`, que no pueden estar vacías) y marcar estrategias efectivas (`EffectiveStrategy`), y el historial se filtra por rango de fechas con `findByProfileIdAndDateRange`. `EpisodeReport` es el resumen de un periodo que el cuidador comparte con el profesional de salud; solo guarda el periodo y el correo del destinatario, y calcula su contenido a partir de los episodios del rango. `HomeSummary` es el *read model* del panel de inicio: reúne el estado actual, los episodios recientes y las alertas, e indica si el estado no se actualizó en el periodo esperado.
+
+#### Colaboración entre Bounded Contexts
+
+Este diagrama muestra cómo se implementan en código las dos formas de integración entre contextos: las consultas síncronas al perfil mediante `ProfileContextFacade` y los eventos de dominio mediante `DomainEventPublisher`.
+
+<p align="center">
+  <img src="images/Chapter-IV/class-diagrams/CollaborationClassDiagram.png" alt="Class Diagram Colaboración entre Bounded Contexts" width="100%">
+</p>
+
+*Ilustración — Class Diagram: Colaboración entre Bounded Contexts*
+
+`ProfileContextFacade` es el único punto por el que los demás contextos leen datos de Perfil y Personalización. Su implementación vive en el paquete `com.nubi.profile`, pero la interfaz y los *snapshots* se publican para los demás módulos, que nunca acceden a `NeurodivergentProfileRepository`. Los eventos se publican mediante `DomainEventPublisher`, implementado con los eventos de aplicación de Spring, y los consumen `@EventListener` dentro del mismo proceso, coherente con el monolito modular definido en 4.6.3. Los eventos que cruzan los contextos son los siguientes:
+
+| Evento | Publicado por | Consumido por | Efecto |
+| :--- | :--- | :--- | :--- |
+| `AccountCreatedEvent` | Perfil y Personalización | Perfil y Personalización | Activa la suscripción freemium. |
+| `SosModeActivatedEvent` | Gestión de Crisis | Autorregulación, Red de Apoyo y Seguimiento | Activa el modo de baja estimulación y alerta a los contactos de confianza. |
+| `EpisodeFinishedEvent` | Gestión de Crisis | Red de Apoyo y Seguimiento | Registra el episodio. |
+| `EpisodeRegisteredEvent` | Red de Apoyo y Seguimiento | Gestión de Crisis | Actualiza las recomendaciones. |
+| `PictogramSelectedEvent` | Comunicación Asistida | Red de Apoyo y Seguimiento | Avisa al cuidador de la necesidad expresada. |
+| `UnderstandingNotConfirmedEvent` | Comunicación Asistida | Red de Apoyo y Seguimiento | Envía una solicitud de ayuda. |
+
+## 4.8. Database Design.
+
+En esta sección se presenta el diseño de la base de datos relacional de NUBI, implementada en PostgreSQL y mapeada desde el API mediante Spring Data JPA. Las decisiones principales son las siguientes:
+
+- **Un esquema por Bounded Context:** los esquemas `profile`, `crisis`, `regulation`, `communication` y `support` reflejan la separación del monolito modular y se declaran en cada entidad con `@Table(schema = "...")`.
+- **Referencias entre contextos sin clave foránea:** una columna que apunta a otro contexto (por ejemplo, `profile_id` en el esquema `crisis`) es un identificador lógico y no tiene *constraint* de clave foránea, de modo que un contexto pueda evolucionar sin depender del esquema de otro. La integridad se garantiza mediante `ProfileContextFacade` y los eventos de dominio. Estas columnas se identifican con la anotación `logical ref` en los diagramas.
+- **Claves primarias:** todas las tablas usan una clave primaria `bigint` generada con `GENERATED BY DEFAULT AS IDENTITY`. La tabla `sensory_profiles` comparte la clave del perfil (`@OneToOne` con `@MapsId`).
+- **Enumeraciones:** se almacenan como `varchar` con `@Enumerated(EnumType.STRING)` y un *constraint* `CHECK` que restringe los valores permitidos.
+- **Objetos de valor:** `DeclaredDiagnosis` se guarda embebido (`@Embedded`) en las columnas de `neurodivergent_profiles`, y el `CalmTimer` en las columnas `timer_*` de `calm_sessions`.
+- **Auditoría:** las tablas cuyas clases heredan de `AuditableEntity` incluyen `created_at` y `updated_at`.
+- **Nomenclatura:** tablas en plural y columnas en `snake_case`, ambas en inglés. Las claves foráneas se nombran `fk_<tabla>_<referencia>`, las restricciones de unicidad `uq_<tabla>_<columna>` y los índices `ix_<tabla>_<columnas>`.
+- **Eliminación:** las tablas hijas de un Aggregate Root usan `ON DELETE CASCADE`, porque no existen sin él.
+
+### 4.8.1. Database Diagrams.
+
+A continuación se presenta el Database Diagram de NUBI, con las tablas de todos los Bounded Contexts, y luego se explica cómo se gestiona cada tabla dentro de su contexto: qué información guarda, con qué otras tablas se relaciona y qué reglas de integridad (*constraints*) aplica. Las líneas punteadas y las columnas marcadas como `logical ref` referencian a otro contexto sin clave foránea.
+
+![DatabaseDiagram.png](images/Chapter-IV/DatabaseDiagram.png)
+
+#### Esquema profile: Perfil y Personalización
+
+Este esquema guarda las cuentas de acceso, los perfiles de los usuarios neurodivergentes, sus cuidadores y contactos de confianza, y todo lo relacionado con planes, instituciones y soporte técnico. Las tablas se gestionan de la siguiente manera:
+
+- **`accounts`:** guarda el acceso de cada cuidador, docente o administrador institucional. El correo (`email`) es único y funciona como identificador de inicio de sesión. Una cuenta creada con Google no tiene `password_hash` y guarda su identificador de Google en `google_subject`, que también es único; una cuenta creada con contraseña sí debe tener `password_hash`. El rol (`role`) solo admite `CAREGIVER`, `TEACHER` e `INSTITUTION_ADMIN`, y la columna `active` permite desactivar una cuenta sin borrarla. `institution_id` es opcional y solo lo tienen los docentes y administradores de una institución.
+- **`institutions`:** registra los colegios y centros de terapia (`institution_type`) que administran los perfiles de sus estudiantes. No depende de ninguna otra tabla; `accounts` y `neurodivergent_profiles` la referencian con una clave foránea opcional.
+- **`subscriptions`:** cada cuenta tiene una sola suscripción (`account_id` único), que se crea en el plan `FREEMIUM` al registrarse. Guarda los límites del plan (`max_profiles` y `max_caregivers_per_profile`, siempre mayores que cero), que la aplicación consulta antes de crear un perfil o invitar a un cuidador. `plan_type` solo admite `FREEMIUM`, `FAMILY_PREMIUM` e `INSTITUTIONAL`, y `ends_at` queda vacío mientras la suscripción no tenga fecha de vencimiento.
+- **`payments`:** registra cada intento de cobro de una suscripción (`subscription_id`). `amount` no puede ser negativo, `status` pasa de `PENDING` a `PAID` o `FAILED`, y `gateway_reference`, único, guarda la referencia que devuelve la pasarela de pagos. `paid_at` solo se completa cuando el pago se confirma.
+- **`support_tickets`:** guarda los reportes de soporte técnico de una cuenta (`account_id`). `status` avanza de `OPEN` a `IN_PROGRESS` y `CLOSED`, y `resolved_at` se completa al cerrar el reporte.
+- **`neurodivergent_profiles`:** es la tabla principal del contexto y guarda la ficha del usuario: datos básicos, necesidad comunicativa y diagnóstico declarado. El diagnóstico va embebido en las columnas `condition_type`, `condition_description`, `diagnosed_by`, `diagnosis_date` y `professional_notes`; si la condición es `OTHER`, `condition_description` es obligatoria. La edad debe ser mayor que cero y `active` permite archivar un perfil sin eliminarlo. `institution_id` es opcional, porque las familias no pertenecen a una institución.
+- **`sensory_profiles`:** guarda el perfil sensorial en una relación uno a uno con el perfil, con el que comparte la clave primaria (`profile_id`). Contiene los tres niveles de sensibilidad (auditiva, visual y táctil, con valores de `LOW` a `VERY_HIGH`) y las tres preferencias de la aplicación (modo de baja estimulación, priorizar visuales y confirmar audio). Se crea con valores por defecto si el cuidador no registra sensibilidades y se reemplaza completo cuando las modifica.
+- **`profile_caregivers`:** resuelve la relación de muchos a muchos entre cuentas y perfiles. Cada fila es un cuidador o una invitación, con su rol (`PRIMARY`, `CAREGIVER` o `THERAPIST`) y su estado (`PENDING`, `ACTIVE` o `REVOKED`). Una invitación nace con solo `invited_email` y `account_id` vacío; al aceptarla se completan `account_id` y `accepted_at`, por eso la unicidad se define sobre `(profile_id, invited_email)`. Un índice sobre `account_id` permite listar los perfiles de una cuenta.
+- **`trusted_contacts`:** guarda los contactos que reciben las alertas del usuario. `priority_order`, mayor que cero y único dentro de cada perfil, define el orden en que se reenvía una alerta cuando un contacto no confirma su recepción.
+
+#### Esquema crisis: Gestión de Crisis (Modo SOS)
+
+Este esquema guarda la guía de actuación que sigue el cuidador durante una crisis, las sesiones SOS y las recomendaciones personalizadas. Las guías son datos maestros compartidos por todos los usuarios; las sesiones y las recomendaciones pertenecen a cada perfil, al que referencian con un identificador lógico hacia `profile.neurodivergent_profiles`, sin clave foránea. Las tablas se gestionan de la siguiente manera:
+
+- **`action_guides`:** es el catálogo de guías de actuación. Cada guía tiene una `version` y un indicador `active`; al iniciar una sesión SOS se asigna la guía vigente. Las sesiones SOS solo leen las guías; no las modifican.
+- **`containment_steps`:** guarda los pasos de una guía (`guide_id`). `step_order` es mayor que cero y único dentro de la guía, de modo que los pasos se muestran de uno en uno y en orden. `mandatory` indica que el paso exige confirmación explícita antes de omitirse, y `related_trigger` permite priorizar los pasos según la sensibilidad más alta del usuario.
+- **`alternative_techniques`:** guarda las técnicas alternativas que se sugieren cuando un paso no funciona (`step_id`). Se eliminan junto con el paso al que pertenecen.
+- **`sos_sessions`:** registra cada sesión guiada, en curso o terminada. Referencia al perfil y a la cuenta del cuidador con identificadores lógicos y a la guía con una clave foránea. `status` puede ser `IN_PROGRESS`, `FINISHED` o `FINISHED_EARLY`; `current_step_order` permite retomar la guía si el cuidador la abandona; las intensidades inicial y final usan la escala `CALM`, `RESTLESS`, `ALTERED` y `CRISIS`; y `finished_at` no puede ser anterior a `started_at`. Un índice único parcial sobre `profile_id`, donde `status = 'IN_PROGRESS'`, garantiza una sola sesión activa por perfil.
+- **`session_completed_steps`:** registra el avance de una sesión: una fila por cada paso completado u omitido (`skipped`). Es única por `(session_id, step_id)` y se elimina junto con la sesión.
+- **`recommendations`:** guarda las recomendaciones de cada perfil, clasificadas por `topic` (`SENSORY`, `COMMUNICATIONAL` o `BEHAVIORAL`). Se versionan: cuando se genera una nueva versión, se inserta con `outdated = false` y la anterior se marca como `outdated = true`, sin borrarla. Un índice sobre `(profile_id, topic)` soporta el filtro por tópico.
+- **`recommendation_preferences`:** guarda la calificación de utilidad (de 1 a 5) y el indicador de favorito que cada cuidador asigna a una recomendación. Es única por `(recommendation_id, account_id)`, así que volver a calificar la misma recomendación actualiza la fila existente.
+
+#### Esquema regulation: Autorregulación
+
+Este esquema guarda el catálogo de recursos de calma, las sesiones de calma de cada perfil y los recursos que el usuario marcó como favoritos. Las tablas se gestionan de la siguiente manera:
+
+- **`calming_resources`:** es el catálogo de recursos, compartido por todos los usuarios. `resource_type` solo admite `VISUAL`, `AUDITORY`, `GUIDED_BREATHING` y `DRAWING_CANVAS`, y `max_intensity` es mayor que cero. `available_offline` marca los recursos que funcionan sin conexión y `active` permite retirar un recurso sin borrarlo.
+- **`calm_sessions`:** registra cada sesión de calma de un perfil. `resource_id` es una clave foránea opcional, porque la sesión puede abrirse antes de elegir un recurso. Guarda el estado (`ACTIVE`, `PAUSED` o `FINISHED`), la intensidad, si el modo de baja estimulación está activo y si la sesión la inició el Modo SOS (`started_by_sos`). El temporizador va embebido en las columnas `timer_duration_minutes`, `timer_remaining_seconds` y `timer_running`; el tiempo restante nunca es negativo. Que la intensidad no supere `max_intensity` del recurso se valida en el dominio, porque una restricción `CHECK` no puede comparar columnas de dos tablas.
+- **`favorite_resources`:** guarda los recursos que un perfil marcó como favoritos. Es única por `(profile_id, resource_id)`, para que un recurso no se marque dos veces; al desmarcarlo se elimina la fila.
+
+#### Esquema communication: Comunicación Asistida (CAA)
+
+Este esquema guarda el tablero de pictogramas de cada perfil, los mensajes que el usuario envía al seleccionar un pictograma y sus registros de estado de ánimo. Todo cuelga del tablero. Las tablas se gestionan de la siguiente manera:
+
+- **`communication_boards`:** guarda un tablero por perfil (`profile_id` único, con referencia lógica). `max_favorites` es mayor que cero y define cuántos pictogramas pueden marcarse como favoritos; esa regla se valida en el dominio, porque depende de contar filas de otra tabla.
+- **`pictogram_categories`:** guarda las categorías del tablero (`board_id`): `BASIC_NEEDS`, `EMOTIONS`, `ACTIVITIES` y `CUSTOM` para las que crea el cuidador. El nombre es único dentro del tablero y `display_order` define su posición.
+- **`pictograms`:** guarda cada pictograma con su etiqueta (`label`), la frase que se reproduce en voz alta (`phrase`), su imagen y un audio opcional. Pertenece a un tablero y a una categoría; mover un pictograma de categoría solo actualiza `category_id`. `favorite` alimenta el acceso rápido, apoyado en un índice sobre `(board_id, favorite)`, y `custom` distingue los pictogramas creados por el cuidador de los básicos.
+- **`pictogram_selections`:** registra cada mensaje que el usuario envía al seleccionar un pictograma. `selection_status` avanza de `PENDING_DELIVERY` a `DELIVERED` y luego a `UNDERSTOOD` o `NOT_UNDERSTOOD`, según la confirmación del acompañante, y `understood_at` no puede ser anterior a `selected_at`.- **`mood_check_ins`:** registra el estado de ánimo del usuario con la escala de cuatro niveles (`CALM`, `RESTLESS`, `ALTERED` y `CRISIS`). Solo se insertan filas nuevas, y un índice sobre `(board_id, checked_at)` permite consultar el historial.
+
+#### Esquema support: Red de Apoyo y Seguimiento
+
+Este esquema guarda las solicitudes de ayuda y su entrega a los contactos de confianza, y el historial de episodios con sus notas, estrategias y reportes. Las tablas se gestionan de la siguiente manera:
+
+- **`help_requests`:** guarda cada solicitud de ayuda. `origin` indica si la envió el usuario (`MANUAL`), la generó el Modo SOS (`SOS_MODE`) o el acompañante no confirmó la comprensión de un pictograma (`AAC_NOT_UNDERSTOOD`). `status` avanza de `PENDING` a `CONFIRMED`, `CANCELLED` o `ESCALATED`, y `confirmed_at` es obligatoria cuando la solicitud está confirmada. Una solicitud confirmada ya no puede cancelarse, regla que se valida en el dominio.
+- **`alert_deliveries`:** registra una fila por cada contacto y canal (`PUSH`, `SMS` o `WHATSAPP`) al que se envió la alerta de una solicitud, con su estado de entrega (`SENT`, `DELIVERED` o `FAILED`). `contact_id` referencia de forma lógica a `profile.trusted_contacts`, y las filas se eliminan junto con la solicitud.
+- **`episode_records`:** guarda el registro de cada episodio, que se crea automáticamente cuando termina una sesión SOS. `sos_session_id` es único, para que un episodio no se registre dos veces si el evento se procesa de nuevo. `status` es `FINISHED` o `FINISHED_EARLY`, la duración no es negativa y `completed_steps` no supera a `total_steps`. Un índice sobre `(profile_id, started_at)` soporta el filtro del historial por rango de fechas.
+- **`episode_notes`:** guarda las notas manuales que el cuidador agrega a un episodio (`episode_id`). El texto no puede estar vacío y las notas se eliminan junto con el episodio.
+- **`effective_strategies`:** guarda las estrategias que el cuidador marcó como efectivas después de un episodio, con la cuenta que la marcó y la fecha.
+- **`episode_reports`:** guarda los reportes que el cuidador comparte con el profesional de salud. Solo almacena el periodo (`period_from` y `period_to`, donde el final no puede ser anterior al inicio) y el correo del destinatario; el contenido no se copia, sino que se calcula a partir de los episodios de ese rango.
