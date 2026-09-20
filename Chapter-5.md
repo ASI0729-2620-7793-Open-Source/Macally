@@ -348,10 +348,10 @@ El Sprint Planning 1 definió el alcance de la primera versión del Landing Page
 |---|---|
 | Sprint # | Sprint 1 |
 | **Sprint Planning Background** | |
-| Date | `YYYY-MM-DD` |
-| Time | `HH:MM AM/PM` |
-| Location | `Descripción de la ubicación de la reunión (virtual o física)` |
-| Prepared By | `Apellidos, Nombres` |
+| Date | 2026-09-12 |
+| Time | 10:00 AM |
+| Location | Virtual (Google Meet) |
+| Prepared By | Lopez Torres, Leonardo Gabriel |
 | Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel `(confirmar asistentes)` |
 | Sprint 0 Review Summary | No aplica: es el primer Sprint del proyecto. |
 | Sprint 0 Retrospective Summary | No aplica: es el primer Sprint del proyecto. |
@@ -366,11 +366,11 @@ Los aspectos considerados en el Sprint 1 corresponden a las secciones del Landin
 
 | Team Member (Last Name, First Name) | GitHub Username | Header, Hero & Navigation | Feature sections (LS-01 a LS-05) | Plans, FAQ & Testimonials | Team & Contact | i18n, Accessibility & Legal | Deployment |
 |---|---|---|---|---|---|---|---|
-| Lopez Torres, Leonardo Gabriel | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
-| Diaz Yurivilca, Sofia | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
-| Payano Puchuri, Joan Fabricio | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
-| Ruiz Villegas, Yngrid Nahir | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
-| Diaz Caruzo, Edgard Daniel | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Lopez Torres, Leonardo Gabriel | [Deiko-138](https://github.com/Deiko-138) | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Diaz Yurivilca, Sofia | [u20241a195-cmd](https://github.com/u20241a195-cmd) | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Payano Puchuri, Joan Fabricio | [joanfpp2-ai](https://github.com/joanfpp2-ai) | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Ruiz Villegas, Yngrid Nahir | [nahiryn8](https://github.com/nahiryn8) | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Diaz Caruzo, Edgard Daniel | [Dan-trax](https://github.com/Dan-trax) | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
 
 #### 5.2.1.3. Sprint Backlog 1
 
@@ -430,6 +430,31 @@ En el Sprint 1 se desplegó el Landing Page. Los pasos realizados fueron: (1) cr
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
-`Explicar cómo se desarrollaron las actividades de implementación del Sprint 1 y qué aportó cada integrante (todos deben tener participación en el Landing Page).`
+La colaboración del equipo durante el Sprint 1 se evidencia con los analíticos de GitHub Insights del repositorio del informe [ASI0729-2620-7793-Open-Source/Macally](https://github.com/ASI0729-2620-7793-Open-Source/Macally), donde el equipo documenta el proceso de ingeniería (capítulos I a V) siguiendo GitFlow y Conventional Commits. Los cinco integrantes registran commits en la rama `main`, cada uno con su cuenta de GitHub: Dan-trax (Diaz Caruzo, Edgard Daniel), nahiryn8 (Ruiz Villegas, Yngrid Nahir), u20241a195-cmd (Diaz Yurivilca, Sofia), Deiko-138 (Lopez Torres, Leonardo Gabriel) y joanfpp2-ai (Payano Puchuri, Joan Fabricio).
 
-`Capturas de pantalla de los analíticos de colaboración y commits del repositorio landing-page en GitHub.`
+![configuration (1).png](images/Chapter-V/configuration%20%281%29.png)
+
+*Figura 1. Code frequency del repositorio del informe.* Muestra las líneas agregadas (verde) y eliminadas (rojo) por semana desde fines de agosto de 2026. La actividad se concentra en las semanas del 31 de agosto y del 14 de septiembre: la primera con unas 3,5 mil líneas agregadas y la segunda con cerca de 4 mil agregadas y 4,6 mil eliminadas, lo que refleja la redacción de los capítulos y su posterior revisión y corrección.
+
+![configuration (2).png](images/Chapter-V/configuration%20%282%29.png)
+
+*Figura 2. Commits por semana del repositorio del informe.* Muestra el número de commits semanales durante el último año. El repositorio no tiene actividad hasta fines de agosto de 2026 y, a partir de entonces, crece semana a semana: aproximadamente 4, 20, 21 y 51 commits en las últimas cuatro semanas, con el pico en la semana previa a la entrega AV1.
+
+![configuration (3).png](images/Chapter-V/configuration%20%283%29.png)
+
+*Figura 3. Pulse del 12 al 19 de septiembre de 2026.* Resume la última semana antes de la entrega: 5 autores enviaron 52 commits a `main` y a todas las ramas, se modificaron 148 archivos en `main` con 2978 líneas agregadas y 440 eliminadas, y el gráfico Top committers muestra que los cinco integrantes aportaron en la semana. No hay pull requests ni issues abiertos o cerrados en el período, porque el equipo integra el trabajo de las ramas `feature/*` mediante merges a `develop` y `main`.
+
+![configuration (4).png](images/Chapter-V/configuration%20%284%29.png)
+
+*Figura 4. Contributors (últimos 3 meses, commits a `main` sin contar merges).* Muestra la evolución semanal del repositorio y una gráfica por contribuidor:
+
+| Puesto | Cuenta de GitHub | Integrante | Commits | Líneas |
+|---|---|---|---|---|
+| #1 | Dan-trax | Diaz Caruzo, Edgard Daniel | 34 | +649 / −84 |
+| #2 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | 21 | +3828 / −389 |
+| #3 | u20241a195-cmd | Diaz Yurivilca, Sofia | 19 | +1832 / −944 |
+| #4 | Deiko-138 | Lopez Torres, Leonardo Gabriel | 17 | +1376 / −3387 |
+| #5 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | 5 | +666 / −70 |
+
+Los cinco integrantes tienen commits en `main`, con distinto volumen y en distintas semanas según los capítulos y aspectos que lideró cada uno.
+
