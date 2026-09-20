@@ -77,7 +77,7 @@ En el Impact Mapping de NUBI, el equipo elaboró el mapa en UXPressia a partir d
 
 A partir de estos impactos se definieron los Deliverables principales de NUBI, como el Modo SOS, las guías paso a paso, la personalización del perfil, el historial de episodios, las recomendaciones, la interfaz de autorregulación, el modo de baja estimulación, el temporizador de calma, el tablero CAA y el sistema de solicitud de ayuda. Estos entregables se vinculan con las User Stories de las cinco épicas del proyecto, permitiendo mantener una relación clara entre el objetivo de negocio, las necesidades de los usuarios y las funcionalidades que serán desarrolladas.
 
-![Impact Mapping](images/Chapter-III/Impact-Mapping.png)
+![ImpactMapping.png](images/Chapter-III/ImpactMapping.png)
 
 ## 3.3. Product Backlog
 
