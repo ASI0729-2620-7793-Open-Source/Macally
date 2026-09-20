@@ -33,8 +33,11 @@ Las herramientas seleccionadas permiten que los integrantes del equipo trabajen 
 | API Documentation | OpenAPI / Swagger      | Documentar y visualizar los endpoints expuestos por el RESTful API.                                                                               | https://swagger.io/ |
 | Source Code Management | Git                    | Gestionar el historial de cambios realizado sobre el código fuente de los diferentes productos.                                                   | https://git-scm.com/ |
 | Source Code Management | GitHub                 | Alojar los repositorios del Landing Page, Frontend Web Application y RESTful Web Services, facilitando la colaboración del equipo.                | https://github.com/ |
+| Software Architecture | Mermaid                | Elaborar como código los diagramas de Event Storming y de arquitectura de software (C4 Model).                                                    | https://mermaid.js.org/ |
+| Software Deployment | GitHub Pages           | Publicar el Landing Page como sitio web estático a partir del repositorio.                                                                        | https://pages.github.com/ |
+| Communication & Video | Microsoft Stream       | Publicar los videos de entrevistas, prototipos y exposiciones del proyecto.                                                                       | https://www.microsoft.com/microsoft-365/microsoft-stream |
 
-La selección de estas herramientas responde a los lineamientos tecnológicos establecidos para el proyecto y permite mantener un entorno de trabajo común entre los integrantes del equipo. Git y GitHub permiten gestionar los cambios realizados durante el desarrollo, mientras que Trello facilita la organización del Product Backlog. UXPressia y Figma son utilizados para la elaboración de los artefactos UX/UI, y Visual Studio Code constituye el entorno principal para la edición del código fuente.
+La selección de estas herramientas responde a los lineamientos tecnológicos establecidos para el proyecto y permite mantener un entorno de trabajo común entre los integrantes del equipo. Git y GitHub permiten gestionar los cambios realizados durante el desarrollo, mientras que Trello facilita la organización del Product Backlog. UXPressia y Figma son utilizados para la elaboración de los artefactos UX/UI, y WebStorm constituye el entorno principal para la edición del código fuente.
 
 En cuanto a la implementación, el Landing Page se desarrolla utilizando HTML5, CSS3 y JavaScript; la Frontend Web Application utiliza Angular, TypeScript y Angular Material; mientras que los RESTful Web Services se implementan con Java, Spring Boot y Spring Data JPA. Finalmente, la documentación de los servicios se realiza mediante OpenAPI y Swagger.
 
@@ -46,9 +49,10 @@ Los repositorios correspondientes a los productos de software de NUBI son los si
 
 | Producto                 | Repositorio                |
 |--------------------------|----------------------------|
-| Landing Page             | [COLOCAR URL DEL REPOSITORIO] |
+| Landing Page             | https://github.com/ASI0729-2620-7793-Open-Source/landing-page |
 | Frontend Web Application | `no aplica`     |
 | RESTful Web Services     | `no aplica`     |
+| Project Report (documentación) | https://github.com/ASI0729-2620-7793-Open-Source/Macally |
 
 En el caso de los RESTful Web Services, el repositorio contendrá tanto el código fuente de los servicios como los archivos correspondientes a las pruebas unitarias y de integración.
 
@@ -234,11 +238,11 @@ La aplicación de estas convenciones permite que el código fuente de NUBI mante
 
 La configuración de despliegue de NUBI tiene como objetivo establecer el proceso mediante el cual los diferentes productos de software desarrollados por el equipo pasan desde sus respectivos repositorios de código fuente hasta un entorno accesible para los usuarios.
 
-La solución está conformada por tres productos principales: el **Landing Page**, la **Frontend Web Application** y los **RESTful Web Services**. Cada producto mantiene un proceso de despliegue independiente debido a las diferentes tecnologías y requerimientos de ejecución que posee.
+La solución está conformada por tres productos principales: el **Landing Page**, la **Frontend Web Application** y los **RESTful Web Services**. Cada producto mantiene un proceso de despliegue independiente debido a las diferentes tecnologías y requisitos de ejecución que posee.
 
 | Producto | Tecnologías principales | Rama de despliegue | Plataforma       |
 |---|---|---|------------------|
-| Landing Page | HTML5, CSS3 y JavaScript | `main` | [COLOCAR PLATAFORMA] |
+| Landing Page | HTML5, CSS3 y JavaScript | `main` | GitHub Pages |
 | Frontend Web Application | Angular y TypeScript | `main` | `No aplica`      |
 | RESTful Web Services | Java, Spring Boot y Spring Data JPA | `main` |`No aplica`|
 
@@ -257,9 +261,11 @@ El proceso considerado es el siguiente:
 
 La configuración debe garantizar que los recursos utilizados por el Landing Page se carguen correctamente y que la interfaz conserve el Responsive Web Design definido para NUBI tanto en Desktop como en Mobile Web Browser.
 
-La URL correspondiente al Landing Page desplegado será:
+El Landing Page se publica con **GitHub Pages**, configurado para servir la carpeta `/docs` de la rama de despliegue del repositorio. Cada cambio integrado en esa rama actualiza el sitio publicado sin pasos adicionales de compilación.
 
-**Landing Page URL:** [COLOCAR URL DE PRODUCCIÓN]
+La URL correspondiente al Landing Page desplegado es:
+
+**Landing Page URL:** https://asi0729-2620-7793-open-source.github.io/landing-page/
 
 #### Frontend Web Application Deployment
 
@@ -279,7 +285,7 @@ La dirección de los RESTful Web Services debe mantenerse como una configuració
 
 La URL correspondiente a la Frontend Web Application será:
 
-**Frontend Web Application URL:** [COLOCAR URL DE PRODUCCIÓN]
+**Frontend Web Application URL:** `pendiente: se definirá al desplegar la Web Application (Sprint 2)`
 
 #### RESTful Web Services Deployment
 
@@ -307,7 +313,7 @@ Los Web Services desplegados deben proporcionar soporte a los principales domini
 
 La URL base correspondiente a los RESTful Web Services será:
 
-**RESTful Web Services URL:** [COLOCAR URL DE PRODUCCIÓN]
+**RESTful Web Services URL:** `pendiente: se definirá al desplegar los Web Services`
 
 #### Deployment Environments
 
@@ -328,3 +334,102 @@ De manera general, el flujo de despliegue utilizado por NUBI sigue la siguiente 
 
 Esta configuración permite mantener separados los procesos de desarrollo y producción, conservar la trazabilidad de las versiones desplegadas y asegurar que el Landing Page, la Frontend Web Application y los RESTful Web Services puedan evolucionar de manera controlada durante el ciclo de vida de NUBI.
 
+## 5.2. Landing Page, Services & Applications Implementation
+
+En esta sección se documenta, Sprint a Sprint, la implementación del Landing Page, de los RESTful Web Services y de la Frontend Web Application de NUBI. Conforme al alcance de la entrega AV1, se documenta el **Sprint 1**, cuyo producto es la primera versión desplegada del Landing Page. Los RESTful Web Services y la Frontend Web Application se iniciarán en los siguientes Sprints, según el orden del Product Backlog (sección 3.3).
+
+### 5.2.1. Sprint 1
+
+#### 5.2.1.1. Sprint Planning 1
+
+El Sprint Planning 1 definió el alcance de la primera versión del Landing Page a partir de las Landing Page Stories LS-01 a LS-05 del Product Backlog, que encabezan la lista por ser el primer punto de contacto del visitante con la propuesta de valor de Nubi.
+
+| Campo | Detalle |
+|---|---|
+| Sprint # | Sprint 1 |
+| **Sprint Planning Background** | |
+| Date | `YYYY-MM-DD` |
+| Time | `HH:MM AM/PM` |
+| Location | `Descripción de la ubicación de la reunión (virtual o física)` |
+| Prepared By | `Apellidos, Nombres` |
+| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel `(confirmar asistentes)` |
+| Sprint 0 Review Summary | No aplica: es el primer Sprint del proyecto. |
+| Sprint 0 Retrospective Summary | No aplica: es el primer Sprint del proyecto. |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | *Our focus is on presenting the value proposition of Nubi through a first responsive version of the Landing Page. We believe it delivers a clear understanding of SOS Mode, self-regulation, the AAC board and the support network to caregivers, educators and therapists who visit the site. This will be confirmed when a visitor can reach each of the five feature sections (LS-01 to LS-05) and the plans section from the navigation, in Desktop and Mobile web browsers, in English or Spanish.* |
+| Sprint 1 Velocity | `Story Points que el equipo acepta para el Sprint 1` |
+| Sum of Story Points | 10 (LS-01: 2, LS-02: 2, LS-03: 2, LS-04: 2, LS-05: 2) |
+
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+Los aspectos considerados en el Sprint 1 corresponden a las secciones del Landing Page y a los aspectos transversales de la implementación. La Leadership-and-Collaboration Matrix indica quién lidera (L) y quién colabora (C) en cada aspecto; esta organización se refleja en la asignación de tareas del Sprint Backlog 1.
+
+| Team Member (Last Name, First Name) | GitHub Username | Header, Hero & Navigation | Feature sections (LS-01 a LS-05) | Plans, FAQ & Testimonials | Team & Contact | i18n, Accessibility & Legal | Deployment |
+|---|---|---|---|---|---|---|---|
+| Lopez Torres, Leonardo Gabriel | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Diaz Yurivilca, Sofia | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Payano Puchuri, Joan Fabricio | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Ruiz Villegas, Yngrid Nahir | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Diaz Caruzo, Edgard Daniel | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+
+#### 5.2.1.3. Sprint Backlog 1
+
+El objetivo del Sprint 1 es entregar y desplegar la primera versión del Landing Page, con las cinco secciones de valor (LS-01 a LS-05), los planes, las preguntas frecuentes, la presentación del equipo, el formulario de contacto y los enlaces legales, en versión responsive y en dos idiomas.
+
+**URL del Sprint Backlog 1 en Trello:** https://trello.com/invite/b/6aaf3736328354ea787a2cb1/ATTIb96bd525bbc68067cd6361fef60ede0173D2F932/sprint-1
+
+![Sprint 1.png](images/Chapter-V/Sprint%201.png)
+
+| Sprint # | Sprint 1 | | | | | | |
+|---|---|---|---|---|---|---|---|
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| LS-01 | Conocer la personalización de perfiles en la landing page | T-01 | Sección Perfil y Personalización | Implementar la sección con la tarjeta de ejemplo de perfil (diagnóstico, sensibilidades y cuidadores vinculados). | `h` | `nombre` | Done |
+| LS-01 | Conocer la personalización de perfiles en la landing page | T-02 | Adaptación a móvil de la sección | Ajustar la sección a pantallas pequeñas mediante Responsive Web Design. | `h` | `nombre` | Done |
+| LS-02 | Conocer el Modo SOS en la landing page | T-03 | Sección Modo SOS | Implementar la sección con la guía de cuatro pasos del Modo SOS. | `h` | `nombre` | Done |
+| LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Preparar el botón «Crear cuenta y activarlo» para redirigir a la vista de registro de la Web Application cuando esta se despliegue. | `h` | `nombre` | In-Process |
+| LS-03 | Conocer las herramientas de autorregulación en la landing page | T-05 | Sección Autorregulación | Implementar el panel de ejemplo con estímulos visuales y auditivos, intensidad y temporizador de calma. | `h` | `nombre` | Done |
+| LS-04 | Conocer el tablero CAA en la landing page | T-06 | Sección Comunicación CAA | Implementar la cuadrícula de pictogramas de ejemplo. | `h` | `nombre` | Done |
+| LS-04 | Conocer el tablero CAA en la landing page | T-07 | Preguntas frecuentes | Implementar las preguntas frecuentes como acordeón accesible con respuestas. | `h` | `nombre` | Done |
+| LS-05 | Conocer la red de apoyo y seguimiento en la landing page | T-08 | Sección Seguimiento y recomendaciones | Implementar la sección y su llamado a la acción hacia los planes. | `h` | `nombre` | Done |
+| — | Tarea general | T-09 | Header, Hero y Cómo funciona | Implementar la navegación, el menú móvil, el Hero, el problema y los cuatro pasos de uso. | `h` | `nombre` | Done |
+| — | Tarea general | T-10 | Planes, testimonios, beneficios, equipo y contacto | Implementar las secciones de conversión y confianza, y el footer. | `h` | `nombre` | Done |
+| — | Tarea general | T-11 | Internacionalización | Implementar los idiomas English (en_US, predeterminado) y Latin American Spanish (es_419) con selector de idioma. | `h` | `nombre` | Done |
+| — | Tarea general | T-12 | Accesibilidad | Agregar atributos ARIA, enlace para saltar al contenido, foco visible, navegación por teclado y respeto a `prefers-reduced-motion`. | `h` | `nombre` | Done |
+| — | Tarea general | T-13 | Términos de uso | Redactar y publicar los términos de uso, la política de privacidad y el aviso de accesibilidad, enlazados desde el footer. | `h` | `nombre` | Done |
+| — | Tarea general | T-14 | Despliegue | Configurar GitHub Pages para publicar el Landing Page desde el repositorio. | `h` | `nombre` | Done |
+
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+En el Sprint 1 se implementó la primera versión del Landing Page como sitio estático con HTML5, CSS3 y JavaScript, aplicando el Design System de la sección 4.1 (paleta de colores y tipografía Bricolage Grotesque) y las decisiones de Arquitectura de Información de la sección 4.2. La tabla registra los commits del repositorio.
+
+| Repository | Branch        | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---------------|---|---|---|---|
+| ASI0729-2620-7793-Open-Source/landing-page | `main`      | 8da4692 | chore: initial commit | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `main`        | e2de4c4 | docs: add readme | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `feature/...` | `Commit Id` | `feat(landing): ...` | `cuerpo del commit` | `dd/mm/aaaa` |
+
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
+El Landing Page desplegado presenta, en una sola página, la propuesta de valor de Nubi (Hero, problema y cómo funciona), las cinco secciones de valor asociadas a los Bounded Contexts (Perfil y Personalización, Modo SOS, Autorregulación, Comunicación CAA y Red de Apoyo y Seguimiento), los planes Free, Premium e Instituciones, las preguntas frecuentes, la presentación del equipo, el formulario de contacto y el footer con los enlaces legales. La navegación superior usa las mismas etiquetas del Labeling System (sección 4.2.2) y, en pantallas pequeñas, se reemplaza por un menú desplegable. El sitio está disponible en English (predeterminado) y Latin American Spanish.
+
+**Landing Page URL:** https://asi0729-2620-7793-open-source.github.io/landing-page/
+
+![landing-page.png](images/Chapter-V/landing-page.png)
+
+**Video de navegación del Sprint 1:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQAcNQac2pIBTrMOUWcpu-JXAZ2SAAAYuD2OFImW5C6rFW0?e=9M3w7r
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+En el Sprint 1 no se implementan RESTful Web Services: el alcance se limita al Landing Page. La documentación de endpoints con OpenAPI (Swagger) se presentará a partir del Sprint en que se implementen los servicios, según las Technical Stories TS-01 a TS-05 del Product Backlog.
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+En el Sprint 1 se desplegó el Landing Page. Los pasos realizados fueron: (1) crear el repositorio `landing-page` en la organización de GitHub del equipo; (2) subir el código del sitio en la carpeta `/docs`; (3) activar GitHub Pages sobre esa carpeta; y (4) verificar que el sitio sea accesible mediante la URL pública y que sus imágenes y estilos se carguen correctamente.
+
+![github_configuration_pages.png](images/Chapter-V/github_configuration_pages.png)
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint
+
+`Explicar cómo se desarrollaron las actividades de implementación del Sprint 1 y qué aportó cada integrante (todos deben tener participación en el Landing Page).`
+
+`Capturas de pantalla de los analíticos de colaboración y commits del repositorio landing-page en GitHub.`
