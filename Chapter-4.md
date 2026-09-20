@@ -614,7 +614,7 @@ El wireframe y el mock-up se construyeron directamente en HTML/CSS, tomando como
 
 El diseño está disponible en el Figma "NUBI": https://www.figma.com/design/WGr7DojMDH0m122pRirLJw/NUBI?node-id=0-1&t=DMfnxyCv5S7KKeCJ-1
 
-El código fuente se encuentra en [`landing-page/`](../landing-page/index.html) del repositorio.
+El código fuente se encuentra en el repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page) y el sitio desplegado está disponible en https://asi0729-2620-7793-open-source.github.io/landing-page/.
 
 ### 4.3.1 Landing Page Wireframe
 
@@ -988,7 +988,21 @@ Pantalla de foco único: un encabezado con el título, el estímulo con el que s
 
 ### 4.4.2 Web Applications Wireflow Diagrams
 
+Los Wireflow Diagrams combinan los wireframes de la sección 4.4.1 con las transiciones entre pantallas, de modo que cada cambio de estado se representa agregando un paso con el wireframe de la nueva pantalla. Se presentan cinco wireflows, uno por cada User goal principal de los dos User Personas.
+
 ![Wireflow.png](images/Chapter-IV/Wireflow.png)
+
+*Ilustración — Web Application Wireflow Diagrams de Nubi*
+
+| # | User Persona | User goal | Flujo |
+|---|---|---|---|
+| 1 | Cuidador primario | Activar el Modo SOS para el perfil correcto, seguir la guía paso a paso y cerrar el episodio dejando el registro en el historial. | Modo SOS: pantalla de activación → Paso 5 de 6: calma y respiración → Resumen del episodio. |
+| 2 | Usuario neurodivergente | Elegir un estímulo de calma, ajustar su intensidad y usar el temporizador de calma. | Galería de estímulos → Estímulo en uso (burbujas flotantes) → Temporizador de calma. |
+| 3 | Usuario neurodivergente y cuidador primario | Comunicar una necesidad con un pictograma y que el cuidador reciba el aviso. | Configurar tablero CAA → Panel de inicio del cuidador con la necesidad comunicada → Tablero CAA del usuario con la confirmación «Le avisamos a María que Diana necesita: Tengo sed». |
+| 4 | Usuario neurodivergente y cuidador primario | El mismo objetivo del flujo 3 usando la variante del tablero con íconos. | Configurar tablero CAA (íconos) → Panel de inicio del cuidador (variante 2) → Tablero CAA del usuario (íconos). |
+| 5 | Cuidador primario | Crear el perfil del usuario, invitar a otros cuidadores y revisar las sensibilidades registradas. | Crear nuevo perfil → Cuidadores asociados e invitación → Perfil de usuario: pestaña Sensibilidades. |
+
+En los wireflows 1 y 2 el cuidador o el usuario recorre pantallas de foco único: el Modo SOS avanza en una secuencia lineal y termina en un resumen que alimenta el historial de episodios, mientras que la autorregulación pasa de una galería en cuadrícula a un estímulo en uso y de ahí al temporizador. En los wireflows 3 y 4 la selección de un pictograma genera dos efectos simultáneos: el usuario recibe una confirmación en su tablero y el cuidador ve la necesidad en su panel de inicio, lo que enlaza los Bounded Contexts de Comunicación Asistida y Red de Apoyo y Seguimiento. El wireflow 5 muestra el recorrido de configuración del perfil, con el paso a los cuidadores asociados como acción secundaria.
 
 ### 4.4.3 Web Applications Mock-ups
 
@@ -1119,9 +1133,34 @@ Temporizador de calma: cuenta regresiva circular (03:47 restantes de un total de
 
 ### 4.4.4 Web Applications User Flow Diagrams
 
+El User Flow Diagram integra los flujos de los dos User Personas en un único diagrama con tres carriles: **Cuidador**, **Sistema Nubi** y **Usuario neurodivergente**. Es consistente con los wireflows de la sección 4.4.2 y distingue la ruta esperada (happy path, en línea continua) de las rutas alternativas (unhappy paths, en línea discontinua roja).
+
 ![UserFlow.png](images/Chapter-IV/UserFlow.png)
 
+*Ilustración — Web Application User Flow Diagram de Nubi*
+
+**User goal del cuidador:** acompañar al usuario a su cargo durante una crisis y mantener actualizada su información. El cuidador inicia sesión y, si tiene más de un perfil asociado, cambia de perfil con el selector persistente sin cerrar sesión. Desde el panel de inicio, el sistema ramifica en cinco áreas: Gestión de Crisis (Modo SOS), Comunicación Asistida, Autorregulación, Perfil y Personalización, y Red de Apoyo y Seguimiento.
+
+**User goal del usuario neurodivergente:** recuperar la calma y comunicar una necesidad sin depender del habla. Puede abrir el tablero CAA, filtrar por categoría y seleccionar un pictograma, o entrar a Autocuidado, filtrar el tipo de estímulo, ajustar la intensidad y terminar la sesión para volver a la galería.
+
+**Rutas alternativas y condiciones:**
+
+| Decisión | Ruta esperada | Ruta alternativa |
+|---|---|---|
+| ¿Es una emergencia médica? (Modo SOS) | No: se muestra la guía paso a paso. | Sí: el sistema indica llamar al servicio de emergencias local y el flujo termina. |
+| ¿Completó los 6 pasos? | Sí: se muestra el resumen del episodio (duración, intensidad, detonante y checklist) y regresa al panel de inicio. | No: el cuidador continúa con la guía o finaliza el episodio de forma anticipada. |
+| ¿Crea un nuevo perfil o edita uno existente? | Crear: completa los pasos 1 a 3 (datos básicos, diagnóstico y sensibilidades). Editar: abre las pestañas del perfil. | — |
+| ¿Todos los campos obligatorios están completos? | Sí: se guarda el perfil. | No: el sistema resalta los campos faltantes y regresa al paso correspondiente. |
+| ¿Confirma recepción o ve el tablero completo? | Confirmar recepción: el sistema notifica al usuario. Ver tablero completo: redirige al tablero CAA. | — |
+| ¿Activa el modo de baja estimulación? | Sí: reduce el brillo y detiene las animaciones. | No: mantiene la interfaz estándar. |
+| ¿Usa el temporizador de calma? | Sí: selecciona 3, 5 o 10 minutos y pausa o reanuda la cuenta regresiva. | No: continúa con el estímulo hasta terminar la sesión. |
+
 ## 4.5. Web Applications Prototyping.
+
+Los prototipos de la Web Application simulan la interacción y la navegación de los User Flows de la sección 4.4.4, con las mismas pantallas de los mock-ups de la sección 4.4.3. Los criterios de interacción que guían el prototipo se derivan de la Arquitectura de Información (sección 4.2): la barra lateral persistente mantiene visible el acceso directo al Modo SOS (sistema de navegación global); el Modo SOS usa una navegación lineal guiada de Siguiente y Atrás; la galería de estímulos y el tablero CAA usan selección directa dentro de una cuadrícula, con retroalimentación inmediata mediante un aviso confirmatorio; y las vistas de mayor profundidad usan migas de pan para volver al nivel anterior. Estas decisiones buscan que el usuario alcance la ayuda inmediata en el menor número de acciones posible, incluso durante una crisis.
+
+El siguiente video muestra y explica los principales flujos de interacción cubiertos por el prototipo de la Web Application.
+
 
 |![prototype.png](images/Chapter-IV/prototype.png)                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1139,11 +1178,11 @@ Como resultado se confirmaron **cinco Bounded Contexts**, que corresponden a las
 
 | Bounded Context | Responsabilidad | Épicas |
 | :--- | :--- | :--- |
-| Perfil y Personalización | Cuenta, perfil del usuario, contactos de confianza, suscripción e institución | EP01, EP02, EP03, EP11, EP12, EP13, EP14 |
-| Gestión de Crisis (Modo SOS) | Guía paso a paso para el cuidador durante una crisis | EP04, EP10 |
-| Autorregulación | Recursos de calma para el usuario neurodivergente | EP05 |
-| Comunicación Asistida (CAA) | Tablero de pictogramas y salida de voz | EP06 |
-| Red de Apoyo y Seguimiento | Alertas a contactos de confianza e historial de episodios | EP07, EP08, EP09, EP17 |
+| Perfil y Personalización | Cuenta, perfil del usuario, contactos de confianza, suscripción e institución | EPIC-01 |
+| Gestión de Crisis (Modo SOS) | Guía paso a paso para el cuidador durante una crisis | EPIC-02 |
+| Autorregulación | Recursos de calma para el usuario neurodivergente | EPIC-03 |
+| Comunicación Asistida (CAA) | Tablero de pictogramas y salida de voz | EPIC-04 |
+| Red de Apoyo y Seguimiento | Alertas a contactos de confianza e historial de episodios | EPIC-05 |
 
 En los diagramas se mantiene la convención de colores del Event Storming: **naranja** para los Domain Events, **azul** para los Commands, **amarillo** para los Aggregates, **rosado** para los Actors, **morado** para las Policies, **verde** para los Read Models y **gris** para los sistemas externos.
 
@@ -1160,7 +1199,7 @@ Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los u
 - *¿Lo configura el cuidador o el niño?* 
 - El cuidador crea el perfil y registra el diagnóstico, los detonantes y los contactos de confianza. El usuario neurodivergente solo elige sus recursos y pictogramas favoritos.
 - *¿Qué pasa si hay dos cuidadores del mismo niño?* 
-- Un perfil admite varios cuidadores asociados, cada uno con su propia cuenta (US18).
+- Un perfil admite varios cuidadores asociados, cada uno con su propia cuenta (US-06).
 - *¿Se valida el diagnóstico o se declara?* 
 - Se declara. NUBI no valida ni emite diagnósticos, en línea con la restricción definida en la sección 1.2.
 
@@ -1175,11 +1214,11 @@ Conduce al cuidador durante una crisis con una guía de actuación adaptada al p
 **Hotspots resueltos:**
 
 - *¿Quién declara que la crisis terminó?* 
-- El cuidador, con el comando *Finalizar episodio* (US23).
+- El cuidador, con el comando *Finalizar episodio* (US-11).
 - *¿Y si el cuidador abandona la guía a mitad?* 
 - La sesión SOS se conserva en el último paso completado y puede retomarse. El episodio solo se registra al finalizar.
 - *¿Funciona con el celular bloqueado?* 
-- Una aplicación web no puede ejecutarse sobre la pantalla de bloqueo. Se resuelve con un acceso directo al Modo SOS desde la pantalla principal (US24) y con la guía disponible sin conexión (US90).
+- Una aplicación web no puede ejecutarse sobre la pantalla de bloqueo. Se resuelve con un acceso directo al Modo SOS desde la pantalla principal (US-12) y con la guía disponible sin conexión.
 
 #### Autorregulación
 
@@ -1192,7 +1231,7 @@ Ofrece al usuario neurodivergente recursos de calma (respiración guiada, sonido
 **Hotspots resueltos:**
 
 - *¿Cuánto dura una sesión antes de sugerir pedir ayuda?* 
-- Lo define el temporizador de calma configurado por el cuidador (US30). Si el tiempo termina y la sesión sigue abierta, se sugiere enviar una solicitud de ayuda.
+- Lo define el temporizador de calma configurado por el cuidador (US-18). Si el tiempo termina y la sesión sigue abierta, se sugiere enviar una solicitud de ayuda.
 - *¿Y si el usuario no tolera tocar la pantalla?* 
 - Se priorizan recursos que no exigen interacción continua, como el audio y la respiración guiada con temporizador. Queda como pregunta abierta para validar con usuarios.
 
@@ -1209,7 +1248,7 @@ Permite al usuario expresar necesidades con pictogramas, reportar su estado de �
 - *¿Qué pasa si no hay nadie cerca para leer el mensaje?* 
 - Si el acompañante no confirma la comprensión, se envía una solicitud de ayuda a Red de Apoyo y Seguimiento.
 - *¿Cuántos pictogramas caben sin saturar la pantalla?* 
-- El acceso rápido muestra solo los más usados y el resto se organiza por categorías (US35). El número exacto se define en el prototipo.
+- El acceso rápido muestra solo los más usados y el resto se organiza por categorías (US-23). El número exacto se define en el prototipo.
 - *¿Y si el usuario no tolera tocar la pantalla?* 
 - El acompañante puede operar el tablero por el usuario. Queda como pregunta abierta.
 
@@ -1255,7 +1294,7 @@ El diagrama de contexto muestra a NUBI como un solo sistema, rodeado de las pers
 
 El **usuario neurodivergente** usa NUBI para calmarse, comunicarse con pictogramas y pedir ayuda. El **cuidador** y el **docente** configuran el perfil y usan el Modo SOS durante una crisis, y el **administrador institucional** gestiona los perfiles de estudiantes del plan institucional. El **contacto de confianza** y el **profesional de salud** no usan la aplicación directamente: el primero recibe las alertas y el segundo recibe los reportes de episodios que comparte el cuidador.
 
-NUBI se apoya en cuatro sistemas externos: **Google OAuth** para el inicio de sesión (US04), una **pasarela de pagos** para el cobro de suscripciones (US61), un **servicio de notificaciones push** para alertas y recordatorios, y **SMS / WhatsApp** como canal de alerta. Estos dos últimos se identificaron en el Big Picture Event Storming.
+NUBI se apoya en cuatro sistemas externos: **Google OAuth** para el inicio de sesión, una **pasarela de pagos** para el cobro de suscripciones, un **servicio de notificaciones push** para alertas y recordatorios, y **SMS / WhatsApp** como canal de alerta. Estos dos últimos se identificaron en el Big Picture Event Storming.
 
 ### 4.6.3. Software Architecture Container Diagrams
 
@@ -1265,9 +1304,9 @@ El diagrama de contenedores muestra las piezas que se despliegan por separado, l
 
 *Ilustración — Software Architecture Container Diagram de NUBI*
 
-NUBI se compone de cinco contenedores. La **Landing Page** (HTML5, CSS3 y JavaScript) presenta el producto y redirige a la Web Application mediante sus call-to-action. La **Web Application** (Angular y Angular Material) concentra la experiencia del usuario neurodivergente y del cuidador, con i18n en en_US y es_419 y atributos ARIA. El **almacenamiento local** del navegador guarda la guía SOS y los recursos de calma para el modo offline básico (US90), un requisito que surgió en las entrevistas. El **RESTful API** (Java, Spring Boot y Spring Data JPA) contiene la lógica de negocio, usa JWT para la autenticación y se documenta con OpenAPI. La **base de datos** es PostgreSQL, administrada con pgAdmin.
+NUBI se compone de cinco contenedores. La **Landing Page** (HTML5, CSS3 y JavaScript) presenta el producto y redirige a la Web Application mediante sus call-to-action. La **Web Application** (Angular y Angular Material) concentra la experiencia del usuario neurodivergente y del cuidador, con i18n en en_US y es_419 y atributos ARIA. El **almacenamiento local** del navegador guarda la guía SOS y los recursos de calma para el modo offline básico, un requisito que surgió en las entrevistas. El **RESTful API** (Java, Spring Boot y Spring Data JPA) contiene la lógica de negocio, usa JWT para la autenticación y se documenta con OpenAPI. La **base de datos** es PostgreSQL, administrada con pgAdmin.
 
-El API se diseñó como un **monolito modular**: cada Bounded Context es un módulo con sus propias entidades y repositorios JPA (US98), pero todos se despliegan juntos en un solo contenedor Docker (US99). Así se mantiene la separación que exige Domain-Driven Design sin la complejidad de desplegar cinco servicios por separado. La Landing Page y la Web Application se publican en hosting estático (US100).
+El API se diseñó como un **monolito modular**: cada Bounded Context es un módulo con sus propias entidades y repositorios JPA, pero todos se despliegan juntos en un solo contenedor Docker. Así se mantiene la separación que exige Domain-Driven Design sin la complejidad de desplegar cinco servicios por separado. La Landing Page y la Web Application se publican en hosting estático.
 
 ### 4.6.4. Software Architecture Components Diagrams
 

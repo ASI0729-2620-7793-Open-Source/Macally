@@ -14,9 +14,8 @@ A continuación, se presenta la evaluación del **Competitive Analysis Landscape
 
 #### Competitive Analysis Landscape
 
-| **¿Por qué llevar a cabo este análisis?** | Escriba en el recuadro la pregunta que busca responder o el objetivo de este análisis.                                                                                         |
+| **¿Por qué llevar a cabo este análisis?** | El análisis permite identificar las soluciones existentes que ofrecen herramientas de apoyo para la autorregulación, la comunicación y el acompañamiento de personas neurodivergentes, y contrastarlas con la propuesta de Nubi. |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                          | El análisis permite identificar las soluciones existentes ofreciendo herramientas de apoyo para la autorregulcion, comunicación y acompañamiento de personas neurodivergentes. |
 
 
 | **Segmento** | **Categoría** | **NUBI** | **Autism 360** | **Tiimo** | **Pictalk** |
@@ -85,7 +84,7 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ---
 
-#### B. Guía de Entrevista — Segmento 1: Padres, Madres y Cuidadores Primarios
+#### B. Guía de Entrevista — Segmento 2: Padres, Madres y Cuidadores Primarios
 
 1. ¿Cuál es tu ocupación actual?
 2. ¿Cuál es tu relación o parentesco con el niño o adolescente que acompañas?
@@ -108,7 +107,7 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ---
 
-#### C. Guía de Entrevista — Segmento 2: Niños y Adolescentes Neurodivergentes
+#### C. Guía de Entrevista — Segmento 1: Niños y Adolescentes Neurodivergentes
 
 1. ¿En qué grado escolar estás?
 2. ¿Qué actividades te gusta hacer en tu tiempo libre?
@@ -133,7 +132,7 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 | **Apellidos** | - |
 | **Edad** | 17 años |
 | **Distrito** | San Martín de Porres |
-| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%202/entrevista%201.png" alt="Evidencia Entrevista 3" width="180"> |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%202/entrevista%201.png" alt="Evidencia Entrevista 1" width="180"> |
 | **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQCYc-5hPz6wQqoSmSnNGpUOAbR00qgtPOH1hP_5Nomsly4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1x6Bev |
 | **Timing donde inicia** | 0:05 |
 | **Duración** | 7:25 |
@@ -157,11 +156,11 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 | **Apellidos** | — |
 | **Edad** | 17 años |
 | **Distrito** | — |
-| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%202/entrevista%202.png" alt="Evidencia Entrevista 1" width="180"> |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%202/entrevista%202.png" alt="Evidencia Entrevista 3" width="180"> |
 | **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQCQXZbPNs8iTJwmm9lBrl0fAY9kyHKLHb5-RJW0dUQydkY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=f5Ib91 |
 | **Timing donde inicia** | 0:05 |
 | **Duración** |4:31  |
-| **Resumen** | Owen es un joven de 17 años que cursa sus estudios superiores en un instituto. Diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (TDAH), presenta dificultades en el procesamiento de información o instrucciones veloces en entornos saturados de personas, requiriendo explicaciones reiteradas para asegurar la comprensión. Utiliza el teléfono móvil de forma diaria como dispositivo principal, complementado con la computadora para consumir contenido en YouTube, dibujar, escuchar música y jugar títulos como Minecraft y Free Fire, además de comunicarse por WhatsApp, TikTok e Instagram. Desde una perspectiva subjetiva, señala que los ruidos estruendosos —como los provenientes del transporte público— y el murmullo de aglomeraciones humanas le generan irritación y abrumamiento. Sus hábitos de autorregulación consisten en buscar aislamiento en zonas silenciosas, ponerse audífonos para escuchar música o interactuar con el celular. Cuando experimenta crisis o bloqueos que le impiden expresarse verbalmente con personas de su entorno cercano, envía mensajes de texto a su madre para solicitar asistencia. En función de sus requerimientos para la propuesta de valor del proyecto, plantea una herramienta que incluya botones interactivos de emergencia, un lienzo digital o blog de notas de gran tamaño que le permita canalizar la tensión mediante garabatos o trazos libres, y una funcionalidad combinada de música favorita con imágenes relajantes para restaurar la calma. |
+| **Resumen** | Owen es un joven de 17 años que cursa sus estudios superiores en un instituto. Diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (TDAH), presenta dificultades en el procesamiento de información o instrucciones veloces en entornos saturados de personas, requiriendo explicaciones reiteradas para asegurar la comprensión. Utiliza el teléfono móvil de forma diaria como dispositivo principal, complementado con la computadora para consumir contenido en YouTube, dibujar, escuchar música y jugar títulos como Minecraft y Free Fire, además de comunicarse por WhatsApp, TikTok e Instagram. Desde una perspectiva subjetiva, señala que los ruidos estruendosos —como los provenientes del transporte público— y el murmullo de aglomeraciones humanas le generan irritación y abrumamiento. Sus hábitos de autorregulación consisten en buscar aislamiento en zonas silenciosas, ponerse audífonos para escuchar música o interactuar con el celular. Cuando experimenta crisis o bloqueos que le impiden expresarse verbalmente con personas de su entorno cercano, envía mensajes de texto a su madre para solicitar asistencia. En función de sus requisitos para la propuesta de valor del proyecto, plantea una herramienta que incluya botones interactivos de emergencia, un lienzo digital o blog de notas de gran tamaño que le permita canalizar la tensión mediante garabatos o trazos libres, y una funcionalidad combinada de música favorita con imágenes relajantes para restaurar la calma. |
 
 ### Segmento 2 - Padres, Madres y Cuidadores Primarios
 
@@ -171,7 +170,7 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 | **Apellidos** | Contreras |
 | **Edad** | 22 años |
 | **Distrito** | Pucusana |
-| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%283%29.png" alt="Evidencia Entrevista 3" width="180"> |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%283%29.png" alt="Evidencia Entrevista 1" width="180"> |
 | **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQDrmGrPZHL8SIBH3UYzzr7VAS7g-5aifUF3i0HjsqzAs-k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=XbQEF8 |
 | **Timing donde inicia** | 0:05 |
 | **Duración** | 9:06 |
@@ -195,7 +194,7 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 | **Apellidos** | Torres |
 | **Edad** | 32 años |
 | **Distrito** | Comas |
-| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%281%29.png" alt="Evidencia Entrevista 1" width="180"> |
+| **Evidencia** | <img src="images/Chapter-II/Segmentos/Segmento%201/Entrevista%20%281%29.png" alt="Evidencia Entrevista 3" width="180"> |
 | **Link** | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQCGQZlX85-_QZ5WnC08sEpAAWFSdnXf0j7JH3y-6RQDhFg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SVIM5F |
 | **Timing donde inicia** | 0:05 |
 | **Duración** | 14:10 |
@@ -235,7 +234,11 @@ Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos obje
 | Sobreestimulación visual / luces intensas | Diana, Sebastián | 67% |
 | Cambios repentinos de planes o rutina | Sebastián | 33% |
 
-`graf_detonantesJovenes`
+<p align="center">
+  <img src="images/Chapter-II/graficos/graf_detonantesJovenes.png" alt="Principales detonantes sensoriales del Segmento 1" width="700">
+</p>
+
+Nota. Principales detonantes sensoriales del Segmento 1 (Niños y adolescentes neurodivergentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 Los ruidos fuertes y las aglomeraciones son detonantes universales en este segmento (100% cada uno), lo que confirma que la sobrecarga sensorial en espacios públicos es la principal fuente de malestar, independientemente del diagnóstico específico. La sobreestimulación visual, presente en el 67% de los casos, refuerza la necesidad de interfaces poco saturadas visualmente.
 
@@ -248,7 +251,11 @@ Los ruidos fuertes y las aglomeraciones son detonantes universales en este segme
 | Ejercicios de respiración | Diana, Sebastián | 67% |
 | Interacción con el celular como distractor | Owen, Diana | 67% |
 
-`graf_autorregulacionJovenes`
+<p align="center">
+  <img src="images/Chapter-II/graficos/graf_autorregulacionJovenes.png" alt="Estrategias de autorregulación del Segmento 1" width="700">
+</p>
+
+Nota. Estrategias de autorregulación del Segmento 1 (Niños y adolescentes neurodivergentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 El aislamiento físico es la estrategia unánime del segmento (100%), lo que indica que, más allá del dispositivo digital, el retiro del estímulo externo continúa siendo el mecanismo base de autorregulación. La música y la respiración guiada, presentes en el 67% de los casos, representan las funcionalidades de calma con mayor validación para ser incorporadas en la solución.
 
@@ -259,13 +266,17 @@ El aislamiento físico es la estrategia unánime del segmento (100%), lo que ind
 | Mensajes de texto o comunicación escrita | Owen, Diana, Sebastián | 100% |
 | Gestos o comunicación no verbal complementaria | Diana | 33% |
 
-`graf_comunicacionJovenes`
+<p align="center">
+  <img src="images/Chapter-II/graficos/graf_comunicacionJovenes.png" alt="Canal de comunicación durante una crisis del Segmento 1" width="700">
+</p>
+
+Nota. Canal de comunicación durante una crisis del Segmento 1 (Niños y adolescentes neurodivergentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 La totalidad del segmento evita la comunicación verbal directa en momentos de malestar, optando por canales escritos o no verbales. Este hallazgo valida de forma unánime la necesidad de que la solución digital incorpore mecanismos de comunicación rápida sin exigir la redacción de textos extensos.
 
-**Requerimientos funcionales solicitados**
+**Requisitos funcionales solicitados**
 
-| Requerimiento | Casos | Porcentaje |
+| Requisito | Casos | Porcentaje |
 |---|---|---|
 | Mecanismo visual de bajo esfuerzo para reportar estado de ánimo | Owen, Diana, Sebastián | 100% |
 | Notificación o alerta automática a un contacto de confianza | Owen, Diana, Sebastián | 100% |
@@ -275,7 +286,11 @@ La totalidad del segmento evita la comunicación verbal directa en momentos de m
 | Funcionamiento offline | Diana | 33% |
 | Lienzo o espacio de dibujo/garabateo libre | Owen | 33% |
 
-`graf_requerimientosJovenes`
+<p align="center">
+  <img src="images/Chapter-II/graficos/graf_requerimientosJovenes.png" alt="Requisitos funcionales solicitados por el Segmento 1" width="700">
+</p>
+
+Nota. Requisitos funcionales solicitados por el Segmento 1 (Niños y adolescentes neurodivergentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 Tres funcionalidades alcanzan validación unánime en el segmento (100%): un mecanismo visual de bajo esfuerzo para expresar el estado de ánimo, la alerta automática a un contacto de confianza y la inclusión de música o sonidos relajantes. Estos hallazgos posicionan dichas funciones como el núcleo mínimo indispensable de la propuesta digital para este segmento, mientras que la respiración guiada y la interfaz libre de saturación visual (67%) constituyen mejoras altamente valoradas por la mayoría.
 
@@ -311,7 +326,11 @@ Los niños y adolescentes entrevistados comparten un patrón consistente frente 
 | Estímulos sensoriales (ruidos, luces, aglomeraciones, cambios de rutina) | Mateo, Johan | 67% |
 | Imposición de límites o incertidumbre en la etapa adolescente | Ingrid | 33% |
 
-`graf_detonantesCuidadores`
+<p align="center">
+  <img src="images/Chapter-II/graficos/graf_detonantesCuidadores.png" alt="Principales detonantes de crisis del Segmento 2" width="700">
+</p>
+
+Nota. Principales detonantes de crisis del Segmento 2 (Padres, familiares y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 Los estímulos sensoriales concentran la mayoría de los detonantes reportados por los cuidadores (67%), lo que evidencia que las crisis en personas con TEA están fuertemente asociadas al entorno físico e impredecible, mientras que en el caso de TDAH el detonante se vincula más a la dinámica de crianza y autorregulación emocional.
 
@@ -324,7 +343,11 @@ Los estímulos sensoriales concentran la mayoría de los detonantes reportados p
 | Validación afectiva (abrazos, afirmaciones verbales) | Ingrid | 33% |
 | Búsqueda de apoyo externo (foros, grupos, blogs) | Ingrid | 33% |
 
-`graf_estrategiasCuidadores`
+<p align="center">
+  <img src="images/Chapter-II/graficos/graf_estrategiasCuidadores.png" alt="Estrategias de contención del cuidador del Segmento 2" width="700">
+</p>
+
+Nota. Estrategias de contención del cuidador del Segmento 2 (Padres, familiares y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 El retiro a espacios de bajo estímulo y la comunicación simplificada son las estrategias más recurrentes (67% cada una), lo que confirma que el manejo sensorial del entorno es un componente central en el acompañamiento de crisis en TEA. La búsqueda de validación afectiva y de redes de apoyo externas, presente en el 33% del segmento, refleja además una necesidad emocional del propio cuidador que no se limita a la contención del episodio.
 
@@ -335,13 +358,17 @@ El retiro a espacios de bajo estímulo y la comunicación simplificada son las e
 | Rechazo por ser poco prácticas, infantiles o complejas | Mateo, Johan | 67% |
 | No utiliza ninguna herramienta digital en momentos críticos | Ingrid | 33% |
 
-`graf_percepcionAppsCuidadores`
+<p align="center">
+  <img src="images/Chapter-II/graficos/graf_percepcionAppsCuidadores.png" alt="Percepción de las herramientas digitales actuales del Segmento 2" width="700">
+</p>
+
+Nota. Percepción de las herramientas digitales actuales del Segmento 2 (Padres, familiares y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 La totalidad del segmento (100%) evidenció una relación insatisfactoria o inexistente con las soluciones digitales actuales, lo que indica que no existe una herramienta consolidada en el mercado que los cuidadores perciban como confiable para el manejo de crisis, situación que reduce la resistencia al cambio ante una nueva propuesta.
 
-**Requerimientos para la propuesta digital**
+**Requisitos para la propuesta digital**
 
-| Requerimiento | Casos | Porcentaje |
+| Requisito | Casos | Porcentaje |
 |---|---|---|
 | Respaldo explícito de profesionales de salud mental | Ingrid, Mateo, Johan | 100% |
 | Interfaz de acceso en un solo toque | Mateo, Johan | 67% |
@@ -349,7 +376,11 @@ La totalidad del segmento (100%) evidenció una relación insatisfactoria o inex
 | Funcionamiento offline | Johan | 33% |
 | Comunidad de testimonios entre cuidadores (en lugar de botón de crisis) | Ingrid | 33% |
 
-`graf_requerimientosCuidadores`
+<p align="center">
+  <img src="images/Chapter-II/graficos/graf_requerimientosCuidadores.png" alt="Requisitos para la propuesta digital del Segmento 2" width="700">
+</p>
+
+Nota. Requisitos para la propuesta digital del Segmento 2 (Padres, familiares y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 El respaldo profesional explícito es una condición unánime (100%) para la aceptación de la propuesta digital, lo que la posiciona como un requisito no negociable del segmento. Las guías visuales rápidas y el acceso en un solo toque, mencionados por el 67% de los cuidadores de personas con TEA, refuerzan la necesidad de una interfaz orientada a la acción inmediata durante episodios de crisis.
 
@@ -362,9 +393,11 @@ Los cuidadores entrevistados enfrentan una carga emocional significativa y soste
 
 ### 2.3.1. User Personas
 
+Las fichas de User Persona se elaboraron en UXPressia, una por cada segmento objetivo, a partir de los patrones identificados en el análisis de entrevistas (sección 2.2.3) y de las carencias de la competencia detectadas en el análisis competitivo (sección 2.1.1). De las entrevistas provienen las características demográficas, los dispositivos y aplicaciones de uso, los detonantes, las estrategias de calma, los canales de comunicación durante una crisis y las expectativas frente a una solución digital; del análisis competitivo, la brecha de apoyo inmediato durante el episodio que Nubi busca cubrir. Cada ficha se vincula con su User Journey Map (sección 2.3.3) y su Empathy Map (sección 2.3.4).
+
 ### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
 
-La finalidad de la elaboración de este user persona es representa a los jóvenes y adolescentes neurodivergentes que experimentan sobrecarga sensorial y bloqueos comunicativos en entornos saturados, precisando herramientas digitales de calma y tableros de comunicación accesibles.
+La finalidad de la elaboración de este user persona es representar a los jóvenes y adolescentes neurodivergentes que experimentan sobrecarga sensorial y bloqueos comunicativos en entornos saturados, precisando herramientas digitales de calma y tableros de comunicación accesibles.
 
 <p align="center">
   <img src="images/Chapter-II/User-persona-Diana.png" alt="User Personas Niños y Adolescentes Neurodivergentes" width="600">
@@ -373,12 +406,12 @@ Nota. User Persona correspondiente a Diana (Idealist), representando el arquetip
 
 ### Segmento objetivo #2: Padres, familiares y cuidadores
 
-La finalidad de la elaboración de este user persona es representa a los cuidadores primarios que asumen el acompañamiento cotidiano de un familiar neurodivergente, buscando pautas claras y soporte estructurado para gestionar episodios de crisis con serenidad.
+La finalidad de la elaboración de este user persona es representar a los cuidadores primarios que asumen el acompañamiento cotidiano de un familiar neurodivergente, buscando pautas claras y soporte estructurado para gestionar episodios de crisis con serenidad.
 
 <p align="center">
   <img src="images/Chapter-II/User-persona-Mateo.png" alt="User Personas Padres" width="600">
 </p>
-Nota. User Persona correspondiente a Mateo (Guardian), representando el arquetipo del segmento de padres y cuidadores primarios, enfocado en sus requerimientos de guías de contención rápida, comunidad y herramientas de bajo esfuerzo cognitivo.
+Nota. User Persona correspondiente a Mateo (Guardian), representando el arquetipo del segmento de padres y cuidadores primarios, enfocado en sus requisitos de guías de contención rápida, comunidad y herramientas de bajo esfuerzo cognitivo.
 
 
 ### 2.3.2. User Task Matrix
@@ -554,11 +587,11 @@ Nota. Empathy Map correspondiente al Segmento 2 (Padres, Familiares y Cuidadores
 ## 2.4. Big Picture Event Storming
 En esta sección se desarrolla el Big Picture Event Storming, una dinámica colaborativa orientada a mapear el dominio del sistema a través de los eventos de negocio clave que ocurren a lo largo del ciclo de uso de la aplicación. Mediante la identificación secuencial de estos sucesos y su estructuración en flujos clave —tales como Perfil y Personalización, Autorregulación, Gestión de Crisis (Modo SOS), Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento—, se logra representar la interacción entre los usuarios neurodivergentes, sus cuidadores y los servicios del sistema. Este artefacto permite alinearse visualmente sobre las dependencias del dominio, definir la delimitación de contextos y detectar de forma temprana posibles dudas operativas, garantizando que la arquitectura responda a las necesidades inmediatas de contención, comunicación e intervención.
 
-### 2.4.1. Red de apollo y segumiento
+### 2.4.1. Red de Apoyo y Seguimiento
 Flujo de eventos para el envío de alertas a contactos de confianza, registro de episodios y generación de reportes consultables por cuidadores y profesionales de la salud.
 
 <p align="center">
-  <img src="images/Chapter-II/event%20storming%20(1).png" alt="event storming 1" width="400">
+  <img src="images/Chapter-II/event%20storming%20(1).png" alt="event storming 1" width="700">
 </p>
   Nota. Diagrama de eventos del proceso de Red de Apoyo y Seguimiento, detallando los pasos de notificación, llegada del contacto, registro del episodio y compartición de reportes.
 
@@ -567,7 +600,7 @@ Flujo de eventos para el envío de alertas a contactos de confianza, registro de
 Secuencia de acciones que abarca desde la apertura del tablero de comunicación hasta la selección de pictogramas y la reproducción por voz del mensaje para el acompañante.
 
 <p align="center">
-  <img src="images/Chapter-II/event%20storming%20(2).png" alt="event storming 2" width="400">
+  <img src="images/Chapter-II/event%20storming%20(2).png" alt="event storming 2" width="700">
 </p>
 Nota. Diagrama de eventos del proceso de Comunicación Asistida (CAA), mostrando la interacción visual mediante pictogramas y la conversión de texto a voz (TTS) para el acompañante.
 
@@ -576,7 +609,7 @@ Nota. Diagrama de eventos del proceso de Comunicación Asistida (CAA), mostrando
 Flujo funcional orientado a la disminución de sobrecarga mediante el inicio de ejercicios de respiración guiada, sonidos relajantes y uso del lienzo de dibujo libre.
 
 <p align="center">
-  <img src="images/Chapter-II/event%20storming%20(3).png" alt="event storming 3" width="400">
+  <img src="images/Chapter-II/event%20storming%20(3).png" alt="event storming 3" width="700">
 </p>
 
 Nota. Diagrama de eventos del flujo de Autorregulación, representando las etapas de activación de baja estimulación, guía de respiración, espacio de trazo libre y guardado de recursos de calma.
@@ -585,7 +618,7 @@ Nota. Diagrama de eventos del flujo de Autorregulación, representando las etapa
 Ruta de contención rápida activada ante señales tempranas para guiarse paso a paso en la desescalada del episodio y el restablecimiento de la calma.
 
 <p align="center">
-  <img src="images/Chapter-II/event%20storming%20(4).png" alt="event storming 4" width="400">
+  <img src="images/Chapter-II/event%20storming%20(4).png" alt="event storming 4" width="700">
 </p>
 Nota. Diagrama de eventos del flujo de Gestión de Crisis (Modo SOS), ilustrando los pasos inmediatos de selección de detonante, temporizador visual y sugerencias de contención para el cuidador.
 
@@ -594,7 +627,7 @@ Nota. Diagrama de eventos del flujo de Gestión de Crisis (Modo SOS), ilustrando
 Proceso de configuración inicial del usuario donde se definen diagnósticos, detonantes sensoriales, necesidades comunicativas y contactos de confianza.
 
 <p align="center">
-  <img src="images/Chapter-II/event%20storming%20(5).png" alt="event storming 5" width="400">
+  <img src="images/Chapter-II/event%20storming%20(5).png" alt="event storming 5" width="700">
 </p>
 Nota. Diagrama de eventos del proceso de Perfil y Personalización, detallando la captura de datos sensoriales, preferencias comunicativas y vinculación de la red de apoyo.
 
