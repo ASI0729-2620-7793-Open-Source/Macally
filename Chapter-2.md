@@ -18,7 +18,7 @@ A continuación, se presenta la evaluación del **Competitive Analysis Landscape
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                          | El análisis permite identificar las soluciones existentes ofreciendo herramientas de apoyo para la autorregulcion, comunicación y acompañamiento de personas neurodivergentes. |
 
----
+
 | **Segmento** | **Categoría** | **NUBI** | **Autism 360** | **Tiimo** | **Pictalk** |
 |---|---|---|---|---|---|
 |  |  | ![nubilogo.png](images/Chapter-II/nubilogo.png) | ![Autism360Logo.png](images/Chapter-II/Autism360Logo.png) | ![TiimoLogo.png](images/Chapter-II/TiimoLogo.png) | ![pictalklogo.jpg](images/Chapter-II/pictalklogo.jpg) |
@@ -357,7 +357,6 @@ El respaldo profesional explícito es una condición unánime (100%) para la ace
 
 Los cuidadores entrevistados enfrentan una carga emocional significativa y sostenida en el tiempo, agravada por la desconfianza hacia las herramientas digitales existentes. El segmento vinculado a TEA prioriza mecanismos de acción rápida frente a detonantes sensoriales, mientras que el vinculado a TDAH prioriza el acompañamiento emocional y la validación entre pares. En ambos casos, el respaldo profesional explícito se confirma como un requisito transversal e indispensable para la adopción de cualquier solución digital.
 
----
 
 ## 2.3. Needfinding
 
