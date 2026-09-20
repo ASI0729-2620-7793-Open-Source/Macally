@@ -400,13 +400,16 @@ El objetivo del Sprint 1 es entregar y desplegar la primera versión del Landing
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-En el Sprint 1 se implementó la primera versión del Landing Page como sitio estático con HTML5, CSS3 y JavaScript, aplicando el Design System de la sección 4.1 (paleta de colores y tipografía Bricolage Grotesque) y las decisiones de Arquitectura de Información de la sección 4.2. La tabla registra los commits del repositorio.
+En el Sprint 1 se implementó la primera versión del Landing Page como sitio estático con HTML5, CSS3 y JavaScript, aplicando el Design System de la sección 4.1 (paleta de colores y tipografía Bricolage Grotesque) y las decisiones de Arquitectura de Información de la sección 4.2. La tabla registra los commits del repositorio, incluida la internacionalización (i18n) del Landing Page en inglés y español, desarrollada en la rama `feature/I18n`, integrada en `develop` con GitFlow y publicada en `master`.
 
 | Repository | Branch        | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---------------|---|---|---|---|
 | ASI0729-2620-7793-Open-Source/landing-page | `master` | [8da4692](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/8da4692576ddd7415ac443431f9ed2c31317ef33) | chore: initial commit | — | 19/09/2026 |
 | ASI0729-2620-7793-Open-Source/landing-page | `master` | [e2de4c4](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/e2de4c4f7344045c45caeba19eeb264d658bd3dc) | docs: add readme | — | 19/09/2026 |
 | ASI0729-2620-7793-Open-Source/landing-page | `master` | [c9a4df7](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/c9a4df75b431d8c892e3c7d66d7f98d1341b8318) | docs: add docs to all the codes. | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `feature/I18n` | [2b47acf](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/2b47acf) | feat: add i18n lenguage spanish and inglish | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `develop` | [4dfbb36](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/4dfbb36) | Merge branch 'feature/I18n' into develop | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [5119b9e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/5119b9e) | feat: add intercionalizacion lenguague | — | 19/09/2026 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
@@ -479,5 +482,8 @@ El repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://github.com/A
 | [8da4692](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/8da4692576ddd7415ac443431f9ed2c31317ef33) | Deiko-138 | Lopez Torres, Leonardo Gabriel | chore: initial commit |
 | [e2de4c4](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/e2de4c4f7344045c45caeba19eeb264d658bd3dc) | Deiko-138 | Lopez Torres, Leonardo Gabriel | docs: add readme |
 | [c9a4df7](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/c9a4df75b431d8c892e3c7d66d7f98d1341b8318) | u20241a195-cmd | Diaz Yurivilca, Sofia | docs: add docs to all the codes. |
+| [2b47acf](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/2b47acf) | Deiko-138 | Lopez Torres, Leonardo Gabriel | feat: add i18n lenguage spanish and inglish |
+| [4dfbb36](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/4dfbb36) | Deiko-138 | Lopez Torres, Leonardo Gabriel | Merge branch 'feature/I18n' into develop |
+| [5119b9e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/5119b9e) | Deiko-138 | Lopez Torres, Leonardo Gabriel | feat: add intercionalizacion lenguague |
 
-En este Sprint, Leonardo Gabriel Lopez Torres creó el repositorio y su README, y Sofia Diaz Yurivilca documentó el código de la landing. Los cinco integrantes registran aportes en el repositorio del informe (Figuras 1 a 4), donde se documentaron el diseño y el contenido que se implementan en el Landing Page.
+En este Sprint, Leonardo Gabriel Lopez Torres creó el repositorio y su README y desarrolló la internacionalización (i18n) del Landing Page en inglés y español (rama `feature/I18n`, integrada en `develop` y publicada en `master`), y Sofia Diaz Yurivilca documentó el código de la landing. Las Figuras 5 y 6 se capturaron antes de subir la internacionalización; la tabla incluye todos los commits del Sprint. Los cinco integrantes registran aportes en el repositorio del informe (Figuras 1 a 4), donde se documentaron el diseño y el contenido que se implementan en el Landing Page, ademas en esta ultima se agrego la intercionalizacion i18n.
