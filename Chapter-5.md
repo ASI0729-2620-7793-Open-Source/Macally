@@ -14,25 +14,25 @@ Para el desarrollo de NUBI se utiliza un conjunto de herramientas que permiten c
 
 Las herramientas seleccionadas permiten que los integrantes del equipo trabajen de manera colaborativa y mantengan consistencia entre los diferentes productos que conforman la solución.
 
-| Área | Producto / Herramienta | Propósito de uso en NUBI | Referencia |
-|---|---|---|---|
-| Project Management | Trello | Gestionar y priorizar el Product Backlog, organizar las User Stories y dar seguimiento a las actividades del equipo. | https://trello.com/ |
-| Requirements Management | GitHub | Mantener de forma colaborativa la documentación del proyecto, User Stories, Product Backlog y demás artefactos desarrollados en formato Markdown. | https://github.com/ |
-| UX Research | UXPressia | Elaborar y documentar artefactos UX como User Personas, User Journey Maps, Empathy Maps e Impact Mapping. | https://uxpressia.com/ |
-| UX/UI Design | Figma | Diseñar Wireframes, Mock-ups y Prototypes correspondientes al Landing Page y la Web Application de NUBI. | https://www.figma.com/ |
-| Software Development | Visual Studio Code | Editar y desarrollar el código fuente correspondiente a los diferentes productos de software de NUBI. | https://code.visualstudio.com/ |
-| Landing Page Development | HTML5 | Definir la estructura semántica del Landing Page. | https://developer.mozilla.org/en-US/docs/Web/HTML |
-| Landing Page Development | CSS3 | Implementar los estilos visuales y el Responsive Web Design del Landing Page. | https://developer.mozilla.org/en-US/docs/Web/CSS |
-| Landing Page Development | JavaScript | Implementar las interacciones y comportamiento dinámico del Landing Page. | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
-| Frontend Web Application | Angular | Framework utilizado para desarrollar la Frontend Web Application de NUBI. | https://angular.dev/ |
-| Frontend Web Application | TypeScript | Lenguaje de programación utilizado para desarrollar la lógica de la aplicación Angular. | https://www.typescriptlang.org/ |
-| Frontend Web Application | Angular Material | Biblioteca de componentes UI basada en Material Design utilizada para mantener consistencia visual en la Web Application. | https://material.angular.dev/ |
-| RESTful Web Services | Java | Lenguaje de programación utilizado para desarrollar la lógica del lado servidor. | https://www.java.com/ |
-| RESTful Web Services | Spring Boot | Framework utilizado para desarrollar los RESTful Web Services de NUBI. | https://spring.io/projects/spring-boot |
-| Data Persistence | Spring Data JPA | Facilitar el acceso y persistencia de información desde los RESTful Web Services. | https://spring.io/projects/spring-data-jpa |
-| API Documentation | OpenAPI / Swagger | Documentar y visualizar los endpoints expuestos por el RESTful API. | https://swagger.io/ |
-| Source Code Management | Git | Gestionar el historial de cambios realizado sobre el código fuente de los diferentes productos. | https://git-scm.com/ |
-| Source Code Management | GitHub | Alojar los repositorios del Landing Page, Frontend Web Application y RESTful Web Services, facilitando la colaboración del equipo. | https://github.com/ |
+| Área | Producto / Herramienta | Propósito de uso en NUBI                                                                                                                          | Referencia |
+|---|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| Project Management | Trello                 | Gestionar y priorizar el Product Backlog, organizar las User Stories y dar seguimiento a las actividades del equipo.                              | https://trello.com/ |
+| Requirements Management | GitHub                 | Mantener de forma colaborativa la documentación del proyecto, User Stories, Product Backlog y demás artefactos desarrollados en formato Markdown. | https://github.com/ASI0729-2620-7793-Open-Source/Macally |
+| UX Research | UXPressia              | Elaborar y documentar artefactos UX como User Personas, User Journey Maps, Empathy Maps e Impact Mapping.                                         | https://uxpressia.com/ |
+| UX/UI Design | Figma                  | Diseñar Wireframes, Mock-ups y Prototypes correspondientes al Landing Page y la Web Application de NUBI.                                          | https://www.figma.com/ |
+| Software Development | Webstorm|  Editar y desarrollar el código fuente correspondiente a los diferentes productos de software de NUBI.                                            | https://www.jetbrains.com/es-es/webstorm/ |
+| Landing Page Development | HTML5                  | Definir la estructura semántica del Landing Page.                                                                                                 | https://developer.mozilla.org/en-US/docs/Web/HTML |
+| Landing Page Development | CSS3                   | Implementar los estilos visuales y el Responsive Web Design del Landing Page.                                                                     | https://developer.mozilla.org/en-US/docs/Web/CSS |
+| Landing Page Development | JavaScript             | Implementar las interacciones y comportamiento dinámico del Landing Page.                                                                         | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
+| Frontend Web Application | Angular                | Framework utilizado para desarrollar la Frontend Web Application de NUBI.                                                                         | https://angular.dev/ |
+| Frontend Web Application | TypeScript             | Lenguaje de programación utilizado para desarrollar la lógica de la aplicación Angular.                                                           | https://www.typescriptlang.org/ |
+| Frontend Web Application | Angular Material       | Biblioteca de componentes UI basada en Material Design utilizada para mantener consistencia visual en la Web Application.                         | https://material.angular.dev/ |
+| RESTful Web Services | Java                   | Lenguaje de programación utilizado para desarrollar la lógica del lado servidor.                                                                  | https://www.java.com/ |
+| RESTful Web Services | Spring Boot            | Framework utilizado para desarrollar los RESTful Web Services de NUBI.                                                                            | https://spring.io/projects/spring-boot |
+| Data Persistence | Spring Data JPA        | Facilitar el acceso y persistencia de información desde los RESTful Web Services.                                                                 | https://spring.io/projects/spring-data-jpa |
+| API Documentation | OpenAPI / Swagger      | Documentar y visualizar los endpoints expuestos por el RESTful API.                                                                               | https://swagger.io/ |
+| Source Code Management | Git                    | Gestionar el historial de cambios realizado sobre el código fuente de los diferentes productos.                                                   | https://git-scm.com/ |
+| Source Code Management | GitHub                 | Alojar los repositorios del Landing Page, Frontend Web Application y RESTful Web Services, facilitando la colaboración del equipo.                | https://github.com/ |
 
 La selección de estas herramientas responde a los lineamientos tecnológicos establecidos para el proyecto y permite mantener un entorno de trabajo común entre los integrantes del equipo. Git y GitHub permiten gestionar los cambios realizados durante el desarrollo, mientras que Trello facilita la organización del Product Backlog. UXPressia y Figma son utilizados para la elaboración de los artefactos UX/UI, y Visual Studio Code constituye el entorno principal para la edición del código fuente.
 
@@ -44,11 +44,11 @@ Para la gestión del código fuente de NUBI se utiliza **Git** como sistema de c
 
 Los repositorios correspondientes a los productos de software de NUBI son los siguientes:
 
-| Producto | Repositorio |
-|---|---|
-| Landing Page | [COLOCAR URL DEL REPOSITORIO] |
-| Frontend Web Application | [COLOCAR URL DEL REPOSITORIO] |
-| RESTful Web Services | [COLOCAR URL DEL REPOSITORIO] |
+| Producto                 | Repositorio                |
+|--------------------------|----------------------------|
+| Landing Page             | [COLOCAR URL DEL REPOSITORIO] |
+| Frontend Web Application | `no aplica`     |
+| RESTful Web Services     | `no aplica`     |
 
 En el caso de los RESTful Web Services, el repositorio contendrá tanto el código fuente de los servicios como los archivos correspondientes a las pruebas unitarias y de integración.
 
@@ -194,98 +194,6 @@ Ejemplos:
 - `DEFAULT_LANGUAGE`
 - `MAX_RETRY_ATTEMPTS`
 
-#### TypeScript and Angular Conventions
-
-La Frontend Web Application de NUBI utiliza TypeScript y Angular. Para mantener consistencia se aplican las siguientes convenciones:
-
-- Variables y funciones utilizan `camelCase`.
-- Clases, componentes, interfaces y servicios utilizan `PascalCase`.
-- Constantes globales utilizan `UPPER_SNAKE_CASE`.
-- Los nombres de archivos utilizan `kebab-case`.
-- Los componentes deben tener responsabilidades específicas y evitar concentrar lógica no relacionada.
-- La lógica reutilizable debe mantenerse en servicios cuando corresponda.
-- Los archivos de cada componente deben conservar una nomenclatura relacionada.
-
-Ejemplos de clases y servicios:
-
-- `UserProfileComponent`
-- `SosModeComponent`
-- `CommunicationBoardComponent`
-- `UserProfileService`
-- `SupportRequestService`
-
-Ejemplos de archivos:
-
-- `user-profile.component.ts`
-- `user-profile.component.html`
-- `user-profile.component.css`
-- `sos-mode.component.ts`
-- `communication-board.component.ts`
-- `support-request.service.ts`
-
-#### Java and Spring Boot Conventions
-
-Para el desarrollo de los RESTful Web Services se utiliza Java con Spring Boot. Se siguen las siguientes convenciones:
-
-- Las clases e interfaces utilizan `PascalCase`.
-- Los métodos y variables utilizan `lowerCamelCase`.
-- Las constantes utilizan `UPPER_SNAKE_CASE`.
-- Los nombres de paquetes se escriben completamente en minúsculas.
-- Los nombres deben estar escritos en inglés.
-- Las clases deben mantener responsabilidades específicas.
-- Los controladores se utilizan para gestionar las solicitudes HTTP.
-- Los servicios contienen la lógica de aplicación.
-- Los repositorios gestionan el acceso y persistencia de los datos.
-- Las entidades representan los objetos persistentes del dominio.
-
-Ejemplos de clases:
-
-- `UserProfileController`
-- `UserProfileService`
-- `UserProfileRepository`
-- `CrisisEpisodeController`
-- `SupportRequestService`
-- `RecommendationRepository`
-
-Ejemplos de métodos:
-
-- `createUserProfile()`
-- `activateSosMode()`
-- `completeSosStep()`
-- `sendSupportRequest()`
-- `generateRecommendation()`
-
-Ejemplos de paquetes:
-
-- `com.nubi.profile`
-- `com.nubi.crisis`
-- `com.nubi.regulation`
-- `com.nubi.communication`
-- `com.nubi.support`
-
-#### RESTful API Conventions
-
-Los endpoints de los RESTful Web Services siguen una estructura consistente y utilizan nombres de recursos en inglés.
-
-Los recursos se representan mediante sustantivos y se utilizan los métodos HTTP correspondientes a cada operación.
-
-Ejemplos:
-
-- `GET /api/v1/profiles`
-- `POST /api/v1/profiles`
-- `PUT /api/v1/profiles/{id}`
-- `GET /api/v1/episodes`
-- `POST /api/v1/support-requests`
-- `GET /api/v1/recommendations`
-
-Los principales códigos de estado HTTP utilizados son:
-
-- `200 OK`: operación realizada correctamente.
-- `201 Created`: recurso creado correctamente.
-- `400 Bad Request`: solicitud con información inválida.
-- `401 Unauthorized`: solicitud sin autenticación válida.
-- `404 Not Found`: recurso solicitado no encontrado.
-- `500 Internal Server Error`: error interno del servicio.
 
 #### Gherkin Conventions
 
@@ -299,14 +207,14 @@ La estructura utilizada considera:
 
 Los escenarios deben describir comportamiento y no detalles específicos de implementación.
 
-#### Internationalization and Accessibility Conventions
+#### Internationalization(i18n) and Accessibility Conventions
 
 NUBI considera criterios de internacionalización y accesibilidad durante el desarrollo de sus productos digitales.
 
 Para internacionalización se consideran los siguientes locales:
 
-- `en_US`: English.
-- `es_419`: Latin American Spanish.
+- `en.json`: English.
+- `es.json`: Latin American Spanish.
 
 El idioma predeterminado de la interfaz, mensajes y documentación técnica será inglés.
 
@@ -328,11 +236,11 @@ La configuración de despliegue de NUBI tiene como objetivo establecer el proces
 
 La solución está conformada por tres productos principales: el **Landing Page**, la **Frontend Web Application** y los **RESTful Web Services**. Cada producto mantiene un proceso de despliegue independiente debido a las diferentes tecnologías y requerimientos de ejecución que posee.
 
-| Producto | Tecnologías principales | Rama de despliegue | Plataforma |
-|---|---|---|---|
+| Producto | Tecnologías principales | Rama de despliegue | Plataforma       |
+|---|---|---|------------------|
 | Landing Page | HTML5, CSS3 y JavaScript | `main` | [COLOCAR PLATAFORMA] |
-| Frontend Web Application | Angular y TypeScript | `main` | [COLOCAR PLATAFORMA] |
-| RESTful Web Services | Java, Spring Boot y Spring Data JPA | `main` | [COLOCAR PLATAFORMA] |
+| Frontend Web Application | Angular y TypeScript | `main` | `No aplica`      |
+| RESTful Web Services | Java, Spring Boot y Spring Data JPA | `main` |`No aplica`|
 
 #### Landing Page Deployment
 
