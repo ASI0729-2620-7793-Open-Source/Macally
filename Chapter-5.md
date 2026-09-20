@@ -348,16 +348,16 @@ El Sprint Planning 1 definió el alcance de la primera versión del Landing Page
 |---|---|
 | Sprint # | Sprint 1 |
 | **Sprint Planning Background** | |
-| Date | `YYYY-MM-DD` |
-| Time | `HH:MM AM/PM` |
-| Location | `Descripción de la ubicación de la reunión (virtual o física)` |
-| Prepared By | `Apellidos, Nombres` |
-| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel `(confirmar asistentes)` |
+| Date | 2026-09-12 |
+| Time | 10:00 AM |
+| Location | Virtual (Google Meet) |
+| Prepared By | Lopez Torres, Leonardo Gabriel |
+| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel |
 | Sprint 0 Review Summary | No aplica: es el primer Sprint del proyecto. |
 | Sprint 0 Retrospective Summary | No aplica: es el primer Sprint del proyecto. |
 | **Sprint Goal & User Stories** | |
 | Sprint 1 Goal | *Our focus is on presenting the value proposition of Nubi through a first responsive version of the Landing Page. We believe it delivers a clear understanding of SOS Mode, self-regulation, the AAC board and the support network to caregivers, educators and therapists who visit the site. This will be confirmed when a visitor can reach each of the five feature sections (LS-01 to LS-05) and the plans section from the navigation, in Desktop and Mobile web browsers, in English or Spanish.* |
-| Sprint 1 Velocity | `Story Points que el equipo acepta para el Sprint 1` |
+| Sprint 1 Velocity | 10 Story Points (igual a la suma de las Landing Page Stories del Sprint 1) |
 | Sum of Story Points | 10 (LS-01: 2, LS-02: 2, LS-03: 2, LS-04: 2, LS-05: 2) |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
@@ -366,11 +366,11 @@ Los aspectos considerados en el Sprint 1 corresponden a las secciones del Landin
 
 | Team Member (Last Name, First Name) | GitHub Username | Header, Hero & Navigation | Feature sections (LS-01 a LS-05) | Plans, FAQ & Testimonials | Team & Contact | i18n, Accessibility & Legal | Deployment |
 |---|---|---|---|---|---|---|---|
-| Lopez Torres, Leonardo Gabriel | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
-| Diaz Yurivilca, Sofia | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
-| Payano Puchuri, Joan Fabricio | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
-| Ruiz Villegas, Yngrid Nahir | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
-| Diaz Caruzo, Edgard Daniel | `usuario` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` | `L / C` |
+| Lopez Torres, Leonardo Gabriel | [Deiko-138](https://github.com/Deiko-138) | L | L | L | L | L | L |
+| Diaz Yurivilca, Sofia | [u20241a195-cmd](https://github.com/u20241a195-cmd) | C | C | C | C | C | C |
+| Payano Puchuri, Joan Fabricio | [joanfpp2-ai](https://github.com/joanfpp2-ai) | C | C | C | C | C | C |
+| Ruiz Villegas, Yngrid Nahir | [nahiryn8](https://github.com/nahiryn8) | C | C | C | C | C | C |
+| Diaz Caruzo, Edgard Daniel | [Dan-trax](https://github.com/Dan-trax) | C | C | C | C | C | C |
 
 #### 5.2.1.3. Sprint Backlog 1
 
@@ -383,30 +383,33 @@ El objetivo del Sprint 1 es entregar y desplegar la primera versión del Landing
 | Sprint # | Sprint 1 | | | | | | |
 |---|---|---|---|---|---|---|---|
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| LS-01 | Conocer la personalización de perfiles en la landing page | T-01 | Sección Perfil y Personalización | Implementar la sección con la tarjeta de ejemplo de perfil (diagnóstico, sensibilidades y cuidadores vinculados). | `h` | `nombre` | Done |
-| LS-01 | Conocer la personalización de perfiles en la landing page | T-02 | Adaptación a móvil de la sección | Ajustar la sección a pantallas pequeñas mediante Responsive Web Design. | `h` | `nombre` | Done |
-| LS-02 | Conocer el Modo SOS en la landing page | T-03 | Sección Modo SOS | Implementar la sección con la guía de cuatro pasos del Modo SOS. | `h` | `nombre` | Done |
-| LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Preparar el botón «Crear cuenta y activarlo» para redirigir a la vista de registro de la Web Application cuando esta se despliegue. | `h` | `nombre` | In-Process |
-| LS-03 | Conocer las herramientas de autorregulación en la landing page | T-05 | Sección Autorregulación | Implementar el panel de ejemplo con estímulos visuales y auditivos, intensidad y temporizador de calma. | `h` | `nombre` | Done |
-| LS-04 | Conocer el tablero CAA en la landing page | T-06 | Sección Comunicación CAA | Implementar la cuadrícula de pictogramas de ejemplo. | `h` | `nombre` | Done |
-| LS-04 | Conocer el tablero CAA en la landing page | T-07 | Preguntas frecuentes | Implementar las preguntas frecuentes como acordeón accesible con respuestas. | `h` | `nombre` | Done |
-| LS-05 | Conocer la red de apoyo y seguimiento en la landing page | T-08 | Sección Seguimiento y recomendaciones | Implementar la sección y su llamado a la acción hacia los planes. | `h` | `nombre` | Done |
-| — | Tarea general | T-09 | Header, Hero y Cómo funciona | Implementar la navegación, el menú móvil, el Hero, el problema y los cuatro pasos de uso. | `h` | `nombre` | Done |
-| — | Tarea general | T-10 | Planes, testimonios, beneficios, equipo y contacto | Implementar las secciones de conversión y confianza, y el footer. | `h` | `nombre` | Done |
-| — | Tarea general | T-11 | Internacionalización | Implementar los idiomas English (en_US, predeterminado) y Latin American Spanish (es_419) con selector de idioma. | `h` | `nombre` | Done |
-| — | Tarea general | T-12 | Accesibilidad | Agregar atributos ARIA, enlace para saltar al contenido, foco visible, navegación por teclado y respeto a `prefers-reduced-motion`. | `h` | `nombre` | Done |
-| — | Tarea general | T-13 | Términos de uso | Redactar y publicar los términos de uso, la política de privacidad y el aviso de accesibilidad, enlazados desde el footer. | `h` | `nombre` | Done |
-| — | Tarea general | T-14 | Despliegue | Configurar GitHub Pages para publicar el Landing Page desde el repositorio. | `h` | `nombre` | Done |
+| LS-01 | Conocer la personalización de perfiles en la landing page | T-01 | Sección Perfil y Personalización | Implementar la sección con la tarjeta de ejemplo de perfil (diagnóstico, sensibilidades y cuidadores vinculados). | 4 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-01 | Conocer la personalización de perfiles en la landing page | T-02 | Adaptación a móvil de la sección | Ajustar la sección a pantallas pequeñas mediante Responsive Web Design. | 3 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-02 | Conocer el Modo SOS en la landing page | T-03 | Sección Modo SOS | Implementar la sección con la guía de cuatro pasos del Modo SOS. | 4 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Preparar el botón «Crear cuenta y activarlo» para redirigir a la vista de registro de la Web Application cuando esta se despliegue. | 2 | Lopez Torres, Leonardo Gabriel | In-Process |
+| LS-03 | Conocer las herramientas de autorregulación en la landing page | T-05 | Sección Autorregulación | Implementar el panel de ejemplo con estímulos visuales y auditivos, intensidad y temporizador de calma. | 5 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-04 | Conocer el tablero CAA en la landing page | T-06 | Sección Comunicación CAA | Implementar la cuadrícula de pictogramas de ejemplo. | 3 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-04 | Conocer el tablero CAA en la landing page | T-07 | Preguntas frecuentes | Implementar las preguntas frecuentes como acordeón accesible con respuestas. | 3 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-05 | Conocer la red de apoyo y seguimiento en la landing page | T-08 | Sección Seguimiento y recomendaciones | Implementar la sección y su llamado a la acción hacia los planes. | 3 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-09 | Header, Hero y Cómo funciona | Implementar la navegación, el menú móvil, el Hero, el problema y los cuatro pasos de uso. | 6 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-10 | Planes, testimonios, beneficios, equipo y contacto | Implementar las secciones de conversión y confianza, y el footer. | 8 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-11 | Internacionalización | Implementar los idiomas English (en_US, predeterminado) y Latin American Spanish (es_419) con selector de idioma. | 6 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-12 | Accesibilidad | Agregar atributos ARIA, enlace para saltar al contenido, foco visible, navegación por teclado y respeto a `prefers-reduced-motion`. | 4 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-13 | Términos de uso | Redactar y publicar los términos de uso, la política de privacidad y el aviso de accesibilidad, enlazados desde el footer. | 3 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-14 | Despliegue | Configurar GitHub Pages para publicar el Landing Page desde el repositorio. | 2 | Lopez Torres, Leonardo Gabriel | Done |
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-En el Sprint 1 se implementó la primera versión del Landing Page como sitio estático con HTML5, CSS3 y JavaScript, aplicando el Design System de la sección 4.1 (paleta de colores y tipografía Bricolage Grotesque) y las decisiones de Arquitectura de Información de la sección 4.2. La tabla registra los commits del repositorio.
+En el Sprint 1 se implementó la primera versión del Landing Page como sitio estático con HTML5, CSS3 y JavaScript, aplicando el Design System de la sección 4.1 (paleta de colores y tipografía Bricolage Grotesque) y las decisiones de Arquitectura de Información de la sección 4.2. La tabla registra los commits del repositorio, incluida la internacionalización (i18n) del Landing Page en inglés y español, desarrollada en la rama `feature/I18n`, integrada en `develop` con GitFlow y publicada en `master`.
 
 | Repository | Branch        | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---------------|---|---|---|---|
-| ASI0729-2620-7793-Open-Source/landing-page | `main`      | 8da4692 | chore: initial commit | — | 19/09/2026 |
-| ASI0729-2620-7793-Open-Source/landing-page | `main`        | e2de4c4 | docs: add readme | — | 19/09/2026 |
-| ASI0729-2620-7793-Open-Source/landing-page | `feature/...` | `Commit Id` | `feat(landing): ...` | `cuerpo del commit` | `dd/mm/aaaa` |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [8da4692](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/8da4692576ddd7415ac443431f9ed2c31317ef33) | chore: initial commit | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [e2de4c4](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/e2de4c4f7344045c45caeba19eeb264d658bd3dc) | docs: add readme | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [c9a4df7](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/c9a4df75b431d8c892e3c7d66d7f98d1341b8318) | docs: add docs to all the codes. | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `feature/I18n` | [2b47acf](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/2b47acf) | feat: add i18n lenguage spanish and inglish | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `develop` | [4dfbb36](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/4dfbb36) | Merge branch 'feature/I18n' into develop | — | 19/09/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [5119b9e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/5119b9e) | feat: add intercionalizacion lenguague | — | 19/09/2026 |
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
@@ -430,6 +433,57 @@ En el Sprint 1 se desplegó el Landing Page. Los pasos realizados fueron: (1) cr
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
-`Explicar cómo se desarrollaron las actividades de implementación del Sprint 1 y qué aportó cada integrante (todos deben tener participación en el Landing Page).`
+La colaboración del equipo en el Sprint 1 se evidencia con los analíticos de GitHub Insights de los dos repositorios del proyecto: el del informe, donde el equipo documenta el proceso de ingeniería, y el del Landing Page, donde se implementa el producto.
 
-`Capturas de pantalla de los analíticos de colaboración y commits del repositorio landing-page en GitHub.`
+##### Repositorio del informe (Macally)
+
+La colaboración del equipo durante el Sprint 1 se evidencia con los analíticos de GitHub Insights del repositorio del informe [ASI0729-2620-7793-Open-Source/Macally](https://github.com/ASI0729-2620-7793-Open-Source/Macally), donde el equipo documenta el proceso de ingeniería (capítulos I a V) siguiendo GitFlow y Conventional Commits. Los cinco integrantes registran commits en la rama `main`, cada uno con su cuenta de GitHub: Dan-trax (Diaz Caruzo, Edgard Daniel), nahiryn8 (Ruiz Villegas, Yngrid Nahir), u20241a195-cmd (Diaz Yurivilca, Sofia), Deiko-138 (Lopez Torres, Leonardo Gabriel) y joanfpp2-ai (Payano Puchuri, Joan Fabricio).
+
+![configuration (1).png](images/Chapter-V/configuration%20%281%29.png)
+
+*Figura 1. Code frequency del repositorio del informe.* Muestra las líneas agregadas (verde) y eliminadas (rojo) por semana desde fines de agosto de 2026. La actividad se concentra en las semanas del 31 de agosto y del 14 de septiembre: la primera con unas 3,5 mil líneas agregadas y la segunda con cerca de 4 mil agregadas y 4,6 mil eliminadas, lo que refleja la redacción de los capítulos y su posterior revisión y corrección.
+
+![configuration (2).png](images/Chapter-V/configuration%20%282%29.png)
+
+*Figura 2. Commits por semana del repositorio del informe.* Muestra el número de commits semanales durante el último año. El repositorio no tiene actividad hasta fines de agosto de 2026 y, a partir de entonces, crece semana a semana: aproximadamente 4, 20, 21 y 51 commits en las últimas cuatro semanas, con el pico en la semana previa a la entrega AV1.
+
+![configuration (3).png](images/Chapter-V/configuration%20%283%29.png)
+
+*Figura 3. Pulse del 12 al 19 de septiembre de 2026.* Resume la última semana antes de la entrega: 5 autores enviaron 52 commits a `main` y a todas las ramas, se modificaron 148 archivos en `main` con 2978 líneas agregadas y 440 eliminadas, y el gráfico Top committers muestra que los cinco integrantes aportaron en la semana. No hay pull requests ni issues abiertos o cerrados en el período, porque el equipo integra el trabajo de las ramas `feature/*` mediante merges a `develop` y `main`.
+
+![configuration (4).png](images/Chapter-V/configuration%20%284%29.png)
+
+*Figura 4. Contributors (últimos 3 meses, commits a `main` sin contar merges).* Muestra la evolución semanal del repositorio y una gráfica por contribuidor:
+
+| Puesto | Cuenta de GitHub | Integrante | Commits | Líneas |
+|---|---|---|---|---|
+| #1 | Dan-trax | Diaz Caruzo, Edgard Daniel | 34 | +649 / −84 |
+| #2 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | 21 | +3828 / −389 |
+| #3 | u20241a195-cmd | Diaz Yurivilca, Sofia | 19 | +1832 / −944 |
+| #4 | Deiko-138 | Lopez Torres, Leonardo Gabriel | 17 | +1376 / −3387 |
+| #5 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | 5 | +666 / −70 |
+
+Los cinco integrantes tienen commits en `main`, con distinto volumen y en distintas semanas según los capítulos y aspectos que lideró cada uno.
+
+##### Repositorio del Landing Page (landing-page)
+
+El repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page) se creó el 19 de septiembre de 2026 y contiene la primera versión del Landing Page. Sus analíticos de GitHub Insights se muestran a continuación.
+
+![lading-insigths (1).png](images/Chapter-V/lading-insigths%20%281%29.png)
+
+*Figura 5. Contributors del repositorio del Landing Page (últimos 3 meses, commits a `master` sin contar merges).* Muestra que el repositorio registra 3 commits, todos en la semana del 14 de septiembre de 2026: Deiko-138 con 2 commits (+984 líneas, sin eliminaciones) y u20241a195-cmd con 1 commit (+407 / −404 líneas).
+
+![lading-insigths (2).png](images/Chapter-V/lading-insigths%20%282%29.png)
+
+*Figura 6. Commits por semana del repositorio del Landing Page.* Muestra que los 3 commits del repositorio se concentran en la última semana, que corresponde al Sprint 1, sin actividad previa.
+
+| Commit | Cuenta de GitHub | Integrante | Mensaje |
+|---|---|---|---|
+| [8da4692](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/8da4692576ddd7415ac443431f9ed2c31317ef33) | Deiko-138 | Lopez Torres, Leonardo Gabriel | chore: initial commit |
+| [e2de4c4](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/e2de4c4f7344045c45caeba19eeb264d658bd3dc) | Deiko-138 | Lopez Torres, Leonardo Gabriel | docs: add readme |
+| [c9a4df7](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/c9a4df75b431d8c892e3c7d66d7f98d1341b8318) | u20241a195-cmd | Diaz Yurivilca, Sofia | docs: add docs to all the codes. |
+| [2b47acf](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/2b47acf) | Deiko-138 | Lopez Torres, Leonardo Gabriel | feat: add i18n lenguage spanish and inglish |
+| [4dfbb36](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/4dfbb36) | Deiko-138 | Lopez Torres, Leonardo Gabriel | Merge branch 'feature/I18n' into develop |
+| [5119b9e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/5119b9e) | Deiko-138 | Lopez Torres, Leonardo Gabriel | feat: add intercionalizacion lenguague |
+
+En este Sprint, Leonardo Gabriel Lopez Torres creó el repositorio y su README y desarrolló la internacionalización (i18n) del Landing Page en inglés y español (rama `feature/I18n`, integrada en `develop` y publicada en `master`), y Sofia Diaz Yurivilca documentó el código de la landing. Las Figuras 5 y 6 se capturaron antes de subir la internacionalización; la tabla incluye todos los commits del Sprint. Los cinco integrantes registran aportes en el repositorio del informe (Figuras 1 a 4), donde se documentaron el diseño y el contenido que se implementan en el Landing Page, ademas en esta ultima se agrego la intercionalizacion i18n.

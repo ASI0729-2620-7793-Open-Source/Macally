@@ -722,6 +722,14 @@ Los wireframes representan la distribución base de cada sección antes de aplic
     <img src="images/Chapter-IV/FooterWireframe.png" alt="Wireframe Footer Section" width="800">
   </p>
 
+- **Versión Mobile Web Browser**
+
+  <p align="center">
+    <img src="images/Chapter-IV/LandingMobileWireframe.png" alt="Wireframe del Landing Page para Mobile Web Browser" width="360">
+  </p>
+
+  Wireframe del Landing Page para Mobile Web Browser. Mantiene el orden de lectura definido en la Arquitectura de Información: barra de navegación superior con el logo, bloque Hero con el llamado a la acción principal, sección del problema, los cuatro pasos de «Cómo funciona» y la primera sección de valor (Perfil y Personalización). La jerarquía visual del Hero y el contraste entre los bloques oscuros y los claros se conservan respecto de la versión Desktop.
+
 ### 4.3.2 Landing Page Mock-up
 
 Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura ya validada en los wireframes: tipografía Bricolage Grotesque en toda la interfaz, la paleta cromática (Deep Teal, Golden Yellow, Mint Teal, Blossom Pink y Cream como fondo base), botones con esquinas 100% redondeadas respetando un único botón primario por pantalla, y el grid de espaciado de 8pt tanto en el padding de las tarjetas como en la separación entre secciones. Sobre esta base se aplican además los criterios de diseño inclusivo definidos para Nubi: contraste mínimo AA (4.5:1) entre texto y fondo —el color principal Deep Teal es lo bastante oscuro para admitir texto blanco directo, mientras que el texto sobre Golden Yellow, Mint Teal o Blossom Pink usa Deep Teal en lugar de blanco— y estados de error o alerta comunicados siempre con ícono y texto, nunca solo con color. Cada bloque de valor (LS-01 a LS-05) reutiliza el mismo componente de tarjeta e iconografía de 24px definidos en la sección 4.1.2 (Iconografía), de modo que el visitante reconozca visualmente el mismo lenguaje al pasar de una sección a otra. El formulario de contacto, ubicado antes del footer, reutiliza el componente de Inputs definido en 4.1.2 (Componentes clave — Formularios e Inputs): campos con estado *Focus* (borde Mint Teal) y estado *Error* que combina borde en Coral Red con un ícono y un mensaje orientador (nunca solo color), además de un estado de confirmación tras el envío que refuerza el patrón de retroalimentación empática del sistema.
@@ -827,6 +835,14 @@ Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura 
   <p align="center">
     <img src="images/Chapter-IV/FooterMockup.png" alt="Mockup Footer Section" width="800">
   </p>
+
+- **Versión Mobile Web Browser**
+
+  <p align="center">
+    <img src="images/Chapter-IV/LandingMobileMockup.png" alt="Mock-up del Landing Page para Mobile Web Browser" width="360">
+  </p>
+
+  Mock-up del Landing Page para Mobile Web Browser, con el Design System de la sección 4.1: paleta de Deep Teal y Cream, tipografía Bricolage Grotesque, botones de esquinas redondeadas y las ilustraciones de la marca. Muestra la barra de navegación con las mismas etiquetas del Labeling System (Perfil, Modo SOS, Autocuidado, Planes, Comunicación y Apoyo), el Hero con el llamado a la acción «Comenzar Ahora», la sección «El problema», los cuatro pasos de «Cómo funciona» y el inicio de la sección de Perfil y Personalización.
 
 ## 4.4 Web Applications UX/UI Design
 
@@ -1165,6 +1181,16 @@ El siguiente video muestra y explica los principales flujos de interacción cubi
 |![prototype.png](images/Chapter-IV/prototype.png)                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQDSl4T7xAKFT52jN0itd5DMAQr-yskvbFkI0PyL_iQqJqM?e=6kqdJ6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  |
+
+**Prototipo para Mobile Web Browser**
+
+El prototipo Mobile parte de las mismas decisiones de interacción y navegación del prototipo Desktop, aplicadas al Landing Page en una pantalla estrecha.
+
+<p align="center">
+  <img src="images/Chapter-IV/LandingMobileMockup.png" alt="Prototipo Mobile del Landing Page" width="360">
+</p>
+
+**Video del prototipo Mobile:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQBHmE5d37DHSL1GOX6e8SvqAbwj1QIwporf0p9qLnxDaWQ?e=wNbiqG
 
 ## 4.6. Domain-Driven Software Architecture
 
