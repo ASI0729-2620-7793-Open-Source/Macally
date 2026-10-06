@@ -42,7 +42,7 @@
 
 | Código     | Apellidos y Nombres            |
 |------------|--------------------------------|
-| `código`   | Diaz Caruzo, Edgard Daniel     |
+| U202323911 | Diaz Caruzo, Edgard Daniel     |
 | U20241A195 | Diaz Yurivilca, Sofia          |
 | U202318620 | Payano Puchuri, Joan Fabricio  |
 | U20241A649 | Lopez Torres, Leonardo Gabriel |
