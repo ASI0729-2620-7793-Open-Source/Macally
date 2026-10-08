@@ -519,6 +519,27 @@ No forman parte del compromiso del Sprint 2 las historias de seguimiento y recom
 
 #### 5.2.2.2. Aspect Leaders and Collaborators
 
+Los aspectos considerados en el Sprint 2 corresponden a los cinco Bounded Contexts de la Frontend Web Application y a los aspectos transversales que todos comparten. A diferencia del Sprint 1, cada Bounded Context tiene un líder distinto, que lo desarrolla en su propia rama `feature/*` del repositorio Nubi---Frontend; el resto del equipo colabora revisando e integrando ese trabajo en `develop`. La Leadership-and-Collaboration Matrix indica quién lidera (L) y quién colabora (C) en cada aspecto; esta organización se refleja en la asignación de tareas del Sprint Backlog 2.
+
+| Team Member (Last Name, First Name) | GitHub Username | Perfil y Personalización | Gestión de Crisis (Modo SOS) | Autorregulación | Comunicación Asistida (CAA) | Red de Apoyo y Seguimiento | Shared (layout, navegación, i18n y API simulada) | Integración en `develop` | Deployment |
+|---|---|---|---|---|---|---|---|---|---|
+| Lopez Torres, Leonardo Gabriel | [LeonardoLopez138](https://github.com/LeonardoLopez138) | C | C | C | L | C | C | C | C |
+| Diaz Yurivilca, Sofia | [u20241a195-cmd](https://github.com/u20241a195-cmd) | C | L | C | C | C | C | L | C |
+| Payano Puchuri, Joan Fabricio | [joanfpp2-ai](https://github.com/joanfpp2-ai) | C | C | L | C | C | L | C | C |
+| Ruiz Villegas, Yngrid Nahir | [nahiryn8](https://github.com/nahiryn8) | L | C | C | C | C | C | C | C |
+| Diaz Caruzo, Edgard Daniel | [Dan-trax](https://github.com/Dan-trax) | C | C | C | C | L | C | C | L |
+
+Cada aspecto agrupa el siguiente trabajo:
+
+- **Perfil y Personalización:** perfiles del niño o adolescente, perfil sensorial, cuidadores asociados y cuenta (rama `feature/profile-personalization`).
+- **Gestión de Crisis (Modo SOS):** activación del Modo SOS, guía paso a paso y resumen del episodio (rama `feature/crisis-management`).
+- **Autorregulación:** galería de estímulos visuales y auditivos, estímulo en uso con intensidad y modo de baja estimulación, y temporizador de calma (rama `feature/self-regulation`).
+- **Comunicación Asistida (CAA):** tablero de pictogramas y necesidades básicas (rama `feature/assistive-comunication`).
+- **Red de Apoyo y Seguimiento:** panel del cuidador con solicitudes de ayuda y seguimiento (rama `feature/support-network`).
+- **Shared:** layout responsive con barra lateral y barra superior, navegación entre módulos, internacionalización en English y Latin American Spanish, y la API simulada con json-server que usan todos los Bounded Contexts.
+- **Integración en `develop`:** unión de las ramas `feature/*` en `develop` siguiendo GitFlow (sección 5.1.2).
+- **Deployment:** publicación de la Frontend Web Application para la revisión del Sprint (sección 5.2.2.7).
+
 #### 5.2.2.3. Sprint Backlog 2
 
 #### 5.2.2.4. Development Evidence for Sprint Review
@@ -540,3 +561,38 @@ Las siguientes confirmaciones corresponden a cambios representativos implementad
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
+
+# Bibliografía
+
+Brandolini, A. (2021). *Introducing EventStorming*. Leanpub. https://leanpub.com/introducing_eventstorming
+
+Brown, S. (s. f.). *The C4 model for visualising software architecture*. https://c4model.com/
+
+Congreso de la República del Perú. (2014). *Ley N.° 30150: Ley de protección de las personas con trastorno del espectro autista (TEA)*. https://www.gob.pe/institucion/minsa/normas-legales/197052-30150
+
+Evans, E. (2003). *Domain-driven design: Tackling complexity in the heart of software*. Addison-Wesley.
+
+Google. (s. f.). *Angular coding style guide*. https://angular.dev/style-guide
+
+Google. (s. f.). *Angular Material*. https://material.angular.dev/
+
+Iadarola, S., Levato, L., Harrison, B., Smith, T., Lecavalier, L., Johnson, C., Swiezy, N., Bearss, K., y Scahill, L. (2018). Teaching parents behavioral strategies for autism spectrum disorder (ASD): Effects on stress, strain, and competence. *Journal of Autism and Developmental Disorders, 48*(4), 1031–1040. https://doi.org/10.1007/s10803-017-3339-2
+
+Infobae. (2024, 2 de abril). *Más de 77.000 casos de autismo atendidos en Perú en el 2023 por el Ministerio de Salud*. https://www.infobae.com/america/agencias/2024/04/02/mas-de-77000-casos-de-autismo-atendidos-en-peru-en-el-2023-por-el-ministerio-de-salud/
+
+Instituto Nacional de Estadística e Informática. (2025). *Estadísticas de las tecnologías de información y comunicación en los hogares: Abril-mayo-junio 2025* [Informe técnico]. https://www.inei.gob.pe/media/MenuRecursivo/boletines/informetecnico_tics_iit25.pdf
+
+Organización Mundial de la Salud. (2025). *Autismo* [Ficha descriptiva]. https://www.who.int/es/news-room/fact-sheets/detail/autism-spectrum-disorders
+
+Panamericana Televisión. (2025, 13 de julio). *Más de 25 mil casos de TDAH fueron atendidos por el Minsa de enero a junio del 2025*. https://panamericana.pe/nacionales/448079-25-mil-casos-tdah-atendidos-minsa-enero-junio-2025
+
+Salari, N., Ghasemi, H., Abdoli, N., Rahmani, A., Shiri, M. H., Hashemian, A. H., Akbari, H., y Mohammadi, M. (2023). The global prevalence of ADHD in children and adolescents: A systematic review and meta-analysis. *Italian Journal of Pediatrics, 49*, Artículo 48. https://doi.org/10.1186/s13052-023-01456-1
+
+Shaw, K. A., Williams, S., Patrick, M. E., Valencia-Prado, M., Durkin, M. S., Howerton, E. M., Ladd-Acosta, C. M., Pas, E. T., Bakian, A. V., Bartholomew, P., Nieves-Muñoz, N., Sidwell, K., Alford, A., Bilder, D. A., DiRienzo, M., Fitzgerald, R. T., Furnier, S. M., Hudson, A. E., Pokoski, O. M., . . . Maenner, M. J. (2025). Prevalence and early identification of autism spectrum disorder among children aged 4 and 8 years — Autism and Developmental Disabilities Monitoring Network, 16 sites, United States, 2022. *MMWR Surveillance Summaries, 74*(2), 1–22. https://doi.org/10.15585/mmwr.ss7402a1
+
+TVPerú. (2024, 2 de abril). *Día Mundial de Concienciación del Autismo: Conoce la cifra de personas con TEA en el Perú*. https://www.tvperu.gob.pe/novedades/tvperu/dia-mundial-de-concienciacion-del-autismo-conoce-la-cifra-de-personas-con-tea-en-el-peru
+
+Wang, T., Ma, Y., Du, X., Li, C., Peng, Z., Wang, Y., y Zhou, H. (2024). Digital interventions for autism spectrum disorders: A systematic review and meta-analysis. *Pediatric Investigation, 8*(3), 224–236. https://doi.org/10.1002/ped4.12417
+
+Xu, F., Gage, N., Zeng, S., Zhang, M., Iun, A., O'Riordan, M., y Kim, E. (2026). The use of digital interventions for children and adolescents with autism spectrum disorder—A meta-analysis. *Journal of Autism and Developmental Disorders, 56*(2), 499–515. https://doi.org/10.1007/s10803-024-06563-4
+
