@@ -336,7 +336,7 @@ Esta configuración permite mantener separados los procesos de desarrollo y prod
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-En esta sección se documenta, Sprint a Sprint, la implementación del Landing Page, de los RESTful Web Services y de la Frontend Web Application de NUBI. Conforme al alcance de la entrega AV1, se documenta el **Sprint 1**, cuyo producto es la primera versión desplegada del Landing Page. Los RESTful Web Services y la Frontend Web Application se iniciarán en los siguientes Sprints, según el orden del Product Backlog (sección 3.3).
+En esta sección se documenta, Sprint a Sprint, la implementación del Landing Page, de los RESTful Web Services y de la Frontend Web Application de NUBI. Se documentan el **Sprint 1**, cuyo producto es la primera versión desplegada del Landing Page, y el **Sprint 2**, cuyo producto es la primera versión de la Frontend Web Application. Los RESTful Web Services se implementarán en los siguientes Sprints, según el orden del Product Backlog (sección 3.3); mientras tanto, la Frontend Web Application usa una API simulada.
 
 ### 5.2.1. Sprint 1
 
@@ -452,13 +452,13 @@ La colaboración del equipo durante el Sprint 1 se evidencia con los analíticos
 
 *Figura 4. Contributors (últimos 3 meses, commits a `main` sin contar merges).* Muestra la evolución semanal del repositorio y una gráfica por contribuidor:
 
-| Puesto | Cuenta de GitHub | Integrante | Commits | Líneas |
-|---|---|---|---|---|
-| #1 | Dan-trax | Diaz Caruzo, Edgard Daniel | 34 | +649 / −84 |
-| #2 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | 21 | +3828 / −389 |
-| #3 | u20241a195-cmd | Diaz Yurivilca, Sofia | 19 | +1832 / −944 |
-| #4 | Deiko-138 | Lopez Torres, Leonardo Gabriel | 17 | +1376 / −3387 |
-| #5 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | 5 | +666 / −70 |
+| Puesto | Cuenta de GitHub | Integrante | Commits | Líneas       |
+|---|---|---|---------|--------------|
+| #1 | Dan-trax | Diaz Caruzo, Edgard Daniel | 0       | 0            |
+| #2 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | 0       | 0            |
+| #3 | u20241a195-cmd | Diaz Yurivilca, Sofia | 19      | +1832 / −944 |
+| #4 | Deiko-138 | Lopez Torres, Leonardo Gabriel | 17      | 0            |
+| #5 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | 0       | 0            |
 
 Los cinco integrantes tienen commits en `main`, con distinto volumen y en distintas semanas según los capítulos y aspectos que lideró cada uno.
 
@@ -481,3 +481,52 @@ El repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://github.com/A
 | [c9a4df7](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/c9a4df75b431d8c892e3c7d66d7f98d1341b8318) | u20241a195-cmd | Diaz Yurivilca, Sofia | docs: add docs to all the codes. |
 
 En este Sprint, Leonardo Gabriel Lopez Torres creó el repositorio y su README, y Sofia Diaz Yurivilca documentó el código de la landing. Los cinco integrantes registran aportes en el repositorio del informe (Figuras 1 a 4), donde se documentaron el diseño y el contenido que se implementan en el Landing Page.
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+El Sprint Planning 2 definió el alcance de la primera versión de la Frontend Web Application a partir de las User Stories US-01 a US-29 del Product Backlog, que corresponden a las épicas EPIC-01 a EPIC-05: Perfil y Personalización, Gestión de Crisis (Modo SOS), Autorregulación, Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento. Cada Bounded Context se desarrolla en su propia rama `feature/*` del repositorio [Nubi---Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend) y se integra en `develop` siguiendo GitFlow (sección 5.1.2). En este Sprint la aplicación consume una API simulada con json-server, porque los RESTful Web Services se implementarán en un Sprint posterior.
+
+| Campo | Detalle |
+|---|---|
+| Sprint # | Sprint 2 |
+| **Sprint Planning Background** | |
+| Date | 2026-10-03 |
+| Time | 01:04 PM |
+| Location | Virtual (Google Meet y WhatsApp) |
+| Prepared By | Diaz Yurivilca, Sofia |
+| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel |
+| Sprint 1 Review Summary | El Landing Page se desplegó en GitHub Pages con las historias LS-01 a LS-05 completas (10 de 10 Story Points), además de los planes, las preguntas frecuentes, la presentación del equipo y el formulario de contacto, en English y Latin American Spanish y con criterios de accesibilidad. De las 14 tareas del Sprint Backlog 1, 13 quedaron en Done y la tarea T-04 (botón «Crear cuenta y activarlo» hacia la Web Application) quedó en In-Process, porque la aplicación todavía no estaba desplegada; se completa en este Sprint. |
+| Sprint 1 Retrospective Summary | A partir de la evidencia del Sprint 1 se identifican como aciertos la entrega completa del alcance planificado del Landing Page, la incorporación temprana de internacionalización y accesibilidad, y el uso de GitFlow y Conventional Commits. Como oportunidades de mejora se identifican que las 14 tareas se asignaron a un solo integrante y que los 3 commits del repositorio del Landing Page se concentraron en la última semana (Figura 6). Para el Sprint 2 el trabajo se reparte por Bounded Context, cada uno en su propia rama `feature/*`, con commits pequeños y frecuentes. |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | *Our focus is on delivering a first deployed version of the Nubi Frontend Web Application with the main flows of its five Bounded Contexts. We believe it delivers to caregivers a way to personalize the profile of the child or teenager, activate SOS Mode with a step-by-step guide, choose calming stimuli, communicate with the AAC board and request help from the support network, instead of only reading about these features in the Landing Page. This will be confirmed when a caregiver can complete each of these flows (US-01 to US-29) from the deployed application, in Desktop and Mobile web browsers, in English or Spanish.* |
+| Sprint 2 Velocity | 77 Story Points|
+| Sum of Story Points | 77 |
+
+La distribución del alcance por épica es la siguiente:
+
+| Épica | User Stories | Story Points |
+|---|---|---|
+| EPIC-01 Perfil y Personalización | US-01 a US-06 | 15 |
+| EPIC-02 Gestión de Crisis (Modo SOS) | US-07 a US-12 | 17 |
+| EPIC-03 Autorregulación | US-13 a US-18 | 16 |
+| EPIC-04 Comunicación Asistida (CAA) | US-19 a US-24 | 17 |
+| EPIC-05 Red de Apoyo y Seguimiento | US-25 a US-29 | 12 |
+| **Total** | **29 User Stories** | **77** |
+
+No forman parte del compromiso del Sprint 2 las historias de seguimiento y recomendaciones de Red de Apoyo y Seguimiento (US-30 a US-45), la cuenta y la suscripción (US-46 a US-48) ni las Technical Stories TS-01 a TS-05, que permanecen en el Product Backlog.
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+#### 5.2.2.3. Sprint Backlog 2
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
