@@ -523,6 +523,16 @@ No forman parte del compromiso del Sprint 2 las historias de seguimiento y recom
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
+Las siguientes confirmaciones corresponden a cambios representativos implementados en el repositorio frontend durante el Sprint 2. Se incluyen ramas integradas a `develop` y commits asociados a los bounded contexts trabajados.
+
+| Repositorio | Rama | ID de confirmación | Mensaje de confirmación | Descripción del cambio | Confirmado en (fecha) |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| [ASI0729-2620-7793-Open-Source/Nubi---Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend) | `feature/assistive-comunication` → `develop` | `2d79135` | `feat: add component to comunication home-overview` | Se implementó el componente home/overview del bounded context de comunicación asistida, con su plantilla, estilos y lógica de presentación. | 08/10/2026 |
+| [ASI0729-2620-7793-Open-Source/Nubi---Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend) | `feature/crisis-management` → `develop` | `f995df8` | `feat(crisis-management): add crisis summary view` | Se añadió la vista de resumen de crisis, que cierra el flujo del Modo SOS tras la activación y la guía paso a paso. | 08/10/2026 |
+| [ASI0729-2620-7793-Open-Source/Nubi---Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend) | `feature/profile-personalization` → `develop` | `09a8f99` | `feat(profile): add profile list, detail and caregiver views` | Se implementaron las vistas de lista, detalle y cuidador del perfil, junto con sus rutas y los paneles de suscripción, pagos y soporte. | 08/10/2026 |
+| [ASI0729-2620-7793-Open-Source/Nubi---Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend) | `feature/self-regulation` → `develop` | `79eec01` | `feat(self-regulation): add stimulus session with scenes and sounds` | Se añadió la sesión de estímulos con escenarios visuales y reproducción de sonidos, y se registró su ruta en la aplicación. | 08/10/2026 |
+| [ASI0729-2620-7793-Open-Source/Nubi---Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend) | `feature/support-network` → `develop` | `72b769e` | `feat(support): add support network dashboard` | Se implementó el dashboard de la red de apoyo y se registró su ruta en la aplicación. | 08/10/2026 |
+
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
