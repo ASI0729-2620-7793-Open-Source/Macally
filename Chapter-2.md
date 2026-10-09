@@ -601,45 +601,35 @@ Los cinco tableros resultantes son el punto de partida para identificar los Boun
 ### 2.4.1. Red de Apoyo y Seguimiento
 Flujo de eventos para el envío de alertas a contactos de confianza, registro de episodios y generación de reportes consultables por cuidadores y profesionales de la salud.
 
-<p align="center">
-  <img src="images/Chapter-II/event%20storming%20(1).png" alt="event storming 1" width="700">
-</p>
+![image5.png](images/Chapter-II/image5.png)
   Nota. Diagrama de eventos del proceso de Red de Apoyo y Seguimiento, detallando los pasos de notificación, llegada del contacto, registro del episodio y compartición de reportes.
 
 
 ### 2.4.2. Comunicación Asistida (CAA)
 Secuencia de acciones que abarca desde la apertura del tablero de comunicación hasta la selección de pictogramas y la reproducción por voz del mensaje para el acompañante.
 
-<p align="center">
-  <img src="images/Chapter-II/event%20storming%20(2).png" alt="event storming 2" width="700">
-</p>
+![image4.png](images/Chapter-II/image4.png)
 Nota. Diagrama de eventos del proceso de Comunicación Asistida (CAA), mostrando la interacción visual mediante pictogramas y la conversión de texto a voz (TTS) para el acompañante.
 
 
 ### 2.4.3. Autorregulación
 Flujo funcional orientado a la disminución de sobrecarga mediante el inicio de ejercicios de respiración guiada, sonidos relajantes y uso del lienzo de dibujo libre.
 
-<p align="center">
-  <img src="images/Chapter-II/event%20storming%20(3).png" alt="event storming 3" width="700">
-</p>
+![image3.png](images/Chapter-II/image3.png)
 
 Nota. Diagrama de eventos del flujo de Autorregulación, representando las etapas de activación de baja estimulación, guía de respiración, espacio de trazo libre y guardado de recursos de calma.
 
 ### 2.4.4. Gestión de Crisis (Modo SOS)
 Ruta de contención rápida activada ante señales tempranas para guiarse paso a paso en la desescalada del episodio y el restablecimiento de la calma.
 
-<p align="center">
-  <img src="images/Chapter-II/event%20storming%20(4).png" alt="event storming 4" width="700">
-</p>
+![image2.png](images/Chapter-II/image2.png)
 Nota. Diagrama de eventos del flujo de Gestión de Crisis (Modo SOS), ilustrando los pasos inmediatos de selección de detonante, temporizador visual y sugerencias de contención para el cuidador.
 
 
 ### 2.4.5. Perfil y Personalización
 Proceso de configuración inicial del usuario donde se definen diagnósticos, detonantes sensoriales, necesidades comunicativas y contactos de confianza.
 
-<p align="center">
-  <img src="images/Chapter-II/event%20storming%20(5).png" alt="event storming 5" width="700">
-</p>
+![image.png](images/Chapter-II/image.png)
 Nota. Diagrama de eventos del proceso de Perfil y Personalización, detallando la captura de datos sensoriales, preferencias comunicativas y vinculación de la red de apoyo.
 
 

@@ -841,38 +841,3 @@ La tabla resume los commits de cada integrante en la rama `develop` entre el 3 y
 *Figura 18. Pulse del 1 al 8 de octubre de 2026.* Resume la semana del Sprint 2: 5 autores enviaron 81 commits sin contar merges, se integraron 2 pull requests (#1, `feat(support): add support network dashboard`, y #3, `docs(support): add support network documentation`), no hay pull requests abiertos ni issues, y el gráfico Top committers muestra el aporte de los cinco integrantes.
 
 Como oportunidad de mejora, 81 de los 87 commits de `develop` se registraron el 8 de octubre de 2026, el último día del Sprint, por lo que la integración de las ramas se hizo con poco margen para revisar. Para el Sprint 3 el equipo integrará cada rama `feature/*` en `develop` conforme se complete cada User Story.
-
-# Bibliografía
-
-Brandolini, A. (2021). *Introducing EventStorming*. Leanpub. https://tinyurl.com/282nyd4o
-
-Brown, S. (s. f.). *The C4 model for visualising software architecture*. https://tinyurl.com/ydyj2qm8
-
-Congreso de la República del Perú. (2014). *Ley N.° 30150: Ley de protección de las personas con trastorno del espectro autista (TEA)*. https://tinyurl.com/2x6lqly4
-
-Evans, E. (2003). *Domain-driven design: Tackling complexity in the heart of software*. Addison-Wesley.
-
-Google. (s. f.). *Angular coding style guide*. https://tinyurl.com/2xn6z5cb
-
-Google. (s. f.). *Angular Material*. https://tinyurl.com/2yn53adk
-
-Iadarola, S., Levato, L., Harrison, B., Smith, T., Lecavalier, L., Johnson, C., Swiezy, N., Bearss, K., y Scahill, L. (2018). Teaching parents behavioral strategies for autism spectrum disorder (ASD): Effects on stress, strain, and competence. *Journal of Autism and Developmental Disorders, 48*(4), 1031–1040. https://doi.org/gc9d6s
-
-Infobae. (2024, 2 de abril). *Más de 77.000 casos de autismo atendidos en Perú en el 2023 por el Ministerio de Salud*. https://tinyurl.com/2avawn8p
-
-Instituto Nacional de Estadística e Informática. (2025). *Estadísticas de las tecnologías de información y comunicación en los hogares: Abril-mayo-junio 2025* [Informe técnico]. https://tinyurl.com/2bzuyhty
-
-Organización Mundial de la Salud. (2025). *Autismo* [Ficha descriptiva]. https://tinyurl.com/ygnpqhad
-
-Panamericana Televisión. (2025, 13 de julio). *Más de 25 mil casos de TDAH fueron atendidos por el Minsa de enero a junio del 2025*. https://tinyurl.com/22hhodfj
-
-Salari, N., Ghasemi, H., Abdoli, N., Rahmani, A., Shiri, M. H., Hashemian, A. H., Akbari, H., y Mohammadi, M. (2023). The global prevalence of ADHD in children and adolescents: A systematic review and meta-analysis. *Italian Journal of Pediatrics, 49*, Artículo 48. https://doi.org/gsd3zz
-
-Shaw, K. A., Williams, S., Patrick, M. E., Valencia-Prado, M., Durkin, M. S., Howerton, E. M., Ladd-Acosta, C. M., Pas, E. T., Bakian, A. V., Bartholomew, P., Nieves-Muñoz, N., Sidwell, K., Alford, A., Bilder, D. A., DiRienzo, M., Fitzgerald, R. T., Furnier, S. M., Hudson, A. E., Pokoski, O. M., . . . Maenner, M. J. (2025). Prevalence and early identification of autism spectrum disorder among children aged 4 and 8 years — Autism and Developmental Disabilities Monitoring Network, 16 sites, United States, 2022. *MMWR Surveillance Summaries, 74*(2), 1–22. https://doi.org/pkzz
-
-TVPerú. (2024, 2 de abril). *Día Mundial de Concienciación del Autismo: Conoce la cifra de personas con TEA en el Perú*. https://tinyurl.com/2bt97gap
-
-Wang, T., Ma, Y., Du, X., Li, C., Peng, Z., Wang, Y., y Zhou, H. (2024). Digital interventions for autism spectrum disorders: A systematic review and meta-analysis. *Pediatric Investigation, 8*(3), 224–236. https://doi.org/hcmxpf
-
-Xu, F., Gage, N., Zeng, S., Zhang, M., Iun, A., O'Riordan, M., y Kim, E. (2026). The use of digital interventions for children and adolescents with autism spectrum disorder—A meta-analysis. *Journal of Autism and Developmental Disorders, 56*(2), 499–515. https://doi.org/qj7w
-
