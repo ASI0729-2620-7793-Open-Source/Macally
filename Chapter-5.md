@@ -452,13 +452,14 @@ La colaboración del equipo durante el Sprint 1 se evidencia con los analíticos
 
 *Figura 4. Contributors (últimos 3 meses, commits a `main` sin contar merges).* Muestra la evolución semanal del repositorio y una gráfica por contribuidor:
 
-| Puesto | Cuenta de GitHub | Integrante | Commits | Líneas       |
-|---|---|---|---------|--------------|
-| #1 | Dan-trax | Diaz Caruzo, Edgard Daniel | 0       | 0            |
-| #2 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | 0       | 0            |
-| #3 | u20241a195-cmd | Diaz Yurivilca, Sofia | 19      | +1832 / −944 |
-| #4 | Deiko-138 | Lopez Torres, Leonardo Gabriel | 17      | 0            |
-| #5 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | 0       | 0            |
+| Puesto | Cuenta de GitHub | Integrante | Commits | Líneas |
+|---|---|---|---|---|
+| #1 | Dan-trax | Diaz Caruzo, Edgard Daniel | 34 | +649 / −84 |
+| #2 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | 21 | +3828 / −389 |
+| #3 | u20241a195-cmd | Diaz Yurivilca, Sofia | 19 | +1832 / −944 |
+| #4 | Deiko-138 | Lopez Torres, Leonardo Gabriel | 17 | +1376 / −3387 |
+| #5 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | 5 | +666 / −70 |
+
 
 Los cinco integrantes tienen commits en `main`, con distinto volumen y en distintas semanas según los capítulos y aspectos que lideró cada uno.
 
