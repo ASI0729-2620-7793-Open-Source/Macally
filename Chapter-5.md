@@ -556,6 +556,97 @@ Las siguientes confirmaciones corresponden a cambios representativos implementad
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+Durante el Sprint 2 se desarrollaron las vistas de la aplicación web de Nubi para las principales tareas de cuidadores, usuarios neurodivergentes y administradores de instituciones. La evidencia incluye el inicio con los avisos del tablero de comunicación, la activación y el seguimiento del Modo SOS, la galería de estímulos con su sesión y su temporizador de calma, el dashboard de la red de apoyo, la gestión de perfiles y cuidadores, y la cuenta con suscripción, pagos y soporte. Las capturas documentan las pantallas y los flujos de interacción implementados en el frontend, disponible en español e inglés mediante el selector de idioma.
+
+Evidencia visual:
+
+1. **Inicio y vista general de comunicación** (`/inicio`)
+
+   La vista saluda al cuidador y muestra lo que el usuario acaba de comunicar mediante el tablero: el aviso con su origen y su hora, la acción para confirmar la recepción y el acceso al tablero completo y al historial. También presenta el estado actual del usuario y el acceso rápido a la red de apoyo.
+
+   ![Inicio y vista general](images/Chapter-V/sprint-2/01-inicio.png)
+
+2. **Tablero de comunicación aumentativa (CAA)** (`/comunicacion`)
+
+   El tablero organiza los pictogramas por categoría (necesidades básicas, emociones y actividades) y permite filtrarlos, marcarlos como favoritos, reordenarlos y agregar pictogramas personalizados. Al tocar un pictograma se avisa al cuidador mediante una notificación que indica lo que el usuario necesita.
+
+   ![Tablero CAA](images/Chapter-V/sprint-2/02-tablero-caa.png)
+
+3. **Activación del Modo SOS** (`/modo-sos`)
+
+   La pantalla ofrece un único botón circular para activar la guía con un solo toque. Permite elegir el perfil al que va dirigida la guía, retomar una guía en curso o finalizar el episodio, y explica cómo funciona el modo: guía paso a paso, adaptada al perfil y con registro automático.
+
+   ![Activación del Modo SOS](images/Chapter-V/sprint-2/03-sos-activacion.png)
+
+4. **Guía SOS paso a paso** (`/modo-sos/sesion/:sessionId`)
+
+   La guía muestra una sola acción por vez, con el avance (paso N de M) y una animación de respiración sincronizada. Incluye avisos según las sensibilidades del perfil, y solicita confirmación antes de omitir un paso obligatorio.
+
+   ![Guía SOS](images/Chapter-V/sprint-2/04-sos-guia.png)
+
+5. **Resumen del episodio** (`/modo-sos/sesion/:sessionId/resumen`)
+
+   Al terminar la guía se presenta la duración, la intensidad inicial y final, el detonante, el estado actual del usuario y los pasos completados u omitidos. La acción *Finalizar y guardar* registra el episodio en el historial y muestra una confirmación.
+
+   ![Resumen del episodio](images/Chapter-V/sprint-2/05-sos-resumen.png)
+
+6. **Galería de estímulos** (`/autocuidado`)
+
+   La galería presenta estímulos visuales y auditivos (burbujas flotantes, olas de color, cielo estrellado, lluvia suave, sonido del mar y piano relajante). Se filtra por tipo, admite favoritos y muestra un aviso con los estímulos sugeridos según las sensibilidades del perfil.
+
+   ![Galería de estímulos](images/Chapter-V/sprint-2/06-galeria-estimulos.png)
+
+7. **Sesión de estímulo** (`/autocuidado/estimulos/:resourceId`)
+
+   La vista reproduce el estímulo seleccionado con un círculo guía de respiración. Permite regular la intensidad, activar el modo de baja estimulación, pausar o reproducir el sonido, abrir el temporizador de calma o terminar la sesión.
+
+   ![Sesión de estímulo](images/Chapter-V/sprint-2/07-sesion-estimulo.png)
+
+8. **Temporizador de calma** (`/autocuidado/temporizador/:sessionId`)
+
+   Pantalla de foco único, sin barra lateral, con la duración configurable, el tiempo restante y los controles de pausa y reanudación. Al terminar el tiempo pregunta cómo se siente el usuario y, si aún no se calma, ofrece pedir ayuda a su red de apoyo o volver al estímulo.
+
+   ![Temporizador de calma](images/Chapter-V/sprint-2/08-temporizador.png)
+
+9. **Dashboard de la red de apoyo** (`/support-network`)
+
+   Reúne la última comunicación del usuario con la acción para confirmar su recepción, el estado de bienestar actual, la actividad reciente y un gráfico del nivel de bienestar de los últimos días.
+
+   ![Dashboard de la red de apoyo](images/Chapter-V/sprint-2/09-red-de-apoyo.png)
+
+10. **Lista y detalle de perfiles** (`/perfil` y `/perfil/:id`)
+
+    La lista permite elegir el perfil a gestionar. El detalle se organiza en datos generales, sensibilidades (auditiva, visual y táctil en niveles de 1 a 4, con modo de baja estimulación), diagnóstico y cuidadores. Solo el cuidador principal puede invitar y revocar cuidadores, y la vista informa cuando se alcanza el límite del plan.
+
+    ![Lista de perfiles](images/Chapter-V/sprint-2/10-perfiles-lista.png)
+
+    ![Detalle del perfil](images/Chapter-V/sprint-2/10-perfiles-detalle.png)
+
+11. **Mi perfil cuidador** (`/perfil/cuidador`)
+
+    Muestra las invitaciones pendientes con el rol ofrecido, y los perfiles a cargo del cuidador con su rol en cada uno.
+
+    ![Perfil del cuidador](images/Chapter-V/sprint-2/11-perfil-cuidador.png)
+
+12. **Cuenta, suscripción, pagos y soporte** (`/my-plan`, `/my-plan/institution` y `/my-plan/students`)
+
+    La cuenta del cuidador reúne sus datos y las secciones de suscripción, pagos y soporte. La vista de institución presenta el resumen, los miembros con su rol y estado, los perfiles gestionados y las incidencias abiertas. La vista del docente lista los perfiles de estudiantes asignados.
+
+    ![Cuenta del cuidador](images/Chapter-V/sprint-2/12-cuenta-cuidador.png)
+
+
+13. **Inicio de sesión y registro** (`/auth/sign-in` y `/auth/sign-up`)
+
+    Pantallas públicas, fuera del menú principal, para ingresar con correo y contraseña o crear una cuenta. Informan cuando las credenciales son incorrectas o el correo ya está en uso.
+
+    ![Inicio de sesión](images/Chapter-V/sprint-2/13-sign-in.png)
+
+Aplicación desplegada: [Nubi - Web Application](https://nubi-frontend-7793.web.app/inicio)
+
+Video de recorrido del Sprint 2: [Ver video de la revisión del Sprint 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g022_upc_edu_pe/IQCswrosKxOGSLBBjnkX8Xy3ASiBxkbeX1xtZsKVPnn7zmU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ityKa7)
+
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
