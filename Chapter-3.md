@@ -95,7 +95,7 @@ Además del objetivo que muestra el mapa, el equipo define los siguientes **Busi
 
 A continuación se presenta el Product Backlog de Nubi. Para su elaboración y gestión se utilizó **Trello**, organizando las User Stories, Technical Stories y Landing Page Stories definidas en la sección 3.1 en una única lista priorizada llamada "Product Backlog", en la que cada tarjeta corresponde a una historia con su identificador, título y los Story Points asignados como etiqueta. El orden de las tarjetas dentro del tablero refleja la prioridad de desarrollo definida por el equipo.
 
-**URL público del Product Backlog en Trello:** https://trello.com/invite/b/6a925979f57ffeff764561f2/ATTI06bb5078c424824a45a5c057b3d5eb8dDAC5961D/product-backlog
+**URL público del Product Backlog en Trello:** https://tinyurl.com/259tqw8u
 
 ![Product Backlog.png](images/Chapter-III/Product%20Backlog.png)
 

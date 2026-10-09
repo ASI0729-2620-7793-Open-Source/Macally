@@ -612,9 +612,9 @@ La navegación superior usa anclas (*anchor scroll*) y las mismas etiquetas del 
 
 El wireframe y el mock-up se construyeron directamente en HTML/CSS, tomando como referencia el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*. De ese template se extrajeron los valores de color y tipografía desde el modo Dev de Figma y se aplicaron al Design System de la sección 4.1. El resultado se importó a Figma con un plugin de conversión de HTML a Figma, para su documentación y edición visual.
 
-El diseño está disponible en el Figma "NUBI": https://www.figma.com/design/WGr7DojMDH0m122pRirLJw/NUBI?node-id=0-1&t=DMfnxyCv5S7KKeCJ-1
+El diseño está disponible en el Figma "NUBI": https://tinyurl.com/29blmdp6
 
-El código fuente se encuentra en el repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page) y el sitio desplegado está disponible en https://asi0729-2620-7793-open-source.github.io/landing-page/.
+El código fuente se encuentra en el repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://tinyurl.com/28o2kj4u) y el sitio desplegado está disponible en https://tinyurl.com/27e6ugke.
 
 ### 4.3.1 Landing Page Wireframe
 
@@ -1180,7 +1180,7 @@ El siguiente video muestra y explica los principales flujos de interacción cubi
 
 |![prototype.png](images/Chapter-IV/prototype.png)                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQDSl4T7xAKFT52jN0itd5DMAQr-yskvbFkI0PyL_iQqJqM?e=6kqdJ6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  |
+| link: https://tinyurl.com/2d4rjrop  |
 
 **Prototipo para Mobile Web Browser**
 
@@ -1190,7 +1190,7 @@ El prototipo Mobile parte de las mismas decisiones de interacción y navegación
   <img src="images/Chapter-IV/LandingMobileMockup.png" alt="Prototipo Mobile del Landing Page" width="360">
 </p>
 
-**Video del prototipo Mobile:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQBHmE5d37DHSL1GOX6e8SvqAbwj1QIwporf0p9qLnxDaWQ?e=wNbiqG
+**Video del prototipo Mobile:** https://tinyurl.com/23solcwj
 
 ## 4.6. Domain-Driven Software Architecture
 
