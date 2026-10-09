@@ -542,6 +542,45 @@ Cada aspecto agrupa el siguiente trabajo:
 
 #### 5.2.2.3. Sprint Backlog 2
 
+El objetivo del Sprint 2 es entregar la primera versión funcional de la Frontend Web Application de Nubi, implementando los principales flujos correspondientes a los cinco Bounded Contexts: Perfil y Personalización, Gestión de Crisis (Modo SOS), Autorregulación, Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento.
+
+El alcance del Sprint comprende las User Stories US-01 a US-29 del Product Backlog, con un total de 77 Story Points. Cada Bounded Context es desarrollado por el integrante responsable en su respectiva rama `feature/*` y posteriormente integrado en la rama `develop`.
+
+
+
+| Sprint # | Sprint 2 | | | | | | |
+|---|---|---|---|---|---|---|---|
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US-01 | Crear perfil del usuario neurodivergente | T-15 | Creación de perfil | Implementar el formulario y la vista para crear un perfil de usuario neurodivergente. | 4 | Ruiz Villegas, Yngrid Nahir | Por validar |
+| US-02 | Editar perfil del usuario neurodivergente | T-16 | Edición de perfil | Implementar la actualización de los datos del perfil seleccionado. | 3 | Ruiz Villegas, Yngrid Nahir | Por validar |
+| US-03 | Registrar sensibilidades sensoriales | T-17 | Sensibilidades sensoriales | Implementar el registro de sensibilidades visuales y auditivas del usuario. | 3 | Ruiz Villegas, Yngrid Nahir | Por validar |
+| US-04 | Registrar diagnóstico y condición | T-18 | Diagnóstico y condición | Implementar el registro de la condición del usuario dentro de su perfil. | 3 | Ruiz Villegas, Yngrid Nahir | Por validar |
+| US-05 | Subir foto de perfil del usuario | T-19 | Foto de perfil | Implementar la selección y visualización de una imagen de perfil. | 3 | Ruiz Villegas, Yngrid Nahir | Por validar |
+| US-06 | Asociar múltiples cuidadores a un perfil | T-20 | Asociación de cuidadores | Implementar la interfaz para vincular cuidadores adicionales. | 4 | Ruiz Villegas, Yngrid Nahir | Por validar |
+| US-07 | Activar Modo SOS | T-21 | Activación del Modo SOS | Implementar el acceso y la activación del Modo SOS. | 3 | Diaz Yurivilca, Sofia | Por validar |
+| US-08 | Visualizar guía paso a paso del Modo SOS | T-22 | Guía paso a paso | Implementar la visualización secuencial de las acciones del Modo SOS. | 4 | Diaz Yurivilca, Sofia | Por validar |
+| US-09 | Personalizar guía SOS según perfil del usuario | T-23 | Personalización SOS | Adaptar la guía según la información disponible en el perfil seleccionado. | 5 | Diaz Yurivilca, Sofia | Por validar |
+| US-10 | Marcar paso de la guía como completado | T-24 | Control de pasos | Implementar el marcado de pasos completados durante la crisis. | 3 | Diaz Yurivilca, Sofia | Por validar |
+| US-11 | Finalizar episodio desde el Modo SOS | T-25 | Cierre de episodio | Implementar la acción de finalizar el flujo del Modo SOS. | 3 | Diaz Yurivilca, Sofia | Por validar |
+| US-12 | Acceder al Modo SOS desde pantalla principal | T-26 | Acceso rápido SOS | Integrar el acceso al Modo SOS desde la navegación principal. | 3 | Diaz Yurivilca, Sofia | Por validar |
+| US-13 | Seleccionar estímulo visual de autorregulación | T-27 | Estímulos visuales | Implementar la galería y selección de estímulos visuales. | 4 | Payano Puchuri, Joan Fabricio | Por validar |
+| US-14 | Seleccionar estímulo auditivo de autorregulación | T-28 | Estímulos auditivos | Implementar la selección y reproducción de estímulos auditivos. | 4 | Payano Puchuri, Joan Fabricio | Por validar |
+| US-15 | Ajustar intensidad del estímulo | T-29 | Control de intensidad | Implementar el ajuste de intensidad del estímulo activo. | 3 | Payano Puchuri, Joan Fabricio | Por validar |
+| US-16 | Guardar estímulos favoritos | T-30 | Favoritos | Implementar la gestión de estímulos favoritos. | 3 | Payano Puchuri, Joan Fabricio | Por validar |
+| US-17 | Activar modo de baja estimulación | T-31 | Baja estimulación | Implementar el modo visual y sonoro de baja estimulación. | 4 | Payano Puchuri, Joan Fabricio | Por validar |
+| US-18 | Usar temporizador de calma | T-32 | Temporizador de calma | Implementar el temporizador asociado a la sesión de autorregulación. | 4 | Payano Puchuri, Joan Fabricio | Por validar |
+| US-19 | Visualizar tablero de pictogramas | T-33 | Tablero CAA | Implementar la vista principal del tablero de pictogramas. | 4 | Lopez Torres, Leonardo Gabriel | Por validar |
+| US-20 | Seleccionar pictograma para comunicar una necesidad | T-34 | Selección de pictogramas | Implementar la interacción para comunicar una necesidad mediante un pictograma. | 5 | Lopez Torres, Leonardo Gabriel | Por validar |
+| US-21 | Personalizar pictogramas favoritos | T-35 | Favoritos CAA | Implementar la personalización de pictogramas frecuentes. | 3 | Lopez Torres, Leonardo Gabriel | Por validar |
+| US-22 | Agregar pictograma personalizado | T-36 | Pictogramas personalizados | Implementar el registro de pictogramas propios. | 4 | Lopez Torres, Leonardo Gabriel | Por validar |
+| US-23 | Organizar pictogramas por categoría | T-37 | Categorías CAA | Implementar la organización de pictogramas por categorías. | 3 | Lopez Torres, Leonardo Gabriel | Por validar |
+| US-24 | Reproducir audio asociado al pictograma | T-38 | Audio de pictogramas | Implementar la reproducción de audio al seleccionar un pictograma. | 3 | Lopez Torres, Leonardo Gabriel | Por validar |
+| US-25 | Enviar solicitud de ayuda al cuidador | T-39 | Solicitud de ayuda | Implementar la acción para enviar una solicitud de ayuda al cuidador. | 4 | Diaz Caruzo, Edgard Daniel | Por validar |
+| US-26 | Recibir notificación de solicitud de ayuda | T-40 | Notificación de ayuda | Implementar la visualización de la solicitud recibida por el cuidador. | 4 | Diaz Caruzo, Edgard Daniel | Por validar |
+| US-27 | Confirmar recepción de la solicitud | T-41 | Confirmación de recepción | Implementar la acción para confirmar que la solicitud fue recibida. | 3 | Diaz Caruzo, Edgard Daniel | Por validar |
+| US-28 | Cancelar solicitud de ayuda | T-42 | Cancelación de solicitud | Implementar la cancelación de una solicitud activa. | 3 | Diaz Caruzo, Edgard Daniel | Por validar |
+| US-29 | Consultar historial de solicitudes de ayuda | T-43 | Historial de solicitudes | Implementar la vista de historial de solicitudes de ayuda. | 3 | Diaz Caruzo, Edgard Daniel | Por validar |
+
 #### 5.2.2.4. Development Evidence for Sprint Review
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
