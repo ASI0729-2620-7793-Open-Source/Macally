@@ -603,7 +603,6 @@ Las siguientes confirmaciones corresponden a cambios representativos implementad
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-#### 5.2.2.5. Execution Evidence for Sprint Review.
 
 Durante el Sprint 2 se desarrollaron las vistas de la aplicación web de Nubi para las principales tareas de cuidadores, usuarios neurodivergentes y administradores de instituciones. La evidencia incluye el inicio con los avisos del tablero de comunicación, la activación y el seguimiento del Modo SOS, la galería de estímulos con su sesión y su temporizador de calma, el dashboard de la red de apoyo, la gestión de perfiles y cuidadores, y la cuenta con suscripción, pagos y soporte. Las capturas documentan las pantallas y los flujos de interacción implementados en el frontend, disponible en español e inglés mediante el selector de idioma.
 
