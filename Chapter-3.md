@@ -96,12 +96,23 @@ Historias del sitio web estático, una por Bounded Context, redactadas desde el 
 
 ## 3.2. Impact Mapping
 
-En el Impact Mapping de NUBI, el equipo elaboró el mapa en UXPressia a partir de un Business Goal orientado a mejorar la gestión de situaciones de desregulación emocional o sensorial por parte de niños y adolescentes neurodivergentes y sus cuidadores. Como Actors/Personas se consideraron los dos segmentos principales del proyecto: el cuidador primario y el niño o adolescente neurodivergente. Para el cuidador, los impactos se enfocan en actuar con mayor rapidez, brindar apoyo personalizado y dar seguimiento a los episodios; mientras que para el usuario neurodivergente se busca fomentar la autorregulación, facilitar la comunicación de necesidades y permitir una solicitud rápida de ayuda.
+En el Impact Mapping de NUBI se representa la relación entre el objetivo principal del producto, los actores involucrados, los impactos esperados y las funcionalidades requeridas para alcanzarlos.
+
+El mapa se estructura mediante la secuencia **Goal → Actor → Impact → Deliverable**.
+
+El **Business Goal** busca mejorar el acompañamiento durante situaciones de desregulación emocional o sensorial en niños con autismo mediante herramientas digitales de baja carga cognitiva que faciliten la autorregulación, la comunicación y la solicitud de ayuda, proporcionando al mismo tiempo orientación y herramientas de seguimiento para sus cuidadores.
+
+Los principales Actors considerados son el **Cuidador Primario** y el **Niño con Autismo**.
+
+Para el **Cuidador Primario**, los impactos se orientan a actuar con mayor rapidez y seguridad durante una situación de desregulación, personalizar el acompañamiento de acuerdo con las características y necesidades del niño, y dar seguimiento a los episodios para identificar estrategias que resulten efectivas.
+
+Para el **Niño con Autismo**, los impactos se orientan a facilitar la autorregulación ante situaciones de sobrecarga sensorial o emocional, permitir la comunicación de necesidades cuando hablar resulta difícil y posibilitar la solicitud rápida de ayuda a una persona de confianza.
 
 <p align="center">
   <img src="images/Chapter-III/Impact-Mapping.png" alt="Impact Mapping" width="600">
 </p>
-Nota. Impact Map de la solución NUBI, estructurando la trazabilidad entre el objetivo general del proyecto, las metas por segmento de usuario y el conjunto de historias de usuario (US) requeridas para la implementación.
+
+Nota. Impact Map de la solución NUBI, estructurado mediante la secuencia Goal → Actor → Impact → Deliverable para mantener la trazabilidad entre el objetivo del producto, las necesidades de los actores y las User Stories definidas.
 
 ## 3.3. Product Backlog
 
