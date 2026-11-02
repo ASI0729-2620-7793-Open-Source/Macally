@@ -1149,7 +1149,7 @@ Temporizador de calma: cuenta regresiva circular (03:47 restantes de un total de
 
 ### 4.4.4 Web Applications User Flow Diagrams
 
-El User Flow Diagram integra los flujos de los dos User Personas en un único diagrama con tres carriles: **Cuidador**, **Sistema Nubi** y **Usuario neurodivergente**. Es consistente con los wireflows de la sección 4.4.2 y distingue la ruta esperada (happy path, en línea continua) de las rutas alternativas (unhappy paths, en línea discontinua roja).
+El User Flow Diagram integra los flujos de los dos User Personas en un único diagrama con tres carriles: **Cuidador**, **Sistema Nubi** y **Usuario autista**. Es consistente con los wireflows de la sección 4.4.2 y distingue la ruta esperada (happy path, en línea continua) de las rutas alternativas (unhappy paths, en línea discontinua roja).
 
 ![UserFlow.png](images/Chapter-IV/UserFlow.png)
 
@@ -1157,7 +1157,7 @@ El User Flow Diagram integra los flujos de los dos User Personas en un único di
 
 **User goal del cuidador:** acompañar al usuario a su cargo durante una crisis y mantener actualizada su información. El cuidador inicia sesión y, si tiene más de un perfil asociado, cambia de perfil con el selector persistente sin cerrar sesión. Desde el panel de inicio, el sistema ramifica en cinco áreas: Gestión de Crisis (Modo SOS), Comunicación Asistida, Autorregulación, Perfil y Personalización, y Red de Apoyo y Seguimiento.
 
-**User goal del usuario neurodivergente:** recuperar la calma y comunicar una necesidad sin depender del habla. Puede abrir el tablero CAA, filtrar por categoría y seleccionar un pictograma, o entrar a Autocuidado, filtrar el tipo de estímulo, ajustar la intensidad y terminar la sesión para volver a la galería.
+**User goal del usuario autista:** recuperar la calma y comunicar una necesidad sin depender del habla. Puede abrir el tablero CAA, filtrar por categoría y seleccionar un pictograma, o entrar a Autocuidado, filtrar el tipo de estímulo, ajustar la intensidad y terminar la sesión para volver a la galería.
 
 **Rutas alternativas y condiciones:**
 
