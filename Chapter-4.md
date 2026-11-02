@@ -846,7 +846,7 @@ Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura 
 
 ## 4.4 Web Applications UX/UI Design
 
-Esta sección presenta la propuesta visual y de interacción de la Web Application de Nubi, que responde a las necesidades identificadas en las entrevistas con los dos segmentos objetivo: cuidadores y usuarios neurodivergentes. El diseño se desarrolló en dos fases: primero los wireframes, en escala de grises y enfocados en la estructura y la jerarquía de la información; luego los mock-ups, donde se aplica el Design System definido en la sección 4.1. Las pantallas recorren los cinco Bounded Contexts: Perfil y Personalización, Gestión de Crisis (Modo SOS), Autorregulación, Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento. Cuando una pantalla tiene dos variantes visuales, se presentan ambas.
+Esta sección presenta la propuesta visual y de interacción de la Web Application de Nubi, que responde a las necesidades identificadas en las entrevistas con los dos segmentos objetivo: cuidadores y usuarios autistas. El diseño se desarrolló en dos fases: primero los wireframes, en escala de grises y enfocados en la estructura y la jerarquía de la información; luego los mock-ups, donde se aplica el Design System definido en la sección 4.1. Las pantallas recorren los cinco Bounded Contexts: Perfil y Personalización, Gestión de Crisis (Modo SOS), Autorregulación, Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento. Cuando una pantalla tiene dos variantes visuales, se presentan ambas.
 
 ### 4.4.1 Web Applications Wireframes
 
@@ -980,7 +980,7 @@ Pantalla de cierre del Modo SOS, centrada y sin barra lateral. Comienza con un �
 
 *Ilustración – Web Application Wireframe: Tablero CAA del usuario: variante con imágenes*
 
-Vista destinada al usuario neurodivergente, sin barra lateral para reducir estímulos. El encabezado saluda a Diana con la pregunta «¿Qué necesitas decir?» y ofrece el acceso a «Favoritos»; debajo se ubican los filtros por categoría y una cuadrícula de tarjetas grandes, pensadas para una selección táctil precisa, con imagen, etiqueta y frase. Al seleccionar una tarjeta se muestra en la parte inferior una notificación que confirma que se avisó a María.
+Vista destinada al usuario autista, sin barra lateral para reducir estímulos. El encabezado saluda a Diana con la pregunta «¿Qué necesitas decir?» y ofrece el acceso a «Favoritos»; debajo se ubican los filtros por categoría y una cuadrícula de tarjetas grandes, pensadas para una selección táctil precisa, con imagen, etiqueta y frase. Al seleccionar una tarjeta se muestra en la parte inferior una notificación que confirma que se avisó a María.
 
 #### Wireframes: Tablero CAA del usuario: variante con íconos
 
@@ -1013,9 +1013,9 @@ Los Wireflow Diagrams combinan los wireframes de la sección 4.4.1 con las trans
 | # | User Persona | User goal | Flujo |
 |---|---|---|---|
 | 1 | Cuidador primario | Activar el Modo SOS para el perfil correcto, seguir la guía paso a paso y cerrar el episodio dejando el registro en el historial. | Modo SOS: pantalla de activación → Paso 5 de 6: calma y respiración → Resumen del episodio. |
-| 2 | Usuario neurodivergente | Elegir un estímulo de calma, ajustar su intensidad y usar el temporizador de calma. | Galería de estímulos → Estímulo en uso (burbujas flotantes) → Temporizador de calma. |
-| 3 | Usuario neurodivergente y cuidador primario | Comunicar una necesidad con un pictograma y que el cuidador reciba el aviso. | Configurar tablero CAA → Panel de inicio del cuidador con la necesidad comunicada → Tablero CAA del usuario con la confirmación «Le avisamos a María que Diana necesita: Tengo sed». |
-| 4 | Usuario neurodivergente y cuidador primario | El mismo objetivo del flujo 3 usando la variante del tablero con íconos. | Configurar tablero CAA (íconos) → Panel de inicio del cuidador (variante 2) → Tablero CAA del usuario (íconos). |
+| 2 | Usuario autista | Elegir un estímulo de calma, ajustar su intensidad y usar el temporizador de calma. | Galería de estímulos → Estímulo en uso (burbujas flotantes) → Temporizador de calma. |
+| 3 | Usuario autista y cuidador primario | Comunicar una necesidad con un pictograma y que el cuidador reciba el aviso. | Configurar tablero CAA → Panel de inicio del cuidador con la necesidad comunicada → Tablero CAA del usuario con la confirmación «Le avisamos a María que Diana necesita: Tengo sed». |
+| 4 | Usuario autista y cuidador primario | El mismo objetivo del flujo 3 usando la variante del tablero con íconos. | Configurar tablero CAA (íconos) → Panel de inicio del cuidador (variante 2) → Tablero CAA del usuario (íconos). |
 | 5 | Cuidador primario | Crear el perfil del usuario, invitar a otros cuidadores y revisar las sensibilidades registradas. | Crear nuevo perfil → Cuidadores asociados e invitación → Perfil de usuario: pestaña Sensibilidades. |
 
 En los wireflows 1 y 2 el cuidador o el usuario recorre pantallas de foco único: el Modo SOS avanza en una secuencia lineal y termina en un resumen que alimenta el historial de episodios, mientras que la autorregulación pasa de una galería en cuadrícula a un estímulo en uso y de ahí al temporizador. En los wireflows 3 y 4 la selección de un pictograma genera dos efectos simultáneos: el usuario recibe una confirmación en su tablero y el cuidador ve la necesidad en su panel de inicio, lo que enlaza los Bounded Contexts de Comunicación Asistida y Red de Apoyo y Seguimiento. El wireflow 5 muestra el recorrido de configuración del perfil, con el paso a los cuidadores asociados como acción secundaria.
@@ -1129,7 +1129,7 @@ Resumen del episodio (cierre del Modo SOS): mensaje de confirmación «¡Buen tr
 
 *Ilustración – Web Application Mock-up: Tablero CAA del usuario: variante con imágenes*
 
-Tablero CAA — vista del usuario neurodivergente (variante con fotografías): pantalla «Hola, Diana ¿Qué necesitas decir?» con la tarjeta «Agua / Tengo sed» seleccionada y reproduciendo audio, categorías filtrables (Necesidades básicas, Emociones, Actividades, Favoritos) y una notificación inferior confirmando el aviso enviado a María.
+Tablero CAA — vista del usuario autista (variante con fotografías): pantalla «Hola, Diana ¿Qué necesitas decir?» con la tarjeta «Agua / Tengo sed» seleccionada y reproduciendo audio, categorías filtrables (Necesidades básicas, Emociones, Actividades, Favoritos) y una notificación inferior confirmando el aviso enviado a María.
 
 #### Mock-up: Tablero CAA del usuario: variante con íconos
 
@@ -1137,7 +1137,7 @@ Tablero CAA — vista del usuario neurodivergente (variante con fotografías): p
 
 *Ilustración – Web Application Mock-up: Tablero CAA del usuario: variante con íconos*
 
-Tablero CAA — vista del usuario neurodivergente (variante iconográfica en azul): misma interacción «Tengo sed» con pictogramas representados en iconos lineales simples, botón flotante de SOS en la esquina y un toast de confirmación indicando que se avisó a María.
+Tablero CAA — vista del usuario autista (variante iconográfica en azul): misma interacción «Tengo sed» con pictogramas representados en iconos lineales simples, botón flotante de SOS en la esquina y un toast de confirmación indicando que se avisó a María.
 
 #### Mock-up: Temporizador de calma
 
