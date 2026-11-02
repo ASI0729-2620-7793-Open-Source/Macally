@@ -2,7 +2,7 @@
 
 ## 2.1. Competidores
 
-El mercado de tecnologías de apoyo para personas neurodivergentes y gestión de crisis sensoriales abarca diversas herramientas digitales. Se han identificado tres competidores directos e indirectos clave:
+El mercado de tecnologías de apoyo para personas autistas y gestión de crisis sensoriales abarca diversas herramientas digitales. Se han identificado tres competidores directos e indirectos clave:
 
 - **Autism 360:** Plataforma integral orientada al seguimiento conductual y apoyo para familias con niños dentro del espectro autista, enfocada principalmente en la gestión de hábitos y progresos a mediano plazo.
 - **Tiimo:** Aplicación de planificación visual y estructuración de rutinas diarias diseñada para personas con TDAH y TEA, orientada a la organización de tareas e hitos temporales.
@@ -14,7 +14,7 @@ A continuación, se presenta la evaluación del **Competitive Analysis Landscape
 
 #### Competitive Analysis Landscape
 
-| **¿Por qué llevar a cabo este análisis?** | El análisis permite identificar las soluciones existentes que ofrecen herramientas de apoyo para la autorregulación, la comunicación y el acompañamiento de personas neurodivergentes, y contrastarlas con la propuesta de Nubi. |
+| **¿Por qué llevar a cabo este análisis?** | El análisis permite identificar las soluciones existentes que ofrecen herramientas de apoyo para la autorregulación, la comunicación y el acompañamiento de personas autistas, y contrastarlas con la propuesta de Nubi. |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -23,14 +23,14 @@ A continuación, se presenta la evaluación del **Competitive Analysis Landscape
 |  |  | ![nubilogo.png](images/Chapter-II/nubilogo.png) | ![Autism360Logo.png](images/Chapter-II/Autism360Logo.png) | ![TiimoLogo.png](images/Chapter-II/TiimoLogo.png) | ![pictalklogo.jpg](images/Chapter-II/pictalklogo.jpg) |
 | **PERFIL** | **Overview** | Solución digital integral para la autorregulación sensorial y guiado de crisis en tiempo real. | Sistema de apoyo y acompañamiento para el desarrollo conductual en el hogar. | Planificador visual y de gestión del tiempo para personas neurodivergentes. | Solución de CAA que utiliza pictogramas para facilitar la comunicación. |
 | **PERFIL** | **Ventaja Competitiva / ¿Qué valor ofrece?** | Intervención directa en tiempo real mediante Modo SOS, comunicación CAA e interfaz de autorregulación. | Asesoría y acompañamiento para padres y terapeutas en el desarrollo conductual. | Interfaz accesible para organizar rutinas y gestionar el tiempo de personas neurodivergentes. | Comunicación visual accesible, personalizable y de fácil uso. |
-| **MARKETING** | **Mercado Objetivo** | Niños y adolescentes neurodivergentes y sus cuidadores primarios. | Familias con niños autistas en búsqueda de acompañamiento profesional. | Jóvenes y adultos neurodivergentes que buscan estructurar su rutina diaria. | Niños y adultos con dificultades de comunicación, además de cuidadores y profesionales. |
-| **MARKETING** | **Estrategias de Marketing** | Alianzas con asociaciones de neurodivergencia, comunidades de padres y modelo Freemium/B2B institucional. | Marketing de contenidos enfocado en terapias, seminarios web y B2C. | Campañas en redes sociales, comunidades de neurodiversidad y App Stores. | Difusión mediante comunidades, organizaciones y profesionales relacionados con la discapacidad. |
+| **MARKETING** | **Mercado Objetivo** | Niños y adolescentes autistas y sus padres. | Familias con niños autistas en búsqueda de acompañamiento profesional. | Jóvenes y adultos neurodivergentes que buscan estructurar su rutina diaria. | Niños y adultos con dificultades de comunicación, además de cuidadores y profesionales. |
+| **MARKETING** | **Estrategias de Marketing** | Alianzas con asociaciones de familias de personas autistas, comunidades de padres y modelo Freemium/B2B institucional. | Marketing de contenidos enfocado en terapias, seminarios web y B2C. | Campañas en redes sociales, comunidades de neurodiversidad y App Stores. | Difusión mediante comunidades, organizaciones y profesionales relacionados con la discapacidad. |
 | **PRODUCTO** | **Productos y Servicios** | Modo SOS, tablero CAA, interfaz de autorregulación y herramientas personalizables. | App móvil y plataforma web con seguimiento de metas y asesorías. | Aplicación móvil para planificación visual y gestión del tiempo. | Comunicación con pictogramas, síntesis de voz, agendas visuales y rutinas personalizadas. |
 | **PRODUCTO** | **Precios y Costos** | Modelo Freemium para familias y suscripción B2B para instituciones educativas. | Suscripción para servicios de acompañamiento y asesoría. | Modelo de suscripción mensual/anual. | Modelo gratuito y basado en donaciones. |
 | **PRODUCTO** | **Canales de Distribución** | Sitio web responsive y Web Application. | Plataforma web y tiendas de aplicaciones móviles. | iOS App Store y Google Play Store. | Aplicaciones móviles para Android e iOS y acceso web. |
-| **Análisis SWOT** | **Fortalezas** | Guía paso a paso para el cuidador y herramientas de baja carga cognitiva. | Sólido respaldo terapéutico y registro histórico. | Diseño accesible e intuitivo para organizar rutinas. | Herramientas de CAA con pictogramas, interfaz accesible y personalización. |
+| **Análisis SWOT** | **Fortalezas** | Guía paso a paso para los padres y herramientas de baja carga cognitiva. | Sólido respaldo terapéutico y registro histórico. | Diseño accesible e intuitivo para organizar rutinas. | Herramientas de CAA con pictogramas, interfaz accesible y personalización. |
 | **Análisis SWOT** | **Debilidades** | Startup en etapa inicial y requiere posicionamiento de marca en el mercado local. | Curva de aprendizaje elevada y costo accesible limitado. | No ofrece soporte directo en momentos de crisis agudas. | Se enfoca principalmente en comunicación y organización, no específicamente en la gestión de crisis. |
-| **Análisis SWOT** | **Oportunidades** | Alta demanda de herramientas de contención sensorial en Perú y LATAM y convenios B2B con colegios. | Expansión a mercados internacionales. | Integración con dispositivos vestibles (*wearables*). | Mayor demanda de herramientas digitales de apoyo para personas neurodivergentes. |
+| **Análisis SWOT** | **Oportunidades** | Alta demanda de herramientas de contención sensorial en Perú y LATAM y convenios B2B con colegios. | Expansión a mercados internacionales. | Integración con dispositivos vestibles (*wearables*). | Mayor demanda de herramientas digitales de apoyo para personas autistas. |
 | **Análisis SWOT** | **Amenazas** | Resistencia inicial a la adopción tecnológica en entornos escolares o familiares tradicionales. | Aparición de soluciones digitales gratuitas. | Competencia de apps de productividad convencionales. | Aparición de nuevas aplicaciones de CAA y soluciones digitales similares. |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
@@ -43,18 +43,18 @@ Con el propósito de posicionar a **Nubi** frente a la oferta existente y capita
 
 Mientras competidores como Tiimo o Autism 360 se enfocan en la planificación previa o el análisis posterior, Nubi posicionará su propuesta de valor en la **contención e intervención inmediata** durante el episodio de desregulación sensorial o emocional.
 
-**2. Estrategia de Doble Usuario (Cuidadores y Usuarios Neurodivergentes)**
+**2. Estrategia de Doble Usuario (Padres y Usuarios Autistas)**
 
 A diferencia de aplicaciones de función única como Emergency CHAT, Nubi integra un flujo dinámico que ofrece respuestas simultáneas:
 
 - Estímulos de autorregulación de baja carga cognitiva para la persona en crisis.
-- **"Modo SOS"** con guías de actuación estandarizadas para el acompañante.
+- **"Modo SOS"** con guías de actuación estandarizadas para los padres.
 
 #### Tácticas Competitivas
 
 **1. Aprovechamiento de la Brecha de Mercado**
 
-**Táctica:** Desarrollar e iterar continuamente la interfaz del **Modo SOS**, asegurando que los pasos de contención para cuidadores se presenten con alta claridad visual y auditiva, reduciendo la incertidumbre y el estrés del acompañante en momentos de alta presión.
+**Táctica:** Desarrollar e iterar continuamente la interfaz del **Modo SOS**, asegurando que los pasos de contención para los padres se presenten con alta claridad visual y auditiva, reduciendo su incertidumbre y su estrés en momentos de alta presión.
 
 **2. Modelo de Precios Inclusivo y Gradual**
 
@@ -66,7 +66,7 @@ A diferencia de aplicaciones de función única como Emergency CHAT, Nubi integr
 
 **4. Adopción Orgánica en Comunidades de Apoyo**
 
-**Táctica:** Establecer alianzas estratégicas con asociaciones de familias neurodivergentes y profesionales de la salud/educación en Lima y regiones, realizando demostraciones del producto para generar recomendaciones orgánicas y reducir el costo de adquisición de clientes (**CAC**).
+**Táctica:** Establecer alianzas estratégicas con asociaciones de familias de personas autistas y profesionales de la salud/educación en Lima y regiones, realizando demostraciones del producto para generar recomendaciones orgánicas y reducir el costo de adquisición de clientes (**CAC**).
 
 ## 2.2. Entrevistas
 
@@ -84,12 +84,12 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ---
 
-#### B. Guía de Entrevista — Segmento 2: Padres, Madres y Cuidadores Primarios
+#### B. Guía de Entrevista — Segmento 2: Padres con estilo de crianza autoritario
 
 1. ¿Cuál es tu ocupación actual?
 2. ¿Cuál es tu relación o parentesco con el niño o adolescente que acompañas?
 3. ¿Qué edad tiene el niño o adolescente a tu cargo?
-4. ¿Qué condición o características de neurodivergencia presenta (TEA, TDAH, TDA, TOC, entre otros)?
+4. ¿Qué características del espectro autista (TEA) presenta (nivel de apoyo, sensibilidades, forma de comunicarse)?
 5. Cuéntame sobre la última vez que el niño tuvo una crisis o momento de desregulación. ¿Qué sucedió?
 6. ¿Qué suele ocurrir o qué factores desencadenan una crisis antes de que comience?
 7. ¿Cómo te das cuenta o cuáles son las primeras señales de que está empezando un episodio?
@@ -107,7 +107,7 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ---
 
-#### C. Guía de Entrevista — Segmento 1: Niños y Adolescentes Neurodivergentes
+#### C. Guía de Entrevista — Segmento 1: Niños y Adolescentes Autistas
 
 1. ¿En qué grado escolar estás?
 2. ¿Qué actividades te gusta hacer en tu tiempo libre?
@@ -124,7 +124,9 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 **Needfinding Interviews Link:** https://tinyurl.com/24nd48rs 
 
-### Segmento 1 -  Niños y Adolescentes Neurodivergentes
+### Segmento 1 - Niños y Adolescentes Autistas
+
+> **Nota.** Nubi se enfoca en el autismo (Capítulo 1). De los tres adolescentes entrevistados, solo Diana tiene autismo; Owen y Sebastián tienen TDAH y TDA. Sus entrevistas se conservan como evidencia complementaria sobre la sobrecarga sensorial, y el perfil autista se confirmará con más personas autistas en las entrevistas de validación (sección 5.3).
 
 | **Entrevista #1** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | :--- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -162,7 +164,9 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 | **Duración** | 4:31                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Resumen** | Owen es un joven de 17 años que cursa sus estudios superiores en un instituto. Diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (TDAH), presenta dificultades en el procesamiento de información o instrucciones veloces en entornos saturados de personas, requiriendo explicaciones reiteradas para asegurar la comprensión. Utiliza el teléfono móvil de forma diaria como dispositivo principal, complementado con la computadora para consumir contenido en YouTube, dibujar, escuchar música y jugar títulos como Minecraft y Free Fire, además de comunicarse por WhatsApp, TikTok e Instagram. Desde una perspectiva subjetiva, señala que los ruidos estruendosos —como los provenientes del transporte público— y el murmullo de aglomeraciones humanas le generan irritación y abrumamiento. Sus hábitos de autorregulación consisten en buscar aislamiento en zonas silenciosas, ponerse audífonos para escuchar música o interactuar con el celular. Cuando experimenta crisis o bloqueos que le impiden expresarse verbalmente con personas de su entorno cercano, envía mensajes de texto a su madre para solicitar asistencia. En función de sus requisitos para la propuesta de valor del proyecto, plantea una herramienta que incluya botones interactivos de emergencia, un lienzo digital o blog de notas de gran tamaño que le permita canalizar la tensión mediante garabatos o trazos libres, y una funcionalidad combinada de música favorita con imágenes relajantes para restaurar la calma. |
 
-### Segmento 2 - Padres, Madres y Cuidadores Primarios
+### Segmento 2 - Padres con estilo de crianza autoritario
+
+> **Nota.** Mateo y Johan son hermanos mayores y cuidadores de niños y adolescentes con TEA Nivel 1; Ingrid es madre de una adolescente con TDAH y describe su estilo de crianza como equilibrado. Ninguno corresponde aún al perfil de padres con estilo de crianza autoritario definido en el Capítulo 1, por lo que este perfil se validará con padres en las entrevistas de validación (sección 5.3).
 
 | **Entrevista #1** | |
 | :--- | :--- |
@@ -202,9 +206,9 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ## 2.2.3. Análisis de entrevistas
 
-Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos objetivos: 3 padres, familiares y cuidadores de personas neurodivergentes (Ingrid, Mateo y Johan), y 3 niños y adolescentes neurodivergentes (Owen, Diana y Sebastián). El propósito fue identificar patrones comunes en los detonantes de crisis, las estrategias de autorregulación y contención, y las expectativas frente a una solución digital de apoyo emocional. A partir de los resúmenes obtenidos, se extrajeron características objetivas y subjetivas de cada perfil, las cuales se presentan con respaldo estadístico expresado en porcentajes sobre el total de entrevistados por segmento.
+Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos objetivos: 3 padres y cuidadores (Ingrid, Mateo y Johan) y 3 niños y adolescentes (Owen, Diana y Sebastián). Como Nubi se enfoca en el autismo (Capítulo 1), se precisa que Diana es la única adolescente con autismo y que Mateo y Johan acompañan a hermanos con TEA, mientras que Owen, Sebastián y la hija de Ingrid presentan TDAH o TDA; estos casos se mantienen como evidencia complementaria y se confirmarán con más personas autistas y padres en las entrevistas de validación (sección 5.3). El propósito fue identificar patrones comunes en los detonantes de crisis, las estrategias de autorregulación y contención, y las expectativas frente a una solución digital de apoyo emocional. A partir de los resúmenes obtenidos, se extrajeron características objetivas y subjetivas de cada perfil, las cuales se presentan con respaldo estadístico expresado en porcentajes sobre el total de entrevistados por segmento.
 
-### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
+### Segmento objetivo #1: Niños y Adolescentes Autistas
 
 **Hallazgos**
 
@@ -225,6 +229,8 @@ Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos obje
 | TDAH / TDA | Owen, Sebastián | 67% |
 | Autismo | Diana | 33% |
 
+Nota. Dado que Nubi se enfoca en el autismo, los hallazgos de este segmento se interpretan como una primera aproximación basada en una sola persona autista; los resultados de Owen y Sebastián (TDAH y TDA) se toman como referencia complementaria.
+
 **Principales detonantes sensoriales**
 
 | Detonante | Casos | Porcentaje |
@@ -238,7 +244,7 @@ Se realizaron 6 entrevistas semiestructuradas distribuidas en dos segmentos obje
   <img src="images/Chapter-II/graficos/graf_detonantesJovenes.png" alt="Principales detonantes sensoriales del Segmento 1" width="700">
 </p>
 
-Nota. Principales detonantes sensoriales del Segmento 1 (Niños y adolescentes neurodivergentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
+Nota. Principales detonantes sensoriales del Segmento 1 (Niños y adolescentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 Los ruidos fuertes y las aglomeraciones son detonantes universales en este segmento (100% cada uno), lo que confirma que la sobrecarga sensorial en espacios públicos es la principal fuente de malestar, independientemente del diagnóstico específico. La sobreestimulación visual, presente en el 67% de los casos, refuerza la necesidad de interfaces poco saturadas visualmente.
 
@@ -255,7 +261,7 @@ Los ruidos fuertes y las aglomeraciones son detonantes universales en este segme
   <img src="images/Chapter-II/graficos/graf_autorregulacionJovenes.png" alt="Estrategias de autorregulación del Segmento 1" width="700">
 </p>
 
-Nota. Estrategias de autorregulación del Segmento 1 (Niños y adolescentes neurodivergentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
+Nota. Estrategias de autorregulación del Segmento 1 (Niños y adolescentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 El aislamiento físico es la estrategia unánime del segmento (100%), lo que indica que, más allá del dispositivo digital, el retiro del estímulo externo continúa siendo el mecanismo base de autorregulación. La música y la respiración guiada, presentes en el 67% de los casos, representan las funcionalidades de calma con mayor validación para ser incorporadas en la solución.
 
@@ -270,7 +276,7 @@ El aislamiento físico es la estrategia unánime del segmento (100%), lo que ind
   <img src="images/Chapter-II/graficos/graf_comunicacionJovenes.png" alt="Canal de comunicación durante una crisis del Segmento 1" width="700">
 </p>
 
-Nota. Canal de comunicación durante una crisis del Segmento 1 (Niños y adolescentes neurodivergentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
+Nota. Canal de comunicación durante una crisis del Segmento 1 (Niños y adolescentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 La totalidad del segmento evita la comunicación verbal directa en momentos de malestar, optando por canales escritos o no verbales. Este hallazgo valida de forma unánime la necesidad de que la solución digital incorpore mecanismos de comunicación rápida sin exigir la redacción de textos extensos.
 
@@ -290,7 +296,7 @@ La totalidad del segmento evita la comunicación verbal directa en momentos de m
   <img src="images/Chapter-II/graficos/graf_requerimientosJovenes.png" alt="Requisitos funcionales solicitados por el Segmento 1" width="700">
 </p>
 
-Nota. Requisitos funcionales solicitados por el Segmento 1 (Niños y adolescentes neurodivergentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
+Nota. Requisitos funcionales solicitados por el Segmento 1 (Niños y adolescentes, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 Tres funcionalidades alcanzan validación unánime en el segmento (100%): un mecanismo visual de bajo esfuerzo para expresar el estado de ánimo, la alerta automática a un contacto de confianza y la inclusión de música o sonidos relajantes. Estos hallazgos posicionan dichas funciones como el núcleo mínimo indispensable de la propuesta digital para este segmento, mientras que la respiración guiada y la interfaz libre de saturación visual (67%) constituyen mejoras altamente valoradas por la mayoría.
 
@@ -299,7 +305,7 @@ Tres funcionalidades alcanzan validación unánime en el segmento (100%): un mec
 Los niños y adolescentes entrevistados comparten un patrón consistente frente a la sobrecarga sensorial: aislamiento físico, evitación de la comunicación verbal y uso del celular como herramienta de autorregulación. La unanimidad en la demanda de mecanismos visuales de expresión rápida, alertas automáticas a contactos de confianza y contenido calmante (música/sonidos) confirma que estas funcionalidades deben constituir el núcleo de la solución digital, mientras que la respiración guiada y una interfaz visualmente simple representan requisitos complementarios ampliamente compartidos por el segmento.
 
 
-### Segmento objetivo #2: Padres, familiares y cuidadores
+### Segmento objetivo #2: Padres con estilo de crianza autoritario
 
 **Hallazgos**
 
@@ -319,6 +325,8 @@ Los niños y adolescentes entrevistados comparten un patrón consistente frente 
 | TEA Nivel 1 | Mateo, Johan | 67% |
 | TDAH | Ingrid | 33% |
 
+Nota. Como Nubi se enfoca en el autismo, los hallazgos de Mateo y Johan (TEA Nivel 1) son la base principal de este segmento; el caso de Ingrid (TDAH) se toma como referencia complementaria.
+
 **Principales detonantes de crisis identificados**
 
 | Detonante | Casos | Porcentaje |
@@ -330,7 +338,7 @@ Los niños y adolescentes entrevistados comparten un patrón consistente frente 
   <img src="images/Chapter-II/graficos/graf_detonantesCuidadores.png" alt="Principales detonantes de crisis del Segmento 2" width="700">
 </p>
 
-Nota. Principales detonantes de crisis del Segmento 2 (Padres, familiares y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
+Nota. Principales detonantes de crisis del Segmento 2 (Padres y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 Los estímulos sensoriales concentran la mayoría de los detonantes reportados por los cuidadores (67%), lo que evidencia que las crisis en personas con TEA están fuertemente asociadas al entorno físico e impredecible, mientras que en el caso de TDAH el detonante se vincula más a la dinámica de crianza y autorregulación emocional.
 
@@ -347,7 +355,7 @@ Los estímulos sensoriales concentran la mayoría de los detonantes reportados p
   <img src="images/Chapter-II/graficos/graf_estrategiasCuidadores.png" alt="Estrategias de contención del cuidador del Segmento 2" width="700">
 </p>
 
-Nota. Estrategias de contención del cuidador del Segmento 2 (Padres, familiares y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
+Nota. Estrategias de contención del cuidador del Segmento 2 (Padres y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 El retiro a espacios de bajo estímulo y la comunicación simplificada son las estrategias más recurrentes (67% cada una), lo que confirma que el manejo sensorial del entorno es un componente central en el acompañamiento de crisis en TEA. La búsqueda de validación afectiva y de redes de apoyo externas, presente en el 33% del segmento, refleja además una necesidad emocional del propio cuidador que no se limita a la contención del episodio.
 
@@ -362,7 +370,7 @@ El retiro a espacios de bajo estímulo y la comunicación simplificada son las e
   <img src="images/Chapter-II/graficos/graf_percepcionAppsCuidadores.png" alt="Percepción de las herramientas digitales actuales del Segmento 2" width="700">
 </p>
 
-Nota. Percepción de las herramientas digitales actuales del Segmento 2 (Padres, familiares y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
+Nota. Percepción de las herramientas digitales actuales del Segmento 2 (Padres y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 La totalidad del segmento (100%) evidenció una relación insatisfactoria o inexistente con las soluciones digitales actuales, lo que indica que no existe una herramienta consolidada en el mercado que los cuidadores perciban como confiable para el manejo de crisis, situación que reduce la resistencia al cambio ante una nueva propuesta.
 
@@ -380,13 +388,13 @@ La totalidad del segmento (100%) evidenció una relación insatisfactoria o inex
   <img src="images/Chapter-II/graficos/graf_requerimientosCuidadores.png" alt="Requisitos para la propuesta digital del Segmento 2" width="700">
 </p>
 
-Nota. Requisitos para la propuesta digital del Segmento 2 (Padres, familiares y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
+Nota. Requisitos para la propuesta digital del Segmento 2 (Padres y cuidadores, n = 3), expresado como porcentaje de entrevistados. Fuente: entrevistas de needfinding (sección 2.2.2).
 
 El respaldo profesional explícito es una condición unánime (100%) para la aceptación de la propuesta digital, lo que la posiciona como un requisito no negociable del segmento. Las guías visuales rápidas y el acceso en un solo toque, mencionados por el 67% de los cuidadores de personas con TEA, refuerzan la necesidad de una interfaz orientada a la acción inmediata durante episodios de crisis.
 
 **Conclusiones**
 
-Los cuidadores entrevistados enfrentan una carga emocional significativa y sostenida en el tiempo, agravada por la desconfianza hacia las herramientas digitales existentes. El segmento vinculado a TEA prioriza mecanismos de acción rápida frente a detonantes sensoriales, mientras que el vinculado a TDAH prioriza el acompañamiento emocional y la validación entre pares. En ambos casos, el respaldo profesional explícito se confirma como un requisito transversal e indispensable para la adopción de cualquier solución digital.
+Los cuidadores entrevistados enfrentan una carga emocional significativa y sostenida en el tiempo, agravada por la desconfianza hacia las herramientas digitales existentes. El segmento vinculado a TEA prioriza mecanismos de acción rápida frente a detonantes sensoriales, mientras que el vinculado a TDAH prioriza el acompañamiento emocional y la validación entre pares. En ambos casos, el respaldo profesional explícito se confirma como un requisito transversal e indispensable para la adopción de cualquier solución digital. Como Nubi se enfoca en el autismo, los hallazgos del subgrupo vinculado a TEA son los que orientan las funcionalidades del producto.
 
 
 ## 2.3. Needfinding
@@ -395,28 +403,28 @@ Los cuidadores entrevistados enfrentan una carga emocional significativa y soste
 
 Las fichas de User Persona se elaboraron en UXPressia, una por cada segmento objetivo, a partir de los patrones identificados en el análisis de entrevistas (sección 2.2.3) y de las carencias de la competencia detectadas en el análisis competitivo (sección 2.1.1). De las entrevistas provienen las características demográficas, los dispositivos y aplicaciones de uso, los detonantes, las estrategias de calma, los canales de comunicación durante una crisis y las expectativas frente a una solución digital; del análisis competitivo, la brecha de apoyo inmediato durante el episodio que Nubi busca cubrir. Cada ficha se vincula con su User Journey Map (sección 2.3.3) y su Empathy Map (sección 2.3.4).
 
-### Segmento objetivo #1: Niños y Adolescentes Neurodivergentes
+### Segmento objetivo #1: Niños y Adolescentes Autistas
 
-La finalidad de la elaboración de este user persona es representar a los jóvenes y adolescentes neurodivergentes que experimentan sobrecarga sensorial y bloqueos comunicativos en entornos saturados, precisando herramientas digitales de calma y tableros de comunicación accesibles.
+La finalidad de la elaboración de este user persona es representar a niños y adolescentes autistas que experimentan sobrecarga sensorial y bloqueos comunicativos en entornos saturados, precisando herramientas digitales de calma y tableros de comunicación accesibles.
 
 <p align="center">
-  <img src="images/Chapter-II/User-persona-Diana.png" alt="User Personas Niños y Adolescentes Neurodivergentes" width="600">
+  <img src="images/Chapter-II/User-persona-Diana.png" alt="User Personas Niños y Adolescentes Autistas" width="600">
 </p>
-Nota. User Persona correspondiente a Diana (Idealist), representando el arquetipo del segmento de niños y adolescentes neurodivergentes, enfocado en sus necesidades de autorregulación emocional y comunicación alternativa.
+Nota. User Persona correspondiente a Diana (Idealist), representando el arquetipo del segmento de niños y adolescentes autistas, enfocado en sus necesidades de autorregulación emocional y comunicación alternativa.
 
-### Segmento objetivo #2: Padres, familiares y cuidadores
+### Segmento objetivo #2: Padres con estilo de crianza autoritario
 
-La finalidad de la elaboración de este user persona es representar a los cuidadores primarios que asumen el acompañamiento cotidiano de un familiar neurodivergente, buscando pautas claras y soporte estructurado para gestionar episodios de crisis con serenidad.
+La finalidad de la elaboración de este user persona es representar a los padres con estilo de crianza autoritario que asumen el acompañamiento cotidiano de un hijo autista, buscando pautas claras y soporte estructurado para gestionar episodios de crisis con serenidad.
 
 <p align="center">
   <img src="images/Chapter-II/User-persona-Mateo.png" alt="User Personas Padres" width="600">
 </p>
-Nota. User Persona correspondiente a Mateo (Guardian), representando el arquetipo del segmento de padres y cuidadores primarios, enfocado en sus requisitos de guías de contención rápida, comunidad y herramientas de bajo esfuerzo cognitivo.
+Nota. User Persona correspondiente a Mateo (Guardian), representando el arquetipo del segmento de padres (Mateo es hermano mayor y cuidador, por lo que se usa como arquetipo provisional hasta validar con padres en la sección 5.3), enfocado en sus requisitos de guías de contención rápida, comunidad y herramientas de bajo esfuerzo cognitivo.
 
 
 ### 2.3.2. User Task Matrix
 
-La User Task Matrix permite identificar y priorizar las principales tareas que realizan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. Para este análisis se consideran los dos segmentos principales del proyecto: padres, familiares y cuidadores primarios, y niños y adolescentes neurodivergentes.
+La User Task Matrix permite identificar y priorizar las principales tareas que realizan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. Para este análisis se consideran los dos segmentos principales del proyecto: padres con estilo de crianza autoritario, y niños y adolescentes autistas.
 
 La matriz evalúa cada tarea utilizando dos criterios: frecuencia e importancia. La frecuencia representa qué tan recurrentemente el usuario necesita realizar determinada acción, mientras que la importancia indica el impacto que tiene dicha tarea en el manejo adecuado de una situación de desregulación.
 
@@ -429,8 +437,8 @@ La matriz evalúa cada tarea utilizando dos criterios: frecuencia e importancia.
 <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
   <tr>
     <th rowspan="2" style="text-align: left;">Tarea</th>
-    <th colspan="2">Cuidador Primario</th>
-    <th colspan="2">Persona Neurodivergente</th>
+    <th colspan="2">Padres</th>
+    <th colspan="2">Persona Autista</th>
   </tr>
   <tr>
     <th>Frecuencia</th>
@@ -532,29 +540,29 @@ La matriz evalúa cada tarea utilizando dos criterios: frecuencia e importancia.
 
 A partir de la matriz se identifica que las tareas de mayor prioridad para ambos segmentos son reconocer el inicio de una situación de desregulación, identificar los estímulos que generan sobrecarga, reducirlos y aplicar estrategias para recuperar la calma. Al realizarse en momentos de tensión, estas acciones requieren una interacción rápida, sencilla y con baja carga cognitiva.
 
-En el caso de padres, familiares y cuidadores, las principales tareas se relacionan con reconocer cambios en el comportamiento, identificar detonantes, adaptar el entorno y aplicar estrategias de acompañamiento. Por ello, funciones como el **Modo SOS**, las guías visuales y las estrategias de contención deben ser accesibles con la menor cantidad de interacciones posible.
+En el caso de los padres, las principales tareas se relacionan con reconocer cambios en el comportamiento, identificar detonantes, adaptar el entorno y aplicar estrategias de acompañamiento. Por ello, funciones como el **Modo SOS**, las guías visuales y las estrategias de contención deben ser accesibles con la menor cantidad de interacciones posible.
 
-Para los niños y adolescentes neurodivergentes, las tareas más importantes son reconocer el malestar, reducir estímulos, autorregularse y comunicar sus necesidades. En este caso, pictogramas, botones rápidos, sonidos relajantes y ejercicios de respiración pueden facilitar la gestión de una situación de desregulación. También resulta importante contar con una opción para solicitar ayuda a un contacto de confianza.
+Para los niños y adolescentes autistas, las tareas más importantes son reconocer el malestar, reducir estímulos, autorregularse y comunicar sus necesidades. En este caso, pictogramas, botones rápidos, sonidos relajantes y ejercicios de respiración pueden facilitar la gestión de una situación de desregulación. También resulta importante contar con una opción para solicitar ayuda a un contacto de confianza.
 
-Finalmente, la matriz evidencia que ambos segmentos tienen necesidades diferentes pero complementarias: el cuidador requiere orientación para acompañar y tomar decisiones, mientras que la persona neurodivergente necesita herramientas simples para comunicar su estado y autorregularse. Por ello, NUBI debe ofrecer una experiencia diferenciada que promueva tanto el apoyo como la autonomía.
+Finalmente, la matriz evidencia que ambos segmentos tienen necesidades diferentes pero complementarias: los padres requieren orientación para acompañar y tomar decisiones, mientras que la persona autista necesita herramientas simples para comunicar su estado y autorregularse. Por ello, NUBI debe ofrecer una experiencia diferenciada que promueva tanto el apoyo como la autonomía.
 
 
 ### 2.3.3. User Journey Mapping
 
 El User Journey Mapping permite representar de manera visual la experiencia que atraviesan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. A través de este recorrido se identifican sus acciones, necesidades, emociones y principales dificultades, permitiendo reconocer oportunidades en las que NUBI puede brindar apoyo de manera rápida, sencilla y accesible.
 
-**Segmento 1 – Niños y adolescentes neurodivergentes (Diana – Adolescente neurodivergente)**
+**Segmento 1 – Niños y adolescentes autistas (Diana – Adolescente autista)**
 
-El recorrido representa la experiencia del usuario neurodivergente desde la aparición de un estímulo que genera malestar hasta la autorregulación, la solicitud de ayuda y la posterior recuperación.
+El recorrido representa la experiencia del usuario autista desde la aparición de un estímulo que genera malestar hasta la autorregulación, la solicitud de ayuda y la posterior recuperación.
 
 <p align="center">
   <img src="images/Chapter-II/User-Journey-Mapping-segmento1.png" alt="User Journey Mapping Diana" width="600">
 </p>
 Nota. User Journey Map (As-Is) correspondiente a Diana, detallando las deficiencias actuales en los mecanismos de autorregulación sensorial y la dificultad para comunicar sus necesidades sin depender de la expresión verbal directa.
 
-**Segmento 2 – Padres, familiares y cuidadores (Mateo – Cuidador primario)**
+**Segmento 2 – Padres con estilo de crianza autoritario (Mateo – Hermano mayor y cuidador)**
 
-El recorrido representa la experiencia del cuidador desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
+El recorrido representa la experiencia de los padres desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
 
 <p align="center">
   <img src="images/Chapter-II/User-Journey-Mapping-segmento2.png" alt="User Journey Mapping Mateo" width="600">
@@ -564,28 +572,28 @@ Nota. User Journey Map (As-Is) correspondiente a Mateo, detallando las deficienc
 
 ### 2.3.4. Empathy Mapping
 
-**Segmento objetivo 1: Niños y adolescentes neurodivergentes**
+**Segmento objetivo 1: Niños y adolescentes autistas**
 
-Mapa de empatía que sintetiza los pensamientos, percepciones sensoriales, frustraciones y necesidades de niños y adolescentes neurodivergentes de 6 a 17 años que experimentan episodios de sobrecarga o desregulación emocional.
+Mapa de empatía que sintetiza los pensamientos, percepciones sensoriales, frustraciones y necesidades de niños y adolescentes autistas de 6 a 17 años que experimentan episodios de sobrecarga o desregulación emocional.
 
 <p align="center">
   <img src="images/Chapter-II/Empathy-Mapping-Diana.png" alt="Empathy Mapping Diana" width="600">
 </p>
-Nota. Empathy Map correspondiente al Segmento 1 (Niños y Adolescentes Neurodivergentes), reflejando sus barreras de comunicación, estímulos del entorno y oportunidades de valor para la autorregulación guiada.
+Nota. Empathy Map correspondiente al Segmento 1 (Niños y Adolescentes Autistas), reflejando sus barreras de comunicación, estímulos del entorno y oportunidades de valor para la autorregulación guiada.
 
 
-**Segmento 2: Madres, padres y cuidadores**
+**Segmento objetivo 2: Padres con estilo de crianza autoritario**
 
-Mapa de empatía que analiza los pensamientos, preocupaciones, entornos de presión social y necesidades de los padres y cuidadores primarios frente a momentos de desregulación emocional o sensorial de sus familiares neurodivergentes.
+Mapa de empatía que analiza los pensamientos, preocupaciones, entornos de presión social y necesidades de los padres con estilo de crianza autoritario frente a momentos de desregulación emocional o sensorial de sus hijos autistas.
 
 <p align="center">
   <img src="images/Chapter-II/Empathy-Mapping-Mateo.jpeg" alt="Empathy Mapping Padres" width="600">
 </p>
-Nota. Empathy Map correspondiente al Segmento 2 (Padres, Familiares y Cuidadores Primarios), visibilizando sus desafíos emocionales, la búsqueda de guías de contención rápida y la necesidad de herramientas intuitivas respaldadas por profesionales.
+Nota. Empathy Map correspondiente al Segmento 2 (Padres con estilo de crianza autoritario), visibilizando sus desafíos emocionales, la búsqueda de guías de contención rápida y la necesidad de herramientas intuitivas respaldadas por profesionales.
 
 
 ## 2.4. Big Picture Event Storming
-En esta sección se desarrolla el Big Picture Event Storming, una dinámica colaborativa orientada a mapear el dominio del sistema a través de los eventos de negocio clave que ocurren a lo largo del ciclo de uso de la aplicación. Mediante la identificación secuencial de estos sucesos y su estructuración en flujos clave —tales como Perfil y Personalización, Autorregulación, Gestión de Crisis (Modo SOS), Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento—, se logra representar la interacción entre los usuarios neurodivergentes, sus cuidadores y los servicios del sistema. Este artefacto permite alinearse visualmente sobre las dependencias del dominio, definir la delimitación de contextos y detectar de forma temprana posibles dudas operativas, garantizando que la arquitectura responda a las necesidades inmediatas de contención, comunicación e intervención.
+En esta sección se desarrolla el Big Picture Event Storming, una dinámica colaborativa orientada a mapear el dominio del sistema a través de los eventos de negocio clave que ocurren a lo largo del ciclo de uso de la aplicación. Mediante la identificación secuencial de estos sucesos y su estructuración en flujos clave —tales como Perfil y Personalización, Autorregulación, Gestión de Crisis (Modo SOS), Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento—, se logra representar la interacción entre los usuarios autistas, sus padres y los servicios del sistema. Este artefacto permite alinearse visualmente sobre las dependencias del dominio, definir la delimitación de contextos y detectar de forma temprana posibles dudas operativas, garantizando que la arquitectura responda a las necesidades inmediatas de contención, comunicación e intervención.
 
 **Proceso realizado**
 
@@ -593,13 +601,13 @@ El equipo construyó un tablero por cada flujo clave y lo trabajó en cuatro eta
 
 1. **Exploración de eventos** (notas naranjas): se listaron, en tiempo pasado, los eventos de negocio que ocurren durante el uso de Nubi, por ejemplo «Modo SOS activado» o «Episodio finalizado».
 2. **Ordenamiento en línea de tiempo**: los eventos se ordenaron de izquierda a derecha y de arriba hacia abajo, siguiendo la secuencia real de una situación de desregulación, desde la señal temprana hasta el cierre del episodio.
-3. **Actores y sistemas** (notas amarillas y rosadas): se identificaron las personas que intervienen (cuidador primario, docente o acompañante, usuario neurodivergente, profesional de la salud) y los sistemas de apoyo, como el almacenamiento local o la síntesis de voz.
+3. **Actores y sistemas** (notas amarillas y rosadas): se identificaron las personas que intervienen (padres, docente o acompañante, usuario autista, profesional de la salud) y los sistemas de apoyo, como el almacenamiento local o la síntesis de voz.
 4. **Hotspots** (notas rojas): se registraron las dudas y los riesgos del dominio, por ejemplo «¿Quién declara que la crisis terminó?» o «¿Funciona con el celular bloqueado?». Estas preguntas se resolvieron después en el Design-Level Event Storming (sección 4.6.1).
 
 Los cinco tableros resultantes son el punto de partida para identificar los Bounded Contexts del producto.
 
 ### 2.4.1. Red de Apoyo y Seguimiento
-Flujo de eventos para el envío de alertas a contactos de confianza, registro de episodios y generación de reportes consultables por cuidadores y profesionales de la salud.
+Flujo de eventos para el envío de alertas a contactos de confianza, registro de episodios y generación de reportes consultables por los padres y profesionales de la salud.
 
 ![image5.png](images/Chapter-II/image5.png)
   Nota. Diagrama de eventos del proceso de Red de Apoyo y Seguimiento, detallando los pasos de notificación, llegada del contacto, registro del episodio y compartición de reportes.
@@ -623,7 +631,7 @@ Nota. Diagrama de eventos del flujo de Autorregulación, representando las etapa
 Ruta de contención rápida activada ante señales tempranas para guiarse paso a paso en la desescalada del episodio y el restablecimiento de la calma.
 
 ![image2.png](images/Chapter-II/image2.png)
-Nota. Diagrama de eventos del flujo de Gestión de Crisis (Modo SOS), ilustrando los pasos inmediatos de selección de detonante, temporizador visual y sugerencias de contención para el cuidador.
+Nota. Diagrama de eventos del flujo de Gestión de Crisis (Modo SOS), ilustrando los pasos inmediatos de selección de detonante, temporizador visual y sugerencias de contención para los padres.
 
 
 ### 2.4.5. Perfil y Personalización
@@ -641,10 +649,10 @@ En esta sección se presenta el glosario de términos del dominio de NUBI, const
 
 | Término (EN) | Definición |
 | :--- | :--- |
-| **Neurodivergence** (Neurodivergencia) | Funcionamiento neurológico distinto al mayoritario, como el TEA, el TDAH/TDA o el TOC. |
-| **Neurodivergent User** (Usuario neurodivergente) | Niño o adolescente neurodivergente que usa NUBI para calmarse y comunicar lo que necesita. |
-| **Caregiver** (Cuidador) | Madre, padre o familiar que acompaña al usuario en su día a día. |
-| **Companion** (Acompañante) | Persona que está junto al usuario durante un episodio, sea cuidador, docente o familiar. |
+| **Neurodivergence** (Neurodivergencia) | Funcionamiento neurológico distinto al mayoritario. NUBI se enfoca en el trastorno del espectro autista (TEA). |
+| **Neurodivergent User** (Usuario neurodivergente) | Niño o adolescente autista que usa NUBI para calmarse y comunicar lo que necesita. |
+| **Caregiver** (Cuidador) | Madre o padre con estilo de crianza autoritario que acompaña al usuario en su día a día. |
+| **Companion** (Acompañante) | Persona que está junto al usuario durante un episodio, sea uno de los padres, un docente o un familiar. |
 | **Health Professional** (Profesional de salud) | Psicólogo, psiquiatra o terapeuta que recibe los reportes de episodios del usuario. |
 | **Crisis Episode** (Episodio de crisis) | Momento en que el usuario pierde el control por una sobrecarga sensorial o emocional. |
 | **Sensory Overload** (Sobrecarga sensorial) | Exceso de estímulos del entorno que el usuario no logra procesar. |
@@ -660,10 +668,10 @@ En esta sección se presenta el glosario de términos del dominio de NUBI, const
 
 | Término (EN) | Definición |
 | :--- | :--- |
-| **Account** (Cuenta) | Acceso a NUBI de un cuidador, docente o institución. |
-| **Neurodivergent Profile** (Perfil del usuario neurodivergente) | Ficha de un niño o adolescente dentro de una cuenta; una cuenta puede tener varios perfiles a cargo. |
+| **Account** (Cuenta) | Acceso a NUBI de un padre, docente o institución. |
+| **Neurodivergent Profile** (Perfil del usuario neurodivergente) | Ficha de un niño o adolescente autista dentro de una cuenta; una cuenta puede tener varios perfiles a cargo. |
 | **Sensory Profile** (Perfil sensorial) | Sensibilidades y preferencias del usuario que adaptan NUBI a cada persona. |
-| **Declared Diagnosis** (Diagnóstico declarado) | Condición informada por el cuidador; NUBI no la valida ni la diagnostica. |
+| **Declared Diagnosis** (Diagnóstico declarado) | Condición informada por los padres; NUBI no la valida ni la diagnostica. |
 | **Communicative Need** (Necesidad comunicativa) | Forma en que el usuario prefiere expresarse: pictogramas, texto o voz. |
 | **Trusted Contact** (Contacto de confianza) | Persona elegida para recibir las alertas del usuario cuando necesita ayuda. |
 | **Freemium Plan** (Plan freemium) | Plan gratuito para familias con las funciones básicas de NUBI. |
@@ -674,7 +682,7 @@ En esta sección se presenta el glosario de términos del dominio de NUBI, const
 
 | Término (EN) | Definición |
 | :--- | :--- |
-| **SOS Mode** (Modo SOS) | Modo que guía al cuidador paso a paso durante una crisis. |
+| **SOS Mode** (Modo SOS) | Modo que guía a los padres paso a paso durante una crisis. |
 | **Action Guide** (Guía de actuación) | Secuencia de pasos para contener una crisis, adaptada al perfil del usuario. |
 | **Containment Step** (Paso de contención) | Cada acción concreta de la guía de actuación. |
 | **Alternative Technique** (Técnica alternativa) | Estrategia que se sugiere cuando un paso de la guía no funciona. |
@@ -707,8 +715,8 @@ En esta sección se presenta el glosario de términos del dominio de NUBI, const
 
 | Término (EN) | Definición |
 | :--- | :--- |
-| **Support Network** (Red de apoyo) | Contactos de confianza, cuidadores y profesionales vinculados a un usuario. |
+| **Support Network** (Red de apoyo) | Contactos de confianza, padres y profesionales vinculados a un usuario. |
 | **Help Request** (Solicitud de ayuda) | Aviso que el usuario envía a su red de apoyo cuando necesita asistencia. |
 | **Episode Record** (Registro de episodio) | Anotación de un episodio con su duración, detonantes y estrategias usadas. |
-| **Effective Strategy** (Estrategia efectiva) | Estrategia que el cuidador marca como útil después de un episodio. |
-| **Episode Report** (Reporte de episodio) | Resumen de episodios que el cuidador comparte con el profesional de salud. |
+| **Effective Strategy** (Estrategia efectiva) | Estrategia que los padres marcan como útil después de un episodio. |
+| **Episode Report** (Reporte de episodio) | Resumen de episodios que los padres comparten con el profesional de salud. |
