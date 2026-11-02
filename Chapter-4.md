@@ -1363,7 +1363,7 @@ La Web Application tiene un módulo por Bounded Context, de modo que el frontend
 
 #### Perfil y Personalización: perfil del usuario y cuidadores
 
-Este diagrama cubre la gestión del perfil del usuario neurodivergente: sus datos básicos, el perfil sensorial, el diagnóstico declarado, los cuidadores asociados y los contactos de confianza.
+Este diagrama cubre la gestión del perfil del usuario autista: sus datos básicos, el perfil sensorial, el diagnóstico declarado, los cuidadores asociados y los contactos de confianza.
 
 <p align="center">
   <img src="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png" alt="Class Diagram Perfil y Personalización: perfil del usuario y cuidadores" width="100%">
@@ -1411,7 +1411,7 @@ Este diagrama cubre las recomendaciones personalizadas, que se generan según el
 
 #### Autorregulación
 
-Este diagrama cubre las sesiones de calma del usuario neurodivergente, los recursos de calma disponibles, los favoritos y el temporizador.
+Este diagrama cubre las sesiones de calma del usuario autista, los recursos de calma disponibles, los favoritos y el temporizador.
 
 <p align="center">
   <img src="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png" alt="Class Diagram Autorregulación" width="100%">
@@ -1499,7 +1499,7 @@ A continuación se presenta el Database Diagram de NUBI, con las tablas de todos
 
 #### Esquema profile: Perfil y Personalización
 
-Este esquema guarda las cuentas de acceso, los perfiles de los usuarios neurodivergentes, sus cuidadores y contactos de confianza, y todo lo relacionado con planes, instituciones y soporte técnico. Las tablas se gestionan de la siguiente manera:
+Este esquema guarda las cuentas de acceso, los perfiles de los usuarios autistas, sus cuidadores y contactos de confianza, y todo lo relacionado con planes, instituciones y soporte técnico. Las tablas se gestionan de la siguiente manera:
 
 - **`accounts`:** guarda el acceso de cada cuidador, docente o administrador institucional. El correo (`email`) es único y funciona como identificador de inicio de sesión. Una cuenta creada con Google no tiene `password_hash` y guarda su identificador de Google en `google_subject`, que también es único; una cuenta creada con contraseña sí debe tener `password_hash`. El rol (`role`) solo admite `CAREGIVER`, `TEACHER` e `INSTITUTION_ADMIN`, y la columna `active` permite desactivar una cuenta sin borrarla. `institution_id` es opcional y solo lo tienen los docentes y administradores de una institución.
 - **`institutions`:** registra los colegios y centros de terapia (`institution_type`) que administran los perfiles de sus estudiantes. No depende de ninguna otra tabla; `accounts` y `neurodivergent_profiles` la referencian con una clave foránea opcional.
