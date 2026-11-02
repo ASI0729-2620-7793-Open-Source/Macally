@@ -2,19 +2,21 @@
 
 ## 3.1. User Stories
 
-En esta sección se especifican las épicas y las User Stories que definen el alcance funcional de Nubi. El alcance se ha delimitado a los 5 Bounded Contexts identificados en el Big Picture Event Storming (Capítulo II, sección 2.4), por lo que se define una única Épica por cada Bounded Context. A partir de esas 5 épicas se elabora un cuadro para el conjunto de User Stories funcionales, un cuadro de Technical Stories orientadas al RESTful API (redactadas desde el rol Developer) y un cuadro de Landing Page Stories orientadas al sitio web estático (redactadas desde el rol Visitante), tal como lo solicita la rúbrica del proyecto.
+En esta sección se especifican las épicas y las User Stories que definen el alcance funcional de Nubi. El alcance se ha delimitado a los 5 Bounded Contexts identificados en el Big Picture Event Storming: Perfil y Personalización, Gestión de Crisis (Modo SOS), Autorregulación, Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento.
 
-Los criterios de aceptación se redactan en tiempo presente, en tercera persona, sin hacer referencia a detalles de interfaz de usuario, y siguen la estructura Gherkin (Dado - Cuando - Entonces / Given - When - Then).
+A partir de estas 5 épicas se desarrolla el conjunto de User Stories funcionales, Technical Stories orientadas al RESTful API y Landing Page Stories asociadas al sitio web estático de Nubi.
+
+Los criterios de aceptación se redactan en tiempo presente, en tercera persona y siguen la estructura Gherkin: Dado - Cuando - Entonces / Given - When - Then.
 
 ### Épicas por Bounded Context
 
 | Epic ID | Bounded Context | Descripción |
 |---|---|---|
-| EPIC-01 | Perfil y Personalización | Como cuidador quiero crear y gestionar el perfil del niño o adolescente neurodivergente para personalizar las herramientas de apoyo según sus necesidades. |
-| EPIC-02 | Gestión de Crisis (Modo SOS) | Como cuidador quiero contar con un Modo SOS con guías paso a paso para actuar con seguridad durante un episodio de desregulación. |
-| EPIC-03 | Autorregulación | Como usuario neurodivergente quiero contar con una interfaz de autorregulación con estímulos personalizables para recuperar la calma durante una sobrecarga sensorial. |
-| EPIC-04 | Comunicación Asistida (CAA) | Como usuario neurodivergente quiero contar con un tablero de comunicación con pictogramas para expresar mis necesidades básicas sin depender del habla. |
-| EPIC-05 | Red de Apoyo y Seguimiento | Como cuidador quiero solicitar ayuda, dar seguimiento a los episodios de crisis y recibir recomendaciones personalizadas para acompañar de forma más efectiva al usuario a mi cargo. |
+| EPIC-01 | Perfil y Personalización | Como cuidador quiero crear y gestionar el perfil del niño con autismo a mi cargo para personalizar las herramientas de apoyo según sus sensibilidades, detonantes, necesidades comunicativas y preferencias. |
+| EPIC-02 | Gestión de Crisis (Modo SOS) | Como cuidador quiero contar con un Modo SOS de acceso rápido con guías paso a paso para actuar con mayor seguridad durante un episodio de desregulación emocional o sensorial. |
+| EPIC-03 | Autorregulación | Como niño con autismo quiero disponer de recursos de calma de baja carga cognitiva para ayudarme a autorregularme durante una situación de sobrecarga emocional o sensorial. |
+| EPIC-04 | Comunicación Asistida (CAA) | Como niño con autismo quiero utilizar herramientas de Comunicación Aumentativa y Alternativa para expresar mis necesidades cuando hablar resulte difícil. |
+| EPIC-05 | Red de Apoyo y Seguimiento | Como cuidador quiero recibir solicitudes de ayuda, registrar episodios y consultar información relevante para brindar un acompañamiento más adecuado al niño con autismo a mi cargo. |
 
 ### 3.1.1. User Stories
 
