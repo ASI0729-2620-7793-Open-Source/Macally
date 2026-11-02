@@ -1206,7 +1206,7 @@ Como resultado se confirmaron **cinco Bounded Contexts**, que corresponden a las
 | :--- | :--- | :--- |
 | Perfil y Personalización | Cuenta, perfil del usuario, contactos de confianza, suscripción e institución | EPIC-01 |
 | Gestión de Crisis (Modo SOS) | Guía paso a paso para el cuidador durante una crisis | EPIC-02 |
-| Autorregulación | Recursos de calma para el usuario neurodivergente | EPIC-03 |
+| Autorregulación | Recursos de calma para el usuario autista | EPIC-03 |
 | Comunicación Asistida (CAA) | Tablero de pictogramas y salida de voz | EPIC-04 |
 | Red de Apoyo y Seguimiento | Alertas a contactos de confianza e historial de episodios | EPIC-05 |
 
@@ -1214,7 +1214,7 @@ En los diagramas se mantiene la convención de colores del Event Storming: **nar
 
 #### Perfil y Personalización
 
-Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los usuarios neurodivergentes a su cargo: diagnóstico, detonantes, necesidad comunicativa, estrategia de calma, pictogramas y contactos de confianza. También concentra la suscripción, los planes institucionales y los reportes de soporte técnico.
+Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los usuarios autistas a su cargo: diagnóstico, detonantes, necesidad comunicativa, estrategia de calma, pictogramas y contactos de confianza. También concentra la suscripción, los planes institucionales y los reportes de soporte técnico.
 
 ![bc1.png](images/Chapter-IV/bc1.png)
 
@@ -1223,7 +1223,7 @@ Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los u
 **Hotspots resueltos:**
 
 - *¿Lo configura el cuidador o el niño?* 
-- El cuidador crea el perfil y registra el diagnóstico, los detonantes y los contactos de confianza. El usuario neurodivergente solo elige sus recursos y pictogramas favoritos.
+- El cuidador crea el perfil y registra el diagnóstico, los detonantes y los contactos de confianza. El usuario autista solo elige sus recursos y pictogramas favoritos.
 - *¿Qué pasa si hay dos cuidadores del mismo niño?* 
 - Un perfil admite varios cuidadores asociados, cada uno con su propia cuenta (US-06).
 - *¿Se valida el diagnóstico o se declara?* 
@@ -1248,7 +1248,7 @@ Conduce al cuidador durante una crisis con una guía de actuación adaptada al p
 
 #### Autorregulación
 
-Ofrece al usuario neurodivergente recursos de calma (respiración guiada, sonidos relajantes y lienzo de dibujo libre) filtrados según su perfil sensorial, y activa el modo de baja estimulación. Permite marcar recursos como favoritos y usar un temporizador de calma.
+Ofrece al usuario autista recursos de calma (respiración guiada, sonidos relajantes y lienzo de dibujo libre) filtrados según su perfil sensorial, y activa el modo de baja estimulación. Permite marcar recursos como favoritos y usar un temporizador de calma.
 
 ![bc3.png](images/Chapter-IV/bc3.png)
 
