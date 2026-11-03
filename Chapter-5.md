@@ -36,6 +36,12 @@ Las herramientas seleccionadas permiten que los integrantes del equipo trabajen 
 | Software Architecture | Mermaid                | Elaborar como código los diagramas de Event Storming y de arquitectura de software (C4 Model).                                                    | https://tinyurl.com/2yz5mw6k |
 | Software Deployment | GitHub Pages           | Publicar el Landing Page como sitio web estático a partir del repositorio.                                                                        | https://tinyurl.com/ktgj8xw |
 | Communication & Video | Microsoft Stream       | Publicar los videos de entrevistas, prototipos y exposiciones del proyecto.                                                                       | https://tinyurl.com/29w46hsb |
+| Frontend Web Application | PrimeNG | Biblioteca de componentes UI complementaria a Angular Material en la Web Application. | https://primeng.org |
+| Frontend Web Application | ngx-translate | Internacionalización de la Web Application en English y Latin American Spanish. | https://github.com/ngx-translate/core |
+| Mock API | json-server | API simulada que consume la Frontend Web Application mientras se implementan los RESTful Web Services. | https://github.com/typicode/json-server |
+| Software Deployment | Firebase Hosting | Publicar la Frontend Web Application como sitio estático. | https://firebase.google.com/docs/hosting |
+| Software Deployment | Render | Publicar la API simulada (json-server) como servicio web de Node.js. | https://render.com |
+| Data Persistence (Mock API) | Cloud Firestore | Guardar el estado de json-server para que los datos no se pierdan al reiniciar el servicio en Render. | https://firebase.google.com/docs/firestore |
 
 La selección de estas herramientas responde a los lineamientos tecnológicos establecidos para el proyecto y permite mantener un entorno de trabajo común entre los integrantes del equipo. Git y GitHub permiten gestionar los cambios realizados durante el desarrollo, mientras que Trello facilita la organización del Product Backlog. UXPressia y Figma son utilizados para la elaboración de los artefactos UX/UI, y WebStorm constituye el entorno principal para la edición del código fuente.
 
@@ -50,7 +56,7 @@ Los repositorios correspondientes a los productos de software de NUBI son los si
 | Producto                 | Repositorio                |
 |--------------------------|----------------------------|
 | Landing Page             | https://tinyurl.com/28o2kj4u |
-| Frontend Web Application | `no aplica`     |
+| Frontend Web Application | https://tinyurl.com/2cxsdvov (Nubi---Frontend) |
 | RESTful Web Services     | `no aplica`     |
 | Project Report (documentación) | https://tinyurl.com/2cu3vhdy |
 
@@ -283,9 +289,7 @@ El proceso considerado es el siguiente:
 
 La dirección de los RESTful Web Services debe mantenerse como una configuración dependiente del entorno, evitando almacenar directamente direcciones específicas de desarrollo o producción dentro de los componentes de la aplicación.
 
-La URL correspondiente a la Frontend Web Application será:
-
-**Frontend Web Application URL:** `pendiente: se definirá al desplegar la Web Application (Sprint 2)`
+**Frontend Web Application URL:** https://tinyurl.com/2xu8w6kb
 
 #### RESTful Web Services Deployment
 
@@ -565,45 +569,35 @@ El objetivo del Sprint 2 es entregar y desplegar la primera versión de la Front
 | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---|---|---|
 | US-01 | Crear perfil del usuario neurodivergente | T-15 | Dominio y alta de perfiles | Implementar el modelo de dominio del perfil, su endpoint en la API simulada y el formulario de creación en la lista de perfiles. | 5 | Ruiz Villegas, Yngrid Nahir | Done |
-| US-02 | Editar perfil del usuario neurodivergente | T-16 | Vista de detalle y edición | Implementar la vista de detalle del perfil con edición de sus datos. | 3 | Ruiz Villegas, Yngrid Nahir | Done |
-| US-03 | Registrar sensibilidades sensoriales | T-17 | Perfil sensorial | Registrar las sensibilidades sensoriales del perfil y su nivel, para que las usen Autorregulación y el Modo SOS. | 3 | Ruiz Villegas, Yngrid Nahir | Done |
-| US-04 | Registrar diagnóstico y condición | T-18 | Diagnóstico y condición | Agregar al perfil los campos de diagnóstico y condición con sus validaciones. | 2 | Ruiz Villegas, Yngrid Nahir | Done |
-| US-05 | Subir foto de perfil del usuario | T-19 | Foto de perfil | Permitir asociar una fotografía al perfil y mostrarla en la lista y en el detalle. | 3 | Ruiz Villegas, Yngrid Nahir | Done |
+| US-02 / US-05 | Editar perfil / Subir foto de perfil del usuario | T-16 / T-19 | Detalle, edición y foto de perfil | Implementar la vista de detalle del perfil con edición de sus datos, y permitir asociar una fotografía al perfil y mostrarla en la lista y en el detalle. | 6 | Ruiz Villegas, Yngrid Nahir | Done |
+| US-03 / US-04 | Registrar sensibilidades sensoriales / diagnóstico y condición | T-17 / T-18 | Perfil sensorial y diagnóstico | Registrar las sensibilidades sensoriales del perfil y su nivel, para que las usen Autorregulación y el Modo SOS, y agregar los campos de diagnóstico y condición con sus validaciones. | 5 | Ruiz Villegas, Yngrid Nahir | Done |
 | US-06 | Asociar múltiples cuidadores a un perfil | T-20 | Cuidadores asociados | Implementar la vista del cuidador y la asociación de cuidadores a un perfil, respetando los límites del plan. | 4 | Ruiz Villegas, Yngrid Nahir | Done |
 | US-07 | Activar Modo SOS | T-21 | Vista de activación del Modo SOS | Implementar la vista de activación y el `SosModeStore` que inicia la sesión SOS del perfil a cargo. | 4 | Diaz Yurivilca, Sofia | Done |
 | US-08 | Visualizar guía paso a paso del Modo SOS | T-22 | Guía paso a paso | Implementar la vista de foco único que muestra los pasos de actuación de forma secuencial. | 5 | Diaz Yurivilca, Sofia | Done |
 | US-09 | Personalizar guía SOS según perfil del usuario | T-23 | Guía según sensibilidades | Adaptar los pasos de la guía a las sensibilidades registradas en el perfil, mediante una fachada hacia Perfil y Personalización. | 5 | Diaz Yurivilca, Sofia | Done |
-| US-10 | Marcar paso de la guía como completado | T-24 | Completar pasos | Permitir marcar cada paso como completado y avanzar al siguiente. | 2 | Diaz Yurivilca, Sofia | Done |
+| US-10 / US-12 | Marcar paso como completado / Acceder al Modo SOS desde pantalla principal | T-24 / T-26 | Completar pasos y acceso global al Modo SOS | Permitir marcar cada paso como completado y avanzar al siguiente, y registrar las rutas de Gestión de Crisis y el botón SOS de la barra superior, visible en toda la aplicación. | 4 | Diaz Yurivilca, Sofia | Done |
 | US-11 | Finalizar episodio desde el Modo SOS | T-25 | Resumen del episodio | Finalizar la sesión SOS y mostrar la vista de resumen del episodio. | 4 | Diaz Yurivilca, Sofia | Done |
-| US-12 | Acceder al Modo SOS desde pantalla principal | T-26 | Acceso global al Modo SOS | Registrar las rutas de Gestión de Crisis y el botón SOS de la barra superior, visible en toda la aplicación. | 2 | Diaz Yurivilca, Sofia | Done |
 | US-13 | Seleccionar estímulo visual de autorregulación | T-27 | Galería de estímulos | Implementar la galería de estímulos y las escenas visuales del estímulo en uso. | 5 | Payano Puchuri, Joan Fabricio | Done |
 | US-14 | Seleccionar estímulo auditivo de autorregulación | T-28 | Sonidos relajantes | Agregar los estímulos auditivos y su reproducción durante la sesión. | 4 | Payano Puchuri, Joan Fabricio | Done |
-| US-15 | Ajustar intensidad del estímulo | T-29 | Control de intensidad | Permitir ajustar la intensidad del estímulo en uso. | 2 | Payano Puchuri, Joan Fabricio | Done |
-| US-16 | Guardar estímulos favoritos | T-30 | Estímulos favoritos | Guardar y filtrar los estímulos favoritos del perfil en la galería. | 3 | Payano Puchuri, Joan Fabricio | Done |
-| US-17 | Activar modo de baja estimulación | T-31 | Modo de baja estimulación | Reducir los elementos visuales y sonoros de la sesión cuando el modo está activo. | 3 | Payano Puchuri, Joan Fabricio | Done |
+| US-15 / US-16 / US-17 | Ajustar intensidad / Guardar favoritos / Activar baja estimulación | T-29 / T-30 / T-31 | Intensidad, favoritos y baja estimulación | Permitir ajustar la intensidad del estímulo, guardar y filtrar los estímulos favoritos del perfil, y reducir los elementos visuales y sonoros de la sesión cuando el modo de baja estimulación está activo. | 8 | Payano Puchuri, Joan Fabricio | Done |
 | US-18 | Usar temporizador de calma | T-32 | Temporizador de calma | Implementar la vista de foco único del temporizador de calma. | 4 | Payano Puchuri, Joan Fabricio | Done |
 | US-19 | Visualizar tablero de pictogramas | T-33 | Tablero de pictogramas | Implementar el dominio de pictogramas y la vista del tablero CAA. | 5 | Lopez Torres, Leonardo Gabriel | Done |
-| US-20 | Seleccionar pictograma para comunicar una necesidad | T-34 | Comunicar necesidad | Registrar la necesidad comunicada en la API simulada, confirmar el envío con un snackbar y mostrarla al cuidador en Inicio. | 6 | Lopez Torres, Leonardo Gabriel | Done |
-| US-21 | Personalizar pictogramas favoritos | T-35 | Pictogramas favoritos | Permitir marcar pictogramas como favoritos y destacarlos en el tablero. | 2 | Lopez Torres, Leonardo Gabriel | Done |
-| US-22 | Agregar pictograma personalizado | T-36 | Pictograma personalizado | Agregar al tablero un pictograma con una imagen propia. | 4 | Lopez Torres, Leonardo Gabriel | To-do |
-| US-23 | Organizar pictogramas por categoría | T-37 | Categorías del tablero | Filtrar el tablero por categoría y permitir reordenar los pictogramas. | 3 | Lopez Torres, Leonardo Gabriel | Done |
-| US-24 | Reproducir audio asociado al pictograma | T-38 | Audio del pictograma | Reproducir un audio al seleccionar un pictograma. | 3 | Lopez Torres, Leonardo Gabriel | To-do |
+| US-20 / US-27 | Seleccionar pictograma para comunicar una necesidad / Confirmar recepción de la solicitud | T-34 / T-41 | Comunicar necesidad y confirmar recepción | Registrar la necesidad comunicada en la API simulada, confirmar el envío con un snackbar, mostrarla al cuidador en Inicio y permitirle confirmar que recibió la última necesidad comunicada. | 8 | Lopez Torres, Leonardo Gabriel | Done |
+| US-21 / US-23 | Personalizar pictogramas favoritos / Organizar pictogramas por categoría | T-35 / T-37 | Favoritos y categorías del tablero | Permitir marcar pictogramas como favoritos y destacarlos en el tablero, filtrar el tablero por categoría y permitir reordenar los pictogramas. | 5 | Lopez Torres, Leonardo Gabriel | Done |
+| US-22 / US-24 | Agregar pictograma personalizado / Reproducir audio asociado al pictograma | T-36 / T-38 | Pictograma personalizado y audio | Agregar al tablero un pictograma con una imagen propia y reproducir un audio al seleccionar un pictograma. | 7 | Lopez Torres, Leonardo Gabriel | To-do |
 | US-25 | Enviar solicitud de ayuda al cuidador | T-39 | Solicitud de ayuda | Enviar la solicitud de ayuda desde el panel de Red de Apoyo; en este Sprint el panel usa datos de muestra. | 4 | Diaz Caruzo, Edgard Daniel | In-Process |
 | US-26 | Recibir notificación de solicitud de ayuda | T-40 | Aviso al cuidador | Mostrar al cuidador el estado del usuario y su última comunicación en el panel de Red de Apoyo. | 4 | Diaz Caruzo, Edgard Daniel | In-Process |
-| US-27 | Confirmar recepción de la solicitud | T-41 | Confirmar recepción | Permitir al cuidador confirmar que recibió la última necesidad comunicada. | 2 | Lopez Torres, Leonardo Gabriel | Done |
-| US-28 | Cancelar solicitud de ayuda | T-42 | Cancelar solicitud | Permitir cancelar una solicitud de ayuda enviada. | 2 | Diaz Caruzo, Edgard Daniel | To-do |
-| US-29 | Consultar historial de solicitudes de ayuda | T-43 | Actividad reciente | Mostrar la actividad reciente y el gráfico de bienestar de los últimos siete días; falta conectarlos con la API simulada. | 3 | Diaz Caruzo, Edgard Daniel | In-Process |
+| US-28 / US-29 | Cancelar solicitud de ayuda / Consultar historial de solicitudes | T-42 / T-43 | Cancelar solicitud y actividad reciente | Permitir cancelar una solicitud de ayuda enviada, y mostrar la actividad reciente y el gráfico de bienestar de los últimos siete días; falta conectar la actividad reciente con la API simulada. | 5 | Diaz Caruzo, Edgard Daniel | To-do |
 | — | Tarea general | T-44 | Proyecto base, i18n y API simulada | Crear el proyecto Angular y configurar ngx-translate (English y Latin American Spanish) y json-server con sus datos iniciales. | 4 | Payano Puchuri, Joan Fabricio | Done |
 | — | Tarea general | T-45 | Layout responsive | Implementar el layout con barra lateral, barra superior, selector de idioma y navegación entre módulos. | 5 | Payano Puchuri, Joan Fabricio | Done |
 | — | Tarea general | T-46 | Clases base compartidas | Implementar en `shared` las clases base de entidad, respuesta, assembler y endpoint, y el manejo de errores. | 4 | Lopez Torres, Leonardo Gabriel | Done |
-| — | Tarea general | T-47 | Pruebas unitarias del dominio SOS | Escribir las pruebas unitarias de `SosSession` y `ActionGuide`. | 2 | Diaz Yurivilca, Sofia | Done |
-| — | Tarea general | T-48 | Integración en `develop` | Unir las ramas `feature/*` en `develop` y resolver los conflictos de rutas, entornos y traducciones. | 3 | Diaz Yurivilca, Sofia | Done |
+| — | Tarea general | T-47 / T-48 | Pruebas del dominio SOS e integración en `develop` | Escribir las pruebas unitarias de `SosSession` y `ActionGuide`, y unir las ramas `feature/*` en `develop` resolviendo los conflictos de rutas, entornos y traducciones. | 5 | Diaz Yurivilca, Sofia | Done |
 | — | Tarea general | T-49 | Documentación de Red de Apoyo y licencia | Documentar la arquitectura del Bounded Context Red de Apoyo y Seguimiento y agregar la licencia MIT al repositorio. | 2 | Diaz Caruzo, Edgard Daniel | Done |
-| — | Tarea general | T-50 | Despliegue de la Web Application | Configurar Firebase Hosting y publicar la versión de producción de la aplicación Angular. | 3 | Lopez Torres, Leonardo Gabriel | Done |
-| — | Tarea general | T-51 | Despliegue de la API simulada | Publicar json-server en Render y guardar sus datos en Firestore para que no se pierdan al reiniciar el servicio. | 4 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-50 / T-51 | Despliegue de la Web Application y de la API simulada | Configurar Firebase Hosting y publicar la versión de producción de la aplicación Angular, y publicar json-server en Render guardando sus datos en Firestore para que no se pierdan al reiniciar el servicio. | 7 | Lopez Torres, Leonardo Gabriel | Done |
 | — | Tarea general | T-52 | Release a `master` | Integrar `develop` en `master` mediante una rama `release/v1.0.0`, según GitFlow. | 1 | Diaz Caruzo, Edgard Daniel | To-do |
 | LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Tarea pendiente del Sprint 1: enlazar el botón «Crear cuenta y activarlo» del Landing Page con la vista de registro de la Web Application desplegada. | 2 | Lopez Torres, Leonardo Gabriel | In-Process |
-De las 39 tareas del Sprint Backlog 2, 31 están en Done, 4 en In-Process y 4 en To-do. Las tareas que no llegaron a Done regresan al Product Backlog para el Sprint 3.
+
+De las 28 tareas del Sprint Backlog 2, 22 están en Done, 3 en In-Process y 3 en To-do. Las tareas que no llegaron a Done regresan al Product Backlog para el Sprint 3. Las tareas se estiman entre 4 y 8 horas, salvo T-49, T-52 y T-04, de 1 a 2 horas.
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
