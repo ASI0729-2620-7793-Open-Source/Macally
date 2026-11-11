@@ -20,7 +20,7 @@ Las herramientas seleccionadas permiten que los integrantes del equipo trabajen 
 | Requirements Management | GitHub                 | Mantener de forma colaborativa la documentación del proyecto, User Stories, Product Backlog y demás artefactos desarrollados en formato Markdown. | https://tinyurl.com/2cu3vhdy |
 | UX Research | UXPressia              | Elaborar y documentar artefactos UX como User Personas, User Journey Maps, Empathy Maps e Impact Mapping.                                         | https://tinyurl.com/msh5wht |
 | UX/UI Design | Figma                  | Diseñar Wireframes, Mock-ups y Prototypes correspondientes al Landing Page y la Web Application de NUBI.                                          | https://tinyurl.com/gmabjuv |
-| Software Development | Webstorm|  Editar y desarrollar el código fuente correspondiente a los diferentes productos de software de NUBI.                                            | https://tinyurl.com/2ld4q5re |
+| Software Development | WebStorm |  Editar y desarrollar el código fuente correspondiente a los diferentes productos de software de NUBI.                                            | https://tinyurl.com/2ld4q5re |
 | Landing Page Development | HTML5                  | Definir la estructura semántica del Landing Page.                                                                                                 | https://tinyurl.com/m8qyg6l |
 | Landing Page Development | CSS3                   | Implementar los estilos visuales y el Responsive Web Design del Landing Page.                                                                     | https://tinyurl.com/kja33aj |
 | Landing Page Development | JavaScript             | Implementar las interacciones y comportamiento dinámico del Landing Page.                                                                         | https://tinyurl.com/m9lqjhu |
@@ -217,7 +217,7 @@ La estructura utilizada considera:
 
 Los escenarios deben describir comportamiento y no detalles específicos de implementación.
 
-#### Internationalization(i18n) and Accessibility Conventions
+#### Internationalization (i18n) and Accessibility Conventions
 
 NUBI considera criterios de internacionalización y accesibilidad durante el desarrollo de sus productos digitales.
 
@@ -248,9 +248,12 @@ La solución está conformada por tres productos principales: el **Landing Page*
 
 | Producto | Tecnologías principales | Rama de despliegue | Plataforma       |
 |---|---|---|------------------|
-| Landing Page | HTML5, CSS3 y JavaScript | `main` | GitHub Pages |
-| Frontend Web Application | Angular y TypeScript | `main` | `No aplica`      |
-| RESTful Web Services | Java, Spring Boot y Spring Data JPA | `main` |`No aplica`|
+| Landing Page | HTML5, CSS3 y JavaScript | `master` | GitHub Pages |
+| Frontend Web Application | Angular y TypeScript | `develop` (Sprint 2); `main` a partir del release `v1.0.0` | Firebase Hosting |
+| API simulada | json-server (Node.js) y Cloud Firestore | `develop` (Sprint 2); `main` a partir del release `v1.0.0` | Render |
+| RESTful Web Services | Java, Spring Boot y Spring Data JPA | `master` | Pendiente: se define al implementar los Web Services |
+
+En los repositorios del Landing Page, de la Frontend Web Application y de los RESTful Web Services, la rama estable de GitFlow se llama `master`; en el repositorio del informe se llama `main`. En los procesos de despliegue de las secciones siguientes, «la rama estable» se refiere a esa rama.
 
 #### Landing Page Deployment
 
@@ -387,24 +390,24 @@ El objetivo del Sprint 1 es entregar y desplegar la primera versión del Landing
 | Sprint # | Sprint 1 | | | | | | |
 |---|---|---|---|---|---|---|---|
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| LS-01 | Conocer la personalización de perfiles en la landing page | T-01 | Sección Perfil y Personalización | Implementar la sección con la tarjeta de ejemplo de perfil (diagnóstico, sensibilidades y cuidadores vinculados). | 4 | Lopez Torres, Leonardo Gabriel | Done |
-| LS-01 | Conocer la personalización de perfiles en la landing page | T-02 | Adaptación a móvil de la sección | Ajustar la sección a pantallas pequeñas mediante Responsive Web Design. | 3 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-01 | Conocer la personalización de perfiles en la landing page | T-01 / T-02 | Sección Perfil y Personalización (desktop y móvil) | Implementar la sección con la tarjeta de ejemplo de perfil (diagnóstico, sensibilidades y cuidadores vinculados) y ajustarla a pantallas pequeñas mediante Responsive Web Design. | 7 | Lopez Torres, Leonardo Gabriel | Done |
 | LS-02 | Conocer el Modo SOS en la landing page | T-03 | Sección Modo SOS | Implementar la sección con la guía de cuatro pasos del Modo SOS. | 4 | Lopez Torres, Leonardo Gabriel | Done |
-| LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Preparar el botón «Crear cuenta y activarlo» para redirigir a la vista de registro de la Web Application cuando esta se despliegue. | 2 | Lopez Torres, Leonardo Gabriel | In-Process |
+| LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Preparar los botones del Landing Page (registro, inicio de sesión y «Crear cuenta y activarlo») para redirigir a las vistas correspondientes de la Web Application cuando esta se despliegue, y verificar la redirección en ambos idiomas. | 4 | Lopez Torres, Leonardo Gabriel | In-Process |
 | LS-03 | Conocer las herramientas de autorregulación en la landing page | T-05 | Sección Autorregulación | Implementar el panel de ejemplo con estímulos visuales y auditivos, intensidad y temporizador de calma. | 5 | Lopez Torres, Leonardo Gabriel | Done |
-| LS-04 | Conocer el tablero CAA en la landing page | T-06 | Sección Comunicación CAA | Implementar la cuadrícula de pictogramas de ejemplo. | 3 | Lopez Torres, Leonardo Gabriel | Done |
-| LS-04 | Conocer el tablero CAA en la landing page | T-07 | Preguntas frecuentes | Implementar las preguntas frecuentes como acordeón accesible con respuestas. | 3 | Lopez Torres, Leonardo Gabriel | Done |
-| LS-05 | Conocer la red de apoyo y seguimiento en la landing page | T-08 | Sección Seguimiento y recomendaciones | Implementar la sección y su llamado a la acción hacia los planes. | 3 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-04 | Conocer el tablero CAA en la landing page | T-06 / T-07 | Sección Comunicación CAA y preguntas frecuentes | Implementar la cuadrícula de pictogramas de ejemplo y las preguntas frecuentes como acordeón accesible con respuestas. | 6 | Lopez Torres, Leonardo Gabriel | Done |
+| LS-05 | Conocer la red de apoyo y seguimiento en la landing page | T-08 | Sección Seguimiento y recomendaciones | Implementar la sección, su adaptación a móvil y su llamado a la acción hacia los planes. | 4 | Lopez Torres, Leonardo Gabriel | Done |
 | — | Tarea general | T-09 | Header, Hero y Cómo funciona | Implementar la navegación, el menú móvil, el Hero, el problema y los cuatro pasos de uso. | 6 | Lopez Torres, Leonardo Gabriel | Done |
 | — | Tarea general | T-10 | Planes, testimonios, beneficios, equipo y contacto | Implementar las secciones de conversión y confianza, y el footer. | 8 | Lopez Torres, Leonardo Gabriel | Done |
 | — | Tarea general | T-11 | Internacionalización | Implementar los idiomas English (en_US, predeterminado) y Latin American Spanish (es_419) con selector de idioma. | 6 | Lopez Torres, Leonardo Gabriel | Done |
 | — | Tarea general | T-12 | Accesibilidad | Agregar atributos ARIA, enlace para saltar al contenido, foco visible, navegación por teclado y respeto a `prefers-reduced-motion`. | 4 | Lopez Torres, Leonardo Gabriel | Done |
-| — | Tarea general | T-13 | Términos de uso | Redactar y publicar los términos de uso, la política de privacidad y el aviso de accesibilidad, enlazados desde el footer. | 3 | Lopez Torres, Leonardo Gabriel | Done |
-| — | Tarea general | T-14 | Despliegue | Configurar GitHub Pages para publicar el Landing Page desde el repositorio. | 2 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-13 | Términos de uso | Redactar y publicar los términos de uso, la política de privacidad y el aviso de accesibilidad, y enlazarlos desde el footer en ambos idiomas. | 4 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-14 | Despliegue | Crear el repositorio, configurar GitHub Pages sobre la carpeta `/docs` y verificar que el sitio cargue sus recursos en Desktop y Mobile web browsers. | 4 | Lopez Torres, Leonardo Gabriel | Done |
+
+El Sprint Backlog 1 contiene 12 tareas: 11 en Done y 1 en In-Process (T-04). Como mejora a partir de la retroalimentación del docente, todas las tareas se estiman entre 4 y 8 horas: las tareas pequeñas se fusionaron con otras de la misma User Story (T-01 / T-02 y T-06 / T-07) y las que quedaban por debajo de 4 horas se reestimaron con su alcance completo (T-04, T-08, T-13 y T-14). Las User Stories LS-01 a LS-05 se descomponen en Engineering Tasks de implementación; las tareas generales (T-09 a T-14) cubren los componentes transversales del Landing Page que no dependen de una User Story en particular.
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-En el Sprint 1 se implementó la primera versión del Landing Page como sitio estático con HTML5, CSS3 y JavaScript, aplicando el Design System de la sección 4.1 (paleta de colores y tipografía Bricolage Grotesque) y las decisiones de Arquitectura de Información de la sección 4.2. La tabla registra los commits del repositorio, incluida la internacionalización (i18n) del Landing Page en inglés y español, desarrollada en la rama `feature/I18n`, integrada en `develop` con GitFlow y publicada en `master`.
+En el Sprint 1 se implementó la primera versión del Landing Page como sitio estático con HTML5, CSS3 y JavaScript, aplicando el Design System de la sección 4.1 (paleta de colores y tipografía Bricolage Grotesque) y las decisiones de Arquitectura de Información de la sección 4.2. La tabla registra los commits del repositorio, incluida la internacionalización (i18n) del Landing Page en inglés y español, desarrollada en la rama `feature/I18n`, integrada en `develop` con GitFlow y publicada en `master`. Los mensajes se transcriben tal como se registraron en Git, incluidas sus erratas.
 
 | Repository | Branch        | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---------------|---|---|---|---|
@@ -461,11 +464,11 @@ La colaboración del equipo durante el Sprint 1 se evidencia con los analíticos
 
 | Puesto | Cuenta de GitHub | Integrante | Commits | Líneas      |
 |---|---|---|---------|-------------|
-| #1 | Dan-trax | Diaz Caruzo, Edgard Daniel | 0       | 0           |
-| #2 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | 0       | 0           |
-| #3 | u20241a195-cmd | Diaz Yurivilca, Sofia | 19      | +407 / −404 |
-| #4 | Deiko-138 | Lopez Torres, Leonardo Gabriel | 17      | +984 / -0   |
-| #5 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | 0       | 0           |
+| #1 | Dan-trax | Diaz Caruzo, Edgard Daniel | 34      | +649 / −84     |
+| #2 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | 21      | +3828 / −389   |
+| #3 | u20241a195-cmd | Diaz Yurivilca, Sofia | 19      | +1832 / −944   |
+| #4 | Deiko-138 | Lopez Torres, Leonardo Gabriel | 17      | +1376 / −3387  |
+| #5 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | 5       | +666 / −70     |
 
 Los cinco integrantes tienen commits en `main`, con distinto volumen y en distintas semanas según los capítulos y aspectos que lideró cada uno.
 
@@ -490,7 +493,7 @@ El repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://tinyurl.com/
 | [4dfbb36](https://tinyurl.com/25xcyz34) | Deiko-138 | Lopez Torres, Leonardo Gabriel | Merge branch 'feature/I18n' into develop |
 | [5119b9e](https://tinyurl.com/2yeyfoaa) | Deiko-138 | Lopez Torres, Leonardo Gabriel | feat: add intercionalizacion lenguague |
 
-En este Sprint, Leonardo Gabriel Lopez Torres creó el repositorio y su README y desarrolló la internacionalización (i18n) del Landing Page en inglés y español (rama `feature/I18n`, integrada en `develop` y publicada en `master`), y Sofia Diaz Yurivilca documentó el código de la landing. Las Figuras 5 y 6 se capturaron antes de subir la internacionalización; la tabla incluye todos los commits del Sprint. Los cinco integrantes registran aportes en el repositorio del informe (Figuras 1 a 4), donde se documentaron el diseño y el contenido que se implementan en el Landing Page, ademas en esta ultima se agrego la intercionalizacion i18n.
+En este Sprint, Leonardo Gabriel Lopez Torres creó el repositorio y su README y desarrolló la internacionalización (i18n) del Landing Page en inglés y español (rama `feature/I18n`, integrada en `develop` y publicada en `master`), y Sofia Diaz Yurivilca documentó el código del Landing Page. Las Figuras 5 y 6 se capturaron antes de subir la internacionalización (i18n); la tabla incluye todos los commits del Sprint. Los cinco integrantes registran aportes en el repositorio del informe (Figuras 1 a 4), donde se documentaron el diseño y el contenido que se implementan en el Landing Page. Como oportunidad de mejora, el Landing Page solo tuvo dos autores en este Sprint; por ello, en el Sprint 2 se incorporaron al repositorio los aportes de Yngrid Nahir Ruiz Villegas y Joan Fabricio Payano Puchuri (sección 5.2.2.4).
 
 
 
@@ -509,7 +512,7 @@ El Sprint Planning 2 definió el alcance de la primera versión de la Frontend W
 | Location | Virtual (Google Meet y WhatsApp) |
 | Prepared By | Diaz Yurivilca, Sofia |
 | Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel |
-| Sprint 1 Review Summary | El Landing Page se desplegó en GitHub Pages con las historias LS-01 a LS-05 completas (10 de 10 Story Points), además de los planes, las preguntas frecuentes, la presentación del equipo y el formulario de contacto, en English y Latin American Spanish y con criterios de accesibilidad. De las 14 tareas del Sprint Backlog 1, 13 quedaron en Done y la tarea T-04 (botón «Crear cuenta y activarlo» hacia la Web Application) quedó en In-Process, porque la aplicación todavía no estaba desplegada; se completa en este Sprint. |
+| Sprint 1 Review Summary | El Landing Page se desplegó en GitHub Pages con las historias LS-01 a LS-05 completas (10 de 10 Story Points), además de los planes, las preguntas frecuentes, la presentación del equipo y el formulario de contacto, en English y Latin American Spanish y con criterios de accesibilidad. De las 12 tareas del Sprint Backlog 1, 11 quedaron en Done y la tarea T-04 (botón «Crear cuenta y activarlo» hacia la Web Application) quedó en In-Process, porque la aplicación todavía no estaba desplegada; se completa en este Sprint. |
 | Sprint 1 Retrospective Summary | A partir de la evidencia del Sprint 1 se identifican como aciertos la entrega completa del alcance planificado del Landing Page, la incorporación temprana de internacionalización y accesibilidad, y el uso de GitFlow y Conventional Commits. Como oportunidades de mejora se identifican que las 14 tareas se asignaron a un solo integrante y que los 3 commits del repositorio del Landing Page se concentraron en la última semana (Figura 6). Para el Sprint 2 el trabajo se reparte por Bounded Context, cada uno en su propia rama `feature/*`, con commits pequeños y frecuentes. |
 | **Sprint Goal & User Stories** | |
 | Sprint 2 Goal | *Our focus is on delivering a first deployed version of the Nubi Frontend Web Application with the main flows of its five Bounded Contexts. We believe it delivers to caregivers a way to personalize the profile of the child or teenager, activate SOS Mode with a step-by-step guide, choose calming stimuli, communicate with the AAC board and request help from the support network, instead of only reading about these features in the Landing Page. This will be confirmed when a caregiver can complete each of these flows (US-01 to US-29) from the deployed application, in Desktop and Mobile web browsers, in English or Spanish.* |
@@ -564,11 +567,11 @@ El objetivo del Sprint 2 es entregar y desplegar la primera versión de la Front
 ![Sprint-Backlog2.png](images/Chapter-V/Sprint-Backlog2.png)
 
 *Sprint Backlog 2 en Trello.* Tablero del Sprint 2 con las listas Stories, To-Do, In-Process, To-Review y To-Fix, y Done. La lista Stories reúne las User Stories comprometidas (US-01 en adelante) y las demás listas muestran sus tareas según su estado: en To-Do están las de pictograma personalizado (US-22), audio del pictograma (US-24), cancelar solicitud (US-28) y el release a `master`; en In-Process, las de solicitud de ayuda (US-25), aviso al cuidador (US-26), actividad reciente (US-29) y el call-to-action del Landing Page hacia la Web Application; y en Done, las tareas ya terminadas, como las de Perfil y Personalización (US-01 a US-06).
-## Sprint 2
 
-| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+| Sprint # | Sprint 2 | | | | | | |
 |---|---|---|---|---|---|---|---|
-| US-01 | Crear perfil del usuario neurodivergente | T-15 | Dominio y alta de perfiles | Implementar el modelo de dominio del perfil, su endpoint en la API simulada y el formulario de creación en la lista de perfiles. | 5 | Ruiz Villegas, Yngrid Nahir | Done |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US-01 | Crear perfil del usuario autista | T-15 | Dominio y alta de perfiles | Implementar el modelo de dominio del perfil, su endpoint en la API simulada y el formulario de creación en la lista de perfiles. | 5 | Ruiz Villegas, Yngrid Nahir | Done |
 | US-02 / US-05 | Editar perfil / Subir foto de perfil del usuario | T-16 / T-19 | Detalle, edición y foto de perfil | Implementar la vista de detalle del perfil con edición de sus datos, y permitir asociar una fotografía al perfil y mostrarla en la lista y en el detalle. | 6 | Ruiz Villegas, Yngrid Nahir | Done |
 | US-03 / US-04 | Registrar sensibilidades sensoriales / diagnóstico y condición | T-17 / T-18 | Perfil sensorial y diagnóstico | Registrar las sensibilidades sensoriales del perfil y su nivel, para que las usen Autorregulación y el Modo SOS, y agregar los campos de diagnóstico y condición con sus validaciones. | 5 | Ruiz Villegas, Yngrid Nahir | Done |
 | US-06 | Asociar múltiples cuidadores a un perfil | T-20 | Cuidadores asociados | Implementar la vista del cuidador y la asociación de cuidadores a un perfil, respetando los límites del plan. | 4 | Ruiz Villegas, Yngrid Nahir | Done |
@@ -592,12 +595,12 @@ El objetivo del Sprint 2 es entregar y desplegar la primera versión de la Front
 | — | Tarea general | T-45 | Layout responsive | Implementar el layout con barra lateral, barra superior, selector de idioma y navegación entre módulos. | 5 | Payano Puchuri, Joan Fabricio | Done |
 | — | Tarea general | T-46 | Clases base compartidas | Implementar en `shared` las clases base de entidad, respuesta, assembler y endpoint, y el manejo de errores. | 4 | Lopez Torres, Leonardo Gabriel | Done |
 | — | Tarea general | T-47 / T-48 | Pruebas del dominio SOS e integración en `develop` | Escribir las pruebas unitarias de `SosSession` y `ActionGuide`, y unir las ramas `feature/*` en `develop` resolviendo los conflictos de rutas, entornos y traducciones. | 5 | Diaz Yurivilca, Sofia | Done |
-| — | Tarea general | T-49 | Documentación de Red de Apoyo y licencia | Documentar la arquitectura del Bounded Context Red de Apoyo y Seguimiento y agregar la licencia MIT al repositorio. | 2 | Diaz Caruzo, Edgard Daniel | Done |
+| — | Tarea general | T-49 | Documentación de Red de Apoyo y licencia | Documentar la arquitectura y las notas de implementación del Bounded Context Red de Apoyo y Seguimiento en un README, comentar el código del panel y agregar la licencia MIT al repositorio. | 4 | Diaz Caruzo, Edgard Daniel | Done |
 | — | Tarea general | T-50 / T-51 | Despliegue de la Web Application y de la API simulada | Configurar Firebase Hosting y publicar la versión de producción de la aplicación Angular, y publicar json-server en Render guardando sus datos en Firestore para que no se pierdan al reiniciar el servicio. | 7 | Lopez Torres, Leonardo Gabriel | Done |
-| — | Tarea general | T-52 | Release a `master` | Integrar `develop` en `master` mediante una rama `release/v1.0.0`, según GitFlow. | 1 | Diaz Caruzo, Edgard Daniel | To-do |
-| LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Tarea pendiente del Sprint 1: enlazar el botón «Crear cuenta y activarlo» del Landing Page con la vista de registro de la Web Application desplegada. | 2 | Lopez Torres, Leonardo Gabriel | In-Process |
+| — | Tarea general | T-52 | Release a `master` | Crear la rama `release/v1.0.0`, integrar `develop` en `master` según GitFlow, etiquetar la versión `v1.0.0` y verificar que los productos desplegados correspondan a esa versión. | 4 | Diaz Caruzo, Edgard Daniel | To-do |
+| LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Tarea pendiente del Sprint 1: enlazar los botones del Landing Page (registro, inicio de sesión y «Crear cuenta y activarlo») con las vistas correspondientes de la Web Application desplegada y verificar la redirección en ambos idiomas. | 4 | Lopez Torres, Leonardo Gabriel | In-Process |
 
-De las 28 tareas del Sprint Backlog 2, 22 están en Done, 3 en In-Process y 3 en To-do. Las tareas que no llegaron a Done regresan al Product Backlog para el Sprint 3. Las tareas se estiman entre 4 y 8 horas, salvo T-49, T-52 y T-04, de 1 a 2 horas.
+De las 28 tareas del Sprint Backlog 2, 22 están en Done, 3 en In-Process y 3 en To-do. Las tareas que no llegaron a Done regresan al Product Backlog para el Sprint 3. Como mejora a partir de la retroalimentación del docente, todas las tareas se estiman entre 4 y 8 horas: las tareas pequeñas relacionadas con una misma historia se agrupan en una sola (por ejemplo, T-16 / T-19 o T-34 / T-41) y las que quedaban por debajo de 4 horas se reestimaron con su alcance completo (T-04, T-49 y T-52). Las tareas se registran en el tablero de Trello con los estados To-do, In-Process, To-Review y Done; las que están en revisión se mueven a la lista To-Review y las que requieren correcciones, a To-Fix.
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
@@ -611,7 +614,7 @@ En el Sprint 2 se implementó la primera versión de la Frontend Web Application
 - **Red de Apoyo y Seguimiento:** panel del cuidador con el estado del usuario, su última comunicación, la actividad reciente y el gráfico de bienestar, con datos de muestra.
 - **Deployment:** configuración de Firebase Hosting para la aplicación y de Render y Firestore para la API simulada.
 
-La tabla registra, en orden cronológico, los 87 commits de la rama `develop` del repositorio al cierre del Sprint. Los commits no tienen cuerpo de mensaje, por lo que esa columna se indica con «—».
+La tabla registra, en orden cronológico, los 87 commits de la rama `develop` del repositorio al cierre del Sprint. Los commits no tienen cuerpo de mensaje, por lo que esa columna se indica con «—». Los mensajes se transcriben tal como se registraron en Git, incluidas sus erratas (por ejemplo, «comunication» o «envirionment»); como mejora, a partir del Sprint 3 el equipo revisa la ortografía y el tipo de Conventional Commits de cada mensaje antes de registrarlo, y agrega un cuerpo de mensaje en los commits que cambian más de una funcionalidad.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
@@ -703,7 +706,25 @@ La tabla registra, en orden cronológico, los 87 commits de la rama `develop` de
 | ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [8de7d0b](https://tinyurl.com/26rpx4ve) | fix(deploy): use modular firebase-admin API | — | 08/10/2026 |
 | ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [6f0976b](https://tinyurl.com/2cy7qf2c) | fix(deploy): point to live API and fix profile data and deletes | — | 08/10/2026 |
 
-En el repositorio del Landing Page no se registraron commits nuevos durante el Sprint 2; su último commit es [5119b9e](https://tinyurl.com/2yeyfoaa), del Sprint 1.
+El repositorio del Landing Page también recibió commits durante el Sprint 2, para alinearlo con la Frontend Web Application desplegada (enlaces de inicio de sesión y registro, planes y secciones de video About-the-Product y About-the-Team). La tabla los registra en orden cronológico; no tienen cuerpo de mensaje, por lo que esa columna se indica con «—».
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [9e54f95](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/9e54f9547792bad2716cef91fbe8db49b86b05c0) | feat: add about the team video section with i18n support | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [9980266](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/99802667549798a227f7e4d1d2b586c0cebf57b7) | feat(landing): add about the product section | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [d6a261d](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/d6a261d1461aeacec23b4406e940355656cbc484) | merge: resolve conflict in landing page | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [d6cb492](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/d6cb4920d686f586e7cc712b411ab740d2cf44fe) | Update login link to point to external URL | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [22bf8ac](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/22bf8ac7e096344cbf050c2cbf7ee056ad23fa2f) | Update 'Get started free' to 'Get started' | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [dd822d4](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/dd822d45a5cd3eb7725baee766602cdb50f546e0) | Update translation for 'Start Free' to 'Start Now' | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [935221b](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/935221b250c11ad3045c2ac4257801fe4d57827f) | Update pricing information in Spanish localization | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [a19265e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/a19265e2e355b6ef16733736bd47f4d3dc0c494c) | Update pricing text in English localization | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [03c8906](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/03c89067a6831b12fbf67f9aa998a8441f6dd7d1) | Fix HTML structure for login and signup links | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [8ecafff](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/8ecafffae696d00b10949759c37926e69439dbec) | fix(landing): resolve leftover merge conflict markers and align texts | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [2a3d023](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/2a3d02344c05d41b28f72684875174e21297fa2d) | feat: add Nubi product video section to landing page | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [6755db3](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/6755db30ed98bfbf9ecb16d2acf48344e61a063c) | fix: use youtube embed url for product video iframe | — | 08/10/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `master` | [817d15f](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/817d15f17568f77bf2da760d4fc3e260b70dc021) | Change plan name from 'Nubi Free' to 'Nubi Standard' | — | 08/10/2026 |
+
+Estos 13 commits se registraron directamente en `master`, sin pasar por ramas `feature/*`, y varios mensajes no siguen Conventional Commits. Es una desviación del flujo GitFlow definido en la sección 5.1.2. Para los siguientes Sprints, todo cambio del Landing Page se desarrolla en una rama `feature/*` creada desde `develop` y los mensajes de commit se redactan con los tipos de la sección 5.1.2.
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
@@ -764,6 +785,83 @@ Como referencia para ese trabajo, la tabla lista los recursos de la API simulada
 | Autorregulación | `calmSessions` | https://tinyurl.com/2a7sekl7 |
 | Comunicación Asistida (CAA) | `communicationRequests` | https://tinyurl.com/276zyzxp |
 | Cuenta y suscripción | `accounts`, `institutions`, `subscriptions`, `payments`, `tickets` | https://tinyurl.com/253vhdw6 |
+
+**Acciones soportadas por cada recurso.** json-server genera para cada recurso un conjunto uniforme de acciones REST. La tabla indica, para cada acción, el verbo HTTP, la sintaxis de llamada, los parámetros y el código de respuesta. Todas las rutas se escriben relativas a la URL base `https://nubi-api-x7sz.onrender.com/api`, y `<recurso>` se reemplaza por uno de los recursos de la tabla anterior.
+
+| Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+|---|---|---|---|---|
+| Listar recursos | `GET` | `/<recurso>` | Opcionales de consulta: `<campo>=<valor>` (filtro por igualdad), `q` (búsqueda de texto), `_sort` y `_order` (orden ascendente `asc` o descendente `desc`), `_page` y `_limit` (paginación) | `200 OK` con un arreglo JSON de recursos |
+| Obtener un recurso | `GET` | `/<recurso>/{id}` | `id` (ruta, obligatorio): identificador numérico del recurso | `200 OK` con el recurso; `404 Not Found` si no existe |
+| Crear un recurso | `POST` | `/<recurso>` | Cuerpo JSON con los campos del recurso; el campo `id` se genera de forma automática | `201 Created` con el recurso creado |
+| Reemplazar un recurso | `PUT` | `/<recurso>/{id}` | `id` (ruta, obligatorio) y cuerpo JSON con todos los campos del recurso | `200 OK` con el recurso actualizado; `404 Not Found` si no existe |
+| Actualizar parcialmente | `PATCH` | `/<recurso>/{id}` | `id` (ruta, obligatorio) y cuerpo JSON solo con los campos a modificar | `200 OK` con el recurso actualizado; `404 Not Found` si no existe |
+| Eliminar un recurso | `DELETE` | `/<recurso>/{id}` | `id` (ruta, obligatorio) | `200 OK` con cuerpo `{}`; `404 Not Found` si no existe |
+
+**Uso de cada recurso en la Frontend Web Application.**
+
+| Recurso | Acciones que usa la aplicación | Funcionalidad | User Stories |
+|---|---|---|---|
+| `profiles` | `GET` (lista y detalle), `POST`, `PUT` | Crear, consultar y editar el perfil del niño o adolescente, su perfil sensorial, su diagnóstico y sus cuidadores asociados | US-01 a US-06 |
+| `caregivers` | `GET` | Obtener el cuidador a cargo y los perfiles que atiende | US-06 |
+| `actionGuides` | `GET` | Obtener la guía de actuación y sus pasos para el Modo SOS | US-08, US-09 |
+| `sosSessions` | `GET`, `POST`, `PUT` | Iniciar una sesión SOS, registrar los pasos completados y finalizarla | US-07, US-10 a US-12 |
+| `calmingResources` | `GET` | Listar los estímulos visuales y auditivos de autorregulación | US-13, US-14 |
+| `favoriteResources` | `GET`, `POST`, `DELETE` | Guardar y quitar estímulos favoritos del perfil | US-16 |
+| `calmSessions` | `GET`, `POST`, `PUT` | Registrar la sesión de calma con su intensidad, su modo de baja estimulación y su temporizador | US-15, US-17, US-18 |
+| `communicationRequests` | `GET`, `POST`, `PUT` | Registrar la necesidad comunicada con un pictograma y confirmar su recepción | US-20, US-27 |
+
+**Ejemplo 1. Obtener un perfil.** Solicitud `GET /profiles/1`. El perfil de ejemplo corresponde a Diana Ríos, de 15 años, con sensibilidad auditiva alta, que prioriza estímulos visuales.
+
+Respuesta `200 OK`:
+
+```json
+{
+  "id": 1,
+  "firstName": "Diana",
+  "lastName": "Ríos",
+  "age": 15,
+  "gender": "FEMALE",
+  "communicativeNeed": "PICTOGRAMS",
+  "active": true,
+  "sensoryProfile": {
+    "auditory": "HIGH",
+    "visual": "MEDIUM",
+    "tactile": "LOW",
+    "lowStimulationEnabled": false,
+    "prioritizeVisuals": true,
+    "confirmAudio": false
+  },
+  "diagnosis": { "condition": "ASD", "customDescription": "TEA nivel 1" },
+  "caregivers": [
+    { "id": 1, "accountId": 1, "invitedEmail": "maria@example.com", "role": "PRIMARY", "status": "ACTIVE" }
+  ],
+  "trustedContacts": []
+}
+```
+
+La respuesta se reduce aquí a los campos principales; la API devuelve además `nickname`, `photoUrl`, `createdAt` y `updatedAt`. El campo `sensoryProfile` es el que consumen los Bounded Contexts de Autorregulación y Gestión de Crisis para adaptar los estímulos y la guía.
+
+**Ejemplo 2. Registrar la necesidad comunicada con un pictograma.** Solicitud `POST /communicationRequests` con el cuerpo:
+
+```json
+{
+  "profileId": 1,
+  "pictogramCode": "WATER",
+  "category": "BASIC_NEEDS",
+  "status": "PENDING",
+  "requestedAt": "2026-10-08T15:30:00.000Z",
+  "confirmedAt": null,
+  "confirmedByCaregiverId": null
+}
+```
+
+Respuesta `201 Created`: el mismo objeto con el campo `id` generado por json-server. Cuando el cuidador confirma la recepción, la aplicación envía `PUT /communicationRequests/{id}` con el recurso completo, en el que `status` pasa a `"CONFIRMED"` y se completan `confirmedAt` y `confirmedByCaregiverId`, y recibe `200 OK` con la solicitud actualizada.
+
+**Ejemplo 3. Listar los estímulos visuales.** Solicitud `GET /calmingResources?type=VISUAL`. Responde `200 OK` con el arreglo de estímulos visuales; cada elemento tiene la forma `{ "id": 1, "code": "FLOATING_BUBBLES", "name": "Burbujas flotantes", "type": "VISUAL", "mediaUrl": "stimuli/floating-bubbles.jpg", "maxIntensity": 10, "availableOffline": true, "active": true }`.
+
+**Repositorio y commits relacionados con la documentación.** La API simulada y sus datos iniciales se encuentran en el repositorio [Nubi---Frontend](https://tinyurl.com/2cxsdvov), en la carpeta `Nubi/server`. Los commits de este Sprint relacionados con la API y su documentación son [96cadc1](https://tinyurl.com/2635ajck) (recursos del Modo SOS en la API simulada), [e7a8697](https://tinyurl.com/2d9lou37) (recursos de Comunicación Asistida), [84acb56](https://tinyurl.com/28w23m9v) y [e86cfb8](https://tinyurl.com/28bgyrmm) (publicación de la API y persistencia en Firestore), y [b297bfb](https://tinyurl.com/264k26t8), [55ade0c](https://tinyurl.com/29buh6zg) y [caf3a1f](https://tinyurl.com/24wt4b8j) (documentación de Red de Apoyo y Seguimiento).
+
+**Pendiente.** Las capturas de la interacción con la documentación OpenAPI (Swagger) se incorporarán cuando se implementen los RESTful Web Services del Sprint correspondiente; en este Sprint la API simulada no expone una interfaz de Swagger.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
@@ -835,3 +933,30 @@ La tabla resume los commits de cada integrante en la rama `develop` entre el 3 y
 *Figura 18. Pulse del 1 al 8 de octubre de 2026.* Resume la semana del Sprint 2: 5 autores enviaron 81 commits sin contar merges, se integraron 2 pull requests (#1, `feat(support): add support network dashboard`, y #3, `docs(support): add support network documentation`), no hay pull requests abiertos ni issues, y el gráfico Top committers muestra el aporte de los cinco integrantes.
 
 Como oportunidad de mejora, 81 de los 87 commits de `develop` se registraron el 8 de octubre de 2026, el último día del Sprint, por lo que la integración de las ramas se hizo con poco margen para revisar. Para el Sprint 3 el equipo integrará cada rama `feature/*` en `develop` conforme se complete cada User Story.
+
+##### Repositorio del informe (Macally) durante el Sprint 2
+
+Entre el 21 de septiembre y el 8 de octubre de 2026 los cinco integrantes registraron commits en la rama `develop` del repositorio [Macally](https://github.com/ASI0729-2620-7793-Open-Source/Macally), donde se redactaron las secciones del Sprint 2 (planning, aspect leaders, sprint backlog, evidencias, conclusiones y bibliografía). La tabla se obtuvo del historial de Git y no cuenta los merges.
+
+| Cuenta de GitHub | Integrante | Commits | Líneas | Secciones del Sprint 2 |
+|---|---|---|---|---|
+| u20241a195-cmd | Diaz Yurivilca, Sofia | 5 | +115 / −59 | Sprint Planning 2, conclusiones y bibliografía |
+| Deiko-138 / LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | 3 | +399 / −120 | Imágenes y estructura del Sprint 2 |
+| nahiryn8 | Ruiz Villegas, Yngrid Nahir | 3 | +101 / −1 | Development Evidence y Execution Evidence |
+| Dan-trax | Diaz Caruzo, Edgard Daniel | 3 | +42 / −3 | Sprint Backlog 2 |
+| joanfpp2-ai | Payano Puchuri, Joan Fabricio | 1 | +56 / −0 | Aspect Leaders and Collaborators 2 y bibliografía |
+| **Total** | | **15** | | |
+
+##### Repositorio del Landing Page durante el Sprint 2
+
+Del 1 al 8 de octubre de 2026 el repositorio [landing-page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page) registró 12 commits sin contar merges (los 13 de la tabla de la sección 5.2.2.4 incluyen un merge). A diferencia del Sprint 1, en el que solo participaron dos integrantes, en este Sprint se sumaron Nahir y Joan con las secciones de video About-the-Product y About-the-Team.
+
+| Cuenta de GitHub | Integrante | Commits | Líneas | Aporte |
+|---|---|---|---|---|
+| Deiko-138 / LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | 8 | +30 / −62 | Enlaces de inicio de sesión y registro, textos de planes y corrección de conflictos |
+| nahiryn8 | Ruiz Villegas, Yngrid Nahir | 3 | +177 / −12 | Sección y video About-the-Product |
+| joanfpp2-ai | Payano Puchuri, Joan Fabricio | 1 | +90 / −10 | Sección de video About-the-Team con i18n |
+| u20241a195-cmd | Diaz Yurivilca, Sofia | 0 | — | Sin commits en este Sprint |
+| Dan-trax | Diaz Caruzo, Edgard Daniel | 0 | — | Sin commits en este Sprint |
+
+Como oportunidad de mejora, Sofia y Edgard no registran commits en el Landing Page durante el Sprint 2, aunque sí en la Frontend Web Application y en el informe. Para el Sprint 3 se les asignan tareas del Landing Page en el Sprint Backlog, de modo que los cinco integrantes participen en cada producto del Sprint.
