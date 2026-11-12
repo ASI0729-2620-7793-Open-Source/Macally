@@ -109,10 +109,9 @@ Para el **Cuidador Primario**, los impactos se orientan a actuar con mayor rapid
 Para el **Niño con Autismo**, los impactos se orientan a facilitar la autorregulación ante situaciones de sobrecarga sensorial o emocional, permitir la comunicación de necesidades cuando hablar resulta difícil y posibilitar la solicitud rápida de ayuda a una persona de confianza.
 
 <p align="center">
-  <img src="images/Chapter-III/Impact-Mapping.png" alt="Impact Mapping" width="600">
+  <img src="images/Chapter-III/NUBI - Impact Mapping.png" alt="Impact Mapping" width="600">
 </p>
 
-Nota. Impact Map de la solución NUBI, estructurado mediante la secuencia Goal → Actor → Impact → Deliverable para mantener la trazabilidad entre el objetivo del producto, las necesidades de los actores y las User Stories definidas.
 
 ## 3.3. Product Backlog
 
