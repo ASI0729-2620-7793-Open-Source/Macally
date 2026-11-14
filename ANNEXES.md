@@ -7,6 +7,10 @@
 | AV1 | upc-pre-202620-1asi0729-7793-macally-expo-av1 | `URL del video en Microsoft Stream` |
 | TB1 | upc-pre-202620-1asi0729-7793-macally-expo-tb1 | `URL del video en Microsoft Stream` |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-expo-av2 | `URL del video en Microsoft Stream` |
+| AV2 (Sprint 3) | upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3 | `URL del video en Microsoft Stream` |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-validation-interviews-sprint-3 | `URL del video en Microsoft Stream` |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3 | `URL del video en Microsoft Stream` y https://www.youtube.com/embed/utaBaLFhlOQ (YouTube, incrustado en el Landing Page) |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3 | `URL del video en Microsoft Stream` |
 
 <div style="page-break-before: always;"></div>
 
@@ -28,3 +32,9 @@
 | Diagramas C4, de clases y de base de datos | Imágenes en el repositorio del informe | Carpeta [`images/Chapter-IV`](images/Chapter-IV) |
 | Sprint Backlog 1 | Trello | https://tinyurl.com/25y7b883 |
 | Sprint Backlog 2 | Trello | https://tinyurl.com/2afdpsnp |
+| Repositorio de los RESTful Web Services | GitHub | https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend |
+| RESTful Web Services desplegados | `Plataforma por definir` | `URL de los Web Services` |
+| Documentación OpenAPI (Swagger UI) | Web Services desplegados | `URL de Swagger UI` |
+| Contrato de la API de Perfil y Personalización | Rama `profile-personalization` del repositorio de los Web Services | `docs/api-perfil-personalizacion.md` |
+| Sprint Backlog 3 | Trello | `URL del tablero del Sprint 3` |
+| Video About-the-Product | YouTube (incrustado en el Landing Page) | https://www.youtube.com/embed/utaBaLFhlOQ |
