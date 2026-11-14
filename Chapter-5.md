@@ -1026,11 +1026,13 @@ Cada aspecto agrupa el siguiente trabajo:
 
 El objetivo del Sprint 3 es entregar la primera versión de los Web Services con los cinco Bounded Contexts, conectar la Frontend Web Application a ellos, completar las User Stories pendientes del Sprint 2 y publicar la nueva versión del Landing Page. Las tareas continúan la numeración del Sprint Backlog 2 (T-53 en adelante), se estiman entre 4 y 8 horas y se asignan según la matriz de la sección 5.2.3.2.
 
-**URL del Sprint Backlog 3 en Trello:** **[POR COMPLETAR]**
+**URL del Sprint Backlog 3 en Trello:** https://trello.com/b/HCIZ8lA6/sprint-3-nubi
 
-**[POR COMPLETAR]** Captura del tablero del Sprint 3 en Trello (`images/Chapter-V/Sprint-Backlog3.png`).
+![Sprint-Backlog3.png](images/Chapter-V/Sprint-Backlog3.png)
 
-El estado de cada tarea se dedujo de la actividad de las ramas al 13 de noviembre de 2026: To-Review para las que tienen su rama con commits, pruebas y endpoints, In-Process para las que siguen recibiendo commits, y To-do para las que no registran avance. **[POR CONFIRMAR]** con el tablero de Trello.
+*Sprint Backlog 3 en Trello.* Tablero público del Sprint 3 con las listas To-Do, In-Process, To-Review, To-Fix y Done. Cada tarjeta lleva el identificador de la historia, el de la tarea, su título, la estimación en horas y el integrante asignado. En To-Do están 12 tareas (T-52 y T-67 a T-77), en In-Process 3 (T-04, T-63 y T-64), en To-Review 11 (T-53 a T-62 y T-66), en To-Fix ninguna y en Done 1 (T-65).
+
+El estado de cada tarea se dedujo de la actividad de las ramas al 13 de noviembre de 2026: To-Review para las que tienen su rama con commits, pruebas y endpoints, In-Process para las que siguen recibiendo commits, y To-do para las que no registran avance. Los mismos estados se registraron en el tablero de Trello.
 
 | Sprint # | Sprint 3 | | | | | | |
 |---|---|---|---|---|---|---|---|
