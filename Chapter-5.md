@@ -1034,7 +1034,7 @@ El objetivo del Sprint 3 es entregar la primera versión de los Web Services con
 
 **URL del Sprint Backlog 3 en Trello:** https://trello.com/b/HCIZ8lA6/sprint-3-nubi
 
-![Sprint-Backlog3.png](images/Chapter-V/Sprint-Backlog3.png)
+![Sprint-Backlog3.jpg](images/Chapter-V/Sprint-Backlog3.jpg)
 
 *Sprint Backlog 3 en Trello.* Tablero público del Sprint 3 con las listas To-Do, In-Process, To-Review, To-Fix y Done. Cada tarjeta lleva el identificador de la historia, el de la tarea, su título, la estimación en horas y el integrante asignado. En To-Do están 2 tareas (T-76 y T-77), en In-Process 1 (T-04), en To-Review y en To-Fix ninguna y en Done 24 (T-52 y T-53 a T-75).
 
