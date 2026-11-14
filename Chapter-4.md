@@ -2,7 +2,7 @@
 
 ## 4.1. Style Guidelines
 
-En esta sección, el equipo sienta las bases para contar con un repositorio centralizado, unificado y organizado de uso común para todo el equipo, que incluye *assets*, tipografías, componentes UI, reglas de espaciado e iconografía, con el fin de mantener una presentación visual consistente, intuitiva y enfocada. Para **Nubi**, el sistema de diseño tomó como referencia directa el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*: se extrajeron sus valores reales de color (verde-azulado oscuro, crema, melocotón y los tres acentos cálidos) y su tipografía, reemplazando la propuesta cromática desaturada de una versión anterior del sistema. El tono de comunicación de Nubi se define en cuatro dimensiones: **cercano** (más que formal), **sereno** (más que eufórico), **claro** (más que técnico) y **respetuoso** (más que irreverente), de modo que tanto el niño o adolescente neurodivergente como su cuidador perciban una marca cálida y confiable, sin caer en un tono infantil ni en una estética clínica y fría.
+En esta sección, el equipo sienta las bases para contar con un repositorio centralizado, unificado y organizado de uso común para todo el equipo, que incluye *assets*, tipografías, componentes UI, reglas de espaciado e iconografía, con el fin de mantener una presentación visual consistente, intuitiva y enfocada. Para **Nubi**, el sistema de diseño tomó como referencia directa el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*: se extrajeron sus valores reales de color (verde-azulado oscuro, crema, melocotón y los tres acentos cálidos) y su tipografía, reemplazando la propuesta cromática desaturada de una versión anterior del sistema. El tono de comunicación de Nubi se define en cuatro dimensiones: **cercano** (más que formal), **sereno** (más que eufórico), **claro** (más que técnico) y **respetuoso** (más que irreverente), de modo que tanto el niño o adolescente autista como su cuidador perciban una marca cálida y confiable, sin caer en un tono infantil ni en una estética clínica y fría.
 
 ### 4.1.1. General Style Guidelines
 
@@ -99,7 +99,7 @@ Todas las combinaciones de texto sobre fondo respetan un contraste mínimo de 4.
 
 **Fonts**
 
-Toda la interfaz de Nubi usa una única familia tipográfica: **Bricolage Grotesque**, tomada del template de referencia. Al usar una sola fuente para titulares, texto de cuerpo y etiquetas, la marca conserva un carácter expresivo y contemporáneo, y la interfaz mantiene una apariencia uniforme y ordenada para niños, adolescentes neurodivergentes y sus cuidadores.
+Toda la interfaz de Nubi usa una única familia tipográfica: **Bricolage Grotesque**, tomada del template de referencia. Al usar una sola fuente para titulares, texto de cuerpo y etiquetas, la marca conserva un carácter expresivo y contemporáneo, y la interfaz mantiene una apariencia uniforme y ordenada para niños, adolescentes autistas y sus cuidadores.
 
 - **Bricolage Grotesque (única familia tipográfica):** tipografía grotesca de proporciones amplias y formas geométricas que se usa en encabezados (Display a H3), botones, párrafos, etiquetas de campos, mensajes del sistema y entradas de datos. Su carácter contemporáneo y seguro refuerza la identidad de marca heredada del template Solus, sin resultar infantil ni clínico.
 - **Jerarquía con una sola familia:** la jerarquía se construye con el tamaño y el peso (Bold y SemiBold en titulares y botones; Regular y Medium en el cuerpo, las etiquetas y los metadatos) y no con cambios de familia tipográfica.
@@ -132,7 +132,7 @@ La identidad visual de **Nubi** se construyó para transmitir calma y acompañam
 
 *Ilustración — Logo de Nubi*
 
-- **Símbolo de acompañamiento (Isotipo):** cuatro manos dispuestas en círculo, que se entrelazan y forman una esfera. Representa el **acompañamiento, la contención y el apoyo compartido** entre el usuario neurodivergente, su cuidador y su red de apoyo. Como las manos giran alrededor del centro, ninguna domina sobre las otras. La silueta circular refuerza el mismo principio de suavidad aplicado en la iconografía y los botones *pill-shape*.
+- **Símbolo de acompañamiento (Isotipo):** cuatro manos dispuestas en círculo, que se entrelazan y forman una esfera. Representa el **acompañamiento, la contención y el apoyo compartido** entre el usuario autista, su cuidador y su red de apoyo. Como las manos giran alrededor del centro, ninguna domina sobre las otras. La silueta circular refuerza el mismo principio de suavidad aplicado en la iconografía y los botones *pill-shape*.
 - **Logotipo:** el nombre **NUBI** va en mayúsculas y en negrita, con la tipografía **Bricolage Grotesque**, debajo del isotipo y sobre una línea ligeramente curva que sigue la forma del círculo. Es la misma familia tipográfica que se usa en toda la interfaz, lo que mantiene el carácter contemporáneo de la marca en cualquier punto de contacto.
 - **Identidad cromática:** el logo se presenta en un solo color, **Deep Teal (#00373E)**, el color principal de la marca. En la interfaz, este color se combina con **Golden Yellow (#EFC01D)** como acento sobre fondos en **Cream (#F7F6F4)**. Esta combinación, heredada del template Solus, busca transmitir calidez humana y serenidad, en contraste con la frialdad típica de una app clínica.
 - **Naming:** el nombre **"Nubi"** evoca la imagen de una nube pequeña y cercana, fácil de pronunciar y recordar tanto para el cuidador como para el niño o adolescente.
@@ -503,7 +503,7 @@ Los estándares aquí establecidos constituyen la referencia normativa para la i
 
 ## 4.2. Information Architecture.
 
-En esta sección el equipo plantea las decisiones y el sustento que dirigen la manera cómo se organiza el contenido en las experiencias del Landing Page y de la Web Application de Nubi. Estas decisiones buscan que los visitantes (cuidadores, educadores y terapeutas que aún no se han registrado) y los usuarios ya registrados (cuidadores y usuarios neurodivergentes) se adapten con facilidad a cada producto y encuentren lo que necesitan sin esfuerzo, incluso en momentos de estrés o sobrecarga sensorial. Las decisiones se estructuran alrededor de los 5 Bounded Contexts definidos en el Capítulo III (Perfil y Personalización, Gestión de Crisis / Modo SOS, Autorregulación, Comunicación Asistida CAA, y Red de Apoyo y Seguimiento).
+En esta sección el equipo plantea las decisiones y el sustento que dirigen la manera cómo se organiza el contenido en las experiencias del Landing Page y de la Web Application de Nubi. Estas decisiones buscan que los visitantes (cuidadores, educadores y terapeutas que aún no se han registrado) y los usuarios ya registrados (cuidadores y usuarios autistas) se adapten con facilidad a cada producto y encuentren lo que necesitan sin esfuerzo, incluso en momentos de estrés o sobrecarga sensorial. Las decisiones se estructuran alrededor de los 5 Bounded Contexts definidos en el Capítulo III (Perfil y Personalización, Gestión de Crisis / Modo SOS, Autorregulación, Comunicación Asistida CAA, y Red de Apoyo y Seguimiento).
 
 ### 4.2.1. Organization Systems.
 
@@ -511,7 +511,7 @@ Nubi combina distintos sistemas de organización visual según el objetivo de ca
 
 **Sistemas de organización visual aplicados:**
 
-* **Organización jerárquica (visual hierarchy):** se aplica en el Panel de inicio del cuidador (Home) y en el Perfil del usuario neurodivergente. El estado actual del usuario, las alertas y el acceso al Modo SOS reciben la mayor jerarquía visual (tamaño, contraste y posición superior), mientras que las recomendaciones y accesos secundarios se ubican en niveles de menor peso visual, siguiendo la escala tipográfica y cromática definida en la sección 4.1.
+* **Organización jerárquica (visual hierarchy):** se aplica en el Panel de inicio del cuidador (Home) y en el Perfil del usuario autista. El estado actual del usuario, las alertas y el acceso al Modo SOS reciben la mayor jerarquía visual (tamaño, contraste y posición superior), mientras que las recomendaciones y accesos secundarios se ubican en niveles de menor peso visual, siguiendo la escala tipográfica y cromática definida en la sección 4.1.
 * **Organización secuencial (step-by-step to accomplish):** se aplica en la guía del Modo SOS y en el flujo de autorregulación con temporizador de calma, donde el contenido se presenta un paso a la vez para evitar la sobrecarga cognitiva durante una crisis, permitiendo solo avanzar o retroceder de forma lineal.
 * **Organización matricial:** se aplica en el Tablero de Comunicación Aumentativa y Alternativa (CAA) y en la galería de estímulos de autorregulación, donde los pictogramas y estímulos se despliegan en una cuadrícula que combina dos dimensiones de clasificación (categoría y frecuencia de uso/favoritos), permitiendo el reconocimiento visual rápido por sobre la lectura secuencial.
 
@@ -519,17 +519,17 @@ Nubi combina distintos sistemas de organización visual según el objetivo de ca
 
 * **Por tópicos:** utilizado en el Tablero CAA (categorías como necesidades básicas, emociones, actividades) y en las recomendaciones personalizadas (agrupadas por tipo de situación: sensorial, comunicacional, conductual).
 * **Cronológico:** utilizado en el Historial de episodios y en el historial de solicitudes de ayuda, donde los registros se listan del más reciente al más antiguo y pueden filtrarse por rango de fechas.
-* **Según audiencia (grupos de usuarios):** utilizado tanto en el Landing Page como en la Web Application, diferenciando el contenido dirigido al cuidador (gestión de perfiles, historial, recomendaciones) del contenido dirigido al usuario neurodivergente (autorregulación, comunicación, solicitud de ayuda).
+* **Según audiencia (grupos de usuarios):** utilizado tanto en el Landing Page como en la Web Application, diferenciando el contenido dirigido al cuidador (gestión de perfiles, historial, recomendaciones) del contenido dirigido al usuario autista (autorregulación, comunicación, solicitud de ayuda).
 * **Alfabético:** utilizado de forma puntual en listados extensos que no cuentan con un criterio temporal o de frecuencia propio, como el listado de condiciones/diagnósticos disponibles al registrar el perfil del usuario.
 
 ### 4.2.2. Labeling Systems.
 
-Las etiquetas de Nubi se definen priorizando la menor cantidad de palabras posible y un lenguaje claro y no técnico, de forma que cuidadores, educadores y usuarios neurodivergentes puedan anticipar qué encontrarán detrás de cada etiqueta sin ambigüedad. Cada etiqueta de navegación principal se asocia, en la mente del usuario, con un conjunto de contenido relacionado que no necesariamente está agrupado en un mismo lugar (por ejemplo, la etiqueta `Alerta / Crisis` asocia el acceso inmediato al Modo SOS sin necesidad de explicarlo cada vez).
+Las etiquetas de Nubi se definen priorizando la menor cantidad de palabras posible y un lenguaje claro y no técnico, de forma que cuidadores, educadores y usuarios autistas puedan anticipar qué encontrarán detrás de cada etiqueta sin ambigüedad. Cada etiqueta de navegación principal se asocia, en la mente del usuario, con un conjunto de contenido relacionado que no necesariamente está agrupado en un mismo lugar (por ejemplo, la etiqueta `Alerta / Crisis` asocia el acceso inmediato al Modo SOS sin necesidad de explicarlo cada vez).
 
 | Etiqueta | Bounded Context asociado | Contenido que representa |
 |---|---|---|
 | `Inicio` | Red de Apoyo y Seguimiento | Panel general del cuidador: estado del usuario, alertas y accesos directos. |
-| `Perfil` | Perfil y Personalización | Datos del usuario neurodivergente, sensibilidades, diagnóstico y cuidadores asociados. |
+| `Perfil` | Perfil y Personalización | Datos del usuario autista, sensibilidades, diagnóstico y cuidadores asociados. |
 | `Modo SOS` / `Alerta` | Gestión de Crisis (Modo SOS) | Activación de la guía de actuación paso a paso durante una crisis. |
 | `Autocuidado` | Autorregulación | Estímulos visuales/auditivos, temporizador de calma y modo de baja estimulación. |
 | `Comunicación` | Comunicación Asistida (CAA) | Tablero de pictogramas para expresar necesidades. |
@@ -549,8 +549,8 @@ Se definen los SEO Tags y Meta Tags mínimos (Title, Description, Keywords y Aut
 
 | Página / Sección | Title | Meta Description | Keywords | Author |
 |---|---|---|---|---|
-| Inicio (Hero) | Nubi \| Acompañamiento para niños y adolescentes neurodivergentes | Nubi ayuda a cuidadores y familias a acompañar a niños y adolescentes con TEA, TDAH o TOC durante crisis sensoriales, con guías paso a paso y herramientas de autorregulación. | nubi, neurodivergencia, TEA, TDAH, cuidadores, modo SOS | Equipo Nubi |
-| Perfil y Personalización (LS-01) | Nubi \| Perfiles personalizados para cada usuario | Descubre cómo Nubi personaliza sensibilidades, diagnóstico y estímulos según el perfil de cada niño o adolescente neurodivergente. | perfil neurodivergente, personalización, sensibilidades sensoriales | Equipo Nubi |
+| Inicio (Hero) | Nubi \| Acompañamiento para niños y adolescentes autistas | Nubi ayuda a cuidadores y familias a acompañar a niños y adolescentes con TEA durante crisis sensoriales, con guías paso a paso y herramientas de autorregulación. | nubi, autismo, TEA, cuidadores, modo SOS | Equipo Nubi |
+| Perfil y Personalización (LS-01) | Nubi \| Perfiles personalizados para cada usuario | Descubre cómo Nubi personaliza sensibilidades, diagnóstico y estímulos según el perfil de cada niño o adolescente autista. | perfil del usuario, personalización, sensibilidades sensoriales | Equipo Nubi |
 | Modo SOS (LS-02) | Nubi \| Modo SOS: guías paso a paso ante una crisis | Conoce cómo el Modo SOS de Nubi guía al cuidador con pasos claros durante un episodio de desregulación. | modo SOS, crisis, guía paso a paso, desregulación emocional | Equipo Nubi |
 | Autorregulación (LS-03) | Nubi \| Herramientas de autorregulación sensorial | Estímulos visuales, auditivos y temporizador de calma para ayudar a recuperar la calma tras una sobrecarga sensorial. | autorregulación, sobrecarga sensorial, estímulos, calma | Equipo Nubi |
 | Comunicación CAA (LS-04) | Nubi \| Tablero de Comunicación Aumentativa y Alternativa | Un tablero de pictogramas que permite comunicar necesidades básicas sin depender del habla. | CAA, pictogramas, comunicación aumentativa, comunicación alternativa | Equipo Nubi |
@@ -577,11 +577,11 @@ Nubi ofrece mecanismos de búsqueda acotados y simples, priorizando filtros pred
 * **Galería de estímulos de autorregulación:** cuenta con un filtro por tipo de estímulo (visual/auditivo) y con una sección de favoritos. Los resultados se presentan como una cuadrícula de tarjetas con vista previa del estímulo.
 * **Recomendaciones:** cuentan con un filtro por tópico (sensorial, comunicacional, conductual) y con una sección de recomendaciones favoritas. Los resultados se presentan como una lista ordenada por relevancia, mostrando primero las recomendaciones generadas más recientemente.
 
-Dado el alcance definido para los 5 Bounded Contexts, Nubi no incorpora un buscador de texto libre global: al tratarse de un volumen de contenido acotado y ya categorizado (perfiles, pictogramas, estímulos, episodios y recomendaciones asociados a un número reducido de usuarios por cuenta), los filtros predefinidos son suficientes para que el cuidador o el usuario neurodivergente encuentren lo que buscan sin la carga adicional de formular una consulta de texto.
+Dado el alcance definido para los 5 Bounded Contexts, Nubi no incorpora un buscador de texto libre global: al tratarse de un volumen de contenido acotado y ya categorizado (perfiles, pictogramas, estímulos, episodios y recomendaciones asociados a un número reducido de usuarios por cuenta), los filtros predefinidos son suficientes para que el cuidador o el usuario autista encuentren lo que buscan sin la carga adicional de formular una consulta de texto.
 
 ### 4.2.5. Navigation Systems.
 
-La navegación de Nubi combina accesos globales persistentes con recorridos guiados y lineales, priorizando siempre que el usuario neurodivergente o el cuidador puedan llegar a la ayuda inmediata en el menor número de pasos posible:
+La navegación de Nubi combina accesos globales persistentes con recorridos guiados y lineales, priorizando siempre que el usuario autista o el cuidador puedan llegar a la ayuda inmediata en el menor número de pasos posible:
 
 * **Navegación global (Web Application):** una barra de navegación superior (ver sección 4.1.2, Componentes clave — Navegación) mantiene visibles en todo momento los módulos principales (`Inicio`, `Perfil`, `Autocuidado`, `Comunicación`, `Ajustes`), permitiendo saltar entre Bounded Contexts sin perder el contexto de la sesión activa.
 * **Acceso directo persistente al Modo SOS:** el acceso a la guía de crisis (US-12) se mantiene visible desde cualquier pantalla de la aplicación mediante un elemento de navegación de alta prioridad visual, de forma que el cuidador nunca necesite más de una acción para llegar a él, incluso si se desactivó el acceso directo (en cuyo caso queda disponible desde el menú principal).
@@ -612,9 +612,9 @@ La navegación superior usa anclas (*anchor scroll*) y las mismas etiquetas del 
 
 El wireframe y el mock-up se construyeron directamente en HTML/CSS, tomando como referencia el template de la comunidad de Figma *"Solus – Mental Health & Wellness Website Template"*. De ese template se extrajeron los valores de color y tipografía desde el modo Dev de Figma y se aplicaron al Design System de la sección 4.1. El resultado se importó a Figma con un plugin de conversión de HTML a Figma, para su documentación y edición visual.
 
-El diseño está disponible en el Figma "NUBI": https://www.figma.com/design/WGr7DojMDH0m122pRirLJw/NUBI?node-id=0-1&t=DMfnxyCv5S7KKeCJ-1
+El diseño está disponible en el Figma "NUBI": https://tinyurl.com/29blmdp6
 
-El código fuente se encuentra en el repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page) y el sitio desplegado está disponible en https://asi0729-2620-7793-open-source.github.io/landing-page/.
+El código fuente se encuentra en el repositorio [ASI0729-2620-7793-Open-Source/landing-page](https://tinyurl.com/28o2kj4u) y el sitio desplegado está disponible en https://tinyurl.com/27e6ugke.
 
 ### 4.3.1 Landing Page Wireframe
 
@@ -846,7 +846,7 @@ Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura 
 
 ## 4.4 Web Applications UX/UI Design
 
-Esta sección presenta la propuesta visual y de interacción de la Web Application de Nubi, que responde a las necesidades identificadas en las entrevistas con los dos segmentos objetivo: cuidadores y usuarios neurodivergentes. El diseño se desarrolló en dos fases: primero los wireframes, en escala de grises y enfocados en la estructura y la jerarquía de la información; luego los mock-ups, donde se aplica el Design System definido en la sección 4.1. Las pantallas recorren los cinco Bounded Contexts: Perfil y Personalización, Gestión de Crisis (Modo SOS), Autorregulación, Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento. Cuando una pantalla tiene dos variantes visuales, se presentan ambas.
+Esta sección presenta la propuesta visual y de interacción de la Web Application de Nubi, que responde a las necesidades identificadas en las entrevistas con los dos segmentos objetivo: cuidadores y usuarios autistas. El diseño se desarrolló en dos fases: primero los wireframes, en escala de grises y enfocados en la estructura y la jerarquía de la información; luego los mock-ups, donde se aplica el Design System definido en la sección 4.1. Las pantallas recorren los cinco Bounded Contexts: Perfil y Personalización, Gestión de Crisis (Modo SOS), Autorregulación, Comunicación Asistida (CAA) y Red de Apoyo y Seguimiento. Cuando una pantalla tiene dos variantes visuales, se presentan ambas.
 
 ### 4.4.1 Web Applications Wireframes
 
@@ -980,7 +980,7 @@ Pantalla de cierre del Modo SOS, centrada y sin barra lateral. Comienza con un �
 
 *Ilustración – Web Application Wireframe: Tablero CAA del usuario: variante con imágenes*
 
-Vista destinada al usuario neurodivergente, sin barra lateral para reducir estímulos. El encabezado saluda a Diana con la pregunta «¿Qué necesitas decir?» y ofrece el acceso a «Favoritos»; debajo se ubican los filtros por categoría y una cuadrícula de tarjetas grandes, pensadas para una selección táctil precisa, con imagen, etiqueta y frase. Al seleccionar una tarjeta se muestra en la parte inferior una notificación que confirma que se avisó a María.
+Vista destinada al usuario autista, sin barra lateral para reducir estímulos. El encabezado saluda a Diana con la pregunta «¿Qué necesitas decir?» y ofrece el acceso a «Favoritos»; debajo se ubican los filtros por categoría y una cuadrícula de tarjetas grandes, pensadas para una selección táctil precisa, con imagen, etiqueta y frase. Al seleccionar una tarjeta se muestra en la parte inferior una notificación que confirma que se avisó a María.
 
 #### Wireframes: Tablero CAA del usuario: variante con íconos
 
@@ -1013,9 +1013,9 @@ Los Wireflow Diagrams combinan los wireframes de la sección 4.4.1 con las trans
 | # | User Persona | User goal | Flujo |
 |---|---|---|---|
 | 1 | Cuidador primario | Activar el Modo SOS para el perfil correcto, seguir la guía paso a paso y cerrar el episodio dejando el registro en el historial. | Modo SOS: pantalla de activación → Paso 5 de 6: calma y respiración → Resumen del episodio. |
-| 2 | Usuario neurodivergente | Elegir un estímulo de calma, ajustar su intensidad y usar el temporizador de calma. | Galería de estímulos → Estímulo en uso (burbujas flotantes) → Temporizador de calma. |
-| 3 | Usuario neurodivergente y cuidador primario | Comunicar una necesidad con un pictograma y que el cuidador reciba el aviso. | Configurar tablero CAA → Panel de inicio del cuidador con la necesidad comunicada → Tablero CAA del usuario con la confirmación «Le avisamos a María que Diana necesita: Tengo sed». |
-| 4 | Usuario neurodivergente y cuidador primario | El mismo objetivo del flujo 3 usando la variante del tablero con íconos. | Configurar tablero CAA (íconos) → Panel de inicio del cuidador (variante 2) → Tablero CAA del usuario (íconos). |
+| 2 | Usuario autista | Elegir un estímulo de calma, ajustar su intensidad y usar el temporizador de calma. | Galería de estímulos → Estímulo en uso (burbujas flotantes) → Temporizador de calma. |
+| 3 | Usuario autista y cuidador primario | Comunicar una necesidad con un pictograma y que el cuidador reciba el aviso. | Configurar tablero CAA → Panel de inicio del cuidador con la necesidad comunicada → Tablero CAA del usuario con la confirmación «Le avisamos a María que Diana necesita: Tengo sed». |
+| 4 | Usuario autista y cuidador primario | El mismo objetivo del flujo 3 usando la variante del tablero con íconos. | Configurar tablero CAA (íconos) → Panel de inicio del cuidador (variante 2) → Tablero CAA del usuario (íconos). |
 | 5 | Cuidador primario | Crear el perfil del usuario, invitar a otros cuidadores y revisar las sensibilidades registradas. | Crear nuevo perfil → Cuidadores asociados e invitación → Perfil de usuario: pestaña Sensibilidades. |
 
 En los wireflows 1 y 2 el cuidador o el usuario recorre pantallas de foco único: el Modo SOS avanza en una secuencia lineal y termina en un resumen que alimenta el historial de episodios, mientras que la autorregulación pasa de una galería en cuadrícula a un estímulo en uso y de ahí al temporizador. En los wireflows 3 y 4 la selección de un pictograma genera dos efectos simultáneos: el usuario recibe una confirmación en su tablero y el cuidador ve la necesidad en su panel de inicio, lo que enlaza los Bounded Contexts de Comunicación Asistida y Red de Apoyo y Seguimiento. El wireflow 5 muestra el recorrido de configuración del perfil, con el paso a los cuidadores asociados como acción secundaria.
@@ -1129,7 +1129,7 @@ Resumen del episodio (cierre del Modo SOS): mensaje de confirmación «¡Buen tr
 
 *Ilustración – Web Application Mock-up: Tablero CAA del usuario: variante con imágenes*
 
-Tablero CAA — vista del usuario neurodivergente (variante con fotografías): pantalla «Hola, Diana ¿Qué necesitas decir?» con la tarjeta «Agua / Tengo sed» seleccionada y reproduciendo audio, categorías filtrables (Necesidades básicas, Emociones, Actividades, Favoritos) y una notificación inferior confirmando el aviso enviado a María.
+Tablero CAA — vista del usuario autista (variante con fotografías): pantalla «Hola, Diana ¿Qué necesitas decir?» con la tarjeta «Agua / Tengo sed» seleccionada y reproduciendo audio, categorías filtrables (Necesidades básicas, Emociones, Actividades, Favoritos) y una notificación inferior confirmando el aviso enviado a María.
 
 #### Mock-up: Tablero CAA del usuario: variante con íconos
 
@@ -1137,7 +1137,7 @@ Tablero CAA — vista del usuario neurodivergente (variante con fotografías): p
 
 *Ilustración – Web Application Mock-up: Tablero CAA del usuario: variante con íconos*
 
-Tablero CAA — vista del usuario neurodivergente (variante iconográfica en azul): misma interacción «Tengo sed» con pictogramas representados en iconos lineales simples, botón flotante de SOS en la esquina y un toast de confirmación indicando que se avisó a María.
+Tablero CAA — vista del usuario autista (variante iconográfica en azul): misma interacción «Tengo sed» con pictogramas representados en iconos lineales simples, botón flotante de SOS en la esquina y un toast de confirmación indicando que se avisó a María.
 
 #### Mock-up: Temporizador de calma
 
@@ -1149,7 +1149,7 @@ Temporizador de calma: cuenta regresiva circular (03:47 restantes de un total de
 
 ### 4.4.4 Web Applications User Flow Diagrams
 
-El User Flow Diagram integra los flujos de los dos User Personas en un único diagrama con tres carriles: **Cuidador**, **Sistema Nubi** y **Usuario neurodivergente**. Es consistente con los wireflows de la sección 4.4.2 y distingue la ruta esperada (happy path, en línea continua) de las rutas alternativas (unhappy paths, en línea discontinua roja).
+El User Flow Diagram integra los flujos de los dos User Personas en un único diagrama con tres carriles: **Cuidador**, **Sistema Nubi** y **Usuario autista**. Es consistente con los wireflows de la sección 4.4.2 y distingue la ruta esperada (happy path, en línea continua) de las rutas alternativas (unhappy paths, en línea discontinua roja).
 
 ![UserFlow.png](images/Chapter-IV/UserFlow.png)
 
@@ -1157,7 +1157,7 @@ El User Flow Diagram integra los flujos de los dos User Personas en un único di
 
 **User goal del cuidador:** acompañar al usuario a su cargo durante una crisis y mantener actualizada su información. El cuidador inicia sesión y, si tiene más de un perfil asociado, cambia de perfil con el selector persistente sin cerrar sesión. Desde el panel de inicio, el sistema ramifica en cinco áreas: Gestión de Crisis (Modo SOS), Comunicación Asistida, Autorregulación, Perfil y Personalización, y Red de Apoyo y Seguimiento.
 
-**User goal del usuario neurodivergente:** recuperar la calma y comunicar una necesidad sin depender del habla. Puede abrir el tablero CAA, filtrar por categoría y seleccionar un pictograma, o entrar a Autocuidado, filtrar el tipo de estímulo, ajustar la intensidad y terminar la sesión para volver a la galería.
+**User goal del usuario autista:** recuperar la calma y comunicar una necesidad sin depender del habla. Puede abrir el tablero CAA, filtrar por categoría y seleccionar un pictograma, o entrar a Autocuidado, filtrar el tipo de estímulo, ajustar la intensidad y terminar la sesión para volver a la galería.
 
 **Rutas alternativas y condiciones:**
 
@@ -1180,7 +1180,7 @@ El siguiente video muestra y explica los principales flujos de interacción cubi
 
 |![prototype.png](images/Chapter-IV/prototype.png)                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQDSl4T7xAKFT52jN0itd5DMAQr-yskvbFkI0PyL_iQqJqM?e=6kqdJ6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  |
+| link: https://tinyurl.com/2d4rjrop  |
 
 **Prototipo para Mobile Web Browser**
 
@@ -1190,7 +1190,7 @@ El prototipo Mobile parte de las mismas decisiones de interacción y navegación
   <img src="images/Chapter-IV/LandingMobileMockup.png" alt="Prototipo Mobile del Landing Page" width="360">
 </p>
 
-**Video del prototipo Mobile:** https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a649_upc_edu_pe/IQBHmE5d37DHSL1GOX6e8SvqAbwj1QIwporf0p9qLnxDaWQ?e=wNbiqG
+**Video del prototipo Mobile:** https://tinyurl.com/23solcwj
 
 ## 4.6. Domain-Driven Software Architecture
 
@@ -1206,7 +1206,7 @@ Como resultado se confirmaron **cinco Bounded Contexts**, que corresponden a las
 | :--- | :--- | :--- |
 | Perfil y Personalización | Cuenta, perfil del usuario, contactos de confianza, suscripción e institución | EPIC-01 |
 | Gestión de Crisis (Modo SOS) | Guía paso a paso para el cuidador durante una crisis | EPIC-02 |
-| Autorregulación | Recursos de calma para el usuario neurodivergente | EPIC-03 |
+| Autorregulación | Recursos de calma para el usuario autista | EPIC-03 |
 | Comunicación Asistida (CAA) | Tablero de pictogramas y salida de voz | EPIC-04 |
 | Red de Apoyo y Seguimiento | Alertas a contactos de confianza e historial de episodios | EPIC-05 |
 
@@ -1214,7 +1214,7 @@ En los diagramas se mantiene la convención de colores del Event Storming: **nar
 
 #### Perfil y Personalización
 
-Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los usuarios neurodivergentes a su cargo: diagnóstico, detonantes, necesidad comunicativa, estrategia de calma, pictogramas y contactos de confianza. También concentra la suscripción, los planes institucionales y los reportes de soporte técnico.
+Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los usuarios autistas a su cargo: diagnóstico, detonantes, necesidad comunicativa, estrategia de calma, pictogramas y contactos de confianza. También concentra la suscripción, los planes institucionales y los reportes de soporte técnico.
 
 ![bc1.png](images/Chapter-IV/bc1.png)
 
@@ -1223,7 +1223,7 @@ Gestiona la cuenta del cuidador, docente o institución, y los perfiles de los u
 **Hotspots resueltos:**
 
 - *¿Lo configura el cuidador o el niño?* 
-- El cuidador crea el perfil y registra el diagnóstico, los detonantes y los contactos de confianza. El usuario neurodivergente solo elige sus recursos y pictogramas favoritos.
+- El cuidador crea el perfil y registra el diagnóstico, los detonantes y los contactos de confianza. El usuario autista solo elige sus recursos y pictogramas favoritos.
 - *¿Qué pasa si hay dos cuidadores del mismo niño?* 
 - Un perfil admite varios cuidadores asociados, cada uno con su propia cuenta (US-06).
 - *¿Se valida el diagnóstico o se declara?* 
@@ -1248,7 +1248,7 @@ Conduce al cuidador durante una crisis con una guía de actuación adaptada al p
 
 #### Autorregulación
 
-Ofrece al usuario neurodivergente recursos de calma (respiración guiada, sonidos relajantes y lienzo de dibujo libre) filtrados según su perfil sensorial, y activa el modo de baja estimulación. Permite marcar recursos como favoritos y usar un temporizador de calma.
+Ofrece al usuario autista recursos de calma (respiración guiada, sonidos relajantes y lienzo de dibujo libre) filtrados según su perfil sensorial, y activa el modo de baja estimulación. Permite marcar recursos como favoritos y usar un temporizador de calma.
 
 ![bc3.png](images/Chapter-IV/bc3.png)
 
@@ -1318,7 +1318,7 @@ El diagrama de contexto muestra a NUBI como un solo sistema, rodeado de las pers
 
 *Ilustración — Software Architecture Context Diagram de NUBI*
 
-El **usuario neurodivergente** usa NUBI para calmarse, comunicarse con pictogramas y pedir ayuda. El **cuidador** y el **docente** configuran el perfil y usan el Modo SOS durante una crisis, y el **administrador institucional** gestiona los perfiles de estudiantes del plan institucional. El **contacto de confianza** y el **profesional de salud** no usan la aplicación directamente: el primero recibe las alertas y el segundo recibe los reportes de episodios que comparte el cuidador.
+El **usuario autista** usa NUBI para calmarse, comunicarse con pictogramas y pedir ayuda. El **cuidador** (padre o madre) y el **docente** configuran el perfil y usan el Modo SOS durante una crisis, y el **administrador institucional** gestiona los perfiles de estudiantes del plan institucional. El **contacto de confianza** y el **profesional de salud** no usan la aplicación directamente: el primero recibe las alertas y el segundo recibe los reportes de episodios que comparte el cuidador.
 
 NUBI se apoya en cuatro sistemas externos: **Google OAuth** para el inicio de sesión, una **pasarela de pagos** para el cobro de suscripciones, un **servicio de notificaciones push** para alertas y recordatorios, y **SMS / WhatsApp** como canal de alerta. Estos dos últimos se identificaron en el Big Picture Event Storming.
 
@@ -1330,7 +1330,7 @@ El diagrama de contenedores muestra las piezas que se despliegan por separado, l
 
 *Ilustración — Software Architecture Container Diagram de NUBI*
 
-NUBI se compone de cinco contenedores. La **Landing Page** (HTML5, CSS3 y JavaScript) presenta el producto y redirige a la Web Application mediante sus call-to-action. La **Web Application** (Angular y Angular Material) concentra la experiencia del usuario neurodivergente y del cuidador, con i18n en en_US y es_419 y atributos ARIA. El **almacenamiento local** del navegador guarda la guía SOS y los recursos de calma para el modo offline básico, un requisito que surgió en las entrevistas. El **RESTful API** (Java, Spring Boot y Spring Data JPA) contiene la lógica de negocio, usa JWT para la autenticación y se documenta con OpenAPI. La **base de datos** es PostgreSQL, administrada con pgAdmin.
+NUBI se compone de cinco contenedores. La **Landing Page** (HTML5, CSS3 y JavaScript) presenta el producto y redirige a la Web Application mediante sus call-to-action. La **Web Application** (Angular y Angular Material) concentra la experiencia del usuario autista y del cuidador, con i18n en en_US y es_419 y atributos ARIA. El **almacenamiento local** del navegador guarda la guía SOS y los recursos de calma para el modo offline básico, un requisito que surgió en las entrevistas. El **RESTful API** (Java, Spring Boot y Spring Data JPA) contiene la lógica de negocio, usa JWT para la autenticación y se documenta con OpenAPI. La **base de datos** es PostgreSQL, administrada con pgAdmin.
 
 El API se diseñó como un **monolito modular**: cada Bounded Context es un módulo con sus propias entidades y repositorios JPA, pero todos se despliegan juntos en un solo contenedor Docker. Así se mantiene la separación que exige Domain-Driven Design sin la complejidad de desplegar cinco servicios por separado. La Landing Page y la Web Application se publican en hosting estático.
 
@@ -1354,7 +1354,7 @@ Cada componente corresponde a uno de los cinco Bounded Contexts del Design-Level
 
 *Ilustración — Component Diagram de la Web Application*
 
-La Web Application tiene un módulo por Bounded Context, de modo que el frontend refleja la estructura del backend. **Navegación** implementa la barra superior y las migas de pan de las Web Style Guidelines (4.1.2) y muestra el espacio del usuario neurodivergente o del cuidador según su rol. **Modo offline** mantiene la guía SOS y los recursos de calma disponibles sin conexión, y **Cliente HTTP** centraliza las llamadas al API agregando el token JWT. Los módulos de Comunicación Asistida y Autorregulación usan la síntesis de voz y el reproductor de audio del dispositivo, identificados en el Big Picture Event Storming.
+La Web Application tiene un módulo por Bounded Context, de modo que el frontend refleja la estructura del backend. **Navegación** implementa la barra superior y las migas de pan de las Web Style Guidelines (4.1.2) y muestra el espacio del usuario autista o del cuidador según su rol. **Modo offline** mantiene la guía SOS y los recursos de calma disponibles sin conexión, y **Cliente HTTP** centraliza las llamadas al API agregando el token JWT. Los módulos de Comunicación Asistida y Autorregulación usan la síntesis de voz y el reproductor de audio del dispositivo, identificados en el Big Picture Event Storming.
 
 
 ## 4.7. Software Object-Oriented Design.
@@ -1363,7 +1363,7 @@ La Web Application tiene un módulo por Bounded Context, de modo que el frontend
 
 #### Perfil y Personalización: perfil del usuario y cuidadores
 
-Este diagrama cubre la gestión del perfil del usuario neurodivergente: sus datos básicos, el perfil sensorial, el diagnóstico declarado, los cuidadores asociados y los contactos de confianza.
+Este diagrama cubre la gestión del perfil del usuario autista: sus datos básicos, el perfil sensorial, el diagnóstico declarado, los cuidadores asociados y los contactos de confianza.
 
 <p align="center">
   <img src="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png" alt="Class Diagram Perfil y Personalización: perfil del usuario y cuidadores" width="100%">
@@ -1411,7 +1411,7 @@ Este diagrama cubre las recomendaciones personalizadas, que se generan según el
 
 #### Autorregulación
 
-Este diagrama cubre las sesiones de calma del usuario neurodivergente, los recursos de calma disponibles, los favoritos y el temporizador.
+Este diagrama cubre las sesiones de calma del usuario autista, los recursos de calma disponibles, los favoritos y el temporizador.
 
 <p align="center">
   <img src="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png" alt="Class Diagram Autorregulación" width="100%">
@@ -1499,7 +1499,7 @@ A continuación se presenta el Database Diagram de NUBI, con las tablas de todos
 
 #### Esquema profile: Perfil y Personalización
 
-Este esquema guarda las cuentas de acceso, los perfiles de los usuarios neurodivergentes, sus cuidadores y contactos de confianza, y todo lo relacionado con planes, instituciones y soporte técnico. Las tablas se gestionan de la siguiente manera:
+Este esquema guarda las cuentas de acceso, los perfiles de los usuarios autistas, sus cuidadores y contactos de confianza, y todo lo relacionado con planes, instituciones y soporte técnico. Las tablas se gestionan de la siguiente manera:
 
 - **`accounts`:** guarda el acceso de cada cuidador, docente o administrador institucional. El correo (`email`) es único y funciona como identificador de inicio de sesión. Una cuenta creada con Google no tiene `password_hash` y guarda su identificador de Google en `google_subject`, que también es único; una cuenta creada con contraseña sí debe tener `password_hash`. El rol (`role`) solo admite `CAREGIVER`, `TEACHER` e `INSTITUTION_ADMIN`, y la columna `active` permite desactivar una cuenta sin borrarla. `institution_id` es opcional y solo lo tienen los docentes y administradores de una institución.
 - **`institutions`:** registra los colegios y centros de terapia (`institution_type`) que administran los perfiles de sus estudiantes. No depende de ninguna otra tabla; `accounts` y `neurodivergent_profiles` la referencian con una clave foránea opcional.
