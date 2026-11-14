@@ -343,7 +343,7 @@ Esta configuración permite mantener separados los procesos de desarrollo y prod
 
 ## 5.2. Landing Page, Services & Applications Implementation
 
-En esta sección se documenta, Sprint a Sprint, la implementación del Landing Page, de los RESTful Web Services y de la Frontend Web Application de NUBI. Se documentan el **Sprint 1**, cuyo producto es la primera versión desplegada del Landing Page, y el **Sprint 2**, cuyo producto es la primera versión de la Frontend Web Application. Los RESTful Web Services se implementarán en los siguientes Sprints, según el orden del Product Backlog (sección 3.3); mientras tanto, la Frontend Web Application usa una API simulada.
+En esta sección se documenta, Sprint a Sprint, la implementación del Landing Page, de los RESTful Web Services y de la Frontend Web Application de NUBI. Se documentan el **Sprint 1**, cuyo producto es la primera versión desplegada del Landing Page, el **Sprint 2**, cuyo producto es la primera versión de la Frontend Web Application, y el **Sprint 3**, cuyo producto es la primera versión de los RESTful Web Services y su conexión con la Frontend Web Application. Hasta el Sprint 2 la Frontend Web Application usa una API simulada.
 
 ### 5.2.1. Sprint 1
 
@@ -960,3 +960,1065 @@ Del 1 al 8 de octubre de 2026 el repositorio [landing-page](https://github.com/A
 | Dan-trax | Diaz Caruzo, Edgard Daniel | 0 | — | Sin commits en este Sprint |
 
 Como oportunidad de mejora, Sofia y Edgard no registran commits en el Landing Page durante el Sprint 2, aunque sí en la Frontend Web Application y en el informe. Para el Sprint 3 se les asignan tareas del Landing Page en el Sprint Backlog, de modo que los cinco integrantes participen en cada producto del Sprint.
+
+
+### 5.2.3. Sprint 3
+
+> **Borrador AV2.** Esta sección se redactó con la evidencia disponible al 13 de noviembre de 2026 (historial de Git de los repositorios). Lo marcado como **[POR CONFIRMAR]** es una propuesta que el equipo debe validar y lo marcado como **[POR COMPLETAR]** es evidencia que todavía no existe (capturas, URL y datos de reuniones). Estas marcas y este aviso se eliminan al cerrar la versión final.
+
+#### 5.2.3.1. Sprint Planning 3
+
+El Sprint Planning 3 define el alcance de la primera versión de los RESTful Web Services de Nubi y de su conexión con la Frontend Web Application. Los servicios se implementan con Java y Spring Boot en el repositorio [Nubi.Platform.Backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend), con un Bounded Context por rama, y cubren las Technical Stories TS-01 a TS-05 del Product Backlog. El Sprint también retoma las User Stories que quedaron en proceso o pendientes en el Sprint 2 y las tareas T-04 y T-52.
+
+| Campo | Detalle |
+|---|---|
+| Sprint # | Sprint 3 |
+| **Sprint Planning Background** | |
+| Date | **[POR CONFIRMAR]** (el repositorio del backend tiene su primer commit el 2026-11-04) |
+| Time | **[POR COMPLETAR]** |
+| Location | **[POR COMPLETAR]** |
+| Prepared By | **[POR CONFIRMAR]** |
+| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel **[POR CONFIRMAR]** |
+| Sprint 2 Review Summary | De las 29 User Stories comprometidas en el Sprint 2, 23 quedaron completas (62 de 77 Story Points). US-25, US-26 y US-29 quedaron en proceso porque el panel de Red de Apoyo y Seguimiento usaba datos de muestra, y US-22, US-24 y US-28 quedaron pendientes. La Frontend Web Application se desplegó en Firebase Hosting y la API simulada en Render. Las tareas T-04 (llamado a la acción del Landing Page hacia la aplicación) y T-52 (release a `master`) no se completaron. |
+| Sprint 2 Retrospective Summary | Como aciertos se identifican el reparto del trabajo por Bounded Context en ramas `feature/*` propias, la participación de los cinco integrantes en la Frontend Web Application y el despliegue de la aplicación y de la API simulada. Como oportunidades de mejora se identifican que 81 de los 87 commits de `develop` se registraron el último día del Sprint y que Sofia y Edgard no registraron commits en el Landing Page. Para el Sprint 3 cada rama `feature/*` se integra en `develop` al completarse su User Story, y se asignan tareas del Landing Page a Sofia y a Edgard. |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | *Our focus is on delivering a first version of the Nubi RESTful Web Services and connecting the Frontend Web Application to them. We believe it delivers to caregivers and autistic users data that persists between sessions and devices, instead of the simulated API that restarts with fixed sample data. This will be confirmed when a caregiver can complete the main flows of the five Bounded Contexts (profile, SOS Mode, self-regulation, AAC board and support network) from the deployed application, with the data stored by the deployed services, in Desktop and Mobile web browsers.* |
+| Sprint 3 Velocity | 40 Story Points |
+| Sum of Story Points | 40 |
+
+La distribución del alcance es la siguiente:
+
+| Bloque | Historias | Story Points |
+|---|---|---|
+| Technical Stories de los Web Services | TS-01 a TS-05 (5 por historia) | 25 |
+| User Stories de Comunicación Asistida pendientes del Sprint 2 | US-22 (3) y US-24 (2) | 5 |
+| User Stories de Red de Apoyo y Seguimiento pendientes del Sprint 2 | US-25 (3), US-26 (3), US-28 (2) y US-29 (2) | 10 |
+| **Total** | **11 historias** | **40** |
+
+No forman parte del compromiso del Sprint 3 las historias de seguimiento y recomendaciones de Red de Apoyo y Seguimiento que no estén cubiertas por TS-05 (US-30 a US-45 en la Frontend Web Application) ni las validaciones de los videos, que se documentan en las secciones 5.3 y 5.4.
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En el Sprint 3 los aspectos son los cinco Bounded Contexts de los Web Services, los aspectos transversales y los entregables de validación. Cada integrante lidera el mismo Bounded Context que en el Sprint 2, ahora en el repositorio del backend, y lo conecta después con su módulo de la Frontend Web Application. La Leadership-and-Collaboration Matrix indica quién lidera (L) y quién colabora (C). **[POR CONFIRMAR]** (los líderes de los cinco Bounded Contexts se deducen de la autoría de las ramas del backend; los demás aspectos son una propuesta).
+
+| Team Member (Last Name, First Name) | GitHub Username | Perfil y Personalización | Gestión de Crisis (Modo SOS) | Autorregulación | Comunicación Asistida (CAA) | Red de Apoyo y Seguimiento | Shared (núcleo del backend y OpenAPI) | Integración en `develop` | Deployment | Landing Page | Validation Interviews y videos |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Lopez Torres, Leonardo Gabriel | [LeonardoLopez138](https://tinyurl.com/2a8ze8hx) | C | C | C | L | C | C | C | L | L | C |
+| Diaz Yurivilca, Sofia | [u20241a195-cmd](https://tinyurl.com/299rz9v4) | C | L | C | C | C | C | L | C | C | C |
+| Payano Puchuri, Joan Fabricio | [joanfpp2-ai](https://tinyurl.com/2ykyhlc3) | C | C | L | C | C | L | C | C | C | C |
+| Ruiz Villegas, Yngrid Nahir | [nahiryn8](https://tinyurl.com/28m8gfas) | L | C | C | C | C | C | C | C | C | L |
+| Diaz Caruzo, Edgard Daniel | [Dan-trax](https://tinyurl.com/24dl9dkr) | C | C | C | C | L | C | C | C | C | C |
+
+Cada aspecto agrupa el siguiente trabajo:
+
+- **Perfil y Personalización:** perfiles, perfil sensorial, diagnóstico, foto, cuidadores, contactos de confianza y suscripción (rama `profile-personalization`).
+- **Gestión de Crisis (Modo SOS):** sesiones SOS, guía de acción, pasos completados u omitidos, técnicas alternativas y recomendaciones (rama `feature/crisis-management`).
+- **Autorregulación:** recursos de calma, sesiones de calma con intensidad, baja estimulación y temporizador, y recursos favoritos (rama `feature/self-regulation`).
+- **Comunicación Asistida (CAA):** tablero, categorías, pictogramas, selecciones de pictogramas y estado de ánimo (rama `feature/assistive-comunication`).
+- **Red de Apoyo y Seguimiento:** registros y reportes de episodios, solicitudes de ayuda y recomendaciones (rama `feature/support-network`).
+- **Shared:** proyecto base de Spring Boot, núcleo compartido (resultados y errores de dominio, auditoría, manejo global de excepciones) y documentación OpenAPI.
+- **Integración en `develop`:** unión de las cinco ramas en `develop` del backend y de la Frontend Web Application.
+- **Deployment:** publicación de los Web Services y de la base de datos, y release a `master` (sección 5.2.3.7).
+- **Landing Page:** llamado a la acción hacia la aplicación, testimonios reales y revisión de accesibilidad y SEO.
+- **Validation Interviews y videos:** diseño y registro de las entrevistas (sección 5.3) y video About-the-Product (sección 5.4).
+
+#### 5.2.3.3. Sprint Backlog 3
+
+El objetivo del Sprint 3 es entregar la primera versión de los Web Services con los cinco Bounded Contexts, conectar la Frontend Web Application a ellos, completar las User Stories pendientes del Sprint 2 y publicar la nueva versión del Landing Page. Las tareas continúan la numeración del Sprint Backlog 2 (T-53 en adelante), se estiman entre 4 y 8 horas y se asignan según la matriz de la sección 5.2.3.2.
+
+**URL del Sprint Backlog 3 en Trello:** **[POR COMPLETAR]**
+
+**[POR COMPLETAR]** Captura del tablero del Sprint 3 en Trello (`images/Chapter-V/Sprint-Backlog3.png`).
+
+El estado de cada tarea se dedujo de la actividad de las ramas al 13 de noviembre de 2026: To-Review para las que tienen su rama con commits, pruebas y endpoints, In-Process para las que siguen recibiendo commits, y To-do para las que no registran avance. **[POR CONFIRMAR]** con el tablero de Trello.
+
+| Sprint # | Sprint 3 | | | | | | |
+|---|---|---|---|---|---|---|---|
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS-01 | Exponer API RESTful de gestión de perfiles | T-53 | Dominio y persistencia de perfiles | Implementar el agregado de perfil con perfil sensorial, diagnóstico declarado, cuidadores y contactos de confianza, y su persistencia JPA con las reglas de límite del plan. | 8 | Ruiz Villegas, Yngrid Nahir | To-Review |
+| TS-01 | Exponer API RESTful de gestión de perfiles | T-54 | Endpoints de perfiles y cuidadores | Exponer los endpoints de perfiles, perfil sensorial, diagnóstico, foto, cuidadores y contactos de confianza, con errores en formato `application/problem+json` y pruebas de integración. | 8 | Ruiz Villegas, Yngrid Nahir | To-Review |
+| TS-01 | Exponer API RESTful de gestión de perfiles | T-55 | Suscripción de la cuenta | Exponer la suscripción vigente de la cuenta y el cambio de plan, validando los límites de perfiles y de cuidadores por perfil. | 5 | Ruiz Villegas, Yngrid Nahir | To-Review |
+| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-56 | Dominio del Modo SOS | Implementar los agregados `SosSession` y `ActionGuide` con sus pasos, técnicas alternativas y reglas (omitir un paso obligatorio exige confirmación y una sesión cerrada no admite cambios), con pruebas unitarias. | 8 | Diaz Yurivilca, Sofia | To-Review |
+| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-57 | Persistencia y guía de acción inicial | Implementar las entidades JPA separadas del dominio, los repositorios y la siembra de la guía de seis pasos al iniciar la aplicación. | 6 | Diaz Yurivilca, Sofia | To-Review |
+| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-58 | Endpoints del Modo SOS y recomendaciones | Exponer la activación del Modo SOS, la guía ordenada según el detonante, completar, omitir y pedir una técnica alternativa de un paso, finalizar la sesión y consultar las sesiones y recomendaciones de un perfil. | 7 | Diaz Yurivilca, Sofia | To-Review |
+| TS-03 | Exponer API RESTful de estímulos de autorregulación | T-59 | Dominio y recursos de autorregulación | Implementar los agregados de sesión de calma y recurso de calma, los recursos favoritos y la siembra del catálogo, con pruebas del dominio. | 7 | Payano Puchuri, Joan Fabricio | To-Review |
+| TS-03 | Exponer API RESTful de estímulos de autorregulación | T-60 | Endpoints de sesiones de calma | Exponer el catálogo de recursos, las sesiones de calma (intensidad, baja estimulación, pausa, temporizador y cierre) y los recursos favoritos del perfil. | 7 | Payano Puchuri, Joan Fabricio | To-Review |
+| TS-04 | Exponer API RESTful del tablero CAA | T-61 | Dominio del tablero CAA | Implementar el tablero con categorías, pictogramas, favoritos, selecciones de pictogramas y registros de estado de ánimo. | 7 | Lopez Torres, Leonardo Gabriel | To-Review |
+| TS-04 | Exponer API RESTful del tablero CAA | T-62 | Endpoints del tablero, selecciones y estado de ánimo | Exponer el tablero del perfil, el acceso rápido, las categorías y pictogramas personalizados, las selecciones con su estado de entrega y comprensión, y el historial de estados de ánimo. | 7 | Lopez Torres, Leonardo Gabriel | To-Review |
+| TS-05 | Exponer API RESTful de solicitudes de ayuda y recomendaciones | T-63 | Dominio de episodios, solicitudes y recomendaciones | Implementar los registros y reportes de episodios, las solicitudes de ayuda con su confirmación y cancelación, y las recomendaciones con su efectividad. | 8 | Diaz Caruzo, Edgard Daniel | In-Process |
+| TS-05 | Exponer API RESTful de solicitudes de ayuda y recomendaciones | T-64 | Endpoints de Red de Apoyo y Seguimiento | Exponer los endpoints de registros y reportes de episodios, solicitudes de ayuda y recomendaciones, con validación de fechas y errores HTTP. | 8 | Diaz Caruzo, Edgard Daniel | In-Process |
+| — | Tarea general | T-65 | Proyecto base de los Web Services | Crear el proyecto Spring Boot, la configuración de MySQL y la versión de Java del repositorio `Nubi.Platform.Backend`. | 4 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-66 | Núcleo compartido del backend | Implementar el resultado de las operaciones, los errores de dominio, la auditoría de entidades JPA, el manejo global de excepciones y la configuración de OpenAPI. | 5 | Payano Puchuri, Joan Fabricio | To-Review |
+| — | Tarea general | T-67 | Integración de los cinco contextos en `develop` | Unir las cinco ramas del backend en `develop`, resolver los conflictos del núcleo compartido, de los nombres de beans y de las rutas repetidas (por ejemplo `/api/v1/recommendations`) y ejecutar todas las pruebas. | 8 | Diaz Yurivilca, Sofia | To-do |
+| — | Tarea general | T-68 | Documentación OpenAPI | Verificar que Swagger UI liste todos los endpoints de los cinco contextos con su descripción, y exportar el contrato para la sección 5.2.3.6. | 4 | Payano Puchuri, Joan Fabricio | To-do |
+| — | Tarea general | T-69 | Despliegue de los Web Services | Publicar los Web Services y la base de datos MySQL con variables de entorno, y verificar los endpoints desde la URL pública. | 8 | Lopez Torres, Leonardo Gabriel | To-do |
+| — | Tarea general | T-70 | Conexión de Perfil y Personalización | Reemplazar en la Frontend Web Application los recursos `profiles`, `caregivers` y de suscripción de la API simulada por los Web Services. | 8 | Ruiz Villegas, Yngrid Nahir | To-do |
+| — | Tarea general | T-71 | Conexión de Gestión de Crisis | Reemplazar los recursos `actionGuides` y `sosSessions` por los endpoints del Modo SOS y adaptar el assembler al contrato (`caregiverAccountId`). | 6 | Diaz Yurivilca, Sofia | To-do |
+| — | Tarea general | T-72 | Conexión de Autorregulación | Reemplazar los recursos `calmingResources`, `favoriteResources` y `calmSessions` por los endpoints de autorregulación. | 6 | Payano Puchuri, Joan Fabricio | To-do |
+| US-22 / US-24 | Agregar pictograma personalizado / Reproducir audio asociado al pictograma | T-73 | Pictograma personalizado, audio y conexión del tablero CAA | Habilitar el pictograma con imagen propia y el audio al seleccionar un pictograma, y conectar el tablero y las selecciones a los Web Services. | 8 | Lopez Torres, Leonardo Gabriel | To-do |
+| US-25 / US-26 | Enviar solicitud de ayuda al cuidador / Recibir notificación de solicitud de ayuda | T-74 | Solicitud de ayuda y aviso al cuidador | Reemplazar los datos de muestra del panel por las solicitudes de ayuda de los Web Services. | 8 | Diaz Caruzo, Edgard Daniel | To-do |
+| US-28 / US-29 | Cancelar solicitud de ayuda / Consultar historial de solicitudes de ayuda | T-75 | Cancelar solicitud y actividad reciente | Permitir cancelar una solicitud enviada y mostrar el historial y la actividad reciente desde los Web Services. | 6 | Diaz Caruzo, Edgard Daniel | To-do |
+| LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Tarea pendiente del Sprint 1: enlazar los botones del Landing Page con las vistas de registro e inicio de sesión de la aplicación desplegada y verificar la redirección en ambos idiomas. | 4 | Lopez Torres, Leonardo Gabriel | In-Process |
+| — | Tarea general | T-76 | Landing Page: testimonios reales y accesibilidad | Reemplazar los testimonios de ejemplo por testimonios de las entrevistas de validación y revisar el contraste, el foco y los textos alternativos. | 5 | Diaz Yurivilca, Sofia | To-do |
+| — | Tarea general | T-77 | Landing Page: enlaces y SEO | Actualizar los enlaces a la aplicación y a los Web Services desplegados, y revisar las etiquetas SEO de la sección 4.2.3. | 5 | Diaz Caruzo, Edgard Daniel | To-do |
+| — | Tarea general | T-52 | Release a `master` | Crear la rama `release/v1.0.0`, integrar `develop` en `master` según GitFlow, etiquetar la versión y verificar que los productos desplegados correspondan a esa versión. | 4 | Diaz Caruzo, Edgard Daniel | To-do |
+
+De las 27 tareas del Sprint Backlog 3, 1 está en Done, 11 en To-Review, 3 en In-Process y 12 en To-do. Las tareas T-04 y T-52 provienen de los Sprint Backlog 1 y 2.
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+En el Sprint 3 se implementó la primera versión de los RESTful Web Services con Java, Spring Boot, Spring Data JPA y MySQL, y su documentación con springdoc-openapi, en el repositorio [Nubi.Platform.Backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend). Cada Bounded Context se desarrolló en su propia rama y sigue la arquitectura del capítulo IV:
+
+- `domain`: agregados, entidades, objetos de valor, eventos, comandos, consultas y puertos de repositorio, sin dependencias de JPA.
+- `application`: servicios de comandos y de consultas, manejadores de eventos y una capa anticorrupción hacia los otros contextos.
+- `infrastructure`: entidades de persistencia JPA separadas del dominio, repositorios de Spring Data, mappers y adaptadores.
+- `interfaces`: controladores REST, recursos (DTO) y ensambladores.
+
+Los avances por Bounded Context fueron:
+
+- **Perfil y Personalización** (rama `profile-personalization`): perfiles con perfil sensorial, diagnóstico declarado, foto, cuidadores y contactos de confianza, suscripción con límites de plan, pruebas unitarias y de integración, un script de prueba rápida y el documento `docs/api-perfil-personalizacion.md`.
+- **Gestión de Crisis** (rama `feature/crisis-management`): sesiones SOS y guía de acción, siembra de la guía de seis pasos, recomendaciones por perfil, pruebas de dominio y de la API REST, y eventos de dominio para el registro de episodios.
+- **Autorregulación** (rama `feature/self-regulation`): catálogo de recursos de calma, sesiones de calma con intensidad, baja estimulación y temporizador, recursos favoritos y pruebas de dominio y de la API REST.
+- **Comunicación Asistida** (rama `feature/assistive-comunication`): tablero por perfil, categorías, pictogramas personalizados y favoritos, selecciones de pictogramas con estado de entrega y comprensión, y estado de ánimo.
+- **Red de Apoyo y Seguimiento** (rama `feature/support-network`): registros y reportes de episodios, solicitudes de ayuda con confirmación y cancelación, y recomendaciones con efectividad.
+
+La tabla registra, por rama, los 112 commits del Sprint 3 sin contar merges, en orden cronológico. Los commits no tienen cuerpo de mensaje, por lo que esa columna se indica con «—». Los mensajes se transcriben tal como se registraron en Git.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [5c0bdce](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/5c0bdce) | chore: update Maven wrapper version and Java version; add new dependencies | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [6ca4f6e](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/6ca4f6e) | chore(config): update application properties and setup docs | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [3c0a8d0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/3c0a8d0) | refactor(shared): add core domain and auditing abstractions | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [2bd5515](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2bd5515) | refactor(shared): add shared infrastructure configurations and result wrappers | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [304f327](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/304f327) | feat(profile): define profile domain enums and value objects | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [c135751](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c135751) | feat(profile): add profile domain entities and aggregates | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [db82da7](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/db82da7) | feat(profile): add domain exceptions and validation rules | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [20e1339](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/20e1339) | feat(profile): implement profile JPA entities and repositories | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [72d4b33](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/72d4b33) | feat(profile): implement profile repository adapters and mappers | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [d194e4b](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/d194e4b) | feat(profile): add profile DTOs and application service | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [32b3461](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/32b3461) | feat(profile): implement profile REST controller and exception handlers | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [4a70f5f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/4a70f5f) | chore(profile): add database migration script and smoke test script | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [936d904](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/936d904) | feat(profile): add subscription status enum and domain entity | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [7e013d3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/7e013d3) | feat(profile): define subscription repository interface | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [ee39baa](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ee39baa) | feat(profile): add JPA persistence entities and repository for subscription | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [2d79cc4](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2d79cc4) | feat(profile): implement subscription mappers and repository adapter | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [eebfcc0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/eebfcc0) | feat(profile): add subscription DTOs and application service | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [88c4342](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/88c4342) | feat(profile): implement subscription REST controller | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [4150942](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/4150942) | feat(profile): add domain entities and domain events for trusted contact | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [5cf38ba](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/5cf38ba) | feat(profile): add trusted contact JPA persistence entity | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [1106649](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/1106649) | test(profile): add unit and integration test suite for profile context | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [80ebd94](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/80ebd94) | test(profile): add unit tests for subscription context | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `profile-personalization` | [7ac0cab](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/7ac0cab) | chore(config): update main application properties for database and server configuration | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [52cc66c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/52cc66c) | build: add springdoc openapi and h2 test dependencies | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [badb2b1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/badb2b1) | chore(config): configure mysql datasource from environment variables | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [2abb5a4](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2abb5a4) | test(config): use an in-memory h2 database for tests | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [2cd42d4](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2cd42d4) | feat(shared): add result type for command service outcomes | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [ab49785](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ab49785) | feat(shared): add domain error model | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [dbee9c6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/dbee9c6) | feat(shared): add aggregate root base and domain event marker | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [023e8b0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/023e8b0) | feat(shared): add generic crud repository contract | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [b7b0734](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b7b0734) | feat(shared): add jpa auditing and auditable persistence entity | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [549c3b0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/549c3b0) | feat(shared): add clock and openapi configuration | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [c9c825b](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c9c825b) | feat(shared): add global exception handler and problem detail assembler | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [f3d1071](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f3d1071) | feat(crisismanagement): add core domain value objects and enumerations | — | 05/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [c2a6310](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c2a6310) | feat(crisismanagement): add domain entities for step tracking | — | 05/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [d8276e6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/d8276e6) | feat(crisismanagement): implement ActionGuide aggregate root | — | 06/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [4c4b0bc](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/4c4b0bc) | feat(crisismanagement): implement Recommendation aggregate root | — | 06/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [9a91656](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/9a91656) | feat(crisismanagement): implement SosSession aggregate root | — | 06/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [6af357d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/6af357d) | feat(crisismanagement): add SOS session lifecycle commands | — | 07/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [af73f6d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/af73f6d) | feat(crisismanagement): add recommendation and preference commands | — | 07/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [3a42d60](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/3a42d60) | feat(crisismanagement): define domain queries for guides, recommendations and sessions | — | 07/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [60bb625](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/60bb625) | feat(crisismanagement): add domain events for crisis episodes and sessions | — | 08/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [cff9c04](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/cff9c04) | feat(crisismanagement): define command and query domain service interfaces | — | 08/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [eeb45a3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/eeb45a3) | feat(crisismanagement): add JPA repositories for crisis management aggregates | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [600e772](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/600e772) | feat(crisismanagement): implement ExternalProfileService outbound ACL | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [65150c7](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/65150c7) | feat(crisismanagement): implement ActionGuideCommandServiceImpl | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [6a71555](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/6a71555) | feat(crisismanagement): implement RecommendationCommandServiceImpl | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [c769114](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c769114) | feat(crisismanagement): implement SosSessionCommandServiceImpl | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [eca8a23](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/eca8a23) | feat(crisismanagement): implement ActionGuideQueryServiceImpl | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [c541d73](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c541d73) | feat(crisismanagement): implement recommendation and SOS session query services | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [ed3a006](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ed3a006) | feat(crisismanagement): add ApplicationReadyEventHandler for initial seeding | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [91b6b74](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/91b6b74) | feat(crisismanagement): add EpisodeRegisteredEventHandler for automated crisis response | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [253584c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/253584c) | feat(crisismanagement): add REST request and response resources | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [84698e2](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/84698e2) | feat(crisismanagement): add command and resource assemblers | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/crisis-management` | [c86260d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c86260d) | feat(crisismanagement): expose REST controllers and remaining bounded context files | — | 12/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [42cb99c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/42cb99c) | fix(build): align java.version with installed JDK 25 and add test/db configuration | — | 04/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [084eb12](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/084eb12) | chore(deps): add springdoc openapi and api documentation configuration | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [441e627](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/441e627) | feat(shared): add auditable persistence entity and jpa auditing | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [b659bc3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b659bc3) | feat(shared): add domain error model and crud repository contract | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [2895ce1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2895ce1) | feat(shared): map domain errors and invalid input to problem details | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [48b8c19](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/48b8c19) | feat(self-regulation): add value objects for calm sessions and calming resources | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [b7d3e00](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b7d3e00) | feat(self-regulation): add calming resource and calm session aggregates | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [b9ff4d1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b9ff4d1) | feat(self-regulation): add commands, queries, repositories and domain services | — | 10/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [9523b40](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/9523b40) | feat(self-regulation): add jpa persistence entities and repositories | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [5bc27cb](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/5bc27cb) | feat(self-regulation): add persistence mappers and repository adapters | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [bb5fb77](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/bb5fb77) | feat(self-regulation): implement command and query services with profile acl | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [46bb7ae](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/46bb7ae) | feat(self-regulation): seed calming resource catalog on application ready | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [dde1bc6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/dde1bc6) | feat(self-regulation): expose calming resource and favorite endpoints | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [07a1ce2](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/07a1ce2) | feat(self-regulation): expose calm session and calm timer endpoints | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/self-regulation` | [b898c84](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b898c84) | test(self-regulation): add domain and rest api tests | — | 11/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [a47966c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/a47966c) | chore(deps): update pom.xml dependencies for assistive communication | — | 05/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [a83ce35](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/a83ce35) | feat(assistive): add core domain value objects | — | 05/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [1ca277b](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/1ca277b) | feat(assistive): add default pictogram catalog and template value objects | — | 05/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [24a5941](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/24a5941) | feat(assistive): add PictogramCategory and PictogramSelection entities | — | 05/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [939a727](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/939a727) | feat(assistive): add MoodCheckIn entity | — | 06/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [40cc7a3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/40cc7a3) | feat(assistive): implement CommunicationBoard and Pictogram aggregates | — | 06/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [693761f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/693761f) | feat(assistive): add domain events for pictogram selection and understanding | — | 06/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [f2478e0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f2478e0) | feat(assistive): add board and pictogram management commands | — | 06/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [0855730](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0855730) | feat(assistive): add selection, confirmation, and mood commands | — | 06/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [40d273d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/40d273d) | feat(assistive): add domain queries for boards, selections, and mood check-ins | — | 07/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [ab64009](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ab64009) | feat(assistive): define domain repository and service interfaces | — | 07/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [1d22418](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/1d22418) | feat(assistive): implement DefaultBoardProvisioner for initial setup | — | 07/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [16e1237](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/16e1237) | feat(assistive): implement CommunicationBoardCommandServiceImpl | — | 07/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [ec79952](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ec79952) | feat(assistive): implement CommunicationBoardQueryServiceImpl | — | 07/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [93108fe](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/93108fe) | feat(assistive): add JPA persistence entities and ProfileId converter | — | 08/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [52d504e](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/52d504e) | feat(assistive): add Spring Data JPA repositories and persistence mapper | — | 08/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [bd5fe88](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/bd5fe88) | feat(assistive): implement JPA repository adapters | — | 08/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [86a54dc](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/86a54dc) | feat(assistive): add REST request resources | — | 08/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [0d4c576](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0d4c576) | feat(assistive): add REST response resources | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [104b81c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/104b81c) | feat(assistive): add REST resource and command assemblers | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [94d5556](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/94d5556) | feat(assistive): implement CommunicationBoardController endpoints | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [0f65f07](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0f65f07) | feat(assistive): implement PictogramSelectionController endpoints | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/assistive-comunication` | [c1fd90f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c1fd90f) | feat(assistive): implement MoodCheckInController endpoints | — | 09/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [0526696](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0526696) | feat(support-network): add help request domain model | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [90c3212](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/90c3212) | feat(support-network): add help request application services | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [b9c2115](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b9c2115) | feat(support-network): add help request rest endpoints | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [ab7db32](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ab7db32) | feat(support-network): add episode record domain model | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [8df7f04](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/8df7f04) | feat(support-network): add episode record application services | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [fba306f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/fba306f) | feat(support-network): add episode record rest endpoints | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [f1dcc2d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f1dcc2d) | feat(support-network): add recommendation domain model | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [3aee00f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/3aee00f) | feat(support-network): add recommendation application services | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [e476645](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/e476645) | feat(support-network): add recommendation rest endpoints | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [5e14a51](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/5e14a51) | feat(support-network): add episode report domain model | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [beabbbc](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/beabbbc) | feat(support-network): add episode report application services | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [2917abb](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2917abb) | feat(support-network): add episode report rest endpoints | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [6484f08](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/6484f08) | feat(support-network): add recent episode records query | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [daef3b4](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/daef3b4) | feat(support-network): add latest emotional state query | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [a2bd48c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/a2bd48c) | feat(support-network): add alerts acl contract | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [5836f81](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/5836f81) | feat(support-network): add profiles acl contract | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [e005694](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/e005694) | fix(support-network): avoid reserved trigger column name | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [72a333d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/72a333d) | fix(support-network): map domain exceptions to http responses | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [0a7dbfe](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0a7dbfe) | fix(support-network): validate episode dates | — | 13/11/2026 |
+
+Al 13 de noviembre de 2026 las cinco ramas siguen sin integrarse en `develop`, que solo contiene el commit inicial del repositorio, y la rama de Perfil y Personalización se llama `profile-personalization` en lugar de `feature/profile-personalization`. La Frontend Web Application y el Landing Page no registran commits nuevos después del Sprint 2; su conexión con los Web Services y su nueva versión corresponden a las tareas T-70 a T-77 del Sprint Backlog 3. **[POR COMPLETAR]** Tabla de commits de la Frontend Web Application y del Landing Page cuando se integren.
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+Los Web Services se ejecutan con `./mvnw spring-boot:run` y se conectan a MySQL mediante las variables de entorno `DB_URL`, `DB_USERNAME` y `DB_PASSWORD`. Al iniciar, el contexto de Gestión de Crisis registra la guía de acción de seis pasos y el de Autorregulación, el catálogo de recursos de calma. Los endpoints se exploran desde Swagger UI y se prueban con Postman; las pruebas automáticas de cada rama usan una base de datos en memoria (H2).
+
+Un recorrido de ejemplo del Modo SOS contra los servicios es el siguiente:
+
+1. `POST /api/v1/sos-sessions` con `{"profileId": 1, "caregiverAccountId": 1, "trigger": "TACTILE"}` abre la sesión (`201 Created`, estado `IN_PROGRESS`, intensidad inicial `ALTERED`).
+2. `GET /api/v1/sos-sessions/{id}/guide` devuelve los seis pasos con el paso táctil primero.
+3. `POST /api/v1/sos-sessions/{id}/steps/{stepId}/complete` completa un paso y avanza al siguiente.
+4. `POST /api/v1/sos-sessions/{id}/steps/{stepId}/skip` omite un paso; si es obligatorio exige `{"confirmed": true}`.
+5. `POST /api/v1/sos-sessions/{id}/finish` cierra la sesión como `FINISHED` o `FINISHED_EARLY` y publica el evento del episodio.
+
+**[POR CONFIRMAR]** El recorrido se probó sobre la versión de la rama `feature/crisis-management`; debe repetirse sobre la rama integrada.
+
+**[POR COMPLETAR]** Capturas de pantalla de Swagger UI con los cinco contextos, de Postman con el recorrido anterior y de la tabla de MySQL con los datos creados (`images/Chapter-V/sprint-3-swagger.png`, `sprint-3-postman.png` y `sprint-3-mysql.png`).
+
+**[POR COMPLETAR]** Video de navegación del Sprint 3 con la Frontend Web Application conectada a los Web Services (URL en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`).
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+Los Web Services documentan sus endpoints con OpenAPI mediante springdoc. Swagger UI se publica en `/swagger-ui.html` y el contrato en `/v3/api-docs`. Todas las rutas cuelgan de `/api/v1`, aceptan y devuelven JSON y responden los errores en formato `application/problem+json` (RFC 9457) con las propiedades `title`, `detail` y `code`. Los códigos HTTP comunes son `200 OK`, `201 Created`, `400 Bad Request` (dato inválido), `404 Not Found` (no existe) y `409 Conflict` (regla de negocio, por ejemplo un límite de plan o una sesión ya cerrada).
+
+**URL de Swagger UI:** **[POR COMPLETAR]** (se obtiene al desplegar los Web Services, sección 5.2.3.7)
+
+**Repositorio de los Web Services:** https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend
+
+Las tablas siguientes resumen los endpoints de cada Bounded Context a partir de los controladores de sus ramas. Las rutas son relativas a `/api/v1`.
+
+**Perfil y Personalización.** Las operaciones reciben la cuenta en la cabecera `X-Account-Id` hasta que se integre la autenticación.
+
+| Verbo | Ruta | Descripción |
+|---|---|---|
+| `POST` | `/profiles` | Crear un perfil. |
+| `GET` | `/profiles` | Listar los perfiles de la cuenta. |
+| `GET` | `/profiles/accessible` | Listar los perfiles que la cuenta cuida, incluidos los ajenos. |
+| `GET` | `/profiles/{profileId}` | Obtener el detalle de un perfil. |
+| `PUT` | `/profiles/{profileId}` | Editar los datos generales. |
+| `DELETE` | `/profiles/{profileId}` | Archivar el perfil (borrado lógico). |
+| `GET`, `PUT` | `/profiles/{profileId}/sensory-profile` | Consultar o reemplazar las sensibilidades sensoriales. |
+| `GET`, `PUT` | `/profiles/{profileId}/diagnosis` | Consultar o registrar el diagnóstico declarado. |
+| `PUT` | `/profiles/{profileId}/photo` | Asociar la foto del perfil. |
+| `GET`, `POST` | `/profiles/{profileId}/caregivers` | Listar o invitar cuidadores. |
+| `POST` | `/profiles/{profileId}/caregivers/{caregiverId}/accept` | Aceptar la invitación. |
+| `DELETE` | `/profiles/{profileId}/caregivers/{caregiverId}` | Revocar el acceso de un cuidador. |
+| `GET`, `POST` | `/profiles/{profileId}/trusted-contacts` | Listar o agregar contactos de confianza. |
+| `PUT` | `/profiles/{profileId}/trusted-contacts/order` | Reordenar los contactos por prioridad. |
+| `DELETE` | `/profiles/{profileId}/trusted-contacts/{contactId}` | Eliminar un contacto. |
+| `GET` | `/subscriptions/current` | Consultar la suscripción vigente. |
+| `PUT` | `/subscriptions/current/plan` | Cambiar de plan. |
+
+**Gestión de Crisis (Modo SOS).**
+
+| Verbo | Ruta | Descripción |
+|---|---|---|
+| `POST` | `/sos-sessions` | Activar el Modo SOS (`409` si el perfil ya tiene una sesión en curso). |
+| `GET` | `/sos-sessions/{sosSessionId}` | Obtener una sesión. |
+| `GET` | `/sos-sessions/{sosSessionId}/guide` | Obtener la guía con los pasos ordenados según el detonante. |
+| `POST` | `/sos-sessions/{sosSessionId}/steps/{stepId}/complete` | Completar un paso. |
+| `POST` | `/sos-sessions/{sosSessionId}/steps/{stepId}/skip` | Omitir un paso (los obligatorios exigen `confirmed: true`). |
+| `POST` | `/sos-sessions/{sosSessionId}/steps/{stepId}/alternative` | Obtener la técnica alternativa de un paso. |
+| `POST` | `/sos-sessions/{sosSessionId}/finish` | Finalizar la sesión, completa o anticipadamente. |
+| `GET` | `/profiles/{profileId}/sos-sessions` | Listar las sesiones del perfil. |
+| `GET` | `/profiles/{profileId}/sos-sessions/in-progress` | Obtener la sesión en curso (`404` si no hay). |
+| `GET` | `/action-guides/active` | Obtener la guía vigente. |
+| `GET` | `/action-guides/{actionGuideId}` | Obtener una guía por identificador. |
+| `GET` | `/profiles/{profileId}/recommendations` | Listar las recomendaciones vigentes, con filtro opcional `topic`. |
+| `POST` | `/profiles/{profileId}/recommendations/generate` | Generar las recomendaciones del perfil. |
+| `GET` | `/recommendations/{recommendationId}` | Obtener una recomendación. |
+| `PUT` | `/recommendations/{recommendationId}/preferences` | Calificar la utilidad o marcar como favorita. |
+
+**Autorregulación.**
+
+| Verbo | Ruta | Descripción |
+|---|---|---|
+| `GET` | `/calming-resources` | Listar el catálogo de recursos de calma. |
+| `GET` | `/calming-resources/{calmingResourceId}` | Obtener un recurso. |
+| `POST` | `/calm-sessions` | Iniciar una sesión de calma. |
+| `GET` | `/calm-sessions/{calmSessionId}` | Obtener una sesión de calma. |
+| `PUT` | `/calm-sessions/{calmSessionId}/resource` | Elegir el recurso de la sesión. |
+| `PUT` | `/calm-sessions/{calmSessionId}/intensity` | Ajustar la intensidad. |
+| `PUT` | `/calm-sessions/{calmSessionId}/low-stimulation` | Activar o desactivar la baja estimulación. |
+| `POST` | `/calm-sessions/{calmSessionId}/pause` | Pausar la sesión. |
+| `POST` | `/calm-sessions/{calmSessionId}/resume` | Reanudar la sesión. |
+| `POST` | `/calm-sessions/{calmSessionId}/timer` | Iniciar el temporizador. |
+| `POST` | `/calm-sessions/{calmSessionId}/timer/pause` | Pausar el temporizador. |
+| `POST` | `/calm-sessions/{calmSessionId}/timer/resume` | Reanudar el temporizador. |
+| `POST` | `/calm-sessions/{calmSessionId}/timer/ticks` | Descontar los segundos transcurridos. |
+| `POST` | `/calm-sessions/{calmSessionId}/finish` | Finalizar la sesión. |
+| `GET` | `/profiles/{profileId}/calm-sessions` | Listar las sesiones del perfil. |
+| `GET` | `/profiles/{profileId}/calm-sessions/latest` | Obtener la última sesión del perfil. |
+| `GET`, `POST` | `/profiles/{profileId}/favorite-resources` | Listar o agregar recursos favoritos. |
+| `DELETE` | `/profiles/{profileId}/favorite-resources/{resourceId}` | Quitar un recurso de los favoritos. |
+
+**Comunicación Asistida (CAA).** Todas las rutas cuelgan de `/profiles/{profileId}/communication-board`.
+
+| Verbo | Ruta | Descripción |
+|---|---|---|
+| `GET` | (raíz) | Obtener el tablero; si no existe, se crea con los pictogramas básicos. |
+| `GET` | `/quick-access` | Listar los pictogramas favoritos. |
+| `POST` | `/categories` | Crear una categoría personalizada. |
+| `POST` | `/pictograms` | Agregar un pictograma personalizado a una categoría. |
+| `PUT`, `DELETE` | `/pictograms/{pictogramId}/favorite` | Marcar o quitar un pictograma de los favoritos. |
+| `PUT` | `/pictograms/{pictogramId}/category` | Mover un pictograma a otra categoría. |
+| `POST` | `/pictograms/{pictogramId}/selections` | Seleccionar un pictograma para comunicar una necesidad. |
+| `GET` | `/selections` | Consultar el historial de selecciones, con filtro opcional por estado. |
+| `PATCH` | `/selections/{selectionId}/delivered` | Marcar la selección como entregada al cuidador. |
+| `PATCH` | `/selections/{selectionId}/understood` | Confirmar que el acompañante entendió el mensaje. |
+| `PATCH` | `/selections/{selectionId}/not-understood` | Indicar que no se entendió; genera una solicitud de ayuda. |
+| `POST`, `GET` | `/mood-check-ins` | Registrar el estado de ánimo o consultar su historial. |
+
+**Red de Apoyo y Seguimiento.**
+
+| Verbo | Ruta | Descripción |
+|---|---|---|
+| `POST`, `GET` | `/episode-records` | Registrar un episodio o listar los registros. |
+| `GET` | `/episode-records/{episodeRecordId}` | Obtener un registro de episodio. |
+| `GET` | `/episode-records/latest` | Obtener el último registro. |
+| `GET` | `/episode-records/recent` | Listar los registros recientes. |
+| `GET` | `/episode-records/filter` | Filtrar los registros por fechas. |
+| `PUT` | `/episode-records/{episodeRecordId}/notes` | Agregar notas a un episodio. |
+| `POST`, `GET` | `/episode-reports` | Generar un reporte de episodios o listar los reportes. |
+| `GET` | `/episode-reports/{episodeReportId}` | Obtener un reporte. |
+| `PUT` | `/episode-reports/{episodeReportId}/share` | Compartir el reporte. |
+| `POST`, `GET` | `/help-requests` | Enviar una solicitud de ayuda o listar las solicitudes. |
+| `GET` | `/help-requests/{helpRequestId}` | Obtener una solicitud. |
+| `PUT` | `/help-requests/{helpRequestId}/confirmation` | Confirmar la recepción de la solicitud. |
+| `PUT` | `/help-requests/{helpRequestId}/cancellation` | Cancelar la solicitud. |
+| `POST`, `GET` | `/recommendations` | Crear una recomendación o listarlas. |
+| `GET` | `/recommendations/{recommendationId}` | Obtener una recomendación. |
+| `GET` | `/recommendations/active` | Listar las recomendaciones activas. |
+| `PUT` | `/recommendations/{recommendationId}/effective` | Registrar la efectividad de la recomendación. |
+
+**Pendiente de resolver al integrar.** Los contextos de Gestión de Crisis y de Red de Apoyo y Seguimiento exponen rutas `GET /recommendations/{recommendationId}` y clases `RecommendationsController` con el mismo nombre, por lo que al integrarlos en `develop` hay que unificar la ruta y el nombre del bean (tarea T-67).
+
+**[POR COMPLETAR]** Capturas de Swagger UI con cada Bounded Context expandido (`images/Chapter-V/sprint-3-swagger-*.png`).
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+> **Borrador AV2.** Los Web Services todavía no están desplegados. Esta sección describe el procedimiento previsto en la sección 5.1.4 y se completa con la plataforma elegida, las URL y las capturas.
+
+En el Sprint 3 se despliegan los Web Services y se actualizan la Frontend Web Application y el Landing Page. Los productos y plataformas son:
+
+| Producto | Plataforma | URL |
+|---|---|---|
+| Landing Page | GitHub Pages | https://tinyurl.com/27e6ugke |
+| Frontend Web Application | Firebase Hosting | https://tinyurl.com/2xu8w6kb |
+| RESTful Web Services (Spring Boot) | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| Base de datos MySQL | **[POR COMPLETAR]** | No se publica |
+| Swagger UI | Los Web Services desplegados | **[POR COMPLETAR]** |
+
+Los pasos previstos para los Web Services son:
+
+1. Integrar las cinco ramas en `develop` y ejecutar las pruebas con `./mvnw test`.
+2. Generar el archivo ejecutable con `./mvnw package`.
+3. Crear la base de datos MySQL del entorno de producción y registrar `DB_URL`, `DB_USERNAME` y `DB_PASSWORD` como variables de entorno de la plataforma, sin guardarlas en el repositorio.
+4. Publicar la aplicación en la plataforma elegida a partir de la rama estable `master`.
+5. Verificar `GET /api/v1/action-guides/active` y `GET /api/v1/calming-resources` en la URL pública, y abrir Swagger UI.
+6. Actualizar la URL de los servicios en `environment.ts` de la Frontend Web Application, reemplazar la API simulada y volver a publicarla con `firebase deploy`.
+7. Actualizar los enlaces del Landing Page hacia la aplicación y publicar la nueva versión en GitHub Pages.
+
+**[POR COMPLETAR]** Capturas de la plataforma de despliegue de los Web Services y de la base de datos (`images/Chapter-V/sprint-3-deploy-services.png`).
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+La colaboración del Sprint 3 se evidencia con el historial de Git de los repositorios del proyecto. Las cifras se obtuvieron de las ramas remotas al 13 de noviembre de 2026, sin contar merges.
+
+##### Repositorio de los Web Services (Nubi.Platform.Backend)
+
+Los cinco integrantes registran commits en el repositorio, cada uno en la rama del Bounded Context que lidera. La rama de Gestión de Crisis acumula 13 de sus 32 commits el 12 de noviembre y la de Red de Apoyo y Seguimiento registra sus 19 commits el 13 de noviembre.
+
+| Cuenta de GitHub | Integrante | Rama | Commits | Líneas | Días con commits |
+|---|---|---|---|---|---|
+| nahiryn8 | Ruiz Villegas, Yngrid Nahir | `profile-personalization` | 23 | +4868 / −2 | 9 al 11 de noviembre |
+| u20241a195-cmd | Diaz Yurivilca, Sofia | `feature/crisis-management` | 32 | +4366 / −1 | 5 al 12 de noviembre |
+| joanfpp2-ai | Payano Puchuri, Joan Fabricio | `feature/self-regulation` | 14 | +2755 / −0 | 10 y 11 de noviembre |
+| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | `feature/assistive-comunication` y `feature/self-regulation` | 24 | +2045 / −2 | 4 y 5 al 9 de noviembre |
+| Dan-trax | Diaz Caruzo, Edgard Daniel | `feature/support-network` | 19 | +1824 / −0 | 13 de noviembre |
+| **Total** | | | **112** | | |
+
+Además, Leonardo creó el commit inicial del repositorio. El commit del 4 de noviembre que alinea la versión de Java y la configuración de la base de datos también está en `master` y figura en la rama de Autorregulación.
+
+**[POR COMPLETAR]** Capturas de GitHub Insights (Contributors, Commits y Pulse) del repositorio `Nubi.Platform.Backend` (`images/Chapter-V/sprint-3-backend-contributors.png`, `sprint-3-backend-commits.png` y `sprint-3-backend-pulse.png`).
+
+##### Repositorio de la Frontend Web Application y del Landing Page
+
+Al 13 de noviembre de 2026 los repositorios frontend: https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend y landingpage: https://github.com/ASI0729-2620-7793-Open-Source/landing-page no registran commits posteriores al cierre del Sprint 2, porque su trabajo depende de los Web Services (tareas T-70 a T-77). Este apartado se completa cuando se integren esos cambios.
+
+##### Repositorio del informe (Macally)
+
+Desde el cierre del Sprint 2 el informe recibió 11 commits sin merges: las correcciones de alineación con el segmento de personas autistas (28 de octubre al 2 de noviembre) y la corrección de la entrega AV2 (11 de noviembre). Los commits del borrador AV2 (Sprint 3, entrevistas de validación, video, conclusiones y anexos) se agregan a esta tabla al integrarlos.
+
+| Cuenta de GitHub | Integrante | Commits | Aporte |
+|---|---|---|---|
+| joanfpp2-ai | Payano Puchuri, Joan Fabricio | 7 | Alineación del Capítulo IV con el segmento de personas autistas |
+| Deiko-138 / LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | 2 | Alineación del Capítulo II y corrección de la entrega |
+| nahiryn8 | Ruiz Villegas, Yngrid Nahir | 1 | Herramientas y URL de despliegue del Capítulo V |
+| u20241a195-cmd | Diaz Yurivilca, Sofia | 1 | Alineación del Capítulo I |
+| Dan-trax | Diaz Caruzo, Edgard Daniel | 0 | Sin commits en este período |
+
+Como oportunidades de mejora del Sprint 3, la integración de las ramas del backend en `develop` todavía está pendiente y la rama de Red de Apoyo y Seguimiento concentró todos sus commits en un solo día, lo mismo que ocurrió en el Sprint 2. Para la versión final el equipo integra cada rama al completarse y reparte los commits del informe entre los cinco integrantes.
+
+## 5.3. Validation Interviews
+
+> **Borrador AV2.** El diseño de las entrevistas (5.3.1) está completo. El registro (5.3.2) es una plantilla: todavía no se realizan las entrevistas de validación, por lo que ningún dato de personas, video o resultado está escrito. Las evaluaciones (5.3.3) incluyen el formato y las preguntas de cada heurística para llenarlas con los resultados. **[POR CONFIRMAR]** el formato con el Anexo D del enunciado vigente, que no estaba disponible al redactar este borrador.
+
+En esta sección el equipo diseña, registra y evalúa las entrevistas de validación. A diferencia de las entrevistas de needfinding del capítulo II, en las de validación los usuarios de los dos segmentos objetivo interactúan con el Landing Page y con la Frontend Web Application mientras el equipo observa sus dificultades. Los resultados se contrastan con las hipótesis y los criterios de éxito del Lean UX Canvas (sección 1.2.2.4) y alimentan las Conclusiones.
+
+### 5.3.1. Diseño de Entrevistas
+
+Antes de iniciar cada sesión de validación se brinda un saludo cordial y una breve presentación del entrevistador, explicando que el propósito de la sesión es evaluar la facilidad de uso y la utilidad del producto Nubi, y no evaluar al participante. Se aclara que la información será utilizada únicamente con fines académicos y se mantendrá en estricta confidencialidad. Como primer paso se solicita al participante su nombre completo, edad y distrito de residencia para fines de registro. Luego se le invita a interactuar libremente con el Landing Page y la Frontend Web Application, ejecutando las tareas propuestas y expresando en voz alta sus impresiones (técnica de thinking aloud), destacando que no existen respuestas correctas o incorrectas.
+
+Como las sesiones del Segmento 1 involucran a niños y adolescentes, el equipo obtiene el consentimiento informado de su padre o tutor antes de grabar, que acompaña al participante durante la sesión. Las sesiones son individuales, duran entre 15 y 25 minutos y se graban en video (mp4) con autorización.
+
+El proceso de validación para cada segmento se compone de tres momentos: (1) la exploración del Landing Page, (2) la ejecución de tareas guiadas sobre la Frontend Web Application siguiendo los User Flows correspondientes y (3) un cuestionario de validación de diez preguntas. Se realizan entre tres y cinco entrevistas por segmento objetivo. Los segmentos son los definidos en la sección 1.3. Como las entrevistas de needfinding (capítulo II) incluyeron adolescentes con TDAH o TDA, cuidadores que eran hermanos mayores y ninguna persona menor de 15 años, la selección de participantes de la validación corrige esos vacíos, como se detalla en cada segmento. A continuación se detallan los elementos a incluir en la sesión de validación para cada segmento objetivo.
+
+**Preguntas introductorias (ambos segmentos)**
+
+1. ¿Cuál es su nombre y apellidos?
+2. ¿Cuántos años tiene?
+3. ¿En qué distrito vive?
+
+#### Segmento objetivo 1: Personas autistas
+
+**Perfil de los participantes** (sección 1.3): niños y adolescentes con trastorno del espectro autista (TEA) de 6 a 17 años, de ambos géneros, que cursan primaria o secundaria, residen en Lima Metropolitana y tienen acceso a un teléfono móvil. Se incluyen solo personas con diagnóstico de autismo, y se procura que al menos una entrevista sea con un niño de 6 a 12 años. Durante la sesión los acompaña un padre o tutor.
+
+**Elementos a validar:** Landing Page y Frontend Web Application (módulos de Autorregulación y Comunicación Asistida).
+
+**User Flows a validar** (sección 4.4.4, User Flow del usuario autista):
+
+- User Flow 1 (UF-1): Autorregulación. Abrir la galería de estímulos, filtrar por tipo, elegir un estímulo, ajustar la intensidad, activar el modo de baja estimulación, usar el temporizador de calma (3, 5 o 10 minutos) y terminar la sesión.
+- User Flow 2 (UF-2): Comunicación asistida. Abrir el tablero, filtrar por categoría, seleccionar un pictograma y confirmar el envío.
+
+**Tareas asignadas:**
+
+1. Explorar el Landing Page e identificar qué ofrece Nubi y cómo se activa la ayuda en una crisis.
+2. Elegir un estímulo visual o auditivo para calmarse y abrirlo en la sesión.
+3. Cambiar la intensidad del estímulo y activar el modo de baja estimulación.
+4. Iniciar el temporizador de calma, pausarlo y terminar la sesión.
+5. Usar el tablero de pictogramas para comunicar una necesidad, por ejemplo pedir agua.
+6. Marcar un pictograma como favorito y filtrar el tablero por categoría.
+
+**Preguntas de validación:**
+
+1. Después de explorar el Landing Page, ¿entendiste para qué sirve Nubi?
+2. Al elegir algo para calmarte, ¿te resultó fácil encontrar y abrir el estímulo que querías?
+3. ¿Los colores, las animaciones y los sonidos te parecieron tranquilos o te molestaron?
+4. Al cambiar la intensidad o activar la baja estimulación, ¿sentiste que la pantalla se adaptaba a lo que necesitas?
+5. ¿El temporizador te ayudó a saber cuánto tiempo llevabas calmándote sin ponerte nervioso/a?
+6. Al usar el tablero de pictogramas, ¿encontraste fácilmente lo que querías decir y se entendieron los dibujos?
+7. Cuando enviaste lo que querías decir, ¿supiste que el mensaje se había enviado?
+8. Durante el uso de la aplicación, ¿encontraste alguna pantalla, botón o paso que te resultara confuso o difícil?
+9. En una escala del 1 al 5, ¿qué tan probable es que uses Nubi cuando te sientas mal? ¿Por qué?
+10. ¿Qué cambiarías, quitarías o agregarías para que Nubi se ajuste mejor a lo que necesitas?
+
+#### Segmento objetivo 2: Padres de niños y adolescentes con autismo
+
+**Perfil de los participantes** (sección 1.3): padres o madres de niños y adolescentes con autismo, de 18 a 60 años, de ambos géneros, que residen en Lima Metropolitana, y usan teléfono inteligente. Como en el needfinding los cuidadores entrevistados fueron hermanos mayores y una madre de una adolescente con TDAH, la validación incluye solo padres o madres de niños o adolescentes con autismo.
+
+**Elementos a validar:** Landing Page y Frontend Web Application (módulos de Perfil y Personalización, Gestión de Crisis, Comunicación Asistida y Red de Apoyo y Seguimiento).
+
+**User Flows a validar** (sección 4.4.4, User Flow del cuidador):
+
+- User Flow 3 (UF-3): Perfil y Personalización. Crear el perfil del niño o adolescente (datos básicos, diagnóstico y sensibilidades) y cambiar de perfil.
+- User Flow 4 (UF-4): Modo SOS. Activar el Modo SOS, seguir la guía paso a paso, completar u omitir pasos y revisar el resumen del episodio.
+- User Flow 5 (UF-5): Comunicación asistida. Configurar el tablero de pictogramas: marcar favoritos, filtrar por categoría y reordenar.
+- User Flow 6 (UF-6): Red de Apoyo y Seguimiento. Ver la última necesidad comunicada, confirmar su recepción y revisar la actividad reciente.
+- User Flow 7 (UF-7): Cuenta y plan. Registrarse, iniciar sesión y comparar los planes.
+
+**Tareas asignadas:**
+
+1. Explorar el Landing Page e identificar qué ofrece Nubi y los planes disponibles.
+2. Crear una cuenta e iniciar sesión.
+3. Crear el perfil de un niño o adolescente y registrar al menos una sensibilidad sensorial.
+4. Activar el Modo SOS desde cualquier pantalla de la aplicación.
+5. Seguir la guía paso a paso, completando y omitiendo pasos, y finalizar el episodio.
+6. Revisar el resumen del episodio.
+7. Configurar el tablero de pictogramas: marcar favoritos, filtrar por categoría y reordenar.
+8. Ver la última necesidad que comunicó el usuario y confirmar su recepción.
+9. Comparar el plan Standard con el plan Premium.
+
+**Preguntas de validación:**
+
+1. Después de explorar el Landing Page, ¿quedó claro qué hace Nubi y cómo le ayudaría a acompañar a su hijo o hija en una crisis?
+2. Al crear el perfil y registrar las sensibilidades, ¿le resultó sencillo y sintió que los datos pedidos eran los necesarios?
+3. Al activar el Modo SOS, ¿le fue fácil encontrar el botón y cree que lo ubicaría rápido en una crisis real?
+4. Al seguir la guía paso a paso, ¿le resultó claro que se muestre un paso a la vez, le pareció adecuada la cantidad de pasos y le da más confianza que se adapte a las sensibilidades del perfil?
+5. Al finalizar el episodio, ¿el resumen le resultó útil para entender lo ocurrido y registrarlo sin tener que anotarlo a mano?
+6. Al configurar el tablero de pictogramas, ¿cree que su hijo o hija podría usarlo para comunicarse durante una crisis?
+7. Al ver la última necesidad que comunicó su hijo o hija y confirmar su recepción, ¿le resultó claro lo que ocurre después de confirmar?
+8. ¿Confiaría en usar Nubi durante un momento de alta tensión? ¿Qué le daría más seguridad (por ejemplo, el respaldo de un profesional de la salud)?
+9. En una escala del 1 al 5, ¿qué tan probable es que utilice Nubi con su hijo o hija? ¿Por qué? ¿Pagaría por el plan Premium?
+10. Durante el uso de la aplicación, ¿encontró alguna pantalla, botón o paso confuso o difícil? ¿Qué funcionalidad agregaría, quitaría o mejoraría para que Nubi se ajuste mejor a su forma de acompañar a su hijo o hija?
+
+**Registro de la sesión.** Por cada tarea se anota si el participante la completó solo, con ayuda o no la completó, el tiempo, los errores y sus comentarios textuales. Al terminar cada User Flow, el participante califica su facilidad de 1 (muy difícil) a 5 (muy fácil). Estos datos alimentan la tabla de resultados por flujo de la sección 5.3.2 y las métricas del Lean UX Canvas, como el porcentaje de cuidadores que completa la guía del Modo SOS (meta de 80 %).
+
+### 5.3.2. Registro de Entrevistas
+
+**Validation Interviews Link:** <mark>[POR COMPLETAR]</mark> (video consolidado en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-validation-interviews-sprint-3`)
+
+A continuación se registran las entrevistas de validación realizadas por segmento. Para cada entrevista se consigna el nombre y apellidos del participante, su edad, su distrito de residencia, un screenshot de un cuadro del video, el enlace al video alojado en Microsoft Stream, indicando el timing donde inicia la entrevista y su duración, y un resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas. De acuerdo con lo planificado por el equipo, se realizan entre tres y cinco entrevistas por segmento. <mark>[POR COMPLETAR]</mark> Indicar cuántas entrevistas se realizaron en cada segmento. Si se realizan más de tres, se copia la tarjeta de la última entrevista y se cambia el número y el nombre de la imagen.
+
+**Segmento 1: Personas autistas**
+
+- Primera entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #00373E; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #00373E; padding: 12px 16px 16px;">
+    <img src="images/Chapter-V/validacion-s1-e1.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista:</strong>
+        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
+
+- Segunda entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #00373E; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #00373E; padding: 12px 16px 16px;">
+    <img src="images/Chapter-V/validacion-s1-e2.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista:</strong>
+        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
+
+- Tercera entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #00373E; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #00373E; padding: 12px 16px 16px;">
+    <img src="images/Chapter-V/validacion-s1-e3.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista:</strong>
+        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
+
+**Segmento 2: Padres de niños y adolescentes con autismo**
+
+- Primera entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #00373E; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #00373E; padding: 12px 16px 16px;">
+    <img src="images/Chapter-V/validacion-s2-e1.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista:</strong>
+        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page y los planes; (2) los User Flows UF-3 (Perfil y Personalización), UF-4 (Modo SOS), UF-5 (Comunicación asistida), UF-6 (Red de Apoyo y Seguimiento) y UF-7 (Cuenta y plan), con énfasis en si completó la guía del Modo SOS y qué le pareció la cantidad de pasos; (3) cuánta confianza le da usar Nubi durante una crisis y qué lo respaldaría; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5), si pagaría por el plan Premium y sus sugerencias de mejora.
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
+
+- Segunda entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #00373E; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #00373E; padding: 12px 16px 16px;">
+    <img src="images/Chapter-V/validacion-s2-e2.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista:</strong>
+        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page y los planes; (2) los User Flows UF-3 (Perfil y Personalización), UF-4 (Modo SOS), UF-5 (Comunicación asistida), UF-6 (Red de Apoyo y Seguimiento) y UF-7 (Cuenta y plan), con énfasis en si completó la guía del Modo SOS y qué le pareció la cantidad de pasos; (3) cuánta confianza le da usar Nubi durante una crisis y qué lo respaldaría; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5), si pagaría por el plan Premium y sus sugerencias de mejora.
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
+
+- Tercera entrevista:
+
+<div align="center">
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 680px; margin: 24px auto; border: 1.5px solid #b0bec5; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+
+  <!-- Encabezado -->
+  <div style="background-color: #00373E; color: white; padding: 10px 16px; font-weight: 700; font-size: 1.1em; letter-spacing: 0.05em;">
+  Entrevista de Validación
+  </div>
+
+  <!-- Imagen de la captura de pantalla -->
+  <div style="background-color: #00373E; padding: 12px 16px 16px;">
+    <img src="images/Chapter-V/validacion-s2-e3.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+  </div>
+
+  <!-- Datos en dos columnas -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
+        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Link -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
+        <strong>Link de la entrevista:</strong>
+        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+      </td>
+    </tr>
+  </table>
+
+  <!-- Descripción -->
+  <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
+    <tr>
+      <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
+        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page y los planes; (2) los User Flows UF-3 (Perfil y Personalización), UF-4 (Modo SOS), UF-5 (Comunicación asistida), UF-6 (Red de Apoyo y Seguimiento) y UF-7 (Cuenta y plan), con énfasis en si completó la guía del Modo SOS y qué le pareció la cantidad de pasos; (3) cuánta confianza le da usar Nubi durante una crisis y qué lo respaldaría; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5), si pagaría por el plan Premium y sus sugerencias de mejora.
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</div>
+
+---
+
+#### Resultados por flujo
+
+Al terminar las entrevistas se completa esta tabla con el total de participantes de cada segmento que completaron cada flujo.
+
+| Flujo | Segmento | Completó solo | Completó con ayuda | No completó | Facilidad promedio (1 a 5) |
+|---|---|---|---|---|---|
+| UF-1 Autorregulación | 1 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| UF-2 Comunicación asistida | 1 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| UF-3 Perfil y Personalización | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| UF-4 Modo SOS | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| UF-5 Comunicación asistida | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| UF-6 Red de Apoyo y Seguimiento | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| UF-7 Cuenta y plan | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+
+### 5.3.3. Evaluaciones según heurísticas
+
+La evaluación toma las observaciones de cada entrevista y las clasifica según tres grupos de heurísticas: usabilidad, arquitectura de información y diseño inclusivo. Para cada entrevista se califica el cumplimiento de cada heurística de 1 (no se cumple) a 5 (se cumple plenamente) y se anota la evidencia que lo respalda. **[POR CONFIRMAR]** con el formato del Anexo D.
+
+#### Formato de evaluación por entrevista
+
+| Dato | Detalle |
+|---|---|
+| Entrevista | **[POR COMPLETAR]** (por ejemplo, Segmento 2, Entrevista #1) |
+| Producto evaluado | Landing Page / Frontend Web Application |
+| Evaluador | **[POR COMPLETAR]** |
+| Fecha | **[POR COMPLETAR]** |
+
+**A. Heurísticas de usabilidad (Nielsen)**
+
+| # | Heurística | Qué se observa en Nubi | Cumplimiento (1 a 5) | Evidencia y observaciones | Mejora propuesta |
+|---|---|---|---|---|---|
+| H1 | Visibilidad del estado del sistema | El usuario sabe en qué paso de la guía del Modo SOS va y si el envío de una necesidad o una solicitud se confirmó. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H2 | Correspondencia entre el sistema y el mundo real | Los textos y pictogramas usan el lenguaje del usuario, sin términos clínicos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H3 | Control y libertad del usuario | Puede cancelar una solicitud de ayuda, salir del Modo SOS y deshacer un cambio del perfil. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H4 | Consistencia y estándares | Los botones, colores y etiquetas se comportan igual en todos los módulos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H5 | Prevención de errores | Omitir un paso obligatorio del Modo SOS exige confirmación y el formulario del perfil valida los datos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H6 | Reconocer en lugar de recordar | Las opciones y pictogramas están a la vista, sin obligar a recordar pasos previos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H7 | Flexibilidad y eficiencia de uso | El botón SOS es accesible desde cualquier pantalla y los favoritos aceleran las tareas repetidas. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H8 | Diseño estético y minimalista | Cada pantalla muestra solo lo necesario, sin saturar durante una crisis. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H9 | Ayuda para reconocer, diagnosticar y recuperarse de errores | Los mensajes de error explican qué ocurrió y cómo resolverlo. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H10 | Ayuda y documentación | El usuario encuentra explicaciones breves, preguntas frecuentes o textos de apoyo cuando los necesita. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+
+**B. Heurísticas de arquitectura de información**
+
+Se evalúan los sistemas definidos en la sección 4.2.
+
+| # | Heurística | Qué se observa en Nubi | Cumplimiento (1 a 5) | Evidencia y observaciones | Mejora propuesta |
+|---|---|---|---|---|---|
+| AI1 | Sistema de organización | Los contenidos se agrupan por los cinco Bounded Contexts y el usuario entiende dónde está cada herramienta. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| AI2 | Sistema de etiquetado | Las etiquetas del menú y de los botones son comprensibles y coinciden con lo que el usuario espera. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| AI3 | Sistema de navegación | El usuario llega a cada módulo en pocos pasos y puede volver al inicio. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| AI4 | Sistema de búsqueda y descubrimiento | El usuario encuentra sin buscar el Modo SOS, los planes y las preguntas frecuentes. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| AI5 | Jerarquía de contenido | Lo más importante (Modo SOS, tablero) destaca sobre lo secundario. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+
+**C. Heurísticas de diseño inclusivo**
+
+Se evalúan los criterios de accesibilidad y de baja carga sensorial de las Style Guidelines (sección 4.1).
+
+| # | Heurística | Qué se observa en Nubi | Cumplimiento (1 a 5) | Evidencia y observaciones | Mejora propuesta |
+|---|---|---|---|---|---|
+| IN1 | Baja carga sensorial | Los colores, animaciones y sonidos no abruman; el modo de baja estimulación reduce los estímulos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| IN2 | Previsibilidad | Las pantallas se comportan de forma predecible y avisan antes de cambiar. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| IN3 | Comunicación sin depender del habla | El usuario puede expresarse con pictogramas e imágenes cuando no puede hablar. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| IN4 | Lenguaje claro | Las instrucciones son cortas, concretas y sin metáforas. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| IN5 | Contraste, tamaño y foco | Los textos son legibles, los controles táctiles son grandes y el foco del teclado es visible. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| IN6 | Idioma y personalización | El usuario puede cambiar de idioma y ajustar la experiencia a sus sensibilidades. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+
+#### Resumen consolidado
+
+Al evaluar todas las entrevistas se completa la tabla con los problemas encontrados, ordenados por severidad (1 cosmético, 2 menor, 3 mayor, 4 crítico).
+
+| # | Problema encontrado | Heurística | Entrevistas donde ocurrió | Severidad (1 a 4) | Acción | Responsable |
+|---|---|---|---|---|---|---|
+| 1 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+
+## 5.4. Video About-the-Product
+
+> **Borrador AV2.** Los datos del video y el testimonio dependen de las entrevistas de validación, que todavía no se realizan. El Landing Page ya incrusta una primera versión del video (URL de YouTube indicada más abajo).
+
+El video About-the-Product presenta Nubi a los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y a los cuidadores y usuarios de la Frontend Web Application, que quieren saber qué pueden hacer con ella. El tono es el del producto: cercano, calmado, con lenguaje claro y no clínico, y sin prometer reemplazar la atención de un profesional de la salud.
+
+#### Estructura propuesta
+
+| Escena | Contenido | Duración aproximada |
+|---|---|---|
+| 1. Problema | Una crisis sensorial y la dificultad de actuar sin herramientas inmediatas. | 15 s |
+| 2. Propuesta | Qué es Nubi y para quién: personas autistas y sus padres. | 15 s |
+| 3. Modo SOS | Activación con un solo toque y guía paso a paso adaptada al perfil. | 25 s |
+| 4. Autorregulación y CAA | Elegir un estímulo, ajustar la intensidad, usar el tablero de pictogramas. | 25 s |
+| 5. Red de apoyo | Solicitud de ayuda, aviso al cuidador y seguimiento de episodios. | 15 s |
+| 6. Testimonio | Opinión positiva de un participante de las entrevistas de validación de cada segmento. | 30 s |
+| 7. Planes y cierre | Planes Standard, Premium e Instituciones y llamado a crear la cuenta. | 15 s |
+
+Duración total estimada: 2 minutos y 20 segundos, dentro del rango de 1 a 3 minutos. **[POR CONFIRMAR]** el rango con el enunciado vigente.
+
+#### Datos del video
+
+| Dato | Detalle |
+|---|---|
+| Título | `upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3` |
+| Formato | mp4 |
+| Duración | **[POR COMPLETAR]** |
+| URL en Microsoft Stream | **[POR COMPLETAR]** |
+| URL en YouTube (incrustada en el Landing Page) | https://www.youtube.com/embed/utaBaLFhlOQ |
+| Testimonio incluido | **[POR COMPLETAR]** Nombre del participante, segmento y entrevista de la sección 5.3.2 |
+| Responsable | Ruiz Villegas, Yngrid Nahir **[POR CONFIRMAR]** |
+
+**[POR COMPLETAR]** Captura de pantalla del video (`images/Chapter-V/about-the-product.png`).
