@@ -34,6 +34,18 @@ Infobae. (2024, 2 de abril). *Más de 77.000 casos de autismo atendidos en Perú
 
 Instituto Nacional de Estadística e Informática. (2025). *Estadísticas de las tecnologías de información y comunicación en los hogares: Abril-mayo-junio 2025* [Informe técnico]. https://www.inei.gob.pe/media/MenuRecursivo/boletines/informetecnico_tics_iit25.pdf
 
+Microsoft. (2016). *Inclusive design toolkit*. https://inclusive.microsoft.design/
+
+Nielsen, J. (1994a). *10 usability heuristics for user interface design*. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/
+
+Nielsen, J. (1994b). *Severity ratings for usability problems*. Nielsen Norman Group. https://www.nngroup.com/articles/how-to-rate-the-severity-of-usability-problems/
+
+Nottingham, M., Wilde, E., y Dalal, S. (2023). *Problem details for HTTP APIs* (RFC 9457). Internet Engineering Task Force. https://www.rfc-editor.org/rfc/rfc9457
+
+OpenAPI Initiative. (2021). *OpenAPI Specification v3.1.0*. https://spec.openapis.org/oas/v3.1.0
+
+Oracle. (s. f.). *MySQL 8.0 reference manual*. https://dev.mysql.com/doc/refman/8.0/en/
+
 Organización Mundial de la Salud. (2025). *Autismo* [Ficha descriptiva]. https://www.who.int/es/news-room/fact-sheets/detail/autism-spectrum-disorders
 
 Panamericana Televisión. (2025, 13 de julio). *Más de 25 mil casos de TDAH fueron atendidos por el Minsa de enero a junio del 2025*. https://panamericana.pe/nacionales/448079-25-mil-casos-tdah-atendidos-minsa-enero-junio-2025
@@ -42,9 +54,15 @@ Preston-Werner, T. (s. f.). *Semantic Versioning 2.0.0*. https://semver.org/
 
 Progressa Lean. (s. f.). *5W+2H: Técnica de análisis de problemas*. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
 
+Rosenfeld, L., Morville, P., y Arango, J. (2015). *Information architecture: For the web and beyond* (4.ª ed.). O'Reilly Media.
+
 Salari, N., Ghasemi, H., Abdoli, N., Rahmani, A., Shiri, M. H., Hashemian, A. H., Akbari, H., y Mohammadi, M. (2023). The global prevalence of ADHD in children and adolescents: A systematic review and meta-analysis. *Italian Journal of Pediatrics, 49*, Artículo 48. https://doi.org/10.1186/s13052-023-01456-1
 
 Shaw, K. A., Williams, S., Patrick, M. E., Valencia-Prado, M., Durkin, M. S., Howerton, E. M., Ladd-Acosta, C. M., Pas, E. T., Bakian, A. V., Bartholomew, P., Nieves-Muñoz, N., Sidwell, K., Alford, A., Bilder, D. A., DiRienzo, M., Fitzgerald, R. T., Furnier, S. M., Hudson, A. E., Pokoski, O. M., . . . Maenner, M. J. (2025). Prevalence and early identification of autism spectrum disorder among children aged 4 and 8 years — Autism and Developmental Disabilities Monitoring Network, 16 sites, United States, 2022. *MMWR Surveillance Summaries, 74*(2), 1–22. https://doi.org/10.15585/mmwr.ss7402a1
+
+Spring. (s. f.). *Spring Boot reference documentation*. https://docs.spring.io/spring-boot/
+
+springdoc. (s. f.). *springdoc-openapi*. https://springdoc.org/
 
 TVPerú. (2024, 2 de abril). *Día Mundial de Concienciación del Autismo: Conoce la cifra de personas con TEA en el Perú*. https://www.tvperu.gob.pe/novedades/tvperu/dia-mundial-de-concienciacion-del-autismo-conoce-la-cifra-de-personas-con-tea-en-el-peru
 
