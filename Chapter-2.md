@@ -84,7 +84,7 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 
 ---
 
-#### B. Guía de Entrevista — Segmento 2: Padres con estilo de crianza autoritario
+#### B. Guía de Entrevista — Segmento 2: Padres de niños y adolescentes con autismo
 
 1. ¿Cuál es tu ocupación actual?
 2. ¿Cuál es tu relación o parentesco con el niño o adolescente que acompañas?
@@ -164,9 +164,9 @@ Estas preguntas se aplican a todos los participantes antes de iniciar la secció
 | **Duración** | 4:31                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Resumen** | Owen es un joven de 17 años que cursa sus estudios superiores en un instituto. Diagnosticado con Trastorno por Déficit de Atención e Hiperactividad (TDAH), presenta dificultades en el procesamiento de información o instrucciones veloces en entornos saturados de personas, requiriendo explicaciones reiteradas para asegurar la comprensión. Utiliza el teléfono móvil de forma diaria como dispositivo principal, complementado con la computadora para consumir contenido en YouTube, dibujar, escuchar música y jugar títulos como Minecraft y Free Fire, además de comunicarse por WhatsApp, TikTok e Instagram. Desde una perspectiva subjetiva, señala que los ruidos estruendosos —como los provenientes del transporte público— y el murmullo de aglomeraciones humanas le generan irritación y abrumamiento. Sus hábitos de autorregulación consisten en buscar aislamiento en zonas silenciosas, ponerse audífonos para escuchar música o interactuar con el celular. Cuando experimenta crisis o bloqueos que le impiden expresarse verbalmente con personas de su entorno cercano, envía mensajes de texto a su madre para solicitar asistencia. En función de sus requisitos para la propuesta de valor del proyecto, plantea una herramienta que incluya botones interactivos de emergencia, un lienzo digital o blog de notas de gran tamaño que le permita canalizar la tensión mediante garabatos o trazos libres, y una funcionalidad combinada de música favorita con imágenes relajantes para restaurar la calma. |
 
-### Segmento 2 - Padres con estilo de crianza autoritario
+### Segmento 2 - Padres de niños y adolescentes con autismo
 
-> **Nota.** Mateo y Johan son hermanos mayores y cuidadores de niños y adolescentes con TEA Nivel 1; Ingrid es madre de una adolescente con TDAH y describe su estilo de crianza como equilibrado. Ninguno corresponde aún al perfil de padres con estilo de crianza autoritario definido en el Capítulo 1, por lo que este perfil se validará con padres en las entrevistas de validación (sección 5.3).
+> **Nota.** Mateo y Johan son hermanos mayores y cuidadores de niños y adolescentes con TEA Nivel 1; Ingrid es madre de una adolescente con TDAH. Ninguno corresponde aún al perfil de padres de niños y adolescentes con autismo definido en el Capítulo 1, por lo que este perfil se validará con padres en las entrevistas de validación (sección 5.3).
 
 | **Entrevista #1** | |
 | :--- | :--- |
@@ -305,7 +305,7 @@ Tres funcionalidades alcanzan validación unánime en el segmento (100%): un mec
 Los niños y adolescentes entrevistados comparten un patrón consistente frente a la sobrecarga sensorial: aislamiento físico, evitación de la comunicación verbal y uso del celular como herramienta de autorregulación. La unanimidad en la demanda de mecanismos visuales de expresión rápida, alertas automáticas a contactos de confianza y contenido calmante (música/sonidos) confirma que estas funcionalidades deben constituir el núcleo de la solución digital, mientras que la respiración guiada y una interfaz visualmente simple representan requisitos complementarios ampliamente compartidos por el segmento.
 
 
-### Segmento objetivo #2: Padres con estilo de crianza autoritario
+### Segmento objetivo #2: Padres de niños y adolescentes con autismo
 
 **Hallazgos**
 
@@ -412,9 +412,9 @@ La finalidad de la elaboración de este user persona es representar a niños y a
 </p>
 Nota. User Persona correspondiente a Diana (Idealist), representando el arquetipo del segmento de niños y adolescentes autistas, enfocado en sus necesidades de autorregulación emocional y comunicación alternativa.
 
-### Segmento objetivo #2: Padres con estilo de crianza autoritario
+### Segmento objetivo #2: Padres de niños y adolescentes con autismo
 
-La finalidad de la elaboración de este user persona es representar a los padres con estilo de crianza autoritario que asumen el acompañamiento cotidiano de un hijo autista, buscando pautas claras y soporte estructurado para gestionar episodios de crisis con serenidad.
+La finalidad de la elaboración de este user persona es representar a los padres de niños y adolescentes con autismo que asumen el acompañamiento cotidiano de un hijo autista, buscando pautas claras y soporte estructurado para gestionar episodios de crisis con serenidad.
 
 <p align="center">
   <img src="images/Chapter-II/User-persona-Mateo.png" alt="User Personas Padres" width="600">
@@ -424,7 +424,7 @@ Nota. User Persona correspondiente a Mateo (Guardian), representando el arquetip
 
 ### 2.3.2. User Task Matrix
 
-La User Task Matrix permite identificar y priorizar las principales tareas que realizan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. Para este análisis se consideran los dos segmentos principales del proyecto: padres con estilo de crianza autoritario, y niños y adolescentes autistas.
+La User Task Matrix permite identificar y priorizar las principales tareas que realizan los usuarios de NUBI antes, durante y después de una situación de desregulación emocional o sensorial. Para este análisis se consideran los dos segmentos principales del proyecto: padres de niños y adolescentes con autismo, y niños y adolescentes autistas.
 
 La matriz evalúa cada tarea utilizando dos criterios: frecuencia e importancia. La frecuencia representa qué tan recurrentemente el usuario necesita realizar determinada acción, mientras que la importancia indica el impacto que tiene dicha tarea en el manejo adecuado de una situación de desregulación.
 
@@ -560,7 +560,7 @@ El recorrido representa la experiencia del usuario autista desde la aparición d
 </p>
 Nota. User Journey Map (As-Is) correspondiente a Diana, detallando las deficiencias actuales en los mecanismos de autorregulación sensorial y la dificultad para comunicar sus necesidades sin depender de la expresión verbal directa.
 
-**Segmento 2 – Padres con estilo de crianza autoritario (Mateo – Hermano mayor y cuidador)**
+**Segmento 2 – Padres de niños y adolescentes con autismo (Mateo – Hermano mayor y cuidador)**
 
 El recorrido representa la experiencia de los padres desde la identificación de las primeras señales de desregulación hasta la intervención, estabilización y recuperación del niño o adolescente.
 
@@ -582,14 +582,14 @@ Mapa de empatía que sintetiza los pensamientos, percepciones sensoriales, frust
 Nota. Empathy Map correspondiente al Segmento 1 (Niños y Adolescentes Autistas), reflejando sus barreras de comunicación, estímulos del entorno y oportunidades de valor para la autorregulación guiada.
 
 
-**Segmento objetivo 2: Padres con estilo de crianza autoritario**
+**Segmento objetivo 2: Padres de niños y adolescentes con autismo**
 
-Mapa de empatía que analiza los pensamientos, preocupaciones, entornos de presión social y necesidades de los padres con estilo de crianza autoritario frente a momentos de desregulación emocional o sensorial de sus hijos autistas.
+Mapa de empatía que analiza los pensamientos, preocupaciones, entornos de presión social y necesidades de los padres de niños y adolescentes con autismo frente a momentos de desregulación emocional o sensorial de sus hijos autistas.
 
 <p align="center">
   <img src="images/Chapter-II/Empathy-Mapping-Mateo.jpeg" alt="Empathy Mapping Padres" width="600">
 </p>
-Nota. Empathy Map correspondiente al Segmento 2 (Padres con estilo de crianza autoritario), visibilizando sus desafíos emocionales, la búsqueda de guías de contención rápida y la necesidad de herramientas intuitivas respaldadas por profesionales.
+Nota. Empathy Map correspondiente al Segmento 2 (Padres de niños y adolescentes con autismo), visibilizando sus desafíos emocionales, la búsqueda de guías de contención rápida y la necesidad de herramientas intuitivas respaldadas por profesionales.
 
 
 ## 2.4. Big Picture Event Storming
@@ -651,7 +651,7 @@ En esta sección se presenta el glosario de términos del dominio de NUBI, const
 | :--- | :--- |
 | **Neurodivergence** (Neurodivergencia) | Funcionamiento neurológico distinto al mayoritario. NUBI se enfoca en el trastorno del espectro autista (TEA). |
 | **Neurodivergent User** (Usuario neurodivergente) | Niño o adolescente autista que usa NUBI para calmarse y comunicar lo que necesita. |
-| **Caregiver** (Cuidador) | Madre o padre con estilo de crianza autoritario que acompaña al usuario en su día a día. |
+| **Caregiver** (Cuidador) | Madre o padre que acompaña al usuario en su día a día. |
 | **Companion** (Acompañante) | Persona que está junto al usuario durante un episodio, sea uno de los padres, un docente o un familiar. |
 | **Health Professional** (Profesional de salud) | Psicólogo, psiquiatra o terapeuta que recibe los reportes de episodios del usuario. |
 | **Crisis Episode** (Episodio de crisis) | Momento en que el usuario pierde el control por una sobrecarga sensorial o emocional. |
