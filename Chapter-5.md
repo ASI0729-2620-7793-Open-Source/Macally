@@ -249,7 +249,7 @@ La solución está conformada por tres productos principales: el **Landing Page*
 | Producto | Tecnologías principales | Rama de despliegue | Plataforma       |
 |---|---|---|------------------|
 | Landing Page | HTML5, CSS3 y JavaScript | `master` | GitHub Pages |
-| Frontend Web Application | Angular y TypeScript | `main` (releases `v1.0.0` a `v1.1.0`) | Firebase Hosting |
+| Frontend Web Application | Angular y TypeScript | `main` (releases `v1.0.0` a `v1.2.0`) | Firebase Hosting |
 | API simulada (Sprint 2) | json-server (Node.js) y Cloud Firestore | `develop` (Sprint 2) | Render (reemplazada en el Sprint 3 por los RESTful Web Services) |
 | RESTful Web Services | Java 25, Spring Boot 4 y Spring Data JPA | `main` (releases `v1.0.0` a `v1.2.0`) | Render (Docker, plan gratuito) |
 
@@ -1071,7 +1071,7 @@ El estado de cada tarea se verificó al 14 de noviembre de 2026 contra el códig
 | — | Tarea general | T-77 | Landing Page: enlaces y SEO | Actualizar los enlaces a la aplicación y a los Web Services desplegados, y revisar las etiquetas SEO de la sección 4.2.3. | 5 | Diaz Caruzo, Edgard Daniel | To-do |
 | — | Tarea general | T-52 | Release a `master` | Crear la rama `release/v1.0.0`, integrar `develop` en `master` según GitFlow, etiquetar la versión y verificar que los productos desplegados correspondan a esa versión. | 4 | Diaz Caruzo, Edgard Daniel | Done |
 
-De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04) y 2 en To-do (T-76 y T-77). Las tareas T-04 y T-52 provienen de los Sprint Backlog 1 y 2. T-52 se cumplió en el repositorio de los Web Services (`release/1.0.0`, `1.1.0` y `1.2.0`, con las etiquetas `v1.0.0` a `v1.2.0`) y en el de la Frontend Web Application (`release/1.0.0` a `1.1.0`), cuya rama estable se llama `main` y no `master`.
+De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04) y 2 en To-do (T-76 y T-77). Las tareas T-04 y T-52 provienen de los Sprint Backlog 1 y 2. T-52 se cumplió en el repositorio de los Web Services (`release/1.0.0`, `1.1.0` y `1.2.0`, con las etiquetas `v1.0.0` a `v1.2.0`) y en el de la Frontend Web Application (`release/1.0.0` a `1.2.0`), cuya rama estable se llama `main` y no `master`.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -1275,7 +1275,7 @@ La Frontend Web Application se reconstruyó en el Sprint 3 para consumir los Web
 | ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [f1c26e6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/f1c26e6) | style(brand): use the white hands on teal logo and new app icons | — | 14/11/2026 |
 | ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [aaa4cd0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/aaa4cd0) | feat(i18n): add Spanish/English support and align plans with the landing page | — | 14/11/2026 |
 
-Además de lo anterior, la Frontend Web Application se publica con las versiones `v1.0.1` a `v1.1.0` (14 de noviembre) y su rama `develop` incorpora el soporte de español e inglés (ngx-translate) y los planes de suscripción con los mismos nombres, precios y beneficios del Landing Page.
+Además de lo anterior, la Frontend Web Application se publica con las versiones `v1.0.1` a `v1.2.0` (14 de noviembre). La versión `v1.2.0` incorpora el soporte de español e inglés (ngx-translate) y los planes de suscripción con los mismos nombres, precios y beneficios del Landing Page, y es la que está desplegada en Firebase Hosting.
 
 El Landing Page no registra commits nuevos después del Sprint 2 (último commit: 8 de octubre de 2026), por lo que las tareas T-04, T-76 y T-77 siguen pendientes. **[POR COMPLETAR]** Tabla de commits del Landing Page al cerrar esas tareas.
 
