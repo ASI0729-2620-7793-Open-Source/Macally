@@ -36,5 +36,5 @@
 | RESTful Web Services desplegados | `Plataforma por definir` | `URL de los Web Services` |
 | Documentación OpenAPI (Swagger UI) | Web Services desplegados | `URL de Swagger UI` |
 | Contrato de la API de Perfil y Personalización | Rama `profile-personalization` del repositorio de los Web Services | `docs/api-perfil-personalizacion.md` |
-| Sprint Backlog 3 | Trello | `URL del tablero del Sprint 3` |
+| Sprint Backlog 3 | Trello | https://trello.com/b/HCIZ8lA6/sprint-3-nubi |
 | Video About-the-Product | YouTube (incrustado en el Landing Page) | https://www.youtube.com/embed/utaBaLFhlOQ |
