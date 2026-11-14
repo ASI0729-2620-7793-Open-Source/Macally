@@ -249,11 +249,11 @@ La solución está conformada por tres productos principales: el **Landing Page*
 | Producto | Tecnologías principales | Rama de despliegue | Plataforma       |
 |---|---|---|------------------|
 | Landing Page | HTML5, CSS3 y JavaScript | `master` | GitHub Pages |
-| Frontend Web Application | Angular y TypeScript | `develop` (Sprint 2); `main` a partir del release `v1.0.0` | Firebase Hosting |
-| API simulada | json-server (Node.js) y Cloud Firestore | `develop` (Sprint 2); `main` a partir del release `v1.0.0` | Render |
-| RESTful Web Services | Java, Spring Boot y Spring Data JPA | `master` | Pendiente: se define al implementar los Web Services |
+| Frontend Web Application | Angular y TypeScript | `main` (releases `v1.0.0` a `v1.1.0`) | Firebase Hosting |
+| API simulada (Sprint 2) | json-server (Node.js) y Cloud Firestore | `develop` (Sprint 2) | Render (reemplazada en el Sprint 3 por los RESTful Web Services) |
+| RESTful Web Services | Java 25, Spring Boot 4 y Spring Data JPA | `main` (releases `v1.0.0` a `v1.2.0`) | Render (Docker, plan gratuito) |
 
-En los repositorios del Landing Page, de la Frontend Web Application y de los RESTful Web Services, la rama estable de GitFlow se llama `master`; en el repositorio del informe se llama `main`. En los procesos de despliegue de las secciones siguientes, «la rama estable» se refiere a esa rama.
+En el repositorio del Landing Page la rama estable de GitFlow se llama `master`; en los de la Frontend Web Application, los RESTful Web Services y el informe se llama `main`. En los procesos de despliegue de las secciones siguientes, «la rama estable» se refiere a esa rama.
 
 #### Landing Page Deployment
 
@@ -292,7 +292,9 @@ El proceso considerado es el siguiente:
 
 La dirección de los RESTful Web Services debe mantenerse como una configuración dependiente del entorno, evitando almacenar directamente direcciones específicas de desarrollo o producción dentro de los componentes de la aplicación.
 
-**Frontend Web Application URL:** https://tinyurl.com/2xu8w6kb
+**Frontend Web Application URL:** https://nubi-frontend-7793.web.app (enlace corto anterior: https://tinyurl.com/2xu8w6kb)
+
+En producción la aplicación lee la dirección de los Web Services de `environment.ts` (`apiBaseUrl`), mientras que en desarrollo (`environment.development.ts`) un proxy (`proxy.conf.cjs`) reenvía `/api` a `http://localhost:8080`.
 
 #### RESTful Web Services Deployment
 
@@ -320,7 +322,11 @@ Los Web Services desplegados deben proporcionar soporte a los principales domini
 
 La URL base correspondiente a los RESTful Web Services será:
 
-**RESTful Web Services URL:** `pendiente: se definirá al desplegar los Web Services`
+Los Web Services se publican en **Render** como un servicio Docker del plan gratuito, a partir de un espejo del repositorio (`LeonardoLopez138/nubi-platform-backend`, remoto `render`). Se activa el perfil de Spring `render` (`SPRING_PROFILES_ACTIVE=render`), que usa una base de datos **H2 en memoria en modo MySQL**: los datos de demostración se reinician cuando el servicio se reinicia y el plan gratuito tarda cerca de un minuto en despertar tras un periodo sin uso. Para una base de datos persistente el repositorio incluye el script `docs/deploy/azure-mysql-setup.sql` y las variables `DB_URL`, `DB_USERNAME` y `DB_PASSWORD`.
+
+**RESTful Web Services URL:** https://nubi-platform-backend.onrender.com
+
+**Swagger UI:** https://nubi-platform-backend.onrender.com/swagger-ui/index.html
 
 #### Deployment Environments
 
@@ -597,7 +603,7 @@ El objetivo del Sprint 2 es entregar y desplegar la primera versión de la Front
 | — | Tarea general | T-47 / T-48 | Pruebas del dominio SOS e integración en `develop` | Escribir las pruebas unitarias de `SosSession` y `ActionGuide`, y unir las ramas `feature/*` en `develop` resolviendo los conflictos de rutas, entornos y traducciones. | 5 | Diaz Yurivilca, Sofia | Done |
 | — | Tarea general | T-49 | Documentación de Red de Apoyo y licencia | Documentar la arquitectura y las notas de implementación del Bounded Context Red de Apoyo y Seguimiento en un README, comentar el código del panel y agregar la licencia MIT al repositorio. | 4 | Diaz Caruzo, Edgard Daniel | Done |
 | — | Tarea general | T-50 / T-51 | Despliegue de la Web Application y de la API simulada | Configurar Firebase Hosting y publicar la versión de producción de la aplicación Angular, y publicar json-server en Render guardando sus datos en Firestore para que no se pierdan al reiniciar el servicio. | 7 | Lopez Torres, Leonardo Gabriel | Done |
-| — | Tarea general | T-52 | Release a `master` | Crear la rama `release/v1.0.0`, integrar `develop` en `master` según GitFlow, etiquetar la versión `v1.0.0` y verificar que los productos desplegados correspondan a esa versión. | 4 | Diaz Caruzo, Edgard Daniel | To-do |
+| — | Tarea general | T-52 | Release a `master` | Crear la rama `release/v1.0.0`, integrar `develop` en `master` según GitFlow, etiquetar la versión `v1.0.0` y verificar que los productos desplegados correspondan a esa versión. | 4 | Diaz Caruzo, Edgard Daniel | Done |
 | LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Tarea pendiente del Sprint 1: enlazar los botones del Landing Page (registro, inicio de sesión y «Crear cuenta y activarlo») con las vistas correspondientes de la Web Application desplegada y verificar la redirección en ambos idiomas. | 4 | Lopez Torres, Leonardo Gabriel | In-Process |
 
 De las 28 tareas del Sprint Backlog 2, 22 están en Done, 3 en In-Process y 3 en To-do. Las tareas que no llegaron a Done regresan al Product Backlog para el Sprint 3. Como mejora a partir de la retroalimentación del docente, todas las tareas se estiman entre 4 y 8 horas: las tareas pequeñas relacionadas con una misma historia se agrupan en una sola (por ejemplo, T-16 / T-19 o T-34 / T-41) y las que quedaban por debajo de 4 horas se reestimaron con su alcance completo (T-04, T-49 y T-52). Las tareas se registran en el tablero de Trello con los estados To-do, In-Process, To-Review y Done; las que están en revisión se mueven a la lista To-Review y las que requieren correcciones, a To-Fix.
@@ -964,7 +970,7 @@ Como oportunidad de mejora, Sofia y Edgard no registran commits en el Landing Pa
 
 ### 5.2.3. Sprint 3
 
-> **Borrador AV2.** Esta sección se redactó con la evidencia disponible al 13 de noviembre de 2026 (historial de Git de los repositorios). Lo marcado como **[POR CONFIRMAR]** es una propuesta que el equipo debe validar y lo marcado como **[POR COMPLETAR]** es evidencia que todavía no existe (capturas, URL y datos de reuniones). Estas marcas y este aviso se eliminan al cerrar la versión final.
+> **Actualización AV2.** Esta sección se actualizó con la evidencia verificada al 14 de noviembre de 2026: historial de Git, pruebas automáticas, Swagger UI y los despliegues publicados. Lo marcado como **[POR CONFIRMAR]** debe validarlo el equipo y lo marcado como **[POR COMPLETAR]** es evidencia que solo el equipo puede aportar (capturas de pantalla, URL de videos y datos de reuniones). Estas marcas y este aviso se eliminan al cerrar la versión final.
 
 #### 5.2.3.1. Sprint Planning 3
 
@@ -1030,46 +1036,46 @@ El objetivo del Sprint 3 es entregar la primera versión de los Web Services con
 
 ![Sprint-Backlog3.png](images/Chapter-V/Sprint-Backlog3.png)
 
-*Sprint Backlog 3 en Trello.* Tablero público del Sprint 3 con las listas To-Do, In-Process, To-Review, To-Fix y Done. Cada tarjeta lleva el identificador de la historia, el de la tarea, su título, la estimación en horas y el integrante asignado. En To-Do están 12 tareas (T-52 y T-67 a T-77), en In-Process 3 (T-04, T-63 y T-64), en To-Review 11 (T-53 a T-62 y T-66), en To-Fix ninguna y en Done 1 (T-65).
+*Sprint Backlog 3 en Trello.* Tablero público del Sprint 3 con las listas To-Do, In-Process, To-Review, To-Fix y Done. Cada tarjeta lleva el identificador de la historia, el de la tarea, su título, la estimación en horas y el integrante asignado. En To-Do están 2 tareas (T-76 y T-77), en In-Process 1 (T-04), en To-Review y en To-Fix ninguna y en Done 24 (T-52 y T-53 a T-75).
 
-El estado de cada tarea se dedujo de la actividad de las ramas al 13 de noviembre de 2026: To-Review para las que tienen su rama con commits, pruebas y endpoints, In-Process para las que siguen recibiendo commits, y To-do para las que no registran avance. Los mismos estados se registraron en el tablero de Trello.
+El estado de cada tarea se verificó al 14 de noviembre de 2026 contra el código integrado en `develop` de cada repositorio, las 147 pruebas automáticas del backend (sin fallos), los Web Services y la Frontend Web Application publicados y las versiones etiquetadas, y el mismo estado se registró en el tablero de Trello. Las tareas T-04, T-76 y T-77 corresponden al Landing Page y siguen pendientes: su último commit es del 8 de octubre de 2026.
 
 | Sprint # | Sprint 3 | | | | | | |
 |---|---|---|---|---|---|---|---|
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| TS-01 | Exponer API RESTful de gestión de perfiles | T-53 | Dominio y persistencia de perfiles | Implementar el agregado de perfil con perfil sensorial, diagnóstico declarado, cuidadores y contactos de confianza, y su persistencia JPA con las reglas de límite del plan. | 8 | Ruiz Villegas, Yngrid Nahir | To-Review |
-| TS-01 | Exponer API RESTful de gestión de perfiles | T-54 | Endpoints de perfiles y cuidadores | Exponer los endpoints de perfiles, perfil sensorial, diagnóstico, foto, cuidadores y contactos de confianza, con errores en formato `application/problem+json` y pruebas de integración. | 8 | Ruiz Villegas, Yngrid Nahir | To-Review |
-| TS-01 | Exponer API RESTful de gestión de perfiles | T-55 | Suscripción de la cuenta | Exponer la suscripción vigente de la cuenta y el cambio de plan, validando los límites de perfiles y de cuidadores por perfil. | 5 | Ruiz Villegas, Yngrid Nahir | To-Review |
-| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-56 | Dominio del Modo SOS | Implementar los agregados `SosSession` y `ActionGuide` con sus pasos, técnicas alternativas y reglas (omitir un paso obligatorio exige confirmación y una sesión cerrada no admite cambios), con pruebas unitarias. | 8 | Diaz Yurivilca, Sofia | To-Review |
-| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-57 | Persistencia y guía de acción inicial | Implementar las entidades JPA separadas del dominio, los repositorios y la siembra de la guía de seis pasos al iniciar la aplicación. | 6 | Diaz Yurivilca, Sofia | To-Review |
-| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-58 | Endpoints del Modo SOS y recomendaciones | Exponer la activación del Modo SOS, la guía ordenada según el detonante, completar, omitir y pedir una técnica alternativa de un paso, finalizar la sesión y consultar las sesiones y recomendaciones de un perfil. | 7 | Diaz Yurivilca, Sofia | To-Review |
-| TS-03 | Exponer API RESTful de estímulos de autorregulación | T-59 | Dominio y recursos de autorregulación | Implementar los agregados de sesión de calma y recurso de calma, los recursos favoritos y la siembra del catálogo, con pruebas del dominio. | 7 | Payano Puchuri, Joan Fabricio | To-Review |
-| TS-03 | Exponer API RESTful de estímulos de autorregulación | T-60 | Endpoints de sesiones de calma | Exponer el catálogo de recursos, las sesiones de calma (intensidad, baja estimulación, pausa, temporizador y cierre) y los recursos favoritos del perfil. | 7 | Payano Puchuri, Joan Fabricio | To-Review |
-| TS-04 | Exponer API RESTful del tablero CAA | T-61 | Dominio del tablero CAA | Implementar el tablero con categorías, pictogramas, favoritos, selecciones de pictogramas y registros de estado de ánimo. | 7 | Lopez Torres, Leonardo Gabriel | To-Review |
-| TS-04 | Exponer API RESTful del tablero CAA | T-62 | Endpoints del tablero, selecciones y estado de ánimo | Exponer el tablero del perfil, el acceso rápido, las categorías y pictogramas personalizados, las selecciones con su estado de entrega y comprensión, y el historial de estados de ánimo. | 7 | Lopez Torres, Leonardo Gabriel | To-Review |
-| TS-05 | Exponer API RESTful de solicitudes de ayuda y recomendaciones | T-63 | Dominio de episodios, solicitudes y recomendaciones | Implementar los registros y reportes de episodios, las solicitudes de ayuda con su confirmación y cancelación, y las recomendaciones con su efectividad. | 8 | Diaz Caruzo, Edgard Daniel | In-Process |
-| TS-05 | Exponer API RESTful de solicitudes de ayuda y recomendaciones | T-64 | Endpoints de Red de Apoyo y Seguimiento | Exponer los endpoints de registros y reportes de episodios, solicitudes de ayuda y recomendaciones, con validación de fechas y errores HTTP. | 8 | Diaz Caruzo, Edgard Daniel | In-Process |
+| TS-01 | Exponer API RESTful de gestión de perfiles | T-53 | Dominio y persistencia de perfiles | Implementar el agregado de perfil con perfil sensorial, diagnóstico declarado, cuidadores y contactos de confianza, y su persistencia JPA con las reglas de límite del plan. | 8 | Ruiz Villegas, Yngrid Nahir | Done |
+| TS-01 | Exponer API RESTful de gestión de perfiles | T-54 | Endpoints de perfiles y cuidadores | Exponer los endpoints de perfiles, perfil sensorial, diagnóstico, foto, cuidadores y contactos de confianza, con errores en formato `application/problem+json` y pruebas de integración. | 8 | Ruiz Villegas, Yngrid Nahir | Done |
+| TS-01 | Exponer API RESTful de gestión de perfiles | T-55 | Suscripción de la cuenta | Exponer la suscripción vigente de la cuenta y el cambio de plan, validando los límites de perfiles y de cuidadores por perfil. | 5 | Ruiz Villegas, Yngrid Nahir | Done |
+| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-56 | Dominio del Modo SOS | Implementar los agregados `SosSession` y `ActionGuide` con sus pasos, técnicas alternativas y reglas (omitir un paso obligatorio exige confirmación y una sesión cerrada no admite cambios), con pruebas unitarias. | 8 | Diaz Yurivilca, Sofia | Done |
+| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-57 | Persistencia y guía de acción inicial | Implementar las entidades JPA separadas del dominio, los repositorios y la siembra de la guía de seis pasos al iniciar la aplicación. | 6 | Diaz Yurivilca, Sofia | Done |
+| TS-02 | Exponer API RESTful del Modo SOS y episodios | T-58 | Endpoints del Modo SOS y recomendaciones | Exponer la activación del Modo SOS, la guía ordenada según el detonante, completar, omitir y pedir una técnica alternativa de un paso, finalizar la sesión y consultar las sesiones y recomendaciones de un perfil. | 7 | Diaz Yurivilca, Sofia | Done |
+| TS-03 | Exponer API RESTful de estímulos de autorregulación | T-59 | Dominio y recursos de autorregulación | Implementar los agregados de sesión de calma y recurso de calma, los recursos favoritos y la siembra del catálogo, con pruebas del dominio. | 7 | Payano Puchuri, Joan Fabricio | Done |
+| TS-03 | Exponer API RESTful de estímulos de autorregulación | T-60 | Endpoints de sesiones de calma | Exponer el catálogo de recursos, las sesiones de calma (intensidad, baja estimulación, pausa, temporizador y cierre) y los recursos favoritos del perfil. | 7 | Payano Puchuri, Joan Fabricio | Done |
+| TS-04 | Exponer API RESTful del tablero CAA | T-61 | Dominio del tablero CAA | Implementar el tablero con categorías, pictogramas, favoritos, selecciones de pictogramas y registros de estado de ánimo. | 7 | Lopez Torres, Leonardo Gabriel | Done |
+| TS-04 | Exponer API RESTful del tablero CAA | T-62 | Endpoints del tablero, selecciones y estado de ánimo | Exponer el tablero del perfil, el acceso rápido, las categorías y pictogramas personalizados, las selecciones con su estado de entrega y comprensión, y el historial de estados de ánimo. | 7 | Lopez Torres, Leonardo Gabriel | Done |
+| TS-05 | Exponer API RESTful de solicitudes de ayuda y recomendaciones | T-63 | Dominio de episodios, solicitudes y recomendaciones | Implementar los registros y reportes de episodios, las solicitudes de ayuda con su confirmación y cancelación, y las recomendaciones con su efectividad. | 8 | Diaz Caruzo, Edgard Daniel | Done |
+| TS-05 | Exponer API RESTful de solicitudes de ayuda y recomendaciones | T-64 | Endpoints de Red de Apoyo y Seguimiento | Exponer los endpoints de registros y reportes de episodios, solicitudes de ayuda y recomendaciones, con validación de fechas y errores HTTP. | 8 | Diaz Caruzo, Edgard Daniel | Done |
 | — | Tarea general | T-65 | Proyecto base de los Web Services | Crear el proyecto Spring Boot, la configuración de MySQL y la versión de Java del repositorio `Nubi.Platform.Backend`. | 4 | Lopez Torres, Leonardo Gabriel | Done |
-| — | Tarea general | T-66 | Núcleo compartido del backend | Implementar el resultado de las operaciones, los errores de dominio, la auditoría de entidades JPA, el manejo global de excepciones y la configuración de OpenAPI. | 5 | Payano Puchuri, Joan Fabricio | To-Review |
-| — | Tarea general | T-67 | Integración de los cinco contextos en `develop` | Unir las cinco ramas del backend en `develop`, resolver los conflictos del núcleo compartido, de los nombres de beans y de las rutas repetidas (por ejemplo `/api/v1/recommendations`) y ejecutar todas las pruebas. | 8 | Diaz Yurivilca, Sofia | To-do |
-| — | Tarea general | T-68 | Documentación OpenAPI | Verificar que Swagger UI liste todos los endpoints de los cinco contextos con su descripción, y exportar el contrato para la sección 5.2.3.6. | 4 | Payano Puchuri, Joan Fabricio | To-do |
-| — | Tarea general | T-69 | Despliegue de los Web Services | Publicar los Web Services y la base de datos MySQL con variables de entorno, y verificar los endpoints desde la URL pública. | 8 | Lopez Torres, Leonardo Gabriel | To-do |
-| — | Tarea general | T-70 | Conexión de Perfil y Personalización | Reemplazar en la Frontend Web Application los recursos `profiles`, `caregivers` y de suscripción de la API simulada por los Web Services. | 8 | Ruiz Villegas, Yngrid Nahir | To-do |
-| — | Tarea general | T-71 | Conexión de Gestión de Crisis | Reemplazar los recursos `actionGuides` y `sosSessions` por los endpoints del Modo SOS y adaptar el assembler al contrato (`caregiverAccountId`). | 6 | Diaz Yurivilca, Sofia | To-do |
-| — | Tarea general | T-72 | Conexión de Autorregulación | Reemplazar los recursos `calmingResources`, `favoriteResources` y `calmSessions` por los endpoints de autorregulación. | 6 | Payano Puchuri, Joan Fabricio | To-do |
-| US-22 / US-24 | Agregar pictograma personalizado / Reproducir audio asociado al pictograma | T-73 | Pictograma personalizado, audio y conexión del tablero CAA | Habilitar el pictograma con imagen propia y el audio al seleccionar un pictograma, y conectar el tablero y las selecciones a los Web Services. | 8 | Lopez Torres, Leonardo Gabriel | To-do |
-| US-25 / US-26 | Enviar solicitud de ayuda al cuidador / Recibir notificación de solicitud de ayuda | T-74 | Solicitud de ayuda y aviso al cuidador | Reemplazar los datos de muestra del panel por las solicitudes de ayuda de los Web Services. | 8 | Diaz Caruzo, Edgard Daniel | To-do |
-| US-28 / US-29 | Cancelar solicitud de ayuda / Consultar historial de solicitudes de ayuda | T-75 | Cancelar solicitud y actividad reciente | Permitir cancelar una solicitud enviada y mostrar el historial y la actividad reciente desde los Web Services. | 6 | Diaz Caruzo, Edgard Daniel | To-do |
+| — | Tarea general | T-66 | Núcleo compartido del backend | Implementar el resultado de las operaciones, los errores de dominio, la auditoría de entidades JPA, el manejo global de excepciones y la configuración de OpenAPI. | 5 | Payano Puchuri, Joan Fabricio | Done |
+| — | Tarea general | T-67 | Integración de los cinco contextos en `develop` | Unir las cinco ramas del backend en `develop`, resolver los conflictos del núcleo compartido, de los nombres de beans y de las rutas repetidas (por ejemplo `/api/v1/recommendations`) y ejecutar todas las pruebas. | 8 | Diaz Yurivilca, Sofia | Done |
+| — | Tarea general | T-68 | Documentación OpenAPI | Verificar que Swagger UI liste todos los endpoints de los cinco contextos con su descripción, y exportar el contrato para la sección 5.2.3.6. | 4 | Payano Puchuri, Joan Fabricio | Done |
+| — | Tarea general | T-69 | Despliegue de los Web Services | Publicar los Web Services en Render con variables de entorno y verificar los endpoints desde la URL pública. La base de datos de la demostración es H2 en memoria (perfil `render`); el script de MySQL queda documentado en `docs/deploy`. | 8 | Lopez Torres, Leonardo Gabriel | Done |
+| — | Tarea general | T-70 | Conexión de Perfil y Personalización | Reemplazar en la Frontend Web Application los recursos `profiles`, `caregivers` y de suscripción de la API simulada por los Web Services. | 8 | Ruiz Villegas, Yngrid Nahir | Done |
+| — | Tarea general | T-71 | Conexión de Gestión de Crisis | Reemplazar los recursos `actionGuides` y `sosSessions` por los endpoints del Modo SOS y adaptar el assembler al contrato (`caregiverAccountId`). | 6 | Diaz Yurivilca, Sofia | Done |
+| — | Tarea general | T-72 | Conexión de Autorregulación | Reemplazar los recursos `calmingResources`, `favoriteResources` y `calmSessions` por los endpoints de autorregulación. | 6 | Payano Puchuri, Joan Fabricio | Done |
+| US-22 / US-24 | Agregar pictograma personalizado / Reproducir audio asociado al pictograma | T-73 | Pictograma personalizado, audio y conexión del tablero CAA | Habilitar el pictograma con imagen propia y el audio al seleccionar un pictograma, y conectar el tablero y las selecciones a los Web Services. | 8 | Lopez Torres, Leonardo Gabriel | Done |
+| US-25 / US-26 | Enviar solicitud de ayuda al cuidador / Recibir notificación de solicitud de ayuda | T-74 | Solicitud de ayuda y aviso al cuidador | Reemplazar los datos de muestra del panel por las solicitudes de ayuda de los Web Services. | 8 | Diaz Caruzo, Edgard Daniel | Done |
+| US-28 / US-29 | Cancelar solicitud de ayuda / Consultar historial de solicitudes de ayuda | T-75 | Cancelar solicitud y actividad reciente | Permitir cancelar una solicitud enviada y mostrar el historial y la actividad reciente desde los Web Services. | 6 | Diaz Caruzo, Edgard Daniel | Done |
 | LS-02 | Conocer el Modo SOS en la landing page | T-04 | Call-to-action hacia la Web Application | Tarea pendiente del Sprint 1: enlazar los botones del Landing Page con las vistas de registro e inicio de sesión de la aplicación desplegada y verificar la redirección en ambos idiomas. | 4 | Lopez Torres, Leonardo Gabriel | In-Process |
 | — | Tarea general | T-76 | Landing Page: testimonios reales y accesibilidad | Reemplazar los testimonios de ejemplo por testimonios de las entrevistas de validación y revisar el contraste, el foco y los textos alternativos. | 5 | Diaz Yurivilca, Sofia | To-do |
 | — | Tarea general | T-77 | Landing Page: enlaces y SEO | Actualizar los enlaces a la aplicación y a los Web Services desplegados, y revisar las etiquetas SEO de la sección 4.2.3. | 5 | Diaz Caruzo, Edgard Daniel | To-do |
-| — | Tarea general | T-52 | Release a `master` | Crear la rama `release/v1.0.0`, integrar `develop` en `master` según GitFlow, etiquetar la versión y verificar que los productos desplegados correspondan a esa versión. | 4 | Diaz Caruzo, Edgard Daniel | To-do |
+| — | Tarea general | T-52 | Release a `master` | Crear la rama `release/v1.0.0`, integrar `develop` en `master` según GitFlow, etiquetar la versión y verificar que los productos desplegados correspondan a esa versión. | 4 | Diaz Caruzo, Edgard Daniel | Done |
 
-De las 27 tareas del Sprint Backlog 3, 1 está en Done, 11 en To-Review, 3 en In-Process y 12 en To-do. Las tareas T-04 y T-52 provienen de los Sprint Backlog 1 y 2.
+De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04) y 2 en To-do (T-76 y T-77). Las tareas T-04 y T-52 provienen de los Sprint Backlog 1 y 2. T-52 se cumplió en el repositorio de los Web Services (`release/1.0.0`, `1.1.0` y `1.2.0`, con las etiquetas `v1.0.0` a `v1.2.0`) y en el de la Frontend Web Application (`release/1.0.0` a `1.1.0`), cuya rama estable se llama `main` y no `master`.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
-En el Sprint 3 se implementó la primera versión de los RESTful Web Services con Java, Spring Boot, Spring Data JPA y MySQL, y su documentación con springdoc-openapi, en el repositorio [Nubi.Platform.Backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend). Cada Bounded Context se desarrolló en su propia rama y sigue la arquitectura del capítulo IV:
+En el Sprint 3 se implementó la primera versión de los RESTful Web Services con Java, Spring Boot, Spring Data JPA y MySQL (H2 en memoria en el entorno desplegado), y su documentación con springdoc-openapi, en el repositorio [Nubi.Platform.Backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend). Cada Bounded Context se desarrolló en su propia rama y sigue la arquitectura del capítulo IV:
 
 - `domain`: agregados, entidades, objetos de valor, eventos, comandos, consultas y puertos de repositorio, sin dependencias de JPA.
 - `application`: servicios de comandos y de consultas, manejadores de eventos y una capa anticorrupción hacia los otros contextos.
@@ -1083,6 +1089,11 @@ Los avances por Bounded Context fueron:
 - **Autorregulación** (rama `feature/self-regulation`): catálogo de recursos de calma, sesiones de calma con intensidad, baja estimulación y temporizador, recursos favoritos y pruebas de dominio y de la API REST.
 - **Comunicación Asistida** (rama `feature/assistive-comunication`): tablero por perfil, categorías, pictogramas personalizados y favoritos, selecciones de pictogramas con estado de entrega y comprensión, y estado de ánimo.
 - **Red de Apoyo y Seguimiento** (rama `feature/support-network`): registros y reportes de episodios, solicitudes de ayuda con confirmación y cancelación, y recomendaciones con efectividad.
+
+Una vez integradas las cinco ramas, el equipo agregó dos contextos que sustentan la experiencia de la aplicación y que no figuran en el Capítulo IV:
+
+- **IAM** (rama `feature/iam-authentication`): alta de cuenta, inicio de sesión y consulta de la cuenta, con las contraseñas guardadas con hash PBKDF2.
+- **Rutina Visual** (rama `feature/visual-routine`): rutina del día del niño con pasos que el cuidador ordena y el niño marca, sembrada al registrar al niño.
 
 La tabla registra, por rama, los 112 commits del Sprint 3 sin contar merges, en orden cronológico. Los commits no tienen cuerpo de mensaje, por lo que esa columna se indica con «—». Los mensajes se transcriben tal como se registraron en Git.
 
@@ -1201,194 +1212,279 @@ La tabla registra, por rama, los 112 commits del Sprint 3 sin contar merges, en 
 | ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [72a333d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/72a333d) | fix(support-network): map domain exceptions to http responses | — | 13/11/2026 |
 | ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `feature/support-network` | [0a7dbfe](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0a7dbfe) | fix(support-network): validate episode dates | — | 13/11/2026 |
 
-Al 13 de noviembre de 2026 las cinco ramas siguen sin integrarse en `develop`, que solo contiene el commit inicial del repositorio, y la rama de Perfil y Personalización se llama `profile-personalization` en lugar de `feature/profile-personalization`. La Frontend Web Application y el Landing Page no registran commits nuevos después del Sprint 2; su conexión con los Web Services y su nueva versión corresponden a las tareas T-70 a T-77 del Sprint Backlog 3. **[POR COMPLETAR]** Tabla de commits de la Frontend Web Application y del Landing Page cuando se integren.
+El 13 de noviembre de 2026 Sofia integró en `develop` las cinco ramas de los Bounded Contexts (T-67) y el mismo día se integraron, en orden, las ramas `feature/maintenance-cleanup`, `feature/profile-context-facade`, `feature/single-autistic-child`, `feature/iam-authentication`, `feature/visual-routine`, `feature/calm-activities`, `feature/sos-episode-records` y `docs/api-updates`. Después se integraron `feature/render-deployment` (despliegue en Render) y `feature/rest-resource-routes` (rutas REST sin verbos: por ejemplo, el cambio de estado de una sesión SOS pasó a `PATCH /sos-sessions/{id}`). En total el repositorio acumula 136 commits sin merges desde el 4 de noviembre y 15 merges en `develop`, y publica las versiones `v1.0.0` (13 de noviembre), `v1.1.0` y `v1.2.0` (14 de noviembre). La suite de pruebas automáticas ejecuta 147 pruebas en 17 clases y pasa sin fallos.
+
+Los 25 commits del backend posteriores a las ramas de la tabla anterior, ya en `develop`, son:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [b599d0b](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b599d0b) | chore: ignore local config folder with credentials | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [359af87](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/359af87) | refactor(crisis-management): align recommendation adapter class name | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [75fddc5](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/75fddc5) | test: add assistive communication and support network api tests | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [5736eae](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/5736eae) | fix(shared): allow PATCH requests in CORS configuration | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [39f2e79](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/39f2e79) | feat(profile): expose profiles context facade for other bounded contexts | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [ca4a74a](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ca4a74a) | feat(acl): read the real sensory profile in self-regulation and crisis management | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [cca2177](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/cca2177) | feat(profile): accept only autism (ASD) as declared diagnosis | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [c57e167](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c57e167) | feat(profile): allow a single child per account and declare autism on creation | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [55bef78](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/55bef78) | test(profile): cover single child and autism-only rules | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [2169afb](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2169afb) | feat(iam): add sign-up, sign-in and demo account seeding | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [f9027e1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f9027e1) | feat(visual-routine): add daily visual routine bounded context | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [10b4f74](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/10b4f74) | feat(self-regulation): add guided breathing and calm drawing resources | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [d415639](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/d415639) | feat(support-network): register episode records when an sos session finishes | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [8038e21](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/8038e21) | docs: document single child rule, iam and visual routine endpoints | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [23e676a](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/23e676a) | feat(config): read the http port from the PORT environment variable | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [09281fd](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/09281fd) | feat(config): add render profile with in-memory H2 database | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [aa6b720](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/aa6b720) | build: add Dockerfile and Render blueprint | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [a6bc377](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/a6bc377) | docs(deploy): document Render deployment and optional Azure MySQL | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [8ebbc84](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/8ebbc84) | refactor(crisis-management)!: use PATCH status updates and plural alternatives instead of verb routes | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [366d7cc](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/366d7cc) | refactor(assistive-communication)!: update selection status with a single PATCH | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [03f04fe](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/03f04fe) | refactor(profile)!: accept caregiver invitations with PATCH on the caregiver | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [ae9dc3f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ae9dc3f) | refactor(support-network)!: use shares, query params and PATCH status instead of verb routes | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [efc9472](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/efc9472) | refactor(self-regulation)!: update calm session and timer state with PATCH | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [4742552](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/4742552) | test: cover the REST routes without verbs | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend | `develop` | [f2f3926](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f2f3926) | docs: document the REST route conventions | — | 14/11/2026 |
+
+La Frontend Web Application se reconstruyó en el Sprint 3 para consumir los Web Services en lugar de la API simulada (T-70 a T-75). Sus 26 commits sin merges desde el 4 de noviembre de 2026, todos en `develop`, son:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [816567f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/816567f) | refactor!: remove the json-server based application and i18n files | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [b065230](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b065230) | chore(build): proxy the dev server to the Spring backend api | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [a68adf1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/a68adf1) | style: add calm design system with low-stimulation mode | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [9ed569f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/9ed569f) | feat(shared): add api error handling, account header interceptor and shared ui | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [b73447f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b73447f) | feat(iam): add sign-in and sign-up against the backend authentication api | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [b4df86a](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b4df86a) | feat(profile): add single child onboarding, child profile and plan views | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [e6894e5](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/e6894e5) | feat(self-regulation): add calm library and calm player with breathing and drawing | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [6f5d3a9](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/6f5d3a9) | feat(routine): add visual routine editor | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [0f7a516](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/0f7a516) | feat(communication): add pictogram board connected to the backend | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [b784caa](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b784caa) | feat(crisis): add sos activation and step by step containment guide | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [3797890](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/3797890) | feat(support-network): add episodes, help requests, reports and recommendations | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [8f8df7c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/8f8df7c) | feat(insights): add progress page with wellbeing insights | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [60f9592](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/60f9592) | feat(dashboard): add caregiver home with mood check-in and daily summary | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [c2f2c1f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/c2f2c1f) | feat(kid-mode): add full screen kid mode with feelings, talk and my day | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [52ba362](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/52ba362) | feat(app): wire routes, guards and application config | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [f7ccd8f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/f7ccd8f) | docs: describe the new Nubi frontend and how to run it | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [d54be45](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/d54be45) | feat(kid-mode): move navigation to a rounded left side bar | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [8b9c6ec](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/8b9c6ec) | style: use Bricolage Grotesque as the single brand typeface | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [32fade4](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/32fade4) | style(kid-mode): center all content and enlarge buttons | — | 13/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [5292816](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/5292816) | feat(iam): use the caregiver and child photo in the sign-in hero | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [61991bd](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/61991bd) | fix(shared): keep content visible in low-stimulation mode | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [9a9b6ba](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/9a9b6ba) | fix(crisis): full width step actions, readable durations and return to the guide after breathing | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [b6a34e0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b6a34e0) | feat(config): point production to the Render backend and explain cold starts | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [fef7c7d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/fef7c7d) | refactor(api): call the REST routes without verbs | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [f1c26e6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/f1c26e6) | style(brand): use the white hands on teal logo and new app icons | — | 14/11/2026 |
+| ASI0729-2620-7793-Open-Source/Nubi---Frontend | `develop` | [aaa4cd0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/aaa4cd0) | feat(i18n): add Spanish/English support and align plans with the landing page | — | 14/11/2026 |
+
+Además de lo anterior, la Frontend Web Application se publica con las versiones `v1.0.1` a `v1.1.0` (14 de noviembre) y su rama `develop` incorpora el soporte de español e inglés (ngx-translate) y los planes de suscripción con los mismos nombres, precios y beneficios del Landing Page.
+
+El Landing Page no registra commits nuevos después del Sprint 2 (último commit: 8 de octubre de 2026), por lo que las tareas T-04, T-76 y T-77 siguen pendientes. **[POR COMPLETAR]** Tabla de commits del Landing Page al cerrar esas tareas.
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
-Los Web Services se ejecutan con `./mvnw spring-boot:run` y se conectan a MySQL mediante las variables de entorno `DB_URL`, `DB_USERNAME` y `DB_PASSWORD`. Al iniciar, el contexto de Gestión de Crisis registra la guía de acción de seis pasos y el de Autorregulación, el catálogo de recursos de calma. Los endpoints se exploran desde Swagger UI y se prueban con Postman; las pruebas automáticas de cada rama usan una base de datos en memoria (H2).
+Los Web Services se ejecutan de dos maneras: en local con `./mvnw spring-boot:run`, conectados a MySQL mediante las variables de entorno `DB_URL`, `DB_USERNAME` y `DB_PASSWORD`; y desplegados en Render con el perfil `render` (H2 en memoria), en https://nubi-platform-backend.onrender.com. Al iniciar, el contexto de Gestión de Crisis registra la guía de acción de seis pasos, el de Autorregulación el catálogo de ocho recursos de calma, el de Comunicación Asistida el catálogo de pictogramas básicos y el de IAM la cuenta de demostración. Los endpoints se exploran desde Swagger UI; las pruebas automáticas usan H2 y ejecutan 147 pruebas sin fallos (`./mvnw test`).
 
-Un recorrido de ejemplo del Modo SOS contra los servicios es el siguiente:
+Un recorrido del Modo SOS contra los Web Services desplegados, ejecutado el 14 de noviembre de 2026 con la cuenta de demostración, es el siguiente. Todas las operaciones envían la cabecera `X-Account-Id` con el `id` de la cuenta que devuelve `POST /authentication/sign-in`:
 
-1. `POST /api/v1/sos-sessions` con `{"profileId": 1, "caregiverAccountId": 1, "trigger": "TACTILE"}` abre la sesión (`201 Created`, estado `IN_PROGRESS`, intensidad inicial `ALTERED`).
-2. `GET /api/v1/sos-sessions/{id}/guide` devuelve los seis pasos con el paso táctil primero.
-3. `POST /api/v1/sos-sessions/{id}/steps/{stepId}/complete` completa un paso y avanza al siguiente.
-4. `POST /api/v1/sos-sessions/{id}/steps/{stepId}/skip` omite un paso; si es obligatorio exige `{"confirmed": true}`.
-5. `POST /api/v1/sos-sessions/{id}/finish` cierra la sesión como `FINISHED` o `FINISHED_EARLY` y publica el evento del episodio.
+1. `POST /api/v1/sos-sessions` con `{"profileId": 1, "caregiverAccountId": 1, "trigger": "TACTILE", "initialIntensity": "ALTERED"}` abre la sesión (`201 Created`, estado `IN_PROGRESS`, seis pasos y el paso táctil como actual).
+2. `GET /api/v1/sos-sessions/{id}/guide` devuelve los seis pasos con el paso táctil primero (`200 OK`).
+3. `PATCH /api/v1/sos-sessions/{id}/steps/{stepId}` con `{"status": "COMPLETED"}` completa un paso (`200 OK`).
+4. El mismo `PATCH` con `{"status": "SKIPPED"}` sobre un paso obligatorio responde `400 Bad Request` (`The step 1 is mandatory: skipping it requires explicit confirmation.`) y con `"confirmed": true` lo omite (`200 OK`).
+5. `PATCH /api/v1/sos-sessions/{id}` con `{"status": "FINISHED", "observedState": "CALM", "finalIntensity": "CALM"}` cierra la sesión (`200 OK`, estado `FINISHED_EARLY` porque quedaron pasos sin completar) y publica el evento del episodio.
+6. `GET /api/v1/episode-records` devuelve el episodio registrado automáticamente en Red de Apoyo y Seguimiento, con el detonante `TACTILE` y la nota «Registro automático. Intensidad inicial: ALTERED; intensidad final: CALM.» (`200 OK`).
 
-**[POR CONFIRMAR]** El recorrido se probó sobre la versión de la rama `feature/crisis-management`; debe repetirse sobre la rama integrada.
+El recorrido confirma la comunicación entre los contextos de Gestión de Crisis y de Red de Apoyo y Seguimiento por eventos de dominio sobre la rama integrada.
 
-**[POR COMPLETAR]** Capturas de pantalla de Swagger UI con los cinco contextos, de Postman con el recorrido anterior y de la tabla de MySQL con los datos creados (`images/Chapter-V/sprint-3-swagger.png`, `sprint-3-postman.png` y `sprint-3-mysql.png`).
+**[POR COMPLETAR]** Capturas de pantalla de Swagger UI con los siete contextos, de Postman con el recorrido anterior y de la consola de H2 o de MySQL con los datos creados (`images/Chapter-V/sprint-3-swagger.png`, `sprint-3-postman.png` y `sprint-3-database.png`).
 
 **[POR COMPLETAR]** Video de navegación del Sprint 3 con la Frontend Web Application conectada a los Web Services (URL en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`).
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-Los Web Services documentan sus endpoints con OpenAPI mediante springdoc. Swagger UI se publica en `/swagger-ui.html` y el contrato en `/v3/api-docs`. Todas las rutas cuelgan de `/api/v1`, aceptan y devuelven JSON y responden los errores en formato `application/problem+json` (RFC 9457) con las propiedades `title`, `detail` y `code`. Los códigos HTTP comunes son `200 OK`, `201 Created`, `400 Bad Request` (dato inválido), `404 Not Found` (no existe) y `409 Conflict` (regla de negocio, por ejemplo un límite de plan o una sesión ya cerrada).
+Los Web Services documentan sus endpoints con OpenAPI mediante springdoc. Swagger UI se publica en `/swagger-ui/index.html` y el contrato en `/v3/api-docs`. Todas las rutas cuelgan de `/api/v1`, se nombran con sustantivos (los cambios de estado usan `PATCH` sobre el recurso en lugar de verbos en la ruta), aceptan y devuelven JSON y responden los errores en formato `application/problem+json` (RFC 9457) con las propiedades `title`, `detail` y `code`. Los códigos HTTP comunes son `200 OK`, `201 Created`, `400 Bad Request` (dato inválido), `404 Not Found` (no existe) y `409 Conflict` (regla de negocio, por ejemplo un límite de plan o un segundo perfil en la misma cuenta).
 
-**URL de Swagger UI:** **[POR COMPLETAR]** (se obtiene al desplegar los Web Services, sección 5.2.3.7)
+**URL de Swagger UI:** https://nubi-platform-backend.onrender.com/swagger-ui/index.html
+
+**URL del contrato OpenAPI:** https://nubi-platform-backend.onrender.com/v3/api-docs
 
 **Repositorio de los Web Services:** https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend
 
-Las tablas siguientes resumen los endpoints de cada Bounded Context a partir de los controladores de sus ramas. Las rutas son relativas a `/api/v1`.
+Las tablas siguientes resumen las 92 operaciones que publica Swagger UI en los siete Bounded Contexts. Las rutas son relativas a `/api/v1`. Al integrar las ramas se resolvió el conflicto de rutas de las recomendaciones: las de Gestión de Crisis cuelgan de `/profiles/{profileId}/recommendations` y `/recommendations/{recommendationId}`, y las de Red de Apoyo y Seguimiento de `/support-network/recommendations`.
 
-**Perfil y Personalización.** Las operaciones reciben la cuenta en la cabecera `X-Account-Id` hasta que se integre la autenticación.
+**Autenticación (IAM).** Cuenta del cuidador. `sign-in` y `sign-up` devuelven el `id` de la cuenta, que la Frontend Web Application envía en la cabecera `X-Account-Id` del resto de operaciones.
 
 | Verbo | Ruta | Descripción |
 |---|---|---|
-| `POST` | `/profiles` | Crear un perfil. |
+| `POST` | `/authentication/sign-up` | Crear la cuenta de un cuidador. |
+| `POST` | `/authentication/sign-in` | Iniciar sesión con correo y contraseña. |
+| `GET` | `/authentication/me` | Consultar la cuenta con la sesión iniciada. |
+
+**Perfil y Personalización.** Las operaciones reciben la cuenta en la cabecera `X-Account-Id`. Nubi admite un solo perfil de niño con autismo por cuenta.
+
+| Verbo | Ruta | Descripción |
+|---|---|---|
+| `POST` | `/profiles` | Crear el perfil del niño. |
 | `GET` | `/profiles` | Listar los perfiles de la cuenta. |
 | `GET` | `/profiles/accessible` | Listar los perfiles que la cuenta cuida, incluidos los ajenos. |
-| `GET` | `/profiles/{profileId}` | Obtener el detalle de un perfil. |
-| `PUT` | `/profiles/{profileId}` | Editar los datos generales. |
-| `DELETE` | `/profiles/{profileId}` | Archivar el perfil (borrado lógico). |
-| `GET`, `PUT` | `/profiles/{profileId}/sensory-profile` | Consultar o reemplazar las sensibilidades sensoriales. |
-| `GET`, `PUT` | `/profiles/{profileId}/diagnosis` | Consultar o registrar el diagnóstico declarado. |
-| `PUT` | `/profiles/{profileId}/photo` | Asociar la foto del perfil. |
-| `GET`, `POST` | `/profiles/{profileId}/caregivers` | Listar o invitar cuidadores. |
-| `POST` | `/profiles/{profileId}/caregivers/{caregiverId}/accept` | Aceptar la invitación. |
-| `DELETE` | `/profiles/{profileId}/caregivers/{caregiverId}` | Revocar el acceso de un cuidador. |
-| `GET`, `POST` | `/profiles/{profileId}/trusted-contacts` | Listar o agregar contactos de confianza. |
-| `PUT` | `/profiles/{profileId}/trusted-contacts/order` | Reordenar los contactos por prioridad. |
-| `DELETE` | `/profiles/{profileId}/trusted-contacts/{contactId}` | Eliminar un contacto. |
-| `GET` | `/subscriptions/current` | Consultar la suscripción vigente. |
-| `PUT` | `/subscriptions/current/plan` | Cambiar de plan. |
+| `GET` | `/profiles/{profileId}` | Consultar un perfil. |
+| `PUT` | `/profiles/{profileId}` | Actualizar los datos generales del perfil. |
+| `DELETE` | `/profiles/{profileId}` | Archivar el perfil (sus datos no se borran). |
+| `PUT` | `/profiles/{profileId}/photo` | Cambiar la foto o el avatar. |
+| `GET` | `/profiles/{profileId}/sensory-profile` | Consultar el perfil sensorial. |
+| `PUT` | `/profiles/{profileId}/sensory-profile` | Actualizar el perfil sensorial. |
+| `GET` | `/profiles/{profileId}/diagnosis` | Consultar el diagnóstico declarado. |
+| `PUT` | `/profiles/{profileId}/diagnosis` | Registrar o actualizar el diagnóstico declarado. |
+| `GET` | `/profiles/{profileId}/caregivers` | Listar los cuidadores del perfil. |
+| `POST` | `/profiles/{profileId}/caregivers` | Invitar a un cuidador o terapeuta. |
+| `PATCH` | `/profiles/{profileId}/caregivers/{caregiverId}` | Cambiar el estado de un cuidador. |
+| `DELETE` | `/profiles/{profileId}/caregivers/{caregiverId}` | Quitar el acceso de un cuidador. |
+| `GET` | `/profiles/{profileId}/trusted-contacts` | Listar los contactos de confianza. |
+| `POST` | `/profiles/{profileId}/trusted-contacts` | Agregar un contacto de confianza. |
+| `PUT` | `/profiles/{profileId}/trusted-contacts/order` | Definir el orden en que se llama a los contactos. |
+| `DELETE` | `/profiles/{profileId}/trusted-contacts/{contactId}` | Quitar un contacto de confianza. |
+| `GET` | `/subscriptions/current` | Consultar la suscripción vigente de la cuenta. |
+| `PUT` | `/subscriptions/current/plan` | Cambiar el plan de la cuenta. |
 
 **Gestión de Crisis (Modo SOS).**
 
 | Verbo | Ruta | Descripción |
 |---|---|---|
-| `POST` | `/sos-sessions` | Activar el Modo SOS (`409` si el perfil ya tiene una sesión en curso). |
-| `GET` | `/sos-sessions/{sosSessionId}` | Obtener una sesión. |
-| `GET` | `/sos-sessions/{sosSessionId}/guide` | Obtener la guía con los pasos ordenados según el detonante. |
-| `POST` | `/sos-sessions/{sosSessionId}/steps/{stepId}/complete` | Completar un paso. |
-| `POST` | `/sos-sessions/{sosSessionId}/steps/{stepId}/skip` | Omitir un paso (los obligatorios exigen `confirmed: true`). |
-| `POST` | `/sos-sessions/{sosSessionId}/steps/{stepId}/alternative` | Obtener la técnica alternativa de un paso. |
-| `POST` | `/sos-sessions/{sosSessionId}/finish` | Finalizar la sesión, completa o anticipadamente. |
-| `GET` | `/profiles/{profileId}/sos-sessions` | Listar las sesiones del perfil. |
-| `GET` | `/profiles/{profileId}/sos-sessions/in-progress` | Obtener la sesión en curso (`404` si no hay). |
-| `GET` | `/action-guides/active` | Obtener la guía vigente. |
-| `GET` | `/action-guides/{actionGuideId}` | Obtener una guía por identificador. |
-| `GET` | `/profiles/{profileId}/recommendations` | Listar las recomendaciones vigentes, con filtro opcional `topic`. |
-| `POST` | `/profiles/{profileId}/recommendations/generate` | Generar las recomendaciones del perfil. |
-| `GET` | `/recommendations/{recommendationId}` | Obtener una recomendación. |
-| `PUT` | `/recommendations/{recommendationId}/preferences` | Calificar la utilidad o marcar como favorita. |
+| `GET` | `/action-guides/active` | Consultar la guía de acción activa. |
+| `GET` | `/action-guides/{actionGuideId}` | Consultar una guía de acción. |
+| `POST` | `/sos-sessions` | Activar el Modo SOS (abre la sesión con el detonante y la intensidad inicial). |
+| `GET` | `/sos-sessions/{sosSessionId}` | Consultar una sesión SOS. |
+| `PATCH` | `/sos-sessions/{sosSessionId}` | Cambiar el estado de la sesión (finalizarla con estado observado e intensidad final). |
+| `GET` | `/sos-sessions/{sosSessionId}/guide` | Consultar la guía de la sesión, ordenada según el detonante. |
+| `PATCH` | `/sos-sessions/{sosSessionId}/steps/{stepId}` | Completar u omitir un paso (omitir uno obligatorio exige `confirmed: true`). |
+| `POST` | `/sos-sessions/{sosSessionId}/steps/{stepId}/alternatives` | Pedir una técnica alternativa para un paso. |
+| `GET` | `/profiles/{profileId}/sos-sessions` | Listar las sesiones SOS del perfil. |
+| `GET` | `/profiles/{profileId}/sos-sessions/in-progress` | Consultar la sesión SOS en curso del perfil. |
+| `GET` | `/profiles/{profileId}/recommendations` | Listar las recomendaciones del perfil. |
+| `POST` | `/profiles/{profileId}/recommendations` | Generar las recomendaciones del perfil. |
+| `GET` | `/recommendations/{recommendationId}` | Consultar una recomendación. |
+| `PUT` | `/recommendations/{recommendationId}/preferences` | Valorar una recomendación. |
 
 **Autorregulación.**
 
 | Verbo | Ruta | Descripción |
 |---|---|---|
 | `GET` | `/calming-resources` | Listar el catálogo de recursos de calma. |
-| `GET` | `/calming-resources/{calmingResourceId}` | Obtener un recurso. |
-| `POST` | `/calm-sessions` | Iniciar una sesión de calma. |
-| `GET` | `/calm-sessions/{calmSessionId}` | Obtener una sesión de calma. |
-| `PUT` | `/calm-sessions/{calmSessionId}/resource` | Elegir el recurso de la sesión. |
-| `PUT` | `/calm-sessions/{calmSessionId}/intensity` | Ajustar la intensidad. |
-| `PUT` | `/calm-sessions/{calmSessionId}/low-stimulation` | Activar o desactivar la baja estimulación. |
-| `POST` | `/calm-sessions/{calmSessionId}/pause` | Pausar la sesión. |
-| `POST` | `/calm-sessions/{calmSessionId}/resume` | Reanudar la sesión. |
-| `POST` | `/calm-sessions/{calmSessionId}/timer` | Iniciar el temporizador. |
-| `POST` | `/calm-sessions/{calmSessionId}/timer/pause` | Pausar el temporizador. |
-| `POST` | `/calm-sessions/{calmSessionId}/timer/resume` | Reanudar el temporizador. |
-| `POST` | `/calm-sessions/{calmSessionId}/timer/ticks` | Descontar los segundos transcurridos. |
-| `POST` | `/calm-sessions/{calmSessionId}/finish` | Finalizar la sesión. |
-| `GET` | `/profiles/{profileId}/calm-sessions` | Listar las sesiones del perfil. |
-| `GET` | `/profiles/{profileId}/calm-sessions/latest` | Obtener la última sesión del perfil. |
-| `GET`, `POST` | `/profiles/{profileId}/favorite-resources` | Listar o agregar recursos favoritos. |
+| `GET` | `/calming-resources/{calmingResourceId}` | Consultar un recurso de calma. |
+| `GET` | `/profiles/{profileId}/favorite-resources` | Listar los recursos favoritos del perfil. |
+| `POST` | `/profiles/{profileId}/favorite-resources` | Marcar un recurso como favorito. |
 | `DELETE` | `/profiles/{profileId}/favorite-resources/{resourceId}` | Quitar un recurso de los favoritos. |
+| `POST` | `/calm-sessions` | Iniciar una sesión de calma. |
+| `GET` | `/calm-sessions/{calmSessionId}` | Consultar una sesión de calma. |
+| `PATCH` | `/calm-sessions/{calmSessionId}` | Cambiar el estado de la sesión (por ejemplo, terminarla). |
+| `PUT` | `/calm-sessions/{calmSessionId}/resource` | Elegir el recurso de calma de la sesión. |
+| `PUT` | `/calm-sessions/{calmSessionId}/intensity` | Ajustar la intensidad del estímulo. |
+| `PUT` | `/calm-sessions/{calmSessionId}/low-stimulation` | Activar o desactivar la baja estimulación. |
+| `POST` | `/calm-sessions/{calmSessionId}/timer` | Iniciar el temporizador. |
+| `PATCH` | `/calm-sessions/{calmSessionId}/timer` | Pausar o reanudar el temporizador. |
+| `POST` | `/calm-sessions/{calmSessionId}/timer/ticks` | Avanzar el temporizador. |
+| `GET` | `/profiles/{profileId}/calm-sessions` | Listar las sesiones de calma del perfil. |
+| `GET` | `/profiles/{profileId}/calm-sessions/latest` | Consultar la última sesión de calma del perfil. |
 
-**Comunicación Asistida (CAA).** Todas las rutas cuelgan de `/profiles/{profileId}/communication-board`.
+**Comunicación Asistida (CAA).** Todas las rutas cuelgan de `/profiles/{profileId}/communication-board`; en la tabla se abrevian como `…`.
 
 | Verbo | Ruta | Descripción |
 |---|---|---|
-| `GET` | (raíz) | Obtener el tablero; si no existe, se crea con los pictogramas básicos. |
-| `GET` | `/quick-access` | Listar los pictogramas favoritos. |
-| `POST` | `/categories` | Crear una categoría personalizada. |
-| `POST` | `/pictograms` | Agregar un pictograma personalizado a una categoría. |
-| `PUT`, `DELETE` | `/pictograms/{pictogramId}/favorite` | Marcar o quitar un pictograma de los favoritos. |
-| `PUT` | `/pictograms/{pictogramId}/category` | Mover un pictograma a otra categoría. |
-| `POST` | `/pictograms/{pictogramId}/selections` | Seleccionar un pictograma para comunicar una necesidad. |
-| `GET` | `/selections` | Consultar el historial de selecciones, con filtro opcional por estado. |
-| `PATCH` | `/selections/{selectionId}/delivered` | Marcar la selección como entregada al cuidador. |
-| `PATCH` | `/selections/{selectionId}/understood` | Confirmar que el acompañante entendió el mensaje. |
-| `PATCH` | `/selections/{selectionId}/not-understood` | Indicar que no se entendió; genera una solicitud de ayuda. |
-| `POST`, `GET` | `/mood-check-ins` | Registrar el estado de ánimo o consultar su historial. |
+| `GET` | `/profiles/{profileId}/communication-board` | Obtener el tablero del perfil; si no existe, se crea con los pictogramas básicos. |
+| `GET` | `/profiles/{profileId}/communication-board/quick-access` | Listar los pictogramas del acceso rápido. |
+| `POST` | `/profiles/{profileId}/communication-board/categories` | Crear una categoría personalizada. |
+| `POST` | `/profiles/{profileId}/communication-board/pictograms` | Agregar un pictograma personalizado a una categoría. |
+| `PUT` | `/profiles/{profileId}/communication-board/pictograms/{pictogramId}/category` | Mover un pictograma a otra categoría. |
+| `PUT` | `/profiles/{profileId}/communication-board/pictograms/{pictogramId}/favorite` | Marcar un pictograma como favorito. |
+| `DELETE` | `/profiles/{profileId}/communication-board/pictograms/{pictogramId}/favorite` | Quitar un pictograma de los favoritos. |
+| `POST` | `/profiles/{profileId}/communication-board/pictograms/{pictogramId}/selections` | Registrar que el niño seleccionó un pictograma. |
+| `GET` | `/profiles/{profileId}/communication-board/selections` | Listar las selecciones, con filtro por estado. |
+| `PATCH` | `/profiles/{profileId}/communication-board/selections/{selectionId}` | Cambiar el estado de una selección (entendido o no entendido). |
+| `POST` | `/profiles/{profileId}/communication-board/mood-check-ins` | Registrar el estado de ánimo. |
+| `GET` | `/profiles/{profileId}/communication-board/mood-check-ins` | Consultar el historial de estados de ánimo. |
 
 **Red de Apoyo y Seguimiento.**
 
 | Verbo | Ruta | Descripción |
 |---|---|---|
-| `POST`, `GET` | `/episode-records` | Registrar un episodio o listar los registros. |
-| `GET` | `/episode-records/{episodeRecordId}` | Obtener un registro de episodio. |
-| `GET` | `/episode-records/latest` | Obtener el último registro. |
-| `GET` | `/episode-records/recent` | Listar los registros recientes. |
-| `GET` | `/episode-records/filter` | Filtrar los registros por fechas. |
-| `PUT` | `/episode-records/{episodeRecordId}/notes` | Agregar notas a un episodio. |
-| `POST`, `GET` | `/episode-reports` | Generar un reporte de episodios o listar los reportes. |
-| `GET` | `/episode-reports/{episodeReportId}` | Obtener un reporte. |
-| `PUT` | `/episode-reports/{episodeReportId}/share` | Compartir el reporte. |
-| `POST`, `GET` | `/help-requests` | Enviar una solicitud de ayuda o listar las solicitudes. |
-| `GET` | `/help-requests/{helpRequestId}` | Obtener una solicitud. |
-| `PUT` | `/help-requests/{helpRequestId}/confirmation` | Confirmar la recepción de la solicitud. |
-| `PUT` | `/help-requests/{helpRequestId}/cancellation` | Cancelar la solicitud. |
-| `POST`, `GET` | `/recommendations` | Crear una recomendación o listarlas. |
-| `GET` | `/recommendations/{recommendationId}` | Obtener una recomendación. |
-| `GET` | `/recommendations/active` | Listar las recomendaciones activas. |
-| `PUT` | `/recommendations/{recommendationId}/effective` | Registrar la efectividad de la recomendación. |
+| `POST` | `/episode-records` | Registrar un episodio. |
+| `GET` | `/episode-records` | Listar los registros de episodios. |
+| `GET` | `/episode-records/recent` | Consultar los episodios recientes. |
+| `GET` | `/episode-records/latest` | Consultar el último estado emocional registrado. |
+| `GET` | `/episode-records/{episodeRecordId}` | Consultar un registro de episodio. |
+| `PUT` | `/episode-records/{episodeRecordId}/notes` | Agregar o cambiar las notas de un episodio. |
+| `POST` | `/episode-reports` | Crear un reporte de episodios de un periodo. |
+| `GET` | `/episode-reports` | Listar los reportes. |
+| `GET` | `/episode-reports/{episodeReportId}` | Consultar un reporte. |
+| `POST` | `/episode-reports/{episodeReportId}/shares` | Compartir un reporte con un terapeuta o docente. |
+| `POST` | `/help-requests` | Enviar una solicitud de ayuda a la red de apoyo. |
+| `GET` | `/help-requests` | Listar las solicitudes de ayuda. |
+| `GET` | `/help-requests/{helpRequestId}` | Consultar una solicitud de ayuda. |
+| `PATCH` | `/help-requests/{helpRequestId}` | Cambiar el estado de la solicitud (atendida o cancelada). |
+| `POST` | `/support-network/recommendations` | Crear una recomendación para la red de apoyo. |
+| `GET` | `/support-network/recommendations` | Listar las recomendaciones. |
+| `GET` | `/support-network/recommendations/active` | Listar las recomendaciones activas. |
+| `GET` | `/support-network/recommendations/{recommendationId}` | Consultar una recomendación. |
+| `PATCH` | `/support-network/recommendations/{recommendationId}` | Marcar la efectividad de una recomendación. |
 
-**Pendiente de resolver al integrar.** Los contextos de Gestión de Crisis y de Red de Apoyo y Seguimiento exponen rutas `GET /recommendations/{recommendationId}` y clases `RecommendationsController` con el mismo nombre, por lo que al integrarlos en `develop` hay que unificar la ruta y el nombre del bean (tarea T-67).
+**Rutina Visual.** Contexto agregado en este Sprint (no figura en el Capítulo IV): la rutina del día del niño con pasos que el cuidador ordena y el niño marca.
+
+| Verbo | Ruta | Descripción |
+|---|---|---|
+| `GET` | `/profiles/{profileId}/routine-steps` | Consultar la rutina del día. |
+| `POST` | `/profiles/{profileId}/routine-steps` | Agregar un paso a la rutina. |
+| `PUT` | `/profiles/{profileId}/routine-steps/order` | Reordenar la rutina. |
+| `PUT` | `/profiles/{profileId}/routine-steps/{stepId}` | Editar un paso. |
+| `DELETE` | `/profiles/{profileId}/routine-steps/{stepId}` | Quitar un paso. |
+| `POST` | `/profiles/{profileId}/routine-steps/{stepId}/completion` | Marcar un paso como hecho hoy. |
+| `DELETE` | `/profiles/{profileId}/routine-steps/{stepId}/completion` | Deshacer la marca de hoy de un paso. |
 
 **[POR COMPLETAR]** Capturas de Swagger UI con cada Bounded Context expandido (`images/Chapter-V/sprint-3-swagger-*.png`).
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-> **Borrador AV2.** Los Web Services todavía no están desplegados. Esta sección describe el procedimiento previsto en la sección 5.1.4 y se completa con la plataforma elegida, las URL y las capturas.
-
-En el Sprint 3 se despliegan los Web Services y se actualizan la Frontend Web Application y el Landing Page. Los productos y plataformas son:
+En el Sprint 3 se desplegaron los Web Services y se actualizó la Frontend Web Application para consumirlos. Los productos y plataformas son:
 
 | Producto | Plataforma | URL |
 |---|---|---|
 | Landing Page | GitHub Pages | https://tinyurl.com/27e6ugke |
-| Frontend Web Application | Firebase Hosting | https://tinyurl.com/2xu8w6kb |
-| RESTful Web Services (Spring Boot) | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| Base de datos MySQL | **[POR COMPLETAR]** | No se publica |
-| Swagger UI | Los Web Services desplegados | **[POR COMPLETAR]** |
+| Frontend Web Application | Firebase Hosting (proyecto `nubi-frontend-7793`) | https://nubi-frontend-7793.web.app |
+| RESTful Web Services (Spring Boot, Docker) | Render, plan gratuito (`nubi-platform-backend`) | https://nubi-platform-backend.onrender.com |
+| Base de datos | H2 en memoria en modo MySQL (perfil `render`) | No se publica |
+| Swagger UI | Los Web Services desplegados | https://nubi-platform-backend.onrender.com/swagger-ui/index.html |
 
-Los pasos previstos para los Web Services son:
+Los pasos ejecutados para los Web Services fueron:
 
-1. Integrar las cinco ramas en `develop` y ejecutar las pruebas con `./mvnw test`.
-2. Generar el archivo ejecutable con `./mvnw package`.
-3. Crear la base de datos MySQL del entorno de producción y registrar `DB_URL`, `DB_USERNAME` y `DB_PASSWORD` como variables de entorno de la plataforma, sin guardarlas en el repositorio.
-4. Publicar la aplicación en la plataforma elegida a partir de la rama estable `master`.
-5. Verificar `GET /api/v1/action-guides/active` y `GET /api/v1/calming-resources` en la URL pública, y abrir Swagger UI.
-6. Actualizar la URL de los servicios en `environment.ts` de la Frontend Web Application, reemplazar la API simulada y volver a publicarla con `firebase deploy`.
-7. Actualizar los enlaces del Landing Page hacia la aplicación y publicar la nueva versión en GitHub Pages.
+1. Integrar las ramas en `develop` (T-67), ejecutar las 147 pruebas con `./mvnw test` y publicar la versión estable en `main` con las etiquetas `v1.0.0` a `v1.2.0`.
+2. Construir la imagen con el `Dockerfile` del repositorio, que genera el archivo ejecutable con Maven.
+3. Crear en Render un servicio web Docker a partir del espejo del repositorio (`LeonardoLopez138/nubi-platform-backend`) y registrar `SPRING_PROFILES_ACTIVE=render` y las variables de la plataforma, sin guardar credenciales en el repositorio.
+4. Verificar `GET /api/v1/action-guides/active` y `GET /api/v1/calming-resources` en la URL pública y abrir Swagger UI.
+5. Apuntar `environment.ts` de la Frontend Web Application a `https://nubi-platform-backend.onrender.com/api/v1`, retirar la API simulada y publicar con `firebase deploy`.
 
-**[POR COMPLETAR]** Capturas de la plataforma de despliegue de los Web Services y de la base de datos (`images/Chapter-V/sprint-3-deploy-services.png`).
+**Limitaciones del despliegue.** Como el plan gratuito de Render no incluye base de datos y para la demostración se optó por no gestionar una base externa, los datos se guardan en H2 en memoria: se reinician cuando el servicio se reinicia, y el servicio tarda cerca de un minuto en despertar tras un periodo sin uso (la Frontend Web Application lo avisa con la pantalla «No pudimos conectar con Nubi»). La persistencia entre reinicios se logra con MySQL, para lo que el repositorio incluye `docs/deploy/azure-mysql-setup.sql` y las variables `DB_URL`, `DB_USERNAME` y `DB_PASSWORD`. El Landing Page no se redesplegó en este Sprint.
+
+**[POR COMPLETAR]** Capturas del panel de Render y de Firebase Hosting (`images/Chapter-V/sprint-3-deploy-services.png` y `sprint-3-deploy-frontend.png`).
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint 3 se evidencia con el historial de Git de los repositorios del proyecto. Las cifras se obtuvieron de las ramas remotas al 13 de noviembre de 2026, sin contar merges.
+La colaboración del Sprint 3 se evidencia con el historial de Git de los repositorios del proyecto. Las cifras se obtuvieron de la rama `develop` de cada repositorio al 14 de noviembre de 2026, sin contar merges.
 
 ##### Repositorio de los Web Services (Nubi.Platform.Backend)
 
-Los cinco integrantes registran commits en el repositorio, cada uno en la rama del Bounded Context que lidera. La rama de Gestión de Crisis acumula 13 de sus 32 commits el 12 de noviembre y la de Red de Apoyo y Seguimiento registra sus 19 commits el 13 de noviembre.
+Los cinco integrantes registran commits en el repositorio. Cuatro de ellos trabajaron cada uno en la rama de un Bounded Context; Leonardo creó el commit inicial, el proyecto base y la rama de Comunicación Asistida, y después, con los demás contextos integrados, los contextos de IAM y Rutina Visual, el perfil único por cuenta, el despliegue y el rediseño de las rutas REST. Sofia integró las cinco ramas en `develop` el 13 de noviembre. La rama de Gestión de Crisis acumula 13 de sus 32 commits el 12 de noviembre y la de Red de Apoyo y Seguimiento registra sus 19 commits el 13 de noviembre.
 
-| Cuenta de GitHub | Integrante | Rama | Commits | Líneas | Días con commits |
+| Cuenta de GitHub | Integrante | Aporte principal | Commits | Líneas | Días con commits (noviembre) |
 |---|---|---|---|---|---|
-| nahiryn8 | Ruiz Villegas, Yngrid Nahir | `profile-personalization` | 23 | +4868 / −2 | 9 al 11 de noviembre |
-| u20241a195-cmd | Diaz Yurivilca, Sofia | `feature/crisis-management` | 32 | +4366 / −1 | 5 al 12 de noviembre |
-| joanfpp2-ai | Payano Puchuri, Joan Fabricio | `feature/self-regulation` | 14 | +2755 / −0 | 10 y 11 de noviembre |
-| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | `feature/assistive-comunication` y `feature/self-regulation` | 24 | +2045 / −2 | 4 y 5 al 9 de noviembre |
-| Dan-trax | Diaz Caruzo, Edgard Daniel | `feature/support-network` | 19 | +1824 / −0 | 13 de noviembre |
-| **Total** | | | **112** | | |
-
-Además, Leonardo creó el commit inicial del repositorio. El commit del 4 de noviembre que alinea la versión de Java y la configuración de la base de datos también está en `master` y figura en la rama de Autorregulación.
+| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | Comunicación Asistida, IAM, Rutina Visual, despliegue en Render, rutas REST | 48 | +4523 / −268 | 5 al 9, 13 y 14 |
+| u20241a195-cmd | Diaz Yurivilca, Sofia | Gestión de Crisis e integración en `develop` | 32 | +4366 / −1 | 5 al 12 |
+| nahiryn8 (Nahir Ruiz) | Ruiz Villegas, Yngrid Nahir | Perfil y Personalización | 23 | +4868 / −2 | 9 al 11 |
+| Dan-trax | Diaz Caruzo, Edgard Daniel | Red de Apoyo y Seguimiento | 19 | +1824 / −0 | 13 |
+| joanfpp2-ai (Pocho) | Payano Puchuri, Joan Fabricio | Autorregulación | 14 | +2755 / −0 | 10 y 11 |
+| **Total** | | | **136** | | |
 
 **[POR COMPLETAR]** Capturas de GitHub Insights (Contributors, Commits y Pulse) del repositorio `Nubi.Platform.Backend` (`images/Chapter-V/sprint-3-backend-contributors.png`, `sprint-3-backend-commits.png` y `sprint-3-backend-pulse.png`).
 
 ##### Repositorio de la Frontend Web Application y del Landing Page
 
-Al 13 de noviembre de 2026 los repositorios frontend: https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend y landingpage: https://github.com/ASI0729-2620-7793-Open-Source/landing-page no registran commits posteriores al cierre del Sprint 2, porque su trabajo depende de los Web Services (tareas T-70 a T-77). Este apartado se completa cuando se integren esos cambios.
+La Frontend Web Application registra 26 commits sin merges desde el 4 de noviembre de 2026 (19 el 13 de noviembre y 7 el 14 de noviembre; +12974 / −18817 líneas, porque la aplicación se reconstruyó), todos de la cuenta LeonardoLopez138. Las tareas de conexión T-70 a T-75 estaban asignadas a Ruiz Villegas, Yngrid Nahir (T-70), Diaz Yurivilca, Sofia (T-71), Payano Puchuri, Joan Fabricio (T-72), Lopez Torres, Leonardo Gabriel (T-73) y Diaz Caruzo, Edgard Daniel (T-74 y T-75); en la práctica la conexión de los seis módulos con los Web Services la implementó Leonardo en una sola reconstrucción de la aplicación, de modo que las tarjetas T-70 a T-72, T-74 y T-75 conservan a sus responsables asignados pero su commit es de Leonardo. El repositorio del Landing Page (https://github.com/ASI0729-2620-7793-Open-Source/landing-page) no registra commits posteriores al 8 de octubre de 2026.
 
 ##### Repositorio del informe (Macally)
 
@@ -1402,7 +1498,8 @@ Desde el cierre del Sprint 2 el informe recibió 11 commits sin merges: las corr
 | u20241a195-cmd | Diaz Yurivilca, Sofia | 1 | Alineación del Capítulo I |
 | Dan-trax | Diaz Caruzo, Edgard Daniel | 0 | Sin commits en este período |
 
-Como oportunidades de mejora del Sprint 3, la integración de las ramas del backend en `develop` todavía está pendiente y la rama de Red de Apoyo y Seguimiento concentró todos sus commits en un solo día, lo mismo que ocurrió en el Sprint 2. Para la versión final el equipo integra cada rama al completarse y reparte los commits del informe entre los cinco integrantes.
+
+Como oportunidades de mejora del Sprint 3, el trabajo de la Frontend Web Application quedó concentrado en un integrante y en los dos últimos días del Sprint, y las ramas de Red de Apoyo y Seguimiento y de Autorregulación concentraron sus commits en uno o dos días, lo mismo que ocurrió en el Sprint 2. Quedan sin cerrar las tareas del Landing Page (T-04, T-76 y T-77) y la persistencia de la base de datos en el despliegue. Para la versión final el equipo reparte la conexión de los módulos entre sus responsables, integra cada rama al completarse y registra los commits del informe entre los cinco integrantes.
 
 ## 5.3. Validation Interviews
 
