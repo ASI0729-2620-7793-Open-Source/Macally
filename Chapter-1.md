@@ -92,7 +92,7 @@ Lo que los productos y servicios existentes no logran abordar es el apoyo inmedi
  
 Nuestro producto abordará esta brecha mediante una solución web adaptable que integra un Modo SOS con guías de actuación paso a paso para los padres, un tablero de Comunicación Aumentativa y Alternativa (CAA) y una interfaz de autorregulación personalizable para el usuario.
  
-Nuestro enfoque inicial serán los niños y adolescentes con autismo de 6 a 17 años de Lima Metropolitana y sus padres con estilo de crianza autoritario.
+Nuestro enfoque inicial serán los niños y adolescentes con autismo de 6 a 17 años de Lima Metropolitana y sus padres.
  
 Sabremos que tenemos éxito cuando veamos:
  
@@ -120,7 +120,7 @@ Sabremos que tenemos éxito cuando veamos:
  
 - **UA1.** Creemos que los usuarios principales son niños y adolescentes de 6 a 17 años con TEA, propensos a la sobrecarga sensorial (ruidos fuertes, aglomeraciones, luces intensas y cambios de rutina).
 - **UA2.** Creemos que los usuarios autistas prefieren no hablar durante una crisis y recurren a mensajes escritos, gestos o pictogramas.
-- **UA3.** Creemos que los padres con estilo de crianza autoritario tienen un teléfono inteligente a su alcance durante los episodios.
+- **UA3.** Creemos que los padres de niños y adolescentes con autismo tienen un teléfono inteligente a su alcance durante los episodios.
 - **UA4.** Creemos que los padres no confían en las herramientas digitales actuales porque las perciben como poco prácticas, infantiles o complejas.
 - **UA5.** Creemos que los padres adoptarán la solución solo si perciben un respaldo explícito de profesionales de la salud.
 
@@ -149,7 +149,7 @@ Se formula un Hypothesis Statement por cada Feature Assumption.
  
 > Creemos que lograremos que al menos el 5 % de las cuentas gratuitas se convierta a un plan premium (BOA2)
 >
-> si los padres con estilo de crianza autoritario de niños y adolescentes con autismo
+> si los padres de niños y adolescentes con autismo
 >
 > alcanzan mayor seguridad, confianza y menor estrés al gestionar una crisis (UOA3)
 >
@@ -169,7 +169,7 @@ Se formula un Hypothesis Statement por cada Feature Assumption.
  
 > Creemos que lograremos que al menos el 30 % de los nuevos usuarios llegue por recomendación (BOA3)
 >
-> si los niños y adolescentes con autismo y dificultad para hablar durante una crisis, y sus padres con estilo de crianza autoritario,
+> si los niños y adolescentes con autismo y dificultad para hablar durante una crisis, y sus padres,
 >
 > alcanzan que el usuario exprese sus necesidades básicas sin hablar de forma fluida (UOA2)
 >
@@ -179,7 +179,7 @@ Se formula un Hypothesis Statement por cada Feature Assumption.
  
 > Creemos que lograremos que al menos el 40 % de los usuarios activos siga usando la aplicación cada semana al tercer mes (BOA1)
 >
-> si los niños y adolescentes con autismo y sus padres con estilo de crianza autoritario
+> si los niños y adolescentes con autismo y sus padres
 >
 > alcanzan una experiencia adaptada a sus sensibilidades, preferencias y necesidades comunicativas (UOA1, UOA2)
 >
@@ -189,7 +189,7 @@ Se formula un Hypothesis Statement por cada Feature Assumption.
  
 > Creemos que lograremos que al menos cinco colegios o centros de terapia contraten el plan institucional en los primeros doce meses (BOA4)
 >
-> si los padres con estilo de crianza autoritario y los profesionales de la salud que los acompañan
+> si los padres de niños y adolescentes con autismo y los profesionales de la salud que los acompañan
 >
 > alcanzan un mejor acompañamiento durante y después de la crisis gracias a la solicitud de ayuda y al registro de episodios (UOA4, UOA5)
 >
@@ -229,7 +229,7 @@ Se formula un Hypothesis Statement por cada Feature Assumption.
   <tr>
     <td valign="top">
       <strong>3) Usuarios y clientes</strong><br><br>
-      <strong>Usuarios:</strong> niños y adolescentes con autismo de 6 a 17 años (TEA) que viven episodios de desregulación emocional o sensorial y necesitan herramientas simples para autorregularse y comunicarse; y padres con estilo de crianza autoritario que necesitan orientación clara e inmediata para acompañarlos.<br><br>
+      <strong>Usuarios:</strong> niños y adolescentes con autismo de 6 a 17 años (TEA) que viven episodios de desregulación emocional o sensorial y necesitan herramientas simples para autorregularse y comunicarse; y padres de niños y adolescentes con autismo que necesitan orientación clara e inmediata para acompañarlos.<br><br>
       <strong>Clientes:</strong> las familias (plan freemium y premium) y, en una etapa posterior, colegios y centros de terapia (plan institucional).
     </td>
     <td valign="top">
@@ -307,9 +307,9 @@ Niños y adolescentes autistas que pueden vivir episodios de desregulación emoc
 - Otro metaanálisis de 28 estudios con niños y adolescentes con TEA halló un efecto global positivo (g de Hedges = 0.62; IC 95 %: 0.36–0.88), más marcado en habilidades socioemocionales. Sus autores recomiendan usar estas herramientas como recursos complementarios, y reportan que las intervenciones basadas en computadora tuvieron efectos mayores que las basadas en tableta o teléfono (Xu et al., 2026).
 *Nota sobre la evidencia.* Los estudios citados evalúan intervenciones digitales terapéuticas o educativas, y no herramientas de contención durante una crisis. Se usan como sustento de la viabilidad de los apoyos digitales para este segmento, no como prueba de la eficacia de Nubi, que se validará en las entrevistas de validación (sección 5.3). Los adolescentes entrevistados en esta etapa tienen entre 15 y 17 años; la validación con usuarios de menor edad queda planificada para dichas entrevistas.
  
-### Segmento objetivo 2: Padres con estilo de crianza autoritario
+### Segmento objetivo 2: Padres de niños y adolescentes con autismo
  
-Padres de niños y adolescentes con autismo, con un estilo de crianza autoritario, que necesitan orientación práctica para actuar durante episodios de desregulación emocional o sensorial. Este segmento participa directamente en el apoyo del usuario y utiliza herramientas como el Modo SOS, las guías de actuación, el tablero CAA y el registro de episodios.
+Padres de niños y adolescentes con autismo que necesitan orientación práctica para actuar durante episodios de desregulación emocional o sensorial. Este segmento participa directamente en el apoyo del usuario y utiliza herramientas como el Modo SOS, las guías de actuación, el tablero CAA y el registro de episodios.
  
 #### A. Características demográficas
  
