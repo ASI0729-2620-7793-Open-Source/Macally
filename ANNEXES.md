@@ -20,9 +20,9 @@
 |---|---|---|
 | Landing Page desplegado | GitHub Pages | https://asi0729-2620-7793-open-source.github.io/landing-page/ |
 | Repositorio del Landing Page | GitHub | https://github.com/ASI0729-2620-7793-Open-Source/landing-page |
-| Frontend Web Application desplegada | Firebase Hosting | https://tinyurl.com/2xu8w6kb |
+| Frontend Web Application desplegada | Firebase Hosting | https://nubi-frontend-7793.web.app (enlace corto anterior: https://tinyurl.com/2xu8w6kb) |
 | Repositorio de la Frontend Web Application | GitHub | https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend |
-| API simulada (json-server) desplegada | Render | https://nubi-api-x7sz.onrender.com/api |
+| API simulada (json-server) desplegada, reemplazada en el Sprint 3 | Render | https://nubi-api-x7sz.onrender.com/api |
 | Repositorio del Informe del Proyecto | GitHub | https://github.com/ASI0729-2620-7793-Open-Source/Macally |
 | Wireframes, Mock-ups y Prototipos | Figma | https://www.figma.com/design/WGr7DojMDH0m122pRirLJw/NUBI |
 | User Personas, User Journey Maps, Empathy Maps e Impact Map | UXPressia | `URL del proyecto en UXPressia` |
@@ -33,8 +33,8 @@
 | Sprint Backlog 1 | Trello | https://tinyurl.com/25y7b883 |
 | Sprint Backlog 2 | Trello | https://tinyurl.com/2afdpsnp |
 | Repositorio de los RESTful Web Services | GitHub | https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend |
-| RESTful Web Services desplegados | `Plataforma por definir` | `URL de los Web Services` |
-| Documentación OpenAPI (Swagger UI) | Web Services desplegados | `URL de Swagger UI` |
-| Contrato de la API de Perfil y Personalización | Rama `profile-personalization` del repositorio de los Web Services | `docs/api-perfil-personalizacion.md` |
+| RESTful Web Services desplegados | Render (Docker, plan gratuito) | https://nubi-platform-backend.onrender.com |
+| Documentación OpenAPI (Swagger UI) | Web Services desplegados | https://nubi-platform-backend.onrender.com/swagger-ui/index.html |
+| Contrato de la API de Perfil y Personalización | Repositorio de los Web Services (rama `develop`) | `docs/api-perfil-personalizacion.md` |
 | Sprint Backlog 3 | Trello | https://trello.com/b/HCIZ8lA6/sprint-3-nubi |
 | Video About-the-Product | YouTube (incrustado en el Landing Page) | https://www.youtube.com/embed/utaBaLFhlOQ |
