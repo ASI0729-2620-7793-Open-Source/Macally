@@ -1736,33 +1736,33 @@ A continuación se registran las entrevistas de validación realizadas por segme
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #00373E; padding: 12px 16px 16px;">
-    <img src="images/Chapter-V/validacion-s1-e1.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/Chapter-V/entrevistasebas1.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Sebastián Moisés Suárez Simeón
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 17 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Sofía Díaz Yurvilca
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> San Martín de Porres
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 0:00 (inicio de la grabación)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> Aproximadamente 22:17 (según la transcripción)
       </td>
     </tr>
   </table>
@@ -1772,7 +1772,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://sl1nk.com/essxvtz">https://sl1nk.com/essxvtz</a>
       </td>
     </tr>
   </table>
@@ -1781,7 +1781,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+        <p>Entendió que Nubi es una red de apoyo emocional para cuidadores y personas neurodivergentes. En UF-1 usó las burbujas flotantes y los sonidos, y dijo que se sintió mejor al terminar la sesión de calma. En UF-2 probó el tablero de pictogramas y entendió para qué sirve, aunque preguntó qué significaban las opciones "entendí" y "no entendí". Le parecieron bien los sonidos, pero consideró que los colores son demasiado fluorescentes para momentos de sobreestimulación, y que la burbuja y el globo de respiración son muy pequeños. Como dificultades señaló que el acceso al área de adultos es muy fácil para un niño, que editar una rutina lo lleva directo al perfil del niño y que no entendió qué significa archivar un perfil. Probabilidad de uso: 3 en una escala de 1 a 5.</p>
       </td>
     </tr>
   </table>
@@ -1811,26 +1811,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Diana López
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 15 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Sofía Díaz Yurvilca
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> San Miguel
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 0:00 (inicio de la grabación)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> Aproximadamente 18:49 (según la transcripción)
       </td>
     </tr>
   </table>
@@ -1840,7 +1840,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://l1nq.com/ygh85ih">https://l1nq.com/ygh85ih</a>
       </td>
     </tr>
   </table>
@@ -1849,7 +1849,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+        <p>Entendió que Nubi ayuda a niños con neurodivergencias a manejar las crisis, controlar su estado de ánimo y seguir su rutina, y lo considera útil para la terapia. En UF-1 encontró el rincón de calma y las burbujas flotantes, y consideró que la pantalla se adapta bien a su estado. En UF-2 probó la sección Hablar con frases como "Quiero descansar" y "Necesito ayuda", y lo considera muy útil cuando alguien está abrumado y no puede hablar. Consideró que los colores son tranquilos y no abrumadores; no comentó sobre las animaciones ni los sonidos. No encontró pantallas ni pasos confusos, aunque hubo preguntas sobre el Modo SOS y la red de apoyo que se aclararon. Probabilidad de uso: 4 en una escala de 1 a 5, porque en una crisis es difícil pensar en usar una aplicación, pero en algún momento sí la usaría. Sugiere más ejercicios y una herramienta que mida qué tan efectivos son.</p>
       </td>
     </tr>
   </table>
@@ -1949,26 +1949,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Johan Friabusmante
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 20 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Ingrid Nahir Ruiz Villegas
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> Miraflores
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 0:00 (inicio de la grabación)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> Aproximadamente 9:41 (según la transcripción)
       </td>
     </tr>
   </table>
@@ -1978,7 +1978,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://l1nq.com/sx84u06">https://l1nq.com/sx84u06</a>
       </td>
     </tr>
   </table>
@@ -1987,7 +1987,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page y los planes; (2) los User Flows UF-3 (Perfil y Personalización), UF-4 (Modo SOS), UF-5 (Comunicación asistida), UF-6 (Red de Apoyo y Seguimiento) y UF-7 (Cuenta y plan), con énfasis en si completó la guía del Modo SOS y qué le pareció la cantidad de pasos; (3) cuánta confianza le da usar Nubi durante una crisis y qué lo respaldaría; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5), si pagaría por el plan Premium y sus sugerencias de mejora.
+        <p>Indicó que su familiar tiene autismo leve. Entendió qué hace Nubi y le gustó que la aplicación pueda avisarle en tiempo real lo que ocurre con su familiar. Creó el perfil sin dificultad y consideró necesarios los datos solicitados. Por lo que vio, el botón SOS se ubica fácilmente. La guía paso a paso le pareció clara, con un paso a la vez y una cantidad de pasos adecuada, y le parece bien que se adapte a la condición de la persona. Dijo que el resumen al finalizar el episodio le permitió comprender todo lo ocurrido. Cree que el tablero de pictogramas podría usarse para comunicarse durante una crisis, y le resultó muy útil lo que ocurre después de confirmar una necesidad. Para usar Nubi en una situación de alta tensión, por ahora le parece bien, aunque considera que sería bueno contar con un profesional de la salud. No señaló pantallas ni pasos confusos y, por ahora, no sabría qué agregar. Probabilidad de uso: 5 en una escala de 1 a 5. Considera que el plan Premium le conviene más porque tiene más funciones.</p>
       </td>
     </tr>
   </table>
@@ -2017,26 +2017,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Lizeth Villanueva
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 25 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Ingrid Nahir Ruiz Villegas
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> Pueblo Libre
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 0:03 (según la transcripción)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> Aproximadamente 8:47 (según la transcripción)
       </td>
     </tr>
   </table>
@@ -2046,7 +2046,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://sl1nk.com/2y1bdn9">https://sl1nk.com/2y1bdn9</a>
       </td>
     </tr>
   </table>
@@ -2055,7 +2055,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page y los planes; (2) los User Flows UF-3 (Perfil y Personalización), UF-4 (Modo SOS), UF-5 (Comunicación asistida), UF-6 (Red de Apoyo y Seguimiento) y UF-7 (Cuenta y plan), con énfasis en si completó la guía del Modo SOS y qué le pareció la cantidad de pasos; (3) cuánta confianza le da usar Nubi durante una crisis y qué lo respaldaría; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5), si pagaría por el plan Premium y sus sugerencias de mejora.
+        <p>Entendió qué hace Nubi y la considera una plataforma interesante para entender mejor el tema. Su hermano tiene autismo, así que participa como familiar y no como madre o padre. Creó el perfil sin dificultad y consideró necesarios los datos solicitados. Encontró el botón SOS con facilidad y cree que lo ubicaría rápido en una crisis real. La guía paso a paso le pareció clara, con una cantidad de pasos adecuada, y le dio confianza de que se adapta al perfil. Consideró bastante útil el resumen al finalizar el episodio y cree que el tablero de pictogramas sería una herramienta muy útil durante una crisis. Entendió qué ocurre después de confirmar una necesidad de comunicación. Para usar Nubi en un momento de alta tensión, le daría más seguridad saber cómo tratar ciertos aspectos del tema neurológico, con respaldo de un médico especialista. Probabilidad de uso: no asignó un valor en la escala de 1 a 5; dijo que aún lo evaluaría, porque no le queda claro el objetivo real de Nubi ni qué nivel de acompañamiento ofrece. No respondió si pagaría por el plan Premium. Sugiere accesos más rápidos, por ejemplo a la atención o a la orientación con un especialista, para no tener que entrar a tantas pestañas.</p>
       </td>
     </tr>
   </table>
