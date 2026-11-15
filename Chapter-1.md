@@ -194,6 +194,7 @@ Se formula un Hypothesis Statement por cada Feature Assumption.
 > alcanzan un mejor acompañamiento durante y después de la crisis gracias a la solicitud de ayuda y al registro de episodios (UOA4, UOA5)
 >
 > con una red de apoyo que permite avisar a contactos de confianza y generar reportes de episodios compartibles (FA5).
+
 ### 1.2.2.4. Lean UX Canvas
 
 
