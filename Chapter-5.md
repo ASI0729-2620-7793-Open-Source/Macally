@@ -1283,7 +1283,17 @@ La Frontend Web Application se reconstruyó en el Sprint 3 para consumir los Web
 
 Además de lo anterior, la Frontend Web Application se publica con las versiones `v1.0.1` a `v1.2.0` (14 de noviembre). La versión `v1.2.0` incorpora el soporte de español e inglés (ngx-translate) y los planes de suscripción con los mismos nombres, precios y beneficios del Landing Page, y es la que está desplegada en Firebase Hosting.
 
-El Landing Page no registra commits nuevos después del Sprint 2 (último commit: 8 de octubre de 2026), por lo que las tareas T-04, T-76 y T-77 siguen pendientes. **[POR COMPLETAR]** Tabla de commits del Landing Page al cerrar esas tareas.
+El repositorio del Landing Page no registra commits en `origin/master` después del Sprint 2 (último commit: 8 de octubre de 2026). Los cambios de las tareas T-04 y T-77 se prepararon el 15 de noviembre de 2026 en la rama `feature/web-app-cta-and-seo`, creada desde `master`, y se verificaron en un servidor local:
+
+- **T-04, call-to-action hacia la Web Application:** los botones «Log in» y «Get started» (menú, menú móvil, sección principal, planes y cierre) y «Create an account and activate it» (Modo SOS) redirigen a las vistas de ingreso (`/ingresar`) y de registro (`/registro`) de la Web Application desplegada. `main.js` define la URL base y las rutas, y el HTML conserva el enlace correcto para quienes navegan sin JavaScript. La verificación local confirmó las nueve redirecciones y su funcionamiento en español e inglés, sin errores en la consola.
+- **T-77, enlaces y SEO:** se agregan la URL canónica, `og:url`, `og:locale`, las etiquetas `twitter:card`, `twitter:title` y `twitter:description`, la regla `robots`, `robots.txt` y `sitemap.xml`; la imagen de `og:image` pasa a ser una URL absoluta. El footer incluye el enlace a la documentación de la API (Swagger UI de los Web Services desplegados), en inglés y en español.
+
+La tarea T-76 (testimonios reales y accesibilidad) sigue pendiente porque depende de las entrevistas de validación de la sección 5.3. Los commits de la rama se subieron al repositorio el 15 de noviembre de 2026. Falta integrarla en `master` para desplegarla en GitHub Pages.
+
+| Repository | Branch | Commit Id | Commit Message | Commited on (Date) |
+|---|---|---|---|---|
+| ASI0729-2620-7793-Open-Source/landing-page | `feature/web-app-cta-and-seo` | [bd2291e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/bd2291e) | feat(landing): redirect call-to-action buttons to the web application | 15/11/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `feature/web-app-cta-and-seo` | [591a2e5](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/591a2e5) | feat(seo): add robots.txt and sitemap.xml | 15/11/2026 |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -1300,7 +1310,64 @@ Un recorrido del Modo SOS contra los Web Services desplegados, ejecutado el 14 d
 
 El recorrido confirma la comunicación entre los contextos de Gestión de Crisis y de Red de Apoyo y Seguimiento por eventos de dominio sobre la rama integrada.
 
-**[POR COMPLETAR]** Capturas de pantalla de Swagger UI con los siete contextos, de Postman con el recorrido anterior y de la consola de H2 o de MySQL con los datos creados (`images/Chapter-V/sprint-3-swagger.png`, `sprint-3-postman.png` y `sprint-3-database.png`).
+La siguiente captura muestra Swagger UI de los Web Services desplegados en Render (`https://nubi-platform-backend.onrender.com/swagger-ui/index.html`), con la documentación de los endpoints de Autenticación y de Comunicación Asistida. Las capturas de cada Bounded Context se presentan en la sección 5.2.3.6.
+
+![Swagger UI de los Web Services desplegados](images/Chapter-V/sprint-3/sprint-3-swagger.png)
+
+*Figura. Swagger UI de los Web Services de Nubi (`Nubi Platform API v1.0.0`, OpenAPI 3.1) desplegados en Render.*
+
+La Frontend Web Application desplegada en Firebase Hosting (`https://nubi-frontend-7793.web.app`) consume estos Web Services. Las capturas siguientes se tomaron el 15 de noviembre de 2026 con la cuenta de demostración que ofrece la pantalla de ingreso y muestran las vistas de los Bounded Contexts, en la versión de escritorio.
+
+![Pantalla de ingreso](images/Chapter-V/sprint-3/sprint-3-frontend-ingresar.png)
+
+*Figura. Ingreso a la Frontend Web Application, con el selector de idioma (ES y EN) y el acceso a la cuenta de demostración.*
+
+![Inicio](images/Chapter-V/sprint-3/sprint-3-frontend-inicio.png)
+
+*Figura. Inicio: estado de ánimo del niño, resumen de calma, rutina del día y acceso al Modo SOS.*
+
+![Perfil del niño](images/Chapter-V/sprint-3/sprint-3-frontend-perfil.png)
+
+*Figura. Perfil y Personalización: perfil del niño con autismo, organizado en pestañas de datos, sensibilidades, diagnóstico y red de cuidadores.*
+
+![Rutina visual](images/Chapter-V/sprint-3/sprint-3-frontend-rutina.png)
+
+*Figura. Rutina visual: pasos del día que el cuidador ordena y el niño marca como completados.*
+
+![Rincón de calma](images/Chapter-V/sprint-3/sprint-3-frontend-calma.png)
+
+*Figura. Autorregulación: catálogo de recursos de calma por tipo, con favoritos. La aplicación oculta tres recursos de sonido porque el perfil sensorial indica sensibilidad alta.*
+
+![Comunicación](images/Chapter-V/sprint-3/sprint-3-frontend-comunicacion.png)
+
+*Figura. Comunicación Asistida: tablero de pictogramas por categoría.*
+
+![Progreso](images/Chapter-V/sprint-3/sprint-3-frontend-progreso.png)
+
+*Figura. Progreso: patrones a partir de los registros de ánimo, los momentos de calma y las crisis acompañadas (la cuenta de demostración todavía no tiene registros).*
+
+![Red de apoyo](images/Chapter-V/sprint-3/sprint-3-frontend-seguimiento.png)
+
+*Figura. Red de Apoyo y Seguimiento: episodios, solicitudes de ayuda, reportes y recomendaciones.*
+
+![Modo SOS](images/Chapter-V/sprint-3/sprint-3-frontend-sos.png)
+
+*Figura. Gestión de Crisis: selección de la intensidad y del detonante antes de empezar la guía del Modo SOS.*
+
+![Plan](images/Chapter-V/sprint-3/sprint-3-frontend-plan.png)
+
+*Figura. Cuenta y plan: comparación de los planes Estándar, Premium e Instituciones. El cambio de plan es una demostración y no realiza cobros.*
+
+En la versión móvil (390 px de ancho) la aplicación adapta el diseño:
+
+<p align="center">
+  <img src="images/Chapter-V/sprint-3/sprint-3-frontend-inicio-mobile.png" alt="Inicio en versión móvil" width="260">
+  <img src="images/Chapter-V/sprint-3/sprint-3-frontend-sos-mobile.png" alt="Modo SOS en versión móvil" width="260">
+</p>
+
+*Figura. Inicio y Modo SOS en un navegador móvil.*
+
+**[POR COMPLETAR]** Capturas de Postman con el recorrido anterior y de la consola de H2 o de MySQL con los datos creados (`images/Chapter-V/sprint-3/sprint-3-postman.png` y `sprint-3-database.png`).
 
 **[POR COMPLETAR]** Video de navegación del Sprint 3 con la Frontend Web Application conectada a los Web Services (URL en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`).
 
@@ -1443,7 +1510,55 @@ Las tablas siguientes resumen las 92 operaciones que publica Swagger UI en los s
 | `POST` | `/profiles/{profileId}/routine-steps/{stepId}/completion` | Marcar un paso como hecho hoy. |
 | `DELETE` | `/profiles/{profileId}/routine-steps/{stepId}/completion` | Deshacer la marca de hoy de un paso. |
 
-**[POR COMPLETAR]** Capturas de Swagger UI con cada Bounded Context expandido (`images/Chapter-V/sprint-3-swagger-*.png`).
+Las siguientes capturas de Swagger UI, tomadas el 15 de noviembre de 2026 en los Web Services desplegados, muestran los endpoints de cada Bounded Context agrupados por etiqueta (`tag`). Cada etiqueta lista el verbo HTTP, la ruta y una descripción breve; al expandir una operación, Swagger UI muestra sus parámetros, el cuerpo de la solicitud y los ejemplos de respuesta.
+
+**Autenticación (IAM)**
+
+![Swagger UI: Authentication](images/Chapter-V/sprint-3/sprint-3-swagger-authentication.png)
+
+**Perfil y Personalización**
+
+![Swagger UI: profile-controller](images/Chapter-V/sprint-3/sprint-3-swagger-profile-controller.png)
+
+![Swagger UI: subscription-controller](images/Chapter-V/sprint-3/sprint-3-swagger-subscription-controller.png)
+
+**Gestión de Crisis (Modo SOS)**
+
+![Swagger UI: SOS Sessions](images/Chapter-V/sprint-3/sprint-3-swagger-sos-sessions.png)
+
+![Swagger UI: Action Guides](images/Chapter-V/sprint-3/sprint-3-swagger-action-guides.png)
+
+![Swagger UI: Recommendations](images/Chapter-V/sprint-3/sprint-3-swagger-recommendations.png)
+
+**Autorregulación**
+
+![Swagger UI: Calming Resources](images/Chapter-V/sprint-3/sprint-3-swagger-calming-resources.png)
+
+![Swagger UI: Calm Sessions](images/Chapter-V/sprint-3/sprint-3-swagger-calm-sessions.png)
+
+**Comunicación Asistida (CAA)**
+
+![Swagger UI: Communication Board](images/Chapter-V/sprint-3/sprint-3-swagger-communication-board.png)
+
+![Swagger UI: Pictogram Selections](images/Chapter-V/sprint-3/sprint-3-swagger-pictogram-selections.png)
+
+![Swagger UI: Mood Check-ins](images/Chapter-V/sprint-3/sprint-3-swagger-mood-check-ins.png)
+
+**Red de Apoyo y Seguimiento**
+
+![Swagger UI: episode-records-controller](images/Chapter-V/sprint-3/sprint-3-swagger-episode-records-controller.png)
+
+![Swagger UI: episode-reports-controller](images/Chapter-V/sprint-3/sprint-3-swagger-episode-reports-controller.png)
+
+![Swagger UI: help-requests-controller](images/Chapter-V/sprint-3/sprint-3-swagger-help-requests-controller.png)
+
+![Swagger UI: recommendations-controller](images/Chapter-V/sprint-3/sprint-3-swagger-recommendations-controller.png)
+
+**Rutina Visual**
+
+![Swagger UI: Visual Routine](images/Chapter-V/sprint-3/sprint-3-swagger-visual-routine.png)
+
+En total Swagger UI documenta 92 operaciones en 16 etiquetas.
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
@@ -1764,10 +1879,10 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Aguirre Campos, Owen
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 17 años
       </td>
     </tr>
     <tr>
@@ -1775,7 +1890,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
         <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> San Martín de Porres
       </td>
     </tr>
     <tr>
@@ -1783,7 +1898,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
         <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> Aproximadamente 13 minutos (la transcripción llega hasta 12:54)
       </td>
     </tr>
   </table>
@@ -1802,7 +1917,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+        Owen Aguirre Campos, de 17 años y residente de San Martín de Porres, cuenta que a veces le cuesta mantenerse tranquilo y que se inquieta con los ruidos fuertes, como los ladridos de los perros, los gritos de la gente en la calle y los cohetes o fuegos artificiales. <br><br><strong>Landing Page.</strong> Entendió que Nubi es una página que puede ayudar a personas con este tipo de dificultades. La vio clara, con iconos llamativos, útil y con un diseño muy acertado. <br><br><strong>UF-1, Autorregulación.</strong> Eligió el estímulo de burbujas y dijo sentirse tranquilo con ellas. Valoró que el botón es grande y que las burbujas se ven sin problema, por lo que lo consideró muy fácil de acceder. Describió la paleta de colores como tranquila: sin colores saturantes o brillantes, que no molestan ni incomodan la vista. Al cambiar la intensidad de 8 a 10 observó que la animación cambia y se vuelve un poco más rápida. Al elegir un tiempo de 2 minutos comprobó que el cronómetro empieza a correr, y notó que el cuadro le indica respirar, lo que le hizo sentir algo mejor. <br><br><strong>Rutina visual y perfil.</strong> Agregó un paso a la rutina, configuró la hora y la actividad, y lo consideró sencillo, con el botón bien ubicado y grande, además de iconos para elegir. También cambió un elemento a favoritos con el corazón y agregó una nota. Le pareció una vista completa, en la que puede visualizar bien qué le puede pasar a Mati. <br><br><strong>Dificultades.</strong> No encontró ninguna pantalla, botón o paso confuso; la aplicación le pareció muy accesible y sencilla. <br><br><strong>Probabilidad de uso y sugerencias.</strong> Dijo que podría usarla cuando se siente triste o angustiado, y la calificó con un 4 de 5 por su tranquilidad y facilidad de uso. Sugirió que en el perfil del niño se puedan guardar sus dibujos o las imágenes que le gustan y le llaman la atención, aprovechando la opción de dibujo.
       </td>
     </tr>
   </table>
