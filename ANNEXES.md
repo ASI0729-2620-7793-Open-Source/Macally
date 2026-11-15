@@ -8,7 +8,7 @@
 | TB1 | upc-pre-202620-1asi0729-7793-macally-expo-tb1 | `URL del video en Microsoft Stream` |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-expo-av2 | `URL del video en Microsoft Stream` |
 | AV2 (Sprint 3) | upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3 | `URL del video en Microsoft Stream` |
-| AV2 | upc-pre-202620-1asi0729-7793-macally-validation-interviews-sprint-3 | `URL del video en Microsoft Stream` |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-validation-sprint-3 | `URL del video en Microsoft Stream` |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3 | `URL del video en Microsoft Stream` y https://www.youtube.com/embed/utaBaLFhlOQ (YouTube, incrustado en el Landing Page) |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3 | `URL del video en Microsoft Stream` |
 

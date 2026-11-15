@@ -240,6 +240,12 @@ En cuanto a accesibilidad, el Landing Page y la Frontend Web Application deben c
 
 La aplicación de estas convenciones permite que el código fuente de NUBI mantenga una estructura uniforme entre los integrantes del equipo, facilite el mantenimiento de los productos y reduzca inconsistencias durante el desarrollo colaborativo.
 
+#### Ética y responsabilidad
+
+Los términos y condiciones de servicio de NUBI se publican en la página `terms.html` del Landing Page y se enlazan desde su footer, en inglés y en español, con tres vínculos: Terms of use, Privacy policy y Accessibility statement. Los términos establecen el propósito y el alcance (NUBI ofrece herramientas operativas de apoyo y no diagnostica, no trata ni reemplaza la atención de profesionales de la salud), la conducta ante emergencias (llamar de inmediato a los servicios de emergencia), el uso responsable (el cuidador responde por la exactitud de la información del perfil) y los compromisos éticos del equipo, basados en el código de ética de Ingeniería de Software de ACM/IEEE-CS y en el código de ética del Colegio de Ingenieros del Perú (CIP). La política de privacidad se rige por la Ley 29733, de Protección de Datos Personales.
+
+El equipo evidencia la transparencia y la responsabilidad profesional del proceso con el control de versiones en GitHub (GitFlow, Conventional Commits y los analíticos de colaboración de las secciones 5.2.X.8), con las capturas de cada Sprint y con los videos de exposición. **[POR COMPLETAR]** Enlazar los mismos términos desde el footer de la Frontend Web Application, porque el enunciado exige el enlace en el footer del Landing Page y de las Aplicaciones.
+
 ### 5.1.4. Software Deployment Configuration
 
 La configuración de despliegue de NUBI tiene como objetivo establecer el proceso mediante el cual los diferentes productos de software desarrollados por el equipo pasan desde sus respectivos repositorios de código fuente hasta un entorno accesible para los usuarios.
@@ -1503,7 +1509,7 @@ Como oportunidades de mejora del Sprint 3, el trabajo de la Frontend Web Applica
 
 ## 5.3. Validation Interviews
 
-> **Borrador AV2.** El diseño de las entrevistas (5.3.1) está completo. El registro (5.3.2) es una plantilla: todavía no se realizan las entrevistas de validación, por lo que ningún dato de personas, video o resultado está escrito. Las evaluaciones (5.3.3) incluyen el formato y las preguntas de cada heurística para llenarlas con los resultados. **[POR CONFIRMAR]** el formato con el Anexo D del enunciado vigente, que no estaba disponible al redactar este borrador.
+> **Borrador AV2.** El diseño de las entrevistas (5.3.1) está completo. El registro (5.3.2) es una plantilla: todavía no se realizan las entrevistas de validación, por lo que ningún dato de personas, video o resultado está escrito. Las evaluaciones (5.3.3) siguen el formato del Anexo D del enunciado y se llenan con los resultados.
 
 En esta sección el equipo diseña, registra y evalúa las entrevistas de validación. A diferencia de las entrevistas de needfinding del capítulo II, en las de validación los usuarios de los dos segmentos objetivo interactúan con el Landing Page y con la Frontend Web Application mientras el equipo observa sus dificultades. Los resultados se contrastan con las hipótesis y los criterios de éxito del Lean UX Canvas (sección 1.2.2.4) y alimentan las Conclusiones.
 
@@ -1597,7 +1603,7 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 
 ### 5.3.2. Registro de Entrevistas
 
-**Validation Interviews Link:** <mark>[POR COMPLETAR]</mark> (video consolidado en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-validation-interviews-sprint-3`)
+**Validation Interviews Link:** <mark>[POR COMPLETAR]</mark> (video consolidado en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-validation-sprint-3`)
 
 A continuación se registran las entrevistas de validación realizadas por segmento. Para cada entrevista se consigna el nombre y apellidos del participante, su edad, su distrito de residencia, un screenshot de un cuadro del video, el enlace al video alojado en Microsoft Stream, indicando el timing donde inicia la entrevista y su duración, y un resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas. De acuerdo con lo planificado por el equipo, se realizan entre tres y cinco entrevistas por segmento. <mark>[POR COMPLETAR]</mark> Indicar cuántas entrevistas se realizaron en cada segmento. Si se realizan más de tres, se copia la tarjeta de la última entrevista y se cambia el número y el nombre de la imagen.
 
@@ -2029,64 +2035,124 @@ Al terminar las entrevistas se completa esta tabla con el total de participantes
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-La evaluación toma las observaciones de cada entrevista y las clasifica según tres grupos de heurísticas: usabilidad, arquitectura de información y diseño inclusivo. Para cada entrevista se califica el cumplimiento de cada heurística de 1 (no se cumple) a 5 (se cumple plenamente) y se anota la evidencia que lo respalda. **[POR CONFIRMAR]** con el formato del Anexo D.
+Después de las sesiones de validación, el equipo evalúa la experiencia de Nubi con el formato **UX Heuristics & Principles Evaluation** del Anexo D del enunciado, que revisa la usabilidad, el diseño inclusivo y la arquitectura de información. Se llena un formato por cada sesión de evaluación, a partir de las observaciones de todas las entrevistas de la sección 5.3.2. El formato tiene cinco partes: los datos de la sesión, el sitio o la aplicación a evaluar con sus tareas, la escala de severidad, la tabla resumen de problemas y la descripción de cada problema con su captura de pantalla y su recomendación.
 
-#### Formato de evaluación por entrevista
+#### Datos de la sesión de evaluación
 
 | Dato | Detalle |
 |---|---|
-| Entrevista | **[POR COMPLETAR]** (por ejemplo, Segmento 2, Entrevista #1) |
-| Producto evaluado | Landing Page / Frontend Web Application |
-| Evaluador | **[POR COMPLETAR]** |
-| Fecha | **[POR COMPLETAR]** |
+| Carrera | Ingeniería de Software |
+| Curso | Desarrollo de Aplicaciones Open Source (1ASI0729) |
+| Sección | NRC 7793 |
+| Profesores | Todos |
+| Auditor | Macally (grupo que ejecuta la sesión de evaluación) |
+| Cliente(s) | **[POR COMPLETAR]** Nombres de las personas que participan en la sesión |
 
-**A. Heurísticas de usabilidad (Nielsen)**
+#### Sitio o aplicación a evaluar
 
-| # | Heurística | Qué se observa en Nubi | Cumplimiento (1 a 5) | Evidencia y observaciones | Mejora propuesta |
-|---|---|---|---|---|---|
-| H1 | Visibilidad del estado del sistema | El usuario sabe en qué paso de la guía del Modo SOS va y si el envío de una necesidad o una solicitud se confirmó. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H2 | Correspondencia entre el sistema y el mundo real | Los textos y pictogramas usan el lenguaje del usuario, sin términos clínicos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H3 | Control y libertad del usuario | Puede cancelar una solicitud de ayuda, salir del Modo SOS y deshacer un cambio del perfil. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H4 | Consistencia y estándares | Los botones, colores y etiquetas se comportan igual en todos los módulos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H5 | Prevención de errores | Omitir un paso obligatorio del Modo SOS exige confirmación y el formulario del perfil valida los datos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H6 | Reconocer en lugar de recordar | Las opciones y pictogramas están a la vista, sin obligar a recordar pasos previos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H7 | Flexibilidad y eficiencia de uso | El botón SOS es accesible desde cualquier pantalla y los favoritos aceleran las tareas repetidas. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H8 | Diseño estético y minimalista | Cada pantalla muestra solo lo necesario, sin saturar durante una crisis. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H9 | Ayuda para reconocer, diagnosticar y recuperarse de errores | Los mensajes de error explican qué ocurrió y cómo resolverlo. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H10 | Ayuda y documentación | El usuario encuentra explicaciones breves, preguntas frecuentes o textos de apoyo cuando los necesita. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| Producto | Enlace |
+|---|---|
+| Nubi, Landing Page | https://asi0729-2620-7793-open-source.github.io/landing-page/ |
+| Nubi, Frontend Web Application | https://nubi-frontend-7793.web.app |
 
-**B. Heurísticas de arquitectura de información**
+#### Tareas a evaluar
+
+El alcance de la evaluación incluye la revisión de la usabilidad de las tareas asignadas en la sección 5.3.1 a los dos segmentos objetivo:
+
+1. Explorar el Landing Page e identificar qué ofrece Nubi y los planes disponibles.
+2. Crear una cuenta e iniciar sesión.
+3. Crear el perfil de un niño o adolescente y registrar una sensibilidad sensorial.
+4. Elegir un estímulo visual o auditivo y abrirlo en una sesión de calma.
+5. Cambiar la intensidad del estímulo y activar el modo de baja estimulación.
+6. Iniciar el temporizador de calma, pausarlo y terminar la sesión.
+7. Usar el tablero de pictogramas para comunicar una necesidad.
+8. Marcar pictogramas como favoritos, filtrar el tablero por categoría y reordenarlo.
+9. Activar el Modo SOS desde cualquier pantalla.
+10. Seguir la guía paso a paso del Modo SOS, completando y omitiendo pasos, y finalizar el episodio.
+11. Revisar el resumen del episodio.
+12. Ver la última necesidad comunicada y confirmar su recepción.
+13. Comparar el plan Standard con el plan Premium.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas, porque no forman parte de los User Flows UF-1 a UF-7 validados: **[POR COMPLETAR]** (por ejemplo, las historias de seguimiento y recomendaciones de la Red de Apoyo y Seguimiento, US-30 a US-45, que no forman parte del compromiso del Sprint 3).
+
+#### Escala de severidad
+
+Los problemas se puntúan con la siguiente escala.
+
+| Nivel | Descripción |
+|:---:|---|
+| 1 | Problema superficial: el usuario lo supera con facilidad o casi nunca ocurre. No se corrige salvo que haya tiempo disponible. |
+| 2 | Problema menor: ocurre con algo más de frecuencia o al usuario le cuesta un poco más superarlo. Se le asigna prioridad baja de cara al siguiente release. |
+| 3 | Problema mayor: ocurre con frecuencia o los usuarios no logran resolverlo. Es importante corregirlo y se le asigna prioridad alta. |
+| 4 | Problema muy grave: tiene un impacto grande e impide que el usuario continúe con la aplicación. Es imperativo corregirlo antes del lanzamiento. |
+
+#### Criterios de referencia
+
+Para detectar los problemas, el equipo contrasta lo observado en cada sesión con tres grupos de criterios. Al registrar un problema se nombra la heurística o el principio violado con el prefijo de su grupo, como en el Anexo D: `Usability: <heurística>`, `Information Architecture: <criterio>` o `Inclusive Design: <principio>`.
+
+**A. Usability (heurísticas de Nielsen)**
+
+| # | Heurística | Qué se verifica en Nubi | Problemas asociados (# de la tabla resumen) |
+|---|---|---|---|
+| H1 | Visibilidad del estado del sistema | El usuario sabe en qué paso de la guía del Modo SOS va y si el envío de una necesidad o una solicitud se confirmó. | **[POR COMPLETAR]** |
+| H2 | Correspondencia entre el sistema y el mundo real | Los textos y pictogramas usan el lenguaje del usuario, sin términos clínicos. | **[POR COMPLETAR]** |
+| H3 | Control y libertad del usuario | Puede cancelar una solicitud de ayuda, salir del Modo SOS y deshacer un cambio del perfil. | **[POR COMPLETAR]** |
+| H4 | Consistencia y estándares | Los botones, colores y etiquetas se comportan igual en todos los módulos. | **[POR COMPLETAR]** |
+| H5 | Prevención de errores | Omitir un paso obligatorio del Modo SOS exige confirmación y el formulario del perfil valida los datos. | **[POR COMPLETAR]** |
+| H6 | Reconocer en lugar de recordar | Las opciones y pictogramas están a la vista, sin obligar a recordar pasos previos. | **[POR COMPLETAR]** |
+| H7 | Flexibilidad y eficiencia de uso | El botón SOS es accesible desde cualquier pantalla y los favoritos aceleran las tareas repetidas. | **[POR COMPLETAR]** |
+| H8 | Diseño estético y minimalista | Cada pantalla muestra solo lo necesario, sin saturar durante una crisis. | **[POR COMPLETAR]** |
+| H9 | Ayuda para reconocer, diagnosticar y recuperarse de errores | Los mensajes de error explican qué ocurrió y cómo resolverlo. | **[POR COMPLETAR]** |
+| H10 | Ayuda y documentación | El usuario encuentra explicaciones breves, preguntas frecuentes o textos de apoyo cuando los necesita. | **[POR COMPLETAR]** |
+
+**B. Information Architecture**
 
 Se evalúan los sistemas definidos en la sección 4.2.
 
-| # | Heurística | Qué se observa en Nubi | Cumplimiento (1 a 5) | Evidencia y observaciones | Mejora propuesta |
-|---|---|---|---|---|---|
-| AI1 | Sistema de organización | Los contenidos se agrupan por los cinco Bounded Contexts y el usuario entiende dónde está cada herramienta. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| AI2 | Sistema de etiquetado | Las etiquetas del menú y de los botones son comprensibles y coinciden con lo que el usuario espera. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| AI3 | Sistema de navegación | El usuario llega a cada módulo en pocos pasos y puede volver al inicio. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| AI4 | Sistema de búsqueda y descubrimiento | El usuario encuentra sin buscar el Modo SOS, los planes y las preguntas frecuentes. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| AI5 | Jerarquía de contenido | Lo más importante (Modo SOS, tablero) destaca sobre lo secundario. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| # | Criterio | Qué se verifica en Nubi | Problemas asociados (# de la tabla resumen) |
+|---|---|---|---|
+| AI1 | Sistema de organización | Los contenidos se agrupan por los cinco Bounded Contexts y el usuario entiende dónde está cada herramienta. | **[POR COMPLETAR]** |
+| AI2 | Sistema de etiquetado | Las etiquetas del menú y de los botones son comprensibles y coinciden con lo que el usuario espera. | **[POR COMPLETAR]** |
+| AI3 | Sistema de navegación | El usuario llega a cada módulo en pocos pasos y puede volver al inicio. | **[POR COMPLETAR]** |
+| AI4 | Sistema de búsqueda y descubrimiento | El usuario encuentra sin buscar el Modo SOS, los planes y las preguntas frecuentes. | **[POR COMPLETAR]** |
+| AI5 | Jerarquía de contenido | Lo más importante (Modo SOS, tablero) destaca sobre lo secundario. | **[POR COMPLETAR]** |
 
-**C. Heurísticas de diseño inclusivo**
+**C. Inclusive Design**
 
 Se evalúan los criterios de accesibilidad y de baja carga sensorial de las Style Guidelines (sección 4.1).
 
-| # | Heurística | Qué se observa en Nubi | Cumplimiento (1 a 5) | Evidencia y observaciones | Mejora propuesta |
-|---|---|---|---|---|---|
-| IN1 | Baja carga sensorial | Los colores, animaciones y sonidos no abruman; el modo de baja estimulación reduce los estímulos. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| IN2 | Previsibilidad | Las pantallas se comportan de forma predecible y avisan antes de cambiar. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| IN3 | Comunicación sin depender del habla | El usuario puede expresarse con pictogramas e imágenes cuando no puede hablar. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| IN4 | Lenguaje claro | Las instrucciones son cortas, concretas y sin metáforas. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| IN5 | Contraste, tamaño y foco | Los textos son legibles, los controles táctiles son grandes y el foco del teclado es visible. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| IN6 | Idioma y personalización | El usuario puede cambiar de idioma y ajustar la experiencia a sus sensibilidades. | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| # | Principio | Qué se verifica en Nubi | Problemas asociados (# de la tabla resumen) |
+|---|---|---|---|
+| IN1 | Baja carga sensorial | Los colores, animaciones y sonidos no abruman; el modo de baja estimulación reduce los estímulos. | **[POR COMPLETAR]** |
+| IN2 | Previsibilidad | Las pantallas se comportan de forma predecible y avisan antes de cambiar. | **[POR COMPLETAR]** |
+| IN3 | Proporciona experiencias comparables (comunicación sin depender del habla) | El usuario puede expresarse con pictogramas e imágenes cuando no puede hablar. | **[POR COMPLETAR]** |
+| IN4 | Lenguaje claro | Las instrucciones son cortas, concretas y sin metáforas. | **[POR COMPLETAR]** |
+| IN5 | Contraste, tamaño y foco | Los textos son legibles, los controles táctiles son grandes y el foco del teclado es visible. | **[POR COMPLETAR]** |
+| IN6 | Idioma y personalización | El usuario puede cambiar de idioma y ajustar la experiencia a sus sensibilidades. | **[POR COMPLETAR]** |
 
-#### Resumen consolidado
+#### Tabla resumen
 
-Al evaluar todas las entrevistas se completa la tabla con los problemas encontrados, ordenados por severidad (1 cosmético, 2 menor, 3 mayor, 4 crítico).
+Al evaluar todas las entrevistas se completa la tabla con los problemas encontrados.
 
-| # | Problema encontrado | Heurística | Entrevistas donde ocurrió | Severidad (1 a 4) | Acción | Responsable |
-|---|---|---|---|---|---|---|
-| 1 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|:---:|---|:---:|---|
+| 1 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** (por ejemplo, `Usability: Libertad y control del usuario`) |
+
+#### Descripción de problemas
+
+Por cada fila de la tabla resumen se completa una ficha con la estructura siguiente. Se repite la ficha para cada problema.
+
+**PROBLEMA #1:** **[POR COMPLETAR]**
+
+**Severidad:** **[POR COMPLETAR]**
+
+**Heurística violada:** **[POR COMPLETAR]**
+
+**Problema:** **[POR COMPLETAR]** Descripción del problema, de la tarea en la que ocurrió y de las entrevistas donde se observó.
+
+**Captura de pantalla:** **[POR COMPLETAR]** (`images/Chapter-V/heuristics-problem-1.png`)
+
+**Recomendación:** **[POR COMPLETAR]** Mejora propuesta, con su responsable y el Sprint en que se corrige.
 
 ## 5.4. Video About-the-Product
 
@@ -2106,7 +2172,7 @@ El video About-the-Product presenta Nubi a los visitantes del Landing Page, que 
 | 6. Testimonio | Opinión positiva de un participante de las entrevistas de validación de cada segmento. | 30 s |
 | 7. Planes y cierre | Planes Standard, Premium e Instituciones y llamado a crear la cuenta. | 15 s |
 
-Duración total estimada: 2 minutos y 20 segundos, dentro del rango de 1 a 3 minutos. **[POR CONFIRMAR]** el rango con el enunciado vigente.
+Duración total estimada: 2 minutos y 20 segundos, dentro del rango de 1 a 3 minutos que indica el Anexo C del enunciado.
 
 #### Datos del video
 

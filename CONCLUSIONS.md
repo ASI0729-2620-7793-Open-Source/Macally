@@ -46,9 +46,9 @@ La tabla contrasta cada Hypothesis Statement (sección 1.2.2.3) con los resultad
 | H2 (FA2): Interfaz de autorregulación personalizable | 40 % de los usuarios activos sigue usando la aplicación cada semana al tercer mes | **[POR COMPLETAR]** Flujo UF-1 | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
 | H3 (FA3): Tablero CAA con pictogramas y salida de voz | 30 % de los nuevos usuarios llega por recomendación | **[POR COMPLETAR]** Flujos UF-2 y UF-5 | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
 | H4 (FA4): Perfil sensorial con detonantes, preferencias y contactos de confianza | 40 % de los usuarios activos sigue usando la aplicación cada semana al tercer mes | **[POR COMPLETAR]** Flujo UF-3 | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| H5 (FA5): Solicitud de ayuda y registro de episodios | Cinco colegios o centros de terapia contratan el plan institucional en doce meses | **[POR COMPLETAR]** Flujo UF-6 | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| H5 (FA5): Solicitud de ayuda y registro de episodios | Cinco colegios o centros de terapia contratan el plan institucional en doce meses; 80 % de los usuarios logra enviar una solicitud de ayuda y 70 % de los padres considera útil el reporte | **[POR COMPLETAR]** Flujo UF-6 | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
 
-Los criterios de éxito de H1 a H5 se miden con datos de uso a largo plazo que las entrevistas no alcanzan a cubrir; por eso la columna de evidencia indica el flujo de la sección 5.3 que aporta una señal temprana. **[POR CONFIRMAR]** los criterios de H1 y H5 con el Capítulo I.
+Los criterios de éxito de H1 a H5 se miden con datos de uso a largo plazo que las entrevistas no alcanzan a cubrir; por eso la columna de evidencia indica el flujo de la sección 5.3 que aporta una señal temprana. Los criterios coinciden con los Hypothesis Statements (1.2.2.3) y con el Lean UX Canvas (1.2.2.4).
 
 ## About the Team
 
@@ -70,7 +70,7 @@ El equipo de Macally está formado por cinco estudiantes que desarrollan Nubi, u
 | Formato | mp4 |
 | Duración | **[POR COMPLETAR]** |
 | URL en Microsoft Stream | **[POR COMPLETAR]** |
-| Contenido | Escenas de sesiones de trabajo del equipo, narración del proceso, retrospectiva del grupo y el testimonio de cada integrante sobre sus actividades y los outcomes alcanzados. **[POR CONFIRMAR]** con el enunciado vigente. |
+| Contenido | Escenas de sesiones de trabajo del equipo, narración del proceso, retrospectiva del grupo y el testimonio de cada integrante sobre sus actividades y los outcomes alcanzados. La duración sugerida es de 10 minutos: 5 de retrospectiva del grupo y 1 por cada uno de los cinco testimonios (Anexo C del enunciado). |
 
 **[POR COMPLETAR]** Captura de pantalla del video (`images/Conclusiones/about-the-team.png`).
 
