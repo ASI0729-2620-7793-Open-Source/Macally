@@ -9,7 +9,7 @@
 | AV2 | upc-pre-202620-1asi0729-7793-macally-expo-av2 | `URL del video en Microsoft Stream` |
 | AV2 (Sprint 3) | upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3 | `URL del video en Microsoft Stream` |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-validation-sprint-3 | `URL del video en Microsoft Stream` |
-| AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3 | `URL del video en Microsoft Stream` y https://www.youtube.com/embed/utaBaLFhlOQ (YouTube, incrustado en el Landing Page) |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3 | https://sl1nk.com/o8ai3x0 |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3 | `URL del video en Microsoft Stream` |
 
 <div style="page-break-before: always;"></div>
@@ -37,4 +37,4 @@
 | Documentación OpenAPI (Swagger UI) | Web Services desplegados | https://nubi-platform-backend.onrender.com/swagger-ui/index.html |
 | Contrato de la API de Perfil y Personalización | Repositorio de los Web Services (rama `develop`) | `docs/api-perfil-personalizacion.md` |
 | Sprint Backlog 3 | Trello | https://trello.com/b/HCIZ8lA6/sprint-3-nubi |
-| Video About-the-Product | YouTube (incrustado en el Landing Page) | https://www.youtube.com/embed/utaBaLFhlOQ |
+| Video About-the-Product | Microsoft Stream | https://sl1nk.com/o8ai3x0 |
