@@ -64,18 +64,28 @@ El equipo de Macally está formado por cinco estudiantes que desarrollan Nubi, u
 
 **Video About-the-Team.** El Landing Page incrusta una primera versión del video en su sección de equipo.
 
-| Dato | Detalle |
-|---|---|
-| Título | `upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3` |
-| Formato | mp4 |
-| Duración | **[POR COMPLETAR]** |
-| URL en Microsoft Stream | **[POR COMPLETAR]** |
+| Dato | Detalle                                                                                                                                                                                                                                                                                                              |
+|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Título | `upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3`                                                                                                                                                                                                                                                       |
+| Formato | mp4                                                                                                                                                                                                                                                                                                                  |
+| Duración | 8:51                                                                                                                                                                                                                                                                                                                 |
+| URL en Microsoft Stream | https://sl1nk.com/penfp1q                                                                                                                                                                                                                                                                                            |
 | Contenido | Escenas de sesiones de trabajo del equipo, narración del proceso, retrospectiva del grupo y el testimonio de cada integrante sobre sus actividades y los outcomes alcanzados. La duración sugerida es de 10 minutos: 5 de retrospectiva del grupo y 1 por cada uno de los cinco testimonios (Anexo C del enunciado). |
 
-**[POR COMPLETAR]** Captura de pantalla del video (`images/Conclusiones/about-the-team.png`).
+![img.png](images/Chapter-V/img.png)
+ Captura de pantalla del video.
 
-**Retrospectiva del equipo.** Esta parte la redacta el equipo a partir de su reunión de retrospectiva del Sprint 3.
+**Retrospectiva del equipo.** Resumen de la retrospectiva del Sprint 3.
 
-- Qué funcionó: **[POR COMPLETAR]**
-- Qué mejorar: **[POR COMPLETAR]**
-- Aprendizajes de cada integrante: **[POR COMPLETAR]**
+- **Qué funcionó:**
+  - Repartir el trabajo por Bounded Context, con cada integrante en su propia rama, permitió implementar los Web Services entre el 4 y el 14 de noviembre de 2026.
+  - Integrar con GitFlow y publicar versiones etiquetadas (`v1.0.0` a `v1.2.0`) dejó los servicios y la aplicación desplegados y verificables.
+  - La documentación con OpenAPI (92 operaciones en 16 etiquetas) y las pruebas automáticas facilitaron revisar el trabajo de los demás.
+  - Las entrevistas de validación con seis participantes de los dos segmentos dieron hallazgos concretos de usabilidad, que se registraron con su severidad.
+- **Qué mejorar:** la comunicación dentro del equipo. La Frontend Web Application quedó en una sola persona y en dos días, varias ramas concentraron sus commits en un solo día y las tareas del Landing Page quedaron sin cerrar. Para el siguiente Sprint el equipo acuerda al inicio quién hace cada tarea, revisa el avance a mitad del Sprint e integra cada rama al terminarla.
+- **Aprendizajes del equipo:**
+  - Organizar un servicio en capas (dominio, aplicación, infraestructura e interfaces) con Spring Boot y JPA, separando el dominio de la persistencia.
+  - Diseñar rutas REST con sustantivos y cambiar estados con `PATCH`.
+  - Desplegar los servicios en Render y la aplicación en Firebase Hosting, y reconocer los límites del plan gratuito (arranque lento y datos en memoria).
+  - Validar con usuarios reales: observar sin ayudar, registrar lo que ocurre y clasificar los problemas por severidad. Para personas autistas y sus padres pesan mucho el lenguaje claro y la baja carga sensorial.
+  - Coordinar a cinco integrantes con GitFlow y Conventional Commits.
