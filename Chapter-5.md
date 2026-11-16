@@ -1609,6 +1609,11 @@ En Firebase Hosting, el proyecto `nubi-frontend-7793` publica la Frontend Web Ap
 
 La colaboración del Sprint 3 se evidencia con el historial de Git de los repositorios del proyecto. Las cifras se obtuvieron de la rama `develop` de cada repositorio al 14 de noviembre de 2026, sin contar merges.
 
+![insigts 3 (1).png](images/Chapter-V/insigts%203%20%281%29.png)
+![insigts 3 (2).png](images/Chapter-V/insigts%203%20%282%29.png)
+![insigts 3 (3).png](images/Chapter-V/insigts%203%20%283%29.png)
+
+
 ##### Repositorio de los Web Services (Nubi.Platform.Backend)
 
 Los cinco integrantes registran commits en el repositorio. Cuatro de ellos trabajaron cada uno en la rama de un Bounded Context; Leonardo creó el commit inicial, el proyecto base y la rama de Comunicación Asistida, y después, con los demás contextos integrados, los contextos de IAM y Rutina Visual, el perfil único por cuenta, el despliegue y el rediseño de las rutas REST. Sofia integró las cinco ramas en `develop` el 13 de noviembre. La rama de Gestión de Crisis acumula 13 de sus 32 commits el 12 de noviembre y la de Red de Apoyo y Seguimiento registra sus 19 commits el 13 de noviembre.
@@ -2158,14 +2163,14 @@ A continuación se registran las entrevistas de validación realizadas por segme
 La tabla resume cuántos participantes de cada segmento completaron cada flujo, según los resúmenes de las entrevistas. «Sin dato» indica que el resumen no permite saber si el participante realizó el flujo. Los resúmenes no registran que el entrevistador haya ayudado en algún flujo, salvo el caso de Carmen en UF-4, a quien se le mostró el Modo SOS; la columna «Completó con ayuda» se contrasta con los videos.
 
 | Flujo | Segmento | Completó solo | Completó con ayuda | No completó | Sin dato | Facilidad promedio (1 a 5) |
-|---|---|---|---|---|---|---|
-| UF-1 Autorregulación | 1 | 3 | 0 | 0 | 0 | **[POR CONFIRMAR]** |
-| UF-2 Comunicación asistida | 1 | 2 | 0 | 0 | 1 | **[POR CONFIRMAR]** |
-| UF-3 Perfil y Personalización | 2 | 3 | 0 | 0 | 0 | **[POR CONFIRMAR]** |
-| UF-4 Modo SOS | 2 | 2 | 1 | 0 | 0 | **[POR CONFIRMAR]** |
-| UF-5 Comunicación asistida | 2 | 2 | 0 | 0 | 1 | **[POR CONFIRMAR]** |
-| UF-6 Red de Apoyo y Seguimiento | 2 | 3 | 0 | 0 | 0 | **[POR CONFIRMAR]** |
-| UF-7 Cuenta y plan | 2 | 2 | 0 | 0 | 1 | **[POR CONFIRMAR]** |
+|---|---|---|---|---|---|----------------------------|
+| UF-1 Autorregulación | 1 | 3 | 0 | 0 | 0 | 4                          |
+| UF-2 Comunicación asistida | 1 | 2 | 0 | 0 | 1 | 5                          |
+| UF-3 Perfil y Personalización | 2 | 3 | 0 | 0 | 0 | 3                          |
+| UF-4 Modo SOS | 2 | 2 | 1 | 0 | 0 | 2                          |
+| UF-5 Comunicación asistida | 2 | 2 | 0 | 0 | 1 | 3                          |
+| UF-6 Red de Apoyo y Seguimiento | 2 | 3 | 0 | 0 | 0 | 3                          |
+| UF-7 Cuenta y plan | 2 | 2 | 0 | 0 | 1 | 2                          |
 
 **Facilidad promedio.** Los resúmenes no registran la calificación de facilidad de 1 a 5 de cada flujo, por lo que esa columna se completa con los videos. Lo que sí se registró en todas las entrevistas es la probabilidad de uso (pregunta 9).
 
@@ -2510,13 +2515,12 @@ El video publicado dura 3 minutos y 53 segundos.
 
 #### Datos del video
 
-| Dato | Detalle |
-|---|---|
+| Dato | Detalle                                                           |
+|---|-------------------------------------------------------------------|
 | Título | `upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3` |
-| Formato | mp4 |
-| Duración | 3:53 |
-| URL en Microsoft Stream | https://sl1nk.com/o8ai3x0 |
-| Testimonio incluido | **[POR COMPLETAR]** Nombre del participante, segmento y entrevista de la sección 5.3.2 |
-| Responsable | Ruiz Villegas, Yngrid Nahir **[POR CONFIRMAR]** |
-
-**[POR COMPLETAR]** Captura de pantalla del video (`images/Chapter-V/about-the-product.png`).
+| Formato | mp4                                                               |
+| Duración | 3:53                                                              |     
+| URL en Microsoft Stream | https://sl1nk.com/o8ai3x0                                         |
+| Responsable | Leonardo Lopez                                                    |
+Captura de pantalla del video (`images/Chapter-V/about-the-product.png`).**
+![abouth the product.png](images/Chapter-V/abouth%20the%20product.png)
