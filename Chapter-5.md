@@ -2182,7 +2182,7 @@ El alcance de la evaluación incluye la revisión de la usabilidad de las tareas
 6. Iniciar el temporizador de calma, pausarlo y terminar la sesión.
 7. Usar el tablero de pictogramas para comunicar una necesidad.
 8. Marcar pictogramas como favoritos, filtrar el tablero por categoría y reordenarlo.
-9. Activar el Modo SOS desde cualquier pantalla.
+9. Activar el Modo SOS desde cualquier pantalla.    
 10. Seguir la guía paso a paso del Modo SOS, completando y omitiendo pasos, y finalizar el episodio.
 11. Revisar el resumen del episodio.
 12. Ver la última necesidad comunicada y confirmar su recepción.
