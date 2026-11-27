@@ -81,6 +81,7 @@
 | AV2-3   | 13/11/2026 | Diaz Yurivilca, Sofia | Entrega AV2: Sprint 3 (5.2.3) con la primera versión de los RESTful Web Services, Validation Interviews (5.3) con su diseño y las plantillas de registro y de evaluación heurística, Video About-the-Product (5.4), contraste con las hipótesis y sección About the Team en las Conclusiones, y actualización de la Bibliografía, los Anexos, el Student Outcome y el Participant Performance Report. Los datos pendientes están marcados como **[POR COMPLETAR]** y **[POR CONFIRMAR]**. |
 | AV2-4   | 14/11/2026 | Lopez Torres, Leonardo Gabriel | Sprint 3 actualizado con la evidencia verificada: integración de los Bounded Contexts del backend en `develop` y versiones `v1.0.0` a `v1.2.0`, Web Services desplegados en Render con Swagger UI, 92 endpoints documentados, 147 pruebas automáticas sin fallos, Frontend Web Application conectada a los Web Services, con español e inglés y planes alineados con el Landing Page (`v1.2.0`), Sprint Backlog 3 con 24 de 27 tareas en Done, configuración y evidencia de despliegue (5.1.4 y 5.2.3.7) y anexos con las URL publicadas. |
 | AV2-5   | 14/11/2026 | Lopez Torres, Leonardo Gabriel | Alineación con el enunciado del trabajo final para AV2: (1) la evaluación heurística (5.3.3) sigue el formato del Anexo D (datos de la sesión, sitio o aplicación y tareas a evaluar, escala de severidad de 1 a 4, tabla resumen y descripción de problemas); (2) nomenclatura del video de validación según el Anexo C (`validation-sprint-3`); (3) sección Ética y responsabilidad en 5.1.3 con los términos de uso del Landing Page; (4) criterios de éxito de H5 alineados con el Lean UX Canvas; (5) corrección de la integración de ramas del backend en la evidencia de colaboración; (6) capturas de Swagger UI de los Web Services y de las vistas de la Frontend Web Application desplegada, en 5.2.3.5 y 5.2.3.6. |
+| AV2-6   | 26/11/2026 | Lopez Torres, Leonardo Gabriel | Atención a la retroalimentación del docente sobre AV1 y AV2: matriz de trazabilidad estratégica (3.2.1), matriz de cierre del Sprint 3 (5.2.3.3), verificación de los productos publicados (5.2.3.7), conciliación de commits y Pull Requests (5.2.3.8), matriz de validación (5.3.2), convención de ramas y commits (5.1.2), cierre de observaciones AV1 en las Conclusiones, índice de evidencias, declaración de los entregables pendientes y conciliación de las dos versiones de la evaluación heurística (5.3.3). |
 
 </div>
 
@@ -147,22 +148,37 @@ El Sprint 3 se implementó en el repositorio Nubi.Platform.Backend, con los cinc
 
 | Cuenta de GitHub | Integrante | Aporte principal | Commits | Líneas |
 |---|---|---|---|---|
-| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | Comunicación Asistida, IAM, Rutina Visual, despliegue en Render y rutas REST | 48 | +4523 / −268 |
+| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | Comunicación Asistida, IAM, Rutina Visual, despliegue en Render y rutas REST | 50 | +5305 / −270 |
 | u20241a195-cmd | Diaz Yurivilca, Sofia | Gestión de Crisis e integración en `develop` | 32 | +4366 / −1 |
 | nahiryn8 | Ruiz Villegas, Yngrid Nahir | Perfil y Personalización | 23 | +4868 / −2 |
 | Dan-trax | Diaz Caruzo, Edgard Daniel | Red de Apoyo y Seguimiento | 19 | +1824 / −0 |
 | joanfpp2-ai | Payano Puchuri, Joan Fabricio | Autorregulación | 14 | +2755 / −0 |
-| **Total** | | | **136** | |
+| **Total** | | | **138** | |
 
 El detalle de la colaboración en los Web Services, en la Frontend Web Application y en el Landing Page se presenta en la sección 5.2.3.8 del [Capítulo V](Chapter-5.md#5238-team-collaboration-insights-during-sprint). Las ramas de los cinco Bounded Contexts ya se integraron en `develop` del backend. Como oportunidad de mejora, la Frontend Web Application se reconstruyó en dos días y solo registra commits de un integrante, y la rama de Red de Apoyo y Seguimiento concentró sus 19 commits en un solo día.
 
 ---
 
 ---
+# Índice de evidencias
+
+| Qué se busca | Dónde está | Estado |
+|---|---|---|
+| Business Goal → Historia → «para» | [3.2.1](Chapter-3.md#321-matriz-de-trazabilidad-estratégica) | Completo |
+| Historia – tarea – criterio – evidencia – estado (Sprint 3) | [5.2.3.3](Chapter-5.md#5233-sprint-backlog-3) | 24 de 27 tareas en Done |
+| Respuestas HTTP y prueba del Landing Page | [5.2.3.7](Chapter-5.md#5237-software-deployment-evidence-for-sprint-review) | Con defectos registrados |
+| Commits y Pull Requests por integrante | [5.2.3.8](Chapter-5.md#5238-team-collaboration-insights-during-sprint) | Conciliado |
+| Entrevistas de validación | [5.3.2](Chapter-5.md#532-registro-de-entrevistas) | Revalidación pendiente |
+| Hallazgos AV1 | [Cierre de observaciones](CONCLUSIONS.md#cierre-de-observaciones-av1) | 2 cerrados, 5 parciales, 1 abierto |
+| Videos | [Anexo A](ANNEXES.md#anexo-a-videos-de-exposiciones) | Con pendientes |
+
+---
+
 # Contenido
 
 - [Student Outcome](#student-outcome)
     - [Participant Performance Report](#participant-performance-report)
+- [Índice de evidencias](#índice-de-evidencias)
 - **[Capítulo I: Introducción](Chapter-1.md)**
     - [1.1. Startup Profile](Chapter-1.md#11-startup-profile)
         - [1.1.1. Descripción de la Startup](Chapter-1.md#111-descripción-de-la-startup)
@@ -198,6 +214,7 @@ El detalle de la colaboración en los Web Services, en la Frontend Web Applicati
 - **[Capítulo III: Requirements Specification](Chapter-3.md)**
     - [3.1. User Stories](Chapter-3.md#31-user-stories)
     - [3.2. Impact Mapping](Chapter-3.md#32-impact-mapping)
+        - [3.2.1. Matriz de trazabilidad estratégica](Chapter-3.md#321-matriz-de-trazabilidad-estratégica)
     - [3.3. Product Backlog](Chapter-3.md#33-product-backlog)
 - **[Capítulo IV: Product Design](Chapter-4.md)**
     - [4.1. Style Guidelines](Chapter-4.md#41-style-guidelines)
