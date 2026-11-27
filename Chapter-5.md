@@ -2194,7 +2194,7 @@ La tabla resume cuántos participantes de cada segmento completaron cada flujo, 
 
 ### 5.3.3. Evaluaciones según heurísticas
 
-Después de las sesiones de validación, el equipo evalúa la experiencia de Nubi con el formato **UX Heuristics & Principles Evaluation** del Anexo D del enunciado, que revisa la usabilidad, el diseño inclusivo y la arquitectura de información. Se llena un formato por cada sesión de evaluación, a partir de las observaciones de todas las entrevistas de la sección 5.3.2. El formato tiene cinco partes: los datos de la sesión, el sitio o la aplicación a evaluar con sus tareas, la escala de severidad, la tabla resumen de problemas y la descripción de cada problema con su captura de pantalla y su recomendación.
+Después de las sesiones de validación, el equipo evalúa la experiencia de Nubi con el formato **UX Heuristics & Principles Evaluation** del Anexo D del enunciado, que revisa la usabilidad, el diseño inclusivo y la arquitectura de información. Se llena un formato por cada sesión de evaluación, a partir de las observaciones de todas las entrevistas de la sección 5.3.2. El formato tiene cinco partes: los datos de la sesión, el sitio o la aplicación a evaluar con sus tareas, la escala de severidad, la tabla resumen de problemas y la descripción de cada problema con su captura de pantalla y su recomendación. La sección reúne dos formatos: el obtenido de las entrevistas, que se presenta a continuación, y una [evaluación complementaria por inspección de la Web Application](#evaluación-complementaria-por-inspección-de-la-web-application).
 
 #### Datos de la sesión de evaluación
 
@@ -2494,6 +2494,129 @@ Cada ficha describe un problema de la tabla resumen, con su captura de pantalla 
 *Red de Apoyo y Seguimiento, con el texto sobre reportes para el terapeuta y el acceso a cuidadores y contactos marcados.*
 
 **Recomendación:** Mostrar de forma visible que Nubi complementa la atención de profesionales y permitir vincular al terapeuta como contacto de confianza. **Responsable:** Diaz Caruzo, Edgard Daniel (Red de Apoyo y Seguimiento). **Sprint en que se corrige:** Sprint 4.
+
+#### Evaluación complementaria por inspección de la Web Application
+
+Este segundo formato revisa directamente la aplicación publicada, en lugar de las entrevistas. Proviene de la rama `main` del informe (commit [`8369d34`](https://github.com/ASI0729-2620-7793-Open-Source/Macally/commit/8369d34) de Nahir Ruiz, 14/11/2026). Usa la escala de severidad y las heurísticas definidas arriba, y sus problemas se numeran de B-1 a B-4 para distinguirlos de los obtenidos en las entrevistas.
+
+##### Datos de la inspección
+
+| Campo | Contenido |
+|---|---|
+| **CARRERA** | Ingeniería de Software|
+| **CURSO** | Desarrollo de Aplicaciones Open Source |
+| **SECCIÓN** | Código de la sección: 7793 |
+| **PROFESORES** | Ivan Robles Fernández |
+| **AUDITOR** | Macally |
+| **CLIENTE(S)** | Macally (Nubi) |
+
+##### Aplicación inspeccionada
+
+Nubi: https://nubi-frontend-7793.web.app/
+
+##### Tareas inspeccionadas
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Inicio de sesión 
+2. Creación y edición del perfil del niño (datos, avatar, diagnóstico, perfil sensorial)
+3. Invitación y revocación de cuidadores, y gestión de contactos de confianza con teléfono
+4. Creación, edición, reordenación y completado de pasos de la rutina visual
+5. Inicio de una sesión de calma con recurso, temporizador, intensidad y modo de baja estimulación 
+6. Inicio y seguimiento del modo SOS paso a paso hasta finalizar la crisis 
+7. Uso del tablero de comunicación asistiva: crear categorías/pictogramas, selecciones y registro de estado de ánimo 
+8. Consulta de Progreso y generación de un reporte de episodios para compartirlo 
+9. Exploración de Mi Plan y cambio de plan en modo demostración 
+10. Modo niño: registrar estado de ánimo, hablar con pictogramas y ver "Mi día"
+
+##### Resumen de la inspección
+
+Los hallazgos se ordenan según la heurística de Nielsen que violan. 
+
+| # | Problema | Heurística de Nielsen violada | Categoría complementaria | Severidad |
+|---|---|---|---|---|
+| B-1 | El backend en Render tarda hasta ~1 minuto en despertar y la app no muestra ningún indicador de carga | **H1 – Visibilidad del estado del sistema** | Usability: Visibilidad del estado del sistema | **2** |
+| B-2 | No se encuentra en la interfaz la opción para aceptar la invitación de cuidador | **H6 – Reconocimiento en lugar de recuerdo** | Information Architecture: Is it findable? | **3** |
+| B-3 | Compartir un reporte exige copiar y pegar manualmente en WhatsApp/correo, sin acción directa ni confirmación | **H7 – Flexibilidad y eficiencia de uso** | Inclusive Design: Proporciona experiencias comparables | **2** |
+| B-4 | La aplicación no tiene sección de ayuda, FAQ ni guías de uso | **H10 – Ayuda y documentación** | Information Architecture: Is it usable? | **2** |
+
+##### Fichas de la inspección
+
+**PROBLEMA B-1:** El backend "duerme" y la app no muestra indicador de carga
+
+**Severidad:** 2
+
+**Heurística de Nielsen:** H1 – Visibilidad del estado del sistema
+
+**Categoría :** Usability – Visibilidad del estado del sistema
+
+**Problema:** El backend está desplegado en Render con un plan que suspende el servicio por inactividad: la primera petición tras el reposo tarda aproximadamente un minuto en responder. Durante ese tiempo la interfaz no muestra ningún spinner, barra de progreso ni mensaje de estado, por lo que el usuario percibe que la aplicación está caída o que su acción no funcionó (y puede reintentar o abandonar).
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/Evidencia_1_heuristicas.png" alt="Evidencia del problema en la Web Application" width="700"></p>
+
+**Recomendación:** Mostrar un estado de carga explícito en el arranque y en cualquier petición que supere un umbral (p. ej. 3–5 s): spinner con mensaje *"Preparando tu espacio, esto puede tardar hasta un minuto…"*. Considerar un keep-alive periódico (ping cada 10–15 min) o un servicio con instancias siempre activas para eliminar la espera.
+
+**PROBLEMA B-2:** No se encuentra la opción para aceptar la invitación de cuidador
+
+**Severidad:** 3
+
+**Heurística de Nielsen:** H6 – Reconocimiento en lugar de recuerdo
+
+**Categoría Anexo D:** Information Architecture – Is it findable?
+
+**Problema:** El backend permite que un cuidador acepte la invitación mediante `PATCH /api/v1/profiles/{profileId}/caregivers/{caregiverId}` con estado `ACCEPTED`, y el frontend incluso define el método `acceptInvitation()` en `profile-api.ts`, pero este método **nunca es invocado por ningún componente**: no existe pantalla, botón ni indicador visible para aceptar la invitación. El usuario que fue invitado debe recordar (sin ninguna pista en la interfaz) que existe un paso para incorporarse, y no tiene forma de encontrarlo: la tarea queda inconclusa sin que exista un camino visible para completarla.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/Evidencia_2_heuristicas.png" alt="Evidencia del problema en la Web Application" width="700"></p>
+
+**Recomendación:** Crear la vista "Invitaciones pendientes" (por ejemplo, alerta en `/inicio` o sección en `/perfil`) que liste las invitaciones con estado `PENDING` y exponga un botón "Aceptar invitación" que invoque `acceptInvitation()`. Mientras tanto, eliminar o habilitar el método para no mantener código sin uso que engañe al revisor.
+
+**PROBLEMA B-3:** Compartir reporte solo copia texto al portapapeles
+
+**Severidad:** 2
+
+**Heurística de Nielsen:** H7 – Flexibilidad y eficiencia de uso
+
+**Categoría Anexo D:** Inclusive Design – Proporciona experiencias comparables
+
+**Problema:** La acción de compartir un reporte de episodios no envía nada: guarda un nombre/correo libre (`POST /episode-reports/{id}/shares`) y muestra *"Copiado. Pégalo en WhatsApp o en un correo."*. Exigir al usuario abrir otra aplicación, crear un mensaje y pegar manualmente el contenido es una barrera adicional para personas con dificultades motoras, cognitivas o de baja alfabetización digital; además, al no haber confirmación de entrega, el cuidador puede creer que el profesional ya recibió el reporte.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/Evidencia_3_heuristicas.png" alt="Evidencia del problema en la Web Application" width="700"></p>
+
+**Recomendación:** Ofrecer acciones directas: botón "Compartir por WhatsApp" (`https://wa.me/?text=…`), "Compartir por correo" (`mailto:?subject=&body=`) y "Descargar PDF". Mantener "Copiar" como opción secundaria, y registrar la fecha real de compartido en el reporte para que el estado sea verificable.
+
+**PROBLEMA B-4:** La aplicación no tiene sección de ayuda ni documentación de uso
+
+**Severidad:** 2
+
+**Heurística de Nielsen:** H10 – Ayuda y documentación
+
+**Categoría Anexo D:** Information Architecture – Is it usable?
+
+**Problema:** No existe en la aplicación ningún centro de ayuda, FAQ, glosario ni guías contextuales. La única orientación es el onboarding inicial de 3 pasos; después, el usuario (muchas veces un cuidador bajo estrés durante una crisis) debe descubrir por sí mismo conceptos como "sesión de calma", "modo SOS", "pictograma", "perfil sensorial" o "rutina visual". Ante la duda, no hay dónde consultar y la única alternativa es abandonar el uso de la herramienta.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/Evidencia_4_heuristicas.png" alt="Evidencia del problema en la Web Application" width="700"></p>
+
+**Recomendación:** Agregar un ítem "Ayuda" en el menú con: (a) glosario ilustrado de conceptos clave, (b) guías cortas paso a paso por tarea ("¿Cómo creo una rutina?"), y (c) ayuda contextual (tooltips) en los flujos críticos (SOS, registro, invitación de cuidadores). Priorizar que el contenido sea consultable en momentos de estrés: mensajes cortos, con pictogramas y accesibles desde cualquier pantalla.
+
+##### Verificación contra el código (26/11/2026)
+
+Los cuatro problemas se contrastaron con el código de la versión 1.2.0 de la Web Application (rama `main` del repositorio del Frontend, commit `0572df4` del 14/11/2026). No se repitió la sesión sobre la aplicación publicada.
+
+| Problema | Resultado | Detalle |
+|:---:|---|---|
+| B-1 | Vigente en parte | El Rincón de calma y la Red de Apoyo muestran marcadores de carga (los recuadros grises de la captura). El aviso de que el servidor tarda alrededor de un minuto en despertar aparece en la pantalla sin conexión y en el mensaje de error, no durante la espera. |
+| B-2 | Confirmado | `acceptInvitation()` está definido en `profile-api.ts` y ningún componente lo invoca. La API publica el `PATCH` de cuidadores. |
+| B-3 | Vigente con una precisión | El botón «Compartir» registra el destinatario y confirma con qué persona se compartió; el mensaje «Copiado. Pégalo en WhatsApp o en un correo.» corresponde al botón «Copiar». En el backend no se encontró una librería de envío de correo o mensajería. |
+| B-4 | Confirmado | Las rutas de la aplicación y el menú lateral no incluyen una sección de ayuda. |
+
 
 ## 5.4. Video About-the-Product
 
