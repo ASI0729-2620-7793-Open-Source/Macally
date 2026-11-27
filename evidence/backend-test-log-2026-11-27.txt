@@ -1,0 +1,50 @@
+Nubi.Platform.Backend - sh ./mvnw -B test (JDK 25) - 27/11/2026
+
+== develop (ef50aa7)
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s -- in com.acme.nubi.platform.assistivecomunication.domain.CommunicationBoardTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.906 s -- in com.acme.nubi.platform.assistivecomunication.interfaces.CommunicationBoardApiTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 s -- in com.acme.nubi.platform.ApplicationTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s -- in com.acme.nubi.platform.supportnetwork.interfaces.rest.SupportNetworkRestConventionsTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.acme.nubi.platform.supportnetwork.interfaces.rest.SupportNetworkApiTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in com.acme.nubi.platform.selfregulation.domain.model.aggregates.CalmSessionTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s -- in com.acme.nubi.platform.selfregulation.domain.model.valueobjects.CalmTimerTests
+[ERROR] Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.030 s <<< FAILURE! -- in com.acme.nubi.platform.selfregulation.interfaces.rest.SelfRegulationApiTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in com.acme.nubi.platform.visualroutine.interfaces.rest.RoutineApiTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s -- in com.acme.nubi.platform.iam.interfaces.rest.AuthenticationApiTests
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.192 s -- in com.acme.nubi.platform.profile.infrastructure.web.ProfileApiTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in com.acme.nubi.platform.profile.domain.model.NeurodivergentProfileTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in com.acme.nubi.platform.profile.domain.model.SubscriptionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s -- in com.acme.nubi.platform.crisismanagement.domain.model.aggregates.ActionGuideTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in com.acme.nubi.platform.crisismanagement.domain.model.aggregates.RecommendationTests
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in com.acme.nubi.platform.crisismanagement.domain.model.aggregates.SosSessionTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.780 s -- in com.acme.nubi.platform.crisismanagement.interfaces.rest.CrisisManagementApiTests
+[ERROR]   SelfRegulationApiTests.marksAndRemovesFavoriteResources:132 Status expected:<201> but was:<404>
+[ERROR]   SelfRegulationApiTests.rejectsInvalidCalmSessionRequests:119 JSON path "$.code" expected:<SelfRegulation.CalmingResourceNotFound> but was:<SelfRegulation.ProfileNotFound>
+[ERROR]   SelfRegulationApiTests.runsACalmSessionFromStartToFinish:56 Status expected:<201> but was:<404>
+[ERROR] Tests run: 147, Failures: 3, Errors: 0, Skipped: 0
+[INFO] BUILD FAILURE
+
+== feature/av2-teacher-feedback (54c5d55)
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in com.acme.nubi.platform.assistivecomunication.domain.CommunicationBoardTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.911 s -- in com.acme.nubi.platform.assistivecomunication.interfaces.CommunicationBoardApiTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.336 s -- in com.acme.nubi.platform.ApplicationTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s -- in com.acme.nubi.platform.supportnetwork.interfaces.rest.SupportNetworkRestConventionsTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s -- in com.acme.nubi.platform.supportnetwork.interfaces.rest.SupportNetworkApiTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in com.acme.nubi.platform.selfregulation.domain.model.aggregates.CalmSessionTests
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in com.acme.nubi.platform.selfregulation.domain.model.valueobjects.CalmTimerTests
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.662 s -- in com.acme.nubi.platform.selfregulation.interfaces.rest.SelfRegulationApiTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s -- in com.acme.nubi.platform.visualroutine.interfaces.rest.RoutineApiTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.529 s -- in com.acme.nubi.platform.iam.interfaces.rest.AuthenticationApiTests
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 s -- in com.acme.nubi.platform.profile.infrastructure.web.ProfileApiTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.acme.nubi.platform.profile.domain.model.NeurodivergentProfileTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in com.acme.nubi.platform.profile.domain.model.SubscriptionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in com.acme.nubi.platform.crisismanagement.domain.model.aggregates.ActionGuideTests
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in com.acme.nubi.platform.crisismanagement.domain.model.aggregates.RecommendationTests
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in com.acme.nubi.platform.crisismanagement.domain.model.aggregates.SosSessionTests
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.495 s -- in com.acme.nubi.platform.crisismanagement.interfaces.rest.CrisisManagementApiTests
+[INFO] Tests run: 147, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+
+== Respuestas HTTP en local (misma rama)
+GET support-network/recommendations sin X-Account-Id -> 401
+GET support-network/recommendations con X-Account-Id -> 200
