@@ -2815,6 +2815,25 @@ El video About-the-Product presenta Nubi a los visitantes del Landing Page, que 
 
 El video publicado dura 3 minutos y 53 segundos.
 
+#### Contenido por minutos del video publicado
+
+Revisado el 27/11/2026 con un fotograma cada 7 u 8 segundos, por lo que los tiempos son aproximados. No se revisó el audio.
+
+| Minutos (aprox.) | Pantallas de la demostración |
+|---|---|
+| 0:00 – 0:10 | Inicio del cuidador |
+| 0:15 – 0:55 | Sesión de calma y lienzo de dibujo |
+| 1:00 | Tablero de pictogramas en modo niño |
+| 1:08 – 1:20 | «Mi día»: la rutina en modo niño |
+| 1:23 – 1:30 | Inicio y Red de Apoyo |
+| 1:38 – 1:45 | Modo SOS: guía paso a paso |
+| 1:53 – 2:15 | Red de Apoyo: solicitud de ayuda y reportes |
+| 2:23 – 2:45 | Perfil del niño: red de cuidadores y sensibilidades |
+| 2:53 – 3:15 | Red de Apoyo, Comunicación y Rincón de calma |
+| 3:23 – 3:53 | Rutina visual (nuevo paso), «Mi día» e Inicio |
+
+En ese muestreo no se observan las escenas de testimonios ni de planes de la estructura propuesta; **quedan pendientes** de incorporar o de confirmar en el video.
+
 #### Datos del video
 
 | Dato | Detalle                                                           |
