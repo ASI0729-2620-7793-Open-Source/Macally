@@ -257,7 +257,7 @@ La aplicación de estas convenciones permite que el código fuente de NUBI mante
 
 Los términos y condiciones de servicio de NUBI se publican en la página `terms.html` del Landing Page y se enlazan desde su footer, en inglés y en español, con tres vínculos: Terms of use, Privacy policy y Accessibility statement. Los términos establecen el propósito y el alcance (NUBI ofrece herramientas operativas de apoyo y no diagnostica, no trata ni reemplaza la atención de profesionales de la salud), la conducta ante emergencias (llamar de inmediato a los servicios de emergencia), el uso responsable (el cuidador responde por la exactitud de la información del perfil) y los compromisos éticos del equipo, basados en el código de ética de Ingeniería de Software de ACM/IEEE-CS y en el código de ética del Colegio de Ingenieros del Perú (CIP). La política de privacidad se rige por la Ley 29733, de Protección de Datos Personales.
 
-El equipo evidencia la transparencia y la responsabilidad profesional del proceso con el control de versiones en GitHub (GitFlow, Conventional Commits y los analíticos de colaboración de las secciones 5.2.X.8), con las capturas de cada Sprint y con los videos de exposición. **[POR COMPLETAR]** Enlazar los mismos términos desde el footer de la Frontend Web Application, porque el enunciado exige el enlace en el footer del Landing Page y de las Aplicaciones.
+El equipo evidencia la transparencia y la responsabilidad profesional del proceso con el control de versiones en GitHub (GitFlow, Conventional Commits y los analíticos de colaboración de las secciones 5.2.X.8), con las capturas de cada Sprint y con los videos de exposición. El enlace a los mismos términos en la Frontend Web Application (menú del cuidador, ingreso y registro) se agregó el 27/11/2026 en el [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4); **pendiente de integrar y desplegar**.
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -1001,7 +1001,7 @@ El Sprint Planning 3 define el alcance de la primera versión de los RESTful Web
 | Time | 08:00 PM |
 | Location | Virtual (WhatsApp) |
 | Prepared By | Lopez Torres, Leonardo Gabriel |
-| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel **[POR CONFIRMAR]** |
+| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel |
 | Sprint 2 Review Summary | De las 29 User Stories comprometidas en el Sprint 2, 23 quedaron completas (62 de 77 Story Points). US-25, US-26 y US-29 quedaron en proceso porque el panel de Red de Apoyo y Seguimiento usaba datos de muestra, y US-22, US-24 y US-28 quedaron pendientes. La Frontend Web Application se desplegó en Firebase Hosting y la API simulada en Render. Las tareas T-04 (llamado a la acción del Landing Page hacia la aplicación) y T-52 (release a `master`) no se completaron. |
 | Sprint 2 Retrospective Summary | Como aciertos se identifican el reparto del trabajo por Bounded Context en ramas `feature/*` propias, la participación de los cinco integrantes en la Frontend Web Application y el despliegue de la aplicación y de la API simulada. Como oportunidades de mejora se identifican que 81 de los 87 commits de `develop` se registraron el último día del Sprint y que Sofia y Edgard no registraron commits en el Landing Page. Para el Sprint 3 cada rama `feature/*` se integra en `develop` al completarse su User Story, y se asignan tareas del Landing Page a Sofia y a Edgard. |
 | **Sprint Goal & User Stories** | |
@@ -1056,7 +1056,7 @@ El objetivo del Sprint 3 es entregar la primera versión de los Web Services con
 
 *Sprint Backlog 3 en Trello.* Tablero público del Sprint 3 con las listas To-Do, In-Process, To-Review, To-Fix y Done. Cada tarjeta lleva el identificador de la historia, el de la tarea, su título, la estimación en horas y el integrante asignado. En To-Do están 2 tareas (T-76 y T-77), en In-Process 1 (T-04), en To-Review y en To-Fix ninguna y en Done 24 (T-52 y T-53 a T-75).
 
-El estado de cada tarea se verificó al 14 de noviembre de 2026 contra el código integrado en `develop` de cada repositorio, las 147 pruebas automáticas del backend (sin fallos), los Web Services y la Frontend Web Application publicados y las versiones etiquetadas, y el mismo estado se registró en el tablero de Trello. Las tareas T-04, T-76 y T-77 corresponden al Landing Page y siguen pendientes: su último commit es del 8 de octubre de 2026.
+El estado de cada tarea se verificó al 14 de noviembre de 2026 contra el código integrado en `develop` de cada repositorio, las 147 pruebas automáticas del backend (ver la nueva ejecución del 27/11/2026 en 5.2.3.7), los Web Services y la Frontend Web Application publicados y las versiones etiquetadas, y el mismo estado se registró en el tablero de Trello. Las tareas T-04, T-76 y T-77 corresponden al Landing Page y siguen pendientes: su último commit es del 8 de octubre de 2026.
 
 | Sprint # | Sprint 3 | | | | | | |
 |---|---|---|---|---|---|---|---|
@@ -1131,9 +1131,11 @@ De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04)
 | TS-02 | E1: `POST` crea el episodio en curso (`201`). E2: `PATCH` a un id inexistente responde `404`. | Cubierto por `CrisisManagementApiTests`. |
 | TS-03 | E1: `GET` de estímulos responde `200`. E2: favorito con perfil inexistente responde `404`. | Cubierto; `404` observado en el servicio publicado. |
 | TS-04 | E1: `GET` del tablero responde `200`. E2: pictograma sin etiqueta responde `400`. | Cubierto por `CommunicationBoardApiTest`. |
-| TS-05 | E1: `POST` crea la solicitud pendiente (`201`). E2: `GET` de recomendaciones sin token responde `401`. | **Parcial:** no hay autenticación por token, por lo que E2 está pendiente. |
+| TS-05 | E1: `POST` crea la solicitud pendiente (`201`). E2: `GET` de recomendaciones sin token responde `401`. | **Parcial:** el [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) (sin integrar) responde `401` cuando falta la cabecera `X-Account-Id`. La cabecera no es un token firmado, así que la autenticación por token sigue pendiente. |
 
 **Pendientes al cierre:** T-04, T-76, T-77 y el escenario E2 de TS-05. Las tareas T-70 a T-72, T-74 y T-75 conservan a su responsable asignado, pero su commit es de otro integrante.
+
+**Actualización del 27/11/2026** (posterior al cierre; no cambia los estados del tablero): T-04, T-77 y los testimonios de T-76 están en el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1), sin integrar. De T-76 falta la revisión de contraste, foco y textos alternativos.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -1345,6 +1347,8 @@ El repositorio del Landing Page no registra commits en `origin/master` después 
 - **T-77, enlaces y SEO:** se agregan la URL canónica, `og:url`, `og:locale`, las etiquetas `twitter:card`, `twitter:title` y `twitter:description`, la regla `robots`, `robots.txt` y `sitemap.xml`; la imagen de `og:image` pasa a ser una URL absoluta. El footer incluye el enlace a la documentación de la API (Swagger UI de los Web Services desplegados), en inglés y en español.
 
 La tarea T-76 (testimonios reales y accesibilidad) sigue pendiente porque depende de las entrevistas de validación de la sección 5.3. Los commits de la rama se subieron al repositorio el 15 de noviembre de 2026. Falta integrarla en `master` para desplegarla en GitHub Pages.
+
+**Actualización del 27/11/2026.** En la rama `feature/av2-teacher-feedback`, creada desde la anterior, se reemplazaron los testimonios de ejemplo por resúmenes sin nombres de tres entrevistas de validación a familiares adultos (no son citas textuales), los íconos de redes enlazan a la página principal de cada red (Nubi no tiene cuentas propias) y se corrigieron el hero y los márgenes que aplastaban el contenido en pantallas angostas. Se revisó en un servidor local a 375 y 320 px de ancho. Los cambios están en el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1), pendiente de integrar y desplegar.
 
 | Repository | Branch | Commit Id | Commit Message | Commited on (Date) |
 |---|---|---|---|---|
@@ -1696,9 +1700,38 @@ Las tres últimas filas son **diferencias pendientes** respecto del contrato des
 | Botones de los planes | `#contacto` | No llevan a la aplicación. |
 | Íconos de redes sociales | `#` | Enlaces sin destino. |
 
-La corrección de los enlaces está en la rama `feature/web-app-cta-and-seo` y no está integrada ni desplegada.
+La corrección de los enlaces, de los íconos de redes y de la vista móvil está en el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1), sin integrar ni desplegar.
 
-**Frontend Web Application: persistencia y recuperación.** `/ingresar` y `/registro` responden `200`. **No entregado:** la demostración de una operación que se conserve al recargar, con un caso de error y su recuperación. Como el servicio usa H2 en memoria, los datos se mantienen al recargar el navegador, pero se pierden cuando el servicio se reinicia.
+**Frontend Web Application: persistencia y recuperación (27/11/2026, entorno local).** Se ejecutaron en `localhost` los Web Services (rama del [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1), base H2 en memoria con datos de demostración) y la Web Application (rama del [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4)), con la cuenta demo. No es una prueba del despliegue publicado.
+
+| Paso | Resultado |
+|---|---|
+| Guardar un paso de rutina sin nombre | La aplicación lo rechaza: «Ponle un nombre corto al paso.» |
+| Escribir el nombre y guardar | El paso «Prueba de persistencia» aparece en la rutina |
+| Recargar la página | El paso se conserva; la rutina pasa de 10 a 11 pasos |
+
+<p align="center"><img src="images/Chapter-V/local-demo-1-validation-error.jpg" alt="Error al guardar un paso sin nombre" width="800"></p>
+
+*Caso de error: paso sin nombre.*
+
+<p align="center"><img src="images/Chapter-V/local-demo-2-saved-step.jpg" alt="Paso guardado en la rutina" width="800"></p>
+
+*Recuperación: el paso queda guardado.*
+
+<p align="center"><img src="images/Chapter-V/local-demo-3-after-reload.jpg" alt="Paso conservado tras recargar" width="800"></p>
+
+*Después de recargar la página.*
+
+En el despliegue la demostración sigue pendiente. Como el servicio usa H2 en memoria, los datos se pierden cuando se reinicia.
+
+**Pruebas automáticas del backend (27/11/2026, JDK 25).** Salida en el [log de pruebas del 27/11/2026](evidence/backend-test-log-2026-11-27.txt).
+
+| Código probado | Pruebas | Fallos | Resultado |
+|---|---|---|---|
+| `develop` (`ef50aa7`) | 147 | 3 | `BUILD FAILURE`: tres pruebas de `SelfRegulationApiTests` usaban perfiles inexistentes desde que el servicio valida el perfil |
+| Rama del [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) | 147 | 0 | `BUILD SUCCESS` |
+
+La cifra «147 pruebas sin fallos» no se cumplía en `develop`; se cumple en la rama del Pull Request, pendiente de integrar. En local, la misma rama responde `401` a la consulta de recomendaciones sin `X-Account-Id` y `200` con ella. La respuesta `200` con lista vacía de `/api/v1/profiles/999999/recommendations` se revisó y no se cambió: las pruebas de Gestión de Crisis generan y consultan recomendaciones sin crear antes el perfil.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -1767,7 +1800,9 @@ Commits sin merges de **todas las ramas** publicadas, consultados el 26/11/2026.
 
 **Diferencias entre métricas.** Esta tabla cuenta todas las ramas; las tablas por Sprint y GitHub Insights cuentan solo la rama indicada. Por ejemplo, los 8 commits de Edgard en el informe durante el S3 están en `feature/chapter-3`, que no se integró en `develop`; por eso la tabla de `develop` muestra 0. El número de commits no mide por sí solo el aporte técnico.
 
-**Lo que no se acredita:** equilibrio en el Landing Page (Edgard no registra commits y no hubo Pull Requests) ni participación de cuatro integrantes en la Frontend Web Application durante el S3.
+**Pull Requests del 27/11/2026** (posteriores al Sprint 3, abiertos por LeonardoLopez138 y pendientes de integrar): [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1), [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4). No forman parte de las cifras anteriores.
+
+**Lo que no se acredita:** equilibrio en el Landing Page (Edgard no registra commits y durante los Sprints no hubo Pull Requests) ni participación de cuatro integrantes en la Frontend Web Application durante el S3.
 
 ## 5.3. Validation Interviews
 

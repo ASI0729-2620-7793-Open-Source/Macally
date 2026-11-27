@@ -52,15 +52,15 @@ Los criterios de la tabla son los de negocio de los Hypothesis Statements (1.2.2
 
 ## Cierre de observaciones AV1
 
-Estado de los ocho hallazgos del AV1 al 26/11/2026. «Cerrado» indica que la corrección está en el informe; «Parcial» o «Abierto», que falta trabajo o evidencia.
+Estado de los ocho hallazgos del AV1 al 27/11/2026. «Cerrado» indica que la corrección está en el informe; «Parcial» o «Abierto», que falta trabajo o evidencia.
 
 | Hallazgo | Antes (AV1) | Después (evidencia) | Estado | Pendiente |
 |---|---|---|---|---|
 | H-01 Trazabilidad estratégica | El Impact Mapping cubría un subconjunto de historias | [Matriz de las 58 historias](Chapter-3.md#321-matriz-de-trazabilidad-estratégica) | Cerrado | Actualizar el gráfico del Impact Mapping |
 | H-02 «Para» operativo | Sin justificar su aporte al objetivo | Columna «Contribución» de la misma matriz | Cerrado | — |
-| H-03 Criterios de aceptación | Profundidad a mantener | Las 58 historias tienen al menos dos Scenarios ([3.1](Chapter-3.md#31-user-stories)); matriz de cierre del Sprint 3 | Parcial | Revisar restricciones y autorización; TS-05 E2 sin implementar |
+| H-03 Criterios de aceptación | Profundidad a mantener | Las 58 historias tienen al menos dos Scenarios ([3.1](Chapter-3.md#31-user-stories)); matriz de cierre del Sprint 3 | Parcial | Revisar restricciones y autorización; TS-05 E2 parcial en el [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) |
 | H-04 Diagramas de clases densos | Diagramas reducidos | [Diagramas](Chapter-4.md#471-class-diagrams) ampliables a resolución completa | Parcial | Dividir por Aggregate |
-| H-05 Colaboración en Landing Page | Concentrada en un integrante | [Conciliación por repositorio](Chapter-5.md#5238-team-collaboration-insights-during-sprint): cuatro integrantes con commits acumulados | Abierto | Aporte de Edgard, Pull Requests y reparto en el Sprint |
+| H-05 Colaboración en Landing Page | Concentrada en un integrante | [Conciliación por repositorio](Chapter-5.md#5238-team-collaboration-insights-during-sprint): cuatro integrantes con commits acumulados | Abierto | Integrar el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1); aporte de Edgard y reparto del trabajo |
 | H-06 `main` / `master` | Uso ambiguo | [Convención real por repositorio](Chapter-5.md#512-source-code-management) | Parcial | Renombrar `master` en el Landing Page y publicar en `main` la versión conciliada del informe |
 | H-07 Mensajes de commit | Errores de redacción | [Reglas de redacción](Chapter-5.md#512-source-code-management) | Parcial | Demostrar su cumplimiento en nuevos commits |
 | H-08 Densidad documental | Capturas y diagramas pequeños | [Índice de evidencias](README.md#índice-de-evidencias) y diagramas ampliables | Parcial | Ampliar capturas densas y verificar el documento exportado |
@@ -103,7 +103,7 @@ El equipo de Macally está formado por cinco estudiantes que desarrollan Nubi, u
 |---|---|---|
 | La Frontend Web Application quedó en una persona y en dos días | Asignar cada tarea al inicio y que su responsable haga el commit | Pendiente |
 | Ramas con commits concentrados en un día | Revisar el avance a mitad del Sprint e integrar cada rama al terminarla | Pendiente |
-| Tareas del Landing Page sin cerrar (T-04, T-76, T-77) | Integrar por Pull Request y desplegar antes del cierre | Pendiente |
+| Tareas del Landing Page sin cerrar (T-04, T-76, T-77) | Integrar por Pull Request y desplegar antes del cierre | [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) abierto; falta integrar y desplegar |
 | Datos en memoria en el despliegue | Usar una base MySQL persistente | Pendiente |
 
 - **Qué mejorar:** la comunicación dentro del equipo. La Frontend Web Application quedó en una sola persona y en dos días, varias ramas concentraron sus commits en un solo día y las tareas del Landing Page quedaron sin cerrar. Para el siguiente Sprint el equipo acuerda al inicio quién hace cada tarea, revisa el avance a mitad del Sprint e integra cada rama al terminarla.
