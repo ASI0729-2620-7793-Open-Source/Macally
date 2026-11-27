@@ -91,6 +91,73 @@ Además del objetivo que muestra el mapa, el equipo define los siguientes **Busi
 
 ![ImpactMapping.png](images/Chapter-III/ImpactMapping.png)
 
+### 3.2.1. Matriz de trazabilidad estratégica
+
+Esta matriz responde a los hallazgos H-01 y H-02 del AV1: permite recorrer **Business Goal → Impact → Deliverable (Épica) → Historia → «para»** en las 58 historias de la sección 3.1. Cada historia se asigna a su Business Goal principal; algunas también contribuyen a otros. La columna «Contribución» justifica por qué el beneficio operativo del «para» aporta al objetivo. Es una relación de diseño: los objetivos se comprobarán con datos de uso.
+
+Distribución: G1 32, G2 15, G3 7 y G4 4 historias (total 58).
+
+| Goal | Impact | Deliverable (Épica) | Historia | «Para» de la historia | Contribución al Business Goal |
+|---|---|---|---|---|---|
+| G1 | Recurren a Nubi en cada episodio | Perfil personalizado (EPIC-01) | US-01 | Para comenzar a personalizar las herramientas de apoyo de Nubi según sus necesidades. | Sin perfil no hay apoyo personalizado; es el primer paso para que el cuidador vuelva a usar Nubi. |
+| G1 | Recurren a Nubi en cada episodio | Perfil personalizado (EPIC-01) | US-02 | Para mantener su información actualizada. | Un perfil vigente mantiene útiles los estímulos y guías; si queda desactualizado, el cuidador deja de confiar en ellos. |
+| G1 | Recurren a Nubi en cada episodio | Perfil sensorial (EPIC-01) | US-03 | Para que Nubi personalice los estímulos ofrecidos en autorregulación y en el Modo SOS. | La adaptación sensorial hace que cada episodio se atienda mejor y motiva a volver. |
+| G1 | Recurren a Nubi en cada episodio | Cuenta (EPIC-01) | US-47 | Para acceder de forma segura a los perfiles de los usuarios a mi cargo. | El acceso seguro permite el uso recurrente desde la misma cuenta. |
+| G1 | Recurren a Nubi en cada episodio | API de perfiles (EPIC-01) | TS-01 | Para que las aplicaciones cliente puedan crear, consultar, actualizar y eliminar perfiles de forma segura. | Soporta US-01 a US-06: los datos persisten entre sesiones. |
+| G1 | Recurren a Nubi en cada episodio | Modo SOS (EPIC-02) | US-07 | Para recibir orientación inmediata sobre cómo actuar. | Orientación inmediata en cada crisis, razón principal para recurrir a Nubi. |
+| G1 | Recurren a Nubi en cada episodio | Guía SOS personalizada (EPIC-02) | US-09 | Para que la orientación recibida sea más efectiva. | Una orientación más efectiva refuerza el uso en el siguiente episodio. |
+| G1 | Recurren a Nubi en cada episodio | Guía SOS (EPIC-02) | US-10 | Para llevar control de las acciones ya realizadas durante la crisis. | El control de lo realizado reduce la carga durante la crisis y favorece volver a usarla. |
+| G1 | Recurren a Nubi en cada episodio | Acceso rápido SOS (EPIC-02) | US-12 | Para reaccionar rápidamente ante una crisis. | Reaccionar sin demora hace de Nubi el recurso de primera opción. |
+| G1 | Recurren a Nubi en cada episodio | API del Modo SOS (EPIC-02) | TS-02 | Para que las aplicaciones cliente puedan iniciar, actualizar y finalizar episodios de crisis. | Soporta US-07 a US-11 y el registro de episodios. |
+| G1 | Recurren a Nubi en cada episodio | Estímulos visuales (EPIC-03) | US-13 | Para ayudarme a recuperar la calma durante una sobrecarga sensorial. | El usuario recurre a Nubi para recuperar la calma. |
+| G1 | Recurren a Nubi en cada episodio | Estímulos auditivos (EPIC-03) | US-14 | Para ayudarme a regular mis emociones. | Amplía las formas de regulación y de uso recurrente. |
+| G1 | Recurren a Nubi en cada episodio | Control de intensidad (EPIC-03) | US-15 | Para adaptarlos a lo que necesito en cada momento. | Adaptar el estímulo evita el abandono por incomodidad sensorial. |
+| G1 | Recurren a Nubi en cada episodio | Favoritos (EPIC-03) | US-16 | Para acceder a ellos más rápido en futuras sesiones. | El acceso rápido reduce la fricción en sesiones futuras. |
+| G1 | Recurren a Nubi en cada episodio | Baja estimulación (EPIC-03) | US-17 | Para reducir la sobrecarga sensorial cuando lo necesito. | Reducir la sobrecarga permite seguir usando la aplicación en momentos difíciles. |
+| G1 | Recurren a Nubi en cada episodio | Temporizador de calma (EPIC-03) | US-18 | Para tener noción del tiempo que llevo en la actividad sin generarme estrés. | Acompaña la sesión sin estrés y favorece repetirla. |
+| G1 | Recurren a Nubi en cada episodio | Landing: autorregulación (EPIC-03) | LS-03 | Para evaluar si ayudarán al usuario autista a recuperar la calma. | Ayuda a que se registren quienes sí usarán estas herramientas de forma sostenida. |
+| G1 | Recurren a Nubi en cada episodio | API de autorregulación (EPIC-03) | TS-03 | Para que las aplicaciones cliente puedan listar, seleccionar y marcar estímulos como favoritos. | Soporta US-13 a US-16: catálogo y favoritos persistentes. |
+| G1 | Recurren a Nubi en cada episodio | Tablero CAA (EPIC-04) | US-19 | Para comunicar lo que necesito sin depender del habla. | Comunicarse sin habla genera uso cotidiano. |
+| G1 | Recurren a Nubi en cada episodio | Selección de pictograma (EPIC-04) | US-20 | Para comunicar una necesidad a mi cuidador. | Comunicar la necesidad es la acción recurrente del tablero. |
+| G1 | Recurren a Nubi en cada episodio | Favoritos del tablero (EPIC-04) | US-21 | Para que el usuario los encuentre con mayor facilidad. | Encontrar antes los pictogramas reduce el abandono. |
+| G1 | Recurren a Nubi en cada episodio | Categorías (EPIC-04) | US-23 | Para que el usuario navegue el tablero de forma más intuitiva. | Una navegación intuitiva facilita el uso sostenido. |
+| G1 | Recurren a Nubi en cada episodio | Audio del pictograma (EPIC-04) | US-24 | Para reforzar el mensaje que estoy comunicando. | Un mensaje más claro aumenta la utilidad diaria. |
+| G1 | Recurren a Nubi en cada episodio | API del tablero CAA (EPIC-04) | TS-04 | Para que las aplicaciones cliente puedan listar, crear y seleccionar pictogramas. | Soporta US-19 a US-24. |
+| G1 | Recurren a Nubi en cada episodio | Solicitud de ayuda (EPIC-05) | US-25 | Para recibir apoyo durante una situación de crisis. | Pedir apoyo en crisis es motivo de uso recurrente del usuario autista. |
+| G1 | Recurren a Nubi en cada episodio | Notificación de ayuda (EPIC-05) | US-26 | Para responder de forma oportuna. | La respuesta oportuna sostiene la confianza en la aplicación. |
+| G1 | Recurren a Nubi en cada episodio | Confirmación (EPIC-05) | US-27 | Para que el usuario sepa que voy a asistirlo. | Saber que llega ayuda hace que el usuario vuelva a pedirla por Nubi. |
+| G1 | Recurren a Nubi en cada episodio | Cancelación (EPIC-05) | US-28 | Para evitar una notificación innecesaria si ya no la necesito. | Evita avisos innecesarios que desgastan el uso. |
+| G1 | Recurren a Nubi en cada episodio | Panel: episodios recientes (EPIC-05) | US-30 | Para conocer su situación sin revisar el historial completo. | Da un motivo para revisar Nubi fuera de la crisis. |
+| G1 | Recurren a Nubi en cada episodio | Panel: estado actual (EPIC-05) | US-31 | Para tomar decisiones oportunas sobre su acompañamiento. | Apoya decisiones diarias y el ingreso semanal. |
+| G1 | Recurren a Nubi en cada episodio | Accesos directos (EPIC-05) | US-32 | Para navegar de forma más eficiente. | Navegar con menos pasos sostiene el uso. |
+| G1 | Recurren a Nubi en cada episodio | Alertas (EPIC-05) | US-33 | Para estar al tanto de eventos que requieren mi atención. | Atraen al cuidador cuando hay eventos que atender. |
+| G2 | Perciben valor y contratan el plan | Recomendaciones personalizadas (EPIC-01) | US-04 | Para que las recomendaciones y guías se ajusten a su perfil. | El diagnóstico alimenta las recomendaciones, parte del valor del plan Premium. |
+| G2 | Perciben valor y contratan el plan | Cuenta y plan (EPIC-01) | US-46 | Para acceder a Nubi y crear el perfil del usuario a mi cargo. | La cuenta es requisito para contratar el plan. |
+| G2 | Perciben valor y contratan el plan | Plan Premium (EPIC-01) | US-48 | Para acceder a perfiles ilimitados, varios cuidadores y recomendaciones personalizadas. | Es la conversión que mide el objetivo; también habilita la contratación de planes (G4). |
+| G2 | Perciben valor y contratan el plan | Landing: personalización (EPIC-01) | LS-01 | Para evaluar si la plataforma se ajusta a sus necesidades antes de registrarme. | Muestra antes del registro la función que diferencia al plan de pago. |
+| G2 | Perciben valor y contratan el plan | Pictogramas personalizados (EPIC-04) | US-22 | Para representar objetos o situaciones específicas del usuario. | Aporta valor de personalización que justifica el plan de pago. |
+| G2 | Perciben valor y contratan el plan | Historial de solicitudes (EPIC-05) | US-29 | Para dar seguimiento a la frecuencia con la que el usuario requiere apoyo. | El seguimiento histórico es valor percibido del plan de pago. |
+| G2 | Perciben valor y contratan el plan | Recomendaciones en inicio (EPIC-05) | US-34 | Para conocer sugerencias relevantes sin buscar en otras secciones. | Hace visible una función del plan Premium. |
+| G2 | Perciben valor y contratan el plan | Registro automático (EPIC-05) | US-36 | Para no tener que documentarlo manualmente. | Crea el historial sin esfuerzo, base del valor Premium. |
+| G2 | Perciben valor y contratan el plan | Historial de episodios (EPIC-05) | US-37 | Para identificar patrones y mejorar el acompañamiento. | Identificar patrones es valor central del plan Premium. |
+| G2 | Perciben valor y contratan el plan | Filtro del historial (EPIC-05) | US-38 | Para consultar un periodo específico. | Vuelve utilizable el historial a medida que crece. |
+| G2 | Perciben valor y contratan el plan | Recomendaciones personalizadas (EPIC-05) | US-41 | Para brindar un acompañamiento más adecuado. | Función que motiva la contratación del plan. |
+| G2 | Perciben valor y contratan el plan | Calificación (EPIC-05) | US-43 | Para ayudar a mejorar las futuras sugerencias. | Mejora la pertinencia de las recomendaciones de pago. |
+| G2 | Perciben valor y contratan el plan | Recomendaciones favoritas (EPIC-05) | US-44 | Para consultarla rápidamente en el futuro. | Facilita recuperar el valor ya recibido. |
+| G2 | Perciben valor y contratan el plan | Actualización de recomendaciones (EPIC-05) | US-45 | Para que reflejen la situación más reciente del usuario. | Recomendaciones vigentes sostienen la suscripción. |
+| G2 | Perciben valor y contratan el plan | API de apoyo y recomendaciones (EPIC-05) | TS-05 | Para que las aplicaciones cliente puedan enviar solicitudes, consultar su estado y obtener recomendaciones. | Soporta US-25 a US-29 y US-41 a US-45. |
+| G3 | Recomiendan Nubi | Guías paso a paso (EPIC-02) | US-08 | Para no sentirme abrumado durante la crisis. | Actuar sin abrumarse da la seguridad que lleva a recomendar Nubi. |
+| G3 | Recomiendan Nubi | Cierre del episodio (EPIC-02) | US-11 | Para que quede registrado correctamente en el historial. | El registro correcto es el insumo de los reportes compartibles. |
+| G3 | Recomiendan Nubi | Landing: Modo SOS (EPIC-02) | LS-02 | Para entender el soporte que recibiré durante un episodio de crisis. | Explica el soporte en crisis, el mensaje que un cuidador transmite a otro. |
+| G3 | Recomiendan Nubi | Landing: tablero CAA (EPIC-04) | LS-04 | Para entender cómo facilita la comunicación del usuario autista. | Hace comprensible y compartible la propuesta de comunicación. |
+| G3 | Recomiendan Nubi | Detalle del episodio (EPIC-05) | US-39 | Para revisar la información completa de lo ocurrido. | La información completa sustenta lo que se comparte con profesionales. |
+| G3 | Recomiendan Nubi | Notas y reportes (EPIC-05) | US-40 | Para complementar la información con observaciones propias. | Las observaciones enriquecen el reporte compartible. |
+| G3 | Recomiendan Nubi | Guía recomendada (EPIC-05) | US-42 | Para conocer las acciones sugeridas. | Acciones claras dan la seguridad que motiva la recomendación. |
+| G4 | Gestionan varios perfiles y comparten seguimiento | Gestión de múltiples perfiles (EPIC-01) | US-05 | Para identificarlo fácilmente al alternar entre perfiles. | Identificar rápido cada perfil facilita atender a varios usuarios en una institución. |
+| G4 | Gestionan varios perfiles y comparten seguimiento | Plan Institucional (EPIC-01) | US-06 | Para compartir el acompañamiento con la familia o red cercana. | Compartir el acompañamiento entre cuidadores es la base del uso por colegios y terapeutas. |
+| G4 | Gestionan varios perfiles y comparten seguimiento | Cambio de perfil (EPIC-05) | US-35 | Para gestionar a más de un usuario autista desde la misma cuenta. | Permite a docentes y terapeutas gestionar varios usuarios. |
+| G4 | Gestionan varios perfiles y comparten seguimiento | Landing: red de apoyo y planes (EPIC-05) | LS-05 | Para valorar el respaldo que tendré como cuidador. | Presenta el seguimiento y dirige a los planes, incluido el institucional. |
+
 ## 3.3. Product Backlog
 
 A continuación se presenta el Product Backlog de Nubi. Para su elaboración y gestión se utilizó **Trello**, organizando las User Stories, Technical Stories y Landing Page Stories definidas en la sección 3.1 en una única lista priorizada llamada "Product Backlog", en la que cada tarjeta corresponde a una historia con su identificador, título y los Story Points asignados como etiqueta. El orden de las tarjetas dentro del tablero refleja la prioridad de desarrollo definida por el equipo.
