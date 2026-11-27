@@ -90,6 +90,17 @@ Cuando se identifica un error crítico en una versión ya publicada se utiliza u
 
 Una vez realizada la corrección, los cambios de la rama `hotfix/*` son integrados tanto en `main` como en `develop`, con el objetivo de mantener consistencia entre las versiones del proyecto.
 
+**Convención real por repositorio** (verificada en GitHub el 26/11/2026):
+
+| Repositorio | Rama estable | Rama de integración | Observación |
+|---|---|---|---|
+| Macally (informe) | `main` | `develop` | El 26/11/2026 se integró en `feature/av2-teacher-feedback` el cambio de `main` que `develop` no tenía (`8369d34`); falta llevar esa rama a `develop` y publicar la versión en `main`. |
+| Nubi---Frontend | `main` | `develop` | Versiones `v1.0.0` a `v1.2.0`. |
+| Nubi.Platform.Backend | `main` | `develop` | Conserva una rama `master` sin uso (último commit: 04/11/2026). |
+| landing-page | `master` | `develop` | Excepción a la convención. `develop` quedó sin actualizar desde el 19/09/2026. Pendiente renombrar `master` a `main` y reconfigurar GitHub Pages. |
+
+La convención del equipo es `main`. Las menciones a `master` en este informe se refieren únicamente al repositorio del Landing Page, a la rama sin uso del backend o a registros históricos de Sprints anteriores.
+
 #### Semantic Versioning
 
 Para identificar las diferentes versiones de los productos de NUBI se utiliza **Semantic Versioning**, siguiendo la estructura `MAJOR.MINOR.PATCH`.
@@ -134,6 +145,8 @@ Algunos ejemplos de mensajes de commit aplicados a NUBI son:
 - `docs(chapter5): add source code management`
 
 El uso conjunto de Git, GitHub, GitFlow, Semantic Versioning y Conventional Commits permite mantener una organización consistente del código fuente, facilitar la colaboración entre los integrantes del equipo y conservar la trazabilidad de la evolución de los diferentes productos de software que conforman NUBI.
+
+**Calidad de los mensajes.** El historial contiene mensajes con errores o sin información (por ejemplo, `feat: add intercionalizacion lenguague` en el Landing Page y `feat: fix the new fix` en el informe). No se reescribe el historial publicado. Desde la entrega AV2, cada mensaje debe: (1) usar un tipo y un alcance; (2) describir en inglés, en imperativo y sin errores, qué cambia; y (3) evitar descripciones genéricas como `fix`, `changes` o `add docs`. Quien revisa un Pull Request comprueba estas reglas antes de integrarlo.
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
@@ -1078,6 +1091,50 @@ El estado de cada tarea se verificó al 14 de noviembre de 2026 contra el códig
 
 De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04) y 2 en To-do (T-76 y T-77). Las tareas T-04 y T-52 provienen de los Sprint Backlog 1 y 2. T-52 se cumplió en el repositorio de los Web Services (`release/1.0.0`, `1.1.0` y `1.2.0`, con las etiquetas `v1.0.0` a `v1.2.0`) y en el de la Frontend Web Application (`release/1.0.0` a `1.2.0`), cuya rama estable se llama `main` y no `master`.
 
+**Matriz historia – tarea – criterio – evidencia – estado.** Relaciona las 27 tareas con sus historias, responsables, estimaciones y evidencia de cierre. «E1» y «E2» son los Scenarios de los criterios de aceptación de la sección 3.1; las tareas generales se cierran con la condición de su descripción. Entre paréntesis figura la cantidad de métodos de prueba (`@Test`) contados en el código de `develop` (147 en 17 clases). La última ejecución sin fallos es la que el equipo registró el 14/11/2026.
+
+| Tarea | Historia / criterio | Responsable | h | Commits | Evidencia de cierre | Estado |
+|---|---|---|---|---|---|---|
+| T-53 | TS-01 | Ruiz | 8 | [304f327](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/304f327), [c135751](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c135751), [20e1339](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/20e1339) | `NeurodivergentProfileTest` (23) | Done |
+| T-54 | TS-01 E1, E2 | Ruiz | 8 | [d194e4b](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/d194e4b), [32b3461](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/32b3461), [1106649](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/1106649) | `ProfileApiTest` (28) | Done |
+| T-55 | TS-01 | Ruiz | 5 | [936d904](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/936d904), [eebfcc0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/eebfcc0), [88c4342](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/88c4342), [80ebd94](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/80ebd94) | `SubscriptionTest` (6) | Done |
+| T-56 | TS-02 | Diaz Yurivilca | 8 | [f3d1071](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f3d1071), [d8276e6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/d8276e6), [9a91656](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/9a91656) | `SosSessionTests` (14), `ActionGuideTests` (9) | Done |
+| T-57 | TS-02 | Diaz Yurivilca | 6 | [eeb45a3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/eeb45a3), [ed3a006](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ed3a006) | HTTP 200 de la guía activa (5.2.3.7) | Done |
+| T-58 | TS-02 E1, E2 | Diaz Yurivilca | 7 | [253584c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/253584c), [84698e2](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/84698e2), [c86260d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c86260d) | `CrisisManagementApiTests` (11), `RecommendationTests` (9) | Done |
+| T-59 | TS-03 | Payano | 7 | [48b8c19](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/48b8c19), [b7d3e00](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b7d3e00), [46bb7ae](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/46bb7ae) | `CalmSessionTests` (9), `CalmTimerTests` (5) | Done |
+| T-60 | TS-03 E1, E2 | Payano | 7 | [dde1bc6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/dde1bc6), [07a1ce2](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/07a1ce2), [b898c84](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b898c84) | `SelfRegulationApiTests` (4); HTTP 404 de perfil inexistente | Done |
+| T-61 | TS-04 | Lopez | 7 | [a83ce35](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/a83ce35), [40cc7a3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/40cc7a3), [939a727](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/939a727) | `CommunicationBoardTest` (10) | Done |
+| T-62 | TS-04 E1, E2 | Lopez | 7 | [94d5556](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/94d5556), [0f65f07](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0f65f07), [c1fd90f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c1fd90f), [75fddc5](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/75fddc5) | `CommunicationBoardApiTest` (7) | Done |
+| T-63 | TS-05 | Diaz Caruzo | 8 | [0526696](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0526696), [ab7db32](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ab7db32), [f1dcc2d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f1dcc2d), [5e14a51](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/5e14a51) | Pruebas en T-64 | Done |
+| T-64 | TS-05 E1, E2 | Diaz Caruzo | 8 | [b9c2115](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b9c2115), [fba306f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/fba306f), [e476645](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/e476645), [2917abb](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2917abb) | `SupportNetworkApiTests` (2), `SupportNetworkRestConventionsTests` (4). **E2 no se cumple** (sin token ni `401`) | Done |
+| T-65 | Tarea general | Lopez | 4 | [c555972](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c555972), [42cb99c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/42cb99c) | `ApplicationTests` (1) | Done |
+| T-66 | Tarea general | Payano | 5 | [441e627](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/441e627), [b659bc3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b659bc3), [2895ce1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2895ce1) | Errores `problem+json` observados (5.2.3.7) | Done |
+| T-67 | Tarea general | Diaz Yurivilca | 8 | [875dcf3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/875dcf3), [8f27396](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/8f27396), [98693b7](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/98693b7), [959824c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/959824c), [c6d60d1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c6d60d1) | Merges en `develop` | Done |
+| T-68 | Tarea general | Payano | 4 | [084eb12](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/084eb12) | `/v3/api-docs`: 92 operaciones, 16 etiquetas | Done |
+| T-69 | Tarea general | Lopez | 8 | [09281fd](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/09281fd), [aa6b720](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/aa6b720) | Swagger UI responde `200` | Done |
+| T-70 | Tarea general | Ruiz | 8 | [b4df86a](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b4df86a) (autor: Lopez) | Capturas de 5.2.3.5 | Done |
+| T-71 | Tarea general | Diaz Yurivilca | 6 | [b784caa](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b784caa) (autor: Lopez) | Capturas de 5.2.3.5 | Done |
+| T-72 | Tarea general | Payano | 6 | [e6894e5](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/e6894e5) (autor: Lopez) | Capturas de 5.2.3.5 | Done |
+| T-73 | US-22, US-24 | Lopez | 8 | [0f7a516](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/0f7a516) | Captura del tablero; sin prueba registrada de imagen inválida ni de audio | Done |
+| T-74 | US-25, US-26 | Diaz Caruzo | 8 | [3797890](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/3797890) (autor: Lopez) | Captura de Red de Apoyo; sin prueba registrada de notificación | Done |
+| T-75 | US-28, US-29 | Diaz Caruzo | 6 | [3797890](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/3797890) (autor: Lopez) | Captura de Red de Apoyo; sin prueba registrada de cancelación | Done |
+| T-04 | LS-02 E2 | Lopez | 4 | [bd2291e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/bd2291e) (sin integrar) | 26/11/2026: el sitio publicado no enlaza a `/registro` | In-Process |
+| T-76 | Tarea general | Diaz Yurivilca | 5 | — | No entregado | To-do |
+| T-77 | Tarea general | Diaz Caruzo | 5 | [591a2e5](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/591a2e5) (sin integrar) | No desplegado | To-do |
+| T-52 | Tarea general | Diaz Caruzo | 4 | [Etiquetas del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/tags) | `v1.0.0` a `v1.2.0` en `main`; el Landing Page no tiene release | Done |
+
+**Criterios de las Technical Stories.**
+
+| Historia | Criterios de aceptación (resumen de 3.1) | Cierre |
+|---|---|---|
+| TS-01 | E1: `POST` válido responde `201`. E2: campo faltante responde `400`. | Cubierto por `ProfileApiTest`. |
+| TS-02 | E1: `POST` crea el episodio en curso (`201`). E2: `PATCH` a un id inexistente responde `404`. | Cubierto por `CrisisManagementApiTests`. |
+| TS-03 | E1: `GET` de estímulos responde `200`. E2: favorito con perfil inexistente responde `404`. | Cubierto; `404` observado en el servicio publicado. |
+| TS-04 | E1: `GET` del tablero responde `200`. E2: pictograma sin etiqueta responde `400`. | Cubierto por `CommunicationBoardApiTest`. |
+| TS-05 | E1: `POST` crea la solicitud pendiente (`201`). E2: `GET` de recomendaciones sin token responde `401`. | **Parcial:** no hay autenticación por token, por lo que E2 está pendiente. |
+
+**Pendientes al cierre:** T-04, T-76, T-77 y el escenario E2 de TS-05. Las tareas T-70 a T-72, T-74 y T-75 conservan a su responsable asignado, pero su commit es de otro integrante.
+
 #### 5.2.3.4. Development Evidence for Sprint Review
 
 En el Sprint 3 se implementó la primera versión de los RESTful Web Services con Java, Spring Boot, Spring Data JPA y MySQL (H2 en memoria en el entorno desplegado), y su documentación con springdoc-openapi, en el repositorio [Nubi.Platform.Backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend). Cada Bounded Context se desarrolló en su propia rama y sigue la arquitectura del capítulo IV:
@@ -1100,7 +1157,7 @@ Una vez integradas las cinco ramas, el equipo agregó dos contextos que sustenta
 - **IAM** (rama `feature/iam-authentication`): alta de cuenta, inicio de sesión y consulta de la cuenta, con las contraseñas guardadas con hash PBKDF2.
 - **Rutina Visual** (rama `feature/visual-routine`): rutina del día del niño con pasos que el cuidador ordena y el niño marca, sembrada al registrar al niño.
 
-La tabla registra, por rama, los 112 commits del Sprint 3 sin contar merges, en orden cronológico. Los commits no tienen cuerpo de mensaje, por lo que esa columna se indica con «—». Los mensajes se transcriben tal como se registraron en Git.
+La tabla registra, por rama, los commits del Sprint 3 sin contar merges, en orden cronológico. La rama `develop` del backend suma 138 commits sin merges; el commit inicial `c555972` (04/11/2026) no figura en la tabla. Los commits no tienen cuerpo de mensaje, por lo que esa columna se indica con «—». Los mensajes se transcriben tal como se registraron en Git.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
@@ -1374,7 +1431,7 @@ Swagger UI también permite ejecutar las operaciones desde el navegador con la o
 
 El perfil `render` usa una base H2 en memoria y no expone su consola, por lo que los datos creados se verifican con los endpoints de consulta (por ejemplo, `GET /api/v1/episode-records` en el recorrido anterior) y no con una captura de la base de datos.
 
-**[POR COMPLETAR]** Video de navegación del Sprint 3 con la Frontend Web Application conectada a los Web Services (URL en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`).
+**No entregado:** el video de navegación del Sprint 3 con la Frontend Web Application conectada a los Web Services (nomenclatura `upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`) no está disponible a la fecha de esta versión.
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -1605,9 +1662,47 @@ En Firebase Hosting, el proyecto `nubi-frontend-7793` publica la Frontend Web Ap
 
 *Figura. Firebase Hosting: versión actual, versiones anteriores y dominios del sitio.*
 
+##### Verificación de los productos publicados (26/11/2026)
+
+**Web Services.** Solicitudes de solo lectura (`GET`) a https://nubi-platform-backend.onrender.com. La primera solicitud tras la inactividad tardó 80.7 s; las siguientes, menos de 1 s. Se pueden repetir con `curl -i <URL>`.
+
+| Ruta | Código | Tipo de contenido / resultado |
+|---|---|---|
+| `/swagger-ui/index.html` | `200` | Documentación disponible. |
+| `/v3/api-docs` | `200` | OpenAPI 3.1.0, `Nubi Platform API v1.0.0`: 92 operaciones, 68 rutas y 16 etiquetas. |
+| `/api/v1/action-guides/active` | `200` | JSON con la guía de 6 pasos. |
+| `/api/v1/calming-resources` | `200` | JSON con el catálogo de recursos. |
+| `/api/v1/profiles/999999/favorite-resources` | `404` | `problem+json`, código `SelfRegulation.ProfileNotFound`. |
+| `/api/v1/sos-sessions/abc` | `400` | `application/problem+json`, código `request.typeMismatch`. |
+| `/api/v1/sos-sessions/999999` | `404` | Respuesta sin cuerpo. |
+| `/api/v1/support-network/recommendations` (sin autenticación) | `400` | JSON de error genérico; TS-05 espera `401`. |
+| `/api/v1/profiles/999999/recommendations` | `200` | Lista vacía para un perfil inexistente. |
+
+Las tres últimas filas son **diferencias pendientes** respecto del contrato descrito (errores `problem+json`, `401` sin autenticación y `404` para recursos inexistentes).
+
+**Landing Page.** Prueba en el navegador de https://asi0729-2620-7793-open-source.github.io/landing-page/ (versión publicada el 09/10/2026).
+
+| Comprobación | Escritorio (1366 × 768) | Móvil emulado (375 × 812) |
+|---|---|---|
+| Carga y desplazamiento horizontal | Correcta; sin desbordamiento | Correcta; sin desbordamiento |
+| Navegación | Enlaces de la barra a las secciones | El menú abre y muestra los enlaces |
+| Idioma | Inglés por defecto | El botón ES cambia los textos a español |
+| Legibilidad del hero | Correcta | **Defecto:** las figuras decorativas se superponen al título y al párrafo |
+
+| Navegación hacia los productos | Destino | Resultado |
+|---|---|---|
+| «Log in» / «Iniciar sesión» | `https://nubi-frontend-7793.web.app/inicio` | Abre la aplicación y, sin sesión, muestra `/ingresar`. |
+| «Get started» | `#planes` | No lleva al registro de la aplicación (T-04). |
+| Botones de los planes | `#contacto` | No llevan a la aplicación. |
+| Íconos de redes sociales | `#` | Enlaces sin destino. |
+
+La corrección de los enlaces está en la rama `feature/web-app-cta-and-seo` y no está integrada ni desplegada.
+
+**Frontend Web Application: persistencia y recuperación.** `/ingresar` y `/registro` responden `200`. **No entregado:** la demostración de una operación que se conserve al recargar, con un caso de error y su recuperación. Como el servicio usa H2 en memoria, los datos se mantienen al recargar el navegador, pero se pierden cuando el servicio se reinicia.
+
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint 3 se evidencia con el historial de Git de los repositorios del proyecto. Las cifras se obtuvieron de la rama `develop` de cada repositorio al 14 de noviembre de 2026, sin contar merges.
+La colaboración del Sprint 3 se evidencia con el historial de Git de los repositorios del proyecto. Las cifras se obtuvieron de la rama `develop` de cada repositorio, sin contar merges, y se conciliaron con GitHub el 26/11/2026.
 
 ![insigts 3 (1).png](images/Chapter-V/insigts%203%20%281%29.png)
 ![insigts 3 (2).png](images/Chapter-V/insigts%203%20%282%29.png)
@@ -1620,18 +1715,18 @@ Los cinco integrantes registran commits en el repositorio. Cuatro de ellos traba
 
 | Cuenta de GitHub | Integrante | Aporte principal | Commits | Líneas | Días con commits (noviembre) |
 |---|---|---|---|---|---|
-| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | Comunicación Asistida, IAM, Rutina Visual, despliegue en Render, rutas REST | 48 | +4523 / −268 | 5 al 9, 13 y 14 |
+| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | Comunicación Asistida, IAM, Rutina Visual, despliegue en Render, rutas REST | 50 | +5305 / −270 | 4 al 9, 13 y 14 |
 | u20241a195-cmd | Diaz Yurivilca, Sofia | Gestión de Crisis e integración en `develop` | 32 | +4366 / −1 | 5 al 12 |
 | nahiryn8 (Nahir Ruiz) | Ruiz Villegas, Yngrid Nahir | Perfil y Personalización | 23 | +4868 / −2 | 9 al 11 |
 | Dan-trax | Diaz Caruzo, Edgard Daniel | Red de Apoyo y Seguimiento | 19 | +1824 / −0 | 13 |
 | joanfpp2-ai (Pocho) | Payano Puchuri, Joan Fabricio | Autorregulación | 14 | +2755 / −0 | 10 y 11 |
-| **Total** | | | **136** | | |
+| **Total** | | | **138** | | |
 
-Las vistas Contributors, Commits y Pulse de GitHub Insights no están disponibles para este repositorio: el repositorio `Nubi.Platform.Backend` es privado y GitHub las habilita en organizaciones con plan gratuito solo para repositorios públicos. Por eso la evidencia de colaboración de los Web Services es el historial de Git: la tabla de commits de la sección 5.2.3.4 y las cifras por integrante de esta sección.
+La cifra anterior de este informe (136) omitía los dos commits de Leonardo del 4 de noviembre (`c555972`, commit inicial, y `42cb99c`). La versión anterior de este apartado indicaba que `Nubi.Platform.Backend` era privado y que por eso no ofrecía las vistas de GitHub Insights; el 26/11/2026 el repositorio es público. La evidencia se complementa con la tabla de commits de la sección 5.2.3.4.
 
 ##### Repositorio de la Frontend Web Application y del Landing Page
 
-La Frontend Web Application registra 26 commits sin merges desde el 4 de noviembre de 2026 (19 el 13 de noviembre y 7 el 14 de noviembre; +12974 / −18817 líneas, porque la aplicación se reconstruyó), todos de la cuenta LeonardoLopez138. Las tareas de conexión T-70 a T-75 estaban asignadas a Ruiz Villegas, Yngrid Nahir (T-70), Diaz Yurivilca, Sofia (T-71), Payano Puchuri, Joan Fabricio (T-72), Lopez Torres, Leonardo Gabriel (T-73) y Diaz Caruzo, Edgard Daniel (T-74 y T-75); en la práctica la conexión de los seis módulos con los Web Services la implementó Leonardo en una sola reconstrucción de la aplicación, de modo que las tarjetas T-70 a T-72, T-74 y T-75 conservan a sus responsables asignados pero su commit es de Leonardo. El repositorio del Landing Page (https://github.com/ASI0729-2620-7793-Open-Source/landing-page) no registra commits posteriores al 8 de octubre de 2026.
+La Frontend Web Application registra 26 commits sin merges desde el 4 de noviembre de 2026 (19 el 13 de noviembre y 7 el 14 de noviembre; +12974 / −18817 líneas, porque la aplicación se reconstruyó), todos de la cuenta LeonardoLopez138. Las tareas de conexión T-70 a T-75 estaban asignadas a Ruiz Villegas, Yngrid Nahir (T-70), Diaz Yurivilca, Sofia (T-71), Payano Puchuri, Joan Fabricio (T-72), Lopez Torres, Leonardo Gabriel (T-73) y Diaz Caruzo, Edgard Daniel (T-74 y T-75); en la práctica la conexión de los seis módulos con los Web Services la implementó Leonardo en una sola reconstrucción de la aplicación, de modo que las tarjetas T-70 a T-72, T-74 y T-75 conservan a sus responsables asignados pero su commit es de Leonardo. En el repositorio del Landing Page (https://github.com/ASI0729-2620-7793-Open-Source/landing-page), la rama `master` no registra commits posteriores al 8 de octubre de 2026; el 15 de noviembre Leonardo subió 2 commits a `feature/web-app-cta-and-seo`, sin integrar.
 
 ##### Repositorio del informe (Macally)
 
@@ -1647,6 +1742,32 @@ Entre el 28 de octubre y el 15 de noviembre de 2026 el informe recibió 28 commi
 | **Total** | | **28** | | |
 
 Como oportunidades de mejora del Sprint 3, el trabajo de la Frontend Web Application quedó concentrado en un integrante y en los dos últimos días del Sprint, y las ramas de Red de Apoyo y Seguimiento y de Autorregulación concentraron sus commits en uno o dos días, lo mismo que ocurrió en el Sprint 2. Quedan sin cerrar las tareas del Landing Page (T-04, T-76 y T-77) y la persistencia de la base de datos en el despliegue. Para la versión final el equipo reparte la conexión de los módulos entre sus responsables, integra cada rama al completarse y registra los commits del informe entre los cinco integrantes.
+
+##### Conciliación por repositorio, integrante y Pull Request
+
+Commits sin merges de **todas las ramas** publicadas, consultados el 26/11/2026. Periodos por fecha de autor: S1 hasta el 20/09, S2 del 21/09 al 28/10 y S3 del 29/10 al 15/11. Las cuentas `Deiko-138` y `LeonardoLopez138` corresponden a Leonardo; `Daniel` y `Dan-trax`, a Edgard; y `Pocho` y `joanfpp2-ai`, a Joan.
+
+| Repositorio (Sprint) | Lopez | Diaz Yurivilca | Payano | Ruiz | Diaz Caruzo | Total |
+|---|---|---|---|---|---|---|
+| landing-page (S1) | 4 | 1 | 0 | 0 | 0 | 5 |
+| landing-page (S2) | 8 | 0 | 1 | 3 | 0 | 12 |
+| landing-page (S3) | 2 | 0 | 0 | 0 | 0 | 2 |
+| Nubi---Frontend (S2) | 35 | 18 | 10 | 16 | 7 | 86 |
+| Nubi---Frontend (S3) | 26 | 0 | 0 | 0 | 0 | 26 |
+| Nubi.Platform.Backend (S3) | 50 | 32 | 14 | 23 | 19 | 138 |
+| Macally (S1) | 20 | 20 | 5 | 21 | 34 | 100 |
+| Macally (S2) | 3 | 6 | 1 | 3 | 3 | 16 |
+| Macally (S3) | 10 | 13 | 7 | 2 | 8 | 40 |
+
+| Repositorio | Integración usada | Pull Requests |
+|---|---|---|
+| landing-page | Commits directos en `master` y dos merges locales | 0 |
+| Nubi---Frontend | Merges locales y Pull Requests | 3 de Dan-trax: [#1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/1) integrado, [#2](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/2) cerrado sin integrar y [#3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/3) integrado |
+| Nubi.Platform.Backend | Ramas `feature/*`, `release/*` y merges locales | 0 |
+
+**Diferencias entre métricas.** Esta tabla cuenta todas las ramas; las tablas por Sprint y GitHub Insights cuentan solo la rama indicada. Por ejemplo, los 8 commits de Edgard en el informe durante el S3 están en `feature/chapter-3`, que no se integró en `develop`; por eso la tabla de `develop` muestra 0. El número de commits no mide por sí solo el aporte técnico.
+
+**Lo que no se acredita:** equilibrio en el Landing Page (Edgard no registra commits y no hubo Pull Requests) ni participación de cuatro integrantes en la Frontend Web Application durante el S3.
 
 ## 5.3. Validation Interviews
 
@@ -2191,6 +2312,29 @@ La tabla resume cuántos participantes de cada segmento completaron cada flujo, 
 | 1. Personas autistas | Sebastián: 3; Diana: 4; Owen: 4 (promedio 3.7) | 0 |
 | 2. Padres de niños y adolescentes con autismo | Johan: 5 | Lizeth y Carmen no asignaron un valor |
 
+
+#### Matriz de trazabilidad de la validación
+
+Relaciona participante → tarea → hipótesis → hallazgo → decisión → revalidación para las **seis entrevistas de validación del AV2**, distintas de las seis de needfinding de la sección 2.2. Los criterios son los de pruebas de uso del Lean UX Canvas (sección 1.2.2.4); los criterios de negocio se miden con datos de uso. Las decisiones son **propuestas, sin implementar**.
+
+| Participante (grabación) | Flujos | Hipótesis y criterio | Hallazgo | Decisión de diseño propuesta | Revalidación |
+|---|---|---|---|---|---|
+| Sebastián Suárez, 17 ([video](https://sl1nk.com/essxvtz)) | UF-1, UF-2 | H2: 70 % usa un recurso. H3: 80 % comunica una necesidad | Colores fluorescentes; burbuja y globo pequeños; duda con «entendí / no entendí»; acceso fácil al área de adultos | Bajar la saturación, agrandar los estímulos, explicar la respuesta del cuidador y proteger el área de adultos | Pendiente |
+| Diana López, 15 ([video](https://l1nq.com/ygh85ih)) | UF-1, UF-2 | H2 y H3 | Completa ambos flujos; pide más ejercicios y medir su efectividad | Ampliar el catálogo y registrar la efectividad | Pendiente |
+| Owen Aguirre, 17 ([consolidado, 48:43](https://l1nq.com/j0ayo4q)) | UF-1 | H2 | Completa el flujo; pide guardar sus dibujos e imágenes | Evaluar una galería de dibujos en el perfil | Pendiente |
+| Johan Friabusmante, 20, familiar ([video](https://l1nq.com/sx84u06)) | UF-3 a UF-7 | H1: 80 % completa la guía. H4: 80 % considera útiles las recomendaciones. H5: 80 % envía ayuda y 70 % valora el reporte | Completa la guía; sugiere respaldo de un profesional | Mostrar el respaldo profesional de las guías | Pendiente |
+| Lizeth Villanueva, 25, familiar ([video](https://sl1nk.com/2y1bdn9)) | UF-3 a UF-6 | H1, H4, H5 | No tiene claro el nivel de acompañamiento; pide accesos rápidos a un especialista | Aclarar el alcance en el Landing Page y reducir pasos de navegación | Pendiente |
+| Carmen Romero, 47, madre ([consolidado, 1:20:42](https://l1nq.com/j0ayo4q)) | UF-3 a UF-7 | H1, H4, H5 | Necesitó que le mostraran el Modo SOS; pide contactos a mano para el niño | Hacer más visible el botón SOS y mostrar contactos durante la crisis | Pendiente |
+
+| Hipótesis | Medido con las entrevistas | Estado frente al criterio |
+|---|---|---|
+| H1 | 2 de 3 completaron la guía sin ayuda y 1 con ayuda | Sin concluir: 67 % sin ayuda frente a la meta de 80 % |
+| H2 | 3 de 3 usaron un recurso | Cumple el 70 % en esta muestra |
+| H3 | 2 usaron el tablero y 1 sin dato | Sin concluir: 67 % registrado frente a la meta de 80 % |
+| H4 | No se registró la utilidad de las recomendaciones | No medido |
+| H5 | No se registró el envío de solicitudes ni la utilidad del reporte | No medido |
+
+**Limitaciones:** con tres participantes por segmento los porcentajes son solo indicativos. Johan y Lizeth son familiares y no padres, aunque el perfil de la sección 5.3.1 pedía padres o madres. Dos registros enlazan al video consolidado y requieren un enlace individual.
 
 ### 5.3.3. Evaluaciones según heurísticas
 
