@@ -86,6 +86,7 @@
 | AV2-8   | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Integración y publicación del Landing Page y de la Web Application, inglés por defecto y metadatos en la Web Application, documentación OpenAPI en inglés, colaboración del informe en AV2, URL de YouTube del video del producto, secuencias del video About-the-Team y correcciones de términos. |
 | AV2-9   | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Participant Performance Report de la entrega AV2 con calificaciones, video de navegación del Sprint 3 y nuevo enlace del video About-the-Product. |
 | AV2-10  | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Enlace del video de exposición de la entrega AV1 en el Anexo A. |
+| AV2-11  | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Estado posterior al cierre de las tareas T-04, T-76 y T-77 con sus commits y fecha de publicación. |
 
 </div>
 
@@ -188,7 +189,7 @@ Además, Ruiz Villegas, Yngrid Nahir registró el 14 de noviembre en `main` la e
 | Qué se busca | Dónde está | Estado |
 |---|---|---|
 | Business Goal → Historia → «para» | [3.2.1](Chapter-3.md#321-matriz-de-trazabilidad-estratégica) | Completo |
-| Historia – tarea – criterio – evidencia – estado (Sprint 3) | [5.2.3.3](Chapter-5.md#5233-sprint-backlog-3) | 24 de 27 tareas en Done |
+| Historia – tarea – criterio – evidencia – estado (Sprint 3) | [5.2.3.3](Chapter-5.md#5233-sprint-backlog-3) | 24 de 27 en Done al cierre; T-04 y T-77 publicadas el 27/11 |
 | Respuestas HTTP y prueba del Landing Page | [5.2.3.7](Chapter-5.md#5237-software-deployment-evidence-for-sprint-review) | Con defectos registrados |
 | Commits y Pull Requests por integrante | [5.2.3.8](Chapter-5.md#5238-team-collaboration-insights-during-sprint) | Conciliado |
 | Entrevistas de validación | [5.3.2](Chapter-5.md#532-registro-de-entrevistas) | Revalidación pendiente |
