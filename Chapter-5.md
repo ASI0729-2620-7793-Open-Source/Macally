@@ -1131,7 +1131,7 @@ De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04)
 | TS-02 | E1: `POST` crea el episodio en curso (`201`). E2: `PATCH` a un id inexistente responde `404`. | Cubierto por `CrisisManagementApiTests`. |
 | TS-03 | E1: `GET` de estímulos responde `200`. E2: favorito con perfil inexistente responde `404`. | Cubierto; `404` observado en el servicio publicado. |
 | TS-04 | E1: `GET` del tablero responde `200`. E2: pictograma sin etiqueta responde `400`. | Cubierto por `CommunicationBoardApiTest`. |
-| TS-05 | E1: `POST` crea la solicitud pendiente (`201`). E2: `GET` de recomendaciones sin token responde `401`. | **Parcial:** el [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) (integrado en `main` el 28/11/2026, pendiente de publicarse en Render) responde `401` cuando falta la cabecera `X-Account-Id`. La cabecera no es un token firmado, así que la autenticación por token sigue pendiente. |
+| TS-05 | E1: `POST` crea la solicitud pendiente (`201`). E2: `GET` de recomendaciones sin token responde `401`. | **Parcial:** el [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) (integrado en `main` y publicado en Render el 28/11/2026) responde `401` cuando falta la cabecera `X-Account-Id`. La cabecera no es un token firmado, así que la autenticación por token sigue pendiente. |
 
 **Pendientes al cierre:** T-04, T-76, T-77 y el escenario E2 de TS-05. Las tareas T-70 a T-72, T-74 y T-75 conservan a su responsable asignado, pero su commit es de otro integrante.
 
@@ -1739,7 +1739,7 @@ La cifra «147 pruebas sin fallos» no se cumplía en `develop`; se cumple desde
 |---|---|---|
 | Landing Page | [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) integrado en `master` (27/11) | Publicado: aparece el nuevo bloque de testimonios, los botones llevan a `/registro` y `sitemap.xml` responde `200` |
 | Frontend Web Application | [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4) y ajuste de idioma y metadatos, integrados en `main` y desplegados en Firebase Hosting (28/11) | Publicado: inglés por defecto, `<html lang="en">`, título y metadatos en inglés y enlace «Terms and conditions» |
-| RESTful Web Services | [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) y documentación OpenAPI en inglés, integrados en `main` (28/11); 147 pruebas sin fallos | **Pendiente:** Render no publicó la versión nueva automáticamente; el servicio publicado aún responde la anterior |
+| RESTful Web Services | [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) y documentación OpenAPI en inglés, integrados en `main` (28/11); 147 pruebas sin fallos | Publicado al actualizar el espejo desde el que despliega Render: la consulta de recomendaciones responde `401` sin cuenta y `200` con ella, y las 92 operaciones y las 10 etiquetas revisadas ya no tienen texto en español |
 
 <p align="center"><img src="images/Chapter-V/deploy-2026-11-28-web-app.jpg" alt="Web Application publicada el 28 de noviembre en inglés, con el enlace a los términos" width="800"></p>
 
