@@ -11,6 +11,8 @@
 | AV2 | upc-pre-202620-1asi0729-7793-macally-validation-sprint-3 | https://l1nq.com/j0ayo4q |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3 | https://sl1nk.com/o8ai3x0 |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3 | https://sl1nk.com/penfp1q |
+| AV2 | About-the-Product en YouTube | https://www.youtube.com/watch?v=utaBaLFhlOQ |
+| AV2 | About-the-Team incrustado en el Landing Page | https://asi0729-2620-7793-open-source.github.io/landing-page/ |
 
 <div style="page-break-before: always;"></div>
 

@@ -83,6 +83,7 @@
 | AV2-5   | 14/11/2026 | Lopez Torres, Leonardo Gabriel | Alineación con el enunciado del trabajo final para AV2: (1) la evaluación heurística (5.3.3) sigue el formato del Anexo D (datos de la sesión, sitio o aplicación y tareas a evaluar, escala de severidad de 1 a 4, tabla resumen y descripción de problemas); (2) nomenclatura del video de validación según el Anexo C (`validation-sprint-3`); (3) sección Ética y responsabilidad en 5.1.3 con los términos de uso del Landing Page; (4) criterios de éxito de H5 alineados con el Lean UX Canvas; (5) corrección de la integración de ramas del backend en la evidencia de colaboración; (6) capturas de Swagger UI de los Web Services y de las vistas de la Frontend Web Application desplegada, en 5.2.3.5 y 5.2.3.6. |
 | AV2-6   | 26/11/2026 | Lopez Torres, Leonardo Gabriel | Atención a la retroalimentación del docente sobre AV1 y AV2: matriz de trazabilidad estratégica (3.2.1), matriz de cierre del Sprint 3 (5.2.3.3), verificación de los productos publicados (5.2.3.7), conciliación de commits y Pull Requests (5.2.3.8), matriz de validación (5.3.2), convención de ramas y commits (5.1.2), cierre de observaciones AV1 en las Conclusiones, índice de evidencias, declaración de los entregables pendientes y conciliación de las dos versiones de la evaluación heurística (5.3.3). |
 | AV2-7   | 27/11/2026 | Lopez Torres, Leonardo Gabriel | Ejecución de las pruebas del backend y corrección de tres fallos, demostración de persistencia en local, correcciones del Landing Page, enlace a los términos en la Frontend Web Application y cierre de marcadores pendientes. |
+| AV2-8   | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Integración y publicación del Landing Page y de la Web Application, inglés por defecto y metadatos en la Web Application, documentación OpenAPI en inglés, colaboración del informe en AV2, URL de YouTube del video del producto, secuencias del video About-the-Team y correcciones de términos. |
 
 </div>
 
@@ -158,6 +159,19 @@ El Sprint 3 se implementó en el repositorio Nubi.Platform.Backend, con los cinc
 
 El detalle de la colaboración en los Web Services, en la Frontend Web Application y en el Landing Page se presenta en la sección 5.2.3.8 del [Capítulo V](Chapter-5.md#5238-team-collaboration-insights-during-sprint). Las ramas de los cinco Bounded Contexts ya se integraron en `develop` del backend. Como oportunidad de mejora, la Frontend Web Application se reconstruyó en dos días y solo registra commits de un integrante, y la rama de Red de Apoyo y Seguimiento concentró sus 19 commits en un solo día.
 
+**Elaboración del informe en la entrega AV2.** Del 28 de octubre al 15 de noviembre de 2026 el informe recibió 28 commits sin contar merges en `develop`:
+
+| Cuenta de GitHub | Integrante | Commits | Líneas | Aporte |
+|---|---|---|---|---|
+| u20241a195-cmd | Diaz Yurivilca, Sofia | 12 | +1312 / −117 | Alineación de los Capítulos I y II, Sprint 3, entrevistas de validación, Conclusiones, Bibliografía y Anexos |
+| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | 8 | +837 / −372 | Alineación del Capítulo II y evidencia del Sprint 3 |
+| joanfpp2-ai | Payano Puchuri, Joan Fabricio | 7 | +31 / −31 | Alineación del Capítulo IV |
+| nahiryn8 | Ruiz Villegas, Yngrid Nahir | 1 | +20 / −26 | Herramientas y URL de despliegue del Capítulo V |
+| Dan-trax | Diaz Caruzo, Edgard Daniel | 0 | — | Sus 8 commits quedaron en `feature/chapter-3`, sin integrar |
+| **Total** | | **28** | | |
+
+Además, Ruiz Villegas, Yngrid Nahir registró el 14 de noviembre en `main` la evaluación heurística por inspección (integrada en `develop` el 26/11/2026). Entre el 26 y el 28 de noviembre las correcciones posteriores a la retroalimentación del docente las registró Lopez Torres, Leonardo Gabriel.
+
 ---
 
 ---
@@ -170,7 +184,7 @@ El detalle de la colaboración en los Web Services, en la Frontend Web Applicati
 | Respuestas HTTP y prueba del Landing Page | [5.2.3.7](Chapter-5.md#5237-software-deployment-evidence-for-sprint-review) | Con defectos registrados |
 | Commits y Pull Requests por integrante | [5.2.3.8](Chapter-5.md#5238-team-collaboration-insights-during-sprint) | Conciliado |
 | Entrevistas de validación | [5.3.2](Chapter-5.md#532-registro-de-entrevistas) | Revalidación pendiente |
-| Pruebas del backend y persistencia en local | [5.2.3.7](Chapter-5.md#5237-software-deployment-evidence-for-sprint-review) | Pull Requests pendientes de integrar |
+| Pruebas, persistencia en local y publicación | [5.2.3.7](Chapter-5.md#5237-software-deployment-evidence-for-sprint-review) | Backend pendiente de publicarse en Render |
 | Hallazgos AV1 | [Cierre de observaciones](CONCLUSIONS.md#cierre-de-observaciones-av1) | 2 cerrados, 5 parciales, 1 abierto |
 | Videos | [Anexo A](ANNEXES.md#anexo-a-videos-de-exposiciones) | Con pendientes |
 

@@ -52,16 +52,16 @@ Los criterios de la tabla son los de negocio de los Hypothesis Statements (1.2.2
 
 ## Cierre de observaciones AV1
 
-Estado de los ocho hallazgos del AV1 al 27/11/2026. «Cerrado» indica que la corrección está en el informe; «Parcial» o «Abierto», que falta trabajo o evidencia.
+Estado de los ocho hallazgos del AV1 al 28/11/2026. «Cerrado» indica que la corrección está en el informe; «Parcial» o «Abierto», que falta trabajo o evidencia.
 
 | Hallazgo | Antes (AV1) | Después (evidencia) | Estado | Pendiente |
 |---|---|---|---|---|
 | H-01 Trazabilidad estratégica | El Impact Mapping cubría un subconjunto de historias | [Matriz de las 58 historias](Chapter-3.md#321-matriz-de-trazabilidad-estratégica) | Cerrado | Actualizar el gráfico del Impact Mapping |
 | H-02 «Para» operativo | Sin justificar su aporte al objetivo | Columna «Contribución» de la misma matriz | Cerrado | — |
-| H-03 Criterios de aceptación | Profundidad a mantener | Las 58 historias tienen al menos dos Scenarios ([3.1](Chapter-3.md#31-user-stories)); matriz de cierre del Sprint 3 | Parcial | Revisar restricciones y autorización; TS-05 E2 parcial en el [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) |
+| H-03 Criterios de aceptación | Profundidad a mantener | Las 58 historias tienen al menos dos Scenarios ([3.1](Chapter-3.md#31-user-stories)); matriz de cierre del Sprint 3 | Parcial | Revisar restricciones y autorización; TS-05 E2 parcial ([Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1), pendiente de publicarse en Render) |
 | H-04 Diagramas de clases densos | Diagramas reducidos | [Diagramas](Chapter-4.md#471-class-diagrams) ampliables a resolución completa | Parcial | Dividir por Aggregate |
-| H-05 Colaboración en Landing Page | Concentrada en un integrante | [Conciliación por repositorio](Chapter-5.md#5238-team-collaboration-insights-during-sprint): cuatro integrantes con commits acumulados | Abierto | Integrar el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1); aporte de Edgard y reparto del trabajo |
-| H-06 `main` / `master` | Uso ambiguo | [Convención real por repositorio](Chapter-5.md#512-source-code-management) | Parcial | Renombrar `master` en el Landing Page y publicar en `main` la versión conciliada del informe |
+| H-05 Colaboración en Landing Page | Concentrada en un integrante | [Conciliación por repositorio](Chapter-5.md#5238-team-collaboration-insights-during-sprint): cuatro integrantes con commits acumulados | Abierto | Aporte de Edgard y reparto del trabajo en el Sprint |
+| H-06 `main` / `master` | Uso ambiguo | [Convención real por repositorio](Chapter-5.md#512-source-code-management) | Parcial | Renombrar `master` en el Landing Page |
 | H-07 Mensajes de commit | Errores de redacción | [Reglas de redacción](Chapter-5.md#512-source-code-management) | Parcial | Demostrar su cumplimiento en nuevos commits |
 | H-08 Densidad documental | Capturas y diagramas pequeños | [Índice de evidencias](README.md#índice-de-evidencias) y diagramas ampliables | Parcial | Ampliar capturas densas y verificar el documento exportado |
 
@@ -77,7 +77,7 @@ El equipo de Macally está formado por cinco estudiantes que desarrollan Nubi, u
 | Ruiz Villegas, Yngrid Nahir | nahiryn8 | Diseño y registro de entrevistas, User Stories, Style Guidelines, Perfil y Personalización y sección de video About-the-Product del Landing Page. |
 | Diaz Caruzo, Edgard Daniel | Dan-trax | User Task Matrix, User Journey Mapping, Impact Mapping, Red de Apoyo y Seguimiento, documentación del contexto y licencia MIT. |
 
-**Video About-the-Team.** El Landing Page incrusta una primera versión del video en su sección de equipo.
+**Video About-the-Team.** El Landing Page incrusta una versión del video en su sección de equipo.
 
 | Dato | Detalle                                                                                                                                                                                                                                                                                                              |
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,6 +89,19 @@ El equipo de Macally está formado por cinco estudiantes que desarrollan Nubi, u
 
 ![img.png](images/Chapter-V/img.png)
  Captura de pantalla del video.
+
+**Secuencias de la versión incrustada en el Landing Page** (duración 00:06:51, distinta de las 8:51 de la versión de Stream; tiempos aproximados, revisados el 28/11/2026 con fotogramas y sin audio):
+
+| Inicio (hh:mm:ss) | Sección |
+|---|---|
+| 00:00:00 | Portada «About the team» |
+| 00:00:05 | Testimonio 1 |
+| 00:02:13 | Testimonio 2 |
+| 00:03:25 | Testimonio 3 |
+| 00:04:20 | Testimonio 4: Yngrid Ruiz (nombre rotulado en el video) |
+| 00:05:57 | Testimonio 5 |
+
+En esta versión no se observan las escenas de trabajo ni la retrospectiva del grupo. **Queda pendiente** rotular los testimonios, unificar la versión de Stream con la del Landing Page y publicar el video en YouTube.
 
 **Retrospectiva del equipo.** Resumen de la retrospectiva del Sprint 3.
 
@@ -103,7 +116,7 @@ El equipo de Macally está formado por cinco estudiantes que desarrollan Nubi, u
 |---|---|---|
 | La Frontend Web Application quedó en una persona y en dos días | Asignar cada tarea al inicio y que su responsable haga el commit | Pendiente |
 | Ramas con commits concentrados en un día | Revisar el avance a mitad del Sprint e integrar cada rama al terminarla | Pendiente |
-| Tareas del Landing Page sin cerrar (T-04, T-76, T-77) | Integrar por Pull Request y desplegar antes del cierre | [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) abierto; falta integrar y desplegar |
+| Tareas del Landing Page sin cerrar (T-04, T-76, T-77) | Integrar por Pull Request y desplegar antes del cierre | [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) integrado y publicado el 27/11/2026 |
 | Datos en memoria en el despliegue | Usar una base MySQL persistente | Pendiente |
 
 - **Qué mejorar:** la comunicación dentro del equipo. La Frontend Web Application quedó en una sola persona y en dos días, varias ramas concentraron sus commits en un solo día y las tareas del Landing Page quedaron sin cerrar. Para el siguiente Sprint el equipo acuerda al inicio quién hace cada tarea, revisa el avance a mitad del Sprint e integra cada rama al terminarla.
