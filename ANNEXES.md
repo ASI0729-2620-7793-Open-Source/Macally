@@ -4,7 +4,7 @@
 
 | Entrega | Título | Enlace (Microsoft Stream) |
 |---|---|---|
-| AV1 | upc-pre-202620-1asi0729-7793-macally-expo-av1 | No entregado |
+| AV1 | upc-pre-202620-1asi0729-7793-macally-expo-av1 | https://sl1nk.com/xqxzeuh |
 | TB1 | upc-pre-202620-1asi0729-7793-macally-expo-tb1 | No entregado |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-expo-av2 | No entregado |
 | AV2 (Sprint 3) | upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3 | https://sl1nk.com/mu0ny5n |
