@@ -1435,7 +1435,7 @@ Swagger UI también permite ejecutar las operaciones desde el navegador con la o
 
 El perfil `render` usa una base H2 en memoria y no expone su consola, por lo que los datos creados se verifican con los endpoints de consulta (por ejemplo, `GET /api/v1/episode-records` en el recorrido anterior) y no con una captura de la base de datos.
 
-**No entregado:** el video de navegación del Sprint 3 con la Frontend Web Application conectada a los Web Services (nomenclatura `upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`) no está disponible a la fecha de esta versión.
+**Video de navegación del Sprint 3** (`upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`): https://sl1nk.com/mu0ny5n (duración 3:53). Es la misma demostración del video About-the-Product; el recorrido por minutos está en la sección [5.4](#54-video-about-the-product).
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -2852,7 +2852,7 @@ Revisado el 27/11/2026 con un fotograma cada 7 u 8 segundos, por lo que los tiem
 
 En ese muestreo no se observan las escenas de testimonios ni de planes de la estructura propuesta; **quedan pendientes** de incorporar o de confirmar en el video.
 
-**Versión de YouTube.** El Landing Page incrusta el video «About the product Nubi» de YouTube, que dura 4:16 y muestra la interfaz del Sprint 2, distinta de la versión de Stream. El enunciado pide un video de 1 a 3 minutos con al menos una opinión por segmento objetivo: **queda pendiente** reeditarlo con la interfaz actual y publicar la misma versión en Stream y en YouTube.
+**Versión de YouTube.** El Landing Page incrusta el video «About the product Nubi» de YouTube, que dura 4:16 y muestra la interfaz del Sprint 2, distinta de la versión de Stream. **Queda pendiente** publicar en YouTube la misma versión de Stream.
 
 #### Datos del video
 
@@ -2861,7 +2861,7 @@ En ese muestreo no se observan las escenas de testimonios ni de planes de la est
 | Título | `upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3` |
 | Formato | mp4                                                               |
 | Duración | 3:53                                                              |     
-| URL en Microsoft Stream | https://sl1nk.com/o8ai3x0                                         |
+| URL en Microsoft Stream | https://sl1nk.com/mu0ny5n                                         |
 | URL en YouTube (incrustado en el Landing Page) | https://www.youtube.com/watch?v=utaBaLFhlOQ (duración 4:16) |
 | Responsable | Leonardo Lopez                                                    |
 Captura de pantalla del video (`images/Chapter-V/about-the-product.png`).**

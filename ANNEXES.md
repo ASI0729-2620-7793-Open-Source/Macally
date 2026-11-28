@@ -7,9 +7,9 @@
 | AV1 | upc-pre-202620-1asi0729-7793-macally-expo-av1 | No entregado |
 | TB1 | upc-pre-202620-1asi0729-7793-macally-expo-tb1 | No entregado |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-expo-av2 | No entregado |
-| AV2 (Sprint 3) | upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3 | No entregado |
+| AV2 (Sprint 3) | upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3 | https://sl1nk.com/mu0ny5n |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-validation-sprint-3 | https://l1nq.com/j0ayo4q |
-| AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3 | https://sl1nk.com/o8ai3x0 |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3 | https://sl1nk.com/mu0ny5n |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3 | https://sl1nk.com/penfp1q |
 | AV2 | About-the-Product en YouTube | https://www.youtube.com/watch?v=utaBaLFhlOQ |
 | AV2 | About-the-Team incrustado en el Landing Page | https://asi0729-2620-7793-open-source.github.io/landing-page/ |
@@ -39,4 +39,4 @@
 | Documentación OpenAPI (Swagger UI) | Web Services desplegados | https://nubi-platform-backend.onrender.com/swagger-ui/index.html |
 | Contrato de la API de Perfil y Personalización | Repositorio de los Web Services (rama `develop`) | `docs/api-perfil-personalizacion.md` |
 | Sprint Backlog 3 | Trello | https://trello.com/b/HCIZ8lA6/sprint-3-nubi |
-| Video About-the-Product | Microsoft Stream | https://sl1nk.com/o8ai3x0 |
+| Video About-the-Product | Microsoft Stream | https://sl1nk.com/mu0ny5n |

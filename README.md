@@ -84,6 +84,7 @@
 | AV2-6   | 26/11/2026 | Lopez Torres, Leonardo Gabriel | Atención a la retroalimentación del docente sobre AV1 y AV2: matriz de trazabilidad estratégica (3.2.1), matriz de cierre del Sprint 3 (5.2.3.3), verificación de los productos publicados (5.2.3.7), conciliación de commits y Pull Requests (5.2.3.8), matriz de validación (5.3.2), convención de ramas y commits (5.1.2), cierre de observaciones AV1 en las Conclusiones, índice de evidencias, declaración de los entregables pendientes y conciliación de las dos versiones de la evaluación heurística (5.3.3). |
 | AV2-7   | 27/11/2026 | Lopez Torres, Leonardo Gabriel | Ejecución de las pruebas del backend y corrección de tres fallos, demostración de persistencia en local, correcciones del Landing Page, enlace a los términos en la Frontend Web Application y cierre de marcadores pendientes. |
 | AV2-8   | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Integración y publicación del Landing Page y de la Web Application, inglés por defecto y metadatos en la Web Application, documentación OpenAPI en inglés, colaboración del informe en AV2, URL de YouTube del video del producto, secuencias del video About-the-Team y correcciones de términos. |
+| AV2-9   | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Participant Performance Report de la entrega AV2 con calificaciones, video de navegación del Sprint 3 y nuevo enlace del video About-the-Product. |
 
 </div>
 
@@ -356,12 +357,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 | **Entrega** | AV2 |
 | **Team Leader** | Lopez Torres, Leonardo Gabriel |
 
-> Las responsabilidades se redactaron a partir del historial de Git al 14 de noviembre de 2026. El Team Leader marca el cumplimiento y asigna la calificación de cada integrante; las columnas quedan en blanco hasta entonces.
+> Las responsabilidades se redactaron a partir del historial de Git al 14 de noviembre de 2026. El cumplimiento y la calificación los asignó el Team Leader.
 
 | Ítem | Estudiante | Responsabilidades | Cumplió a tiempo | Cumplió a destiempo | Cumplió parcialmente | No cumplió (Cero) | Calificación asignada (20 / 16 / 13 / 07 / 0) |
 |:---:|---|---|:---:|:---:|:---:|:---:|:---:|
-| 1 | Diaz Yurivilca, Sofia | **Capítulo 5:** Bounded Context Gestión de Crisis (Modo SOS) en los Web Services (T-56 a T-58) y en la Frontend Web Application (T-71); integración de las ramas en `develop` (T-67); 5.2.3. Sprint 3; 5.3. Validation Interviews; 5.4. Video About-the-Product.<br><br>**Conclusiones, Bibliografía y Anexos:** entrega AV2. | | | | | |
-| 2 | Diaz Caruzo, Edgard Daniel | **Capítulo 5:** Bounded Context Red de Apoyo y Seguimiento en los Web Services (T-63 y T-64) y en la Frontend Web Application (T-74 y T-75); Landing Page: enlaces y SEO (T-77); release a `master` (T-52). | | | | | |
-| 3 | Payano Puchuri, Joan Fabricio | **Capítulo 5:** Bounded Context Autorregulación en los Web Services (T-59 y T-60) y en la Frontend Web Application (T-72); núcleo compartido del backend (T-66); documentación OpenAPI (T-68). | | | | | |
-| 4 | Ruiz Villegas, Yngrid Nahir | **Capítulo 5:** Bounded Context Perfil y Personalización en los Web Services (T-53 a T-55) y en la Frontend Web Application (T-70); 5.3.1. Diseño de Entrevistas; 5.3.2. Registro de Entrevistas; entrevistas de validación y video About-the-Product. | | | | | |
-| 5 | Lopez Torres, Leonardo Gabriel | **Capítulo 5:** proyecto base de los Web Services (T-65); Bounded Context Comunicación Asistida en los Web Services (T-61 y T-62) y en la Frontend Web Application (T-73); despliegue de los Web Services (T-69); Landing Page: llamado a la acción hacia la aplicación (T-04). | | | | | |
+| 1 | Diaz Yurivilca, Sofia | **Capítulo 5:** Bounded Context Gestión de Crisis (Modo SOS) en los Web Services (T-56 a T-58) y en la Frontend Web Application (T-71); integración de las ramas en `develop` (T-67); 5.2.3. Sprint 3; 5.3. Validation Interviews; 5.4. Video About-the-Product.<br><br>**Conclusiones, Bibliografía y Anexos:** entrega AV2. | X | | | | 20 |
+| 2 | Diaz Caruzo, Edgard Daniel | **Capítulo 5:** Bounded Context Red de Apoyo y Seguimiento en los Web Services (T-63 y T-64) y en la Frontend Web Application (T-74 y T-75); Landing Page: enlaces y SEO (T-77); release a `master` (T-52). | X | | | | 20 |
+| 3 | Payano Puchuri, Joan Fabricio | **Capítulo 5:** Bounded Context Autorregulación en los Web Services (T-59 y T-60) y en la Frontend Web Application (T-72); núcleo compartido del backend (T-66); documentación OpenAPI (T-68). | X | | | | 20 |
+| 4 | Ruiz Villegas, Yngrid Nahir | **Capítulo 5:** Bounded Context Perfil y Personalización en los Web Services (T-53 a T-55) y en la Frontend Web Application (T-70); 5.3.1. Diseño de Entrevistas; 5.3.2. Registro de Entrevistas; entrevistas de validación y video About-the-Product. | X | | | | 20 |
+| 5 | Lopez Torres, Leonardo Gabriel | **Capítulo 5:** proyecto base de los Web Services (T-65); Bounded Context Comunicación Asistida en los Web Services (T-61 y T-62) y en la Frontend Web Application (T-73); despliegue de los Web Services (T-69); Landing Page: llamado a la acción hacia la aplicación (T-04). | X | | | | 20 |
