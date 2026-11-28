@@ -85,6 +85,7 @@
 | AV2-7   | 27/11/2026 | Lopez Torres, Leonardo Gabriel | Ejecución de las pruebas del backend y corrección de tres fallos, demostración de persistencia en local, correcciones del Landing Page, enlace a los términos en la Frontend Web Application y cierre de marcadores pendientes. |
 | AV2-8   | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Integración y publicación del Landing Page y de la Web Application, inglés por defecto y metadatos en la Web Application, documentación OpenAPI en inglés, colaboración del informe en AV2, URL de YouTube del video del producto, secuencias del video About-the-Team y correcciones de términos. |
 | AV2-9   | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Participant Performance Report de la entrega AV2 con calificaciones, video de navegación del Sprint 3 y nuevo enlace del video About-the-Product. |
+| AV2-10  | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Enlace del video de exposición de la entrega AV1 en el Anexo A. |
 
 </div>
 
