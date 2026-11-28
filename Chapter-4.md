@@ -1366,7 +1366,7 @@ La Web Application tiene un módulo por Bounded Context, de modo que el frontend
 Este diagrama cubre la gestión del perfil del usuario autista: sus datos básicos, el perfil sensorial, el diagnóstico declarado, los cuidadores asociados y los contactos de confianza.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png" alt="Class Diagram Perfil y Personalización: perfil del usuario y cuidadores" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png" alt="Class Diagram Perfil y Personalización: perfil del usuario y cuidadores" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Perfil del usuario y cuidadores*
@@ -1378,7 +1378,7 @@ Este diagrama cubre la gestión del perfil del usuario autista: sus datos básic
 Este diagrama cubre el acceso a NUBI: la cuenta del cuidador, docente o administrador institucional, su suscripción y pagos, la institución y los reportes de soporte técnico.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/SubscriptionClassDiagram.png" alt="Class Diagram Perfil y Personalización: cuenta, suscripción e institución" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/SubscriptionClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/SubscriptionClassDiagram.png" alt="Class Diagram Perfil y Personalización: cuenta, suscripción e institución" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Cuenta, suscripción e institución*
@@ -1390,7 +1390,7 @@ Este diagrama cubre el acceso a NUBI: la cuenta del cuidador, docente o administ
 Este diagrama cubre la sesión SOS que guía al cuidador paso a paso durante una crisis y la guía de actuación que la sustenta.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/SosModeClassDiagram.png" alt="Class Diagram Gestión de Crisis: Modo SOS y guías de actuación" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/SosModeClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/SosModeClassDiagram.png" alt="Class Diagram Gestión de Crisis: Modo SOS y guías de actuación" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Modo SOS y guías de actuación*
@@ -1402,7 +1402,7 @@ Este diagrama cubre la sesión SOS que guía al cuidador paso a paso durante una
 Este diagrama cubre las recomendaciones personalizadas, que se generan según el perfil del usuario y se actualizan cada vez que se registra un nuevo episodio.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/RecommendationsClassDiagram.png" alt="Class Diagram Gestión de Crisis: recomendaciones" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/RecommendationsClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/RecommendationsClassDiagram.png" alt="Class Diagram Gestión de Crisis: recomendaciones" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Recomendaciones*
@@ -1414,7 +1414,7 @@ Este diagrama cubre las recomendaciones personalizadas, que se generan según el
 Este diagrama cubre las sesiones de calma del usuario autista, los recursos de calma disponibles, los favoritos y el temporizador.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png" alt="Class Diagram Autorregulación" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png" alt="Class Diagram Autorregulación" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Autorregulación*
@@ -1426,7 +1426,7 @@ Este diagrama cubre las sesiones de calma del usuario autista, los recursos de c
 Este diagrama cubre el tablero de pictogramas, las selecciones que el usuario realiza para comunicar una necesidad, la confirmación de comprensión del acompañante y el check-in emocional.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/CommunicationClassDiagram.png" alt="Class Diagram Comunicación Asistida (CAA)" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/CommunicationClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/CommunicationClassDiagram.png" alt="Class Diagram Comunicación Asistida (CAA)" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Comunicación Asistida (CAA)*
@@ -1438,7 +1438,7 @@ Este diagrama cubre el tablero de pictogramas, las selecciones que el usuario re
 Este diagrama cubre las solicitudes de ayuda y la entrega de alertas a los contactos de confianza por notificación push, SMS o WhatsApp.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/HelpRequestsClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: solicitudes de ayuda" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/HelpRequestsClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/HelpRequestsClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: solicitudes de ayuda" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Solicitudes de ayuda*
@@ -1450,7 +1450,7 @@ Este diagrama cubre las solicitudes de ayuda y la entrega de alertas a los conta
 Este diagrama cubre el registro automático de episodios al finalizar el Modo SOS, las notas y estrategias efectivas, los reportes para el profesional de salud y el panel de inicio del cuidador.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/EpisodesClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: episodios, reportes y panel del cuidador" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/EpisodesClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/EpisodesClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: episodios, reportes y panel del cuidador" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Episodios, reportes y panel del cuidador*
@@ -1462,7 +1462,7 @@ Este diagrama cubre el registro automático de episodios al finalizar el Modo SO
 Este diagrama muestra cómo se implementan en código las dos formas de integración entre contextos: las consultas síncronas al perfil mediante `ProfileContextFacade` y los eventos de dominio mediante `DomainEventPublisher`.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/CollaborationClassDiagram.png" alt="Class Diagram Colaboración entre Bounded Contexts" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/CollaborationClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/CollaborationClassDiagram.png" alt="Class Diagram Colaboración entre Bounded Contexts" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Colaboración entre Bounded Contexts*

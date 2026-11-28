@@ -4,13 +4,13 @@
 
 | Entrega | Título | Enlace (Microsoft Stream) |
 |---|---|---|
-| AV1 | upc-pre-202620-1asi0729-7793-macally-expo-av1 | `URL del video en Microsoft Stream` |
-| TB1 | upc-pre-202620-1asi0729-7793-macally-expo-tb1 | `URL del video en Microsoft Stream` |
-| AV2 | upc-pre-202620-1asi0729-7793-macally-expo-av2 | `URL del video en Microsoft Stream` |
-| AV2 (Sprint 3) | upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3 | `URL del video en Microsoft Stream` |
-| AV2 | upc-pre-202620-1asi0729-7793-macally-validation-sprint-3 | `URL del video en Microsoft Stream` |
+| AV1 | upc-pre-202620-1asi0729-7793-macally-expo-av1 | No entregado |
+| TB1 | upc-pre-202620-1asi0729-7793-macally-expo-tb1 | No entregado |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-expo-av2 | No entregado |
+| AV2 (Sprint 3) | upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3 | No entregado |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-validation-sprint-3 | https://l1nq.com/j0ayo4q |
 | AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3 | https://sl1nk.com/o8ai3x0 |
-| AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3 | `URL del video en Microsoft Stream` |
+| AV2 | upc-pre-202620-1asi0729-7793-macally-about-the-team-sprint-3 | https://sl1nk.com/penfp1q |
 
 <div style="page-break-before: always;"></div>
 
@@ -25,10 +25,10 @@
 | API simulada (json-server) desplegada, reemplazada en el Sprint 3 | Render | https://nubi-api-x7sz.onrender.com/api |
 | Repositorio del Informe del Proyecto | GitHub | https://github.com/ASI0729-2620-7793-Open-Source/Macally |
 | Wireframes, Mock-ups y Prototipos | Figma | https://www.figma.com/design/WGr7DojMDH0m122pRirLJw/NUBI |
-| User Personas, User Journey Maps, Empathy Maps e Impact Map | UXPressia | `URL del proyecto en UXPressia` |
+| User Personas, User Journey Maps, Empathy Maps e Impact Map | UXPressia | Sin enlace publicado; imágenes en [`images/Chapter-II`](images/Chapter-II) y [`images/Chapter-III`](images/Chapter-III) |
 | Product Backlog y Sprint Backlog | Trello | https://trello.com/invite/b/6a925979f57ffeff764561f2/ATTI06bb5078c424824a45a5c057b3d5eb8dDAC5961D/product-backlog |
-| Wireflows y User Flows | `FigJam / Lucidchart / Overflow` | `URL` |
-| Big Picture y Design-Level Event Storming | `FigJam / Lucidchart / Miro` | `URL` |
+| Wireflows y User Flows | Imágenes en el repositorio | Sin enlace publicado; carpeta [`images/Chapter-IV`](images/Chapter-IV) |
+| Big Picture y Design-Level Event Storming | Imágenes en el repositorio | Sin enlace publicado; carpetas [`images/Chapter-II`](images/Chapter-II) y [`images/Chapter-IV`](images/Chapter-IV) |
 | Diagramas C4, de clases y de base de datos | Imágenes en el repositorio del informe | Carpeta [`images/Chapter-IV`](images/Chapter-IV) |
 | Sprint Backlog 1 | Trello | https://tinyurl.com/25y7b883 |
 | Sprint Backlog 2 | Trello | https://tinyurl.com/2afdpsnp |
