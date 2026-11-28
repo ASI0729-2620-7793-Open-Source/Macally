@@ -36,7 +36,7 @@ Los cinco integrantes de Macally son estudiantes del quinto ciclo de la carrera 
 
 ### 1.2. Solution Profile
 
-El incremento en el diagnóstico de condiciones neurodivergentes (TEA, TDAH, TDA, TOC) ha puesto de manifiesto la falta de herramientas efectivas para la autorregulación durante episodios de crisis sensorial o emocional. Esta situación genera un doble desafío: por un lado, las personas afectadas enfrentan serias dificultades para comunicar sus necesidades y gestionar el sobreestímulo; por otro, sus padres carecen de recursos prácticos para intervenir de manera rápida, segura y eficiente.
+El incremento en el diagnóstico del trastorno del espectro autista (TEA) ha puesto de manifiesto la falta de herramientas efectivas para la autorregulación durante episodios de crisis sensorial o emocional. Esta situación genera un doble desafío: por un lado, las personas afectadas enfrentan serias dificultades para comunicar sus necesidades y gestionar el sobreestímulo; por otro, sus padres carecen de recursos prácticos para intervenir de manera rápida, segura y eficiente.
 
 Para resolver este problema, la solución propuesta debe ofrecer mecanismos de autorregulación inmediata, canales de comunicación asistida, guías claras para los padres y un diseño adaptable a las distintas necesidades del usuario.
 
@@ -56,11 +56,11 @@ El alcance se limita exclusivamente a la prevención y gestión directa de las c
 ### 1.2.1 Antecedentes y problemática
 
 
-El trastorno del espectro autista (TEA) y el trastorno por déficit de atención con hiperactividad (TDAH) se clasifican como trastornos del neurodesarrollo (American Psychiatric Association, 2022). En el TDAH, la presentación con predominio de inatención es la que coloquialmente se denomina TDA. El foco de este proyecto son los episodios de crisis de desregulación emocional o sensorial que pueden presentar niños y adolescentes con TEA.
+El trastorno del espectro autista (TEA) se clasifica como un trastorno del neurodesarrollo (American Psychiatric Association, 2022). El foco de este proyecto son los episodios de crisis de desregulación emocional o sensorial que pueden presentar niños y adolescentes con TEA.
 
-La identificación de estas condiciones es cada vez mayor. La Organización Mundial de la Salud [OMS] (2025) estima que en 2021 aproximadamente 1 de cada 127 personas en el mundo presentaba autismo. En Estados Unidos, el sistema de vigilancia de los CDC identificó TEA en 1 de cada 31 niños de 8 años en 2022 (Shaw et al., 2025). Respecto al TDAH, un metaanálisis estimó una prevalencia de 7.6 % en niños de 3 a 12 años y de 5.6 % en adolescentes de 12 a 18 años (Salari et al., 2023).
+La identificación del autismo es cada vez mayor. La Organización Mundial de la Salud [OMS] (2025) estima que en 2021 aproximadamente 1 de cada 127 personas en el mundo presentaba autismo. En Estados Unidos, el sistema de vigilancia de los CDC identificó TEA en 1 de cada 31 niños de 8 años en 2022 (Shaw et al., 2025).
 
-En el Perú, el Ministerio de Salud (Minsa) reportó 77 678 casos de TEA atendidos en 2023 (TVPerú, 2024), frente a 48 344 en 2022 (Infobae, 2024), y 25 010 casos de TDAH atendidos entre enero y junio de 2025, de los cuales el 80 % correspondió a niñas y niños (Panamericana Televisión, 2025). Estas cifras reflejan la demanda de atención registrada y no necesariamente la prevalencia real. Por su parte, el Plan Nacional previsto en la Ley 30150 incluye brindar atención y orientación sobre el TEA a los familiares de las personas que lo presentan (Congreso de la República del Perú, 2014), lo que reconoce el rol de la familia en el acompañamiento.
+En el Perú, el Ministerio de Salud (Minsa) reportó 77 678 casos de TEA atendidos en 2023 (TVPerú, 2024), frente a 48 344 en 2022 (Infobae, 2024). Estas cifras reflejan la demanda de atención registrada y no necesariamente la prevalencia real. Por su parte, el Plan Nacional previsto en la Ley 30150 incluye brindar atención y orientación sobre el TEA a los familiares de las personas que lo presentan (Congreso de la República del Perú, 2014), lo que reconoce el rol de la familia en el acompañamiento.
 
 En cuanto al acceso a tecnología, el 95.4 % de los hogares peruanos contaba con telefonía móvil en el segundo trimestre de 2025, cifra que llegó a 98.0 % en Lima Metropolitana (Instituto Nacional de Estadística e Informática [INEI], 2025), lo que hace viable una solución accesible desde el teléfono de los padres.
 
@@ -79,14 +79,14 @@ A partir del análisis de la situación mediante la técnica 5W2H, se delimita y
  
 **How:** Mediante una solución digital web que ofrezca estímulos de autorregulación de baja carga cognitiva, un canal de comunicación aumentativa y alternativa, y guías de actuación paso a paso para los padres, accesibles en pocos toques.
  
-**How much:** La demanda de atención va en aumento: en el Perú, los casos de TEA atendidos por el Minsa pasaron de 48 344 en 2022 a 77 678 en 2023, y solo en el primer semestre de 2025 se atendieron 25 010 casos de TDAH.
+**How much:** La demanda de atención va en aumento: en el Perú, los casos de TEA atendidos por el Minsa pasaron de 48 344 en 2022 a 77 678 en 2023.
 
 ## 1.2.2 Lean UX Process
 
 ### 1.2.2.1. Lean UX Problem Statements
 
 
-El estado actual del apoyo digital a niños y adolescentes neurodivergentes con TEA y TDAH se ha centrado principalmente en la planificación de rutinas y la gestión del tiempo, el seguimiento conductual a mediano plazo y la comunicación aumentativa fuera del momento de la crisis, dirigidos a familias, terapeutas y usuarios individuales.
+El estado actual del apoyo digital a niños y adolescentes con TEA se ha centrado principalmente en la planificación de rutinas y la gestión del tiempo, el seguimiento conductual a mediano plazo y la comunicación aumentativa fuera del momento de la crisis, dirigidos a familias, terapeutas y usuarios individuales.
  
 Lo que los productos y servicios existentes no logran abordar es el apoyo inmediato y de baja carga cognitiva durante el episodio de desregulación, tanto para el niño o adolescente como para los padres que deben decidir cómo actuar en ese momento.
  
@@ -194,6 +194,7 @@ Se formula un Hypothesis Statement por cada Feature Assumption.
 > alcanzan un mejor acompañamiento durante y después de la crisis gracias a la solicitud de ayuda y al registro de episodios (UOA4, UOA5)
 >
 > con una red de apoyo que permite avisar a contactos de confianza y generar reportes de episodios compartibles (FA5).
+
 ### 1.2.2.4. Lean UX Canvas
 
 
@@ -298,7 +299,7 @@ Niños y adolescentes autistas que pueden vivir episodios de desregulación emoc
  
 - Necesidades: contar con herramientas de baja carga cognitiva para afrontar la sobrecarga emocional o sensorial y comunicar necesidades básicas.
 - Preferencias: interfaces simples, visuales, predecibles y personalizables, sin saturación de elementos.
-- Comportamientos: los tres adolescentes entrevistados (una con autismo y dos con TDAH o TDA) identifican los ruidos fuertes y las aglomeraciones como detonantes, se retiran a un espacio tranquilo para calmarse y recurren a mensajes escritos durante los episodios (sección 2.2.3). Como solo una de las personas entrevistadas tiene autismo, este comportamiento debe confirmarse con más personas autistas en las entrevistas de validación.
+- Comportamientos: los tres adolescentes entrevistados (todos con autismo) identifican los ruidos fuertes y las aglomeraciones como detonantes, se retiran a un espacio tranquilo para calmarse y recurren a mensajes escritos durante los episodios (sección 2.2.3). Como los entrevistados tienen entre 15 y 17 años, este comportamiento debe confirmarse con niños de menor edad en las entrevistas de validación.
 #### D. Información estadística de sustento
  
 - **Tamaño del problema.** La OMS estima que 1 de cada 127 personas en el mundo tenía autismo en 2021 (OMS, 2025), y en Estados Unidos 1 de cada 31 niños de 8 años fue identificado con TEA en 2022 (Shaw et al., 2025).

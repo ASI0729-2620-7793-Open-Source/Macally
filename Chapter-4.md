@@ -568,6 +568,8 @@ Se definen los SEO Tags y Meta Tags mínimos (Title, Description, Keywords y Aut
 
 Nota: al tratarse de una Web Application que requiere autenticación para acceder a la mayoría de sus vistas, las páginas internas priorizan Meta Tags orientados a accesibilidad y consistencia de marca antes que a posicionamiento orgánico (SEO), mientras que el Landing Page concentra el esfuerzo de SEO al ser la puerta de entrada pública e indexable del producto.
 
+**Valores implementados por defecto (28/11/2026).** El idioma por defecto de la Web Application es inglés. Su documento base declara `lang="en"` y estos valores: Title «Nubi · Calm support for autistic children»; Meta Description «Nubi supports autistic children and their families: calm corner, visual routine, pictogram communication and SOS Mode.»; Keywords «autism, calm corner, visual routine, pictograms, AAC, SOS Mode, caregivers»; Author «Macally». El título cambia según la vista y el idioma elegido.
+
 ### 4.2.4. Searching Systems.
 
 Nubi ofrece mecanismos de búsqueda acotados y simples, priorizando filtros predefinidos sobre la búsqueda libre por texto, con el fin de reducir la carga cognitiva del usuario y evitar que se sienta perdido entre el volumen de información:
@@ -724,11 +726,9 @@ Los wireframes representan la distribución base de cada sección antes de aplic
 
 - **Versión Mobile Web Browser**
 
-  <p align="center">
-    <img src="images/Chapter-IV/LandingMobileWireframe.png" alt="Wireframe del Landing Page para Mobile Web Browser" width="360">
-  </p>
+  **Imagen pendiente:** el wireframe móvil no está en el repositorio y la página «Landing Page» de Figma solo contiene los marcos de escritorio (revisado el 28/11/2026).
 
-  Wireframe del Landing Page para Mobile Web Browser. Mantiene el orden de lectura definido en la Arquitectura de Información: barra de navegación superior con el logo, bloque Hero con el llamado a la acción principal, sección del problema, los cuatro pasos de «Cómo funciona» y la primera sección de valor (Perfil y Personalización). La jerarquía visual del Hero y el contraste entre los bloques oscuros y los claros se conservan respecto de la versión Desktop.
+  Estructura prevista del wireframe del Landing Page para Mobile Web Browser. Mantiene el orden de lectura definido en la Arquitectura de Información: barra de navegación superior con el logo, bloque Hero con el llamado a la acción principal, sección del problema, los cuatro pasos de «Cómo funciona» y la primera sección de valor (Perfil y Personalización). La jerarquía visual del Hero y el contraste entre los bloques oscuros y los claros se conservan respecto de la versión Desktop.
 
 ### 4.3.2 Landing Page Mock-up
 
@@ -838,11 +838,13 @@ Los mock-ups incorporan el Design System de la sección 4.1 sobre la estructura 
 
 - **Versión Mobile Web Browser**
 
+  **Imagen de diseño pendiente:** el mock-up móvil no está en el repositorio ni en la página «Landing Page» de Figma. Como referencia se muestra una captura del Landing Page publicado a 375 px de ancho; es la implementación, no el mock-up.
+
   <p align="center">
-    <img src="images/Chapter-IV/LandingMobileMockup.png" alt="Mock-up del Landing Page para Mobile Web Browser" width="360">
+    <img src="images/Chapter-IV/landing-mobile-implementation-375.png" alt="Captura del Landing Page publicado a 375 píxeles de ancho" width="360">
   </p>
 
-  Mock-up del Landing Page para Mobile Web Browser, con el Design System de la sección 4.1: paleta de Deep Teal y Cream, tipografía Bricolage Grotesque, botones de esquinas redondeadas y las ilustraciones de la marca. Muestra la barra de navegación con las mismas etiquetas del Labeling System (Perfil, Modo SOS, Autocuidado, Planes, Comunicación y Apoyo), el Hero con el llamado a la acción «Comenzar Ahora», la sección «El problema», los cuatro pasos de «Cómo funciona» y el inicio de la sección de Perfil y Personalización.
+  Diseño previsto del Landing Page para Mobile Web Browser, con el Design System de la sección 4.1: paleta de Deep Teal y Cream, tipografía Bricolage Grotesque, botones de esquinas redondeadas y las ilustraciones de la marca. Muestra la barra de navegación con las mismas etiquetas del Labeling System (Perfil, Modo SOS, Autocuidado, Planes, Comunicación y Apoyo), el Hero con el llamado a la acción «Comenzar Ahora», la sección «El problema», los cuatro pasos de «Cómo funciona» y el inicio de la sección de Perfil y Personalización.
 
 ## 4.4 Web Applications UX/UI Design
 
@@ -1187,8 +1189,10 @@ El siguiente video muestra y explica los principales flujos de interacción cubi
 El prototipo Mobile parte de las mismas decisiones de interacción y navegación del prototipo Desktop, aplicadas al Landing Page en una pantalla estrecha.
 
 <p align="center">
-  <img src="images/Chapter-IV/LandingMobileMockup.png" alt="Prototipo Mobile del Landing Page" width="360">
+  <img src="images/Chapter-IV/landing-mobile-implementation-375.png" alt="Captura del Landing Page publicado a 375 píxeles de ancho" width="360">
 </p>
+
+*Captura del Landing Page publicado (28/11/2026); la imagen del prototipo móvil no está en el repositorio.*
 
 **Video del prototipo Mobile:** https://tinyurl.com/23solcwj
 
@@ -1366,7 +1370,7 @@ La Web Application tiene un módulo por Bounded Context, de modo que el frontend
 Este diagrama cubre la gestión del perfil del usuario autista: sus datos básicos, el perfil sensorial, el diagnóstico declarado, los cuidadores asociados y los contactos de confianza.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png" alt="Class Diagram Perfil y Personalización: perfil del usuario y cuidadores" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/ProfileClassDiagram.png" alt="Class Diagram Perfil y Personalización: perfil del usuario y cuidadores" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Perfil del usuario y cuidadores*
@@ -1378,7 +1382,7 @@ Este diagrama cubre la gestión del perfil del usuario autista: sus datos básic
 Este diagrama cubre el acceso a NUBI: la cuenta del cuidador, docente o administrador institucional, su suscripción y pagos, la institución y los reportes de soporte técnico.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/SubscriptionClassDiagram.png" alt="Class Diagram Perfil y Personalización: cuenta, suscripción e institución" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/SubscriptionClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/SubscriptionClassDiagram.png" alt="Class Diagram Perfil y Personalización: cuenta, suscripción e institución" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Cuenta, suscripción e institución*
@@ -1390,7 +1394,7 @@ Este diagrama cubre el acceso a NUBI: la cuenta del cuidador, docente o administ
 Este diagrama cubre la sesión SOS que guía al cuidador paso a paso durante una crisis y la guía de actuación que la sustenta.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/SosModeClassDiagram.png" alt="Class Diagram Gestión de Crisis: Modo SOS y guías de actuación" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/SosModeClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/SosModeClassDiagram.png" alt="Class Diagram Gestión de Crisis: Modo SOS y guías de actuación" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Modo SOS y guías de actuación*
@@ -1402,7 +1406,7 @@ Este diagrama cubre la sesión SOS que guía al cuidador paso a paso durante una
 Este diagrama cubre las recomendaciones personalizadas, que se generan según el perfil del usuario y se actualizan cada vez que se registra un nuevo episodio.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/RecommendationsClassDiagram.png" alt="Class Diagram Gestión de Crisis: recomendaciones" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/RecommendationsClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/RecommendationsClassDiagram.png" alt="Class Diagram Gestión de Crisis: recomendaciones" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Recomendaciones*
@@ -1414,7 +1418,7 @@ Este diagrama cubre las recomendaciones personalizadas, que se generan según el
 Este diagrama cubre las sesiones de calma del usuario autista, los recursos de calma disponibles, los favoritos y el temporizador.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png" alt="Class Diagram Autorregulación" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/SelfRegulationClassDiagram.png" alt="Class Diagram Autorregulación" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Autorregulación*
@@ -1426,7 +1430,7 @@ Este diagrama cubre las sesiones de calma del usuario autista, los recursos de c
 Este diagrama cubre el tablero de pictogramas, las selecciones que el usuario realiza para comunicar una necesidad, la confirmación de comprensión del acompañante y el check-in emocional.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/CommunicationClassDiagram.png" alt="Class Diagram Comunicación Asistida (CAA)" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/CommunicationClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/CommunicationClassDiagram.png" alt="Class Diagram Comunicación Asistida (CAA)" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Comunicación Asistida (CAA)*
@@ -1438,7 +1442,7 @@ Este diagrama cubre el tablero de pictogramas, las selecciones que el usuario re
 Este diagrama cubre las solicitudes de ayuda y la entrega de alertas a los contactos de confianza por notificación push, SMS o WhatsApp.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/HelpRequestsClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: solicitudes de ayuda" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/HelpRequestsClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/HelpRequestsClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: solicitudes de ayuda" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Solicitudes de ayuda*
@@ -1450,7 +1454,7 @@ Este diagrama cubre las solicitudes de ayuda y la entrega de alertas a los conta
 Este diagrama cubre el registro automático de episodios al finalizar el Modo SOS, las notas y estrategias efectivas, los reportes para el profesional de salud y el panel de inicio del cuidador.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/EpisodesClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: episodios, reportes y panel del cuidador" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/EpisodesClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/EpisodesClassDiagram.png" alt="Class Diagram Red de Apoyo y Seguimiento: episodios, reportes y panel del cuidador" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Episodios, reportes y panel del cuidador*
@@ -1462,7 +1466,7 @@ Este diagrama cubre el registro automático de episodios al finalizar el Modo SO
 Este diagrama muestra cómo se implementan en código las dos formas de integración entre contextos: las consultas síncronas al perfil mediante `ProfileContextFacade` y los eventos de dominio mediante `DomainEventPublisher`.
 
 <p align="center">
-  <img src="images/Chapter-IV/class-diagrams/CollaborationClassDiagram.png" alt="Class Diagram Colaboración entre Bounded Contexts" width="100%">
+  <a href="images/Chapter-IV/class-diagrams/CollaborationClassDiagram.png"><img src="images/Chapter-IV/class-diagrams/CollaborationClassDiagram.png" alt="Class Diagram Colaboración entre Bounded Contexts" width="100%"></a><br><sub>Seleccionar el diagrama para abrirlo en resolución completa.</sub>
 </p>
 
 *Ilustración — Class Diagram: Colaboración entre Bounded Contexts*

@@ -90,6 +90,17 @@ Cuando se identifica un error crítico en una versión ya publicada se utiliza u
 
 Una vez realizada la corrección, los cambios de la rama `hotfix/*` son integrados tanto en `main` como en `develop`, con el objetivo de mantener consistencia entre las versiones del proyecto.
 
+**Convención real por repositorio** (verificada en GitHub el 26/11/2026):
+
+| Repositorio | Rama estable | Rama de integración | Observación |
+|---|---|---|---|
+| Macally (informe) | `main` | `develop` | El 26/11/2026 se integró en `feature/av2-teacher-feedback` el cambio de `main` que `develop` no tenía (`8369d34`); falta llevar esa rama a `develop` y publicar la versión en `main`. |
+| Nubi---Frontend | `main` | `develop` | Versiones `v1.0.0` a `v1.2.0`. |
+| Nubi.Platform.Backend | `main` | `develop` | Conserva una rama `master` sin uso (último commit: 04/11/2026). |
+| landing-page | `master` | `develop` | Excepción a la convención. `develop` quedó sin actualizar desde el 19/09/2026. Pendiente renombrar `master` a `main` y reconfigurar GitHub Pages. |
+
+La convención del equipo es `main`. Las menciones a `master` en este informe se refieren únicamente al repositorio del Landing Page, a la rama sin uso del backend o a registros históricos de Sprints anteriores.
+
 #### Semantic Versioning
 
 Para identificar las diferentes versiones de los productos de NUBI se utiliza **Semantic Versioning**, siguiendo la estructura `MAJOR.MINOR.PATCH`.
@@ -134,6 +145,8 @@ Algunos ejemplos de mensajes de commit aplicados a NUBI son:
 - `docs(chapter5): add source code management`
 
 El uso conjunto de Git, GitHub, GitFlow, Semantic Versioning y Conventional Commits permite mantener una organización consistente del código fuente, facilitar la colaboración entre los integrantes del equipo y conservar la trazabilidad de la evolución de los diferentes productos de software que conforman NUBI.
+
+**Calidad de los mensajes.** El historial contiene mensajes con errores o sin información (por ejemplo, `feat: add intercionalizacion lenguague` en el Landing Page y `feat: fix the new fix` en el informe). No se reescribe el historial publicado. Desde la entrega AV2, cada mensaje debe: (1) usar un tipo y un alcance; (2) describir en inglés, en imperativo y sin errores, qué cambia; y (3) evitar descripciones genéricas como `fix`, `changes` o `add docs`. Quien revisa un Pull Request comprueba estas reglas antes de integrarlo.
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
@@ -239,6 +252,12 @@ En cuanto a accesibilidad, el Landing Page y la Frontend Web Application deben c
 - Retroalimentación visual comprensible para los diferentes estados del sistema.
 
 La aplicación de estas convenciones permite que el código fuente de NUBI mantenga una estructura uniforme entre los integrantes del equipo, facilite el mantenimiento de los productos y reduzca inconsistencias durante el desarrollo colaborativo.
+
+#### Ética y responsabilidad
+
+Los términos y condiciones de servicio de NUBI se publican en la página `terms.html` del Landing Page y se enlazan desde su footer, en inglés y en español, con tres vínculos: Terms of use, Privacy policy y Accessibility statement. Los términos establecen el propósito y el alcance (NUBI ofrece herramientas operativas de apoyo y no diagnostica, no trata ni reemplaza la atención de profesionales de la salud), la conducta ante emergencias (llamar de inmediato a los servicios de emergencia), el uso responsable (el cuidador responde por la exactitud de la información del perfil) y los compromisos éticos del equipo, basados en el código de ética de Ingeniería de Software de ACM/IEEE-CS y en el código de ética del Colegio de Ingenieros del Perú (CIP). La política de privacidad se rige por la Ley 29733, de Protección de Datos Personales.
+
+El equipo evidencia la transparencia y la responsabilidad profesional del proceso con el control de versiones en GitHub (GitFlow, Conventional Commits y los analíticos de colaboración de las secciones 5.2.X.8), con las capturas de cada Sprint y con los videos de exposición. El enlace a los mismos términos en la Frontend Web Application (menú del cuidador, ingreso y registro) se agregó el 27/11/2026 en el [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4) y se publicó el 28/11/2026.
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -970,8 +989,6 @@ Como oportunidad de mejora, Sofia y Edgard no registran commits en el Landing Pa
 
 ### 5.2.3. Sprint 3
 
-> **Actualización AV2.** Esta sección se actualizó con la evidencia verificada al 14 de noviembre de 2026: historial de Git, pruebas automáticas, Swagger UI y los despliegues publicados. Lo marcado como **[POR CONFIRMAR]** debe validarlo el equipo y lo marcado como **[POR COMPLETAR]** es evidencia que solo el equipo puede aportar (capturas de pantalla, URL de videos y datos de reuniones). Estas marcas y este aviso se eliminan al cerrar la versión final.
-
 #### 5.2.3.1. Sprint Planning 3
 
 El Sprint Planning 3 define el alcance de la primera versión de los RESTful Web Services de Nubi y de su conexión con la Frontend Web Application. Los servicios se implementan con Java y Spring Boot en el repositorio [Nubi.Platform.Backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend), con un Bounded Context por rama, y cubren las Technical Stories TS-01 a TS-05 del Product Backlog. El Sprint también retoma las User Stories que quedaron en proceso o pendientes en el Sprint 2 y las tareas T-04 y T-52.
@@ -980,11 +997,11 @@ El Sprint Planning 3 define el alcance de la primera versión de los RESTful Web
 |---|---|
 | Sprint # | Sprint 3 |
 | **Sprint Planning Background** | |
-| Date | **[POR CONFIRMAR]** (el repositorio del backend tiene su primer commit el 2026-11-04) |
-| Time | **[POR COMPLETAR]** |
-| Location | **[POR COMPLETAR]** |
-| Prepared By | **[POR CONFIRMAR]** |
-| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel **[POR CONFIRMAR]** |
+| Date | 2026-10-29 |
+| Time | 08:00 PM |
+| Location | Virtual (WhatsApp) |
+| Prepared By | Lopez Torres, Leonardo Gabriel |
+| Attendees (to planning meeting) | Lopez Torres, Leonardo Gabriel / Diaz Yurivilca, Sofia / Payano Puchuri, Joan Fabricio / Ruiz Villegas, Yngrid Nahir / Diaz Caruzo, Edgard Daniel |
 | Sprint 2 Review Summary | De las 29 User Stories comprometidas en el Sprint 2, 23 quedaron completas (62 de 77 Story Points). US-25, US-26 y US-29 quedaron en proceso porque el panel de Red de Apoyo y Seguimiento usaba datos de muestra, y US-22, US-24 y US-28 quedaron pendientes. La Frontend Web Application se desplegó en Firebase Hosting y la API simulada en Render. Las tareas T-04 (llamado a la acción del Landing Page hacia la aplicación) y T-52 (release a `master`) no se completaron. |
 | Sprint 2 Retrospective Summary | Como aciertos se identifican el reparto del trabajo por Bounded Context en ramas `feature/*` propias, la participación de los cinco integrantes en la Frontend Web Application y el despliegue de la aplicación y de la API simulada. Como oportunidades de mejora se identifican que 81 de los 87 commits de `develop` se registraron el último día del Sprint y que Sofia y Edgard no registraron commits en el Landing Page. Para el Sprint 3 cada rama `feature/*` se integra en `develop` al completarse su User Story, y se asignan tareas del Landing Page a Sofia y a Edgard. |
 | **Sprint Goal & User Stories** | |
@@ -1005,7 +1022,7 @@ No forman parte del compromiso del Sprint 3 las historias de seguimiento y recom
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
-En el Sprint 3 los aspectos son los cinco Bounded Contexts de los Web Services, los aspectos transversales y los entregables de validación. Cada integrante lidera el mismo Bounded Context que en el Sprint 2, ahora en el repositorio del backend, y lo conecta después con su módulo de la Frontend Web Application. La Leadership-and-Collaboration Matrix indica quién lidera (L) y quién colabora (C). **[POR CONFIRMAR]** (los líderes de los cinco Bounded Contexts se deducen de la autoría de las ramas del backend; los demás aspectos son una propuesta).
+En el Sprint 3 los aspectos son los cinco Bounded Contexts de los Web Services, los aspectos transversales y los entregables de validación. Cada integrante lidera el mismo Bounded Context que en el Sprint 2, ahora en el repositorio del backend, y lo conecta después con su módulo de la Frontend Web Application. La Leadership-and-Collaboration Matrix indica quién lidera (L) y quién colabora (C).
 
 | Team Member (Last Name, First Name) | GitHub Username | Perfil y Personalización | Gestión de Crisis (Modo SOS) | Autorregulación | Comunicación Asistida (CAA) | Red de Apoyo y Seguimiento | Shared (núcleo del backend y OpenAPI) | Integración en `develop` | Deployment | Landing Page | Validation Interviews y videos |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -1022,6 +1039,7 @@ Cada aspecto agrupa el siguiente trabajo:
 - **Autorregulación:** recursos de calma, sesiones de calma con intensidad, baja estimulación y temporizador, y recursos favoritos (rama `feature/self-regulation`).
 - **Comunicación Asistida (CAA):** tablero, categorías, pictogramas, selecciones de pictogramas y estado de ánimo (rama `feature/assistive-comunication`).
 - **Red de Apoyo y Seguimiento:** registros y reportes de episodios, solicitudes de ayuda y recomendaciones (rama `feature/support-network`).
+- **Autenticación (IAM) y Rutina Visual:** contextos que se agregaron al backend después de integrar los cinco primeros (alta de cuenta, inicio de sesión y rutina del día del niño), desarrollados por Leonardo en las ramas `feature/iam-authentication` y `feature/visual-routine`.
 - **Shared:** proyecto base de Spring Boot, núcleo compartido (resultados y errores de dominio, auditoría, manejo global de excepciones) y documentación OpenAPI.
 - **Integración en `develop`:** unión de las cinco ramas en `develop` del backend y de la Frontend Web Application.
 - **Deployment:** publicación de los Web Services y de la base de datos, y release a `master` (sección 5.2.3.7).
@@ -1038,7 +1056,7 @@ El objetivo del Sprint 3 es entregar la primera versión de los Web Services con
 
 *Sprint Backlog 3 en Trello.* Tablero público del Sprint 3 con las listas To-Do, In-Process, To-Review, To-Fix y Done. Cada tarjeta lleva el identificador de la historia, el de la tarea, su título, la estimación en horas y el integrante asignado. En To-Do están 2 tareas (T-76 y T-77), en In-Process 1 (T-04), en To-Review y en To-Fix ninguna y en Done 24 (T-52 y T-53 a T-75).
 
-El estado de cada tarea se verificó al 14 de noviembre de 2026 contra el código integrado en `develop` de cada repositorio, las 147 pruebas automáticas del backend (sin fallos), los Web Services y la Frontend Web Application publicados y las versiones etiquetadas, y el mismo estado se registró en el tablero de Trello. Las tareas T-04, T-76 y T-77 corresponden al Landing Page y siguen pendientes: su último commit es del 8 de octubre de 2026.
+El estado de cada tarea se verificó al 14 de noviembre de 2026 contra el código integrado en `develop` de cada repositorio, las 147 pruebas automáticas del backend (ver la nueva ejecución del 27/11/2026 en 5.2.3.7), los Web Services y la Frontend Web Application publicados y las versiones etiquetadas, y el mismo estado se registró en el tablero de Trello. Las tareas T-04, T-76 y T-77 corresponden al Landing Page y siguen pendientes: su último commit es del 8 de octubre de 2026.
 
 | Sprint # | Sprint 3 | | | | | | |
 |---|---|---|---|---|---|---|---|
@@ -1073,6 +1091,52 @@ El estado de cada tarea se verificó al 14 de noviembre de 2026 contra el códig
 
 De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04) y 2 en To-do (T-76 y T-77). Las tareas T-04 y T-52 provienen de los Sprint Backlog 1 y 2. T-52 se cumplió en el repositorio de los Web Services (`release/1.0.0`, `1.1.0` y `1.2.0`, con las etiquetas `v1.0.0` a `v1.2.0`) y en el de la Frontend Web Application (`release/1.0.0` a `1.2.0`), cuya rama estable se llama `main` y no `master`.
 
+**Matriz historia – tarea – criterio – evidencia – estado.** Relaciona las 27 tareas con sus historias, responsables, estimaciones y evidencia de cierre. «E1» y «E2» son los Scenarios de los criterios de aceptación de la sección 3.1; las tareas generales se cierran con la condición de su descripción. Entre paréntesis figura la cantidad de métodos de prueba (`@Test`) contados en el código de `develop` (147 en 17 clases). La última ejecución sin fallos es la que el equipo registró el 14/11/2026.
+
+| Tarea | Historia / criterio | Responsable | h | Commits | Evidencia de cierre | Estado |
+|---|---|---|---|---|---|---|
+| T-53 | TS-01 | Ruiz | 8 | [304f327](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/304f327), [c135751](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c135751), [20e1339](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/20e1339) | `NeurodivergentProfileTest` (23) | Done |
+| T-54 | TS-01 E1, E2 | Ruiz | 8 | [d194e4b](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/d194e4b), [32b3461](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/32b3461), [1106649](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/1106649) | `ProfileApiTest` (28) | Done |
+| T-55 | TS-01 | Ruiz | 5 | [936d904](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/936d904), [eebfcc0](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/eebfcc0), [88c4342](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/88c4342), [80ebd94](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/80ebd94) | `SubscriptionTest` (6) | Done |
+| T-56 | TS-02 | Diaz Yurivilca | 8 | [f3d1071](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f3d1071), [d8276e6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/d8276e6), [9a91656](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/9a91656) | `SosSessionTests` (14), `ActionGuideTests` (9) | Done |
+| T-57 | TS-02 | Diaz Yurivilca | 6 | [eeb45a3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/eeb45a3), [ed3a006](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ed3a006) | HTTP 200 de la guía activa (5.2.3.7) | Done |
+| T-58 | TS-02 E1, E2 | Diaz Yurivilca | 7 | [253584c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/253584c), [84698e2](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/84698e2), [c86260d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c86260d) | `CrisisManagementApiTests` (11), `RecommendationTests` (9) | Done |
+| T-59 | TS-03 | Payano | 7 | [48b8c19](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/48b8c19), [b7d3e00](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b7d3e00), [46bb7ae](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/46bb7ae) | `CalmSessionTests` (9), `CalmTimerTests` (5) | Done |
+| T-60 | TS-03 E1, E2 | Payano | 7 | [dde1bc6](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/dde1bc6), [07a1ce2](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/07a1ce2), [b898c84](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b898c84) | `SelfRegulationApiTests` (4); HTTP 404 de perfil inexistente | Done |
+| T-61 | TS-04 | Lopez | 7 | [a83ce35](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/a83ce35), [40cc7a3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/40cc7a3), [939a727](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/939a727) | `CommunicationBoardTest` (10) | Done |
+| T-62 | TS-04 E1, E2 | Lopez | 7 | [94d5556](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/94d5556), [0f65f07](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0f65f07), [c1fd90f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c1fd90f), [75fddc5](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/75fddc5) | `CommunicationBoardApiTest` (7) | Done |
+| T-63 | TS-05 | Diaz Caruzo | 8 | [0526696](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/0526696), [ab7db32](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/ab7db32), [f1dcc2d](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/f1dcc2d), [5e14a51](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/5e14a51) | Pruebas en T-64 | Done |
+| T-64 | TS-05 E1, E2 | Diaz Caruzo | 8 | [b9c2115](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b9c2115), [fba306f](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/fba306f), [e476645](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/e476645), [2917abb](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2917abb) | `SupportNetworkApiTests` (2), `SupportNetworkRestConventionsTests` (4). **E2 no se cumple** (sin token ni `401`) | Done |
+| T-65 | Tarea general | Lopez | 4 | [c555972](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c555972), [42cb99c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/42cb99c) | `ApplicationTests` (1) | Done |
+| T-66 | Tarea general | Payano | 5 | [441e627](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/441e627), [b659bc3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/b659bc3), [2895ce1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/2895ce1) | Errores `problem+json` observados (5.2.3.7) | Done |
+| T-67 | Tarea general | Diaz Yurivilca | 8 | [875dcf3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/875dcf3), [8f27396](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/8f27396), [98693b7](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/98693b7), [959824c](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/959824c), [c6d60d1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/c6d60d1) | Merges en `develop` | Done |
+| T-68 | Tarea general | Payano | 4 | [084eb12](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/084eb12) | `/v3/api-docs`: 92 operaciones, 16 etiquetas | Done |
+| T-69 | Tarea general | Lopez | 8 | [09281fd](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/09281fd), [aa6b720](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/commit/aa6b720) | Swagger UI responde `200` | Done |
+| T-70 | Tarea general | Ruiz | 8 | [b4df86a](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b4df86a) (autor: Lopez) | Capturas de 5.2.3.5 | Done |
+| T-71 | Tarea general | Diaz Yurivilca | 6 | [b784caa](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/b784caa) (autor: Lopez) | Capturas de 5.2.3.5 | Done |
+| T-72 | Tarea general | Payano | 6 | [e6894e5](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/e6894e5) (autor: Lopez) | Capturas de 5.2.3.5 | Done |
+| T-73 | US-22, US-24 | Lopez | 8 | [0f7a516](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/0f7a516) | Captura del tablero; sin prueba registrada de imagen inválida ni de audio | Done |
+| T-74 | US-25, US-26 | Diaz Caruzo | 8 | [3797890](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/3797890) (autor: Lopez) | Captura de Red de Apoyo; sin prueba registrada de notificación | Done |
+| T-75 | US-28, US-29 | Diaz Caruzo | 6 | [3797890](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/3797890) (autor: Lopez) | Captura de Red de Apoyo; sin prueba registrada de cancelación | Done |
+| T-04 | LS-02 E2 | Lopez | 4 | [bd2291e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/bd2291e) (sin integrar) | 26/11/2026: el sitio publicado no enlaza a `/registro` | In-Process |
+| T-76 | Tarea general | Diaz Yurivilca | 5 | — | No entregado | To-do |
+| T-77 | Tarea general | Diaz Caruzo | 5 | [591a2e5](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/591a2e5) (sin integrar) | No desplegado | To-do |
+| T-52 | Tarea general | Diaz Caruzo | 4 | [Etiquetas del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/tags) | `v1.0.0` a `v1.2.0` en `main`; el Landing Page no tiene release | Done |
+
+**Criterios de las Technical Stories.**
+
+| Historia | Criterios de aceptación (resumen de 3.1) | Cierre |
+|---|---|---|
+| TS-01 | E1: `POST` válido responde `201`. E2: campo faltante responde `400`. | Cubierto por `ProfileApiTest`. |
+| TS-02 | E1: `POST` crea el episodio en curso (`201`). E2: `PATCH` a un id inexistente responde `404`. | Cubierto por `CrisisManagementApiTests`. |
+| TS-03 | E1: `GET` de estímulos responde `200`. E2: favorito con perfil inexistente responde `404`. | Cubierto; `404` observado en el servicio publicado. |
+| TS-04 | E1: `GET` del tablero responde `200`. E2: pictograma sin etiqueta responde `400`. | Cubierto por `CommunicationBoardApiTest`. |
+| TS-05 | E1: `POST` crea la solicitud pendiente (`201`). E2: `GET` de recomendaciones sin token responde `401`. | **Parcial:** el [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) (integrado en `main` el 28/11/2026, pendiente de publicarse en Render) responde `401` cuando falta la cabecera `X-Account-Id`. La cabecera no es un token firmado, así que la autenticación por token sigue pendiente. |
+
+**Pendientes al cierre:** T-04, T-76, T-77 y el escenario E2 de TS-05. Las tareas T-70 a T-72, T-74 y T-75 conservan a su responsable asignado, pero su commit es de otro integrante.
+
+**Actualización del 27/11/2026** (posterior al cierre; no cambia los estados del tablero): T-04, T-77 y los testimonios de T-76 se integraron en `master` con el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y se publicaron el 27/11/2026. De T-76 falta la revisión de contraste, foco y textos alternativos.
+
 #### 5.2.3.4. Development Evidence for Sprint Review
 
 En el Sprint 3 se implementó la primera versión de los RESTful Web Services con Java, Spring Boot, Spring Data JPA y MySQL (H2 en memoria en el entorno desplegado), y su documentación con springdoc-openapi, en el repositorio [Nubi.Platform.Backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend). Cada Bounded Context se desarrolló en su propia rama y sigue la arquitectura del capítulo IV:
@@ -1095,7 +1159,7 @@ Una vez integradas las cinco ramas, el equipo agregó dos contextos que sustenta
 - **IAM** (rama `feature/iam-authentication`): alta de cuenta, inicio de sesión y consulta de la cuenta, con las contraseñas guardadas con hash PBKDF2.
 - **Rutina Visual** (rama `feature/visual-routine`): rutina del día del niño con pasos que el cuidador ordena y el niño marca, sembrada al registrar al niño.
 
-La tabla registra, por rama, los 112 commits del Sprint 3 sin contar merges, en orden cronológico. Los commits no tienen cuerpo de mensaje, por lo que esa columna se indica con «—». Los mensajes se transcriben tal como se registraron en Git.
+La tabla registra, por rama, los commits del Sprint 3 sin contar merges, en orden cronológico. La rama `develop` del backend suma 138 commits sin merges; el commit inicial `c555972` (04/11/2026) no figura en la tabla. Los commits no tienen cuerpo de mensaje, por lo que esa columna se indica con «—». Los mensajes se transcriben tal como se registraron en Git.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
@@ -1277,7 +1341,19 @@ La Frontend Web Application se reconstruyó en el Sprint 3 para consumir los Web
 
 Además de lo anterior, la Frontend Web Application se publica con las versiones `v1.0.1` a `v1.2.0` (14 de noviembre). La versión `v1.2.0` incorpora el soporte de español e inglés (ngx-translate) y los planes de suscripción con los mismos nombres, precios y beneficios del Landing Page, y es la que está desplegada en Firebase Hosting.
 
-El Landing Page no registra commits nuevos después del Sprint 2 (último commit: 8 de octubre de 2026), por lo que las tareas T-04, T-76 y T-77 siguen pendientes. **[POR COMPLETAR]** Tabla de commits del Landing Page al cerrar esas tareas.
+El repositorio del Landing Page no registra commits en `origin/master` después del Sprint 2 (último commit: 8 de octubre de 2026). Los cambios de las tareas T-04 y T-77 se prepararon el 15 de noviembre de 2026 en la rama `feature/web-app-cta-and-seo`, creada desde `master`, y se verificaron en un servidor local:
+
+- **T-04, call-to-action hacia la Web Application:** los botones «Log in» y «Get started» (menú, menú móvil, sección principal, planes y cierre) y «Create an account and activate it» (Modo SOS) redirigen a las vistas de ingreso (`/ingresar`) y de registro (`/registro`) de la Web Application desplegada. `main.js` define la URL base y las rutas, y el HTML conserva el enlace correcto para quienes navegan sin JavaScript. La verificación local confirmó las nueve redirecciones y su funcionamiento en español e inglés, sin errores en la consola.
+- **T-77, enlaces y SEO:** se agregan la URL canónica, `og:url`, `og:locale`, las etiquetas `twitter:card`, `twitter:title` y `twitter:description`, la regla `robots`, `robots.txt` y `sitemap.xml`; la imagen de `og:image` pasa a ser una URL absoluta. El footer incluye el enlace a la documentación de la API (Swagger UI de los Web Services desplegados), en inglés y en español.
+
+La tarea T-76 (testimonios reales y accesibilidad) sigue pendiente porque depende de las entrevistas de validación de la sección 5.3. Los commits de la rama se subieron al repositorio el 15 de noviembre de 2026. Falta integrarla en `master` para desplegarla en GitHub Pages.
+
+**Actualización del 27/11/2026.** En la rama `feature/av2-teacher-feedback`, creada desde la anterior, se reemplazaron los testimonios de ejemplo por resúmenes sin nombres de tres entrevistas de validación a familiares adultos (no son citas textuales), los íconos de redes enlazan a la página principal de cada red (Nubi no tiene cuentas propias) y se corrigieron el hero y los márgenes que aplastaban el contenido en pantallas angostas. Se revisó en un servidor local a 375 y 320 px de ancho. Los cambios se integraron con el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y están publicados desde el 27/11/2026.
+
+| Repository | Branch | Commit Id | Commit Message | Commited on (Date) |
+|---|---|---|---|---|
+| ASI0729-2620-7793-Open-Source/landing-page | `feature/web-app-cta-and-seo` | [bd2291e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/bd2291e) | feat(landing): redirect call-to-action buttons to the web application | 15/11/2026 |
+| ASI0729-2620-7793-Open-Source/landing-page | `feature/web-app-cta-and-seo` | [591a2e5](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/591a2e5) | feat(seo): add robots.txt and sitemap.xml | 15/11/2026 |
 
 #### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -1294,9 +1370,72 @@ Un recorrido del Modo SOS contra los Web Services desplegados, ejecutado el 14 d
 
 El recorrido confirma la comunicación entre los contextos de Gestión de Crisis y de Red de Apoyo y Seguimiento por eventos de dominio sobre la rama integrada.
 
-**[POR COMPLETAR]** Capturas de pantalla de Swagger UI con los siete contextos, de Postman con el recorrido anterior y de la consola de H2 o de MySQL con los datos creados (`images/Chapter-V/sprint-3-swagger.png`, `sprint-3-postman.png` y `sprint-3-database.png`).
+La siguiente captura muestra Swagger UI de los Web Services desplegados en Render (`https://nubi-platform-backend.onrender.com/swagger-ui/index.html`), con la documentación de los endpoints de Autenticación y de Comunicación Asistida. Las capturas de cada Bounded Context se presentan en la sección 5.2.3.6.
 
-**[POR COMPLETAR]** Video de navegación del Sprint 3 con la Frontend Web Application conectada a los Web Services (URL en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`).
+![Swagger UI de los Web Services desplegados](images/Chapter-V/sprint-3/sprint-3-swagger.png)
+
+*Figura. Swagger UI de los Web Services de Nubi (`Nubi Platform API v1.0.0`, OpenAPI 3.1) desplegados en Render.*
+
+La Frontend Web Application desplegada en Firebase Hosting (`https://nubi-frontend-7793.web.app`) consume estos Web Services. Las capturas siguientes se tomaron el 15 de noviembre de 2026 con la cuenta de demostración que ofrece la pantalla de ingreso y muestran las vistas de los Bounded Contexts, en la versión de escritorio.
+
+![Pantalla de ingreso](images/Chapter-V/sprint-3/sprint-3-frontend-ingresar.png)
+
+*Figura. Ingreso a la Frontend Web Application, con el selector de idioma (ES y EN) y el acceso a la cuenta de demostración.*
+
+![Inicio](images/Chapter-V/sprint-3/sprint-3-frontend-inicio.png)
+
+*Figura. Inicio: estado de ánimo del niño, resumen de calma, rutina del día y acceso al Modo SOS.*
+
+![Perfil del niño](images/Chapter-V/sprint-3/sprint-3-frontend-perfil.png)
+
+*Figura. Perfil y Personalización: perfil del niño con autismo, organizado en pestañas de datos, sensibilidades, diagnóstico y red de cuidadores.*
+
+![Rutina visual](images/Chapter-V/sprint-3/sprint-3-frontend-rutina.png)
+
+*Figura. Rutina visual: pasos del día que el cuidador ordena y el niño marca como completados.*
+
+![Rincón de calma](images/Chapter-V/sprint-3/sprint-3-frontend-calma.png)
+
+*Figura. Autorregulación: catálogo de recursos de calma por tipo, con favoritos. La aplicación oculta tres recursos de sonido porque el perfil sensorial indica sensibilidad alta.*
+
+![Comunicación](images/Chapter-V/sprint-3/sprint-3-frontend-comunicacion.png)
+
+*Figura. Comunicación Asistida: tablero de pictogramas por categoría.*
+
+![Progreso](images/Chapter-V/sprint-3/sprint-3-frontend-progreso.png)
+
+*Figura. Progreso: patrones a partir de los registros de ánimo, los momentos de calma y las crisis acompañadas (la cuenta de demostración todavía no tiene registros).*
+
+![Red de apoyo](images/Chapter-V/sprint-3/sprint-3-frontend-seguimiento.png)
+
+*Figura. Red de Apoyo y Seguimiento: episodios, solicitudes de ayuda, reportes y recomendaciones.*
+
+![Modo SOS](images/Chapter-V/sprint-3/sprint-3-frontend-sos.png)
+
+*Figura. Gestión de Crisis: selección de la intensidad y del detonante antes de empezar la guía del Modo SOS.*
+
+![Plan](images/Chapter-V/sprint-3/sprint-3-frontend-plan.png)
+
+*Figura. Cuenta y plan: comparación de los planes Estándar, Premium e Instituciones. El cambio de plan es una demostración y no realiza cobros.*
+
+En la versión móvil (390 px de ancho) la aplicación adapta el diseño:
+
+<p align="center">
+  <img src="images/Chapter-V/sprint-3/sprint-3-frontend-inicio-mobile.png" alt="Inicio en versión móvil" width="260">
+  <img src="images/Chapter-V/sprint-3/sprint-3-frontend-sos-mobile.png" alt="Modo SOS en versión móvil" width="260">
+</p>
+
+*Figura. Inicio y Modo SOS en un navegador móvil.*
+
+Swagger UI también permite ejecutar las operaciones desde el navegador con la opción «Try it out». La siguiente captura, tomada el 15 de noviembre de 2026 en los Web Services desplegados, muestra la consulta de la guía de acción activa (`GET /api/v1/action-guides/active`): el servidor responde `200 OK` con la guía de seis pasos y sus técnicas alternativas, junto con el comando `curl` equivalente. Se ejecutó una operación de solo lectura para no modificar los datos de demostración.
+
+<p align="center"><img src="images/Chapter-V/sprint-3/sprint-3-swagger-try-it-out.jpg" alt="Swagger UI ejecutando GET action-guides/active" width="800"></p>
+
+*Figura. Swagger UI: operación `GET /api/v1/action-guides/active` ejecutada con «Try it out» en los Web Services desplegados en Render.*
+
+El perfil `render` usa una base H2 en memoria y no expone su consola, por lo que los datos creados se verifican con los endpoints de consulta (por ejemplo, `GET /api/v1/episode-records` en el recorrido anterior) y no con una captura de la base de datos.
+
+**No entregado:** el video de navegación del Sprint 3 con la Frontend Web Application conectada a los Web Services (nomenclatura `upc-pre-202620-1asi0729-7793-macally-product-navigation-sprint-3`) no está disponible a la fecha de esta versión.
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
@@ -1437,7 +1576,55 @@ Las tablas siguientes resumen las 92 operaciones que publica Swagger UI en los s
 | `POST` | `/profiles/{profileId}/routine-steps/{stepId}/completion` | Marcar un paso como hecho hoy. |
 | `DELETE` | `/profiles/{profileId}/routine-steps/{stepId}/completion` | Deshacer la marca de hoy de un paso. |
 
-**[POR COMPLETAR]** Capturas de Swagger UI con cada Bounded Context expandido (`images/Chapter-V/sprint-3-swagger-*.png`).
+Las siguientes capturas de Swagger UI, tomadas el 15 de noviembre de 2026 en los Web Services desplegados, muestran los endpoints de cada Bounded Context agrupados por etiqueta (`tag`). Cada etiqueta lista el verbo HTTP, la ruta y una descripción breve; al expandir una operación, Swagger UI muestra sus parámetros, el cuerpo de la solicitud y los ejemplos de respuesta.
+
+**Autenticación (IAM)**
+
+![Swagger UI: Authentication](images/Chapter-V/sprint-3/sprint-3-swagger-authentication.png)
+
+**Perfil y Personalización**
+
+![Swagger UI: profile-controller](images/Chapter-V/sprint-3/sprint-3-swagger-profile-controller.png)
+
+![Swagger UI: subscription-controller](images/Chapter-V/sprint-3/sprint-3-swagger-subscription-controller.png)
+
+**Gestión de Crisis (Modo SOS)**
+
+![Swagger UI: SOS Sessions](images/Chapter-V/sprint-3/sprint-3-swagger-sos-sessions.png)
+
+![Swagger UI: Action Guides](images/Chapter-V/sprint-3/sprint-3-swagger-action-guides.png)
+
+![Swagger UI: Recommendations](images/Chapter-V/sprint-3/sprint-3-swagger-recommendations.png)
+
+**Autorregulación**
+
+![Swagger UI: Calming Resources](images/Chapter-V/sprint-3/sprint-3-swagger-calming-resources.png)
+
+![Swagger UI: Calm Sessions](images/Chapter-V/sprint-3/sprint-3-swagger-calm-sessions.png)
+
+**Comunicación Asistida (CAA)**
+
+![Swagger UI: Communication Board](images/Chapter-V/sprint-3/sprint-3-swagger-communication-board.png)
+
+![Swagger UI: Pictogram Selections](images/Chapter-V/sprint-3/sprint-3-swagger-pictogram-selections.png)
+
+![Swagger UI: Mood Check-ins](images/Chapter-V/sprint-3/sprint-3-swagger-mood-check-ins.png)
+
+**Red de Apoyo y Seguimiento**
+
+![Swagger UI: episode-records-controller](images/Chapter-V/sprint-3/sprint-3-swagger-episode-records-controller.png)
+
+![Swagger UI: episode-reports-controller](images/Chapter-V/sprint-3/sprint-3-swagger-episode-reports-controller.png)
+
+![Swagger UI: help-requests-controller](images/Chapter-V/sprint-3/sprint-3-swagger-help-requests-controller.png)
+
+![Swagger UI: recommendations-controller](images/Chapter-V/sprint-3/sprint-3-swagger-recommendations-controller.png)
+
+**Rutina Visual**
+
+![Swagger UI: Visual Routine](images/Chapter-V/sprint-3/sprint-3-swagger-visual-routine.png)
+
+En total Swagger UI documenta 92 operaciones en 16 etiquetas.
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
@@ -1461,11 +1648,117 @@ Los pasos ejecutados para los Web Services fueron:
 
 **Limitaciones del despliegue.** Como el plan gratuito de Render no incluye base de datos y para la demostración se optó por no gestionar una base externa, los datos se guardan en H2 en memoria: se reinician cuando el servicio se reinicia, y el servicio tarda cerca de un minuto en despertar tras un periodo sin uso (la Frontend Web Application lo avisa con la pantalla «No pudimos conectar con Nubi»). La persistencia entre reinicios se logra con MySQL, para lo que el repositorio incluye `docs/deploy/azure-mysql-setup.sql` y las variables `DB_URL`, `DB_USERNAME` y `DB_PASSWORD`. El Landing Page no se redesplegó en este Sprint.
 
-**[POR COMPLETAR]** Capturas del panel de Render y de Firebase Hosting (`images/Chapter-V/sprint-3-deploy-services.png` y `sprint-3-deploy-frontend.png`).
+Las siguientes capturas se tomaron el 15 de noviembre de 2026 en los paneles de las plataformas. En Render, el proyecto `Nubi` agrupa el servicio `nubi-platform-backend` (Docker, región Oregon, estado Deployed) y el servicio `nubi-api` de la API simulada del Sprint 2:
+
+<p align="center"><img src="images/Chapter-V/sprint-3/sprint-3-render-proyecto.jpg" alt="Proyecto Nubi en Render" width="800"></p>
+
+*Figura. Render: proyecto `Nubi` con los servicios `nubi-platform-backend` y `nubi-api`.*
+
+El servicio de los Web Services está publicado en https://nubi-platform-backend.onrender.com, se despliega desde la rama `main` y su despliegue activo corresponde al commit `e9d7d36` (`merge release/1.2.0 into main`). El panel advierte que la instancia gratuita se apaga por inactividad y que las solicitudes pueden demorar 50 segundos o más:
+
+<p align="center"><img src="images/Chapter-V/sprint-3/sprint-3-render-servicio.jpg" alt="Servicio nubi-platform-backend en Render" width="800"></p>
+
+*Figura. Render: servicio `nubi-platform-backend` en estado Live, con los despliegues de las versiones 1.2.0 y 1.1.0.*
+
+En Firebase Hosting, el proyecto `nubi-frontend-7793` publica la Frontend Web Application en `nubi-frontend-7793.web.app` y `nubi-frontend-7793.firebaseapp.com`. El panel muestra la versión actual y las versiones anteriores publicadas el 14 de noviembre de 2026 (se ocultaron las cuentas de correo de quienes publicaron):
+
+<p align="center"><img src="images/Chapter-V/sprint-3/sprint-3-firebase-hosting.jpg" alt="Firebase Hosting del proyecto nubi-frontend-7793" width="800"></p>
+
+*Figura. Firebase Hosting: versión actual, versiones anteriores y dominios del sitio.*
+
+##### Verificación de los productos publicados (26/11/2026)
+
+**Web Services.** Solicitudes de solo lectura (`GET`) a https://nubi-platform-backend.onrender.com. La primera solicitud tras la inactividad tardó 80.7 s; las siguientes, menos de 1 s. Se pueden repetir con `curl -i <URL>`.
+
+| Ruta | Código | Tipo de contenido / resultado |
+|---|---|---|
+| `/swagger-ui/index.html` | `200` | Documentación disponible. |
+| `/v3/api-docs` | `200` | OpenAPI 3.1.0, `Nubi Platform API v1.0.0`: 92 operaciones, 68 rutas y 16 etiquetas. |
+| `/api/v1/action-guides/active` | `200` | JSON con la guía de 6 pasos. |
+| `/api/v1/calming-resources` | `200` | JSON con el catálogo de recursos. |
+| `/api/v1/profiles/999999/favorite-resources` | `404` | `problem+json`, código `SelfRegulation.ProfileNotFound`. |
+| `/api/v1/sos-sessions/abc` | `400` | `application/problem+json`, código `request.typeMismatch`. |
+| `/api/v1/sos-sessions/999999` | `404` | Respuesta sin cuerpo. |
+| `/api/v1/support-network/recommendations` (sin autenticación) | `400` | JSON de error genérico; TS-05 espera `401`. |
+| `/api/v1/profiles/999999/recommendations` | `200` | Lista vacía para un perfil inexistente. |
+
+Las tres últimas filas son **diferencias pendientes** respecto del contrato descrito (errores `problem+json`, `401` sin autenticación y `404` para recursos inexistentes).
+
+**Landing Page.** Prueba en el navegador de https://asi0729-2620-7793-open-source.github.io/landing-page/ (versión publicada el 09/10/2026).
+
+| Comprobación | Escritorio (1366 × 768) | Móvil emulado (375 × 812) |
+|---|---|---|
+| Carga y desplazamiento horizontal | Correcta; sin desbordamiento | Correcta; sin desbordamiento |
+| Navegación | Enlaces de la barra a las secciones | El menú abre y muestra los enlaces |
+| Idioma | Inglés por defecto | El botón ES cambia los textos a español |
+| Legibilidad del hero | Correcta | **Defecto:** las figuras decorativas se superponen al título y al párrafo |
+
+| Navegación hacia los productos | Destino | Resultado |
+|---|---|---|
+| «Log in» / «Iniciar sesión» | `https://nubi-frontend-7793.web.app/inicio` | Abre la aplicación y, sin sesión, muestra `/ingresar`. |
+| «Get started» | `#planes` | No lleva al registro de la aplicación (T-04). |
+| Botones de los planes | `#contacto` | No llevan a la aplicación. |
+| Íconos de redes sociales | `#` | Enlaces sin destino. |
+
+La corrección de los enlaces, de los íconos de redes y de la vista móvil se integró con el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y está publicada desde el 27/11/2026.
+
+**Frontend Web Application: persistencia y recuperación (27/11/2026, entorno local).** Se ejecutaron en `localhost` los Web Services (rama del [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1), base H2 en memoria con datos de demostración) y la Web Application (rama del [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4)), con la cuenta demo. No es una prueba del despliegue publicado.
+
+| Paso | Resultado |
+|---|---|
+| Guardar un paso de rutina sin nombre | La aplicación lo rechaza: «Ponle un nombre corto al paso.» |
+| Escribir el nombre y guardar | El paso «Prueba de persistencia» aparece en la rutina |
+| Recargar la página | El paso se conserva; la rutina pasa de 10 a 11 pasos |
+
+<p align="center"><img src="images/Chapter-V/local-demo-1-validation-error.jpg" alt="Error al guardar un paso sin nombre" width="800"></p>
+
+*Caso de error: paso sin nombre.*
+
+<p align="center"><img src="images/Chapter-V/local-demo-2-saved-step.jpg" alt="Paso guardado en la rutina" width="800"></p>
+
+*Recuperación: el paso queda guardado.*
+
+<p align="center"><img src="images/Chapter-V/local-demo-3-after-reload.jpg" alt="Paso conservado tras recargar" width="800"></p>
+
+*Después de recargar la página.*
+
+En el despliegue la demostración sigue pendiente. Como el servicio usa H2 en memoria, los datos se pierden cuando se reinicia.
+
+**Pruebas automáticas del backend (27/11/2026, JDK 25).** Salida en el [log de pruebas del 27/11/2026](evidence/backend-test-log-2026-11-27.txt).
+
+| Código probado | Pruebas | Fallos | Resultado |
+|---|---|---|---|
+| `develop` (`ef50aa7`) | 147 | 3 | `BUILD FAILURE`: tres pruebas de `SelfRegulationApiTests` usaban perfiles inexistentes desde que el servicio valida el perfil |
+| Rama del [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) | 147 | 0 | `BUILD SUCCESS` |
+
+La cifra «147 pruebas sin fallos» no se cumplía en `develop`; se cumple desde que el Pull Request se integró el 27/11/2026. En local, la misma rama responde `401` a la consulta de recomendaciones sin `X-Account-Id` y `200` con ella. La respuesta `200` con lista vacía de `/api/v1/profiles/999999/recommendations` se revisó y no se cambió: las pruebas de Gestión de Crisis generan y consultan recomendaciones sin crear antes el perfil.
+
+**Publicación del 27 y 28/11/2026.**
+
+| Producto | Qué se hizo | Verificación |
+|---|---|---|
+| Landing Page | [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) integrado en `master` (27/11) | Publicado: aparece el nuevo bloque de testimonios, los botones llevan a `/registro` y `sitemap.xml` responde `200` |
+| Frontend Web Application | [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4) y ajuste de idioma y metadatos, integrados en `main` y desplegados en Firebase Hosting (28/11) | Publicado: inglés por defecto, `<html lang="en">`, título y metadatos en inglés y enlace «Terms and conditions» |
+| RESTful Web Services | [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) y documentación OpenAPI en inglés, integrados en `main` (28/11); 147 pruebas sin fallos | **Pendiente:** Render no publicó la versión nueva automáticamente; el servicio publicado aún responde la anterior |
+
+<p align="center"><img src="images/Chapter-V/deploy-2026-11-28-web-app.jpg" alt="Web Application publicada el 28 de noviembre en inglés, con el enlace a los términos" width="800"></p>
+
+*Web Application publicada (28/11/2026).*
+
+<p align="center"><img src="images/Chapter-V/deploy-2026-11-28-landing.jpg" alt="Bloque de testimonios del Landing Page publicado" width="800"></p>
+
+*Landing Page publicado (28/11/2026).*
+
+El 28/11/2026 la primera petición a los Web Services tras la inactividad tardó 126 s, y durante ese tiempo la Web Application quedó en blanco para una sesión ya iniciada. Esto confirma el problema B-1 de la evaluación heurística (5.3.3).
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
-La colaboración del Sprint 3 se evidencia con el historial de Git de los repositorios del proyecto. Las cifras se obtuvieron de la rama `develop` de cada repositorio al 14 de noviembre de 2026, sin contar merges.
+La colaboración del Sprint 3 se evidencia con el historial de Git de los repositorios del proyecto. Las cifras se obtuvieron de la rama `develop` de cada repositorio, sin contar merges, y se conciliaron con GitHub el 26/11/2026.
+
+![insigts 3 (1).png](images/Chapter-V/insigts%203%20%281%29.png)
+![insigts 3 (2).png](images/Chapter-V/insigts%203%20%282%29.png)
+![insigts 3 (3).png](images/Chapter-V/insigts%203%20%283%29.png)
+
 
 ##### Repositorio de los Web Services (Nubi.Platform.Backend)
 
@@ -1473,37 +1766,63 @@ Los cinco integrantes registran commits en el repositorio. Cuatro de ellos traba
 
 | Cuenta de GitHub | Integrante | Aporte principal | Commits | Líneas | Días con commits (noviembre) |
 |---|---|---|---|---|---|
-| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | Comunicación Asistida, IAM, Rutina Visual, despliegue en Render, rutas REST | 48 | +4523 / −268 | 5 al 9, 13 y 14 |
+| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | Comunicación Asistida, IAM, Rutina Visual, despliegue en Render, rutas REST | 50 | +5305 / −270 | 4 al 9, 13 y 14 |
 | u20241a195-cmd | Diaz Yurivilca, Sofia | Gestión de Crisis e integración en `develop` | 32 | +4366 / −1 | 5 al 12 |
 | nahiryn8 (Nahir Ruiz) | Ruiz Villegas, Yngrid Nahir | Perfil y Personalización | 23 | +4868 / −2 | 9 al 11 |
 | Dan-trax | Diaz Caruzo, Edgard Daniel | Red de Apoyo y Seguimiento | 19 | +1824 / −0 | 13 |
 | joanfpp2-ai (Pocho) | Payano Puchuri, Joan Fabricio | Autorregulación | 14 | +2755 / −0 | 10 y 11 |
-| **Total** | | | **136** | | |
+| **Total** | | | **138** | | |
 
-**[POR COMPLETAR]** Capturas de GitHub Insights (Contributors, Commits y Pulse) del repositorio `Nubi.Platform.Backend` (`images/Chapter-V/sprint-3-backend-contributors.png`, `sprint-3-backend-commits.png` y `sprint-3-backend-pulse.png`).
+La cifra anterior de este informe (136) omitía los dos commits de Leonardo del 4 de noviembre (`c555972`, commit inicial, y `42cb99c`). La versión anterior de esta sección indicaba que `Nubi.Platform.Backend` era privado y que por eso no ofrecía las vistas de GitHub Insights; el 26/11/2026 el repositorio es público. La evidencia se complementa con la tabla de commits de la sección 5.2.3.4.
 
 ##### Repositorio de la Frontend Web Application y del Landing Page
 
-La Frontend Web Application registra 26 commits sin merges desde el 4 de noviembre de 2026 (19 el 13 de noviembre y 7 el 14 de noviembre; +12974 / −18817 líneas, porque la aplicación se reconstruyó), todos de la cuenta LeonardoLopez138. Las tareas de conexión T-70 a T-75 estaban asignadas a Ruiz Villegas, Yngrid Nahir (T-70), Diaz Yurivilca, Sofia (T-71), Payano Puchuri, Joan Fabricio (T-72), Lopez Torres, Leonardo Gabriel (T-73) y Diaz Caruzo, Edgard Daniel (T-74 y T-75); en la práctica la conexión de los seis módulos con los Web Services la implementó Leonardo en una sola reconstrucción de la aplicación, de modo que las tarjetas T-70 a T-72, T-74 y T-75 conservan a sus responsables asignados pero su commit es de Leonardo. El repositorio del Landing Page (https://github.com/ASI0729-2620-7793-Open-Source/landing-page) no registra commits posteriores al 8 de octubre de 2026.
+La Frontend Web Application registra 26 commits sin merges desde el 4 de noviembre de 2026 (19 el 13 de noviembre y 7 el 14 de noviembre; +12974 / −18817 líneas, porque la aplicación se reconstruyó), todos de la cuenta LeonardoLopez138. Las tareas de conexión T-70 a T-75 estaban asignadas a Ruiz Villegas, Yngrid Nahir (T-70), Diaz Yurivilca, Sofia (T-71), Payano Puchuri, Joan Fabricio (T-72), Lopez Torres, Leonardo Gabriel (T-73) y Diaz Caruzo, Edgard Daniel (T-74 y T-75); en la práctica la conexión de los seis módulos con los Web Services la implementó Leonardo en una sola reconstrucción de la aplicación, de modo que las tarjetas T-70 a T-72, T-74 y T-75 conservan a sus responsables asignados pero su commit es de Leonardo. En el repositorio del Landing Page (https://github.com/ASI0729-2620-7793-Open-Source/landing-page), la rama `master` no registra commits posteriores al 8 de octubre de 2026; el 15 de noviembre Leonardo subió 2 commits a `feature/web-app-cta-and-seo`, sin integrar.
 
 ##### Repositorio del informe (Macally)
 
-Desde el cierre del Sprint 2 el informe recibió 11 commits sin merges: las correcciones de alineación con el segmento de personas autistas (28 de octubre al 2 de noviembre) y la corrección de la entrega AV2 (11 de noviembre). Los commits del borrador AV2 (Sprint 3, entrevistas de validación, video, conclusiones y anexos) se agregan a esta tabla al integrarlos.
+Entre el 28 de octubre y el 15 de noviembre de 2026 el informe recibió 28 commits sin contar merges en la rama `develop`: las correcciones de alineación con el segmento de personas autistas, la actualización de la evidencia del Sprint 3, las entrevistas de validación y los capítulos de la entrega AV2.
 
-| Cuenta de GitHub | Integrante | Commits | Aporte |
-|---|---|---|---|
-| joanfpp2-ai | Payano Puchuri, Joan Fabricio | 7 | Alineación del Capítulo IV con el segmento de personas autistas |
-| Deiko-138 / LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | 2 | Alineación del Capítulo II y corrección de la entrega |
-| nahiryn8 | Ruiz Villegas, Yngrid Nahir | 1 | Herramientas y URL de despliegue del Capítulo V |
-| u20241a195-cmd | Diaz Yurivilca, Sofia | 1 | Alineación del Capítulo I |
-| Dan-trax | Diaz Caruzo, Edgard Daniel | 0 | Sin commits en este período |
-
+| Cuenta de GitHub | Integrante | Commits | Líneas | Aporte |
+|---|---|---|---|---|
+| u20241a195-cmd | Diaz Yurivilca, Sofia | 12 | +1312 / −117 | Alineación de los Capítulos I y II con el segmento de personas autistas, Sprint 3, entrevistas de validación, Conclusiones, Bibliografía y Anexos |
+| LeonardoLopez138 | Lopez Torres, Leonardo Gabriel | 8 | +837 / −372 | Alineación del Capítulo II y actualización de la evidencia del Sprint 3 (Sprint Backlog, backend y frontend) |
+| joanfpp2-ai | Payano Puchuri, Joan Fabricio | 7 | +31 / −31 | Alineación del Capítulo IV con el segmento de personas autistas |
+| nahiryn8 | Ruiz Villegas, Yngrid Nahir | 1 | +20 / −26 | Herramientas y URL de despliegue del Capítulo V |
+| Dan-trax | Diaz Caruzo, Edgard Daniel | 0 | — | Sin commits en este período |
+| **Total** | | **28** | | |
 
 Como oportunidades de mejora del Sprint 3, el trabajo de la Frontend Web Application quedó concentrado en un integrante y en los dos últimos días del Sprint, y las ramas de Red de Apoyo y Seguimiento y de Autorregulación concentraron sus commits en uno o dos días, lo mismo que ocurrió en el Sprint 2. Quedan sin cerrar las tareas del Landing Page (T-04, T-76 y T-77) y la persistencia de la base de datos en el despliegue. Para la versión final el equipo reparte la conexión de los módulos entre sus responsables, integra cada rama al completarse y registra los commits del informe entre los cinco integrantes.
 
-## 5.3. Validation Interviews
+##### Conciliación por repositorio, integrante y Pull Request
 
-> **Borrador AV2.** El diseño de las entrevistas (5.3.1) está completo. El registro (5.3.2) es una plantilla: todavía no se realizan las entrevistas de validación, por lo que ningún dato de personas, video o resultado está escrito. Las evaluaciones (5.3.3) incluyen el formato y las preguntas de cada heurística para llenarlas con los resultados. **[POR CONFIRMAR]** el formato con el Anexo D del enunciado vigente, que no estaba disponible al redactar este borrador.
+Commits sin merges de **todas las ramas** publicadas, consultados el 26/11/2026. Periodos por fecha de autor: S1 hasta el 20/09, S2 del 21/09 al 28/10 y S3 del 29/10 al 15/11. Las cuentas `Deiko-138` y `LeonardoLopez138` corresponden a Leonardo; `Daniel` y `Dan-trax`, a Edgard; y `Pocho` y `joanfpp2-ai`, a Joan.
+
+| Repositorio (Sprint) | Lopez | Diaz Yurivilca | Payano | Ruiz | Diaz Caruzo | Total |
+|---|---|---|---|---|---|---|
+| landing-page (S1) | 4 | 1 | 0 | 0 | 0 | 5 |
+| landing-page (S2) | 8 | 0 | 1 | 3 | 0 | 12 |
+| landing-page (S3) | 2 | 0 | 0 | 0 | 0 | 2 |
+| Nubi---Frontend (S2) | 35 | 18 | 10 | 16 | 7 | 86 |
+| Nubi---Frontend (S3) | 26 | 0 | 0 | 0 | 0 | 26 |
+| Nubi.Platform.Backend (S3) | 50 | 32 | 14 | 23 | 19 | 138 |
+| Macally (S1) | 20 | 20 | 5 | 21 | 34 | 100 |
+| Macally (S2) | 3 | 6 | 1 | 3 | 3 | 16 |
+| Macally (S3) | 10 | 13 | 7 | 2 | 8 | 40 |
+
+| Repositorio | Integración usada | Pull Requests |
+|---|---|---|
+| landing-page | Commits directos en `master` y dos merges locales | 0 |
+| Nubi---Frontend | Merges locales y Pull Requests | 3 de Dan-trax: [#1](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/1) integrado, [#2](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/2) cerrado sin integrar y [#3](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/3) integrado |
+| Nubi.Platform.Backend | Ramas `feature/*`, `release/*` y merges locales | 0 |
+
+**Diferencias entre métricas.** Esta tabla cuenta todas las ramas; las tablas por Sprint y GitHub Insights cuentan solo la rama indicada. Por ejemplo, los 8 commits de Edgard en el informe durante el S3 están en `feature/chapter-3`, que no se integró en `develop`; por eso la tabla de `develop` muestra 0. El número de commits no mide por sí solo el aporte técnico.
+
+**Pull Requests del 27/11/2026** (posteriores al Sprint 3, abiertos por LeonardoLopez138 e integrados ese día): [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1), [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4). No forman parte de las cifras anteriores. El 28/11/2026 se integraron además las ramas `feature/english-api-docs` y `feature/english-seo-tags`, sin Pull Request.
+
+**Lo que no se acredita:** equilibrio en el Landing Page (Edgard no registra commits y durante los Sprints no hubo Pull Requests) ni participación de cuatro integrantes en la Frontend Web Application durante el S3.
+
+## 5.3. Validation Interviews
 
 En esta sección el equipo diseña, registra y evalúa las entrevistas de validación. A diferencia de las entrevistas de needfinding del capítulo II, en las de validación los usuarios de los dos segmentos objetivo interactúan con el Landing Page y con la Frontend Web Application mientras el equipo observa sus dificultades. Los resultados se contrastan con las hipótesis y los criterios de éxito del Lean UX Canvas (sección 1.2.2.4) y alimentan las Conclusiones.
 
@@ -1513,7 +1832,7 @@ Antes de iniciar cada sesión de validación se brinda un saludo cordial y una b
 
 Como las sesiones del Segmento 1 involucran a niños y adolescentes, el equipo obtiene el consentimiento informado de su padre o tutor antes de grabar, que acompaña al participante durante la sesión. Las sesiones son individuales, duran entre 15 y 25 minutos y se graban en video (mp4) con autorización.
 
-El proceso de validación para cada segmento se compone de tres momentos: (1) la exploración del Landing Page, (2) la ejecución de tareas guiadas sobre la Frontend Web Application siguiendo los User Flows correspondientes y (3) un cuestionario de validación de diez preguntas. Se realizan entre tres y cinco entrevistas por segmento objetivo. Los segmentos son los definidos en la sección 1.3. Como las entrevistas de needfinding (capítulo II) incluyeron adolescentes con TDAH o TDA, cuidadores que eran hermanos mayores y ninguna persona menor de 15 años, la selección de participantes de la validación corrige esos vacíos, como se detalla en cada segmento. A continuación se detallan los elementos a incluir en la sesión de validación para cada segmento objetivo.
+El proceso de validación para cada segmento se compone de tres momentos: (1) la exploración del Landing Page, (2) la ejecución de tareas guiadas sobre la Frontend Web Application siguiendo los User Flows correspondientes y (3) un cuestionario de validación de diez preguntas. Se realizan entre tres y cinco entrevistas por segmento objetivo. Los segmentos son los definidos en la sección 1.3. Como las entrevistas de needfinding (capítulo II) incluyeron cuidadores que eran hermanos mayores y ninguna persona menor de 15 años, la selección de participantes de la validación corrige esos vacíos, como se detalla en cada segmento. A continuación se detallan los elementos a incluir en la sesión de validación para cada segmento objetivo.
 
 **Preguntas introductorias (ambos segmentos)**
 
@@ -1556,7 +1875,7 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 
 #### Segmento objetivo 2: Padres de niños y adolescentes con autismo
 
-**Perfil de los participantes** (sección 1.3): padres o madres de niños y adolescentes con autismo, de 18 a 60 años, de ambos géneros, que residen en Lima Metropolitana, y usan teléfono inteligente. Como en el needfinding los cuidadores entrevistados fueron hermanos mayores y una madre de una adolescente con TDAH, la validación incluye solo padres o madres de niños o adolescentes con autismo.
+**Perfil de los participantes** (sección 1.3): padres o madres de niños y adolescentes con autismo, de 18 a 60 años, de ambos géneros, que residen en Lima Metropolitana, y usan teléfono inteligente. Como en el needfinding los cuidadores entrevistados fueron dos hermanos mayores y una sola madre, la validación incluye solo padres o madres de niños o adolescentes con autismo.
 
 **Elementos a validar:** Landing Page y Frontend Web Application (módulos de Perfil y Personalización, Gestión de Crisis, Comunicación Asistida y Red de Apoyo y Seguimiento).
 
@@ -1597,9 +1916,9 @@ El proceso de validación para cada segmento se compone de tres momentos: (1) la
 
 ### 5.3.2. Registro de Entrevistas
 
-**Validation Interviews Link:** <mark>[POR COMPLETAR]</mark> (video consolidado en Microsoft Stream, nomenclatura `upc-pre-202620-1asi0729-7793-macally-validation-interviews-sprint-3`)
+**Validation Interviews Link:** https://l1nq.com/j0ayo4q
 
-A continuación se registran las entrevistas de validación realizadas por segmento. Para cada entrevista se consigna el nombre y apellidos del participante, su edad, su distrito de residencia, un screenshot de un cuadro del video, el enlace al video alojado en Microsoft Stream, indicando el timing donde inicia la entrevista y su duración, y un resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas. De acuerdo con lo planificado por el equipo, se realizan entre tres y cinco entrevistas por segmento. <mark>[POR COMPLETAR]</mark> Indicar cuántas entrevistas se realizaron en cada segmento. Si se realizan más de tres, se copia la tarjeta de la última entrevista y se cambia el número y el nombre de la imagen.
+A continuación se registran las entrevistas de validación realizadas por segmento. Para cada entrevista se consigna el nombre y apellidos del participante, su edad, su distrito de residencia, un screenshot de un cuadro del video, el enlace al video alojado en Microsoft Stream, indicando el timing donde inicia la entrevista y su duración, y un resumen descriptivo de las principales apreciaciones del entrevistado respecto a las tareas asignadas. De acuerdo con lo planificado por el equipo, se realizan 3 entrevistas por segmento.
 
 **Segmento 1: Personas autistas**
 
@@ -1615,33 +1934,33 @@ A continuación se registran las entrevistas de validación realizadas por segme
 
   <!-- Imagen de la captura de pantalla -->
   <div style="background-color: #00373E; padding: 12px 16px 16px;">
-    <img src="images/Chapter-V/validacion-s1-e1.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
+    <img src="images/Chapter-V/entrevistasebas1.png" alt="Screenshot de la entrevista de validación" style="width: 100%; border-radius: 3px; display: block;">
   </div>
 
   <!-- Datos en dos columnas -->
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Sebastián Moisés Suárez Simeón
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 17 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Sofía Díaz Yurvilca
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> San Martín de Porres
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 00:08 (video consolidado)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> 28:55 (de 00:08 a 29:03)
       </td>
     </tr>
   </table>
@@ -1651,7 +1970,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://sl1nk.com/essxvtz">https://sl1nk.com/essxvtz</a>
       </td>
     </tr>
   </table>
@@ -1660,7 +1979,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+        <p>Entendió que Nubi es una red de apoyo emocional para cuidadores y personas neurodivergentes. En UF-1 usó las burbujas flotantes y los sonidos, y dijo que se sintió mejor al terminar la sesión de calma. En UF-2 probó el tablero de pictogramas y entendió para qué sirve, aunque preguntó qué significaban las opciones "entendí" y "no entendí". Le parecieron bien los sonidos, pero consideró que los colores son demasiado fluorescentes para momentos de sobreestimulación, y que la burbuja y el globo de respiración son muy pequeños. Como dificultades señaló que el acceso al área de adultos es muy fácil para un niño, que editar una rutina lo lleva directo al perfil del niño y que no entendió qué significa archivar un perfil. Probabilidad de uso: 3 en una escala de 1 a 5.</p>
       </td>
     </tr>
   </table>
@@ -1690,26 +2009,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Diana López
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 15 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Sofía Díaz Yurvilca
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> San Miguel
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 29:47 (video consolidado)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> 18:51 (de 29:47 a 48:38)
       </td>
     </tr>
   </table>
@@ -1719,7 +2038,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://l1nq.com/ygh85ih">https://l1nq.com/ygh85ih</a>
       </td>
     </tr>
   </table>
@@ -1728,7 +2047,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+        <p>Entendió que Nubi ayuda a niños con neurodivergencias a manejar las crisis, controlar su estado de ánimo y seguir su rutina, y lo considera útil para la terapia. En UF-1 encontró el rincón de calma y las burbujas flotantes, y consideró que la pantalla se adapta bien a su estado. En UF-2 probó la sección Hablar con frases como "Quiero descansar" y "Necesito ayuda", y lo considera muy útil cuando alguien está abrumado y no puede hablar. Consideró que los colores son tranquilos y no abrumadores; no comentó sobre las animaciones ni los sonidos. No encontró pantallas ni pasos confusos, aunque hubo preguntas sobre el Modo SOS y la red de apoyo que se aclararon. Probabilidad de uso: 4 en una escala de 1 a 5, porque en una crisis es difícil pensar en usar una aplicación, pero en algún momento sí la usaría. Sugiere más ejercicios y una herramienta que mida qué tan efectivos son.</p>
       </td>
     </tr>
   </table>
@@ -1758,26 +2077,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Aguirre Campos, Owen
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 17 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Leonardo López Torres
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> San Martín de Porres
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 48:43 (video consolidado)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> 13:03 (de 48:43 a 1:01:46)
       </td>
     </tr>
   </table>
@@ -1787,7 +2106,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://l1nq.com/j0ayo4q">https://l1nq.com/j0ayo4q</a>
       </td>
     </tr>
   </table>
@@ -1796,7 +2115,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page, si entendió qué ofrece Nubi; (2) los User Flows UF-1 (Autorregulación) y UF-2 (Comunicación asistida), qué completó solo, dónde pidió ayuda y qué le pareció fácil o difícil; (3) cómo percibió los colores, las animaciones y los sonidos; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5) y sus sugerencias de mejora.
+        Owen Aguirre Campos, de 17 años y residente de San Martín de Porres, cuenta que a veces le cuesta mantenerse tranquilo y que se inquieta con los ruidos fuertes, como los ladridos de los perros, los gritos de la gente en la calle y los cohetes o fuegos artificiales. <br><br><strong>Landing Page.</strong> Entendió que Nubi es una página que puede ayudar a personas con este tipo de dificultades. La vio clara, con iconos llamativos, útil y con un diseño muy acertado. <br><br><strong>UF-1, Autorregulación.</strong> Eligió el estímulo de burbujas y dijo sentirse tranquilo con ellas. Valoró que el botón es grande y que las burbujas se ven sin problema, por lo que lo consideró muy fácil de acceder. Describió la paleta de colores como tranquila: sin colores saturantes o brillantes, que no molestan ni incomodan la vista. Al cambiar la intensidad de 8 a 10 observó que la animación cambia y se vuelve un poco más rápida. Al elegir un tiempo de 2 minutos comprobó que el cronómetro empieza a correr, y notó que el cuadro le indica respirar, lo que le hizo sentir algo mejor. <br><br><strong>Rutina visual y perfil.</strong> Agregó un paso a la rutina, configuró la hora y la actividad, y lo consideró sencillo, con el botón bien ubicado y grande, además de iconos para elegir. También cambió un elemento a favoritos con el corazón y agregó una nota. Le pareció una vista completa, en la que puede visualizar bien qué le puede pasar a Mati. <br><br><strong>Dificultades.</strong> No encontró ninguna pantalla, botón o paso confuso; la aplicación le pareció muy accesible y sencilla. <br><br><strong>Probabilidad de uso y sugerencias.</strong> Dijo que podría usarla cuando se siente triste o angustiado, y la calificó con un 4 de 5 por su tranquilidad y facilidad de uso. Sugirió que en el perfil del niño se puedan guardar sus dibujos o las imágenes que le gustan y le llaman la atención, aprovechando la opción de dibujo.
       </td>
     </tr>
   </table>
@@ -1828,26 +2147,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Johan Friabusmante
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 20 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Ingrid Nahir Ruiz Villegas
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> Miraflores
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 1:01:49 (video consolidado)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> 9:47 (de 1:01:49 a 1:11:36)
       </td>
     </tr>
   </table>
@@ -1857,7 +2176,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://l1nq.com/sx84u06">https://l1nq.com/sx84u06</a>
       </td>
     </tr>
   </table>
@@ -1866,7 +2185,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page y los planes; (2) los User Flows UF-3 (Perfil y Personalización), UF-4 (Modo SOS), UF-5 (Comunicación asistida), UF-6 (Red de Apoyo y Seguimiento) y UF-7 (Cuenta y plan), con énfasis en si completó la guía del Modo SOS y qué le pareció la cantidad de pasos; (3) cuánta confianza le da usar Nubi durante una crisis y qué lo respaldaría; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5), si pagaría por el plan Premium y sus sugerencias de mejora.
+        <p>Indicó que su familiar tiene autismo leve. Entendió qué hace Nubi y le gustó que la aplicación pueda avisarle en tiempo real lo que ocurre con su familiar. Creó el perfil sin dificultad y consideró necesarios los datos solicitados. Por lo que vio, el botón SOS se ubica fácilmente. La guía paso a paso le pareció clara, con un paso a la vez y una cantidad de pasos adecuada, y le parece bien que se adapte a la condición de la persona. Dijo que el resumen al finalizar el episodio le permitió comprender todo lo ocurrido. Cree que el tablero de pictogramas podría usarse para comunicarse durante una crisis, y le resultó muy útil lo que ocurre después de confirmar una necesidad. Para usar Nubi en una situación de alta tensión, por ahora le parece bien, aunque considera que sería bueno contar con un profesional de la salud. No señaló pantallas ni pasos confusos y, por ahora, no sabría qué agregar. Probabilidad de uso: 5 en una escala de 1 a 5. Considera que el plan Premium le conviene más porque tiene más funciones.</p>
       </td>
     </tr>
   </table>
@@ -1896,26 +2215,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Lizeth Villanueva
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 25 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Ingrid Nahir Ruiz Villegas
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> Pueblo Libre
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 1:11:39 (video consolidado)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> 8:59 (de 1:11:39 a 1:20:38)
       </td>
     </tr>
   </table>
@@ -1925,7 +2244,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://sl1nk.com/2y1bdn9">https://sl1nk.com/2y1bdn9</a>
       </td>
     </tr>
   </table>
@@ -1934,7 +2253,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page y los planes; (2) los User Flows UF-3 (Perfil y Personalización), UF-4 (Modo SOS), UF-5 (Comunicación asistida), UF-6 (Red de Apoyo y Seguimiento) y UF-7 (Cuenta y plan), con énfasis en si completó la guía del Modo SOS y qué le pareció la cantidad de pasos; (3) cuánta confianza le da usar Nubi durante una crisis y qué lo respaldaría; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5), si pagaría por el plan Premium y sus sugerencias de mejora.
+        <p>Entendió qué hace Nubi y la considera una plataforma interesante para entender mejor el tema. Su hermano tiene autismo, así que participa como familiar y no como madre o padre. Creó el perfil sin dificultad y consideró necesarios los datos solicitados. Encontró el botón SOS con facilidad y cree que lo ubicaría rápido en una crisis real. La guía paso a paso le pareció clara, con una cantidad de pasos adecuada, y le dio confianza de que se adapta al perfil. Consideró bastante útil el resumen al finalizar el episodio y cree que el tablero de pictogramas sería una herramienta muy útil durante una crisis. Entendió qué ocurre después de confirmar una necesidad de comunicación. Para usar Nubi en un momento de alta tensión, le daría más seguridad saber cómo tratar ciertos aspectos del tema neurológico, con respaldo de un médico especialista. Probabilidad de uso: no asignó un valor en la escala de 1 a 5; dijo que aún lo evaluaría, porque no le queda claro el objetivo real de Nubi ni qué nivel de acompañamiento ofrece. No respondió si pagaría por el plan Premium. Sugiere accesos más rápidos, por ejemplo a la atención o a la orientación con un especialista, para no tener que entrar a tantas pestañas.</p>
       </td>
     </tr>
   </table>
@@ -1964,26 +2283,26 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Entrevistado(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistado(a):</strong> Carmen Romero
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc; width: 50%;">
-        <strong>Edad:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Edad:</strong> 47 años
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Entrevistador(a):</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Entrevistador(a):</strong> Sofía Díaz Yurvilca
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Distrito:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Distrito:</strong> El Callao
       </td>
     </tr>
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Inicio de la entrevista:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Inicio de la entrevista:</strong> 1:20:42 (video consolidado)
       </td>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
-        <strong>Duración:</strong> <mark>[POR COMPLETAR]</mark>
+        <strong>Duración:</strong> 16:51 (de 1:20:42 a 1:37:33)
       </td>
     </tr>
   </table>
@@ -1993,7 +2312,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <mark>[POR COMPLETAR]</mark> (enlace del video en Microsoft Stream)
+        <a href="https://l1nq.com/j0ayo4q">https://l1nq.com/j0ayo4q</a>
       </td>
     </tr>
   </table>
@@ -2002,7 +2321,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
   <table style="width: 100%; border-collapse: collapse; font-size: 0.88em;">
     <tr>
       <td style="padding: 10px 14px; border: 1px solid #cfd8dc; line-height: 1.6;">
-        <mark>[POR COMPLETAR]</mark> Resumen de las principales apreciaciones del participante sobre las tareas asignadas. Se sugiere redactarlo en este orden: (1) el Landing Page y los planes; (2) los User Flows UF-3 (Perfil y Personalización), UF-4 (Modo SOS), UF-5 (Comunicación asistida), UF-6 (Red de Apoyo y Seguimiento) y UF-7 (Cuenta y plan), con énfasis en si completó la guía del Modo SOS y qué le pareció la cantidad de pasos; (3) cuánta confianza le da usar Nubi durante una crisis y qué lo respaldaría; (4) las dificultades que encontró; (5) la probabilidad de usar Nubi (1 a 5), si pagaría por el plan Premium y sus sugerencias de mejora.
+        <p>Tiene un hijo con autismo y entendió que Nubi está dirigido a personas con autismo. Dijo que ayuda a completar las actividades programadas durante el día y que, en un problema mayor, se puede contar con contactos que indiquen qué hacer. Creó el perfil sin dificultad y consideró necesarios los datos solicitados, que se completan paso por paso. No había visto bien el Modo SOS, por lo que no pudo confirmar si ubicaría el botón rápido en una crisis real. La guía paso a paso le pareció bien, con una cantidad de pasos muy adecuada, y dijo que el resumen al finalizar el episodio es más ligero y rápido que anotar a mano. Cree que el tablero de pictogramas le servirá bastante a su hijo para comunicarse en una crisis, y le resultó claro lo que ocurre después de confirmar una necesidad. Para usar Nubi en una situación de alta tensión, confiaría sobre todo en el SOS, porque su hijo tendría la seguridad de que habrá contacto con su terapeuta y con la familia. También aprendió una estrategia de respiración con globo que no conocía. Probabilidad de uso: no dio un número en la escala de 1 a 5. Sí pagaría por el plan Premium, porque quiere que su hijo sea más independiente y pueda realizar sus actividades normales. No encontró pantallas ni pasos confusos. Sugirió que el niño pueda tener a mano los contactos durante una crisis, y estrategias para que se serene hasta que llegue la ayuda pertinente.</p>
       </td>
     </tr>
   </table>
@@ -2012,27 +2331,372 @@ A continuación se registran las entrevistas de validación realizadas por segme
 </div>
 
 ---
+
 #### Resultados por flujo
 
-Al terminar las entrevistas se completa esta tabla con el total de participantes de cada segmento que completaron cada flujo.
+La tabla resume cuántos participantes de cada segmento completaron cada flujo, según los resúmenes de las entrevistas. «Sin dato» indica que el resumen no permite saber si el participante realizó el flujo. Los resúmenes no registran que el entrevistador haya ayudado en algún flujo, salvo el caso de Carmen en UF-4, a quien se le mostró el Modo SOS; la columna «Completó con ayuda» se contrasta con los videos.
 
-| Flujo | Segmento | Completó solo | Completó con ayuda | No completó | Facilidad promedio (1 a 5) |
+| Flujo | Segmento | Completó solo | Completó con ayuda | No completó | Sin dato | Facilidad promedio (1 a 5) |
+|---|---|---|---|---|---|----------------------------|
+| UF-1 Autorregulación | 1 | 3 | 0 | 0 | 0 | 4                          |
+| UF-2 Comunicación asistida | 1 | 2 | 0 | 0 | 1 | 5                          |
+| UF-3 Perfil y Personalización | 2 | 3 | 0 | 0 | 0 | 3                          |
+| UF-4 Modo SOS | 2 | 2 | 1 | 0 | 0 | 2                          |
+| UF-5 Comunicación asistida | 2 | 2 | 0 | 0 | 1 | 3                          |
+| UF-6 Red de Apoyo y Seguimiento | 2 | 3 | 0 | 0 | 0 | 3                          |
+| UF-7 Cuenta y plan | 2 | 2 | 0 | 0 | 1 | 2                          |
+
+**Facilidad promedio.** Los resúmenes no registran la calificación de facilidad de 1 a 5 de cada flujo, por lo que esa columna se completa con los videos. Lo que sí se registró en todas las entrevistas es la probabilidad de uso (pregunta 9).
+
+**Observaciones por flujo:**
+
+- **UF-1.** Los tres participantes usaron las burbujas flotantes; Sebastián dijo sentirse mejor al terminar y Owen, tranquilo. Diana consideró que la pantalla se adapta bien a su estado y Owen también probó la intensidad y el temporizador de 2 minutos. Sebastián consideró fluorescentes los colores y muy pequeños la burbuja y el globo de respiración.
+- **UF-2.** Sebastián y Diana usaron el tablero de pictogramas. Sebastián preguntó qué significaban las opciones «entendí» y «no entendí». El resumen de Owen no menciona el tablero.
+- **UF-3.** Los tres padres o familiares crearon el perfil sin dificultad y consideraron necesarios los datos solicitados.
+- **UF-4.** Johan y Lizeth encontraron el botón SOS y valoraron la guía y el resumen del episodio. A Carmen se le mostró el Modo SOS y valoró la guía y el resumen, pero olvidó dónde estaba el botón y no pudo confirmar si lo ubicaría en una crisis real.
+- **UF-5.** Los tres opinaron que el tablero de pictogramas serviría para comunicarse en una crisis. La mayoría lo configuró; el resumen de uno de ellos no indica si lo hizo.
+- **UF-6.** Los tres entendieron lo que ocurre después de confirmar una necesidad; Johan destacó el aviso en tiempo real.
+- **UF-7.** Johan y Carmen compararon los planes y opinaron sobre el Premium (Johan lo considera más conveniente y Carmen sí pagaría). Lizeth no respondió si pagaría y el resumen no indica si comparó los planes. Ningún resumen menciona el registro o el inicio de sesión.
+
+**Probabilidad de uso (escala de 1 a 5).**
+
+| Segmento | Respuestas registradas | Sin respuesta |
+|---|---|---|
+| 1. Personas autistas | Sebastián: 3; Diana: 4; Owen: 4 (promedio 3.7) | 0 |
+| 2. Padres de niños y adolescentes con autismo | Johan: 5 | Lizeth y Carmen no asignaron un valor |
+
+
+#### Matriz de trazabilidad de la validación
+
+Relaciona participante → tarea → hipótesis → hallazgo → decisión → revalidación para las **seis entrevistas de validación del AV2**, distintas de las seis de needfinding de la sección 2.2. Los criterios son los de pruebas de uso del Lean UX Canvas (sección 1.2.2.4); los criterios de negocio se miden con datos de uso. Las decisiones son **propuestas, sin implementar**.
+
+| Participante (grabación) | Flujos | Hipótesis y criterio | Hallazgo | Decisión de diseño propuesta | Revalidación |
 |---|---|---|---|---|---|
-| UF-1 Autorregulación | 1 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| UF-2 Comunicación asistida | 1 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| UF-3 Perfil y Personalización | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| UF-4 Modo SOS | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| UF-5 Comunicación asistida | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| UF-6 Red de Apoyo y Seguimiento | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
-| UF-7 Cuenta y plan | 2 | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** | **[POR COMPLETAR]** |
+| Sebastián Suárez, 17 ([video](https://sl1nk.com/essxvtz)) | UF-1, UF-2 | H2: 70 % usa un recurso. H3: 80 % comunica una necesidad | Colores fluorescentes; burbuja y globo pequeños; duda con «entendí / no entendí»; acceso fácil al área de adultos | Bajar la saturación, agrandar los estímulos, explicar la respuesta del cuidador y proteger el área de adultos | Pendiente |
+| Diana López, 15 ([video](https://l1nq.com/ygh85ih)) | UF-1, UF-2 | H2 y H3 | Completa ambos flujos; pide más ejercicios y medir su efectividad | Ampliar el catálogo y registrar la efectividad | Pendiente |
+| Owen Aguirre, 17 ([consolidado, 48:43](https://l1nq.com/j0ayo4q)) | UF-1 | H2 | Completa el flujo; pide guardar sus dibujos e imágenes | Evaluar una galería de dibujos en el perfil | Pendiente |
+| Johan Friabusmante, 20, familiar ([video](https://l1nq.com/sx84u06)) | UF-3 a UF-7 | H1: 80 % completa la guía. H4: 80 % considera útiles las recomendaciones. H5: 80 % envía ayuda y 70 % valora el reporte | Completa la guía; sugiere respaldo de un profesional | Mostrar el respaldo profesional de las guías | Pendiente |
+| Lizeth Villanueva, 25, familiar ([video](https://sl1nk.com/2y1bdn9)) | UF-3 a UF-6 | H1, H4, H5 | No tiene claro el nivel de acompañamiento; pide accesos rápidos a un especialista | Aclarar el alcance en el Landing Page y reducir pasos de navegación | Pendiente |
+| Carmen Romero, 47, madre ([consolidado, 1:20:42](https://l1nq.com/j0ayo4q)) | UF-3 a UF-7 | H1, H4, H5 | Necesitó que le mostraran el Modo SOS; pide contactos a mano para el niño | Hacer más visible el botón SOS y mostrar contactos durante la crisis | Pendiente |
+
+| Hipótesis | Medido con las entrevistas | Estado frente al criterio |
+|---|---|---|
+| H1 | 2 de 3 completaron la guía sin ayuda y 1 con ayuda | Sin concluir: 67 % sin ayuda frente a la meta de 80 % |
+| H2 | 3 de 3 usaron un recurso | Cumple el 70 % en esta muestra |
+| H3 | 2 usaron el tablero y 1 sin dato | Sin concluir: 67 % registrado frente a la meta de 80 % |
+| H4 | No se registró la utilidad de las recomendaciones | No medido |
+| H5 | No se registró el envío de solicitudes ni la utilidad del reporte | No medido |
+
+**Limitaciones:** con tres participantes por segmento los porcentajes son solo indicativos. Johan y Lizeth son familiares y no padres, aunque el perfil de la sección 5.3.1 pedía padres o madres. Dos registros enlazan al video consolidado y requieren un enlace individual.
 
 ### 5.3.3. Evaluaciones según heurísticas
 
+Después de las sesiones de validación, el equipo evalúa la experiencia de Nubi con el formato **UX Heuristics & Principles Evaluation** del Anexo D del enunciado, que revisa la usabilidad, el diseño inclusivo y la arquitectura de información. Se llena un formato por cada sesión de evaluación, a partir de las observaciones de todas las entrevistas de la sección 5.3.2. El formato tiene cinco partes: los datos de la sesión, el sitio o la aplicación a evaluar con sus tareas, la escala de severidad, la tabla resumen de problemas y la descripción de cada problema con su captura de pantalla y su recomendación. La sección reúne dos formatos: el obtenido de las entrevistas, que se presenta a continuación, y una [evaluación complementaria por inspección de la Web Application](#evaluación-complementaria-por-inspección-de-la-web-application).
 
-#### UX Heuristics & Principles Evaluation
-#### Usability – Inclusive Design – Information Architecture
+#### Datos de la sesión de evaluación
 
-## 1. Datos de la sesión de evaluación
+| Dato | Detalle |
+|---|---|
+| Carrera | Ingeniería de Software |
+| Curso | Desarrollo de Aplicaciones Open Source (1ASI0729) |
+| Sección | NRC 7793 |
+| Profesores | Todos |
+| Auditor | Macally (grupo que ejecuta la sesión de evaluación) |
+| Cliente(s) | Sebastián Moisés Suárez Simeón, Diana López, Owen Aguirre Campos (Segmento 1); Johan Friabusmante, Lizeth Villanueva, Carmen Romero (Segmento 2) |
+
+#### Sitio o aplicación a evaluar
+
+| Producto | Enlace |
+|---|---|
+| Nubi, Landing Page | https://asi0729-2620-7793-open-source.github.io/landing-page/ |
+| Nubi, Frontend Web Application | https://nubi-frontend-7793.web.app |
+
+#### Tareas a evaluar
+
+El alcance de la evaluación incluye la revisión de la usabilidad de las tareas asignadas en la sección 5.3.1 a los dos segmentos objetivo:
+
+1. Explorar el Landing Page e identificar qué ofrece Nubi y los planes disponibles.
+2. Crear una cuenta e iniciar sesión.
+3. Crear el perfil de un niño o adolescente y registrar una sensibilidad sensorial.
+4. Elegir un estímulo visual o auditivo y abrirlo en una sesión de calma.
+5. Cambiar la intensidad del estímulo y activar el modo de baja estimulación.
+6. Iniciar el temporizador de calma, pausarlo y terminar la sesión.
+7. Usar el tablero de pictogramas para comunicar una necesidad.
+8. Marcar pictogramas como favoritos, filtrar el tablero por categoría y reordenarlo.
+9. Activar el Modo SOS desde cualquier pantalla.    
+10. Seguir la guía paso a paso del Modo SOS, completando y omitiendo pasos, y finalizar el episodio.
+11. Revisar el resumen del episodio.
+12. Ver la última necesidad comunicada y confirmar su recepción.
+13. Comparar el plan Standard con el plan Premium.
+
+No están incluidas en esta versión de la evaluación las siguientes tareas, porque no forman parte de los User Flows UF-1 a UF-7 validados: las historias de seguimiento y recomendaciones de la Red de Apoyo y Seguimiento (US-30 a US-45), el pictograma personalizado y el audio de los pictogramas (US-22 y US-24) y cancelar una solicitud de ayuda (US-28), que no están disponibles en esta versión de la aplicación.
+
+#### Escala de severidad
+
+Los problemas se puntúan con la siguiente escala.
+
+| Nivel | Descripción |
+|:---:|---|
+| 1 | Problema superficial: el usuario lo supera con facilidad o casi nunca ocurre. No se corrige salvo que haya tiempo disponible. |
+| 2 | Problema menor: ocurre con algo más de frecuencia o al usuario le cuesta un poco más superarlo. Se le asigna prioridad baja de cara al siguiente release. |
+| 3 | Problema mayor: ocurre con frecuencia o los usuarios no logran resolverlo. Es importante corregirlo y se le asigna prioridad alta. |
+| 4 | Problema muy grave: tiene un impacto grande e impide que el usuario continúe con la aplicación. Es imperativo corregirlo antes del lanzamiento. |
+
+#### Criterios de referencia
+
+Para detectar los problemas, el equipo contrasta lo observado en cada sesión con tres grupos de criterios. Al registrar un problema se nombra la heurística o el principio violado con el prefijo de su grupo, como en el Anexo D: `Usability: <heurística>`, `Information Architecture: <criterio>` o `Inclusive Design: <principio>`.
+
+**A. Usability (heurísticas de Nielsen)**
+
+| # | Heurística | Qué se verifica en Nubi | Problemas asociados (# de la tabla resumen) |
+|---|---|---|---|
+| H1 | Visibilidad del estado del sistema | El usuario sabe en qué paso de la guía del Modo SOS va y si el envío de una necesidad o una solicitud se confirmó. | Ninguno registrado |
+| H2 | Correspondencia entre el sistema y el mundo real | Los textos y pictogramas usan el lenguaje del usuario, sin términos clínicos. | 3, 6 |
+| H3 | Control y libertad del usuario | Puede cancelar una solicitud de ayuda, salir del Modo SOS y deshacer un cambio del perfil. | Ninguno registrado |
+| H4 | Consistencia y estándares | Los botones, colores y etiquetas se comportan igual en todos los módulos. | Ninguno registrado |
+| H5 | Prevención de errores | Omitir un paso obligatorio del Modo SOS exige confirmación y el formulario del perfil valida los datos. | 4 |
+| H6 | Reconocer en lugar de recordar | Las opciones y pictogramas están a la vista, sin obligar a recordar pasos previos. | 10 |
+| H7 | Flexibilidad y eficiencia de uso | El botón SOS es accesible desde cualquier pantalla y los favoritos aceleran las tareas repetidas. | 8 |
+| H8 | Diseño estético y minimalista | Cada pantalla muestra solo lo necesario, sin saturar durante una crisis. | Ninguno registrado |
+| H9 | Ayuda para reconocer, diagnosticar y recuperarse de errores | Los mensajes de error explican qué ocurrió y cómo resolverlo. | Ninguno registrado |
+| H10 | Ayuda y documentación | El usuario encuentra explicaciones breves, preguntas frecuentes o textos de apoyo cuando los necesita. | 7, 11 |
+
+**B. Information Architecture**
+
+Se evalúan los sistemas definidos en la sección 4.2.
+
+| # | Criterio | Qué se verifica en Nubi | Problemas asociados (# de la tabla resumen) |
+|---|---|---|---|
+| AI1 | Sistema de organización | Los contenidos se agrupan por los cinco Bounded Contexts y el usuario entiende dónde está cada herramienta. | Ninguno registrado |
+| AI2 | Sistema de etiquetado | Las etiquetas del menú y de los botones son comprensibles y coinciden con lo que el usuario espera. | Ninguno registrado |
+| AI3 | Sistema de navegación | El usuario llega a cada módulo en pocos pasos y puede volver al inicio. | 5 |
+| AI4 | Sistema de búsqueda y descubrimiento | El usuario encuentra sin buscar el Modo SOS, los planes y las preguntas frecuentes. | Ninguno registrado |
+| AI5 | Jerarquía de contenido | Lo más importante (Modo SOS, tablero) destaca sobre lo secundario. | 9 |
+
+**C. Inclusive Design**
+
+Se evalúan los criterios de accesibilidad y de baja carga sensorial de las Style Guidelines (sección 4.1).
+
+| # | Principio | Qué se verifica en Nubi | Problemas asociados (# de la tabla resumen) |
+|---|---|---|---|
+| IN1 | Baja carga sensorial | Los colores, animaciones y sonidos no abruman; el modo de baja estimulación reduce los estímulos. | 1 |
+| IN2 | Previsibilidad | Las pantallas se comportan de forma predecible y avisan antes de cambiar. | Ninguno registrado |
+| IN3 | Proporciona experiencias comparables (comunicación sin depender del habla) | El usuario puede expresarse con pictogramas e imágenes cuando no puede hablar. | Ninguno registrado |
+| IN4 | Lenguaje claro | Las instrucciones son cortas, concretas y sin metáforas. | Ninguno registrado |
+| IN5 | Contraste, tamaño y foco | Los textos son legibles, los controles táctiles son grandes y el foco del teclado es visible. | 2 |
+| IN6 | Idioma y personalización | El usuario puede cambiar de idioma y ajustar la experiencia a sus sensibilidades. | Ninguno registrado |
+
+#### Tabla resumen
+
+La tabla resume los problemas observados en las seis entrevistas de la sección 5.3.2, a partir de lo que cada participante dijo o hizo en sus resúmenes. Las severidades, los responsables y los Sprint de corrección son una propuesta del equipo que se contrasta con los videos de las entrevistas.
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|:---:|---|:---:|---|
+| 1 | Los colores de la galería de estímulos resultan fluorescentes en momentos de sobreestimulación | 2 | `Inclusive Design: Baja carga sensorial` |
+| 2 | La burbuja y el globo de respiración son muy pequeños | 2 | `Inclusive Design: Contraste, tamaño y foco` |
+| 3 | Las opciones «entendí» y «no entendí» del tablero no se entienden | 2 | `Usability: Correspondencia entre el sistema y el mundo real` |
+| 4 | El acceso al área de adultos es demasiado fácil para un niño | 3 | `Usability: Prevención de errores` |
+| 5 | Editar una rutina lleva directo al perfil del niño | 2 | `Information Architecture: Sistema de navegación` |
+| 6 | El término «archivar un perfil» no se entiende | 2 | `Usability: Correspondencia entre el sistema y el mundo real` |
+| 7 | Hay dudas sobre el Modo SOS y la Red de Apoyo que necesitan aclaración | 2 | `Usability: Ayuda y documentación` |
+| 8 | Hay que entrar a muchas pestañas para llegar a la atención o a la orientación | 2 | `Usability: Flexibilidad y eficiencia de uso` |
+| 9 | El objetivo de Nubi y el nivel de acompañamiento que ofrece no quedan claros | 2 | `Information Architecture: Jerarquía de contenido` |
+| 10 | El botón SOS es difícil de recordar después de verlo | 2 | `Usability: Reconocer en lugar de recordar` |
+| 11 | Los padres condicionan su confianza al respaldo de un profesional de la salud | 3 | `Usability: Ayuda y documentación` |
+
+#### Descripción de problemas
+
+Cada ficha describe un problema de la tabla resumen, con su captura de pantalla y su recomendación.
+
+**PROBLEMA #1:** Los colores de la galería de estímulos resultan fluorescentes en momentos de sobreestimulación
+
+**Severidad:** 2
+
+**Heurística violada:** `Inclusive Design: Baja carga sensorial`
+
+**Problema:** Sebastián consideró que los colores son demasiado fluorescentes para un momento de sobreestimulación. Ocurrió en la tarea de elegir un estímulo de calma (UF-1). Diana y Owen describieron la paleta como tranquila, por lo que el problema se observó en 1 de 3 entrevistas del Segmento 1.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-1.png" alt="Escena de burbujas flotantes del Rincón de calma" width="700"></p>
+
+*Escena de burbujas flotantes del Rincón de calma (versión del 14 de noviembre de 2026, que usa tonos suaves).*
+
+**Recomendación:** Revisar la paleta de los estímulos con las Style Guidelines (sección 4.1) y bajar la saturación, o aplicar la baja estimulación como opción predeterminada. **Responsable:** Payano Puchuri, Joan Fabricio (Autorregulación). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #2:** La burbuja y el globo de respiración son muy pequeños
+
+**Severidad:** 2
+
+**Heurística violada:** `Inclusive Design: Contraste, tamaño y foco`
+
+**Problema:** Sebastián indicó que la burbuja y el globo de respiración se ven muy pequeños durante la sesión de calma (UF-1). Se observó en 1 de 3 entrevistas del Segmento 1.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-2.png" alt="Círculo «Respira» de la sesión de burbujas" width="700"></p>
+
+*Sesión de burbujas flotantes, con el círculo «Respira» marcado.*
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-2b.png" alt="Sesión «Respiración del globo» para comparar el tamaño del globo." width="700"></p>
+
+*Sesión «Respiración del globo» para comparar el tamaño del globo.*
+
+**Recomendación:** Aumentar el tamaño de la burbuja y del globo de respiración, o permitir ajustarlo desde la sesión. **Responsable:** Payano Puchuri, Joan Fabricio (Autorregulación). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #3:** Las opciones «entendí» y «no entendí» del tablero no se entienden
+
+**Severidad:** 2
+
+**Heurística violada:** `Usability: Correspondencia entre el sistema y el mundo real`
+
+**Problema:** Sebastián entendió para qué sirve el tablero de pictogramas, pero preguntó qué significaban las opciones «entendí» y «no entendí» (UF-2). Se observó en 1 de 3 entrevistas del Segmento 1.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-3.png" alt="Botones Entendí y No entendí del tablero" width="700"></p>
+
+*Panel «Por atender» de Comunicación, con los botones «Entendí» y «No entendí» marcados.*
+
+**Recomendación:** Acompañar las opciones con un ícono y una explicación breve que indique que son para que el acompañante confirme si comprendió el mensaje. **Responsable:** Lopez Torres, Leonardo Gabriel (Comunicación Asistida). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #4:** El acceso al área de adultos es demasiado fácil para un niño
+
+**Severidad:** 3
+
+**Heurística violada:** `Usability: Prevención de errores`
+
+**Problema:** Sebastián señaló que desde la aplicación se llega con mucha facilidad al área de adultos, lo que permite que un niño entre a configuraciones del cuidador. Se observó en 1 de 3 entrevistas del Segmento 1. Se le asigna severidad 3 porque las consecuencias, como modificar datos del perfil, afectan al cuidador.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-4.png" alt="Botón Adultos del modo niño" width="700"></p>
+
+*Modo niño, con el botón «Adultos» marcado.*
+
+**Recomendación:** Pedir una confirmación o un paso adicional, por ejemplo un PIN, para entrar al área del cuidador. **Responsable:** Lopez Torres, Leonardo Gabriel (modo niño). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #5:** Editar una rutina lleva directo al perfil del niño
+
+**Severidad:** 2
+
+**Heurística violada:** `Information Architecture: Sistema de navegación`
+
+**Problema:** Sebastián observó que al editar una rutina la aplicación lo lleva directo al perfil del niño y no al editor de la rutina. Se observó en 1 de 3 entrevistas del Segmento 1.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-5.png" alt="Rutina visual con el botón de editar" width="700"></p>
+
+*Rutina visual, con el botón de editar un paso marcado. En la versión del 14 de noviembre este botón abre el diálogo «Editar paso» en la misma pantalla, por lo que no se reprodujo el salto al perfil del niño.*
+
+**Recomendación:** Hacer que el botón de editar abra el editor de la rutina y avisar si se cambia de pantalla. **Responsable:** Lopez Torres, Leonardo Gabriel (Rutina Visual); primero se verifica si el problema se reproduce en la versión 1.2.0. **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #6:** El término «archivar un perfil» no se entiende
+
+**Severidad:** 2
+
+**Heurística violada:** `Usability: Correspondencia entre el sistema y el mundo real`
+
+**Problema:** Sebastián no entendió qué significa archivar un perfil. Se observó en 1 de 3 entrevistas del Segmento 1.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-6.png" alt="Opción Archivar del perfil del niño" width="700"></p>
+
+*Perfil del niño, con la opción «Archivar» marcada.*
+
+**Recomendación:** Explicar en el mensaje de confirmación qué ocurre al archivar o usar un término más claro para el cuidador. **Responsable:** Ruiz Villegas, Yngrid Nahir (Perfil y Personalización). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #7:** Hay dudas sobre el Modo SOS y la Red de Apoyo que necesitan aclaración
+
+**Severidad:** 2
+
+**Heurística violada:** `Usability: Ayuda y documentación`
+
+**Problema:** Durante la sesión de Diana surgieron preguntas sobre el Modo SOS y la red de apoyo que el entrevistador tuvo que aclarar. Se observó en 1 de 3 entrevistas del Segmento 1.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-7.png" alt="Pantalla del Modo SOS" width="700"></p>
+
+*Pantalla del Modo SOS.*
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-7b.png" alt="Pantalla de Red de Apoyo y Seguimiento." width="700"></p>
+
+*Pantalla de Red de Apoyo y Seguimiento.*
+
+**Recomendación:** Agregar una descripción breve en el Modo SOS y en la Red de Apoyo y Seguimiento que explique para qué sirven. **Responsable:** Diaz Yurivilca, Sofia (Modo SOS) y Diaz Caruzo, Edgard Daniel (Red de Apoyo y Seguimiento). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #8:** Hay que entrar a muchas pestañas para llegar a la atención o a la orientación
+
+**Severidad:** 2
+
+**Heurística violada:** `Usability: Flexibilidad y eficiencia de uso`
+
+**Problema:** Lizeth sugirió accesos más rápidos, por ejemplo a la atención o a la orientación con un especialista, para no tener que entrar a tantas pestañas. Se observó en 1 de 3 entrevistas del Segmento 2.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-8.png" alt="Menú lateral de Inicio" width="700"></p>
+
+*Inicio, con el menú lateral de navegación marcado.*
+
+**Recomendación:** Agregar accesos directos a los contactos y a la orientación en el panel de Inicio. **Responsable:** Lopez Torres, Leonardo Gabriel (Inicio y navegación). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #9:** El objetivo de Nubi y el nivel de acompañamiento que ofrece no quedan claros
+
+**Severidad:** 2
+
+**Heurística violada:** `Information Architecture: Jerarquía de contenido`
+
+**Problema:** Lizeth no asignó una probabilidad de uso porque no le quedó claro el objetivo real de Nubi ni qué nivel de acompañamiento ofrece. Se observó en 1 de 3 entrevistas del Segmento 2.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-9.png" alt="Hero del Landing Page" width="700"></p>
+
+*Hero del Landing Page.*
+
+**Recomendación:** Explicar al inicio, con una frase breve, el objetivo de Nubi y el alcance de su acompañamiento, aclarando que no reemplaza a un profesional. **Responsable:** Lopez Torres, Leonardo Gabriel (Landing Page e Inicio). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #10:** El botón SOS es difícil de recordar después de verlo
+
+**Severidad:** 2
+
+**Heurística violada:** `Usability: Reconocer en lugar de recordar`
+
+**Problema:** A Carmen se le mostró el Modo SOS, pero olvidó dónde estaba el botón y no pudo confirmar si lo ubicaría en una crisis real (UF-4). Johan y Lizeth lo encontraron con facilidad. Se observó en 1 de 3 entrevistas del Segmento 2.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-10.png" alt="Botón Modo SOS del menú lateral" width="700"></p>
+
+*Inicio, con el botón «Modo SOS» del menú lateral marcado.*
+
+**Recomendación:** Reforzar la visibilidad del botón SOS (color y etiqueta) y mostrar una guía breve la primera vez que se usa la aplicación. **Responsable:** Diaz Yurivilca, Sofia (Modo SOS). **Sprint en que se corrige:** Sprint 4.
+
+**PROBLEMA #11:** Los padres condicionan su confianza al respaldo de un profesional de la salud
+
+**Severidad:** 3
+
+**Heurística violada:** `Usability: Ayuda y documentación`
+
+**Problema:** Los tres participantes del Segmento 2 indicaron que usarían Nubi en una situación de alta tensión con más seguridad si cuentan con un profesional de la salud: Johan lo considera conveniente, Lizeth pide el respaldo de un médico especialista y Carmen se apoya en el contacto con su terapeuta. Se observó en 3 de 3 entrevistas del Segmento 2. Se le asigna severidad 3 porque la confianza condiciona la adopción del producto.
+
+**Captura de pantalla:**
+
+<p align="center"><img src="images/Chapter-V/heuristics-problem-11.png" alt="Red de Apoyo y Seguimiento" width="700"></p>
+
+*Red de Apoyo y Seguimiento, con el texto sobre reportes para el terapeuta y el acceso a cuidadores y contactos marcados.*
+
+**Recomendación:** Mostrar de forma visible que Nubi complementa la atención de profesionales y permitir vincular al terapeuta como contacto de confianza. **Responsable:** Diaz Caruzo, Edgard Daniel (Red de Apoyo y Seguimiento). **Sprint en que se corrige:** Sprint 4.
+
+#### Evaluación complementaria por inspección de la Web Application
+
+Este segundo formato revisa directamente la aplicación publicada, en lugar de las entrevistas. Proviene de la rama `main` del informe (commit [`8369d34`](https://github.com/ASI0729-2620-7793-Open-Source/Macally/commit/8369d34) de Nahir Ruiz, 14/11/2026). Usa la escala de severidad y las heurísticas definidas arriba, y sus problemas se numeran de B-1 a B-4 para distinguirlos de los obtenidos en las entrevistas.
+
+##### Datos de la inspección
 
 | Campo | Contenido |
 |---|---|
@@ -2043,153 +2707,115 @@ Al terminar las entrevistas se completa esta tabla con el total de participantes
 | **AUDITOR** | Macally |
 | **CLIENTE(S)** | Macally (Nubi) |
 
----
-
-## 2. SITE o APP A EVALUAR
+##### Aplicación inspeccionada
 
 Nubi: https://nubi-frontend-7793.web.app/
 
----
-## 3. TAREAS A EVALUAR
+##### Tareas inspeccionadas
 
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
 
 1. Inicio de sesión 
-4. Creación y edición del perfil del niño (datos, avatar, diagnóstico, perfil sensorial)
-5. Invitación y revocación de cuidadores, y gestión de contactos de confianza con teléfono
-6. Creación, edición, reordenación y completado de pasos de la rutina visual
-7. Inicio de una sesión de calma con recurso, temporizador, intensidad y modo de baja estimulación 
-8. Inicio y seguimiento del modo SOS paso a paso hasta finalizar la crisis 
-9. Uso del tablero de comunicación asistiva: crear categorías/pictogramas, selecciones y registro de estado de ánimo 
-10. Consulta de Progreso y generación de un reporte de episodios para compartirlo 
-11. Exploración de Mi Plan y cambio de plan en modo demostración 
-12. Modo niño: registrar estado de ánimo, hablar con pictogramas y ver "Mi día" 
+2. Creación y edición del perfil del niño (datos, avatar, diagnóstico, perfil sensorial)
+3. Invitación y revocación de cuidadores, y gestión de contactos de confianza con teléfono
+4. Creación, edición, reordenación y completado de pasos de la rutina visual
+5. Inicio de una sesión de calma con recurso, temporizador, intensidad y modo de baja estimulación 
+6. Inicio y seguimiento del modo SOS paso a paso hasta finalizar la crisis 
+7. Uso del tablero de comunicación asistiva: crear categorías/pictogramas, selecciones y registro de estado de ánimo 
+8. Consulta de Progreso y generación de un reporte de episodios para compartirlo 
+9. Exploración de Mi Plan y cambio de plan en modo demostración 
+10. Modo niño: registrar estado de ánimo, hablar con pictogramas y ver "Mi día"
 
----
-
-## 4. ESCALA DE SEVERIDAD
-
-Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
-
-| Nivel | Descripción |
-|---|---|
-| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
-| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
-| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
-| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
-
----
-
-## 5. LAS 10 HEURÍSTICAS DE NIELSEN (referencia para la evaluación)
-
-| # | Heurística | Descripción |
-|---|---|---|
-| **H1** | **Visibilidad del estado del sistema** | El sistema debe mantener al usuario informado sobre lo que está ocurriendo, en tiempos razonables. |
-| **H2** | **Correspondencia entre el sistema y el mundo real** | Usar el lenguaje, conceptos y convenciones conocidos por el usuario; hablar su idioma. |
-| **H3** | **Control y libertad del usuario** | Ofrecer salidas, deshacer y rehacer; el usuario nunca debe quedar atrapado en un estado. |
-| **H4** | **Consistencia y estándares** | Respetar convenciones internas y externas; nada de inventar términos o estilos nuevos. |
-| **H5** | **Prevención de errores** | Diseñar para que los errores ni siquiera ocurran; eliminar condiciones propensas al error. |
-| **H6** | **Reconocimiento en lugar de recuerdo** | Hacer visibles los objetos y acciones; no exigir al usuario que memorice información. |
-| **H7** | **Flexibilidad y eficiencia de uso** | Acelerar la interacción para expertos y ofrecer múltiples formas de alcanzar una meta. |
-| **H8** | **Diseño estético y minimalista** | No incluir información irrelevante o raramente necesaria; cada pixel compite por atención. |
-| **H9** | **Ayuda a reconocer, diagnosticar y recuperarse de los errores** | Mensajes de error en lenguaje claro, sin códigos técnicos, con solución concreta. |
-| **H10** | **Ayuda y documentación** | Ayuda fácil de localizar, enfocada en la tarea, lista para ser consultada y no leída primero. |
-
----
-
-## 6. TABLA RESUMEN
+##### Resumen de la inspección
 
 Los hallazgos se ordenan según la heurística de Nielsen que violan. 
 
 | # | Problema | Heurística de Nielsen violada | Categoría complementaria | Severidad |
 |---|---|---|---|---|
-| 1 | El backend en Render tarda hasta ~1 minuto en despertar y la app no muestra ningún indicador de carga | **H1 – Visibilidad del estado del sistema** | Usability: Visibilidad del estado del sistema | **2** |
-| 2 | No se encuentra en la interfaz la opción para aceptar la invitación de cuidador | **H6 – Reconocimiento en lugar de recuerdo** | Information Architecture: Is it findable? | **3** |
-| 3 | Compartir un reporte exige copiar y pegar manualmente en WhatsApp/correo, sin acción directa ni confirmación | **H7 – Flexibilidad y eficiencia de uso** | Inclusive Design: Proporciona experiencias comparables | **2** |
-| 5 | La aplicación no tiene sección de ayuda, FAQ ni guías de uso | **H10 – Ayuda y documentación** | Information Architecture: Is it usable? | **2** |
+| B-1 | El backend en Render tarda hasta ~1 minuto en despertar y la app no muestra ningún indicador de carga | **H1 – Visibilidad del estado del sistema** | Usability: Visibilidad del estado del sistema | **2** |
+| B-2 | No se encuentra en la interfaz la opción para aceptar la invitación de cuidador | **H6 – Reconocimiento en lugar de recuerdo** | Information Architecture: Is it findable? | **3** |
+| B-3 | Compartir un reporte exige copiar y pegar manualmente en WhatsApp/correo, sin acción directa ni confirmación | **H7 – Flexibilidad y eficiencia de uso** | Inclusive Design: Proporciona experiencias comparables | **2** |
+| B-4 | La aplicación no tiene sección de ayuda, FAQ ni guías de uso | **H10 – Ayuda y documentación** | Information Architecture: Is it usable? | **2** |
 
----
+##### Fichas de la inspección
 
-## 7. DESCRIPCIÓN DE PROBLEMAS 
+**PROBLEMA B-1:** El backend "duerme" y la app no muestra indicador de carga
 
-### 🟦 H1 – Visibilidad del estado del sistema
+**Severidad:** 2
 
----
+**Heurística de Nielsen:** H1 – Visibilidad del estado del sistema
 
-#### PROBLEMA #1: El backend "duerme" y la app no muestra indicador de carga
+**Categoría :** Usability – Visibilidad del estado del sistema
 
-- **Severidad:** 2
-- **Heurística de Nielsen:** H1 – Visibilidad del estado del sistema
-- **Categoría :** Usability – Visibilidad del estado del sistema
-- **Problema:** El backend está desplegado en Render con un plan que suspende el servicio por inactividad: la primera petición tras el reposo tarda aproximadamente un minuto en responder. Durante ese tiempo la interfaz no muestra ningún spinner, barra de progreso ni mensaje de estado, por lo que el usuario percibe que la aplicación está caída o que su acción no funcionó (y puede reintentar o abandonar). 
+**Problema:** El backend está desplegado en Render con un plan que suspende el servicio por inactividad: la primera petición tras el reposo tarda aproximadamente un minuto en responder. Durante ese tiempo la interfaz no muestra ningún spinner, barra de progreso ni mensaje de estado, por lo que el usuario percibe que la aplicación está caída o que su acción no funcionó (y puede reintentar o abandonar).
 
-- *Evidencia:* 
-    - ![Evidencia_1_heuristicas.png](images/Chapter-V/Evidencia_1_heuristicas.png)
+**Captura de pantalla:**
 
+<p align="center"><img src="images/Chapter-V/Evidencia_1_heuristicas.png" alt="Evidencia del problema en la Web Application" width="700"></p>
 
-- **Recomendación:** Mostrar un estado de carga explícito en el arranque y en cualquier petición que supere un umbral (p. ej. 3–5 s): spinner con mensaje *"Preparando tu espacio, esto puede tardar hasta un minuto…"*. Considerar un keep-alive periódico (ping cada 10–15 min) o un servicio con instancias siempre activas para eliminar la espera.
+**Recomendación:** Mostrar un estado de carga explícito en el arranque y en cualquier petición que supere un umbral (p. ej. 3–5 s): spinner con mensaje *"Preparando tu espacio, esto puede tardar hasta un minuto…"*. Considerar un keep-alive periódico (ping cada 10–15 min) o un servicio con instancias siempre activas para eliminar la espera.
 
----
+**PROBLEMA B-2:** No se encuentra la opción para aceptar la invitación de cuidador
 
+**Severidad:** 3
 
-### H6 – Reconocimiento en lugar de recuerdo
+**Heurística de Nielsen:** H6 – Reconocimiento en lugar de recuerdo
 
----
+**Categoría Anexo D:** Information Architecture – Is it findable?
 
-#### PROBLEMA #2: No se encuentra la opción para aceptar la invitación de cuidador
+**Problema:** El backend permite que un cuidador acepte la invitación mediante `PATCH /api/v1/profiles/{profileId}/caregivers/{caregiverId}` con estado `ACCEPTED`, y el frontend incluso define el método `acceptInvitation()` en `profile-api.ts`, pero este método **nunca es invocado por ningún componente**: no existe pantalla, botón ni indicador visible para aceptar la invitación. El usuario que fue invitado debe recordar (sin ninguna pista en la interfaz) que existe un paso para incorporarse, y no tiene forma de encontrarlo: la tarea queda inconclusa sin que exista un camino visible para completarla.
 
-- **Severidad:** 3
-- **Heurística de Nielsen:** H6 – Reconocimiento en lugar de recuerdo
-- **Categoría Anexo D:** Information Architecture – Is it findable?
-- **Problema:** El backend permite que un cuidador acepte la invitación mediante `PATCH /api/v1/profiles/{profileId}/caregivers/{caregiverId}` con estado `ACCEPTED`, y el frontend incluso define el método `acceptInvitation()` en `profile-api.ts`, pero este método **nunca es invocado por ningún componente**: no existe pantalla, botón ni indicador visible para aceptar la invitación. El usuario que fue invitado debe recordar (sin ninguna pista en la interfaz) que existe un paso para incorporarse, y no tiene forma de encontrarlo: la tarea queda inconclusa sin que exista un camino visible para completarla. (Incluir captura de pantalla del perfil del niño sin el estado/acción de aceptación.)
+**Captura de pantalla:**
 
-    - *Evidencia:*
-    - ![Evidencia_2_heuristicas.png](images/Chapter-V/Evidencia_2_heuristicas.png)
+<p align="center"><img src="images/Chapter-V/Evidencia_2_heuristicas.png" alt="Evidencia del problema en la Web Application" width="700"></p>
 
-- **Recomendación:** Crear la vista "Invitaciones pendientes" (por ejemplo, alerta en `/inicio` o sección en `/perfil`) que liste las invitaciones con estado `PENDING` y exponga un botón "Aceptar invitación" que invoque `acceptInvitation()`. Mientras tanto, eliminar o habilitar el método para no mantener código sin uso que engañe al revisor.
+**Recomendación:** Crear la vista "Invitaciones pendientes" (por ejemplo, alerta en `/inicio` o sección en `/perfil`) que liste las invitaciones con estado `PENDING` y exponga un botón "Aceptar invitación" que invoque `acceptInvitation()`. Mientras tanto, eliminar o habilitar el método para no mantener código sin uso que engañe al revisor.
 
----
+**PROBLEMA B-3:** Compartir reporte solo copia texto al portapapeles
 
-### H7 – Flexibilidad y eficiencia de uso
+**Severidad:** 2
 
----
+**Heurística de Nielsen:** H7 – Flexibilidad y eficiencia de uso
 
-#### PROBLEMA #3: Compartir reporte solo copia texto al portapapeles
+**Categoría Anexo D:** Inclusive Design – Proporciona experiencias comparables
 
-- **Severidad:** 2
-- **Heurística de Nielsen:** H7 – Flexibilidad y eficiencia de uso
-- **Categoría Anexo D:** Inclusive Design – Proporciona experiencias comparables
-- **Problema:** La acción de compartir un reporte de episodios no envía nada: guarda un nombre/correo libre (`POST /episode-reports/{id}/shares`) y muestra *"Copiado. Pégalo en WhatsApp o en un correo."*. Exigir al usuario abrir otra aplicación, crear un mensaje y pegar manualmente el contenido es una barrera adicional para personas con dificultades motoras, cognitivas o de baja alfabetización digital; además, al no haber confirmación de entrega, el cuidador puede creer que el profesional ya recibió el reporte. (Incluir captura de pantalla del mensaje "Copiado…".)
+**Problema:** La acción de compartir un reporte de episodios no envía nada: guarda un nombre/correo libre (`POST /episode-reports/{id}/shares`) y muestra *"Copiado. Pégalo en WhatsApp o en un correo."*. Exigir al usuario abrir otra aplicación, crear un mensaje y pegar manualmente el contenido es una barrera adicional para personas con dificultades motoras, cognitivas o de baja alfabetización digital; además, al no haber confirmación de entrega, el cuidador puede creer que el profesional ya recibió el reporte.
 
-    - *Evidencia:* 
-    - ![Evidencia_3_heuristicas.png](images/Chapter-V/Evidencia_3_heuristicas.png)
+**Captura de pantalla:**
 
-- **Recomendación:** Ofrecer acciones directas: botón "Compartir por WhatsApp" (`https://wa.me/?text=…`), "Compartir por correo" (`mailto:?subject=&body=`) y "Descargar PDF". Mantener "Copiar" como opción secundaria, y registrar la fecha real de compartido en el reporte para que el estado sea verificable.
+<p align="center"><img src="images/Chapter-V/Evidencia_3_heuristicas.png" alt="Evidencia del problema en la Web Application" width="700"></p>
 
----
+**Recomendación:** Ofrecer acciones directas: botón "Compartir por WhatsApp" (`https://wa.me/?text=…`), "Compartir por correo" (`mailto:?subject=&body=`) y "Descargar PDF". Mantener "Copiar" como opción secundaria, y registrar la fecha real de compartido en el reporte para que el estado sea verificable.
 
+**PROBLEMA B-4:** La aplicación no tiene sección de ayuda ni documentación de uso
 
-### H10 – Ayuda y documentación
+**Severidad:** 2
 
----
+**Heurística de Nielsen:** H10 – Ayuda y documentación
 
-#### PROBLEMA #4: La aplicación no tiene sección de ayuda ni documentación de uso
+**Categoría Anexo D:** Information Architecture – Is it usable?
 
-- **Severidad:** 2
-- **Heurística de Nielsen:** H10 – Ayuda y documentación
-- **Categoría Anexo D:** Information Architecture – Is it usable?
-- **Problema:** No existe en la aplicación ningún centro de ayuda, FAQ, glosario ni guías contextuales. La única orientación es el onboarding inicial de 3 pasos; después, el usuario (muchas veces un cuidador bajo estrés durante una crisis) debe descubrir por sí mismo conceptos como "sesión de calma", "modo SOS", "pictograma", "perfil sensorial" o "rutina visual". Ante la duda, no hay dónde consultar y la única alternativa es abandonar el uso de la herramienta. (Incluir captura de pantalla del menú lateral sin entrada de "Ayuda".)
+**Problema:** No existe en la aplicación ningún centro de ayuda, FAQ, glosario ni guías contextuales. La única orientación es el onboarding inicial de 3 pasos; después, el usuario (muchas veces un cuidador bajo estrés durante una crisis) debe descubrir por sí mismo conceptos como "sesión de calma", "modo SOS", "pictograma", "perfil sensorial" o "rutina visual". Ante la duda, no hay dónde consultar y la única alternativa es abandonar el uso de la herramienta.
 
-    - *Evidencia:* 
-  - ![Evidencia_4_heuristicas.png](images/Chapter-V/Evidencia_4_heuristicas.png)
+**Captura de pantalla:**
 
+<p align="center"><img src="images/Chapter-V/Evidencia_4_heuristicas.png" alt="Evidencia del problema en la Web Application" width="700"></p>
 
-- **Recomendación:** Agregar un ítem "Ayuda" en el menú con: (a) glosario ilustrado de conceptos clave, (b) guías cortas paso a paso por tarea ("¿Cómo creo una rutina?"), y (c) ayuda contextual (tooltips) en los flujos críticos (SOS, registro, invitación de cuidadores). Priorizar que el contenido sea consultable en momentos de estrés: mensajes cortos, con pictogramas y accesibles desde cualquier pantalla.
----
+**Recomendación:** Agregar un ítem "Ayuda" en el menú con: (a) glosario ilustrado de conceptos clave, (b) guías cortas paso a paso por tarea ("¿Cómo creo una rutina?"), y (c) ayuda contextual (tooltips) en los flujos críticos (SOS, registro, invitación de cuidadores). Priorizar que el contenido sea consultable en momentos de estrés: mensajes cortos, con pictogramas y accesibles desde cualquier pantalla.
+
+##### Verificación contra el código (26/11/2026)
+
+Los cuatro problemas se contrastaron con el código de la versión 1.2.0 de la Web Application (rama `main` del repositorio del Frontend, commit `0572df4` del 14/11/2026). No se repitió la sesión sobre la aplicación publicada.
+
+| Problema | Resultado | Detalle |
+|:---:|---|---|
+| B-1 | Vigente en parte | El Rincón de calma y la Red de Apoyo muestran marcadores de carga (los recuadros grises de la captura). El aviso de que el servidor tarda alrededor de un minuto en despertar aparece en la pantalla sin conexión y en el mensaje de error, no durante la espera. |
+| B-2 | Confirmado | `acceptInvitation()` está definido en `profile-api.ts` y ningún componente lo invoca. La API publica el `PATCH` de cuidadores. |
+| B-3 | Vigente con una precisión | El botón «Compartir» registra el destinatario y confirma con qué persona se compartió; el mensaje «Copiado. Pégalo en WhatsApp o en un correo.» corresponde al botón «Copiar». En el backend no se encontró una biblioteca de envío de correo o mensajería. |
+| B-4 | Confirmado | Las rutas de la aplicación y el menú lateral no incluyen una sección de ayuda. |
+
 
 ## 5.4. Video About-the-Product
-
-> **Borrador AV2.** Los datos del video y el testimonio dependen de las entrevistas de validación, que todavía no se realizan. El Landing Page ya incrusta una primera versión del video (URL de YouTube indicada más abajo).
 
 El video About-the-Product presenta Nubi a los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y a los cuidadores y usuarios de la Frontend Web Application, que quieren saber qué pueden hacer con ella. El tono es el del producto: cercano, calmado, con lenguaje claro y no clínico, y sin prometer reemplazar la atención de un profesional de la salud.
 
@@ -2205,18 +2831,38 @@ El video About-the-Product presenta Nubi a los visitantes del Landing Page, que 
 | 6. Testimonio | Opinión positiva de un participante de las entrevistas de validación de cada segmento. | 30 s |
 | 7. Planes y cierre | Planes Standard, Premium e Instituciones y llamado a crear la cuenta. | 15 s |
 
-Duración total estimada: 2 minutos y 20 segundos, dentro del rango de 1 a 3 minutos. **[POR CONFIRMAR]** el rango con el enunciado vigente.
+El video publicado dura 3 minutos y 53 segundos.
+
+#### Contenido por minutos del video publicado
+
+Revisado el 27/11/2026 con un fotograma cada 7 u 8 segundos, por lo que los tiempos son aproximados. No se revisó el audio.
+
+| Minutos (aprox.) | Pantallas de la demostración |
+|---|---|
+| 0:00 – 0:10 | Inicio del cuidador |
+| 0:15 – 0:55 | Sesión de calma y lienzo de dibujo |
+| 1:00 | Tablero de pictogramas en modo niño |
+| 1:08 – 1:20 | «Mi día»: la rutina en modo niño |
+| 1:23 – 1:30 | Inicio y Red de Apoyo |
+| 1:38 – 1:45 | Modo SOS: guía paso a paso |
+| 1:53 – 2:15 | Red de Apoyo: solicitud de ayuda y reportes |
+| 2:23 – 2:45 | Perfil del niño: red de cuidadores y sensibilidades |
+| 2:53 – 3:15 | Red de Apoyo, Comunicación y Rincón de calma |
+| 3:23 – 3:53 | Rutina visual (nuevo paso), «Mi día» e Inicio |
+
+En ese muestreo no se observan las escenas de testimonios ni de planes de la estructura propuesta; **quedan pendientes** de incorporar o de confirmar en el video.
+
+**Versión de YouTube.** El Landing Page incrusta el video «About the product Nubi» de YouTube, que dura 4:16 y muestra la interfaz del Sprint 2, distinta de la versión de Stream. El enunciado pide un video de 1 a 3 minutos con al menos una opinión por segmento objetivo: **queda pendiente** reeditarlo con la interfaz actual y publicar la misma versión en Stream y en YouTube.
 
 #### Datos del video
 
-| Dato | Detalle |
-|---|---|
+| Dato | Detalle                                                           |
+|---|-------------------------------------------------------------------|
 | Título | `upc-pre-202620-1asi0729-7793-macally-about-the-product-sprint-3` |
-| Formato | mp4 |
-| Duración | **[POR COMPLETAR]** |
-| URL en Microsoft Stream | **[POR COMPLETAR]** |
-| URL en YouTube (incrustada en el Landing Page) | https://www.youtube.com/embed/utaBaLFhlOQ |
-| Testimonio incluido | **[POR COMPLETAR]** Nombre del participante, segmento y entrevista de la sección 5.3.2 |
-| Responsable | Ruiz Villegas, Yngrid Nahir **[POR CONFIRMAR]** |
-
-**[POR COMPLETAR]** Captura de pantalla del video (`images/Chapter-V/about-the-product.png`).
+| Formato | mp4                                                               |
+| Duración | 3:53                                                              |     
+| URL en Microsoft Stream | https://sl1nk.com/o8ai3x0                                         |
+| URL en YouTube (incrustado en el Landing Page) | https://www.youtube.com/watch?v=utaBaLFhlOQ (duración 4:16) |
+| Responsable | Leonardo Lopez                                                    |
+Captura de pantalla del video (`images/Chapter-V/about-the-product.png`).**
+![abouth the product.png](images/Chapter-V/abouth%20the%20product.png)
