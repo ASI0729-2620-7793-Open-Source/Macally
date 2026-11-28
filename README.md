@@ -87,6 +87,7 @@
 | AV2-9   | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Participant Performance Report de la entrega AV2 con calificaciones, video de navegación del Sprint 3 y nuevo enlace del video About-the-Product. |
 | AV2-10  | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Enlace del video de exposición de la entrega AV1 en el Anexo A. |
 | AV2-11  | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Estado posterior al cierre de las tareas T-04, T-76 y T-77 con sus commits y fecha de publicación. |
+| AV2-12  | 28/11/2026 | Lopez Torres, Leonardo Gabriel | Enlaces actualizados de las entrevistas de validación individuales (5.3.2). |
 
 </div>
 
