@@ -257,7 +257,7 @@ La aplicación de estas convenciones permite que el código fuente de NUBI mante
 
 Los términos y condiciones de servicio de NUBI se publican en la página `terms.html` del Landing Page y se enlazan desde su footer, en inglés y en español, con tres vínculos: Terms of use, Privacy policy y Accessibility statement. Los términos establecen el propósito y el alcance (NUBI ofrece herramientas operativas de apoyo y no diagnostica, no trata ni reemplaza la atención de profesionales de la salud), la conducta ante emergencias (llamar de inmediato a los servicios de emergencia), el uso responsable (el cuidador responde por la exactitud de la información del perfil) y los compromisos éticos del equipo, basados en el código de ética de Ingeniería de Software de ACM/IEEE-CS y en el código de ética del Colegio de Ingenieros del Perú (CIP). La política de privacidad se rige por la Ley 29733, de Protección de Datos Personales.
 
-El equipo evidencia la transparencia y la responsabilidad profesional del proceso con el control de versiones en GitHub (GitFlow, Conventional Commits y los analíticos de colaboración de las secciones 5.2.X.8), con las capturas de cada Sprint y con los videos de exposición. El enlace a los mismos términos en la Frontend Web Application (menú del cuidador, ingreso y registro) se agregó el 27/11/2026 en el [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4); **pendiente de integrar y desplegar**.
+El equipo evidencia la transparencia y la responsabilidad profesional del proceso con el control de versiones en GitHub (GitFlow, Conventional Commits y los analíticos de colaboración de las secciones 5.2.X.8), con las capturas de cada Sprint y con los videos de exposición. El enlace a los mismos términos en la Frontend Web Application (menú del cuidador, ingreso y registro) se agregó el 27/11/2026 en el [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4) y se publicó el 28/11/2026.
 
 ### 5.1.4. Software Deployment Configuration
 
@@ -1131,11 +1131,11 @@ De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04)
 | TS-02 | E1: `POST` crea el episodio en curso (`201`). E2: `PATCH` a un id inexistente responde `404`. | Cubierto por `CrisisManagementApiTests`. |
 | TS-03 | E1: `GET` de estímulos responde `200`. E2: favorito con perfil inexistente responde `404`. | Cubierto; `404` observado en el servicio publicado. |
 | TS-04 | E1: `GET` del tablero responde `200`. E2: pictograma sin etiqueta responde `400`. | Cubierto por `CommunicationBoardApiTest`. |
-| TS-05 | E1: `POST` crea la solicitud pendiente (`201`). E2: `GET` de recomendaciones sin token responde `401`. | **Parcial:** el [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) (sin integrar) responde `401` cuando falta la cabecera `X-Account-Id`. La cabecera no es un token firmado, así que la autenticación por token sigue pendiente. |
+| TS-05 | E1: `POST` crea la solicitud pendiente (`201`). E2: `GET` de recomendaciones sin token responde `401`. | **Parcial:** el [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) (integrado en `main` el 28/11/2026, pendiente de publicarse en Render) responde `401` cuando falta la cabecera `X-Account-Id`. La cabecera no es un token firmado, así que la autenticación por token sigue pendiente. |
 
 **Pendientes al cierre:** T-04, T-76, T-77 y el escenario E2 de TS-05. Las tareas T-70 a T-72, T-74 y T-75 conservan a su responsable asignado, pero su commit es de otro integrante.
 
-**Actualización del 27/11/2026** (posterior al cierre; no cambia los estados del tablero): T-04, T-77 y los testimonios de T-76 están en el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1), sin integrar. De T-76 falta la revisión de contraste, foco y textos alternativos.
+**Actualización del 27/11/2026** (posterior al cierre; no cambia los estados del tablero): T-04, T-77 y los testimonios de T-76 se integraron en `master` con el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y se publicaron el 27/11/2026. De T-76 falta la revisión de contraste, foco y textos alternativos.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -1348,7 +1348,7 @@ El repositorio del Landing Page no registra commits en `origin/master` después 
 
 La tarea T-76 (testimonios reales y accesibilidad) sigue pendiente porque depende de las entrevistas de validación de la sección 5.3. Los commits de la rama se subieron al repositorio el 15 de noviembre de 2026. Falta integrarla en `master` para desplegarla en GitHub Pages.
 
-**Actualización del 27/11/2026.** En la rama `feature/av2-teacher-feedback`, creada desde la anterior, se reemplazaron los testimonios de ejemplo por resúmenes sin nombres de tres entrevistas de validación a familiares adultos (no son citas textuales), los íconos de redes enlazan a la página principal de cada red (Nubi no tiene cuentas propias) y se corrigieron el hero y los márgenes que aplastaban el contenido en pantallas angostas. Se revisó en un servidor local a 375 y 320 px de ancho. Los cambios están en el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1), pendiente de integrar y desplegar.
+**Actualización del 27/11/2026.** En la rama `feature/av2-teacher-feedback`, creada desde la anterior, se reemplazaron los testimonios de ejemplo por resúmenes sin nombres de tres entrevistas de validación a familiares adultos (no son citas textuales), los íconos de redes enlazan a la página principal de cada red (Nubi no tiene cuentas propias) y se corrigieron el hero y los márgenes que aplastaban el contenido en pantallas angostas. Se revisó en un servidor local a 375 y 320 px de ancho. Los cambios se integraron con el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y están publicados desde el 27/11/2026.
 
 | Repository | Branch | Commit Id | Commit Message | Commited on (Date) |
 |---|---|---|---|---|
@@ -1700,7 +1700,7 @@ Las tres últimas filas son **diferencias pendientes** respecto del contrato des
 | Botones de los planes | `#contacto` | No llevan a la aplicación. |
 | Íconos de redes sociales | `#` | Enlaces sin destino. |
 
-La corrección de los enlaces, de los íconos de redes y de la vista móvil está en el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1), sin integrar ni desplegar.
+La corrección de los enlaces, de los íconos de redes y de la vista móvil se integró con el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y está publicada desde el 27/11/2026.
 
 **Frontend Web Application: persistencia y recuperación (27/11/2026, entorno local).** Se ejecutaron en `localhost` los Web Services (rama del [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1), base H2 en memoria con datos de demostración) y la Web Application (rama del [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4)), con la cuenta demo. No es una prueba del despliegue publicado.
 
@@ -1731,7 +1731,25 @@ En el despliegue la demostración sigue pendiente. Como el servicio usa H2 en me
 | `develop` (`ef50aa7`) | 147 | 3 | `BUILD FAILURE`: tres pruebas de `SelfRegulationApiTests` usaban perfiles inexistentes desde que el servicio valida el perfil |
 | Rama del [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) | 147 | 0 | `BUILD SUCCESS` |
 
-La cifra «147 pruebas sin fallos» no se cumplía en `develop`; se cumple en la rama del Pull Request, pendiente de integrar. En local, la misma rama responde `401` a la consulta de recomendaciones sin `X-Account-Id` y `200` con ella. La respuesta `200` con lista vacía de `/api/v1/profiles/999999/recommendations` se revisó y no se cambió: las pruebas de Gestión de Crisis generan y consultan recomendaciones sin crear antes el perfil.
+La cifra «147 pruebas sin fallos» no se cumplía en `develop`; se cumple desde que el Pull Request se integró el 27/11/2026. En local, la misma rama responde `401` a la consulta de recomendaciones sin `X-Account-Id` y `200` con ella. La respuesta `200` con lista vacía de `/api/v1/profiles/999999/recommendations` se revisó y no se cambió: las pruebas de Gestión de Crisis generan y consultan recomendaciones sin crear antes el perfil.
+
+**Publicación del 27 y 28/11/2026.**
+
+| Producto | Qué se hizo | Verificación |
+|---|---|---|
+| Landing Page | [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) integrado en `master` (27/11) | Publicado: aparece el nuevo bloque de testimonios, los botones llevan a `/registro` y `sitemap.xml` responde `200` |
+| Frontend Web Application | [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4) y ajuste de idioma y metadatos, integrados en `main` y desplegados en Firebase Hosting (28/11) | Publicado: inglés por defecto, `<html lang="en">`, título y metadatos en inglés y enlace «Terms and conditions» |
+| RESTful Web Services | [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1) y documentación OpenAPI en inglés, integrados en `main` (28/11); 147 pruebas sin fallos | **Pendiente:** Render no publicó la versión nueva automáticamente; el servicio publicado aún responde la anterior |
+
+<p align="center"><img src="images/Chapter-V/deploy-2026-11-28-web-app.jpg" alt="Web Application publicada el 28 de noviembre en inglés, con el enlace a los términos" width="800"></p>
+
+*Web Application publicada (28/11/2026).*
+
+<p align="center"><img src="images/Chapter-V/deploy-2026-11-28-landing.jpg" alt="Bloque de testimonios del Landing Page publicado" width="800"></p>
+
+*Landing Page publicado (28/11/2026).*
+
+El 28/11/2026 la primera petición a los Web Services tras la inactividad tardó 126 s, y durante ese tiempo la Web Application quedó en blanco para una sesión ya iniciada. Esto confirma el problema B-1 de la evaluación heurística (5.3.3).
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint
 
@@ -1755,7 +1773,7 @@ Los cinco integrantes registran commits en el repositorio. Cuatro de ellos traba
 | joanfpp2-ai (Pocho) | Payano Puchuri, Joan Fabricio | Autorregulación | 14 | +2755 / −0 | 10 y 11 |
 | **Total** | | | **138** | | |
 
-La cifra anterior de este informe (136) omitía los dos commits de Leonardo del 4 de noviembre (`c555972`, commit inicial, y `42cb99c`). La versión anterior de este apartado indicaba que `Nubi.Platform.Backend` era privado y que por eso no ofrecía las vistas de GitHub Insights; el 26/11/2026 el repositorio es público. La evidencia se complementa con la tabla de commits de la sección 5.2.3.4.
+La cifra anterior de este informe (136) omitía los dos commits de Leonardo del 4 de noviembre (`c555972`, commit inicial, y `42cb99c`). La versión anterior de esta sección indicaba que `Nubi.Platform.Backend` era privado y que por eso no ofrecía las vistas de GitHub Insights; el 26/11/2026 el repositorio es público. La evidencia se complementa con la tabla de commits de la sección 5.2.3.4.
 
 ##### Repositorio de la Frontend Web Application y del Landing Page
 
@@ -1800,7 +1818,7 @@ Commits sin merges de **todas las ramas** publicadas, consultados el 26/11/2026.
 
 **Diferencias entre métricas.** Esta tabla cuenta todas las ramas; las tablas por Sprint y GitHub Insights cuentan solo la rama indicada. Por ejemplo, los 8 commits de Edgard en el informe durante el S3 están en `feature/chapter-3`, que no se integró en `develop`; por eso la tabla de `develop` muestra 0. El número de commits no mide por sí solo el aporte técnico.
 
-**Pull Requests del 27/11/2026** (posteriores al Sprint 3, abiertos por LeonardoLopez138 y pendientes de integrar): [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1), [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4). No forman parte de las cifras anteriores.
+**Pull Requests del 27/11/2026** (posteriores al Sprint 3, abiertos por LeonardoLopez138 e integrados ese día): [Pull Request #1 del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/pull/1), [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y [Pull Request #4 del Frontend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/pull/4). No forman parte de las cifras anteriores. El 28/11/2026 se integraron además las ramas `feature/english-api-docs` y `feature/english-seo-tags`, sin Pull Request.
 
 **Lo que no se acredita:** equilibrio en el Landing Page (Edgard no registra commits y durante los Sprints no hubo Pull Requests) ni participación de cuatro integrantes en la Frontend Web Application durante el S3.
 
@@ -2793,7 +2811,7 @@ Los cuatro problemas se contrastaron con el código de la versión 1.2.0 de la W
 |:---:|---|---|
 | B-1 | Vigente en parte | El Rincón de calma y la Red de Apoyo muestran marcadores de carga (los recuadros grises de la captura). El aviso de que el servidor tarda alrededor de un minuto en despertar aparece en la pantalla sin conexión y en el mensaje de error, no durante la espera. |
 | B-2 | Confirmado | `acceptInvitation()` está definido en `profile-api.ts` y ningún componente lo invoca. La API publica el `PATCH` de cuidadores. |
-| B-3 | Vigente con una precisión | El botón «Compartir» registra el destinatario y confirma con qué persona se compartió; el mensaje «Copiado. Pégalo en WhatsApp o en un correo.» corresponde al botón «Copiar». En el backend no se encontró una librería de envío de correo o mensajería. |
+| B-3 | Vigente con una precisión | El botón «Compartir» registra el destinatario y confirma con qué persona se compartió; el mensaje «Copiado. Pégalo en WhatsApp o en un correo.» corresponde al botón «Copiar». En el backend no se encontró una biblioteca de envío de correo o mensajería. |
 | B-4 | Confirmado | Las rutas de la aplicación y el menú lateral no incluyen una sección de ayuda. |
 
 
@@ -2834,6 +2852,8 @@ Revisado el 27/11/2026 con un fotograma cada 7 u 8 segundos, por lo que los tiem
 
 En ese muestreo no se observan las escenas de testimonios ni de planes de la estructura propuesta; **quedan pendientes** de incorporar o de confirmar en el video.
 
+**Versión de YouTube.** El Landing Page incrusta el video «About the product Nubi» de YouTube, que dura 4:16 y muestra la interfaz del Sprint 2, distinta de la versión de Stream. El enunciado pide un video de 1 a 3 minutos con al menos una opinión por segmento objetivo: **queda pendiente** reeditarlo con la interfaz actual y publicar la misma versión en Stream y en YouTube.
+
 #### Datos del video
 
 | Dato | Detalle                                                           |
@@ -2842,6 +2862,7 @@ En ese muestreo no se observan las escenas de testimonios ni de planes de la est
 | Formato | mp4                                                               |
 | Duración | 3:53                                                              |     
 | URL en Microsoft Stream | https://sl1nk.com/o8ai3x0                                         |
+| URL en YouTube (incrustado en el Landing Page) | https://www.youtube.com/watch?v=utaBaLFhlOQ (duración 4:16) |
 | Responsable | Leonardo Lopez                                                    |
 Captura de pantalla del video (`images/Chapter-V/about-the-product.png`).**
 ![abouth the product.png](images/Chapter-V/abouth%20the%20product.png)
