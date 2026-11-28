@@ -116,7 +116,7 @@ En esta versión no se observan las escenas de trabajo ni la retrospectiva del g
 |---|---|---|
 | La Frontend Web Application quedó en una persona y en dos días | Asignar cada tarea al inicio y que su responsable haga el commit | Pendiente |
 | Ramas con commits concentrados en un día | Revisar el avance a mitad del Sprint e integrar cada rama al terminarla | Pendiente |
-| Tareas del Landing Page sin cerrar (T-04, T-76, T-77) | Integrar por Pull Request y desplegar antes del cierre | [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) integrado y publicado el 27/11/2026 |
+| Tareas del Landing Page sin cerrar (T-04, T-76, T-77) | Integrar por Pull Request y desplegar antes del cierre | [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) integrado y publicado el 27/11/2026: T-04 y T-77 cerradas; de T-76 falta la revisión de accesibilidad |
 | Datos en memoria en el despliegue | Usar una base MySQL persistente | Pendiente |
 
 - **Qué mejorar:** la comunicación dentro del equipo. La Frontend Web Application quedó en una sola persona y en dos días, varias ramas concentraron sus commits en un solo día y las tareas del Landing Page quedaron sin cerrar. Para el siguiente Sprint el equipo acuerda al inicio quién hace cada tarea, revisa el avance a mitad del Sprint e integra cada rama al terminarla.
