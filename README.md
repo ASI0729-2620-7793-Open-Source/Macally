@@ -190,7 +190,7 @@ Además, Ruiz Villegas, Yngrid Nahir registró el 14 de noviembre en `main` la e
 | Respuestas HTTP y prueba del Landing Page | [5.2.3.7](Chapter-5.md#5237-software-deployment-evidence-for-sprint-review) | Con defectos registrados |
 | Commits y Pull Requests por integrante | [5.2.3.8](Chapter-5.md#5238-team-collaboration-insights-during-sprint) | Conciliado |
 | Entrevistas de validación | [5.3.2](Chapter-5.md#532-registro-de-entrevistas) | Revalidación pendiente |
-| Pruebas, persistencia en local y publicación | [5.2.3.7](Chapter-5.md#5237-software-deployment-evidence-for-sprint-review) | Backend pendiente de publicarse en Render |
+| Pruebas, persistencia en local y publicación | [5.2.3.7](Chapter-5.md#5237-software-deployment-evidence-for-sprint-review) | Productos publicados el 27 y 28/11/2026 |
 | Hallazgos AV1 | [Cierre de observaciones](CONCLUSIONS.md#cierre-de-observaciones-av1) | 2 cerrados, 5 parciales, 1 abierto |
 | Videos | [Anexo A](ANNEXES.md#anexo-a-videos-de-exposiciones) | Con pendientes |
 
