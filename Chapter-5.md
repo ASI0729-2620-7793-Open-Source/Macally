@@ -1970,7 +1970,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://sl1nk.com/essxvtz">https://sl1nk.com/essxvtz</a>
+        <a href="https://sl1nk.com/afwspd9">https://sl1nk.com/afwspd9</a>
       </td>
     </tr>
   </table>
@@ -2038,7 +2038,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://l1nq.com/ygh85ih">https://l1nq.com/ygh85ih</a>
+        <a href="https://sl1nk.com/8hkzzhv">https://sl1nk.com/8hkzzhv</a>
       </td>
     </tr>
   </table>
@@ -2176,7 +2176,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://l1nq.com/sx84u06">https://l1nq.com/sx84u06</a>
+        <a href="https://l1nq.com/9b4k53f">https://l1nq.com/9b4k53f</a>
       </td>
     </tr>
   </table>
@@ -2244,7 +2244,7 @@ A continuación se registran las entrevistas de validación realizadas por segme
     <tr>
       <td style="padding: 7px 14px; border: 1px solid #cfd8dc;">
         <strong>Link de la entrevista:</strong>
-        <a href="https://sl1nk.com/2y1bdn9">https://sl1nk.com/2y1bdn9</a>
+        <a href="https://l1nq.com/ufha8sm">https://l1nq.com/ufha8sm</a>
       </td>
     </tr>
   </table>
@@ -2372,11 +2372,11 @@ Relaciona participante → tarea → hipótesis → hallazgo → decisión → r
 
 | Participante (grabación) | Flujos | Hipótesis y criterio | Hallazgo | Decisión de diseño propuesta | Revalidación |
 |---|---|---|---|---|---|
-| Sebastián Suárez, 17 ([video](https://sl1nk.com/essxvtz)) | UF-1, UF-2 | H2: 70 % usa un recurso. H3: 80 % comunica una necesidad | Colores fluorescentes; burbuja y globo pequeños; duda con «entendí / no entendí»; acceso fácil al área de adultos | Bajar la saturación, agrandar los estímulos, explicar la respuesta del cuidador y proteger el área de adultos | Pendiente |
-| Diana López, 15 ([video](https://l1nq.com/ygh85ih)) | UF-1, UF-2 | H2 y H3 | Completa ambos flujos; pide más ejercicios y medir su efectividad | Ampliar el catálogo y registrar la efectividad | Pendiente |
+| Sebastián Suárez, 17 ([video](https://sl1nk.com/afwspd9)) | UF-1, UF-2 | H2: 70 % usa un recurso. H3: 80 % comunica una necesidad | Colores fluorescentes; burbuja y globo pequeños; duda con «entendí / no entendí»; acceso fácil al área de adultos | Bajar la saturación, agrandar los estímulos, explicar la respuesta del cuidador y proteger el área de adultos | Pendiente |
+| Diana López, 15 ([video](https://sl1nk.com/8hkzzhv)) | UF-1, UF-2 | H2 y H3 | Completa ambos flujos; pide más ejercicios y medir su efectividad | Ampliar el catálogo y registrar la efectividad | Pendiente |
 | Owen Aguirre, 17 ([consolidado, 48:43](https://l1nq.com/j0ayo4q)) | UF-1 | H2 | Completa el flujo; pide guardar sus dibujos e imágenes | Evaluar una galería de dibujos en el perfil | Pendiente |
-| Johan Friabusmante, 20, familiar ([video](https://l1nq.com/sx84u06)) | UF-3 a UF-7 | H1: 80 % completa la guía. H4: 80 % considera útiles las recomendaciones. H5: 80 % envía ayuda y 70 % valora el reporte | Completa la guía; sugiere respaldo de un profesional | Mostrar el respaldo profesional de las guías | Pendiente |
-| Lizeth Villanueva, 25, familiar ([video](https://sl1nk.com/2y1bdn9)) | UF-3 a UF-6 | H1, H4, H5 | No tiene claro el nivel de acompañamiento; pide accesos rápidos a un especialista | Aclarar el alcance en el Landing Page y reducir pasos de navegación | Pendiente |
+| Johan Friabusmante, 20, familiar ([video](https://l1nq.com/9b4k53f)) | UF-3 a UF-7 | H1: 80 % completa la guía. H4: 80 % considera útiles las recomendaciones. H5: 80 % envía ayuda y 70 % valora el reporte | Completa la guía; sugiere respaldo de un profesional | Mostrar el respaldo profesional de las guías | Pendiente |
+| Lizeth Villanueva, 25, familiar ([video](https://l1nq.com/ufha8sm)) | UF-3 a UF-6 | H1, H4, H5 | No tiene claro el nivel de acompañamiento; pide accesos rápidos a un especialista | Aclarar el alcance en el Landing Page y reducir pasos de navegación | Pendiente |
 | Carmen Romero, 47, madre ([consolidado, 1:20:42](https://l1nq.com/j0ayo4q)) | UF-3 a UF-7 | H1, H4, H5 | Necesitó que le mostraran el Modo SOS; pide contactos a mano para el niño | Hacer más visible el botón SOS y mostrar contactos durante la crisis | Pendiente |
 
 | Hipótesis | Medido con las entrevistas | Estado frente al criterio |
