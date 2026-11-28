@@ -172,6 +172,12 @@ El detalle de la colaboración en los Web Services, en la Frontend Web Applicati
 
 Además, Ruiz Villegas, Yngrid Nahir registró el 14 de noviembre en `main` la evaluación heurística por inspección (integrada en `develop` el 26/11/2026). Entre el 26 y el 28 de noviembre las correcciones posteriores a la retroalimentación del docente las registró Lopez Torres, Leonardo Gabriel.
 
+<p align="center"><img src="images/Chapter-V/av2-report-contributors-1.jpg" alt="Commits por semana del repositorio del informe en GitHub Insights" width="800"></p>
+
+<p align="center"><img src="images/Chapter-V/av2-report-contributors-2.jpg" alt="Commits de cada integrante en el repositorio del informe" width="800"></p>
+
+*GitHub Insights del repositorio del informe, consultado el 28/11/2026 (rama `main`, últimos tres meses, sin merges): LeonardoLopez138 41 commits, u20241a195-cmd 39, Dan-trax 37, nahiryn8 26 y joanfpp2-ai 13.*
+
 ---
 
 ---
