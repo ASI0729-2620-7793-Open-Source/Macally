@@ -1118,9 +1118,9 @@ De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04)
 | T-73 | US-22, US-24 | Lopez | 8 | [0f7a516](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/0f7a516) | Captura del tablero; sin prueba registrada de imagen inválida ni de audio | Done |
 | T-74 | US-25, US-26 | Diaz Caruzo | 8 | [3797890](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/3797890) (autor: Lopez) | Captura de Red de Apoyo; sin prueba registrada de notificación | Done |
 | T-75 | US-28, US-29 | Diaz Caruzo | 6 | [3797890](https://github.com/ASI0729-2620-7793-Open-Source/Nubi---Frontend/commit/3797890) (autor: Lopez) | Captura de Red de Apoyo; sin prueba registrada de cancelación | Done |
-| T-04 | LS-02 E2 | Lopez | 4 | [bd2291e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/bd2291e) (sin integrar) | 26/11/2026: el sitio publicado no enlaza a `/registro` | In-Process |
-| T-76 | Tarea general | Diaz Yurivilca | 5 | — | No entregado | To-do |
-| T-77 | Tarea general | Diaz Caruzo | 5 | [591a2e5](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/591a2e5) (sin integrar) | No desplegado | To-do |
+| T-04 | LS-02 E2 | Lopez | 4 | [bd2291e](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/bd2291e) (15/11), integrado el 27/11 | Publicado el 27/11/2026: los botones enlazan a `/registro` e `/ingresar` | Done (27/11, tras el cierre) |
+| T-76 | Tarea general | Diaz Yurivilca | 5 | [874ea6c](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/874ea6c) (27/11, commit de Lopez) | Testimonios publicados el 27/11/2026; falta revisar contraste, foco y textos alternativos | In-Process (tras el cierre) |
+| T-77 | Tarea general | Diaz Caruzo | 5 | [591a2e5](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/commit/591a2e5) (15/11, commit de Lopez), integrado el 27/11 | Publicado el 27/11/2026: etiquetas SEO, `robots.txt` y `sitemap.xml` | Done (27/11, tras el cierre) |
 | T-52 | Tarea general | Diaz Caruzo | 4 | [Etiquetas del backend](https://github.com/ASI0729-2620-7793-Open-Source/Nubi.Platform.Backend/tags) | `v1.0.0` a `v1.2.0` en `main`; el Landing Page no tiene release | Done |
 
 **Criterios de las Technical Stories.**
@@ -1135,7 +1135,7 @@ De las 27 tareas del Sprint Backlog 3, 24 están en Done, 1 en In-Process (T-04)
 
 **Pendientes al cierre:** T-04, T-76, T-77 y el escenario E2 de TS-05. Las tareas T-70 a T-72, T-74 y T-75 conservan a su responsable asignado, pero su commit es de otro integrante.
 
-**Actualización del 27/11/2026** (posterior al cierre; no cambia los estados del tablero): T-04, T-77 y los testimonios de T-76 se integraron en `master` con el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1) y se publicaron el 27/11/2026. De T-76 falta la revisión de contraste, foco y textos alternativos.
+**Actualización del 28/11/2026** (posterior al cierre; las cifras del cierre y el tablero de Trello no cambian): T-04 y T-77, implementadas el 15/11, se integraron y publicaron el 27/11 con el [Pull Request #1 del Landing Page](https://github.com/ASI0729-2620-7793-Open-Source/landing-page/pull/1). De T-76 se publicaron los testimonios el 27/11; falta la revisión de contraste, foco y textos alternativos.
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -1792,7 +1792,7 @@ Entre el 28 de octubre y el 15 de noviembre de 2026 el informe recibió 28 commi
 | Dan-trax | Diaz Caruzo, Edgard Daniel | 0 | — | Sin commits en este período |
 | **Total** | | **28** | | |
 
-Como oportunidades de mejora del Sprint 3, el trabajo de la Frontend Web Application quedó concentrado en un integrante y en los dos últimos días del Sprint, y las ramas de Red de Apoyo y Seguimiento y de Autorregulación concentraron sus commits en uno o dos días, lo mismo que ocurrió en el Sprint 2. Quedan sin cerrar las tareas del Landing Page (T-04, T-76 y T-77) y la persistencia de la base de datos en el despliegue. Para la versión final el equipo reparte la conexión de los módulos entre sus responsables, integra cada rama al completarse y registra los commits del informe entre los cinco integrantes.
+Como oportunidades de mejora del Sprint 3, el trabajo de la Frontend Web Application quedó concentrado en un integrante y en los dos últimos días del Sprint, y las ramas de Red de Apoyo y Seguimiento y de Autorregulación concentraron sus commits en uno o dos días, lo mismo que ocurrió en el Sprint 2. Al cierre quedaron sin completar las tareas del Landing Page (T-04, T-76 y T-77): T-04 y T-77 se publicaron el 27/11 y de T-76 falta la revisión de accesibilidad. También sigue pendiente la persistencia de la base de datos en el despliegue. Para la versión final el equipo reparte la conexión de los módulos entre sus responsables, integra cada rama al completarse y registra los commits del informe entre los cinco integrantes.
 
 ##### Conciliación por repositorio, integrante y Pull Request
 
